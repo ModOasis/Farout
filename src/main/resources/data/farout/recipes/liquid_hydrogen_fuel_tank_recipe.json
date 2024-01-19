@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:empty_fuel_tank"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    },
+    {
+      "item": "farout:hydrogen"
+    }
+  ],
+  "result": {
+    "item": "farout:liquid_hydrogen_fuel_tank",
+    "count": 1
+  }
+}

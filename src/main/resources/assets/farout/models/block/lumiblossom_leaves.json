@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/lumiblossom_leaves",
+    "up": "farout:block/lumiblossom_leaves",
+    "north": "farout:block/lumiblossom_leaves",
+    "east": "farout:block/lumiblossom_leaves",
+    "south": "farout:block/lumiblossom_leaves",
+    "west": "farout:block/lumiblossom_leaves",
+    "particle": "farout:block/lumiblossom_leaves"
+  },
+  "render_type": "cutout_mipped"
+}

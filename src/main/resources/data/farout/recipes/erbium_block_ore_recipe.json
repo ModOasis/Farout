@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:erbium_block"
+    }
+  ],
+  "result": {
+    "item": "farout:erbium",
+    "count": 9
+  }
+}

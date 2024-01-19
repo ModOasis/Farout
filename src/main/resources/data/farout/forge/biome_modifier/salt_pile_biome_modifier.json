@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:dry_plains",
+  "features": "farout:salt_pile",
+  "step": "surface_structures"
+}

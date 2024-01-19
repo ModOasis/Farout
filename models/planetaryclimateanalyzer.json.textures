@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "analyzer",
+        "missing": "analyzer"
+      },
+      "name": "default"
+    }
+  }
+}

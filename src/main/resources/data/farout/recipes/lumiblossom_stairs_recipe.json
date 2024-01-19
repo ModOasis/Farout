@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:lumiblossom_planks"
+    }
+  },
+  "result": {
+    "item": "farout:lumiblossom_stairs",
+    "count": 4
+  }
+}

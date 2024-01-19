@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/at1",
+    "up": "farout:block/at1",
+    "north": "farout:block/coil",
+    "east": "farout:block/coil",
+    "south": "farout:block/coil",
+    "west": "farout:block/coil",
+    "particle": "farout:block/at1"
+  },
+  "render_type": "solid"
+}

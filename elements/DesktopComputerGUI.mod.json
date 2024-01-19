@@ -1,0 +1,54 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 199,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "wallpaper1blurred.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 22
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_starship_button",
+          "image": "starship_button.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenSpacecraftComponentsGUI"
+          },
+          "x": 123,
+          "y": 179
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_missioncontrol",
+          "image": "missioncontrol.png",
+          "hoveredImage": "",
+          "x": 159,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

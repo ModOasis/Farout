@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HighHeatLoadGraphineRadiators"
+    },
+    "name": "high_heat_load_graphine_radiators_recipe",
+    "namespace": "mod"
+  }
+}

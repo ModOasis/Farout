@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "farout:display"
+    },
+    "d": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    },
+    "e": {
+      "item": "farout:medium_capacity_memory"
+    }
+  },
+  "result": {
+    "item": "farout:desktop_computer",
+    "count": 1
+  }
+}

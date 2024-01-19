@@ -1,0 +1,46 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "farout:space_suit_helmet"
+    },
+    "title": {
+      "translate": "advancements.farout_start.title"
+    },
+    "description": {
+      "translate": "advancements.farout_start.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "farout_start": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "farout:etaui"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:kno_3recipe",
+      "minecraft:nobrewing",
+      "minecraft:removeenchantmenttable",
+      "farout:nozzle_recipe",
+      "farout:paper_alternate_recipe",
+      "farout:gun_powder_recipe",
+      "farout:copper_wire_recipe",
+      "farout:geothermal_generator_recipe",
+      "farout:biomass_burner_recipe",
+      "farout:generatorrecipe",
+      "farout:piperecipe",
+      "farout:motorrecipe",
+      "farout:red_torcher_recipe",
+      "farout:yellow_torcher_recipe",
+      "farout:blue_torcher_recipe"
+    ]
+  }
+}

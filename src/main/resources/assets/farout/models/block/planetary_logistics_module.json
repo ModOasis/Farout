@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/at1",
+    "up": "farout:block/at1",
+    "north": "farout:block/at1",
+    "east": "farout:block/upgrade_applyer",
+    "south": "farout:block/at1",
+    "west": "farout:block/voltometer",
+    "particle": "farout:block/at1"
+  },
+  "render_type": "solid"
+}

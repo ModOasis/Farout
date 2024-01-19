@@ -1,0 +1,17 @@
+{
+  "type": "farout:structure_feature",
+  "config": {
+    "structure": "farout:empty",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "offset": [
+      0,
+      0,
+      1
+    ]
+  }
+}

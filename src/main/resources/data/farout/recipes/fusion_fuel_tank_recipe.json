@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:empty_fuel_tank"
+    },
+    {
+      "item": "farout:lithium_deuteride"
+    }
+  ],
+  "result": {
+    "item": "farout:fusion_fuel_tank",
+    "count": 1
+  }
+}

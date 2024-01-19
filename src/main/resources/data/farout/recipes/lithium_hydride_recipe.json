@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:hydrogen"
+    },
+    "b": {
+      "item": "farout:lithium_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:lithium_hydride",
+    "count": 1
+  }
+}

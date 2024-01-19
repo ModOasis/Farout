@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:OrganicMolecules"
+      },
+      {
+        "value": "CUSTOM:SiliconDust"
+      },
+      {
+        "value": "CUSTOM:OrganicMolecules"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "Items.GLOWSTONE_DUST"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Display"
+    },
+    "name": "display_recipe",
+    "namespace": "mod"
+  }
+}

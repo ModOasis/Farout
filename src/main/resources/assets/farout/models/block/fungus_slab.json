@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "farout:block/fungus_planks",
+    "top": "farout:block/fungus_planks",
+    "side": "farout:block/fungus_planks"
+  },
+  "render_type": "solid"
+}

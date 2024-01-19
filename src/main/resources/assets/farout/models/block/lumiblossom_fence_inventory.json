@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "farout:block/lumiblossom_planks",
+    "particle": "farout:block/lumiblossom_planks"
+  },
+  "render_type": "solid"
+}

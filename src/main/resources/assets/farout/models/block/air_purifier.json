@@ -1,0 +1,10 @@
+{
+  "parent": "farout:custom/airpurifer",
+  "textures": {
+    "all": "farout:block/air_purifer",
+    "particle": "farout:block/air_purifer",
+    "2": "farout:block/airpuriferbottomtex",
+    "3": "farout:block/airpurifertex"
+  },
+  "render_type": "solid"
+}

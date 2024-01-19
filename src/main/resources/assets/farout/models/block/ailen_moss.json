@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/alienmoss",
+    "up": "farout:block/alienmoss",
+    "north": "farout:block/alienmoss",
+    "east": "farout:block/alienmoss",
+    "south": "farout:block/alienmoss",
+    "west": "farout:block/alienmoss",
+    "particle": "farout:block/alienmoss"
+  },
+  "render_type": "solid"
+}

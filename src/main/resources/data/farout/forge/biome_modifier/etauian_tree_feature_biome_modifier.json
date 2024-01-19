@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:etauian_plains",
+  "features": "farout:etauian_tree_feature",
+  "step": "surface_structures"
+}

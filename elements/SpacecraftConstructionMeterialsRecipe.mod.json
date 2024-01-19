@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "CUSTOM:Hexuraningot"
+      },
+      {
+        "value": "Items.COPPER_INGOT"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:Hexuraningot"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpacecraftConstructionMeterials"
+    },
+    "name": "spacecraft_construction_meterials_recipe",
+    "namespace": "mod"
+  }
+}

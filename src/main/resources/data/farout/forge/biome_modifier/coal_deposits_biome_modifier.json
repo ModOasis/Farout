@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:asphalt_plains",
+  "features": "farout:coal_deposits",
+  "step": "surface_structures"
+}

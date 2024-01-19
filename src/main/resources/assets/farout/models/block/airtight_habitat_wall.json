@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/airtight_habitat_wall",
+    "up": "farout:block/airtight_habitat_wall",
+    "north": "farout:block/airtight_habitat_wall",
+    "east": "farout:block/airtight_habitat_wall",
+    "south": "farout:block/airtight_habitat_wall",
+    "west": "farout:block/airtight_habitat_wall",
+    "particle": "farout:block/airtight_habitat_wall"
+  },
+  "render_type": "solid"
+}

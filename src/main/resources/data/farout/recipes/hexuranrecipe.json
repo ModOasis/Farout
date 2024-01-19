@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:molybdenum_ingot"
+    },
+    "b": {
+      "item": "farout:depleted_uranium"
+    }
+  },
+  "result": {
+    "item": "farout:hexuraningot",
+    "count": 2
+  }
+}

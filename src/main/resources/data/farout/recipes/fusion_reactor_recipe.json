@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:super_alloy_ingot"
+    },
+    "b": {
+      "item": "farout:electro_magnet"
+    },
+    "c": {
+      "item": "farout:generator"
+    },
+    "d": {
+      "item": "farout:high_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:tokamakfusionreactor",
+    "count": 1
+  }
+}

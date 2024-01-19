@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:uranium_ingot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "farout:empty_fuel_tank"
+    }
+  ],
+  "result": {
+    "item": "farout:nuclear_salt_water_fuel_tank",
+    "count": 1
+  }
+}

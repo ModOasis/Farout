@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "farout:lithium_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:super_capacitors",
+    "count": 1
+  }
+}

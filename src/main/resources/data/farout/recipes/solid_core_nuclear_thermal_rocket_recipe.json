@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "farout:pipe"
+    },
+    "c": {
+      "item": "farout:nuclear_rods"
+    },
+    "d": {
+      "item": "farout:nozzle"
+    }
+  },
+  "result": {
+    "item": "farout:solid_core_nuclear_thermal_rocket",
+    "count": 1
+  }
+}

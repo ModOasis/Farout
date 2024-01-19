@@ -1,0 +1,91 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 202,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_linear_accelerator_beam_configur",
+          "text": {
+            "fixedValue": "Linear Accelerator Beam Configuration"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 116,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_protom_beam",
+          "text": "Proton Beam",
+          "isUndecorated": false,
+          "width": 82,
+          "height": 20,
+          "x": 123,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_electron_beam",
+          "text": "Electron Beam",
+          "isUndecorated": false,
+          "width": 93,
+          "height": 20,
+          "x": 213,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fire_beam",
+          "text": "Fire beam!",
+          "isUndecorated": false,
+          "width": 77,
+          "height": 20,
+          "x": 168,
+          "y": 143
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "protonbeam.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "electronbeam.png",
+          "use1Xscale": false,
+          "x": 213,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

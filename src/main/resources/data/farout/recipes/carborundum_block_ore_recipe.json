@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:carborundum_block"
+    }
+  ],
+  "result": {
+    "item": "farout:carborundum_ingot",
+    "count": 9
+  }
+}

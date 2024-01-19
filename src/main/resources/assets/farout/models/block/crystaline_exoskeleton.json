@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/crystaline_exoskeleton",
+    "up": "farout:block/crystaline_exoskeleton",
+    "north": "farout:block/crystaline_exoskeleton",
+    "east": "farout:block/crystaline_exoskeleton",
+    "south": "farout:block/crystaline_exoskeleton",
+    "west": "farout:block/crystaline_exoskeleton",
+    "particle": "farout:block/crystaline_exoskeleton"
+  },
+  "render_type": "translucent"
+}

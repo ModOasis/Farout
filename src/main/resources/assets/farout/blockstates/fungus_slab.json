@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farout:block/fungus_slab"
+    },
+    "type=top": {
+      "model": "farout:block/fungus_slab_top"
+    },
+    "type=double": {
+      "model": "farout:block/fungus_slab_full"
+    }
+  }
+}

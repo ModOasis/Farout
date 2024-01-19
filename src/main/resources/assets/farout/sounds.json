@@ -1,0 +1,66 @@
+{
+  "etaui_music": {
+    "sounds": [
+      {
+        "name": "farout:5-min-deep-calm-space-ambient-music-_-most-beautiful-concentration-music-_-cosmic-relaxation",
+        "stream": true
+      }
+    ]
+  },
+  "sky_hydrozoan_death": {
+    "sounds": [
+      {
+        "name": "farout:whale-moan-1-quicksounds.com",
+        "stream": false
+      }
+    ]
+  },
+  "sky_hydrozoan_live": {
+    "sounds": [
+      {
+        "name": "farout:whale-moan-2-quicksounds.com",
+        "stream": false
+      }
+    ]
+  },
+  "sky_hydrozoan_hurt": {
+    "sounds": [
+      {
+        "name": "farout:mixkit-aggressive-monster-beast-roar-14",
+        "stream": false
+      }
+    ]
+  },
+  "electric_hum": {
+    "sounds": [
+      {
+        "name": "farout:mixkit-intense-electricity-hum-2591",
+        "stream": false
+      }
+    ]
+  },
+  "robot_arm_move": {
+    "sounds": [
+      {
+        "name": "farout:mixkit-robot-short-movement-1426",
+        "stream": false
+      }
+    ]
+  },
+  "gun_fire": {
+    "sounds": [
+      {
+        "name": "farout:gun-shot-sound-effect",
+        "stream": false
+      }
+    ]
+  },
+  "rickroll": {
+    "sounds": [
+      {
+        "name": "farout:rick-astley-never-gonna-give-you-up-_official-music-video_",
+        "stream": true
+      }
+    ]
+  }
+}

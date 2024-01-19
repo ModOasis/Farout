@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "farout:fungi_forests",
+    "farout:etauian_plains",
+    "farout:perchlorate_oceans",
+    "farout:limestone_moutains"
+  ],
+  "features": "farout:etauian_base_feature",
+  "step": "surface_structures"
+}

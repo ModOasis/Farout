@@ -1,0 +1,41 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Farout: Progression Tree",
+    "achievementDescription": "You have landed on etaui, a planet with tree like fungus and simple animal life.",
+    "achievementIcon": {
+      "value": "CUSTOM:SpaceSuit.helmet"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "KNO3recipe",
+      "Nobrewing",
+      "Removeenchantmenttable",
+      "NozzleRecipe",
+      "PaperAlternateRecipe",
+      "GunPowderRecipe",
+      "CopperWireRecipe",
+      "GeothermalGeneratorRecipe",
+      "BiomassBurnerRecipe",
+      "Generatorrecipe",
+      "Piperecipe",
+      "Motorrecipe",
+      "RedTorcherRecipe",
+      "YellowTorcherRecipe",
+      "BlueTorcherRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"62\" y=\"54\"><field name=\"dimension\">CUSTOM:Etaui</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

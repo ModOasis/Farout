@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:rhenium_block"
+    }
+  ],
+  "result": {
+    "item": "farout:rhenium_ingot",
+    "count": 9
+  }
+}

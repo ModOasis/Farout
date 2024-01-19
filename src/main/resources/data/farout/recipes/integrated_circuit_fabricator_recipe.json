@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "d d",
+    "ede"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:low_frequency_integrated_circuit"
+    },
+    "b": {
+      "item": "farout:laser"
+    },
+    "c": {
+      "item": "farout:copper_wire"
+    },
+    "d": {
+      "item": "farout:ironplate"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:integrated_circuit_fabricator",
+    "count": 1
+  }
+}

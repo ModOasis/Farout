@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:EtauosHighlands"
+      },
+      {
+        "value": "CUSTOM:EtauosLowlands"
+      },
+      {
+        "value": "CUSTOM:EtauosMidlands"
+      },
+      {
+        "value": "CUSTOM:CarbonatedOceans"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"0\" y=\"0\"><value name=\"feature\"><block type=\"feature_block_column_simple\"><value name=\"height\"><block type=\"int_provider_uniform\"><field name=\"min\">3</field><field name=\"max\">10</field></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:SolarVines</field></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">4</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">-1</field><value name=\"blockSet\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"3\"></mutation><field name=\"block0\">Blocks.MUD</field><field name=\"block1\">Blocks.GRASS</field><field name=\"block2\">Blocks.PACKED_MUD</field></block></value></block></value></block></next></block></next></block></next></block></next></block><block type=\"feature_simple_block\" x=\"0\" y=\"396\"></block><block type=\"int_provider_constant\" x=\"0\" y=\"456\"><field name=\"value\">5</field></block><block type=\"mcitem_allblocks\" x=\"0\" y=\"507\"><field name=\"value\">CUSTOM:SolarVines</field></block><block type=\"block_holderset_list\" x=\"0\" y=\"578\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><field name=\"block0\"></field><field name=\"block1\"></field></block><block type=\"block_predicate_is_air\" x=\"0\" y=\"723\"></block></xml>"
+  }
+}

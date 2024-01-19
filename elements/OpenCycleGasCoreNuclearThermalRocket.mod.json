@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      },
+      {
+        "value": "CUSTOM:Pipe"
+      },
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:UraniumIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Radiator"
+      },
+      {
+        "value": "CUSTOM:Nozzle"
+      },
+      {
+        "value": "CUSTOM:Radiator"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OpenCoreNuclearThermalRocket"
+    },
+    "name": "open_cycle_gas_core_nuclear_thermal_rocket",
+    "namespace": "mod"
+  }
+}

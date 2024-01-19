@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "command_center_tex"
+      },
+      "name": "default"
+    }
+  }
+}

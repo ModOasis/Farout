@@ -1,0 +1,131 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 433,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": -1,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 393,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_star_system_viewer",
+          "text": {
+            "fixedValue": "Star System Viewer"
+          },
+          "color": {
+            "value": -54228,
+            "falpha": 0.0
+          },
+          "x": 157,
+          "y": 19
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_zoom_out",
+          "image": "zoom_out.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ZoomOut"
+          },
+          "x": 411,
+          "y": 197
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_etauipixelcenter",
+          "image": "etauipixelcenter.png",
+          "hoveredImage": "etauipixelcenter.png",
+          "onClick": {
+            "name": "EtauiTrajectories"
+          },
+          "x": 51,
+          "y": 89
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_etauos",
+          "image": "etauos.png",
+          "hoveredImage": "etauos.png",
+          "onClick": {
+            "name": "EtauosTrajectories"
+          },
+          "x": 294,
+          "y": 107
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_etaui_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "EtauiReadout"
+          },
+          "width": 66,
+          "height": 66,
+          "x": 51,
+          "y": 88
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_etauos_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "EtauosReadout"
+          },
+          "width": 34,
+          "height": 35,
+          "x": 293,
+          "y": 105
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

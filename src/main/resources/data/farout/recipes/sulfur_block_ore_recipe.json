@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:sulfur_block"
+    }
+  ],
+  "result": {
+    "item": "farout:sulfur_dust",
+    "count": 9
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "farout:structure_feature",
+  "config": {
+    "structure": "farout:quartz_crystal",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "farout:pipe"
+    },
+    "c": {
+      "item": "farout:copper_wire"
+    },
+    "d": {
+      "item": "farout:nozzle"
+    }
+  },
+  "result": {
+    "item": "farout:chemical_rocket_engine",
+    "count": 1
+  }
+}

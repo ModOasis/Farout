@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/mediumfrequencyintegratedcircuitfabricator",
+  "textures": {
+    "all": "farout:block/mediumfrequencyintegratedcircuitfabricatortex",
+    "particle": "farout:block/mediumfrequencyintegratedcircuitfabricatortex",
+    "2": "farout:block/mediumfrequencyintegratedcircuitfabricatortex"
+  },
+  "render_type": "solid"
+}

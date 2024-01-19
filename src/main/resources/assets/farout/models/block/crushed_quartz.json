@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/crushedquartz",
+    "up": "farout:block/crushedquartz",
+    "north": "farout:block/crushedquartz",
+    "east": "farout:block/crushedquartz",
+    "south": "farout:block/crushedquartz",
+    "west": "farout:block/crushedquartz",
+    "particle": "farout:block/crushedquartz"
+  },
+  "render_type": "solid"
+}

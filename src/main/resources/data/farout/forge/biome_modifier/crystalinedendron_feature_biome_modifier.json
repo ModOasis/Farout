@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:sulfuric_hills",
+  "features": "farout:crystalinedendron_feature",
+  "step": "surface_structures"
+}

@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "chest",
+        "4": "miningbase",
+        "5": "drill",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

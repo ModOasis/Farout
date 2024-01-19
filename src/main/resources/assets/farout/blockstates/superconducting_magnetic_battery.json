@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farout:block/superconducting_magnetic_battery"
+    }
+  }
+}

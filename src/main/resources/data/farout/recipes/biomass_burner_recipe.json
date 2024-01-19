@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:generator"
+    },
+    "b": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "farout:biomass_burner",
+    "count": 1
+  }
+}

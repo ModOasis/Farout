@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/quartz_ore",
+    "up": "farout:block/quartz_ore",
+    "north": "farout:block/quartz_ore",
+    "east": "farout:block/quartz_ore",
+    "south": "farout:block/quartz_ore",
+    "west": "farout:block/quartz_ore",
+    "particle": "farout:block/quartz_ore"
+  },
+  "render_type": "solid"
+}

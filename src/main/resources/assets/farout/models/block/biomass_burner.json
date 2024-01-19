@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/solar_panel_mis",
+    "up": "farout:block/solar_panel_mis",
+    "north": "farout:block/biomass1",
+    "east": "farout:block/biomass2",
+    "south": "farout:block/nozzle_2",
+    "west": "farout:block/nozzle_2",
+    "particle": "farout:block/solar_panel_mis"
+  },
+  "render_type": "solid"
+}

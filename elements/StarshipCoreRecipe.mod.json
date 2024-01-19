@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:MediumFrequencyIntegratedCircuit"
+      },
+      {
+        "value": "CUSTOM:AluminiumIngot"
+      },
+      {
+        "value": "CUSTOM:GalacticCoreTracker"
+      },
+      {
+        "value": "CUSTOM:MediumCapacityMemory"
+      },
+      {
+        "value": "CUSTOM:InertialNavigationSystem"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:NuclearReactor"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StarshipCore"
+    },
+    "name": "starship_core_recipe",
+    "namespace": "mod"
+  }
+}

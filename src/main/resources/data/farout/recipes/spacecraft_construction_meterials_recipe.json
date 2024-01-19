@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cbc",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:copper_ingot"
+    },
+    "b": {
+      "item": "farout:hexuraningot"
+    },
+    "c": {
+      "item": "farout:aluminium_ingot"
+    },
+    "d": {
+      "item": "farout:super_alloy_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:spacecraft_construction_meterials",
+    "count": 1
+  }
+}

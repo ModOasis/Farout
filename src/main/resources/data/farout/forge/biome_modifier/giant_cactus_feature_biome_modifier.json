@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:desolate_deserts",
+  "features": "farout:giant_cactus_feature",
+  "step": "surface_structures"
+}

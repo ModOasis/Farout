@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:boracite_block"
+    }
+  ],
+  "result": {
+    "item": "farout:boracite",
+    "count": 9
+  }
+}

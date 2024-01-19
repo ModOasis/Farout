@@ -1,0 +1,10 @@
+{
+  "parent": "farout:custom/biologicalexperiment",
+  "textures": {
+    "all": "farout:block/airpurifertex",
+    "particle": "farout:block/airpurifertex",
+    "0": "farout:block/biologicalbay",
+    "1": "farout:block/base"
+  },
+  "render_type": "solid"
+}

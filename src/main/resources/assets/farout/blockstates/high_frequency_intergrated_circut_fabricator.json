@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farout:block/high_frequency_intergrated_circut_fabricator"
+    }
+  }
+}

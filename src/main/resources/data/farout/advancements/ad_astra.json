@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:fission_fragment_engine"
+    },
+    "title": {
+      "translate": "advancements.ad_astra.title"
+    },
+    "description": {
+      "translate": "advancements.ad_astra.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ad_astra": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:the_other_worlds"
+}

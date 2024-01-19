@@ -1,0 +1,12 @@
+{
+  "_fv": 57,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "RIGHT",
+    "keyBindingName": "Yaw Increase",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "YawIncreaseOnKeyPressed"
+    }
+  }
+}

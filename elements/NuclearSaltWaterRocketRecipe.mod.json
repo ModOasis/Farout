@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BoronIngot"
+      },
+      {
+        "value": "CUSTOM:Pipe"
+      },
+      {
+        "value": "CUSTOM:BoronIngot"
+      },
+      {
+        "value": "CUSTOM:BoronIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BoronIngot"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      },
+      {
+        "value": "CUSTOM:Nozzle"
+      },
+      {
+        "value": "CUSTOM:Super_AlloyIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:NuclearSaltWaterRocket"
+    },
+    "name": "nuclear_salt_water_rocket_recipe",
+    "namespace": "mod"
+  }
+}

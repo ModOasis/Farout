@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farout:block/graphite_ore_block",
+    "particle": "farout:block/graphite_ore_block"
+  },
+  "render_type": "solid"
+}

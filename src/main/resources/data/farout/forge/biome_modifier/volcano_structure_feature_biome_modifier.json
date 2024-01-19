@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:venusian_plains",
+  "features": "farout:volcano_structure_feature",
+  "step": "surface_structures"
+}

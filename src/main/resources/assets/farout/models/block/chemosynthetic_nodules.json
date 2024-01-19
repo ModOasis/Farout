@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/chemosynthetic_nodule_top",
+    "up": "farout:block/chemosynthetic_nodule_top",
+    "north": "farout:block/chemosynthetic_nodule_1",
+    "east": "farout:block/chemosynthetic_nodule_1",
+    "south": "farout:block/chemosynthetic_nodule_1",
+    "west": "farout:block/chemosynthetic_nodule_1",
+    "particle": "farout:block/chemosynthetic_nodule_top"
+  },
+  "render_type": "solid"
+}

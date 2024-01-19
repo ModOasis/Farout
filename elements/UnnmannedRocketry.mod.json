@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Unnmanned Rocketry",
+    "icon": {
+      "value": "CUSTOM:UnmannedPayload"
+    },
+    "showSearch": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "farout:block/yellow_torcher",
+    "particle": "farout:block/yellow_torcher"
+  },
+  "render_type": "cutout"
+}

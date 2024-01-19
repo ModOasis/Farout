@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:GalacticCoreTracker"
+      },
+      {
+        "value": "CUSTOM:MediumCapacityMemory"
+      },
+      {
+        "value": "CUSTOM:GalacticCoreTracker"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:InertialNavigationSystem"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:GalacticCoreTracker"
+      },
+      {
+        "value": "CUSTOM:MediumFrequencyIntegratedCircuit"
+      },
+      {
+        "value": "CUSTOM:GalacticCoreTracker"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AdvancedCommandDisk"
+    },
+    "name": "advanced_command_disk_recipe",
+    "namespace": "mod"
+  }
+}

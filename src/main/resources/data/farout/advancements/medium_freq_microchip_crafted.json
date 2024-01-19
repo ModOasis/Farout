@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    },
+    "title": {
+      "translate": "advancements.medium_freq_microchip_crafted.title"
+    },
+    "description": {
+      "translate": "advancements.medium_freq_microchip_crafted.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "medium_freq_microchip_crafted": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:medium_frequency_integrated_circuit"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:desktop_computer_recipe"
+    ]
+  },
+  "parent": "farout:low_frequency_microchip_crafted"
+}

@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:open_core_nuclear_thermal_rocket"
+    },
+    "title": {
+      "translate": "advancements.high_efficiency_nuclear_propulsion.title"
+    },
+    "description": {
+      "translate": "advancements.high_efficiency_nuclear_propulsion.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "high_efficiency_nuclear_propulsion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:open_core_nuclear_thermal_rocket"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:nuclear_salt_water_rocket_recipe",
+      "farout:nuclear_salt_water_fuel_tank_recipe"
+    ]
+  },
+  "parent": "farout:nuclear_reactor_made"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/air_purifier"
+    },
+    "facing=east": {
+      "model": "farout:block/air_purifier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/air_purifier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/air_purifier",
+      "y": 270
+    }
+  }
+}

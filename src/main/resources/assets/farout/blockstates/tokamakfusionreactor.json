@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/tokamakfusionreactor"
+    },
+    "facing=east": {
+      "model": "farout:block/tokamakfusionreactor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/tokamakfusionreactor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/tokamakfusionreactor",
+      "y": 270
+    }
+  }
+}

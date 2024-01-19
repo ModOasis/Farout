@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "distant_frontiers:liquidoxygenbucket",
+    "distant_frontiers:flowing_liquidoxygenbucket",
+    "distant_frontiers:liquidmethane",
+    "distant_frontiers:flowing_liquidmethane",
+    "distant_frontiers:methlox",
+    "distant_frontiers:flowing_methlox",
+    "distant_frontiers:ethanol",
+    "distant_frontiers:flowing_ethanol",
+    "distant_frontiers:lh_2",
+    "distant_frontiers:flowing_lh_2",
+    "distant_frontiers:silane",
+    "distant_frontiers:flowing_silane",
+    "distant_frontiers:bio_jet_fuel",
+    "distant_frontiers:flowing_bio_jet_fuel",
+    "distant_frontiers:acrylonitrile",
+    "distant_frontiers:flowing_acrylonitrile",
+    "distant_frontiers:saltwater",
+    "distant_frontiers:flowing_saltwater",
+    "distant_frontiers:metallic_hydrogen",
+    "distant_frontiers:flowing_metallic_hydrogen",
+    "distant_frontiers:nuclear_salt_water",
+    "distant_frontiers:flowing_nuclear_salt_water"
+  ]
+}

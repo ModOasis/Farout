@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:cesium_block"
+    }
+  ],
+  "result": {
+    "item": "farout:cesium_dust",
+    "count": 9
+  }
+}

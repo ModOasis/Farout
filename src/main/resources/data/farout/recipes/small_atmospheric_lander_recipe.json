@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "farout:aluminium_ingot"
+    },
+    "c": {
+      "item": "farout:basic_command_disk"
+    },
+    "d": {
+      "tag": "minecraft:wool"
+    },
+    "e": {
+      "item": "farout:copper_wire"
+    },
+    "f": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "g": {
+      "item": "farout:chemical_rocket_engine"
+    }
+  },
+  "result": {
+    "item": "farout:small_atmospheric_lander",
+    "count": 1
+  }
+}

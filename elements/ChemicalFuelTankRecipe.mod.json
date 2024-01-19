@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:OxygenBottle"
+      },
+      {
+        "value": "CUSTOM:Hydrogen"
+      },
+      {
+        "value": "CUSTOM:OxygenBottle"
+      },
+      {
+        "value": "CUSTOM:Hydrogen"
+      },
+      {
+        "value": "CUSTOM:EmptyFuelTank"
+      },
+      {
+        "value": "CUSTOM:Hydrogen"
+      },
+      {
+        "value": "CUSTOM:OxygenBottle"
+      },
+      {
+        "value": "CUSTOM:Hydrogen"
+      },
+      {
+        "value": "CUSTOM:OxygenBottle"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ChemicalFuelTank"
+    },
+    "name": "chemical_fuel_tank_recipe",
+    "namespace": "mod"
+  }
+}

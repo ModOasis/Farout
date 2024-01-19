@@ -1,0 +1,10 @@
+{
+  "parent": "farout:custom/planetaryclimateanalyzer",
+  "textures": {
+    "all": "farout:block/analyzer",
+    "particle": "farout:block/analyzer",
+    "0": "farout:block/analyzer",
+    "missing": "farout:block/analyzer"
+  },
+  "render_type": "solid"
+}

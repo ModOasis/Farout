@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:dirt"
+    },
+    "c": {
+      "item": "farout:organic_molecules"
+    },
+    "d": {
+      "item": "farout:copper_wire"
+    },
+    "e": {
+      "item": "farout:low_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:biological_experiment",
+    "count": 1
+  }
+}

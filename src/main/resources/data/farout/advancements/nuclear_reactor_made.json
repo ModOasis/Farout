@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:nuclear_reactor"
+    },
+    "title": {
+      "translate": "advancements.nuclear_reactor_made.title"
+    },
+    "description": {
+      "translate": "advancements.nuclear_reactor_made.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nuclear_reactor_made": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "farout:nuclear_reactor"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:hexuranrecipe",
+      "farout:hexuran_pickaxe_recipe",
+      "farout:hexuran_sword_recipe",
+      "farout:hexuran_axe_recipe",
+      "farout:hexuran_shovel_recipe",
+      "farout:hexuran_hoe_recipe",
+      "farout:deleted_mod_element"
+    ]
+  },
+  "parent": "farout:place_battery"
+}

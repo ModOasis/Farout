@@ -1,0 +1,128 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Lander",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "LanderRoot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 49, -8], "size": [16, 16, 16], "inflate": 9, "uv": [0, 22]},
+						{"origin": [-8, 49, -8], "size": [16, 16, 16], "inflate": 8, "uv": [0, 22]},
+						{"origin": [-10, 75, -10], "size": [20, 2, 20], "inflate": 3, "uv": [0, 0]},
+						{"origin": [17, 54, -3.75], "size": [4, 8, 8], "uv": [43, 61]},
+						{"origin": [-21, 54, -3.75], "size": [4, 8, 8], "pivot": [-19, 58, 0.25], "rotation": [0, 180, 0], "uv": [43, 61]}
+					]
+				},
+				{
+					"name": "FuelTanks",
+					"parent": "LanderRoot",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "FuelTank4",
+					"parent": "FuelTanks",
+					"pivot": [0, 19, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-6, 10, -22], "size": [12, 2, 12], "inflate": 1, "uv": [48, 22]},
+						{"origin": [-6, 37, -22], "size": [12, 2, 12], "inflate": 1, "uv": [52, 42]},
+						{"origin": [-1, 18, -17], "size": [2, 12, 2], "inflate": 7, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "LandingLeg4",
+					"parent": "FuelTank4",
+					"pivot": [0.35648, 15.65193, -25.49776],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.10816, 15, -31.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, -10, -90], "uv": [0, 57]},
+						{"origin": [-1.10816, 15, -21.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, 7.5, -90], "uv": [0, 57]},
+						{"origin": [-1.1671, 40, -28.89927], "size": [3, 7, 7], "uv": [0, 62]},
+						{"origin": [-0.1671, 15, -29.89927], "size": [2, 5, 9], "uv": [20, 62]},
+						{"origin": [-0.1671, 26, -29.89927], "size": [2, 2, 9], "uv": [21, 62]}
+					]
+				},
+				{
+					"name": "FuelTank3",
+					"parent": "FuelTanks",
+					"pivot": [0, 19, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-6, 10, -22], "size": [12, 2, 12], "inflate": 1, "uv": [48, 22]},
+						{"origin": [-6, 37, -22], "size": [12, 2, 12], "inflate": 1, "uv": [52, 42]},
+						{"origin": [-1, 18, -17], "size": [2, 12, 2], "inflate": 7, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "LandingLeg3",
+					"parent": "FuelTank3",
+					"pivot": [0.35648, 15.65193, -25.49776],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.10816, 15, -31.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, -10, -90], "uv": [0, 57]},
+						{"origin": [-1.10816, 15, -21.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, 7.5, -90], "uv": [0, 57]},
+						{"origin": [-1.1671, 40, -28.89927], "size": [3, 7, 7], "uv": [0, 62]},
+						{"origin": [-0.1671, 15, -29.89927], "size": [2, 5, 9], "uv": [20, 62]},
+						{"origin": [-0.1671, 26, -29.89927], "size": [2, 2, 9], "uv": [21, 62]}
+					]
+				},
+				{
+					"name": "FuelTank2",
+					"parent": "FuelTanks",
+					"pivot": [0, 19, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-6, 10, -22], "size": [12, 2, 12], "inflate": 1, "uv": [48, 22]},
+						{"origin": [-6, 37, -22], "size": [12, 2, 12], "inflate": 1, "uv": [52, 42]},
+						{"origin": [-1, 18, -17], "size": [2, 12, 2], "inflate": 7, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "LandingLeg2",
+					"parent": "FuelTank2",
+					"pivot": [0.35648, 15.65193, -25.49776],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.10816, 15, -31.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, -10, -90], "uv": [0, 57]},
+						{"origin": [-1.10816, 15, -21.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, 7.5, -90], "uv": [0, 57]},
+						{"origin": [-1.1671, 40, -28.89927], "size": [3, 7, 7], "uv": [0, 62]},
+						{"origin": [-0.1671, 15, -29.89927], "size": [2, 5, 9], "uv": [20, 62]},
+						{"origin": [-0.1671, 26, -29.89927], "size": [2, 2, 9], "uv": [21, 62]}
+					]
+				},
+				{
+					"name": "FuelTank1",
+					"parent": "FuelTanks",
+					"pivot": [0, 19, 0],
+					"cubes": [
+						{"origin": [-6, 10, -22], "size": [12, 2, 12], "inflate": 1, "uv": [48, 22]},
+						{"origin": [-6, 37, -22], "size": [12, 2, 12], "inflate": 1, "uv": [52, 42]},
+						{"origin": [-1, 18, -17], "size": [2, 12, 2], "inflate": 7, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "LandingLeg1",
+					"parent": "FuelTank1",
+					"pivot": [0.35648, 15.65193, -25.49776],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-1.10816, 15, -31.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, -10, -90], "uv": [0, 57]},
+						{"origin": [-1.10816, 15, -21.89927], "size": [24, 1, 2], "inflate": 1, "pivot": [-0.10816, 16, -25.89927], "rotation": [0, 7.5, -90], "uv": [0, 57]},
+						{"origin": [-1.1671, 40, -28.89927], "size": [3, 7, 7], "uv": [0, 62]},
+						{"origin": [-0.1671, 15, -29.89927], "size": [2, 5, 9], "uv": [20, 62]},
+						{"origin": [-0.1671, 26, -29.89927], "size": [2, 2, 9], "uv": [21, 62]}
+					]
+				}
+			]
+		}
+	]
+}

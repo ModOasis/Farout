@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/airtight_habitat_wall"
+    },
+    "facing=east": {
+      "model": "farout:block/airtight_habitat_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/airtight_habitat_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/airtight_habitat_wall",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "farout:block/airtight_habitat_wall",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "farout:block/airtight_habitat_wall",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 433,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": -2,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 391,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_star_system_viewer",
+          "text": {
+            "fixedValue": "Star System Viewer"
+          },
+          "color": {
+            "value": -54228,
+            "falpha": 0.0
+          },
+          "x": 157,
+          "y": 19
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_zoom_out",
+          "image": "zoom_out.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FormalonZoomOut"
+          },
+          "x": 411,
+          "y": 197
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rejona_zoomed_in",
+          "image": "rejona_zoomed_in.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RejonaTrajectories"
+          },
+          "x": 42,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_melu",
+          "image": "melu.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MeluTrajectories"
+          },
+          "x": 330,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_rejona_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "RejonaReadout"
+          },
+          "width": 72,
+          "height": 71,
+          "x": 42,
+          "y": 79
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_melu_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "MeluReadout"
+          },
+          "width": 42,
+          "height": 43,
+          "x": 329,
+          "y": 96
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

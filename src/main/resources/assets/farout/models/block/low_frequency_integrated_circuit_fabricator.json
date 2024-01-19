@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/blank",
+    "up": "farout:block/low_freq_frab_top",
+    "north": "farout:block/blank",
+    "east": "farout:block/insert_pattern",
+    "south": "farout:block/blank",
+    "west": "farout:block/blank",
+    "particle": "farout:block/blank"
+  },
+  "render_type": "solid"
+}

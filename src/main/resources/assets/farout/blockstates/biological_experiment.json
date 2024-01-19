@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/biological_experiment"
+    },
+    "facing=east": {
+      "model": "farout:block/biological_experiment",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/biological_experiment",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/biological_experiment",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:boracite"
+    }
+  },
+  "result": {
+    "item": "farout:boracite_block",
+    "count": 1
+  }
+}

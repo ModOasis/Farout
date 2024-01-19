@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "farout:block/lumiblossom_planks",
+    "top": "farout:block/lumiblossom_planks",
+    "side": "farout:block/lumiblossom_planks"
+  },
+  "render_type": "solid"
+}

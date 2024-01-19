@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "farout:copper_wire"
+    },
+    "c": {
+      "item": "farout:generator"
+    }
+  },
+  "result": {
+    "item": "farout:geothermal_generator",
+    "count": 1
+  }
+}

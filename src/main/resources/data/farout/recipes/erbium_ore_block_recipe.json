@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:erbium"
+    }
+  },
+  "result": {
+    "item": "farout:erbium_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_fv": 57,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:CrateredShores"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.FLOWING_LAVA</field></block></value><value name=\"border\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.STONE#0</field></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">64</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">256</field></block></value></block></next></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farout:block/lumiblossom_slab"
+    },
+    "type=top": {
+      "model": "farout:block/lumiblossom_slab_top"
+    },
+    "type=double": {
+      "model": "farout:block/lumiblossom_slab_full"
+    }
+  }
+}

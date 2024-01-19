@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farout:block/erbium_ore_block",
+    "particle": "farout:block/erbium_ore_block"
+  },
+  "render_type": "solid"
+}

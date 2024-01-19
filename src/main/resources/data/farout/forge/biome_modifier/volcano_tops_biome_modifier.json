@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:cratered_shores",
+  "features": "farout:volcano_tops",
+  "step": "top_layer_modification"
+}

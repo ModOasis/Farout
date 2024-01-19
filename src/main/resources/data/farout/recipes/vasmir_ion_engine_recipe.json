@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:electro_magnet"
+    },
+    "b": {
+      "item": "farout:pipe"
+    },
+    "c": {
+      "item": "farout:copper_wire"
+    },
+    "d": {
+      "item": "farout:nozzle"
+    },
+    "e": {
+      "item": "farout:aluminium_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:vasmir_ion_engine",
+    "count": 1
+  }
+}

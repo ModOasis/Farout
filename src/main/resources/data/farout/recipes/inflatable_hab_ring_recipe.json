@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "farout:inflatable_segment"
+    },
+    "c": {
+      "item": "farout:motor"
+    }
+  },
+  "result": {
+    "item": "farout:inflatable_hab_ring",
+    "count": 1
+  }
+}

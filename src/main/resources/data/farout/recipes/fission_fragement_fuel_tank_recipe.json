@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:uranium_block"
+    },
+    "b": {
+      "item": "farout:chemical_fuel_tank"
+    }
+  },
+  "result": {
+    "item": "farout:fission_fragment_fuel_tank",
+    "count": 1
+  }
+}

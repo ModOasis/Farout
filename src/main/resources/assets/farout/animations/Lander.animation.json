@@ -1,0 +1,352 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"Animation.Lander.Landing": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3,
+			"bones": {
+				"LandingLeg1": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": {
+							"vector": [90, -2.5, 90]
+						},
+						"0.25": {
+							"vector": [90, -10, 90],
+							"easing": "linear"
+						},
+						"0.6667": {
+							"vector": [90, -10, 90]
+						},
+						"1.125": {
+							"vector": [90, -7, 90],
+							"easing": "easeInSine"
+						},
+						"3.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"LandingLeg2": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -2.5, 90]
+						},
+						"0.25": {
+							"vector": [90, -10, 90],
+							"easing": "linear"
+						},
+						"0.6667": {
+							"vector": [90, -10, 90]
+						},
+						"1.125": {
+							"vector": [90, -7, 90],
+							"easing": "easeInSine"
+						},
+						"3.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"LandingLeg3": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -2.5, 90]
+						},
+						"0.25": {
+							"vector": [90, -10, 90],
+							"easing": "linear"
+						},
+						"0.6667": {
+							"vector": [90, -10, 90]
+						},
+						"1.125": {
+							"vector": [90, -7, 90],
+							"easing": "easeInSine"
+						},
+						"3.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"LandingLeg4": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -2.5, 90]
+						},
+						"0.25": {
+							"vector": [90, -10, 90],
+							"easing": "linear"
+						},
+						"0.6667": {
+							"vector": [90, -10, 90]
+						},
+						"1.125": {
+							"vector": [90, -7, 90],
+							"easing": "easeInSine"
+						},
+						"3.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						}
+					}
+				}
+			}
+		},
+		"Animation.Lander.Liftoff": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 3.04167,
+			"bones": {
+				"LandingLeg1": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": {
+						"0.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						},
+						"0.25": {
+							"vector": [90, -110, 90]
+						},
+						"0.75": {
+							"vector": [90, -110, 90]
+						},
+						"1.5": {
+							"vector": [90, -80, 90],
+							"easing": "easeInSine"
+						},
+						"2.75": {
+							"vector": [90, -10, 90],
+							"easing": "easeOutSine"
+						}
+					}
+				},
+				"LandingLeg2": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						},
+						"0.25": {
+							"vector": [90, -110, 90]
+						},
+						"0.75": {
+							"vector": [90, -110, 90]
+						},
+						"1.5": {
+							"vector": [90, -80, 90],
+							"easing": "easeInSine"
+						},
+						"2.75": {
+							"vector": [90, -10, 90],
+							"easing": "easeOutSine"
+						}
+					}
+				},
+				"LandingLeg3": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						},
+						"0.25": {
+							"vector": [90, -110, 90]
+						},
+						"0.75": {
+							"vector": [90, -110, 90]
+						},
+						"1.5": {
+							"vector": [90, -80, 90],
+							"easing": "easeInSine"
+						},
+						"2.75": {
+							"vector": [90, -10, 90],
+							"easing": "easeOutSine"
+						}
+					}
+				},
+				"LandingLeg4": {
+					"rotation": {
+						"0.0": {
+							"vector": [90, -117.5, 90],
+							"easing": "easeInOutSine"
+						},
+						"0.25": {
+							"vector": [90, -110, 90]
+						},
+						"0.75": {
+							"vector": [90, -110, 90]
+						},
+						"1.5": {
+							"vector": [90, -80, 90],
+							"easing": "easeInSine"
+						},
+						"2.75": {
+							"vector": [90, -10, 90],
+							"easing": "easeOutSine"
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.idle": {
+			"loop": true
+		},
+		"animation.Lander.RotateWest": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.5": {
+							"vector": [0, 0, 15],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateToCenterWest": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 15],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateEast": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.5": {
+							"vector": [0, 0, -15],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateToCenterEast": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, -15],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateNorth": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [15, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateToCenterNorth": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [15, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateSouth": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [15, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"animation.Lander.RotateToCenterSouth": {
+			"animation_length": 2.5,
+			"bones": {
+				"LanderRoot": {
+					"rotation": {
+						"0.0": {
+							"vector": [15, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						},
+						"2.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInElastic",
+							"easingArgs": [2]
+						}
+					}
+				}
+			}
+		},
+		"Animation.Lander.new": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

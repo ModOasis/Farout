@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:limestone_dust"
+    }
+  },
+  "result": {
+    "item": "farout:limestone_block",
+    "count": 1
+  }
+}

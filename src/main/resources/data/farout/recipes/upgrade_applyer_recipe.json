@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "farout:embededcomputer"
+    },
+    "c": {
+      "item": "minecraft:piston"
+    },
+    "d": {
+      "item": "farout:deleted_mod_element"
+    },
+    "e": {
+      "item": "farout:truss"
+    }
+  },
+  "result": {
+    "item": "farout:deleted_mod_element",
+    "count": 1
+  }
+}

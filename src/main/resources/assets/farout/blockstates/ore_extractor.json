@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/ore_extractor"
+    },
+    "facing=east": {
+      "model": "farout:block/ore_extractor",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/ore_extractor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/ore_extractor",
+      "y": 270
+    }
+  }
+}

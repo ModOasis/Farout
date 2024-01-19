@@ -1,0 +1,33 @@
+{
+  "_fv": 57,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "First step",
+    "achievementDescription": "You landed on etauos, and were not violently killed!",
+    "achievementIcon": {
+      "value": "CUSTOM:SmallAtmosphericLander"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "SolidCoreNuclearThermalRocketRecipe",
+      "LiquidHydrogenFuelTankRecipe",
+      "InflatableHabitatRecipe",
+      "InflatableModuleRecipe",
+      "NuclearReactorRecipe",
+      "AdvancedCommandDiskRecipe",
+      "GalacticCoreTrackerRecipe"
+    ],
+    "rewardFunction": "GiveEtauianLog",
+    "rewardXP": 0,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:NozzleCrafted"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"19\" y=\"104\"><field name=\"dimension\">CUSTOM:Etauos</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

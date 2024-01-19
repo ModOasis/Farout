@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:rhenium_ingot"
+    },
+    {
+      "item": "farout:chemicals"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "farout:super_alloy_ingot",
+    "count": 3
+  }
+}

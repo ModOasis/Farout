@@ -1,0 +1,7 @@
+{
+  "_fv": 57,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"AccY\" type=\"Number\">AccY</variable><variable id=\"AccX\" type=\"Number\">AccX</variable><variable id=\"AccNormal\" type=\"Number\">AccNormal</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"33\" y=\"-40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"world_send_chat\"><value name=\"text\"><block type=\"text_join\"><mutation items=\"4\"/><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\"> Delta V:</field></block></value><value name=\"ADD1\"><block type=\"entity_nbt_num_get\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">Delta-V</field></block></value></block></value><value name=\"ADD2\"><block type=\"text\"><field name=\"TEXT\"> Orbit Capable:</field></block></value><value name=\"ADD3\"><block type=\"entity_nbt_logic_get\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"tagName\"><block type=\"text\"><field name=\"TEXT\">OrbitCapable</field></block></value></block></value></block></value></block></next></block></xml>"
+  }
+}

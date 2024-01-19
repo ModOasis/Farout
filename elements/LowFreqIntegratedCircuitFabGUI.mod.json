@@ -1,0 +1,139 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 208,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 168,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "low_frequency_integrated_circuit_photomask.png",
+          "use1Xscale": true,
+          "x": 169,
+          "y": 63
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0000.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ProcessingOff"
+          },
+          "x": 204,
+          "y": 73
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 261,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0001.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Processing1"
+          },
+          "x": 204,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0002.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Processing2"
+          },
+          "x": 204,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0003.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Processing3"
+          },
+          "x": 204,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "0004.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Processing4"
+          },
+          "x": 204,
+          "y": 73
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

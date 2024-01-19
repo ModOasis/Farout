@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:chemicals"
+    },
+    "title": {
+      "translate": "advancements.chemical_engineer.title"
+    },
+    "description": {
+      "translate": "advancements.chemical_engineer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "chemical_engineer": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:chemical_reactor"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:chemical_rocket_recipe",
+      "farout:electrolyzer_recipe"
+    ]
+  },
+  "parent": "farout:microchip_crafted"
+}

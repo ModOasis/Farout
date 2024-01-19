@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "farout:lander",
+    "farout:launch_vehicle"
+  ]
+}

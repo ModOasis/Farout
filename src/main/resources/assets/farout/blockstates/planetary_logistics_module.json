@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/planetary_logistics_module"
+    },
+    "facing=east": {
+      "model": "farout:block/planetary_logistics_module",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/planetary_logistics_module",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/planetary_logistics_module",
+      "y": 270
+    }
+  }
+}

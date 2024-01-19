@@ -1,0 +1,271 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 424,
+    "height": 300,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": ">",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PageAdvance"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 411,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_crashed_on_an_alien_world_wi",
+          "text": {
+            "fixedValue": "day 1: I crashed on an alien world with green skies and purple plant life. "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_made_a_pickaxe_using_a_long",
+          "text": {
+            "fixedValue": "I made a pickaxe using a long, sharpened stone and a stick. This world has a"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lot_of_raw_materials_like_spodu",
+          "text": {
+            "fixedValue": "lot of raw materials, like spodumene, and iron, so I collected some materials,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_watched_the_sun_go_down_and",
+          "text": {
+            "fixedValue": "and watched the sun go down, for the planet’s habitable moon to reveal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_itself_as_the_stars_shimmered",
+          "text": {
+            "fixedValue": "itself. As the stars shimmered, I noticed something odd. First, there were a"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lot_of_stars_in_the_sky_you_cou",
+          "text": {
+            "fixedValue": "lot of stars in the sky, you could see at least 10,000 of them. Secondly,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_milky_way_galaxy_in_its_enti",
+          "text": {
+            "fixedValue": "the milky way galaxy in its entirety, a small spiral of gas in the sky. "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_must_be_in_a_globular_cluster",
+          "text": {
+            "fixedValue": "I must be in a globular cluster, far away from the milky way."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_day_2_i_woke_up_and_got_to_work",
+          "text": {
+            "fixedValue": "Day 2: I woke up and got to work. First, I did a bit more mining for iron, "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 6,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_i_placed_the_raw_iron_into_a",
+          "text": {
+            "fixedValue": "and I placed the raw iron into a furnace I built. Then, I then made a sterling"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nobody_is_coming_here_anytime_so",
+          "text": {
+            "fixedValue": "generator. Nobody is coming here anytime soon, so I better make myself"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_escape_pod_is_running_out_of_pow",
+          "text": {
+            "fixedValue": "comfortable. There is a lava pool nearby, so I placed the generator there,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_generator_there_and_hooked_it_u",
+          "text": {
+            "fixedValue": "and hooked it up to my escape pod. I also need to extract the materials"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_materials_from_the_raw_ores_i_co",
+          "text": {
+            "fixedValue": "from the raw ores I collected, so I made a chemical reactor, and put the ores"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_minerals_in_it_to_separate",
+          "text": {
+            "fixedValue": "in there to separate. "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 15,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sandos.png",
+          "use1Xscale": true,
+          "x": 6,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

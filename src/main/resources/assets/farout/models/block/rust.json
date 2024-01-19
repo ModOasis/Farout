@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/rust",
+    "up": "farout:block/rust",
+    "north": "farout:block/rust",
+    "east": "farout:block/rust",
+    "south": "farout:block/rust",
+    "west": "farout:block/rust",
+    "particle": "farout:block/rust"
+  },
+  "render_type": "solid"
+}

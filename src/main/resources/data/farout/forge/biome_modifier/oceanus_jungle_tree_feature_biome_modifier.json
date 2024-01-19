@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "farout:sunny_islands",
+    "farout:warm_oceans"
+  ],
+  "features": "farout:oceanus_jungle_tree_feature",
+  "step": "surface_structures"
+}

@@ -1,0 +1,13 @@
+{
+  "_fv": 57,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DryPlains"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_block_pile\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:SaltBlock</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"><comment pinned=\"false\" h=\"83\" w=\"182\">We then move each patch horizontally. This way they don't generate only in the corner of the chunk</comment><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><comment pinned=\"false\" h=\"92\" w=\"165\">We then move the patches at the highest motion blocking block, so that they generate on the surface</comment></block></next></block></next></block></next></block></xml>"
+  }
+}

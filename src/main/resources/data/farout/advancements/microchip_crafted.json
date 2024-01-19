@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:biomass_burner"
+    },
+    "title": {
+      "translate": "advancements.microchip_crafted.title"
+    },
+    "description": {
+      "translate": "advancements.microchip_crafted.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "microchip_crafted": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:chemical_reactor_recipe",
+      "farout:low_frequency_integrated_circuit_fabricator_recipe",
+      "farout:batterycraft",
+      "farout:unetched_silicon_wafer_recipe"
+    ]
+  },
+  "parent": "farout:supplies_intact"
+}

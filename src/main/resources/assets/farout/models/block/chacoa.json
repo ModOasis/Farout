@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/chacoa",
+    "up": "farout:block/chacoa",
+    "north": "farout:block/chacoa",
+    "east": "farout:block/chacoa",
+    "south": "farout:block/chacoa",
+    "west": "farout:block/chacoa",
+    "particle": "farout:block/chacoa"
+  },
+  "render_type": "solid"
+}

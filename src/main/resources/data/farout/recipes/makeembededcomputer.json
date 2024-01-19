@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:medium_capacity_memory"
+    },
+    {
+      "item": "farout:medium_frequency_integrated_circuit"
+    }
+  ],
+  "result": {
+    "item": "farout:embededcomputer",
+    "count": 1
+  }
+}

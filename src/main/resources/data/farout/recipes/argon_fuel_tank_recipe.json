@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:argon"
+    },
+    {
+      "item": "farout:empty_fuel_tank"
+    }
+  ],
+  "result": {
+    "item": "farout:argon_fuel_tank",
+    "count": 1
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fgf"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:motor"
+    },
+    "b": {
+      "item": "minecraft:quartz"
+    },
+    "c": {
+      "item": "farout:atmospheric_analyzer"
+    },
+    "d": {
+      "item": "minecraft:iron_ingot"
+    },
+    "e": {
+      "item": "farout:medium_capacity_memory"
+    },
+    "f": {
+      "item": "farout:copper_wire"
+    },
+    "g": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:planetary_climate_analyzer",
+    "count": 1
+  }
+}

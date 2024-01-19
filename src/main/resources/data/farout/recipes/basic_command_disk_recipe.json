@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "dbe"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "farout:inertial_navigation_system"
+    },
+    "d": {
+      "item": "farout:low_frequency_integrated_circuit"
+    },
+    "e": {
+      "item": "farout:low_capacity_memory"
+    }
+  },
+  "result": {
+    "item": "farout:basic_command_disk",
+    "count": 1
+  }
+}

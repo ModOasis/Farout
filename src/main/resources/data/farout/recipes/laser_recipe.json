@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "farout:copper_wire"
+    },
+    "c": {
+      "tag": "forge:dyes"
+    },
+    "d": {
+      "item": "minecraft:tinted_glass"
+    }
+  },
+  "result": {
+    "item": "farout:laser",
+    "count": 1
+  }
+}

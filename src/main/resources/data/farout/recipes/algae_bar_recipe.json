@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:dried_chlorella"
+    }
+  },
+  "result": {
+    "item": "farout:algae_bar",
+    "count": 1
+  }
+}

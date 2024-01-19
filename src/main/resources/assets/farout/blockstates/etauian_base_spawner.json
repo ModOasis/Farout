@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farout:block/etauian_base_spawner"
+    }
+  }
+}

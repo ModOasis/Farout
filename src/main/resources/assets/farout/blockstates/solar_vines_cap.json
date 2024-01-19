@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "farout:block/solar_vines_cap"
+    },
+    "powered=true": {
+      "model": "farout:block/solar_vines_cap_down"
+    }
+  }
+}

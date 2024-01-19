@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "b b",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "farout:aluminium_ingot"
+    },
+    "c": {
+      "item": "farout:motor"
+    },
+    "d": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:lander_bay",
+    "count": 1
+  }
+}

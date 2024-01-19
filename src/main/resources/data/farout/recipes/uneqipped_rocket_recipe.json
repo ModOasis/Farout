@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "3": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "4": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "5": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "6": {
+      "item": "farout:chemical_rocket_engine"
+    },
+    "7": {
+      "item": "farout:chemical_rocket_engine"
+    },
+    "8": {
+      "item": "farout:chemical_rocket_engine"
+    }
+  },
+  "result": {
+    "item": "farout:unequipped_rocket",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "texture": "farout:block/solar_vines_cap"
+  },
+  "render_type": "solid"
+}

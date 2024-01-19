@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:chemical_rocket_engine"
+    },
+    "title": {
+      "translate": "advancements.nozzle_crafted.title"
+    },
+    "description": {
+      "translate": "advancements.nozzle_crafted.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nozzle_crafted": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:chemical_rocket_engine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:basic_hab_module_recipe",
+      "farout:empty_fuel_tank_recipe",
+      "farout:chemical_fuel_tank_recipe",
+      "farout:chemical_rocket_recipe",
+      "farout:basic_command_disk_recipe",
+      "farout:fairing_craft",
+      "farout:fairing_segments_craft",
+      "farout:rocket_recipe",
+      "farout:small_atmospheric_lander_recipe"
+    ]
+  },
+  "parent": "farout:chemical_engineer"
+}

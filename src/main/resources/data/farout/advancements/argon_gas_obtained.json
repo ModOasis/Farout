@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:argon"
+    },
+    "title": {
+      "translate": "advancements.argon_gas_obtained.title"
+    },
+    "description": {
+      "translate": "advancements.argon_gas_obtained.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "argon_gas_obtained": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:argon"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:vasmir_ion_engine_recipe"
+    ]
+  },
+  "parent": "farout:nuclear_reactor_made"
+}

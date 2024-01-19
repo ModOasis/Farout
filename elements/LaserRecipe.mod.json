@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ironplate"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "Items.DYE"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.TINTED_GLASS"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Laser"
+    },
+    "name": "laser_recipe",
+    "namespace": "mod"
+  }
+}

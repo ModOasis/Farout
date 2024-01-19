@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="GNU General Public License version 3 (GPLv3)"
+
+[[mods]]
+modId="farout"
+version="0.12"
+displayName="Farout"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/far-out"
+logoFile="logo.png"
+credits="Made By BetaStar9108."
+authors="BetaStar9108"
+description="Adrift in the cosmic expanse so wide, I wander, lost, with no place to reside. Among twinkling stars, I yearn to roam, To find my way back and return to my home.  In the celestial sea, I search for a guide, Through nebulous clouds, my hopes collide. Memories of home, like constellations, shine, Guiding me through darkness, a beacon divine.  Amidst the vastness, I sail, resolute and bold, Chasing starlight, my heart's desire untold. For in that cherished place, love will bestow, And in the embrace of home, I'll finally know."
+
+[[dependencies.farout]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.farout]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2.0]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.farout]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

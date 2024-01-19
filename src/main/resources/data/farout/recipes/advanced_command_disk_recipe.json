@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aea"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:galactic_core_tracker"
+    },
+    "b": {
+      "item": "farout:medium_capacity_memory"
+    },
+    "c": {
+      "item": "farout:copper_wire"
+    },
+    "d": {
+      "item": "farout:inertial_navigation_system"
+    },
+    "e": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:advanced_command_disk",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/cargopodblock",
+  "textures": {
+    "all": "farout:block/cargopodblocktex",
+    "particle": "farout:block/cargopodblocktex",
+    "0": "farout:block/cargopodblocktex"
+  },
+  "render_type": "solid"
+}

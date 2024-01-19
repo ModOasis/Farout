@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:boron_block"
+    }
+  ],
+  "result": {
+    "item": "farout:boron_ingot",
+    "count": 9
+  }
+}

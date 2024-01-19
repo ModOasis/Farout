@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:chemical_fuel_tank"
+    },
+    "b": {
+      "item": "farout:chemical_rocket_engine"
+    }
+  },
+  "result": {
+    "item": "farout:unequipped_rocket",
+    "count": 1
+  }
+}

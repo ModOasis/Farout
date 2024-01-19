@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:electro_magnet"
+    },
+    "b": {
+      "item": "farout:pipe"
+    },
+    "c": {
+      "item": "farout:super_alloy_ingot"
+    },
+    "d": {
+      "item": "farout:uranium_ingot"
+    },
+    "e": {
+      "item": "farout:radiator"
+    },
+    "f": {
+      "item": "farout:nozzle"
+    }
+  },
+  "result": {
+    "item": "farout:open_core_nuclear_thermal_rocket",
+    "count": 1
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 433,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": -1,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 196,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 393,
+          "y": 17
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_star_system_viewer",
+          "text": {
+            "fixedValue": "Star System Viewer"
+          },
+          "color": {
+            "value": -54228,
+            "falpha": 0.0
+          },
+          "x": 157,
+          "y": 19
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_zoom_out",
+          "image": "zoom_out.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FormalonZoomOut"
+          },
+          "x": 411,
+          "y": 197
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_1712134285",
+          "image": "fixedglitch.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OraxTrajectories"
+          },
+          "x": 6,
+          "y": 25
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fixed_glitch_moon.png",
+          "use1Xscale": false,
+          "x": 258,
+          "y": 105
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_orax_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "OraxReadout"
+          },
+          "width": 108,
+          "height": 109,
+          "x": 48,
+          "y": 69
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_zev_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "ZevReadout"
+          },
+          "width": 53,
+          "height": 52,
+          "x": 256,
+          "y": 104
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

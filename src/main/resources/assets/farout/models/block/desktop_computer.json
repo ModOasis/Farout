@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/blank",
+    "up": "farout:block/blank",
+    "north": "farout:block/computerscreen",
+    "east": "farout:block/blank",
+    "south": "farout:block/dc1",
+    "west": "farout:block/connectors",
+    "particle": "farout:block/blank"
+  },
+  "render_type": "solid"
+}

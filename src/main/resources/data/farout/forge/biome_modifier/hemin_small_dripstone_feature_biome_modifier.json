@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:ancient_plains",
+  "features": "farout:hemin_small_dripstone_feature",
+  "step": "surface_structures"
+}

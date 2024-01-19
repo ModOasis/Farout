@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/fungus_cap",
+    "up": "farout:block/fungus_cap",
+    "north": "farout:block/fungus_cap",
+    "east": "farout:block/fungus_cap",
+    "south": "farout:block/fungus_cap",
+    "west": "farout:block/fungus_cap",
+    "particle": "farout:block/fungus_cap"
+  },
+  "render_type": "solid"
+}

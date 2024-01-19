@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:low_frequency_integrated_circuit"
+    },
+    "b": {
+      "item": "minecraft:compass"
+    },
+    "c": {
+      "item": "farout:low_capacity_memory"
+    },
+    "d": {
+      "item": "farout:copper_wire"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:energy_meter",
+    "count": 1
+  }
+}

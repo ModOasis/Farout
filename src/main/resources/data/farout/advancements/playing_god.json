@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:meat_protein_gene"
+    },
+    "title": {
+      "translate": "advancements.playing_god.title"
+    },
+    "description": {
+      "translate": "advancements.playing_god.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "playing_god": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:chemical_engineer"
+}

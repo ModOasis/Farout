@@ -1,0 +1,128 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 208,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "x": 195,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_integrated_circuit_fabricator",
+          "text": {
+            "fixedValue": "Integrated Circuit Fabricator"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_medium_capacity_memory",
+          "image": "medium_capacity_memory.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MedCapChipFab"
+          },
+          "x": 177,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mf_chip",
+          "image": "mf_chip.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MedFreqChipFab"
+          },
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_inertialnavigationsystem",
+          "image": "inertialnavigationsystem.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "InertialNavagationSystemFab"
+          },
+          "x": 213,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_photovoltaicwafer",
+          "image": "photovoltaicwafer.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "PhotovoltaicPanelFab"
+          },
+          "x": 231,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

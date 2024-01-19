@@ -1,0 +1,17 @@
+{
+  "type": "farout:etauosian_base_feature",
+  "config": {
+    "structure": "farout:empty",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": [
+      "minecraft:structure_block",
+      "minecraft:air"
+    ],
+    "offset": [
+      0,
+      -2,
+      0
+    ]
+  }
+}

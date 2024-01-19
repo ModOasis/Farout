@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:muddy_hills",
+  "features": "farout:spooky_towers",
+  "step": "surface_structures"
+}

@@ -1,0 +1,194 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 433,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": -1,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 17
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sandos.png",
+          "use1Xscale": false,
+          "x": -58,
+          "y": 59
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_proxmaipixel1",
+          "image": "proxmaipixel.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenedProxmai"
+          },
+          "x": 69,
+          "y": 87
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_oceanus",
+          "image": "oceanus.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OceanusTrajectories"
+          },
+          "x": 114,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space_background.png",
+          "use1Xscale": false,
+          "x": 393,
+          "y": 17
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_etauipixel",
+          "image": "etauipixel.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenedEtaui"
+          },
+          "x": 194,
+          "y": 86
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_infinatos",
+          "image": "infinatos.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "InfinatosTrajectories"
+          },
+          "x": 393,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_star_system_viewer",
+          "text": {
+            "fixedValue": "Star System Viewer"
+          },
+          "color": {
+            "value": -54228,
+            "falpha": 0.0
+          },
+          "x": 157,
+          "y": 19
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_massivo_zoomed_up",
+          "image": "massivo_zoomed_up.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenedMassivo"
+          },
+          "x": 222,
+          "y": 17
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_etaui_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "EtauiReadout"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 212,
+          "y": 105
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_oceanus_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "OceanusReadout"
+          },
+          "width": 36,
+          "height": 36,
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_proxmai_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "ProxmaiReadout"
+          },
+          "width": 45,
+          "height": 45,
+          "x": 78,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_infinatos_readout",
+          "text": {
+            "fixedValue": "",
+            "name": "InfinatosReadout"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 393,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}
