@@ -123,7 +123,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.MEAT_PROTEIN_GENE.get());
 				tabData.accept(FaroutModItems.OXYGEN_BOTTLE.get());
 				tabData.accept(FaroutModItems.LIQUID_CRYSTAL.get());
-				tabData.accept(FaroutModBlocks.PLANETARY_CLIMATE_ANALYZER.get().asItem());
 				tabData.accept(FaroutModItems.ATMOSPHERIC_ANALYZER.get());
 				tabData.accept(FaroutModItems.DRY_WATER_BUCKET.get());
 			})
@@ -165,7 +164,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.GRAPHITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.SILICON_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.PLANETARY_LOGISTICS_MODULE.get().asItem());
 			tabData.accept(FaroutModBlocks.CESIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.BIO_PLASTIC_WINDOW.get().asItem());
 			tabData.accept(FaroutModBlocks.ZEOLITE_ORE.get().asItem());
@@ -285,6 +283,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.SPODUMENE.get());
 			tabData.accept(FaroutModItems.DRIED_CHLORELLA.get());
 			tabData.accept(FaroutModItems.SALT_DUST.get());
+			tabData.accept(FaroutModItems.URANIUM_CARBIDE.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

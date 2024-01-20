@@ -10,43 +10,11 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
-      "value": ""
-    },
     "smeltingInputStack": {
-      "value": "CUSTOM:CoffiniteOre"
+      "value": "CUSTOM:Coffinite"
     },
     "smeltingReturnStack": {
-      "value": "CUSTOM:Coffinite"
+      "value": "CUSTOM:UraniumCarbide"
     },
     "name": "coffinite_ore_smelting",
     "namespace": "mod"

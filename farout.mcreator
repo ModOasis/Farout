@@ -4071,92 +4071,6 @@
       }
     },
     {
-      "name": "PlanetaryLogisticsGUIWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 551,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_logistics_gui_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PlanetaryLogisticsGUIWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PlanetaryLogisticsGUI",
-      "type": "gui",
-      "sortid": 551,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_logistics_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/PlanetaryLogisticsGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/network/PlanetaryLogisticsGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/client/gui/PlanetaryLogisticsGUIScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "PlanetaryLogisticsModuleOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 552,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_logistics_module_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PlanetaryLogisticsModuleOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PlanetaryLogisticsModule",
-      "type": "block",
-      "sortid": 551,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_logistics_module",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/PlanetaryLogisticsModuleBlockEntity.java",
-          "src/main/resources/assets/farout/models/item/planetary_logistics_module.json",
-          "src/main/java/net/mcreator/far_out/block/PlanetaryLogisticsModuleBlock.java",
-          "src/main/resources/assets/farout/models/block/planetary_logistics_module.json",
-          "src/main/resources/assets/farout/blockstates/planetary_logistics_module.json"
-        ]
-      }
-    },
-    {
       "name": "ServerRackRecipe",
       "type": "recipe",
       "sortid": 553,
@@ -12813,53 +12727,6 @@
       }
     },
     {
-      "name": "PlanetaryClimateAnalyzer",
-      "type": "block",
-      "sortid": 1256,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_climate_analyzer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/planetary_climate_analyzer.json",
-          "src/main/resources/assets/farout/models/item/planetary_climate_analyzer.json",
-          "src/main/resources/assets/farout/blockstates/planetary_climate_analyzer.json",
-          "src/main/java/net/mcreator/far_out/block/PlanetaryClimateAnalyzerBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "PlanetaryClimateAnalyzerUpdateTick",
-      "type": "procedure",
-      "sortid": 1257,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_climate_analyzer_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PlanetaryClimateAnalyzerUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "ScienceValue",
       "type": "procedure",
       "sortid": 1258,
@@ -12965,19 +12832,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/atmospheric_analyzer_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "PlanetaryClimateAnalyzerRecipe",
-      "type": "recipe",
-      "sortid": 1264,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "planetary_climate_analyzer_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/planetary_climate_analyzer_recipe.json"
         ]
       }
     },
@@ -15205,26 +15059,6 @@
       "path": "~/SkyEffects"
     },
     {
-      "name": "LanderPlayReturnedAnimation",
-      "type": "procedure",
-      "sortid": 1399,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lander_play_returned_animation",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LanderPlayReturnedAnimationProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Respawn",
       "type": "procedure",
       "sortid": 1400,
@@ -15560,6 +15394,20 @@
           "src/main/java/net/mcreator/far_out/entity/LanderEntity.java",
           "src/main/java/net/mcreator/far_out/entity/model/LanderModel.java",
           "src/main/resources/data/farout/forge/biome_modifier/lander_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "UraniumCarbide",
+      "type": "item",
+      "sortid": 1421,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_carbide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/UraniumCarbideItem.java",
+          "src/main/resources/assets/farout/models/item/uranium_carbide.json"
         ]
       }
     }
@@ -16240,8 +16088,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "advancements.place_battery.title": "High Voltage",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
@@ -16526,7 +16374,6 @@
       "block.farout.lumiblossom_fence": "Lumiblossom Fence",
       "block.farout.lumiblossom_button": "Lumiblossom Button",
       "gui.distant_frontiers.nuclear_reactor_gui.label_nuclear_reactor": "Nuclear Reactor",
-      "block.farout.planetary_climate_analyzer": "Planetary Climate Analyzer",
       "biome.no.ethanol_oceans": "Ethanol Oceans",
       "item.no.massvio": "Massvio Portal Igniter",
       "item.distant_frontiers.space_suit_boots": "Space Suit Boots",
@@ -16921,7 +16768,6 @@
       "gui.farout.centrifugalseparator_gui.label_centrifugal_separator": "centrifugal separator",
       "biome.farout.volcanic_isles": "Volcanic Isles",
       "item.distant_frontiers.lithium_hydride": "Lithium Hydride",
-      "block.farout.planetary_logistics_module": "Planetary Logistics Module",
       "item.farout.super_alloy_shovel": "Super Alloy Shovel",
       "block.farout.fungus_fence": "Fungus Fence",
       "key.farout.launch": "Launch",
@@ -17400,7 +17246,6 @@
       "item.far_out.boron_ingot": "Boron ingot",
       "item.far_out.ammonia": "Ammonia",
       "gui.distant_frontiers.etauos_gui.label_orbital_speed_311_kms": "orbital speed: 3.11 km/s",
-      "gui.farout.planetary_logistics_gui.button_store": "Store",
       "item.far_out.sky_hydrozoan_spawn_egg": "Sky Hydrozoan Spawn Egg",
       "gui.distant_frontiers.rocket_dest_selector.button_silican": "Silican",
       "item_group.farout.nuclear_fusion": "Nuclear Fusion",
@@ -17556,6 +17401,7 @@
       "item.far_out.microchip": "Microchip",
       "block.far_out.tundra_fungus_button": "Tundra Fungus Button",
       "gui.farout.page_1.label_the_milky_way_galaxy_in_its_enti": "the milky way galaxy in its entirety, a small spiral of gas in the sky. ",
+      "item.farout.uranium_carbide": "Uranium Carbide",
       "item.distant_frontiers.plutonium_ingot": "Plutonium",
       "item.farout.empty_fuel_tank": "Empty Fuel Tank",
       "item.far_out.chemical_rocket_engine": "Chemical Rocket Engine",
@@ -17685,7 +17531,6 @@
       "block.distant_frontiers.lithium_ore": "Lithium Ore",
       "item.farout.carborundum_ingot": "Carborundum",
       "item.distant_frontiers.sulfur_filter": "Centrifugal Sulfur Filter",
-      "gui.farout.planetary_logistics_gui.label_planetary_logistics": "Planetary Logistics",
       "item.farout.hexuran_hoe": "Hexuran Hoe",
       "item.farout.lithium_deuteride": "Lithium Deuteride",
       "fluid.no.helium_3": "Helium 3",

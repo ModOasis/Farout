@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
-import net.mcreator.far_out.block.entity.PlanetaryLogisticsModuleBlockEntity;
 import net.mcreator.far_out.block.entity.OreExtractorBlockEntity;
 import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
 import net.mcreator.far_out.block.entity.LowFrequencyIntegratedCircuitFabricatorBlockEntity;
@@ -48,7 +47,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CHACOA = register("chacoa", FaroutModBlocks.CHACOA, ChacoaBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHACOAVINES = register("chacoavines", FaroutModBlocks.CHACOAVINES, ChacoavinesBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> AILEN_MOSS = register("ailen_moss", FaroutModBlocks.AILEN_MOSS, AilenMossBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> PLANETARY_LOGISTICS_MODULE = register("planetary_logistics_module", FaroutModBlocks.PLANETARY_LOGISTICS_MODULE, PlanetaryLogisticsModuleBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INTEGRATED_CIRCUIT_FABRICATOR = register("integrated_circuit_fabricator", FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR, IntegratedCircuitFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHEMICAL_REACTOR = register("chemical_reactor", FaroutModBlocks.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR = register("low_frequency_integrated_circuit_fabricator", FaroutModBlocks.LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR,

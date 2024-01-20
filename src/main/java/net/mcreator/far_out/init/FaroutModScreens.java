@@ -23,7 +23,6 @@ import net.mcreator.far_out.client.gui.RejonaMapScreen;
 import net.mcreator.far_out.client.gui.RegolithSifterGUIScreen;
 import net.mcreator.far_out.client.gui.RadioReciverGUIScreen;
 import net.mcreator.far_out.client.gui.ProxmaiMapScreen;
-import net.mcreator.far_out.client.gui.PlanetaryLogisticsGUIScreen;
 import net.mcreator.far_out.client.gui.Page3Screen;
 import net.mcreator.far_out.client.gui.Page2Screen;
 import net.mcreator.far_out.client.gui.Page1Screen;
@@ -76,7 +75,6 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.AIR_PURIFIER_GUI.get(), AirPurifierGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.ELECTROLYZER_GUI.get(), ElectrolyzerGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.UPGRADE_APPLYER_GUI.get(), UpgradeApplyerGUIScreen::new);
-			MenuScreens.register(FaroutModMenus.PLANETARY_LOGISTICS_GUI.get(), PlanetaryLogisticsGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.GENETIC_SEQUENCER.get(), GeneticSequencerScreen::new);
 			MenuScreens.register(FaroutModMenus.STARTING_LANDER_GUI.get(), StartingLanderGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.CRYSTAL_DRIVE_GUI.get(), CrystalDriveGUIScreen::new);

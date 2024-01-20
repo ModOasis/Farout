@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "coffinite",
+    "texture": "uranium_carbide",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Coffinite",
+    "name": "Uranium Carbide",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MATERIALS"
@@ -28,7 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Raw coffinite. Smelting it yelds uranium carbide, a important nuclear material."
+        "Processed coffinite. This can be used as fuel for nuclear reactors, or as a part of nuclear rockets."
       ]
     },
     "glowCondition": {

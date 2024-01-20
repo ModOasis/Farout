@@ -41,8 +41,6 @@ import net.mcreator.far_out.block.RheniumBlockBlock;
 import net.mcreator.far_out.block.RedTorcherBlock;
 import net.mcreator.far_out.block.QuartzOreBlock;
 import net.mcreator.far_out.block.Potassium_nitrateBlockBlock;
-import net.mcreator.far_out.block.PlanetaryLogisticsModuleBlock;
-import net.mcreator.far_out.block.PlanetaryClimateAnalyzerBlock;
 import net.mcreator.far_out.block.OsmiumBlockBlock;
 import net.mcreator.far_out.block.OreExtractorBlock;
 import net.mcreator.far_out.block.NuclearReactorBlock;
@@ -161,7 +159,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> AILEN_MOSS = REGISTRY.register("ailen_moss", () -> new AilenMossBlock());
 	public static final RegistryObject<Block> FUNGUS_FENCE_GATE = REGISTRY.register("fungus_fence_gate", () -> new FungusFenceGateBlock());
 	public static final RegistryObject<Block> FUNGUS_PRESSURE_PLATE = REGISTRY.register("fungus_pressure_plate", () -> new FungusPressurePlateBlock());
-	public static final RegistryObject<Block> PLANETARY_LOGISTICS_MODULE = REGISTRY.register("planetary_logistics_module", () -> new PlanetaryLogisticsModuleBlock());
 	public static final RegistryObject<Block> CESIUM_BLOCK = REGISTRY.register("cesium_block", () -> new CesiumBlockBlock());
 	public static final RegistryObject<Block> GEOTHERMAL_GENERATOR = REGISTRY.register("geothermal_generator", () -> new GeothermalGeneratorBlock());
 	public static final RegistryObject<Block> ALIEN_REEDS = REGISTRY.register("alien_reeds", () -> new AlienReedsBlock());
@@ -217,7 +214,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> YELLOW_TORCHER = REGISTRY.register("yellow_torcher", () -> new YellowTorcherBlock());
 	public static final RegistryObject<Block> BLUE_TORCHER = REGISTRY.register("blue_torcher", () -> new BlueTorcherBlock());
 	public static final RegistryObject<Block> CHLORELLA_CULTURE = REGISTRY.register("chlorella_culture", () -> new ChlorellaCultureBlock());
-	public static final RegistryObject<Block> PLANETARY_CLIMATE_ANALYZER = REGISTRY.register("planetary_climate_analyzer", () -> new PlanetaryClimateAnalyzerBlock());
 	public static final RegistryObject<Block> CRYSTALITE_SOIL = REGISTRY.register("crystalite_soil", () -> new CrystaliteSoilBlock());
 	public static final RegistryObject<Block> DRY_WATER = REGISTRY.register("dry_water", () -> new DryWaterBlock());
 	public static final RegistryObject<Block> ETAUIAN_BASE_SPAWNER = REGISTRY.register("etauian_base_spawner", () -> new EtauianBaseSpawnerBlock());

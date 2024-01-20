@@ -19,6 +19,7 @@ import net.mcreator.far_out.item.VodkaItem;
 import net.mcreator.far_out.item.VasmirIonEngineItem;
 import net.mcreator.far_out.item.UraniumIngotItem;
 import net.mcreator.far_out.item.UraniumDustItem;
+import net.mcreator.far_out.item.UraniumCarbideItem;
 import net.mcreator.far_out.item.UnmannedPayloadItem;
 import net.mcreator.far_out.item.UnetchedSiliconWaferItem;
 import net.mcreator.far_out.item.UnetchedGrapheneWaferItem;
@@ -261,7 +262,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> METALLIC_HYDROGEN_ENGINE = REGISTRY.register("metallic_hydrogen_engine", () -> new MetallicHydrogenEngineItem());
 	public static final RegistryObject<Item> VASMIR_ION_ENGINE = REGISTRY.register("vasmir_ion_engine", () -> new VasmirIonEngineItem());
 	public static final RegistryObject<Item> NUCLEAR_SALT_WATER_ROCKET = REGISTRY.register("nuclear_salt_water_rocket", () -> new NuclearSaltWaterRocketItem());
-	public static final RegistryObject<Item> PLANETARY_LOGISTICS_MODULE = block(FaroutModBlocks.PLANETARY_LOGISTICS_MODULE);
 	public static final RegistryObject<Item> NOZZLE = REGISTRY.register("nozzle", () -> new NozzleItem());
 	public static final RegistryObject<Item> AIRTIGHT_FABRIC = REGISTRY.register("airtight_fabric", () -> new AirtightFabricItem());
 	public static final RegistryObject<Item> CESIUM_DUST = REGISTRY.register("cesium_dust", () -> new CesiumDustItem());
@@ -407,7 +407,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> DRIED_CHLORELLA = REGISTRY.register("dried_chlorella", () -> new DriedChlorellaItem());
 	public static final RegistryObject<Item> ALGAE_BAR = REGISTRY.register("algae_bar", () -> new AlgaeBarItem());
 	public static final RegistryObject<Item> DATA_DISK_1 = REGISTRY.register("data_disk_1", () -> new DataDisk1Item());
-	public static final RegistryObject<Item> PLANETARY_CLIMATE_ANALYZER = block(FaroutModBlocks.PLANETARY_CLIMATE_ANALYZER);
 	public static final RegistryObject<Item> ATMOSPHERIC_ANALYZER = REGISTRY.register("atmospheric_analyzer", () -> new AtmosphericAnalyzerItem());
 	public static final RegistryObject<Item> OCEANUS_EMBLEM = REGISTRY.register("oceanus_emblem", () -> new OceanusEmblemItem());
 	public static final RegistryObject<Item> CRYSTALITE_SOIL = block(FaroutModBlocks.CRYSTALITE_SOIL);
@@ -426,6 +425,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> LOW_CAPACITY_MEMORY_PHOTOMASK = REGISTRY.register("low_capacity_memory_photomask", () -> new LowCapacityMemoryPhotomaskItem());
 	public static final RegistryObject<Item> RUST = block(FaroutModBlocks.RUST);
 	public static final RegistryObject<Item> CRUSHED_QUARTZ = block(FaroutModBlocks.CRUSHED_QUARTZ);
+	public static final RegistryObject<Item> URANIUM_CARBIDE = REGISTRY.register("uranium_carbide", () -> new UraniumCarbideItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -4,7 +4,7 @@
   "experience": 0.7,
   "cookingtime": 200,
   "ingredient": {
-    "item": "farout:coffinite_ore"
+    "item": "farout:coffinite"
   },
-  "result": "farout:coffinite"
+  "result": "farout:uranium_carbide"
 }
