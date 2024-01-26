@@ -38,6 +38,9 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.SALT_BLOCK.get().asItem());
 				tabData.accept(FaroutModBlocks.LUMIBLOSSOM_LEAVES.get().asItem());
 				tabData.accept(FaroutModBlocks.RUST.get().asItem());
+				tabData.accept(FaroutModItems.AQUEOUS_AMMONIA_BUCKET.get());
+				tabData.accept(FaroutModItems.BERYLLIUM_INGOT.get());
+				tabData.accept(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR.get().asItem());
 			})
 
 					.build());
@@ -135,6 +138,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.TOKAMAKFUSIONREACTOR.get().asItem());
 				tabData.accept(FaroutModBlocks.Z_PINCH_FUSION_REACTOR.get().asItem());
 				tabData.accept(FaroutModItems.FUSION_CHAMBER.get());
+				tabData.accept(FaroutModBlocks.PARTICLE_IONIZER.get().asItem());
 			})
 
 					.build());
@@ -284,6 +288,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.DRIED_CHLORELLA.get());
 			tabData.accept(FaroutModItems.SALT_DUST.get());
 			tabData.accept(FaroutModItems.URANIUM_CARBIDE.get());
+			tabData.accept(FaroutModItems.PLUTONIUM_CARBIDE.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

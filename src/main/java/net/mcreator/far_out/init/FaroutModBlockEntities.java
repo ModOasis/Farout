@@ -14,9 +14,11 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
+import net.mcreator.far_out.block.entity.ParticleIonizerBlockEntity;
 import net.mcreator.far_out.block.entity.OreExtractorBlockEntity;
 import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
 import net.mcreator.far_out.block.entity.LowFrequencyIntegratedCircuitFabricatorBlockEntity;
+import net.mcreator.far_out.block.entity.LinearParticleAcceleratorBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.HighFrequencyIntergratedCircutFabricatorBlockEntity;
@@ -55,6 +57,8 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR = register("high_frequency_intergrated_circut_fabricator", FaroutModBlocks.HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR,
 			HighFrequencyIntergratedCircutFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ORE_EXTRACTOR = register("ore_extractor", FaroutModBlocks.ORE_EXTRACTOR, OreExtractorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> LINEAR_PARTICLE_ACCELERATOR = register("linear_particle_accelerator", FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR, LinearParticleAcceleratorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PARTICLE_IONIZER = register("particle_ionizer", FaroutModBlocks.PARTICLE_IONIZER, ParticleIonizerBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

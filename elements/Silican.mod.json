@@ -12,14 +12,14 @@
       "value": "Blocks.QUARTZ_BLOCK#0"
     },
     "fluidBlock": {
-      "value": "CUSTOM:Saltwater"
+      "value": "CUSTOM:AqueousAmmonia"
     },
     "airColor": {
       "value": -10118521,
       "falpha": 0.0
     },
     "canRespawnHere": false,
-    "hasFog": true,
+    "hasFog": false,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",

@@ -24,6 +24,7 @@ import net.mcreator.far_out.fluid.LiquidAmmoniaFluid;
 import net.mcreator.far_out.fluid.GreenOilFluid;
 import net.mcreator.far_out.fluid.DryWaterFluid;
 import net.mcreator.far_out.fluid.ChlorellaCultureFluid;
+import net.mcreator.far_out.fluid.AqueousAmmoniaFluid;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModFluids {
@@ -42,6 +43,8 @@ public class FaroutModFluids {
 	public static final RegistryObject<FlowingFluid> FLOWING_DRY_WATER = REGISTRY.register("flowing_dry_water", () -> new DryWaterFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> LIQUID_SULFUR_DIOXIDE = REGISTRY.register("liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_SULFUR_DIOXIDE = REGISTRY.register("flowing_liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_AQUEOUS_AMMONIA = REGISTRY.register("flowing_aqueous_ammonia", () -> new AqueousAmmoniaFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -61,6 +64,8 @@ public class FaroutModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_DRY_WATER.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(LIQUID_SULFUR_DIOXIDE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_SULFUR_DIOXIDE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(AQUEOUS_AMMONIA.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_AQUEOUS_AMMONIA.get(), RenderType.translucent());
 		}
 	}
 }

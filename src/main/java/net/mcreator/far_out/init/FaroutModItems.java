@@ -57,6 +57,7 @@ import net.mcreator.far_out.item.RadioReceiverItem;
 import net.mcreator.far_out.item.RadiatorItem;
 import net.mcreator.far_out.item.PropaneItem;
 import net.mcreator.far_out.item.Potassium_nitrateDustItem;
+import net.mcreator.far_out.item.PlutoniumCarbideItem;
 import net.mcreator.far_out.item.PipeItem;
 import net.mcreator.far_out.item.PhotovoltaicWaferItem;
 import net.mcreator.far_out.item.OxygenBottleItem;
@@ -155,6 +156,7 @@ import net.mcreator.far_out.item.BoronIngotItem;
 import net.mcreator.far_out.item.BoratedSteelIngotItem;
 import net.mcreator.far_out.item.BoraciteItem;
 import net.mcreator.far_out.item.BioPlasticItem;
+import net.mcreator.far_out.item.BerylliumIngotItem;
 import net.mcreator.far_out.item.BenzeneItem;
 import net.mcreator.far_out.item.BasicHabModuleItem;
 import net.mcreator.far_out.item.BasicCommandDiskItem;
@@ -163,6 +165,7 @@ import net.mcreator.far_out.item.AtmosphericAnalyzerItem;
 import net.mcreator.far_out.item.AshItem;
 import net.mcreator.far_out.item.ArgonItem;
 import net.mcreator.far_out.item.ArgonFuelTankItem;
+import net.mcreator.far_out.item.AqueousAmmoniaItem;
 import net.mcreator.far_out.item.AmmoniaItem;
 import net.mcreator.far_out.item.AluminiumIngotItem;
 import net.mcreator.far_out.item.AlgaeBarItem;
@@ -426,6 +429,11 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> RUST = block(FaroutModBlocks.RUST);
 	public static final RegistryObject<Item> CRUSHED_QUARTZ = block(FaroutModBlocks.CRUSHED_QUARTZ);
 	public static final RegistryObject<Item> URANIUM_CARBIDE = REGISTRY.register("uranium_carbide", () -> new UraniumCarbideItem());
+	public static final RegistryObject<Item> AQUEOUS_AMMONIA_BUCKET = REGISTRY.register("aqueous_ammonia_bucket", () -> new AqueousAmmoniaItem());
+	public static final RegistryObject<Item> PLUTONIUM_CARBIDE = REGISTRY.register("plutonium_carbide", () -> new PlutoniumCarbideItem());
+	public static final RegistryObject<Item> BERYLLIUM_INGOT = REGISTRY.register("beryllium_ingot", () -> new BerylliumIngotItem());
+	public static final RegistryObject<Item> LINEAR_PARTICLE_ACCELERATOR = block(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR);
+	public static final RegistryObject<Item> PARTICLE_IONIZER = block(FaroutModBlocks.PARTICLE_IONIZER);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -41,6 +41,7 @@ import net.mcreator.far_out.block.RheniumBlockBlock;
 import net.mcreator.far_out.block.RedTorcherBlock;
 import net.mcreator.far_out.block.QuartzOreBlock;
 import net.mcreator.far_out.block.Potassium_nitrateBlockBlock;
+import net.mcreator.far_out.block.ParticleIonizerBlock;
 import net.mcreator.far_out.block.OsmiumBlockBlock;
 import net.mcreator.far_out.block.OreExtractorBlock;
 import net.mcreator.far_out.block.NuclearReactorBlock;
@@ -62,6 +63,7 @@ import net.mcreator.far_out.block.LowFrequencyIntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
+import net.mcreator.far_out.block.LinearParticleAcceleratorBlock;
 import net.mcreator.far_out.block.LimestoneBlockBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
@@ -111,6 +113,7 @@ import net.mcreator.far_out.block.BioPlasticWindowBlock;
 import net.mcreator.far_out.block.BauxiteBlock;
 import net.mcreator.far_out.block.BatteryBlockBlock;
 import net.mcreator.far_out.block.AsphaltBlock;
+import net.mcreator.far_out.block.AqueousAmmoniaBlock;
 import net.mcreator.far_out.block.AncientSedimentBlock;
 import net.mcreator.far_out.block.AluminiumBlockBlock;
 import net.mcreator.far_out.block.AlienReedsBlock;
@@ -226,6 +229,9 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> LUMIBLOSSOM_LEAVES = REGISTRY.register("lumiblossom_leaves", () -> new LumiblossomLeavesBlock());
 	public static final RegistryObject<Block> RUST = REGISTRY.register("rust", () -> new RustBlock());
 	public static final RegistryObject<Block> CRUSHED_QUARTZ = REGISTRY.register("crushed_quartz", () -> new CrushedQuartzBlock());
+	public static final RegistryObject<Block> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaBlock());
+	public static final RegistryObject<Block> LINEAR_PARTICLE_ACCELERATOR = REGISTRY.register("linear_particle_accelerator", () -> new LinearParticleAcceleratorBlock());
+	public static final RegistryObject<Block> PARTICLE_IONIZER = REGISTRY.register("particle_ionizer", () -> new ParticleIonizerBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

@@ -30,7 +30,7 @@
         "Name": "minecraft:smooth_quartz"
       },
       "default_fluid": {
-        "Name": "farout:saltwater",
+        "Name": "farout:aqueous_ammonia",
         "Properties": {
           "level": "0"
         }

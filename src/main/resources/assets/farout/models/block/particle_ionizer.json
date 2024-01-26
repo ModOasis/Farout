@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/particleionizer",
+  "textures": {
+    "all": "farout:block/particleionizertex",
+    "particle": "farout:block/particleionizertex",
+    "0": "farout:block/particleionizertex"
+  },
+  "render_type": "solid"
+}

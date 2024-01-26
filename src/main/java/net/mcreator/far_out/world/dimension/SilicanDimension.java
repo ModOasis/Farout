@@ -31,7 +31,7 @@ public class SilicanDimension {
 
 				@Override
 				public boolean isFoggyAt(int x, int y) {
-					return true;
+					return false;
 				}
 
 				@Override
