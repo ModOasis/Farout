@@ -49,7 +49,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.CHEMICAL_ROCKET_ENGINE.get());
 				tabData.accept(FaroutModItems.OPEN_CORE_NUCLEAR_THERMAL_ROCKET.get());
 				tabData.accept(FaroutModItems.SOLID_CORE_NUCLEAR_THERMAL_ROCKET.get());
-				tabData.accept(FaroutModItems.METALLIC_HYDROGEN_ENGINE.get());
 				tabData.accept(FaroutModItems.VASMIR_ION_ENGINE.get());
 				tabData.accept(FaroutModItems.NUCLEAR_SALT_WATER_ROCKET.get());
 				tabData.accept(FaroutModItems.NOZZLE.get());
@@ -61,7 +60,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.FAIRING_SEGMENTS.get());
 				tabData.accept(FaroutModItems.CHEMICAL_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.LI_H_6_TANK.get());
 				tabData.accept(FaroutModItems.ARGON_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.NUCLEAR_SALT_WATER_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.FUSION_FUEL_TANK.get());
@@ -84,12 +82,8 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.SPACECRAFT_CONSTRUCTION_METERIALS.get());
 				tabData.accept(FaroutModItems.OPEN_CARGO_FAIRING.get());
 				tabData.accept(FaroutModItems.CRYOGENIC_STASIS_CHAMBER.get());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> UNNMANNED_ROCKETRY = REGISTRY.register("unnmanned_rocketry",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.unnmanned_rocketry")).icon(() -> new ItemStack(FaroutModItems.UNMANNED_PAYLOAD.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(FaroutModItems.UNMANNED_PAYLOAD.get());
+				tabData.accept(FaroutModItems.MAGNETOPLASMADYNAMIC_THRUSTER.get());
+				tabData.accept(FaroutModItems.LITHIUM_FUEL_TANK.get());
 			})
 
 					.build());
@@ -108,7 +102,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR.get().asItem());
 				tabData.accept(FaroutModItems.LASER.get());
 				tabData.accept(FaroutModItems.UNETCHED_GRAPHENE_WAFER.get());
-				tabData.accept(FaroutModItems.RADIO_RECEIVER.get());
 				tabData.accept(FaroutModItems.PHOTOVOLTAIC_WAFER.get());
 				tabData.accept(FaroutModItems.DATA_DISK_1.get());
 				tabData.accept(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT_PHOTOMASK.get());
@@ -149,7 +142,6 @@ public class FaroutModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(FaroutModBlocks.FUNGUSTRUNK.get().asItem());
 			tabData.accept(FaroutModBlocks.FUNGUS_CAP.get().asItem());
-			tabData.accept(FaroutModBlocks.URANIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.LITHIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.FUNGUS_PLANKS.get().asItem());
 			tabData.accept(FaroutModBlocks.FUNGUS_STAIRS.get().asItem());
@@ -168,10 +160,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.GRAPHITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.SILICON_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.CESIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.BIO_PLASTIC_WINDOW.get().asItem());
-			tabData.accept(FaroutModBlocks.ZEOLITE_ORE.get().asItem());
-			tabData.accept(FaroutModBlocks.ZEOLITE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.ALUMINIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.BAUXITE.get().asItem());
 			tabData.accept(FaroutModBlocks.CARBORUNDUM_BLOCK.get().asItem());
@@ -225,8 +214,6 @@ public class FaroutModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(FaroutModItems.DISPLAY.get());
-			tabData.accept(FaroutModItems.EMBEDEDCOMPUTER.get());
-			tabData.accept(FaroutModItems.URANIUM_INGOT.get());
 			tabData.accept(FaroutModItems.LITHIUM_INGOT.get());
 			tabData.accept(FaroutModItems.DEPLETED_URANIUM.get());
 			tabData.accept(FaroutModItems.SUPER_ALLOY_INGOT.get());
@@ -253,7 +240,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.PROPANE.get());
 			tabData.accept(FaroutModItems.AMMONIA.get());
 			tabData.accept(FaroutModItems.AIRTIGHT_FABRIC.get());
-			tabData.accept(FaroutModItems.CESIUM_DUST.get());
 			tabData.accept(FaroutModItems.ARGON.get());
 			tabData.accept(FaroutModItems.BIO_PLASTIC.get());
 			tabData.accept(FaroutModItems.INFLATABLE_MODULE.get());
@@ -262,11 +248,8 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.BORATED_STEEL_INGOT.get());
 			tabData.accept(FaroutModItems.MOONSHINE.get());
 			tabData.accept(FaroutModItems.LITHIUM_DEUTERIDE.get());
-			tabData.accept(FaroutModItems.LITHIUM_HYDRIDE.get());
 			tabData.accept(FaroutModItems.LIGHT_ISOTOPES.get());
-			tabData.accept(FaroutModItems.URANIUM_DUST.get());
 			tabData.accept(FaroutModItems.GRAPHENE.get());
-			tabData.accept(FaroutModItems.ZEOLITE.get());
 			tabData.accept(FaroutModItems.ALUMINIUM_INGOT.get());
 			tabData.accept(FaroutModItems.CARBORUNDUM_INGOT.get());
 			tabData.accept(FaroutModItems.SPHALERITE.get());

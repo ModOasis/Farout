@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plutonium_carbide",
+    "texture": "lithiumfueltank",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Uranium Carbide",
+    "name": "Lithium Fuel Tank",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Rocketry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -28,7 +28,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Processed coffinite. This can be used as fuel for nuclear reactors, or as a part of nuclear rockets."
+        "Fuel mass: 4 tons"
       ]
     },
     "glowCondition": {

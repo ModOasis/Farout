@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Lander",
+    "mobName": "lander",
     "mobLabel": "",
     "mobModelTexture": "landertex.png",
     "mobModelGlowTexture": "",

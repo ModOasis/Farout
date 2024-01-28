@@ -20,7 +20,7 @@ public class NuclearReactorBlockAddedProcedure {
 			return;
 		double energy = 0;
 		BlockState clickedBlock = Blocks.AIR.defaultBlockState();
-		if (FaroutModItems.URANIUM_INGOT.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (FaroutModItems.PLUTONIUM_CARBIDE.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
 			if (FaroutModVariables.MapVariables.get(world).FireTime) {
 				if (FaroutModVariables.MapVariables.get(world).FireTime) {
 					energy = 10 + energy;

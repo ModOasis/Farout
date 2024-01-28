@@ -13,7 +13,6 @@ import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.far_out.world.inventory.ZPinchFusionReactorGUIMenu;
 import net.mcreator.far_out.world.inventory.VoltmeterguiMenu;
-import net.mcreator.far_out.world.inventory.UpgradeApplyerGUIMenu;
 import net.mcreator.far_out.world.inventory.StartingLanderGUIMenu;
 import net.mcreator.far_out.world.inventory.StarshipControlGUIMenu;
 import net.mcreator.far_out.world.inventory.StarshipComponentsGUIMenu;
@@ -21,7 +20,6 @@ import net.mcreator.far_out.world.inventory.ScienceGUIMenu;
 import net.mcreator.far_out.world.inventory.SandosMapMenu;
 import net.mcreator.far_out.world.inventory.RejonaMapMenu;
 import net.mcreator.far_out.world.inventory.RegolithSifterGUIMenu;
-import net.mcreator.far_out.world.inventory.RadioReciverGUIMenu;
 import net.mcreator.far_out.world.inventory.ProxmaiMapMenu;
 import net.mcreator.far_out.world.inventory.Page3Menu;
 import net.mcreator.far_out.world.inventory.Page2Menu;
@@ -72,7 +70,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<RegolithSifterGUIMenu>> REGOLITH_SIFTER_GUI = REGISTRY.register("regolith_sifter_gui", () -> IForgeMenuType.create(RegolithSifterGUIMenu::new));
 	public static final RegistryObject<MenuType<AirPurifierGUIMenu>> AIR_PURIFIER_GUI = REGISTRY.register("air_purifier_gui", () -> IForgeMenuType.create(AirPurifierGUIMenu::new));
 	public static final RegistryObject<MenuType<ElectrolyzerGUIMenu>> ELECTROLYZER_GUI = REGISTRY.register("electrolyzer_gui", () -> IForgeMenuType.create(ElectrolyzerGUIMenu::new));
-	public static final RegistryObject<MenuType<UpgradeApplyerGUIMenu>> UPGRADE_APPLYER_GUI = REGISTRY.register("upgrade_applyer_gui", () -> IForgeMenuType.create(UpgradeApplyerGUIMenu::new));
 	public static final RegistryObject<MenuType<GeneticSequencerMenu>> GENETIC_SEQUENCER = REGISTRY.register("genetic_sequencer", () -> IForgeMenuType.create(GeneticSequencerMenu::new));
 	public static final RegistryObject<MenuType<StartingLanderGUIMenu>> STARTING_LANDER_GUI = REGISTRY.register("starting_lander_gui", () -> IForgeMenuType.create(StartingLanderGUIMenu::new));
 	public static final RegistryObject<MenuType<CrystalDriveGUIMenu>> CRYSTAL_DRIVE_GUI = REGISTRY.register("crystal_drive_gui", () -> IForgeMenuType.create(CrystalDriveGUIMenu::new));
@@ -101,7 +98,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<Page2Menu>> PAGE_2 = REGISTRY.register("page_2", () -> IForgeMenuType.create(Page2Menu::new));
 	public static final RegistryObject<MenuType<Page3Menu>> PAGE_3 = REGISTRY.register("page_3", () -> IForgeMenuType.create(Page3Menu::new));
 	public static final RegistryObject<MenuType<ScienceGUIMenu>> SCIENCE_GUI = REGISTRY.register("science_gui", () -> IForgeMenuType.create(ScienceGUIMenu::new));
-	public static final RegistryObject<MenuType<RadioReciverGUIMenu>> RADIO_RECIVER_GUI = REGISTRY.register("radio_reciver_gui", () -> IForgeMenuType.create(RadioReciverGUIMenu::new));
 	public static final RegistryObject<MenuType<StarshipComponentsGUIMenu>> STARSHIP_COMPONENTS_GUI = REGISTRY.register("starship_components_gui", () -> IForgeMenuType.create(StarshipComponentsGUIMenu::new));
 	public static final RegistryObject<MenuType<FormalonMapMenu>> FORMALON_MAP = REGISTRY.register("formalon_map", () -> IForgeMenuType.create(FormalonMapMenu::new));
 	public static final RegistryObject<MenuType<GravityChangerMenu>> GRAVITY_CHANGER = REGISTRY.register("gravity_changer", () -> IForgeMenuType.create(GravityChangerMenu::new));

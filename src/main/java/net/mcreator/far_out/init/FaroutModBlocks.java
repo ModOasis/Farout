@@ -14,11 +14,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.far_out.block.ZeoliteOreBlock;
-import net.mcreator.far_out.block.ZeoliteBlockBlock;
 import net.mcreator.far_out.block.ZPinchFusionReactorBlock;
 import net.mcreator.far_out.block.YellowTorcherBlock;
-import net.mcreator.far_out.block.UraniumBlockBlock;
 import net.mcreator.far_out.block.TrussBlock;
 import net.mcreator.far_out.block.TokamakfusionreactorBlock;
 import net.mcreator.far_out.block.SuperconductingMagneticBatteryBlock;
@@ -99,7 +96,6 @@ import net.mcreator.far_out.block.ChemosyntheticNodulesBlock;
 import net.mcreator.far_out.block.ChemicalReactorBlock;
 import net.mcreator.far_out.block.ChacoavinesBlock;
 import net.mcreator.far_out.block.ChacoaBlock;
-import net.mcreator.far_out.block.CesiumBlockBlock;
 import net.mcreator.far_out.block.CargoPodBlock;
 import net.mcreator.far_out.block.CardboardboxBlock;
 import net.mcreator.far_out.block.CarborundumBlockBlock;
@@ -127,7 +123,6 @@ public class FaroutModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, FaroutMod.MODID);
 	public static final RegistryObject<Block> FUNGUSTRUNK = REGISTRY.register("fungustrunk", () -> new FungustrunkBlock());
 	public static final RegistryObject<Block> FUNGUS_CAP = REGISTRY.register("fungus_cap", () -> new FungusCapBlock());
-	public static final RegistryObject<Block> URANIUM_BLOCK = REGISTRY.register("uranium_block", () -> new UraniumBlockBlock());
 	public static final RegistryObject<Block> LITHIUM_BLOCK = REGISTRY.register("lithium_block", () -> new LithiumBlockBlock());
 	public static final RegistryObject<Block> FUNGUS_PLANKS = REGISTRY.register("fungus_planks", () -> new FungusPlanksBlock());
 	public static final RegistryObject<Block> FUNGUS_STAIRS = REGISTRY.register("fungus_stairs", () -> new FungusStairsBlock());
@@ -162,15 +157,12 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> AILEN_MOSS = REGISTRY.register("ailen_moss", () -> new AilenMossBlock());
 	public static final RegistryObject<Block> FUNGUS_FENCE_GATE = REGISTRY.register("fungus_fence_gate", () -> new FungusFenceGateBlock());
 	public static final RegistryObject<Block> FUNGUS_PRESSURE_PLATE = REGISTRY.register("fungus_pressure_plate", () -> new FungusPressurePlateBlock());
-	public static final RegistryObject<Block> CESIUM_BLOCK = REGISTRY.register("cesium_block", () -> new CesiumBlockBlock());
 	public static final RegistryObject<Block> GEOTHERMAL_GENERATOR = REGISTRY.register("geothermal_generator", () -> new GeothermalGeneratorBlock());
 	public static final RegistryObject<Block> ALIEN_REEDS = REGISTRY.register("alien_reeds", () -> new AlienReedsBlock());
 	public static final RegistryObject<Block> BIO_PLASTIC_WINDOW = REGISTRY.register("bio_plastic_window", () -> new BioPlasticWindowBlock());
 	public static final RegistryObject<Block> SPORE_EMITTER = REGISTRY.register("spore_emitter", () -> new SporeEmitterBlock());
 	public static final RegistryObject<Block> SUPERCONDUCTING_MAGNETIC_BATTERY = REGISTRY.register("superconducting_magnetic_battery", () -> new SuperconductingMagneticBatteryBlock());
 	public static final RegistryObject<Block> INTEGRATED_CIRCUIT_FABRICATOR = REGISTRY.register("integrated_circuit_fabricator", () -> new IntegratedCircuitFabricatorBlock());
-	public static final RegistryObject<Block> ZEOLITE_ORE = REGISTRY.register("zeolite_ore", () -> new ZeoliteOreBlock());
-	public static final RegistryObject<Block> ZEOLITE_BLOCK = REGISTRY.register("zeolite_block", () -> new ZeoliteBlockBlock());
 	public static final RegistryObject<Block> CHEMICAL_REACTOR = REGISTRY.register("chemical_reactor", () -> new ChemicalReactorBlock());
 	public static final RegistryObject<Block> ALUMINIUM_BLOCK = REGISTRY.register("aluminium_block", () -> new AluminiumBlockBlock());
 	public static final RegistryObject<Block> BAUXITE = REGISTRY.register("bauxite", () -> new BauxiteBlock());

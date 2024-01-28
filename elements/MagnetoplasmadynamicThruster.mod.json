@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plutonium_carbide",
+    "texture": "magnetoplasmadynamicthruster",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Uranium Carbide",
+    "name": "Magnetoplasmadynamic Thruster",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Rocketry"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -28,7 +28,9 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "Processed coffinite. This can be used as fuel for nuclear reactors, or as a part of nuclear rockets."
+        "Fuel source: Lithium",
+        "Exhaust velocity: 31,000 m/s",
+        "Power needed: 2000 kW"
       ]
     },
     "glowCondition": {

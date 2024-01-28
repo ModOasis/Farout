@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "farout:block/zeolite_ore",
-    "particle": "farout:block/zeolite_ore"
-  },
-  "render_type": "solid"
-}

@@ -14,8 +14,6 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [
-      "MetallicHydrogenEngineRecipe",
-      "LithiumHydrideFuelTankRecipe",
       "LithiumHydrideRecipe",
       "InflatableSegmentRecipe",
       "InflatableHabRingRecipe",

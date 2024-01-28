@@ -36,7 +36,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
-				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 10;
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 5;
 			}
 
 			@Override
@@ -66,7 +66,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 1.1f;
+				return 0.5f;
 			}
 
 			@Override
@@ -108,6 +108,11 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
 		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
+		}
 	}
 
 	public static class Chestplate extends SpaceSuitItem {
@@ -141,6 +146,11 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 
@@ -176,6 +186,11 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
+		}
+
+		@Override
+		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
+			return false;
 		}
 	}
 }

@@ -97,11 +97,12 @@ public class CalculatePayloadPropertiesProcedure {
 				}
 			}.getAmount(1) * 200;
 			Mass = Mass + 4;
-		} else if (FaroutModItems.METALLIC_HYDROGEN_ENGINE.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
-				.getItem()
-				&& FaroutModItems.LI_H_6_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
-			Mass = Mass + 10;
-			ISP = 1700;
+		} else if (FaroutModItems.MAGNETOPLASMADYNAMIC_THRUSTER
+				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
+				&& FaroutModItems.LITHIUM_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
+						.getItem()) {
+			Mass = Mass + 1;
+			ISP = 3200;
 			FuelCapacity = new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {

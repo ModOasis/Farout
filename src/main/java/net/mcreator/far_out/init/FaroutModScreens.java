@@ -13,7 +13,6 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.far_out.client.gui.ZPinchFusionReactorGUIScreen;
 import net.mcreator.far_out.client.gui.VoltmeterguiScreen;
-import net.mcreator.far_out.client.gui.UpgradeApplyerGUIScreen;
 import net.mcreator.far_out.client.gui.StartingLanderGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipControlGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipComponentsGUIScreen;
@@ -21,7 +20,6 @@ import net.mcreator.far_out.client.gui.ScienceGUIScreen;
 import net.mcreator.far_out.client.gui.SandosMapScreen;
 import net.mcreator.far_out.client.gui.RejonaMapScreen;
 import net.mcreator.far_out.client.gui.RegolithSifterGUIScreen;
-import net.mcreator.far_out.client.gui.RadioReciverGUIScreen;
 import net.mcreator.far_out.client.gui.ProxmaiMapScreen;
 import net.mcreator.far_out.client.gui.Page3Screen;
 import net.mcreator.far_out.client.gui.Page2Screen;
@@ -74,7 +72,6 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.REGOLITH_SIFTER_GUI.get(), RegolithSifterGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.AIR_PURIFIER_GUI.get(), AirPurifierGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.ELECTROLYZER_GUI.get(), ElectrolyzerGUIScreen::new);
-			MenuScreens.register(FaroutModMenus.UPGRADE_APPLYER_GUI.get(), UpgradeApplyerGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.GENETIC_SEQUENCER.get(), GeneticSequencerScreen::new);
 			MenuScreens.register(FaroutModMenus.STARTING_LANDER_GUI.get(), StartingLanderGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.CRYSTAL_DRIVE_GUI.get(), CrystalDriveGUIScreen::new);
@@ -103,7 +100,6 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.PAGE_2.get(), Page2Screen::new);
 			MenuScreens.register(FaroutModMenus.PAGE_3.get(), Page3Screen::new);
 			MenuScreens.register(FaroutModMenus.SCIENCE_GUI.get(), ScienceGUIScreen::new);
-			MenuScreens.register(FaroutModMenus.RADIO_RECIVER_GUI.get(), RadioReciverGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.STARSHIP_COMPONENTS_GUI.get(), StarshipComponentsGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.FORMALON_MAP.get(), FormalonMapScreen::new);
 			MenuScreens.register(FaroutModMenus.GRAVITY_CHANGER.get(), GravityChangerScreen::new);
