@@ -236,7 +236,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> TOKAMAKFUSIONREACTOR = block(FaroutModBlocks.TOKAMAKFUSIONREACTOR);
 	public static final RegistryObject<Item> LARGE_SOLAR_PANELS = block(FaroutModBlocks.LARGE_SOLAR_PANELS);
 	public static final RegistryObject<Item> ENERGY_METER = REGISTRY.register("energy_meter", () -> new EnergyMeterItem());
-	public static final RegistryObject<Item> BATTERY_BLOCK = block(FaroutModBlocks.BATTERY_BLOCK);
 	public static final RegistryObject<Item> BIOMASS_BURNER = block(FaroutModBlocks.BIOMASS_BURNER);
 	public static final RegistryObject<Item> GRAPHITE_ORE = block(FaroutModBlocks.GRAPHITE_ORE);
 	public static final RegistryObject<Item> GRAPHITE_BLOCK = block(FaroutModBlocks.GRAPHITE_BLOCK);
@@ -374,7 +373,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> CARGO_FAIRING = REGISTRY.register("cargo_fairing", () -> new CargoFairingItem());
 	public static final RegistryObject<Item> SPACECRAFT_CONSTRUCTION_METERIALS = REGISTRY.register("spacecraft_construction_meterials", () -> new SpacecraftConstructionMeterialsItem());
 	public static final RegistryObject<Item> OPEN_CARGO_FAIRING = REGISTRY.register("open_cargo_fairing", () -> new OpenCargoFairingItem());
-	public static final RegistryObject<Item> BIOLOGICAL_EXPERIMENT = block(FaroutModBlocks.BIOLOGICAL_EXPERIMENT);
 	public static final RegistryObject<Item> LIQUID_CRYSTAL = REGISTRY.register("liquid_crystal", () -> new LiquidCrystalItem());
 	public static final RegistryObject<Item> THE_FAROUT_GUIDE = REGISTRY.register("the_farout_guide", () -> new TheFaroutGuideItem());
 	public static final RegistryObject<Item> CRYOGENIC_STASIS_CHAMBER = REGISTRY.register("cryogenic_stasis_chamber", () -> new CryogenicStasisChamberItem());
@@ -414,6 +412,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> PARTICLE_IONIZER = block(FaroutModBlocks.PARTICLE_IONIZER);
 	public static final RegistryObject<Item> MAGNETOPLASMADYNAMIC_THRUSTER = REGISTRY.register("magnetoplasmadynamic_thruster", () -> new MagnetoplasmadynamicThrusterItem());
 	public static final RegistryObject<Item> LITHIUM_FUEL_TANK = REGISTRY.register("lithium_fuel_tank", () -> new LithiumFuelTankItem());
+	public static final RegistryObject<Item> HYDROGEN_FUEL_CELL = block(FaroutModBlocks.HYDROGEN_FUEL_CELL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

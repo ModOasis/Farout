@@ -26,13 +26,11 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.NUCLEAR_REACTOR.get().asItem());
 				tabData.accept(FaroutModBlocks.LARGE_SOLAR_PANELS.get().asItem());
 				tabData.accept(FaroutModItems.ENERGY_METER.get());
-				tabData.accept(FaroutModBlocks.BATTERY_BLOCK.get().asItem());
 				tabData.accept(FaroutModBlocks.BIOMASS_BURNER.get().asItem());
 				tabData.accept(FaroutModBlocks.GEOTHERMAL_GENERATOR.get().asItem());
 				tabData.accept(FaroutModItems.SUPER_CAPACITORS.get());
 				tabData.accept(FaroutModBlocks.SUPERCONDUCTING_MAGNETIC_BATTERY.get().asItem());
 				tabData.accept(FaroutModItems.NUCLEAR_RODS.get());
-				tabData.accept(FaroutModBlocks.BIOLOGICAL_EXPERIMENT.get().asItem());
 				tabData.accept(FaroutModBlocks.ANCIENT_SEDIMENT.get().asItem());
 				tabData.accept(FaroutModBlocks.GREENSTONE.get().asItem());
 				tabData.accept(FaroutModBlocks.SALT_BLOCK.get().asItem());
@@ -41,6 +39,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.AQUEOUS_AMMONIA_BUCKET.get());
 				tabData.accept(FaroutModItems.BERYLLIUM_INGOT.get());
 				tabData.accept(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR.get().asItem());
+				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
 			})
 
 					.build());

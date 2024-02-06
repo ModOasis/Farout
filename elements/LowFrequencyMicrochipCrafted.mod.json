@@ -16,7 +16,6 @@
     "rewardRecipes": [
       "IntegratedCircuitFabricatorRecipe",
       "PowerMeterRecipe",
-      "BiologicalExperimentRecipe",
       "LaserRecipe",
       "DisplayRecipe"
     ],

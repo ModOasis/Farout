@@ -37,7 +37,6 @@
     "recipes": [
       "farout:integrated_circuit_fabricator_recipe",
       "farout:power_meter_recipe",
-      "farout:biological_experiment_recipe",
       "farout:laser_recipe",
       "farout:display_recipe"
     ]

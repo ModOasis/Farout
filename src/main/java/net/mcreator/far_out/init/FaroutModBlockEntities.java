@@ -21,6 +21,7 @@ import net.mcreator.far_out.block.entity.LowFrequencyIntegratedCircuitFabricator
 import net.mcreator.far_out.block.entity.LinearParticleAcceleratorBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
+import net.mcreator.far_out.block.entity.HydrogenFuelCellBlockEntity;
 import net.mcreator.far_out.block.entity.HighFrequencyIntergratedCircutFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.FungustrunkBlockEntity;
 import net.mcreator.far_out.block.entity.FungusCapBlockEntity;
@@ -59,6 +60,7 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> ORE_EXTRACTOR = register("ore_extractor", FaroutModBlocks.ORE_EXTRACTOR, OreExtractorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LINEAR_PARTICLE_ACCELERATOR = register("linear_particle_accelerator", FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR, LinearParticleAcceleratorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PARTICLE_IONIZER = register("particle_ionizer", FaroutModBlocks.PARTICLE_IONIZER, ParticleIonizerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HYDROGEN_FUEL_CELL = register("hydrogen_fuel_cell", FaroutModBlocks.HYDROGEN_FUEL_CELL, HydrogenFuelCellBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

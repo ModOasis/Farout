@@ -64,6 +64,7 @@ import net.mcreator.far_out.block.LinearParticleAcceleratorBlock;
 import net.mcreator.far_out.block.LimestoneBlockBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
+import net.mcreator.far_out.block.HydrogenFuelCellBlock;
 import net.mcreator.far_out.block.HighFrequencyIntergratedCircutFabricatorBlock;
 import net.mcreator.far_out.block.GunpowderBlockBlock;
 import net.mcreator.far_out.block.GreenstoneBlock;
@@ -104,10 +105,8 @@ import net.mcreator.far_out.block.BoraciteOreBlock;
 import net.mcreator.far_out.block.BoraciteBlockBlock;
 import net.mcreator.far_out.block.BlueTorcherBlock;
 import net.mcreator.far_out.block.BiomassBurnerBlock;
-import net.mcreator.far_out.block.BiologicalExperimentBlock;
 import net.mcreator.far_out.block.BioPlasticWindowBlock;
 import net.mcreator.far_out.block.BauxiteBlock;
-import net.mcreator.far_out.block.BatteryBlockBlock;
 import net.mcreator.far_out.block.AsphaltBlock;
 import net.mcreator.far_out.block.AqueousAmmoniaBlock;
 import net.mcreator.far_out.block.AncientSedimentBlock;
@@ -145,7 +144,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
 	public static final RegistryObject<Block> TOKAMAKFUSIONREACTOR = REGISTRY.register("tokamakfusionreactor", () -> new TokamakfusionreactorBlock());
 	public static final RegistryObject<Block> LARGE_SOLAR_PANELS = REGISTRY.register("large_solar_panels", () -> new LargeSolarPanelsBlock());
-	public static final RegistryObject<Block> BATTERY_BLOCK = REGISTRY.register("battery_block", () -> new BatteryBlockBlock());
 	public static final RegistryObject<Block> BIOMASS_BURNER = REGISTRY.register("biomass_burner", () -> new BiomassBurnerBlock());
 	public static final RegistryObject<Block> GRAPHITE_ORE = REGISTRY.register("graphite_ore", () -> new GraphiteOreBlock());
 	public static final RegistryObject<Block> GRAPHITE_BLOCK = REGISTRY.register("graphite_block", () -> new GraphiteBlockBlock());
@@ -201,7 +199,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> LUMIBLOSSOM_BUTTON = REGISTRY.register("lumiblossom_button", () -> new LumiblossomButtonBlock());
 	public static final RegistryObject<Block> QUARTZ_ORE = REGISTRY.register("quartz_ore", () -> new QuartzOreBlock());
 	public static final RegistryObject<Block> AIRLOCK_DOOR = REGISTRY.register("airlock_door", () -> new AirlockDoorBlock());
-	public static final RegistryObject<Block> BIOLOGICAL_EXPERIMENT = REGISTRY.register("biological_experiment", () -> new BiologicalExperimentBlock());
 	public static final RegistryObject<Block> SOLAR_VINES_CAP = REGISTRY.register("solar_vines_cap", () -> new SolarVinesCapBlock());
 	public static final RegistryObject<Block> SOLAR_VINES = REGISTRY.register("solar_vines", () -> new SolarVinesBlock());
 	public static final RegistryObject<Block> ORE_EXTRACTOR = REGISTRY.register("ore_extractor", () -> new OreExtractorBlock());
@@ -224,6 +221,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaBlock());
 	public static final RegistryObject<Block> LINEAR_PARTICLE_ACCELERATOR = REGISTRY.register("linear_particle_accelerator", () -> new LinearParticleAcceleratorBlock());
 	public static final RegistryObject<Block> PARTICLE_IONIZER = REGISTRY.register("particle_ionizer", () -> new ParticleIonizerBlock());
+	public static final RegistryObject<Block> HYDROGEN_FUEL_CELL = REGISTRY.register("hydrogen_fuel_cell", () -> new HydrogenFuelCellBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

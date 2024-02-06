@@ -19,7 +19,6 @@ import net.mcreator.far_out.network.YawIncreaseMessage;
 import net.mcreator.far_out.network.YawDecreaseMessage;
 import net.mcreator.far_out.network.TestMessage;
 import net.mcreator.far_out.network.TestKeyMessage;
-import net.mcreator.far_out.network.ScienceMenuMessage;
 import net.mcreator.far_out.network.PitchIncreaseMessage;
 import net.mcreator.far_out.network.PitchDecreaseMessage;
 import net.mcreator.far_out.network.LaunchMessage;
@@ -50,19 +49,6 @@ public class FaroutModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new TestKeyMessage(0, 0));
 				TestKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping SCIENCE_MENU = new KeyMapping("key.farout.science_menu", GLFW.GLFW_KEY_RIGHT_CONTROL, "key.categories.ui") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new ScienceMenuMessage(0, 0));
-				ScienceMenuMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -156,7 +142,6 @@ public class FaroutModKeyMappings {
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(TEST);
 		event.register(TEST_KEY);
-		event.register(SCIENCE_MENU);
 		event.register(LAUNCH);
 		event.register(PITCH_DECREASE);
 		event.register(PITCH_INCREASE);
@@ -172,7 +157,6 @@ public class FaroutModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				TEST.consumeClick();
 				TEST_KEY.consumeClick();
-				SCIENCE_MENU.consumeClick();
 				LAUNCH.consumeClick();
 				PITCH_DECREASE.consumeClick();
 				PITCH_INCREASE.consumeClick();

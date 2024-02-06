@@ -144,7 +144,7 @@ public class FaroutModVariables {
 		public double Battery_number = 1.0;
 		public double TotalCapacty = 10.0;
 		public String InterstellarVesselProgress = "12345678S";
-		public boolean SpaceStation = false;
+		public double SpaceStation = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -157,7 +157,7 @@ public class FaroutModVariables {
 			Battery_number = nbt.getDouble("Battery_number");
 			TotalCapacty = nbt.getDouble("TotalCapacty");
 			InterstellarVesselProgress = nbt.getString("InterstellarVesselProgress");
-			SpaceStation = nbt.getBoolean("SpaceStation");
+			SpaceStation = nbt.getDouble("SpaceStation");
 		}
 
 		@Override
@@ -166,7 +166,7 @@ public class FaroutModVariables {
 			nbt.putDouble("Battery_number", Battery_number);
 			nbt.putDouble("TotalCapacty", TotalCapacty);
 			nbt.putString("InterstellarVesselProgress", InterstellarVesselProgress);
-			nbt.putBoolean("SpaceStation", SpaceStation);
+			nbt.putDouble("SpaceStation", SpaceStation);
 			return nbt;
 		}
 
@@ -189,7 +189,6 @@ public class FaroutModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "farout_mapvars";
-		public double Science = 0;
 		public boolean Not_a_lot_of_science = false;
 		public double Probe_core_number = 0.0;
 		public double Materal_bay_data_value = 25.0;
@@ -256,7 +255,6 @@ public class FaroutModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			Science = nbt.getDouble("Science");
 			Not_a_lot_of_science = nbt.getBoolean("Not_a_lot_of_science");
 			Probe_core_number = nbt.getDouble("Probe_core_number");
 			Materal_bay_data_value = nbt.getDouble("Materal_bay_data_value");
@@ -319,7 +317,6 @@ public class FaroutModVariables {
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("Science", Science);
 			nbt.putBoolean("Not_a_lot_of_science", Not_a_lot_of_science);
 			nbt.putDouble("Probe_core_number", Probe_core_number);
 			nbt.putDouble("Materal_bay_data_value", Materal_bay_data_value);

@@ -16,7 +16,6 @@ import net.mcreator.far_out.client.gui.VoltmeterguiScreen;
 import net.mcreator.far_out.client.gui.StartingLanderGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipControlGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipComponentsGUIScreen;
-import net.mcreator.far_out.client.gui.ScienceGUIScreen;
 import net.mcreator.far_out.client.gui.SandosMapScreen;
 import net.mcreator.far_out.client.gui.RejonaMapScreen;
 import net.mcreator.far_out.client.gui.RegolithSifterGUIScreen;
@@ -33,6 +32,7 @@ import net.mcreator.far_out.client.gui.MainMapScreen;
 import net.mcreator.far_out.client.gui.LowFreqIntegratedCircuitFabGUIScreen;
 import net.mcreator.far_out.client.gui.LanderGUIScreen;
 import net.mcreator.far_out.client.gui.IntegratedCircuitFabricatorGUIScreen;
+import net.mcreator.far_out.client.gui.HydrogenFuelCellGUIScreen;
 import net.mcreator.far_out.client.gui.GreenHouseGUIScreen;
 import net.mcreator.far_out.client.gui.GravityChangerScreen;
 import net.mcreator.far_out.client.gui.GenomeModiferGUIScreen;
@@ -99,12 +99,12 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.PAGE_1.get(), Page1Screen::new);
 			MenuScreens.register(FaroutModMenus.PAGE_2.get(), Page2Screen::new);
 			MenuScreens.register(FaroutModMenus.PAGE_3.get(), Page3Screen::new);
-			MenuScreens.register(FaroutModMenus.SCIENCE_GUI.get(), ScienceGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.STARSHIP_COMPONENTS_GUI.get(), StarshipComponentsGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.FORMALON_MAP.get(), FormalonMapScreen::new);
 			MenuScreens.register(FaroutModMenus.GRAVITY_CHANGER.get(), GravityChangerScreen::new);
 			MenuScreens.register(FaroutModMenus.STARSHIP_CONTROL_GUI.get(), StarshipControlGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.MISSION_CONTROL_GUI.get(), MissionControlGUIScreen::new);
+			MenuScreens.register(FaroutModMenus.HYDROGEN_FUEL_CELL_GUI.get(), HydrogenFuelCellGUIScreen::new);
 		});
 	}
 }

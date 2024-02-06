@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/hydrogenfuelcell",
+  "textures": {
+    "all": "farout:block/at1",
+    "particle": "farout:block/at1",
+    "0": "farout:block/hydrogenfuelcelltex"
+  },
+  "render_type": "solid"
+}
