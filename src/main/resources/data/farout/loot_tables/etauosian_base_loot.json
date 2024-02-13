@@ -206,7 +206,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farout:uranium_ingot",
+          "name": "farout:deleted_mod_element",
           "weight": 2,
           "functions": [
             {

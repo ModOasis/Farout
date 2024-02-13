@@ -65,7 +65,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:Saltwater.bucket"
+            "value": "Items.BUCKET"
           },
           "disablePlacement": {
             "fixedValue": false

@@ -8,6 +8,7 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -99,7 +100,7 @@ public class HydrogenFuelCellGUIMenu extends AbstractContainerMenu implements Su
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return FaroutModItems.SALTWATER_BUCKET.get() == stack.getItem();
+				return Items.BUCKET == stack.getItem();
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

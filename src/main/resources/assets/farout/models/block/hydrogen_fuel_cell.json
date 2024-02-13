@@ -3,7 +3,7 @@
   "textures": {
     "all": "farout:block/at1",
     "particle": "farout:block/at1",
-    "0": "farout:block/hydrogenfuelcelltex"
+    "1": "farout:block/hydrogenfuelcelltex"
   },
   "render_type": "solid"
 }

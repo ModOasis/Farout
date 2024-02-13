@@ -8676,21 +8676,6 @@
       }
     },
     {
-      "name": "ImpactCraters",
-      "type": "feature",
-      "sortid": 1008,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "impact_craters",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/impact_craters_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/impact_craters.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/impact_craters.json"
-        ]
-      }
-    },
-    {
       "name": "SpookyTowers",
       "type": "feature",
       "sortid": 1009,
@@ -15212,6 +15197,72 @@
           "src/main/java/net/mcreator/far_out/client/gui/HydrogenFuelCellGUIScreen.java"
         ]
       }
+    },
+    {
+      "name": "HydrogenFuelCellOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 1448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_fuel_cell_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/HydrogenFuelCellOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HydrogenFuelCellBlockAdded",
+      "type": "procedure",
+      "sortid": 1449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_fuel_cell_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/HydrogenFuelCellBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15884,8 +15935,8 @@
   ],
   "language_map": {
     "en_us": {
-      "block.farout.osmium_block": "Block of Osmium",
       "effect.distant_frontiers.oxygen": "Oxygen",
+      "block.farout.osmium_block": "Block of Osmium",
       "advancements.place_battery.title": "High Voltage",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
@@ -15895,10 +15946,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.farout.aluminium_ingot": "Aluminium",
       "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
-      "itemGroup.tabrocketry": "Rocketry",
+      "item.farout.aluminium_ingot": "Aluminium",
       "itemGroup.tabenergy": "Energy",
+      "itemGroup.tabrocketry": "Rocketry",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",

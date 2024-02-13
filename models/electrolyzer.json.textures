@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "hydrogenfuelcelltex"
+        "0": "electrolyzertex"
       },
       "name": "default"
     }

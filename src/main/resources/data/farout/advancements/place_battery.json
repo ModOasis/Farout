@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:battery_block"
+      "item": "farout:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.place_battery.title"
@@ -21,7 +21,7 @@
         "location": [
           {
             "condition": "minecraft:block_state_property",
-            "block": "farout:battery_block"
+            "block": "farout:deleted_mod_element"
           }
         ]
       }

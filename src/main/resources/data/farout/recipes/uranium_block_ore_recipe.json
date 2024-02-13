@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "farout:uranium_block"
+      "item": "farout:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "farout:uranium_ingot",
+    "item": "farout:deleted_mod_element",
     "count": 9
   }
 }
