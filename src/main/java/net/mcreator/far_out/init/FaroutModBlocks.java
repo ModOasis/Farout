@@ -81,6 +81,7 @@ import net.mcreator.far_out.block.FungusFenceGateBlock;
 import net.mcreator.far_out.block.FungusFenceBlock;
 import net.mcreator.far_out.block.FungusCapBlock;
 import net.mcreator.far_out.block.FungusButtonBlock;
+import net.mcreator.far_out.block.EtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.EtauosianBaseSpawnerBlock;
 import net.mcreator.far_out.block.EtauianBaseSpawnerBlock;
 import net.mcreator.far_out.block.ErbiumBlockBlock;
@@ -107,6 +108,7 @@ import net.mcreator.far_out.block.BlueTorcherBlock;
 import net.mcreator.far_out.block.BiomassBurnerBlock;
 import net.mcreator.far_out.block.BioPlasticWindowBlock;
 import net.mcreator.far_out.block.BauxiteBlock;
+import net.mcreator.far_out.block.BasalticDirtBlock;
 import net.mcreator.far_out.block.AsphaltBlock;
 import net.mcreator.far_out.block.AqueousAmmoniaBlock;
 import net.mcreator.far_out.block.AncientSedimentBlock;
@@ -222,6 +224,8 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> LINEAR_PARTICLE_ACCELERATOR = REGISTRY.register("linear_particle_accelerator", () -> new LinearParticleAcceleratorBlock());
 	public static final RegistryObject<Block> PARTICLE_IONIZER = REGISTRY.register("particle_ionizer", () -> new ParticleIonizerBlock());
 	public static final RegistryObject<Block> HYDROGEN_FUEL_CELL = REGISTRY.register("hydrogen_fuel_cell", () -> new HydrogenFuelCellBlock());
+	public static final RegistryObject<Block> BASALTIC_DIRT = REGISTRY.register("basaltic_dirt", () -> new BasalticDirtBlock());
+	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

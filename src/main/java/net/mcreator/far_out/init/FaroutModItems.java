@@ -121,6 +121,7 @@ import net.mcreator.far_out.item.FissionFragmentEngineItem;
 import net.mcreator.far_out.item.FanItem;
 import net.mcreator.far_out.item.FairingSegmentsItem;
 import net.mcreator.far_out.item.FairingItem;
+import net.mcreator.far_out.item.EtauosianGrainStalkSeedsItem;
 import net.mcreator.far_out.item.ErbiumItem;
 import net.mcreator.far_out.item.EnergyMeterItem;
 import net.mcreator.far_out.item.EmptyFuelTankItem;
@@ -413,6 +414,9 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MAGNETOPLASMADYNAMIC_THRUSTER = REGISTRY.register("magnetoplasmadynamic_thruster", () -> new MagnetoplasmadynamicThrusterItem());
 	public static final RegistryObject<Item> LITHIUM_FUEL_TANK = REGISTRY.register("lithium_fuel_tank", () -> new LithiumFuelTankItem());
 	public static final RegistryObject<Item> HYDROGEN_FUEL_CELL = block(FaroutModBlocks.HYDROGEN_FUEL_CELL);
+	public static final RegistryObject<Item> BASALTIC_DIRT = block(FaroutModBlocks.BASALTIC_DIRT);
+	public static final RegistryObject<Item> ETAUOSIAN_GRAINSTALK = block(FaroutModBlocks.ETAUOSIAN_GRAINSTALK);
+	public static final RegistryObject<Item> ETAUOSIAN_GRAIN_STALK_SEEDS = REGISTRY.register("etauosian_grain_stalk_seeds", () -> new EtauosianGrainStalkSeedsItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

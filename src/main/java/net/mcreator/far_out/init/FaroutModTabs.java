@@ -40,6 +40,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.BERYLLIUM_INGOT.get());
 				tabData.accept(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR.get().asItem());
 				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
+				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
 			})
 
 					.build());
@@ -292,6 +293,8 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.CRYSTALITE_SOIL.get().asItem());
 			tabData.accept(FaroutModItems.LIQUID_SULFUR_DIOXIDE_BUCKET.get());
 			tabData.accept(FaroutModBlocks.CRUSHED_QUARTZ.get().asItem());
+			tabData.accept(FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get().asItem());
+			tabData.accept(FaroutModItems.ETAUOSIAN_GRAIN_STALK_SEEDS.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

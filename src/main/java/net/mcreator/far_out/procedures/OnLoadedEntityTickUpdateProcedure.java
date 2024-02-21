@@ -78,6 +78,8 @@ public class OnLoadedEntityTickUpdateProcedure {
 			FaroutModVariables.MapVariables.get(world).syncData(world);
 		}
 		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos")))) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(FaroutModMobEffects.OXYGEN.get(), 5, 2, false, false));
 			FaroutModVariables.MapVariables.get(world).Gravity = 2.71;
 			FaroutModVariables.MapVariables.get(world).syncData(world);
 		}
@@ -126,6 +128,8 @@ public class OnLoadedEntityTickUpdateProcedure {
 			FaroutModVariables.MapVariables.get(world).syncData(world);
 		}
 		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus")))) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(FaroutModMobEffects.OXYGEN.get(), 5, 2, false, false));
 			FaroutModVariables.MapVariables.get(world).Gravity = 4.98;
 			FaroutModVariables.MapVariables.get(world).syncData(world);
 		}
@@ -143,7 +147,7 @@ public class OnLoadedEntityTickUpdateProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(FaroutModMobEffects.OXYGEN.get(), 5, 2, false, false));
 		}
-		if (!(entity instanceof LivingEntity _livEnt61 && _livEnt61.hasEffect(FaroutModMobEffects.OXYGEN.get())) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:machine_entity")))) {
+		if (!(entity instanceof LivingEntity _livEnt63 && _livEnt63.hasEffect(FaroutModMobEffects.OXYGEN.get())) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:machine_entity")))) {
 			for (int index0 = 0; index0 < (int) (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1); index0++) {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("farout:asphyxiation")))), 1);
 			}

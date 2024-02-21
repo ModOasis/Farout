@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "farout:custom/electrolyzer",
   "textures": {
-    "down": "farout:block/at1",
-    "up": "farout:block/at1",
-    "north": "farout:block/fan",
-    "east": "farout:block/voltometer",
-    "south": "farout:block/at1",
-    "west": "farout:block/at1",
-    "particle": "farout:block/at1"
+    "all": "farout:block/electrolyzertex",
+    "particle": "farout:block/electrolyzertex",
+    "0": "farout:block/electrolyzertex"
   },
   "render_type": "solid"
 }

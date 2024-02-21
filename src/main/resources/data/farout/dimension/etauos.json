@@ -585,10 +585,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "farout:basaltic_dirt"
                             }
                           }
                         },
@@ -660,7 +657,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:calcite"
+                              "Name": "minecraft:smooth_basalt"
                             }
                           }
                         },

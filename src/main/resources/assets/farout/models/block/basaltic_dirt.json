@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/basalticdirt",
+    "up": "farout:block/basalticdirt",
+    "north": "farout:block/basalticdirt",
+    "east": "farout:block/basalticdirt",
+    "south": "farout:block/basalticdirt",
+    "west": "farout:block/basalticdirt",
+    "particle": "farout:block/basalticdirt"
+  },
+  "render_type": "solid"
+}

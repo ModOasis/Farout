@@ -354,32 +354,6 @@
       }
     },
     {
-      "name": "UraniumOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 224,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uranium_ore_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/uranium_ore_block_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "UraniumBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 225,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "uranium_block_ore_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/uranium_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "LithiumIngot",
       "type": "item",
       "sortid": 64,
@@ -5426,17 +5400,6 @@
           "src/main/java/net/mcreator/far_out/item/OpenFairingItem.java",
           "src/main/resources/assets/farout/models/item/open_fairing.json"
         ]
-      }
-    },
-    {
-      "name": "UnnmannedRocketry",
-      "type": "tab",
-      "sortid": 776,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unnmanned_rocketry",
-      "metadata": {
-        "files": []
       }
     },
     {
@@ -15263,6 +15226,87 @@
           }
         ]
       }
+    },
+    {
+      "name": "BasalticDirt",
+      "type": "block",
+      "sortid": 1450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basaltic_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/block/basaltic_dirt.json",
+          "src/main/resources/assets/farout/models/item/basaltic_dirt.json",
+          "src/main/java/net/mcreator/far_out/block/BasalticDirtBlock.java",
+          "src/main/resources/assets/farout/blockstates/basaltic_dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauosianGrainstalk",
+      "type": "plant",
+      "sortid": 1451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_grainstalk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/models/item/etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/models/block/etauosian_grainstalk.json",
+          "src/main/java/net/mcreator/far_out/block/EtauosianGrainstalkBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "EtauosianGrainStalkSeedsRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 1452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_grain_stalk_seeds_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/EtauosianGrainStalkSeedsRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EtauosianGrainStalkSeeds",
+      "type": "item",
+      "sortid": 1453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_grain_stalk_seeds",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/EtauosianGrainStalkSeedsItem.java",
+          "src/main/resources/assets/farout/models/item/etauosian_grain_stalk_seeds.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -16680,6 +16724,7 @@
       "effect.far_out.radioactive": "Radioactive",
       "biome.farout.methane_seas": "Methane Seas",
       "item.distant_frontiers.display": "Display",
+      "block.farout.basaltic_dirt": "Basaltic Dirt",
       "item.distant_frontiers.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
       "item.farout.fusion_fuel_tank": "Fusion Fuel Tank",
       "gui.distant_frontiers.fairing_gui.label_electric": "Electric",
@@ -17033,6 +17078,7 @@
       "block.farout.low_frequency_integrated_circuit_fabricator": "Low Frequency Integrated Circuit Fabricator",
       "item.distant_frontiers.liquidmethane_bucket": "Liquid methane Bucket",
       "block.far_out.phosphoratedstone": "Phosphorated Cobblestone",
+      "block.farout.etauosian_grainstalk": "Etauosian Grainstalk",
       "item.distant_frontiers.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "gui.farout.regolith_sifter_gui.label_regolith_sifter": " Regolith Sifter",
       "block.far_out.metallic_hydrogen": "Metallic Hydrogen",
@@ -17314,6 +17360,7 @@
       "item.far_out.light_isotopes": "Light Isotopes",
       "gui.distant_frontiers.massivo_gui.label_other_information_is_the_only_g": "other information: is the only gas ",
       "gui.distant_frontiers.planetary_logistics_gui.label_planetary_logistics": "Planetary Logistics",
+      "item.farout.etauosian_grain_stalk_seeds": "Etauosian Grain Stalk Seeds",
       "advancements.nuclear_reactor_made.title": "A controversial power source",
       "item.far_out.hori": "Massivo Portal Igniter",
       "gui.distant_frontiers.massivo_gui.label_2_salt": "2% salt",
@@ -17392,7 +17439,6 @@
       "block.distant_frontiers.server_rack": "Server Rack",
       "item.farout.bacterial_culture": "Bacterial Culture",
       "block.farout.alien_reeds": "Alien Reeds",
-      "item_group.farout.unnmanned_rocketry": "Unnmanned Rocketry",
       "gui.distant_frontiers.vulcan_gui.label_moons_none": "moons: none",
       "gui.distant_frontiers.glacieo_gui.label_atmosphere_106_kpa": "atmosphere: 10.6 KPa",
       "item.no.space_suit_chestplate": "Space Suit Body",

@@ -39,7 +39,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "CUSTOM:SulfuricAcidRain"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
