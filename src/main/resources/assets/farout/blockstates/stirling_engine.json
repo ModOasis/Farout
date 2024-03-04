@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:custom/stirling_engine_particle"
+    },
+    "facing=east": {
+      "model": "farout:custom/stirling_engine_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:custom/stirling_engine_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:custom/stirling_engine_particle",
+      "y": 270
+    }
+  }
+}

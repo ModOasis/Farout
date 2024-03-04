@@ -22,6 +22,7 @@ import net.mcreator.far_out.block.SuperconductingMagneticBatteryBlock;
 import net.mcreator.far_out.block.Super_AlloyBlockBlock;
 import net.mcreator.far_out.block.SulfuricAcidBlock;
 import net.mcreator.far_out.block.SulfurBlockBlock;
+import net.mcreator.far_out.block.StirlingEngineBlock;
 import net.mcreator.far_out.block.SporeEmitterBlock;
 import net.mcreator.far_out.block.SporeBerrieBlockBlock;
 import net.mcreator.far_out.block.SpodumeneOreBlock;
@@ -226,6 +227,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> HYDROGEN_FUEL_CELL = REGISTRY.register("hydrogen_fuel_cell", () -> new HydrogenFuelCellBlock());
 	public static final RegistryObject<Block> BASALTIC_DIRT = REGISTRY.register("basaltic_dirt", () -> new BasalticDirtBlock());
 	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
+	public static final RegistryObject<Block> STIRLING_ENGINE = REGISTRY.register("stirling_engine", () -> new StirlingEngineBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

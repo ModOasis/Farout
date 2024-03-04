@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
+import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
 import net.mcreator.far_out.block.entity.ParticleIonizerBlockEntity;
 import net.mcreator.far_out.block.entity.OreExtractorBlockEntity;
@@ -61,6 +62,8 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> LINEAR_PARTICLE_ACCELERATOR = register("linear_particle_accelerator", FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR, LinearParticleAcceleratorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PARTICLE_IONIZER = register("particle_ionizer", FaroutModBlocks.PARTICLE_IONIZER, ParticleIonizerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> HYDROGEN_FUEL_CELL = register("hydrogen_fuel_cell", FaroutModBlocks.HYDROGEN_FUEL_CELL, HydrogenFuelCellBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<StirlingEngineTileEntity>> STIRLING_ENGINE = REGISTRY.register("stirling_engine",
+			() -> BlockEntityType.Builder.of(StirlingEngineTileEntity::new, FaroutModBlocks.STIRLING_ENGINE.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

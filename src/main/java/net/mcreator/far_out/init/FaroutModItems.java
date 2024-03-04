@@ -164,6 +164,7 @@ import net.mcreator.far_out.item.AluminiumIngotItem;
 import net.mcreator.far_out.item.AlgaeBarItem;
 import net.mcreator.far_out.item.AirtightFabricItem;
 import net.mcreator.far_out.item.AdvancedCommandDiskItem;
+import net.mcreator.far_out.block.display.StirlingEngineDisplayItem;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModItems {
@@ -417,6 +418,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> BASALTIC_DIRT = block(FaroutModBlocks.BASALTIC_DIRT);
 	public static final RegistryObject<Item> ETAUOSIAN_GRAINSTALK = block(FaroutModBlocks.ETAUOSIAN_GRAINSTALK);
 	public static final RegistryObject<Item> ETAUOSIAN_GRAIN_STALK_SEEDS = REGISTRY.register("etauosian_grain_stalk_seeds", () -> new EtauosianGrainStalkSeedsItem());
+	public static final RegistryObject<Item> STIRLING_ENGINE = REGISTRY.register(FaroutModBlocks.STIRLING_ENGINE.getId().getPath(), () -> new StirlingEngineDisplayItem(FaroutModBlocks.STIRLING_ENGINE.get(), new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

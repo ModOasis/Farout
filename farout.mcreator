@@ -4048,19 +4048,6 @@
       }
     },
     {
-      "name": "PlaceBattery",
-      "type": "achievement",
-      "sortid": 587,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "place_battery",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/place_battery.json"
-        ]
-      }
-    },
-    {
       "name": "GeothermalGeneratorUpdateTick",
       "type": "procedure",
       "sortid": 588,
@@ -15307,6 +15294,59 @@
           "src/main/resources/assets/farout/models/item/etauosian_grain_stalk_seeds.json"
         ]
       }
+    },
+    {
+      "name": "StirlingEngineUpdateTick",
+      "type": "procedure",
+      "sortid": 1454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stirling_engine_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/StirlingEngineUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StirlingEngine",
+      "type": "animatedblock",
+      "sortid": 1455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stirling_engine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/custom/stirling_engine_particle.json",
+          "src/main/java/net/mcreator/far_out/block/model/StirlingEngineDisplayModel.java",
+          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/far_out/block/StirlingEngineBlock.java",
+          "src/main/java/net/mcreator/far_out/block/display/StirlingEngineDisplayItem.java",
+          "src/main/java/net/mcreator/far_out/block/model/StirlingEngineBlockModel.java",
+          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineTileRenderer.java",
+          "src/main/java/net/mcreator/far_out/block/entity/StirlingEngineTileEntity.java",
+          "src/main/resources/assets/farout/blockstates/stirling_engine.json",
+          "src/main/resources/assets/farout/models/item/stirling_engine.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15979,9 +16019,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
-      "advancements.place_battery.title": "High Voltage",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -15990,10 +16029,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "item.farout.aluminium_ingot": "Aluminium",
-      "itemGroup.tabenergy": "Energy",
+      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "itemGroup.tabrocketry": "Rocketry",
+      "itemGroup.tabenergy": "Energy",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -16924,6 +16963,7 @@
       "item.far_out.graphite_ingot": "Graphite",
       "entity.distant_frontiers.launch_vehicle": "Launch Vehicle",
       "item.far_out.motor": "Motor",
+      "block.farout.stirling_engine": "Stirling Engine",
       "gui.farout.sandos_map.button_set_trajectory": "Set Trajectory",
       "item.distant_frontiers.liquid_hydrogen_fuel_tank": "Liquid Hydrogen Fuel Tank",
       "item.distant_frontiers.boron_filter": "Centrifugal Boron Filter",
@@ -17316,7 +17356,6 @@
       "item.far_out.super_capacitors": "Super Capacitors",
       "gui.distant_frontiers.glacieo_gui.label_orbital_speed_161_kms": "orbital speed: 16.1 km/s",
       "gui.farout.etaui_map.label_star_system_viewer": "Star System Viewer",
-      "advancements.place_battery.descr": "Craft and place a battery",
       "item.distant_frontiers.open_fairing": "Open Fairing",
       "fluid.farout.aqueous_ammonia": "Aqueous Ammonia",
       "block.farout.lumiblossom_pressure_plate": "Lumiblossom Pressure Plate",

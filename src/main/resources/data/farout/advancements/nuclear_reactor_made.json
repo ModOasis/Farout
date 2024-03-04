@@ -39,5 +39,5 @@
       "farout:deleted_mod_element"
     ]
   },
-  "parent": "farout:place_battery"
+  "parent": "farout:deleted_mod_element"
 }

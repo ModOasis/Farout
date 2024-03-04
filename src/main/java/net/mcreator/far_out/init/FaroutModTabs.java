@@ -41,6 +41,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR.get().asItem());
 				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
 				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
+				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
 			})
 
 					.build());
