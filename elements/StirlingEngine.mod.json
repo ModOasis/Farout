@@ -136,7 +136,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "stirlingengine.geo.json",
-    "displaySettings": "stirlingengine.item.json"
+    "normal": "stirling_engine.geo.json",
+    "displaySettings": "stirling_engine.item.json"
   }
 }

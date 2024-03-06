@@ -245,7 +245,7 @@ public class FaroutModVariables {
 		public String WorkingSudoArray = "~Hey;Hi~";
 		public double WantedIndex = 1.0;
 		public double RotationSpeed = 0;
-		public double SandosLuminosity = 0;
+		public double SandosLuminosity = 0.0;
 		public String ModID = "farout";
 
 		public static MapVariables load(CompoundTag tag) {

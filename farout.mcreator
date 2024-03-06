@@ -12894,6 +12894,22 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -15900,7 +15916,7 @@
       "name": "SandosLuminosity",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "SystemData",
@@ -17580,7 +17596,7 @@
     "modid": "farout",
     "modName": "Farout",
     "version": "0.12",
-    "description": "Adrift in the cosmic expanse so wide, I wander, lost, with no place to reside. Among twinkling stars, I yearn to roam, To find my way back and return to my home.  In the celestial sea, I search for a guide, Through nebulous clouds, my hopes collide. Memories of home, like constellations, shine, Guiding me through darkness, a beacon divine.  Amidst the vastness, I sail, resolute and bold, Chasing starlight, my heart\u0027s desire untold. For in that cherished place, love will bestow, And in the embrace of home, I\u0027ll finally know.",
+    "description": "A space exploration mod set in a globular cluster.",
     "author": "BetaStar9108",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/far-out",
     "license": "GNU General Public License version 3 (GPLv3)",

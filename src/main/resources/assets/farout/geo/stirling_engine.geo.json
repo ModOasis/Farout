@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.StirlingEngine",
+				"identifier": "geometry.stirling_engine",
 				"texture_width": 128,
 				"texture_height": 128,
 				"visible_bounds_width": 3,
@@ -12,18 +12,20 @@
 			},
 			"bones": [
 				{
-					"name": "bb_main",
-					"pivot": [0, 0, 0],
+					"name": "Root",
+					"pivot": [0, 3, 0],
 					"cubes": [
 						{"origin": [-8, 3, -8], "size": [16, 1, 16], "uv": [0, 41]},
 						{"origin": [-8, 12, -8], "size": [16, 1, 16], "uv": [0, 24]},
 						{"origin": [-7, 13, -2], "size": [3, 4, 3], "uv": [48, 0]},
 						{"origin": [1, 13, -1], "size": [2, 15, 2], "uv": [0, 58]},
-						{"origin": [-8, 4, -8], "size": [16, 8, 16], "uv": [0, 0]}
+						{"origin": [-8, 4, -8], "size": [16, 8, 16], "uv": [0, 0]},
+						{"origin": [-8, 0, -8], "size": [16, 3, 16], "uv": [0, 74]}
 					]
 				},
 				{
 					"name": "Piston",
+					"parent": "Root",
 					"pivot": [0, -1, 0],
 					"cubes": [
 						{"origin": [-6, 10, -1], "size": [1, 14, 1], "uv": [36, 58]}
@@ -31,6 +33,7 @@
 				},
 				{
 					"name": "Wheel",
+					"parent": "Root",
 					"pivot": [0, 28.25, -0.5],
 					"rotation": [-45, 0, 0],
 					"cubes": [
@@ -65,17 +68,19 @@
 					]
 				},
 				{
-					"name": "Compressor",
-					"pivot": [0, 0, 0],
-					"cubes": [
-						{"origin": [-6, 4, -6], "size": [12, 3, 12], "uv": [48, 0]}
-					]
-				},
-				{
 					"name": "PistonRotator",
+					"parent": "Root",
 					"pivot": [-6, 24, 0],
 					"cubes": [
 						{"origin": [-6, 23.5, -1], "size": [1, 5, 1], "pivot": [-6, 24, 0], "rotation": [-27.5, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Compressor",
+					"parent": "Root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 4, -6], "size": [12, 3, 12], "uv": [48, 0]}
 					]
 				}
 			]
