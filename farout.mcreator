@@ -2533,23 +2533,6 @@
       }
     },
     {
-      "name": "AirPurifier",
-      "type": "block",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/air_purifier.json",
-          "src/main/java/net/mcreator/far_out/block/entity/AirPurifierBlockEntity.java",
-          "src/main/java/net/mcreator/far_out/block/AirPurifierBlock.java",
-          "src/main/resources/assets/farout/models/block/air_purifier.json",
-          "src/main/resources/assets/farout/models/item/air_purifier.json"
-        ]
-      }
-    },
-    {
       "name": "NuclearReactorGUIWhileThisGUIIsOpenTick",
       "type": "procedure",
       "sortid": 408,
@@ -3302,23 +3285,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "AilenMoss",
-      "type": "block",
-      "sortid": 180,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ailen_moss",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/AilenMossBlockEntity.java",
-          "src/main/resources/assets/farout/models/block/ailen_moss.json",
-          "src/main/resources/assets/farout/blockstates/ailen_moss.json",
-          "src/main/resources/assets/farout/models/item/ailen_moss.json",
-          "src/main/java/net/mcreator/far_out/block/AilenMossBlock.java"
         ]
       }
     },
@@ -10592,29 +10558,6 @@
       }
     },
     {
-      "name": "AirlockDoor",
-      "type": "block",
-      "sortid": 1135,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "airlock_door",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/airlock_door.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_bottom_right_open.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_bottom_right.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_top_right_open.json",
-          "src/main/java/net/mcreator/far_out/block/AirlockDoorBlock.java",
-          "src/main/resources/assets/farout/models/block/airlock_door_top_left.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_top_left_open.json",
-          "src/main/resources/assets/farout/models/item/airlock_door.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_bottom_left_open.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_top_right.json",
-          "src/main/resources/assets/farout/models/block/airlock_door_bottom_left.json"
-        ]
-      }
-    },
-    {
       "name": "PhotovoltaicPanelFab",
       "type": "procedure",
       "sortid": 1136,
@@ -15255,10 +15198,13 @@
       "registry_name": "etauosian_grainstalk",
       "metadata": {
         "files": [
+          "src/main/resources/data/farout/worldgen/configured_feature/etauosian_grainstalk.json",
           "src/main/resources/assets/farout/blockstates/etauosian_grainstalk.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/etauosian_grainstalk.json",
           "src/main/resources/assets/farout/models/item/etauosian_grainstalk.json",
           "src/main/resources/assets/farout/models/block/etauosian_grainstalk.json",
-          "src/main/java/net/mcreator/far_out/block/EtauosianGrainstalkBlock.java"
+          "src/main/java/net/mcreator/far_out/block/EtauosianGrainstalkBlock.java",
+          "src/main/resources/data/farout/forge/biome_modifier/etauosian_grainstalk_biome_modifier.json"
         ]
       }
     },
@@ -15361,6 +15307,38 @@
           "src/main/java/net/mcreator/far_out/block/entity/StirlingEngineTileEntity.java",
           "src/main/resources/assets/farout/blockstates/stirling_engine.json",
           "src/main/resources/assets/farout/models/item/stirling_engine.json"
+        ]
+      }
+    },
+    {
+      "name": "ImmatureEtauosianGrainstalk",
+      "type": "plant",
+      "sortid": 1456,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immature_etauosian_grainstalk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/worldgen/configured_feature/immature_etauosian_grainstalk.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/immature_etauosian_grainstalk.json",
+          "src/main/java/net/mcreator/far_out/block/ImmatureEtauosianGrainstalkBlock.java",
+          "src/main/resources/assets/farout/models/block/immature_etauosian_grainstalk.json",
+          "src/main/resources/data/farout/forge/biome_modifier/immature_etauosian_grainstalk_biome_modifier.json",
+          "src/main/resources/assets/farout/blockstates/immature_etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/models/item/immature_etauosian_grainstalk.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauosianGrainstalkLootTable",
+      "type": "loottable",
+      "sortid": 1457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_grainstalk_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/loot_tables/blocks/etauosian_grainstalk.json"
         ]
       }
     }
@@ -16035,8 +16013,8 @@
   ],
   "language_map": {
     "en_us": {
-      "block.farout.osmium_block": "Block of Osmium",
       "effect.distant_frontiers.oxygen": "Oxygen",
+      "block.farout.osmium_block": "Block of Osmium",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -16045,10 +16023,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.farout.aluminium_ingot": "Aluminium",
       "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
-      "itemGroup.tabrocketry": "Rocketry",
+      "item.farout.aluminium_ingot": "Aluminium",
       "itemGroup.tabenergy": "Energy",
+      "itemGroup.tabrocketry": "Rocketry",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -16797,6 +16775,7 @@
       "gui.farout.page_2.label_day_7_so_far_these_last_few_da": "Day 7: So far, these last few days consisted of surviving, but I need to go  ",
       "item.far_out.quartz_filter": "Centrifugal Quartz Filter",
       "block.far_out.truss": "Truss",
+      "block.farout.immature_etauosian_grainstalk": "Etauosian Grainstalk",
       "block.no.liquidmethane": "Liquidmethane",
       "gui.distant_frontiers.silican_gui.label_mass_621_moon_masses": "mass: 6.21 moon masses",
       "item.farout.galactic_core_tracker": "Galactic Core Tracker",
@@ -17607,7 +17586,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "geckolib"
+      "geckolib",
+      "jei"
     ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Made By BetaStar9108.",

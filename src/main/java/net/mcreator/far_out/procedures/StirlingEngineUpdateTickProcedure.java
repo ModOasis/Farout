@@ -16,12 +16,17 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class StirlingEngineUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean State = false;
+		{
+			int _value = 1;
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+		}
 		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.LAVA) {
-			State = true;
 			FaroutModVariables.WorldVariables.get(world).Energy = FaroutModVariables.WorldVariables.get(world).Energy + 1;
 			FaroutModVariables.WorldVariables.get(world).syncData(world);
 		} else if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.FURNACE) {
-			State = true;
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -30,12 +35,11 @@ public class StirlingEngineUpdateTickProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 0) >= 1) {
+			}.getAmount(world, BlockPos.containing(x, y - 1, z), 0) >= 1) {
 				FaroutModVariables.WorldVariables.get(world).Energy = FaroutModVariables.WorldVariables.get(world).Energy + 0.5;
 				FaroutModVariables.WorldVariables.get(world).syncData(world);
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == Blocks.BLAST_FURNACE) {
-			State = true;
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					AtomicInteger _retval = new AtomicInteger(0);
@@ -44,27 +48,9 @@ public class StirlingEngineUpdateTickProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 0) >= 1) {
+			}.getAmount(world, BlockPos.containing(x, y - 1, z), 0) >= 1) {
 				FaroutModVariables.WorldVariables.get(world).Energy = FaroutModVariables.WorldVariables.get(world).Energy + 1;
 				FaroutModVariables.WorldVariables.get(world).syncData(world);
-			}
-		} else {
-			State = false;
-		}
-		if (State) {
-			{
-				int _value = 0;
-				BlockPos _pos = BlockPos.containing(x, y, z);
-				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
-			}
-		} else {
-			{
-				BlockPos _pos = BlockPos.containing(x, y, z);
-				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp)
-					world.setBlock(_pos, _bs.setValue(_integerProp, 0), 3);
 			}
 		}
 	}

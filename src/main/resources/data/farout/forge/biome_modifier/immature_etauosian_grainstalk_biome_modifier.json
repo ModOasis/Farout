@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:etauos_lowlands",
+  "features": "farout:immature_etauosian_grainstalk",
+  "step": "vegetal_decoration"
+}

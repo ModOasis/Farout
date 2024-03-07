@@ -10,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.far_out.item.WrenchItem;
@@ -184,7 +183,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> POTASSIUM_NITRATE_BLOCK = block(FaroutModBlocks.POTASSIUM_NITRATE_BLOCK);
 	public static final RegistryObject<Item> GUNPOWDER_BLOCK = block(FaroutModBlocks.GUNPOWDER_BLOCK);
 	public static final RegistryObject<Item> DESKTOP_COMPUTER = block(FaroutModBlocks.DESKTOP_COMPUTER);
-	public static final RegistryObject<Item> AIR_PURIFIER = block(FaroutModBlocks.AIR_PURIFIER);
 	public static final RegistryObject<Item> LIMESTONE_BLOCK = block(FaroutModBlocks.LIMESTONE_BLOCK);
 	public static final RegistryObject<Item> TRUSS = block(FaroutModBlocks.TRUSS);
 	public static final RegistryObject<Item> ELECTROLYZER = block(FaroutModBlocks.ELECTROLYZER);
@@ -246,7 +244,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> CARDBOARDBOX = block(FaroutModBlocks.CARDBOARDBOX);
 	public static final RegistryObject<Item> CHACOA = block(FaroutModBlocks.CHACOA);
 	public static final RegistryObject<Item> CHACOAVINES = block(FaroutModBlocks.CHACOAVINES);
-	public static final RegistryObject<Item> AILEN_MOSS = block(FaroutModBlocks.AILEN_MOSS);
 	public static final RegistryObject<Item> FUNGUS_FENCE_GATE = block(FaroutModBlocks.FUNGUS_FENCE_GATE);
 	public static final RegistryObject<Item> FUNGUS_PRESSURE_PLATE = block(FaroutModBlocks.FUNGUS_PRESSURE_PLATE);
 	public static final RegistryObject<Item> CHEMICAL_ROCKET_ENGINE = REGISTRY.register("chemical_rocket_engine", () -> new ChemicalRocketEngineItem());
@@ -367,7 +364,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> SOLAR_COLLECTOR = REGISTRY.register("solar_collector", () -> new SolarCollectorItem());
 	public static final RegistryObject<Item> INTERSTELLAR_HABITATION_MODULE = REGISTRY.register("interstellar_habitation_module", () -> new InterstellarHabitationModuleItem());
 	public static final RegistryObject<Item> PHOTOVOLTAIC_WAFER = REGISTRY.register("photovoltaic_wafer", () -> new PhotovoltaicWaferItem());
-	public static final RegistryObject<Item> AIRLOCK_DOOR = doubleBlock(FaroutModBlocks.AIRLOCK_DOOR);
 	public static final RegistryObject<Item> FISSION_FRAGMENT_FUEL_TANK = REGISTRY.register("fission_fragment_fuel_tank", () -> new FissionFragmentFuelTankItem());
 	public static final RegistryObject<Item> STARSHIP_CORE = REGISTRY.register("starship_core", () -> new StarshipCoreItem());
 	public static final RegistryObject<Item> LANDER_BAY = REGISTRY.register("lander_bay", () -> new LanderBayItem());
@@ -419,12 +415,9 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> ETAUOSIAN_GRAINSTALK = block(FaroutModBlocks.ETAUOSIAN_GRAINSTALK);
 	public static final RegistryObject<Item> ETAUOSIAN_GRAIN_STALK_SEEDS = REGISTRY.register("etauosian_grain_stalk_seeds", () -> new EtauosianGrainStalkSeedsItem());
 	public static final RegistryObject<Item> STIRLING_ENGINE = REGISTRY.register(FaroutModBlocks.STIRLING_ENGINE.getId().getPath(), () -> new StirlingEngineDisplayItem(FaroutModBlocks.STIRLING_ENGINE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> IMMATURE_ETAUOSIAN_GRAINSTALK = block(FaroutModBlocks.IMMATURE_ETAUOSIAN_GRAINSTALK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
-	}
-
-	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block) {
-		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
 	}
 }

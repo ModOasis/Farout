@@ -65,6 +65,7 @@ import net.mcreator.far_out.block.LinearParticleAcceleratorBlock;
 import net.mcreator.far_out.block.LimestoneBlockBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
+import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.HydrogenFuelCellBlock;
 import net.mcreator.far_out.block.HighFrequencyIntergratedCircutFabricatorBlock;
 import net.mcreator.far_out.block.GunpowderBlockBlock;
@@ -116,9 +117,6 @@ import net.mcreator.far_out.block.AncientSedimentBlock;
 import net.mcreator.far_out.block.AluminiumBlockBlock;
 import net.mcreator.far_out.block.AlienReedsBlock;
 import net.mcreator.far_out.block.AirtightHabitatWallBlock;
-import net.mcreator.far_out.block.AirlockDoorBlock;
-import net.mcreator.far_out.block.AirPurifierBlock;
-import net.mcreator.far_out.block.AilenMossBlock;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModBlocks {
@@ -138,7 +136,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> POTASSIUM_NITRATE_BLOCK = REGISTRY.register("potassium_nitrate_block", () -> new Potassium_nitrateBlockBlock());
 	public static final RegistryObject<Block> GUNPOWDER_BLOCK = REGISTRY.register("gunpowder_block", () -> new GunpowderBlockBlock());
 	public static final RegistryObject<Block> DESKTOP_COMPUTER = REGISTRY.register("desktop_computer", () -> new DesktopComputerBlock());
-	public static final RegistryObject<Block> AIR_PURIFIER = REGISTRY.register("air_purifier", () -> new AirPurifierBlock());
 	public static final RegistryObject<Block> LIMESTONE_BLOCK = REGISTRY.register("limestone_block", () -> new LimestoneBlockBlock());
 	public static final RegistryObject<Block> TRUSS = REGISTRY.register("truss", () -> new TrussBlock());
 	public static final RegistryObject<Block> ELECTROLYZER = REGISTRY.register("electrolyzer", () -> new ElectrolyzerBlock());
@@ -155,7 +152,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> CARDBOARDBOX = REGISTRY.register("cardboardbox", () -> new CardboardboxBlock());
 	public static final RegistryObject<Block> CHACOA = REGISTRY.register("chacoa", () -> new ChacoaBlock());
 	public static final RegistryObject<Block> CHACOAVINES = REGISTRY.register("chacoavines", () -> new ChacoavinesBlock());
-	public static final RegistryObject<Block> AILEN_MOSS = REGISTRY.register("ailen_moss", () -> new AilenMossBlock());
 	public static final RegistryObject<Block> FUNGUS_FENCE_GATE = REGISTRY.register("fungus_fence_gate", () -> new FungusFenceGateBlock());
 	public static final RegistryObject<Block> FUNGUS_PRESSURE_PLATE = REGISTRY.register("fungus_pressure_plate", () -> new FungusPressurePlateBlock());
 	public static final RegistryObject<Block> GEOTHERMAL_GENERATOR = REGISTRY.register("geothermal_generator", () -> new GeothermalGeneratorBlock());
@@ -201,7 +197,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> LUMIBLOSSOM_PRESSURE_PLATE = REGISTRY.register("lumiblossom_pressure_plate", () -> new LumiblossomPressurePlateBlock());
 	public static final RegistryObject<Block> LUMIBLOSSOM_BUTTON = REGISTRY.register("lumiblossom_button", () -> new LumiblossomButtonBlock());
 	public static final RegistryObject<Block> QUARTZ_ORE = REGISTRY.register("quartz_ore", () -> new QuartzOreBlock());
-	public static final RegistryObject<Block> AIRLOCK_DOOR = REGISTRY.register("airlock_door", () -> new AirlockDoorBlock());
 	public static final RegistryObject<Block> SOLAR_VINES_CAP = REGISTRY.register("solar_vines_cap", () -> new SolarVinesCapBlock());
 	public static final RegistryObject<Block> SOLAR_VINES = REGISTRY.register("solar_vines", () -> new SolarVinesBlock());
 	public static final RegistryObject<Block> ORE_EXTRACTOR = REGISTRY.register("ore_extractor", () -> new OreExtractorBlock());
@@ -228,17 +223,22 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> BASALTIC_DIRT = REGISTRY.register("basaltic_dirt", () -> new BasalticDirtBlock());
 	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
 	public static final RegistryObject<Block> STIRLING_ENGINE = REGISTRY.register("stirling_engine", () -> new StirlingEngineBlock());
+	public static final RegistryObject<Block> IMMATURE_ETAUOSIAN_GRAINSTALK = REGISTRY.register("immature_etauosian_grainstalk", () -> new ImmatureEtauosianGrainstalkBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 			LargeSolarPanelsBlock.blockColorLoad(event);
+			EtauosianGrainstalkBlock.blockColorLoad(event);
+			ImmatureEtauosianGrainstalkBlock.blockColorLoad(event);
 		}
 
 		@SubscribeEvent
 		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			LargeSolarPanelsBlock.itemColorLoad(event);
+			EtauosianGrainstalkBlock.itemColorLoad(event);
+			ImmatureEtauosianGrainstalkBlock.itemColorLoad(event);
 		}
 	}
 }

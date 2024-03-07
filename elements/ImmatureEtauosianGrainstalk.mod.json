@@ -3,10 +3,10 @@
   "_type": "plant",
   "definition": {
     "renderType": 13,
-    "texture": "etauosiangrainstalk",
+    "texture": "immature_etauosian_grainstalk",
     "textureBottom": "",
     "customModelName": "Crop model",
-    "itemTexture": "etauosiangrainstalk",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "Grass",
     "isItemTinted": true,
@@ -59,20 +59,20 @@
     "fallSound": {
       "value": ""
     },
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:EtauosianGrainStalkSeeds"
     },
-    "dropAmount": 1,
+    "dropAmount": 3,
     "forceTicking": false,
     "emissiveRendering": true,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "BROWN",
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,

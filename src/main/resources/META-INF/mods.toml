@@ -33,4 +33,10 @@ description="A space exploration mod set in a globular cluster."
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.farout]]
+    modId="jei"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

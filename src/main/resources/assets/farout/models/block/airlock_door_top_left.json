@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_left",
-  "textures": {
-    "bottom": "farout:block/airlockdoorbottom",
-    "top": "farout:block/airlockdoortop"
-  },
-  "render_type": "cutout_mipped"
-}

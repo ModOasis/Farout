@@ -32,15 +32,12 @@ import net.mcreator.far_out.block.entity.ChacoavinesBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoaBlockEntity;
 import net.mcreator.far_out.block.entity.CardboardboxBlockEntity;
 import net.mcreator.far_out.block.entity.BiomassBurnerBlockEntity;
-import net.mcreator.far_out.block.entity.AirPurifierBlockEntity;
-import net.mcreator.far_out.block.entity.AilenMossBlockEntity;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FaroutMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> FUNGUSTRUNK = register("fungustrunk", FaroutModBlocks.FUNGUSTRUNK, FungustrunkBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FUNGUS_CAP = register("fungus_cap", FaroutModBlocks.FUNGUS_CAP, FungusCapBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> AIR_PURIFIER = register("air_purifier", FaroutModBlocks.AIR_PURIFIER, AirPurifierBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ELECTROLYZER = register("electrolyzer", FaroutModBlocks.ELECTROLYZER, ElectrolyzerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SPORE_BERRIE_BLOCK = register("spore_berrie_block", FaroutModBlocks.SPORE_BERRIE_BLOCK, SporeBerrieBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NUCLEAR_REACTOR = register("nuclear_reactor", FaroutModBlocks.NUCLEAR_REACTOR, NuclearReactorBlockEntity::new);
@@ -50,7 +47,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CARDBOARDBOX = register("cardboardbox", FaroutModBlocks.CARDBOARDBOX, CardboardboxBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHACOA = register("chacoa", FaroutModBlocks.CHACOA, ChacoaBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHACOAVINES = register("chacoavines", FaroutModBlocks.CHACOAVINES, ChacoavinesBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> AILEN_MOSS = register("ailen_moss", FaroutModBlocks.AILEN_MOSS, AilenMossBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INTEGRATED_CIRCUIT_FABRICATOR = register("integrated_circuit_fabricator", FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR, IntegratedCircuitFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHEMICAL_REACTOR = register("chemical_reactor", FaroutModBlocks.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR = register("low_frequency_integrated_circuit_fabricator", FaroutModBlocks.LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR,

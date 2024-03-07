@@ -75,7 +75,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.HIGH_HEAT_LOAD_GRAPHINE_RADIATORS.get());
 				tabData.accept(FaroutModItems.SOLAR_COLLECTOR.get());
 				tabData.accept(FaroutModItems.INTERSTELLAR_HABITATION_MODULE.get());
-				tabData.accept(FaroutModBlocks.AIRLOCK_DOOR.get().asItem());
 				tabData.accept(FaroutModItems.FISSION_FRAGMENT_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.STARSHIP_CORE.get());
 				tabData.accept(FaroutModItems.LANDER_BAY.get());
@@ -190,18 +189,17 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.QUARTZ_ORE.get().asItem());
 		}
 
-		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
-			tabData.accept(FaroutModBlocks.AIR_PURIFIER.get().asItem());
-			tabData.accept(FaroutModItems.THE_FAROUT_GUIDE.get());
-			tabData.accept(FaroutModBlocks.ORE_EXTRACTOR.get().asItem());
-		}
-
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(FaroutModBlocks.FUNGUS_FENCE_GATE.get().asItem());
 			tabData.accept(FaroutModBlocks.FUNGUS_PRESSURE_PLATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE_GATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_PRESSURE_PLATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_BUTTON.get().asItem());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(FaroutModItems.THE_FAROUT_GUIDE.get());
+			tabData.accept(FaroutModBlocks.ORE_EXTRACTOR.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -281,7 +279,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.CARDBOARDBOX.get().asItem());
 			tabData.accept(FaroutModBlocks.CHACOA.get().asItem());
 			tabData.accept(FaroutModBlocks.CHACOAVINES.get().asItem());
-			tabData.accept(FaroutModBlocks.AILEN_MOSS.get().asItem());
 			tabData.accept(FaroutModBlocks.ALIEN_REEDS.get().asItem());
 			tabData.accept(FaroutModBlocks.SPORE_EMITTER.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE.get().asItem());
@@ -296,6 +293,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.CRUSHED_QUARTZ.get().asItem());
 			tabData.accept(FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get().asItem());
 			tabData.accept(FaroutModItems.ETAUOSIAN_GRAIN_STALK_SEEDS.get());
+			tabData.accept(FaroutModBlocks.IMMATURE_ETAUOSIAN_GRAINSTALK.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

@@ -40,7 +40,7 @@ public class StirlingEngineBlock extends BaseEntityBlock implements EntityBlock 
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public StirlingEngineBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(0.6f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
