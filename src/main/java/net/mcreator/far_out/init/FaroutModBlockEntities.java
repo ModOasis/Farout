@@ -16,7 +16,6 @@ import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
 import net.mcreator.far_out.block.entity.ParticleIonizerBlockEntity;
-import net.mcreator.far_out.block.entity.OreExtractorBlockEntity;
 import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
 import net.mcreator.far_out.block.entity.LowFrequencyIntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.LinearParticleAcceleratorBlockEntity;
@@ -54,7 +53,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> Z_PINCH_FUSION_REACTOR = register("z_pinch_fusion_reactor", FaroutModBlocks.Z_PINCH_FUSION_REACTOR, ZPinchFusionReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR = register("high_frequency_intergrated_circut_fabricator", FaroutModBlocks.HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR,
 			HighFrequencyIntergratedCircutFabricatorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> ORE_EXTRACTOR = register("ore_extractor", FaroutModBlocks.ORE_EXTRACTOR, OreExtractorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LINEAR_PARTICLE_ACCELERATOR = register("linear_particle_accelerator", FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR, LinearParticleAcceleratorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> PARTICLE_IONIZER = register("particle_ionizer", FaroutModBlocks.PARTICLE_IONIZER, ParticleIonizerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> HYDROGEN_FUEL_CELL = register("hydrogen_fuel_cell", FaroutModBlocks.HYDROGEN_FUEL_CELL, HydrogenFuelCellBlockEntity::new);

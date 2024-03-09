@@ -11340,23 +11340,6 @@
       }
     },
     {
-      "name": "OreExtractor",
-      "type": "block",
-      "sortid": 1208,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_extractor",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/OreExtractorBlockEntity.java",
-          "src/main/java/net/mcreator/far_out/block/OreExtractorBlock.java",
-          "src/main/resources/assets/farout/models/block/ore_extractor.json",
-          "src/main/resources/assets/farout/blockstates/ore_extractor.json",
-          "src/main/resources/assets/farout/models/item/ore_extractor.json"
-        ]
-      }
-    },
-    {
       "name": "OreExtractorBlockAdded",
       "type": "procedure",
       "sortid": 1209,
@@ -11366,37 +11349,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/OreExtractorBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "OreExtractorUpdateTick",
-      "type": "procedure",
-      "sortid": 1210,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_extractor_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/OreExtractorUpdateTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -13097,100 +13049,6 @@
       }
     },
     {
-      "name": "EtauosianBaseOnStructureInstanceGenerated",
-      "type": "procedure",
-      "sortid": 1326,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauosian_base_on_structure_instance_generated",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EtauosianBaseOnStructureInstanceGeneratedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "EtauianBaseSpawner",
-      "type": "block",
-      "sortid": 1327,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauian_base_spawner",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/etauian_base_spawner.json",
-          "src/main/resources/assets/farout/models/block/etauian_base_spawner.json",
-          "src/main/resources/assets/farout/models/item/etauian_base_spawner.json",
-          "src/main/java/net/mcreator/far_out/block/EtauianBaseSpawnerBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "EtauianBaseAddSpawner",
-      "type": "procedure",
-      "sortid": 1328,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauian_base_add_spawner",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EtauianBaseAddSpawnerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "EtauosianBaseSpawner",
-      "type": "block",
-      "sortid": 1329,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauosian_base_spawner",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/etauosian_base_spawner.json",
-          "src/main/resources/assets/farout/blockstates/etauosian_base_spawner.json",
-          "src/main/java/net/mcreator/far_out/block/EtauosianBaseSpawnerBlock.java",
-          "src/main/resources/assets/farout/models/item/etauosian_base_spawner.json"
-        ]
-      }
-    },
-    {
       "name": "EtauosianBaseSpawnerBlockAdded",
       "type": "procedure",
       "sortid": 1330,
@@ -13466,22 +13324,6 @@
       }
     },
     {
-      "name": "NuclearBomb",
-      "type": "block",
-      "sortid": 1342,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_bomb",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/NuclearBombBlock.java",
-          "src/main/resources/assets/farout/blockstates/nuclear_bomb.json",
-          "src/main/resources/assets/farout/models/item/nuclear_bomb.json",
-          "src/main/resources/assets/farout/models/block/nuclear_bomb.json"
-        ]
-      }
-    },
-    {
       "name": "NuclearBombRedstoneOn",
       "type": "procedure",
       "sortid": 1343,
@@ -13536,22 +13378,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/biome/dry_plains.json"
-        ]
-      }
-    },
-    {
-      "name": "Greenstone",
-      "type": "block",
-      "sortid": 1354,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "greenstone",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/greenstone.json",
-          "src/main/resources/assets/farout/models/item/greenstone.json",
-          "src/main/resources/assets/farout/models/block/greenstone.json",
-          "src/main/java/net/mcreator/far_out/block/GreenstoneBlock.java"
         ]
       }
     },
@@ -15225,6 +15051,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -15319,11 +15149,8 @@
       "registry_name": "immature_etauosian_grainstalk",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/immature_etauosian_grainstalk.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/immature_etauosian_grainstalk.json",
           "src/main/java/net/mcreator/far_out/block/ImmatureEtauosianGrainstalkBlock.java",
           "src/main/resources/assets/farout/models/block/immature_etauosian_grainstalk.json",
-          "src/main/resources/data/farout/forge/biome_modifier/immature_etauosian_grainstalk_biome_modifier.json",
           "src/main/resources/assets/farout/blockstates/immature_etauosian_grainstalk.json",
           "src/main/resources/assets/farout/models/item/immature_etauosian_grainstalk.json"
         ]
@@ -15339,6 +15166,68 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/loot_tables/blocks/etauosian_grainstalk.json"
+        ]
+      }
+    },
+    {
+      "name": "ImmatureEtauosianGrainstalkOnBoneMealSuccess",
+      "type": "procedure",
+      "sortid": 1458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immature_etauosian_grainstalk_on_bone_meal_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ImmatureEtauosianGrainstalkOnBoneMealSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImmatureEtauosianGrainstalkUpdateTick",
+      "type": "procedure",
+      "sortid": 1459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "immature_etauosian_grainstalk_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ImmatureEtauosianGrainstalkUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -16013,8 +15902,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -16023,10 +15912,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "item.farout.aluminium_ingot": "Aluminium",
-      "itemGroup.tabenergy": "Energy",
+      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "itemGroup.tabrocketry": "Rocketry",
+      "itemGroup.tabenergy": "Energy",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -16279,7 +16168,6 @@
       "gui.farout.page_2.label_power_generation_fuel_tanks_a": "power generation, fuel tanks, a habitation module, and a rocket to get the ",
       "block.farout.fungus_stairs": "Fungus Stairs",
       "item.farout.space_suit_leggings": "Space Suit Legs",
-      "block.farout.etauian_base_spawner": "Etauian Base Spawner",
       "block.far_out.ruins_crystal_drive": "Ruins Crystal Drive",
       "gui.farout.page_2.label_now_the_food_problem_i_need_it": "I have a food problem. I need some, and fast. I packed some Chlorella algae with",
       "item.no.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
@@ -16403,7 +16291,6 @@
       "block.distant_frontiers.chacoavines": "Chacoa mycelium",
       "advancements.the_other_worlds.title": "The Other Worlds",
       "block.no.purple_grass": "Purple Grass",
-      "block.farout.etauosian_base_spawner": "Etauosian Base Spawner",
       "item.no.memorychip": "Memorychip",
       "block.farout.molybdenite": "Molybdite Ore",
       "gui.farout.page_2.label_day_21_t000500_the_journey": "Day 21, T+00:05:00 : The journey into orbit was flawless, It is nice to know",
@@ -16852,7 +16739,6 @@
       "item.farout.green_oil_bucket": "Green Oil Bucket",
       "item.farout.solid_core_nuclear_thermal_rocket": "Solid Core Nuclear Thermal Rocket",
       "item.distant_frontiers.parachute": "Parachute",
-      "block.farout.ore_extractor": "Ore Extractor",
       "biome.farout.asphalt_plains": "Asphalt Plains",
       "item.distant_frontiers.hydrogen": "Hydrogen",
       "item_group.farout.chemistry": "Chemistry",
@@ -17066,7 +16952,6 @@
       "advancements.advanced_fusion.title": "Advanced Fusion",
       "gui.farout.page_1.label_lot_of_stars_in_the_sky_you_cou": "lot of stars in the sky, you could see at least 10,000 of them. Secondly,",
       "biome.far_out.phosphorus_hills": "Phosphorus Hills",
-      "block.farout.greenstone": "Greenstone",
       "item.no.computer": "Computer",
       "block.far_out.fungus_pressure_plate": "Fungus Pressure Plate",
       "block.distant_frontiers.phosphoratedstone": "Phosphorated Cobblestone",
@@ -17161,7 +17046,6 @@
       "block.far_out.fungus_planks": "Fungus Planks",
       "gui.farout.z_pinch_fusion_reactor_gui.button_intiatefusion": "Intiate Fusion",
       "item.far_out.benzene": "Benzene",
-      "block.farout.nuclear_bomb": "Nuclear Bomb",
       "gui.distant_frontiers.oceanus_gui.label_orbital_speed_53_kms": "orbital speed: 53 km/s",
       "gui.farout.electrolyzer_gui.label_electrolyzer": "Electrolyzer",
       "gui.farout.fairing_gui.label_control_unit": "Control Unit",

@@ -32,7 +32,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.SUPERCONDUCTING_MAGNETIC_BATTERY.get().asItem());
 				tabData.accept(FaroutModItems.NUCLEAR_RODS.get());
 				tabData.accept(FaroutModBlocks.ANCIENT_SEDIMENT.get().asItem());
-				tabData.accept(FaroutModBlocks.GREENSTONE.get().asItem());
 				tabData.accept(FaroutModBlocks.SALT_BLOCK.get().asItem());
 				tabData.accept(FaroutModBlocks.LUMIBLOSSOM_LEAVES.get().asItem());
 				tabData.accept(FaroutModBlocks.RUST.get().asItem());
@@ -199,7 +198,6 @@ public class FaroutModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(FaroutModItems.THE_FAROUT_GUIDE.get());
-			tabData.accept(FaroutModBlocks.ORE_EXTRACTOR.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -208,7 +206,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.SPACE_SUIT_LEGGINGS.get());
 			tabData.accept(FaroutModItems.SUPER_ALLOY_SWORD.get());
 			tabData.accept(FaroutModItems.HEXURAN_SWORD.get());
-			tabData.accept(FaroutModBlocks.NUCLEAR_BOMB.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {

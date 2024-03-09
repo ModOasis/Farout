@@ -1,9 +1,0 @@
-{
-  "parent": "farout:custom/nuclearbomb",
-  "textures": {
-    "all": "farout:block/nuclearbombtex",
-    "particle": "farout:block/nuclearbombtex",
-    "0": "farout:block/nuclearbombtex"
-  },
-  "render_type": "solid"
-}

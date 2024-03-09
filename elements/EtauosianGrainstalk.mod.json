@@ -9,7 +9,7 @@
     "itemTexture": "etauosiangrainstalk",
     "particleTexture": "",
     "tintType": "Grass",
-    "isItemTinted": true,
+    "isItemTinted": false,
     "plantType": "normal",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 100,
@@ -72,13 +72,20 @@
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:BasalticDirt"
+      },
+      {
+        "value": "Blocks.MUD"
+      }
+    ],
     "isBonemealable": true,
     "frequencyOnChunks": 5,
     "generateFeature": true,

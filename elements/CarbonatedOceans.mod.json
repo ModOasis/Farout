@@ -39,7 +39,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "CUSTOM:SulfuricAcidRain"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
@@ -56,8 +56,8 @@
       "max": 0.18
     },
     "genContinentalness": {
-      "min": 0.27999999999999997,
-      "max": 0.6399999999999999
+      "min": -2.0,
+      "max": -0.11
     },
     "genErosion": {
       "min": 0.8200000000000001,

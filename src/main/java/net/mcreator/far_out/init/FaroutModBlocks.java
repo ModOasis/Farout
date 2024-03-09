@@ -41,9 +41,7 @@ import net.mcreator.far_out.block.QuartzOreBlock;
 import net.mcreator.far_out.block.Potassium_nitrateBlockBlock;
 import net.mcreator.far_out.block.ParticleIonizerBlock;
 import net.mcreator.far_out.block.OsmiumBlockBlock;
-import net.mcreator.far_out.block.OreExtractorBlock;
 import net.mcreator.far_out.block.NuclearReactorBlock;
-import net.mcreator.far_out.block.NuclearBombBlock;
 import net.mcreator.far_out.block.MonaziteBlock;
 import net.mcreator.far_out.block.MolybdenumOreBlock;
 import net.mcreator.far_out.block.MolybdenumBlockBlock;
@@ -69,7 +67,6 @@ import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.HydrogenFuelCellBlock;
 import net.mcreator.far_out.block.HighFrequencyIntergratedCircutFabricatorBlock;
 import net.mcreator.far_out.block.GunpowderBlockBlock;
-import net.mcreator.far_out.block.GreenstoneBlock;
 import net.mcreator.far_out.block.GreenOilBlock;
 import net.mcreator.far_out.block.GraphiteOreBlock;
 import net.mcreator.far_out.block.GraphiteBlockBlock;
@@ -84,8 +81,6 @@ import net.mcreator.far_out.block.FungusFenceBlock;
 import net.mcreator.far_out.block.FungusCapBlock;
 import net.mcreator.far_out.block.FungusButtonBlock;
 import net.mcreator.far_out.block.EtauosianGrainstalkBlock;
-import net.mcreator.far_out.block.EtauosianBaseSpawnerBlock;
-import net.mcreator.far_out.block.EtauianBaseSpawnerBlock;
 import net.mcreator.far_out.block.ErbiumBlockBlock;
 import net.mcreator.far_out.block.ElectrolyzerBlock;
 import net.mcreator.far_out.block.DryWaterBlock;
@@ -199,18 +194,13 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> QUARTZ_ORE = REGISTRY.register("quartz_ore", () -> new QuartzOreBlock());
 	public static final RegistryObject<Block> SOLAR_VINES_CAP = REGISTRY.register("solar_vines_cap", () -> new SolarVinesCapBlock());
 	public static final RegistryObject<Block> SOLAR_VINES = REGISTRY.register("solar_vines", () -> new SolarVinesBlock());
-	public static final RegistryObject<Block> ORE_EXTRACTOR = REGISTRY.register("ore_extractor", () -> new OreExtractorBlock());
 	public static final RegistryObject<Block> RED_TORCHER = REGISTRY.register("red_torcher", () -> new RedTorcherBlock());
 	public static final RegistryObject<Block> YELLOW_TORCHER = REGISTRY.register("yellow_torcher", () -> new YellowTorcherBlock());
 	public static final RegistryObject<Block> BLUE_TORCHER = REGISTRY.register("blue_torcher", () -> new BlueTorcherBlock());
 	public static final RegistryObject<Block> CHLORELLA_CULTURE = REGISTRY.register("chlorella_culture", () -> new ChlorellaCultureBlock());
 	public static final RegistryObject<Block> CRYSTALITE_SOIL = REGISTRY.register("crystalite_soil", () -> new CrystaliteSoilBlock());
 	public static final RegistryObject<Block> DRY_WATER = REGISTRY.register("dry_water", () -> new DryWaterBlock());
-	public static final RegistryObject<Block> ETAUIAN_BASE_SPAWNER = REGISTRY.register("etauian_base_spawner", () -> new EtauianBaseSpawnerBlock());
-	public static final RegistryObject<Block> ETAUOSIAN_BASE_SPAWNER = REGISTRY.register("etauosian_base_spawner", () -> new EtauosianBaseSpawnerBlock());
-	public static final RegistryObject<Block> NUCLEAR_BOMB = REGISTRY.register("nuclear_bomb", () -> new NuclearBombBlock());
 	public static final RegistryObject<Block> ANCIENT_SEDIMENT = REGISTRY.register("ancient_sediment", () -> new AncientSedimentBlock());
-	public static final RegistryObject<Block> GREENSTONE = REGISTRY.register("greenstone", () -> new GreenstoneBlock());
 	public static final RegistryObject<Block> SALT_BLOCK = REGISTRY.register("salt_block", () -> new SaltBlockBlock());
 	public static final RegistryObject<Block> LIQUID_SULFUR_DIOXIDE = REGISTRY.register("liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideBlock());
 	public static final RegistryObject<Block> LUMIBLOSSOM_LEAVES = REGISTRY.register("lumiblossom_leaves", () -> new LumiblossomLeavesBlock());
@@ -237,7 +227,6 @@ public class FaroutModBlocks {
 		@SubscribeEvent
 		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
 			LargeSolarPanelsBlock.itemColorLoad(event);
-			EtauosianGrainstalkBlock.itemColorLoad(event);
 			ImmatureEtauosianGrainstalkBlock.itemColorLoad(event);
 		}
 	}

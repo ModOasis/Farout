@@ -376,7 +376,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> CRYOGENIC_STASIS_CHAMBER = REGISTRY.register("cryogenic_stasis_chamber", () -> new CryogenicStasisChamberItem());
 	public static final RegistryObject<Item> SOLAR_VINES_CAP = block(FaroutModBlocks.SOLAR_VINES_CAP);
 	public static final RegistryObject<Item> SOLAR_VINES = block(FaroutModBlocks.SOLAR_VINES);
-	public static final RegistryObject<Item> ORE_EXTRACTOR = block(FaroutModBlocks.ORE_EXTRACTOR);
 	public static final RegistryObject<Item> RED_TORCHER = block(FaroutModBlocks.RED_TORCHER);
 	public static final RegistryObject<Item> YELLOW_TORCHER = block(FaroutModBlocks.YELLOW_TORCHER);
 	public static final RegistryObject<Item> BLUE_TORCHER = block(FaroutModBlocks.BLUE_TORCHER);
@@ -389,11 +388,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> CRYSTALITE_SOIL = block(FaroutModBlocks.CRYSTALITE_SOIL);
 	public static final RegistryObject<Item> DRY_WATER_BUCKET = REGISTRY.register("dry_water_bucket", () -> new DryWaterItem());
 	public static final RegistryObject<Item> DEBUG_ITEM = REGISTRY.register("debug_item", () -> new DebugItemItem());
-	public static final RegistryObject<Item> ETAUIAN_BASE_SPAWNER = block(FaroutModBlocks.ETAUIAN_BASE_SPAWNER);
-	public static final RegistryObject<Item> ETAUOSIAN_BASE_SPAWNER = block(FaroutModBlocks.ETAUOSIAN_BASE_SPAWNER);
-	public static final RegistryObject<Item> NUCLEAR_BOMB = block(FaroutModBlocks.NUCLEAR_BOMB);
 	public static final RegistryObject<Item> ANCIENT_SEDIMENT = block(FaroutModBlocks.ANCIENT_SEDIMENT);
-	public static final RegistryObject<Item> GREENSTONE = block(FaroutModBlocks.GREENSTONE);
 	public static final RegistryObject<Item> SALT_BLOCK = block(FaroutModBlocks.SALT_BLOCK);
 	public static final RegistryObject<Item> SALT_DUST = REGISTRY.register("salt_dust", () -> new SaltDustItem());
 	public static final RegistryObject<Item> LIQUID_SULFUR_DIOXIDE_BUCKET = REGISTRY.register("liquid_sulfur_dioxide_bucket", () -> new LiquidSulfurDioxideItem());

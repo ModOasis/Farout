@@ -63,7 +63,7 @@
     "customDrop": {
       "value": "CUSTOM:EtauosianGrainStalkSeeds"
     },
-    "dropAmount": 3,
+    "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": true,
     "hasTileEntity": false,
@@ -78,10 +78,20 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:BasalticDirt"
+      },
+      {
+        "value": "Blocks.MUD"
+      }
+    ],
     "isBonemealable": true,
+    "onBonemealSuccess": {
+      "name": "ImmatureEtauosianGrainstalkOnBoneMealSuccess"
+    },
     "frequencyOnChunks": 5,
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:EtauosLowlands"
@@ -89,6 +99,9 @@
     ],
     "generationType": "Grass",
     "patchSize": 64,
-    "generateAtAnyHeight": false
+    "generateAtAnyHeight": false,
+    "onTickUpdate": {
+      "name": "ImmatureEtauosianGrainstalkUpdateTick"
+    }
   }
 }

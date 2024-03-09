@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GrassColor;
@@ -27,6 +28,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
+import net.mcreator.far_out.procedures.ImmatureEtauosianGrainstalkUpdateTickProcedure;
+import net.mcreator.far_out.procedures.ImmatureEtauosianGrainstalkOnBoneMealSuccessProcedure;
 import net.mcreator.far_out.init.FaroutModItems;
 import net.mcreator.far_out.init.FaroutModBlocks;
 
@@ -64,7 +67,25 @@ public class ImmatureEtauosianGrainstalkBlock extends FlowerBlock implements Bon
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(FaroutModItems.ETAUOSIAN_GRAIN_STALK_SEEDS.get(), 3));
+		return Collections.singletonList(new ItemStack(FaroutModItems.ETAUOSIAN_GRAIN_STALK_SEEDS.get()));
+	}
+
+	@Override
+	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
+		return groundState.is(FaroutModBlocks.BASALTIC_DIRT.get()) || groundState.is(Blocks.MUD);
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return this.mayPlaceOn(groundState, worldIn, blockpos);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		ImmatureEtauosianGrainstalkUpdateTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -79,6 +100,7 @@ public class ImmatureEtauosianGrainstalkBlock extends FlowerBlock implements Bon
 
 	@Override
 	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
+		ImmatureEtauosianGrainstalkOnBoneMealSuccessProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@OnlyIn(Dist.CLIENT)

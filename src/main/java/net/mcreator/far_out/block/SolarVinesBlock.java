@@ -23,6 +23,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.init.FaroutModBlocks;
+
 import java.util.List;
 import java.util.Collections;
 
@@ -52,6 +54,13 @@ public class SolarVinesBlock extends SugarCaneBlock implements BonemealableBlock
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this));
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return groundState.is(this) || groundState.is(FaroutModBlocks.BASALTIC_DIRT.get());
 	}
 
 	@Override

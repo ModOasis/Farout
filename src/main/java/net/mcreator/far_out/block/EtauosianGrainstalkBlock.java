@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GrassColor;
@@ -33,7 +34,7 @@ import java.util.List;
 public class EtauosianGrainstalkBlock extends FlowerBlock implements BonemealableBlock {
 	public EtauosianGrainstalkBlock() {
 		super(() -> MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).noCollission()
-				.offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+				.offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -57,6 +58,18 @@ public class EtauosianGrainstalkBlock extends FlowerBlock implements Bonemealabl
 	}
 
 	@Override
+	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
+		return groundState.is(FaroutModBlocks.BASALTIC_DIRT.get()) || groundState.is(Blocks.MUD);
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		BlockPos blockpos = pos.below();
+		BlockState groundState = worldIn.getBlockState(blockpos);
+		return this.mayPlaceOn(groundState, worldIn, blockpos);
+	}
+
+	@Override
 	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
 		return true;
 	}
@@ -74,13 +87,6 @@ public class EtauosianGrainstalkBlock extends FlowerBlock implements Bonemealabl
 	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
-		}, FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
-		event.getItemColors().register((stack, index) -> {
-			return GrassColor.get(0.5D, 1.0D);
 		}, FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get());
 	}
 }
