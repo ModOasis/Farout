@@ -4,9 +4,6 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:EtauosHighlands"
-      },
-      {
         "value": "CUSTOM:EtauosLowlands"
       },
       {
@@ -38,7 +35,7 @@
       "value": ""
     },
     "portalParticles": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "PORTAL"
     },
     "portalLuminance": 0,
     "portalSound": {

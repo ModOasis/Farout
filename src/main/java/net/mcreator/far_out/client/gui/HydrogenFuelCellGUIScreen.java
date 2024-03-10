@@ -9,6 +9,10 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.HydrogenFuelCellGUIMenu;
+import net.mcreator.far_out.procedures.FluidTankState3Procedure;
+import net.mcreator.far_out.procedures.FluidTankState2Procedure;
+import net.mcreator.far_out.procedures.FluidTankState1Procedure;
+import net.mcreator.far_out.procedures.FluidTankState0Procedure;
 import net.mcreator.far_out.procedures.Arrow9Procedure;
 import net.mcreator.far_out.procedures.Arrow8Procedure;
 import net.mcreator.far_out.procedures.Arrow7Procedure;
@@ -88,6 +92,18 @@ public class HydrogenFuelCellGUIScreen extends AbstractContainerScreen<HydrogenF
 		}
 		if (Arrow10Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow10.png"), this.leftPos + 78, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (FluidTankState0Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/fluid_tank_empty.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 32, 32, 32, 32);
+		}
+		if (FluidTankState1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/fluid_tank_water_1.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 32, 32, 32, 32);
+		}
+		if (FluidTankState2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/fluid_tank_water_2.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 32, 32, 32, 32);
+		}
+		if (FluidTankState3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/fluid_tank_water_3.png"), this.leftPos + 96, this.topPos + 34, 0, 0, 32, 32, 32, 32);
 		}
 		RenderSystem.disableBlend();
 	}

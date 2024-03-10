@@ -62,24 +62,6 @@
         }
       },
       {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": "Items.BUCKET"
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 249,
-          "y": 80
-        }
-      },
-      {
         "type": "image",
         "data": {
           "image": "arrow0.png",
@@ -206,6 +188,72 @@
           },
           "x": 204,
           "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluid_tank_empty.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FluidTankState0"
+          },
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.BUCKET"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 258,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluid_tank_water_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FluidTankState1"
+          },
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluid_tank_water_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FluidTankState2"
+          },
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluid_tank_water_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FluidTankState3"
+          },
+          "x": 222,
+          "y": 71
         }
       }
     ],

@@ -95,7 +95,7 @@ public class HydrogenFuelCellGUIMenu extends AbstractContainerMenu implements Su
 				return FaroutModItems.OXYGEN_BOTTLE.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 124, 44) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 44) {
 			private final int slot = 2;
 
 			@Override
