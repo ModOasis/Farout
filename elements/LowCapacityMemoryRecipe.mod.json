@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": ""
+        "value": "Items.COPPER_INGOT"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:MediumFrequencyIntegratedCircuit"
+        "value": "CUSTOM:Capacitor"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Capacitor"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tokamakfusionreactor"
+      "value": "CUSTOM:LowCapacityMemory"
     },
-    "name": "fusion_reactor_recipe",
+    "name": "low_capacity_memory_recipe",
     "namespace": "mod"
   }
 }

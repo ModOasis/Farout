@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plutonium_carbide",
+    "texture": "capacitor",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Plutonium Carbide",
+    "name": "Capacitor",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:Electronics"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -27,9 +27,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "Processed coffinite. This can be used as fuel for nuclear reactors, or as a part of nuclear rockets."
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
-    "ada"
+    "b b",
+    "aca"
   ],
   "key": {
     "a": {
@@ -14,10 +14,7 @@
       "item": "farout:electro_magnet"
     },
     "c": {
-      "item": "farout:generator"
-    },
-    "d": {
-      "item": "farout:high_frequency_integrated_circuit"
+      "item": "farout:medium_frequency_integrated_circuit"
     }
   },
   "result": {

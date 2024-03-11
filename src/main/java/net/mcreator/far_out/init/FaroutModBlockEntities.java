@@ -17,7 +17,6 @@ import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
 import net.mcreator.far_out.block.entity.ParticleIonizerBlockEntity;
 import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
-import net.mcreator.far_out.block.entity.LowFrequencyIntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.LinearParticleAcceleratorBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
@@ -48,8 +47,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CHACOAVINES = register("chacoavines", FaroutModBlocks.CHACOAVINES, ChacoavinesBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INTEGRATED_CIRCUIT_FABRICATOR = register("integrated_circuit_fabricator", FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR, IntegratedCircuitFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHEMICAL_REACTOR = register("chemical_reactor", FaroutModBlocks.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR = register("low_frequency_integrated_circuit_fabricator", FaroutModBlocks.LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR,
-			LowFrequencyIntegratedCircuitFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> Z_PINCH_FUSION_REACTOR = register("z_pinch_fusion_reactor", FaroutModBlocks.Z_PINCH_FUSION_REACTOR, ZPinchFusionReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR = register("high_frequency_intergrated_circut_fabricator", FaroutModBlocks.HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR,
 			HighFrequencyIntergratedCircutFabricatorBlockEntity::new);

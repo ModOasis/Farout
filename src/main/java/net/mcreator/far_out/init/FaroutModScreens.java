@@ -29,7 +29,6 @@ import net.mcreator.far_out.client.gui.NuclearReactorGUIScreen;
 import net.mcreator.far_out.client.gui.MissionControlGUIScreen;
 import net.mcreator.far_out.client.gui.MassivoMapScreen;
 import net.mcreator.far_out.client.gui.MainMapScreen;
-import net.mcreator.far_out.client.gui.LowFreqIntegratedCircuitFabGUIScreen;
 import net.mcreator.far_out.client.gui.LanderGUIScreen;
 import net.mcreator.far_out.client.gui.IntegratedCircuitFabricatorGUIScreen;
 import net.mcreator.far_out.client.gui.HydrogenFuelCellGUIScreen;
@@ -84,7 +83,6 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.ETAUI_MAP.get(), EtauiMapScreen::new);
 			MenuScreens.register(FaroutModMenus.PROXMAI_MAP.get(), ProxmaiMapScreen::new);
 			MenuScreens.register(FaroutModMenus.MASSIVO_MAP.get(), MassivoMapScreen::new);
-			MenuScreens.register(FaroutModMenus.LOW_FREQ_INTEGRATED_CIRCUIT_FAB_GUI.get(), LowFreqIntegratedCircuitFabGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.FISSION_FRAGMENT_STARSHIP_GUI.get(), FissionFragmentStarshipGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.GENOME_MODIFER_GUI.get(), GenomeModiferGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.BIOLOGICAL_INCUBATOR_GUI.get(), BiologicalIncubatorGUIScreen::new);

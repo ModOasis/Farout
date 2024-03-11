@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.far_out.block.ZincBlockBlock;
 import net.mcreator.far_out.block.ZPinchFusionReactorBlock;
 import net.mcreator.far_out.block.YellowTorcherBlock;
 import net.mcreator.far_out.block.TrussBlock;
@@ -55,7 +56,6 @@ import net.mcreator.far_out.block.LumiblossomLeavesBlock;
 import net.mcreator.far_out.block.LumiblossomFenceGateBlock;
 import net.mcreator.far_out.block.LumiblossomFenceBlock;
 import net.mcreator.far_out.block.LumiblossomButtonBlock;
-import net.mcreator.far_out.block.LowFrequencyIntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
@@ -70,7 +70,6 @@ import net.mcreator.far_out.block.GunpowderBlockBlock;
 import net.mcreator.far_out.block.GreenOilBlock;
 import net.mcreator.far_out.block.GraphiteOreBlock;
 import net.mcreator.far_out.block.GraphiteBlockBlock;
-import net.mcreator.far_out.block.GeothermalGeneratorBlock;
 import net.mcreator.far_out.block.FungustrunkBlock;
 import net.mcreator.far_out.block.FungusStairsBlock;
 import net.mcreator.far_out.block.FungusSlabBlock;
@@ -81,7 +80,6 @@ import net.mcreator.far_out.block.FungusFenceBlock;
 import net.mcreator.far_out.block.FungusCapBlock;
 import net.mcreator.far_out.block.FungusButtonBlock;
 import net.mcreator.far_out.block.EtauosianGrainstalkBlock;
-import net.mcreator.far_out.block.ErbiumBlockBlock;
 import net.mcreator.far_out.block.ElectrolyzerBlock;
 import net.mcreator.far_out.block.DryWaterBlock;
 import net.mcreator.far_out.block.DesktopComputerBlock;
@@ -149,7 +147,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> CHACOAVINES = REGISTRY.register("chacoavines", () -> new ChacoavinesBlock());
 	public static final RegistryObject<Block> FUNGUS_FENCE_GATE = REGISTRY.register("fungus_fence_gate", () -> new FungusFenceGateBlock());
 	public static final RegistryObject<Block> FUNGUS_PRESSURE_PLATE = REGISTRY.register("fungus_pressure_plate", () -> new FungusPressurePlateBlock());
-	public static final RegistryObject<Block> GEOTHERMAL_GENERATOR = REGISTRY.register("geothermal_generator", () -> new GeothermalGeneratorBlock());
 	public static final RegistryObject<Block> ALIEN_REEDS = REGISTRY.register("alien_reeds", () -> new AlienReedsBlock());
 	public static final RegistryObject<Block> BIO_PLASTIC_WINDOW = REGISTRY.register("bio_plastic_window", () -> new BioPlasticWindowBlock());
 	public static final RegistryObject<Block> SPORE_EMITTER = REGISTRY.register("spore_emitter", () -> new SporeEmitterBlock());
@@ -168,13 +165,11 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> SULFURIC_ACID = REGISTRY.register("sulfuric_acid", () -> new SulfuricAcidBlock());
 	public static final RegistryObject<Block> CHEMOSYNTHETIC_NODULES = REGISTRY.register("chemosynthetic_nodules", () -> new ChemosyntheticNodulesBlock());
 	public static final RegistryObject<Block> CRYSTALINE_EXOSKELETON = REGISTRY.register("crystaline_exoskeleton", () -> new CrystalineExoskeletonBlock());
-	public static final RegistryObject<Block> ERBIUM_BLOCK = REGISTRY.register("erbium_block", () -> new ErbiumBlockBlock());
 	public static final RegistryObject<Block> MONAZITE = REGISTRY.register("monazite", () -> new MonaziteBlock());
 	public static final RegistryObject<Block> GREEN_OIL = REGISTRY.register("green_oil", () -> new GreenOilBlock());
 	public static final RegistryObject<Block> ASPHALT = REGISTRY.register("asphalt", () -> new AsphaltBlock());
 	public static final RegistryObject<Block> LIQUID_AMMONIA = REGISTRY.register("liquid_ammonia", () -> new LiquidAmmoniaBlock());
 	public static final RegistryObject<Block> CARGO_POD = REGISTRY.register("cargo_pod", () -> new CargoPodBlock());
-	public static final RegistryObject<Block> LOW_FREQUENCY_INTEGRATED_CIRCUIT_FABRICATOR = REGISTRY.register("low_frequency_integrated_circuit_fabricator", () -> new LowFrequencyIntegratedCircuitFabricatorBlock());
 	public static final RegistryObject<Block> AIRTIGHT_HABITAT_WALL = REGISTRY.register("airtight_habitat_wall", () -> new AirtightHabitatWallBlock());
 	public static final RegistryObject<Block> Z_PINCH_FUSION_REACTOR = REGISTRY.register("z_pinch_fusion_reactor", () -> new ZPinchFusionReactorBlock());
 	public static final RegistryObject<Block> COFFINITE_ORE = REGISTRY.register("coffinite_ore", () -> new CoffiniteOreBlock());
@@ -214,6 +209,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
 	public static final RegistryObject<Block> STIRLING_ENGINE = REGISTRY.register("stirling_engine", () -> new StirlingEngineBlock());
 	public static final RegistryObject<Block> IMMATURE_ETAUOSIAN_GRAINSTALK = REGISTRY.register("immature_etauosian_grainstalk", () -> new ImmatureEtauosianGrainstalkBlock());
+	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

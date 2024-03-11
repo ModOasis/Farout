@@ -1431,21 +1431,6 @@
       }
     },
     {
-      "name": "EnergyMeter",
-      "type": "item",
-      "sortid": 157,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_meter",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/EnergyMeterItem.java",
-          "src/main/resources/assets/farout/models/item/energy_meter.json",
-          "src/main/java/net/mcreator/far_out/item/inventory/EnergyMeterInventoryCapability.java"
-        ]
-      }
-    },
-    {
       "name": "BatteryBlockRedstoneOn",
       "type": "procedure",
       "sortid": 301,
@@ -2132,20 +2117,6 @@
       }
     },
     {
-      "name": "Generator",
-      "type": "item",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "generator",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/GeneratorItem.java",
-          "src/main/resources/assets/farout/models/item/generator.json"
-        ]
-      }
-    },
-    {
       "name": "Piperecipe",
       "type": "recipe",
       "sortid": 339,
@@ -2169,19 +2140,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/fan.json",
           "src/main/java/net/mcreator/far_out/item/FanItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Generatorrecipe",
-      "type": "recipe",
-      "sortid": 340,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "generatorrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/generatorrecipe.json"
         ]
       }
     },
@@ -4032,22 +3990,6 @@
       }
     },
     {
-      "name": "GeothermalGenerator",
-      "type": "block",
-      "sortid": 588,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geothermal_generator",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/GeothermalGeneratorBlock.java",
-          "src/main/resources/assets/farout/models/block/geothermal_generator.json",
-          "src/main/resources/assets/farout/blockstates/geothermal_generator.json",
-          "src/main/resources/assets/farout/models/item/geothermal_generator.json"
-        ]
-      }
-    },
-    {
       "name": "BiomassburnerguiWhileThisGUIIsOpenTick",
       "type": "procedure",
       "sortid": 589,
@@ -4186,19 +4128,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/advancements/fusion_reactor_placed.json"
-        ]
-      }
-    },
-    {
-      "name": "GeothermalGeneratorRecipe",
-      "type": "recipe",
-      "sortid": 601,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geothermal_generator_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/geothermal_generator_recipe.json"
         ]
       }
     },
@@ -7352,62 +7281,6 @@
       }
     },
     {
-      "name": "Erbium",
-      "type": "item",
-      "sortid": 937,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "erbium",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/ErbiumItem.java",
-          "src/main/resources/assets/farout/models/item/erbium.json"
-        ]
-      }
-    },
-    {
-      "name": "ErbiumBlock",
-      "type": "block",
-      "sortid": 936,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "erbium_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/erbium_block.json",
-          "src/main/java/net/mcreator/far_out/block/ErbiumBlockBlock.java",
-          "src/main/resources/assets/farout/models/block/erbium_block.json",
-          "src/main/resources/assets/farout/models/item/erbium_block.json"
-        ]
-      }
-    },
-    {
-      "name": "ErbiumOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 938,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "erbium_ore_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/erbium_ore_block_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "ErbiumBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 939,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "erbium_block_ore_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/erbium_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "Monazite",
       "type": "block",
       "sortid": 940,
@@ -8419,23 +8292,6 @@
       }
     },
     {
-      "name": "LowFrequencyIntegratedCircuitFabricator",
-      "type": "block",
-      "sortid": 1000,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_integrated_circuit_fabricator",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/low_frequency_integrated_circuit_fabricator.json",
-          "src/main/resources/assets/farout/models/block/low_frequency_integrated_circuit_fabricator.json",
-          "src/main/java/net/mcreator/far_out/block/entity/LowFrequencyIntegratedCircuitFabricatorBlockEntity.java",
-          "src/main/resources/assets/farout/blockstates/low_frequency_integrated_circuit_fabricator.json",
-          "src/main/java/net/mcreator/far_out/block/LowFrequencyIntegratedCircuitFabricatorBlock.java"
-        ]
-      }
-    },
-    {
       "name": "LowCapacityMemory",
       "type": "item",
       "sortid": 1001,
@@ -8482,86 +8338,6 @@
           "src/main/resources/assets/farout/models/item/airtight_habitat_wall.json",
           "src/main/resources/assets/farout/models/block/airtight_habitat_wall.json",
           "src/main/resources/assets/farout/blockstates/airtight_habitat_wall.json"
-        ]
-      }
-    },
-    {
-      "name": "LowFreqIntegratedCircuitFabGUI",
-      "type": "gui",
-      "sortid": 1004,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_freq_integrated_circuit_fab_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/LowFreqIntegratedCircuitFabGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/LowFreqIntegratedCircuitFabGUIMenu.java"
-        ]
-      }
-    },
-    {
-      "name": "LowFrequencyIntegratedCircuitFabricatorOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 1005,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_integrated_circuit_fabricator_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LowFrequencyIntegratedCircuitFabricatorOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LowFrequencyIntegratedCircuitFabricatorUpdateTick",
-      "type": "procedure",
-      "sortid": 1006,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_integrated_circuit_fabricator_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LowFrequencyIntegratedCircuitFabricatorUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -9809,19 +9585,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "LowFrequencyIntegratedCircuitFabricatorRecipe",
-      "type": "recipe",
-      "sortid": 1088,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_integrated_circuit_fabricator_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/low_frequency_integrated_circuit_fabricator_recipe.json"
         ]
       }
     },
@@ -13533,20 +13296,6 @@
       }
     },
     {
-      "name": "LowFrequencyIntegratedCircuitPhotomask",
-      "type": "item",
-      "sortid": 1373,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_integrated_circuit_photomask",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/low_frequency_integrated_circuit_photomask.json",
-          "src/main/java/net/mcreator/far_out/item/LowFrequencyIntegratedCircuitPhotomaskItem.java"
-        ]
-      }
-    },
-    {
       "name": "ProcessingOff",
       "type": "procedure",
       "sortid": 1378,
@@ -13575,20 +13324,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "LowCapacityMemoryPhotomask",
-      "type": "item",
-      "sortid": 1379,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_capacity_memory_photomask",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/low_capacity_memory_photomask.json",
-          "src/main/java/net/mcreator/far_out/item/LowCapacityMemoryPhotomaskItem.java"
         ]
       }
     },
@@ -15377,6 +15112,131 @@
           }
         ]
       }
+    },
+    {
+      "name": "Zinc",
+      "type": "item",
+      "sortid": 1467,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/zinc.json",
+          "src/main/java/net/mcreator/far_out/item/ZincItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ZincBlock",
+      "type": "block",
+      "sortid": 1466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/zinc_block.json",
+          "src/main/resources/assets/farout/models/item/zinc_block.json",
+          "src/main/java/net/mcreator/far_out/block/ZincBlockBlock.java",
+          "src/main/resources/assets/farout/models/block/zinc_block.json"
+        ]
+      }
+    },
+    {
+      "name": "ZincOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 1468,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/zinc_ore_block_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ZincBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 1469,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/zinc_block_ore_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Relay",
+      "type": "item",
+      "sortid": 1470,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/RelayItem.java",
+          "src/main/resources/assets/farout/models/item/relay.json"
+        ]
+      }
+    },
+    {
+      "name": "Capacitor",
+      "type": "item",
+      "sortid": 1471,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/capacitor.json",
+          "src/main/java/net/mcreator/far_out/item/CapacitorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "LowFrequencyIntegratedCircuitRecipe",
+      "type": "recipe",
+      "sortid": 1472,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_frequency_integrated_circuit_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/low_frequency_integrated_circuit_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "LowCapacityMemoryRecipe",
+      "type": "recipe",
+      "sortid": 1473,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_capacity_memory_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/low_capacity_memory_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Ammeter",
+      "type": "item",
+      "sortid": 1474,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammeter",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/inventory/AmmeterInventoryCapability.java",
+          "src/main/resources/assets/farout/models/item/ammeter.json",
+          "src/main/java/net/mcreator/far_out/item/AmmeterItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -16049,8 +15909,8 @@
   ],
   "language_map": {
     "en_us": {
-      "block.farout.osmium_block": "Block of Osmium",
       "effect.distant_frontiers.oxygen": "Oxygen",
+      "block.farout.osmium_block": "Block of Osmium",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -16059,10 +15919,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.farout.aluminium_ingot": "Aluminium",
       "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
-      "itemGroup.tabrocketry": "Rocketry",
+      "item.farout.aluminium_ingot": "Aluminium",
       "itemGroup.tabenergy": "Energy",
+      "itemGroup.tabrocketry": "Rocketry",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -16302,7 +16162,6 @@
       "gui.distant_frontiers.terra_gui.label_mass_0434_jupiter_masses": "mass: 0.434 jupiter masses",
       "block.farout.fungus_button": "Fungus Button",
       "item.distant_frontiers.wrench": "Wrench",
-      "item.farout.low_capacity_memory_photomask": "Low Frequency Integrated Circuit Photomask",
       "block.farout.cargo_pod": "Cargo Pod",
       "item.no.etaui": "Etaui Portal Igniter",
       "effect.farout.oxygen": "Oxygen",
@@ -16414,7 +16273,6 @@
       "item.distant_frontiers.depleted_uranium": "Depleted Uranium",
       "block.farout.sphalerite_block": "Block of Sphalerite",
       "item.far_out.sciencebay": "Science bay",
-      "item.farout.erbium": "Erbium",
       "item.distant_frontiers.borated_steel_ingot": "Borated Steel",
       "block.far_out.desktop_computer": "Desktop Computer",
       "itemGroup.tabunnmanned_rocketry": "Unnmanned Rocketry",
@@ -16422,7 +16280,6 @@
       "item.farout.inflatable_segment": "Inflatable Segment",
       "block.no.slime_mats": "Bacterial Mat",
       "gui.distant_frontiers.varas_gui.label_other_information_has_a_phospho": "other information: has a phosphorus",
-      "item.farout.low_frequency_integrated_circuit_photomask": "Low Frequency Integrated Circuit Photomask",
       "gui.distant_frontiers.oceanus_gui.label_to_life_on_earth_14_billion_yea": "to life on earth 1.4 billion years",
       "key.farout.test_key": "Test Key",
       "gui.distant_frontiers.silican_gui.label_orbital_speed_123_kms": "orbital speed: 12.3 km/s",
@@ -16528,7 +16385,9 @@
       "block.farout.rhenium_block": "Block of Rhenium",
       "key.farout.pitch_decrease": "Pitch Decrease",
       "item.distant_frontiers.computer": "Computer",
+      "block.farout.zinc_block": "Block of Zinc",
       "item.distant_frontiers.etaui": "Etaui Portal Igniter",
+      "item.farout.capacitor": "Capacitor",
       "item.far_out.limestone_filter": "Centrifugal Limestone Filter",
       "block.far_out.silicon_ore": "Silicon Ore",
       "item.farout.super_alloy_ingot": "Super Alloy ingot",
@@ -16611,6 +16470,7 @@
       "item.farout.liquid_crystal": "Liquid Crystal",
       "item.far_out.hexuran_shovel": "Hexuran Shovel",
       "block.far_out.dried_fungus_trunk": "Fungus Trunk",
+      "item.farout.relay": "Relay",
       "item.distant_frontiers.generator": "Generator",
       "gui.distant_frontiers.knowledge_base_main_menu.button_oceanus": "Oceanus",
       "item.far_out.laser_weapon": "Laser Weapon",
@@ -16811,6 +16671,7 @@
       "block.far_out.truss": "Truss",
       "block.farout.immature_etauosian_grainstalk": "Etauosian Grainstalk",
       "block.no.liquidmethane": "Liquidmethane",
+      "item.farout.zinc": "Zinc ingot",
       "gui.distant_frontiers.silican_gui.label_mass_621_moon_masses": "mass: 6.21 moon masses",
       "item.farout.galactic_core_tracker": "Galactic Core Tracker",
       "biome.distant_frontiers.cold_midlands": "Cold Midlands",
@@ -16861,7 +16722,6 @@
       "item.distant_frontiers.advanced_control_center": "Advanced Control Center",
       "block.far_out.graphite_ore": "Graphite Ore",
       "item.farout.high_frequency_integrated_circuit": "High Frequency Integrated Circuit",
-      "block.farout.erbium_block": "Block of Erbium",
       "block.farout.potassium_nitrate_block": "Block of Potassium_nitrate",
       "block.far_out.limestone_block": "Block of Limestone",
       "gui.farout.page_2.label_materials_from_the_raw_ores_i_co": "from the raw ores I collected, so I made a chemical reactor, and put the ores",
@@ -16881,6 +16741,7 @@
       "item.farout.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "item.far_out.medium_frequency_integrated_circuit": "Medium Frequency Integrated Circuit",
       "advancements.fusion_propusion.title": "Fusion Propusion",
+      "item.farout.ammeter": "Ammeter",
       "gui.distant_frontiers.silican_gui.label_nitrogen_41": "nitrogen: 41%",
       "gui.distant_frontiers.rocket_printer_gui_1.label_glacieo": "glacieo",
       "item.farout.green_oil_bucket": "Green Oil Bucket",
@@ -17054,7 +16915,6 @@
       "gui.distant_frontiers.fairing_gui.label_vvarintegerdv": "∆v:\u003cVAR:integer:DV\u003e",
       "item.farout.molybdenum_ingot": "Molybdenum",
       "block.distant_frontiers.bio_plastic_window": "Bio Plastic Window",
-      "item.farout.generator": "Generator",
       "block.farout.hydrogen_fuel_cell": "Hydrogen Fuel Cell",
       "advancements.argon_gas_obtained.title": "A very noble gas",
       "gui.farout.page_1.label_nobody_is_coming_here_anytime_so": "generator. Nobody is coming here anytime soon, so I better make myself",
@@ -17136,13 +16996,11 @@
       "block.farout.graphite_block": "Block of Graphite",
       "biome.distant_frontiers.sulfuric_hills": "Sulfuric Hills",
       "gui.distant_frontiers.vulcan_gui.label_atmosphere_47_kpa": "atmosphere: 4.7 KPa",
-      "block.farout.geothermal_generator": "Geothermal Generator",
       "block.no.space": "Space",
       "item.distant_frontiers.unequipped_rocket": "Unequipped Rocket",
       "gui.farout.page_2.label_escape_pod_is_running_out_of_pow": "comfortable. There is a lava pool nearby, so I placed the generator there,",
       "item.far_out.iron_filter": "Centrifugal Iron Filter",
       "item.far_out.nuclear_salt_water_fuel_tank": "Nuclear Salt Water Fuel Tank",
-      "block.farout.low_frequency_integrated_circuit_fabricator": "Low Frequency Integrated Circuit Fabricator",
       "item.distant_frontiers.liquidmethane_bucket": "Liquid methane Bucket",
       "block.far_out.phosphoratedstone": "Phosphorated Cobblestone",
       "block.farout.etauosian_grainstalk": "Etauosian Grainstalk",
@@ -17319,7 +17177,6 @@
       "fluid.farout.chlorella_culture": "Chlorella Culture",
       "gui.distant_frontiers.infinatos_gui.label_moons_none": "moons: none",
       "item.farout.copper_wire": "Copper Wire",
-      "item.farout.energy_meter": "Energy Meter",
       "block.farout.lumiblossom_fence_gate": "Lumiblossom Fence Gate",
       "gui.distant_frontiers.etaui_gui.label_other_information_has_a_water": "other information: has a water-",
       "gui.distant_frontiers.knowledge_base_main_menu.button_varas": "Varas",
@@ -17525,7 +17382,7 @@
       "item.far_out.battery": "Battery",
       "block.far_out.savanna_fungi_stairs": "SavannaFungi Stairs",
       "block.farout.truss": "Truss",
-      "item.farout.plutonium_carbide": "Uranium Carbide",
+      "item.farout.plutonium_carbide": "Plutonium Carbide",
       "item.farout.open_cargo_fairing": "Open Cargo Fairing",
       "block.far_out.fungustrunk": "Fungus Trunk",
       "advancements.photovoltaics.title": "Photovoltaics Galore!",

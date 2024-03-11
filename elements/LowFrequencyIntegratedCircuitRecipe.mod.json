@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": ""
+        "value": "Items.COPPER_INGOT"
       },
       {
-        "value": "CUSTOM:ElectroMagnet"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:MediumFrequencyIntegratedCircuit"
+        "value": "CUSTOM:Relay"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:Relay"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Tokamakfusionreactor"
+      "value": "CUSTOM:LowFrequencyIntegratedCircuit"
     },
-    "name": "fusion_reactor_recipe",
+    "name": "low_frequency_integrated_circuit_recipe",
     "namespace": "mod"
   }
 }

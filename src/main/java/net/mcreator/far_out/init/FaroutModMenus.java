@@ -29,7 +29,6 @@ import net.mcreator.far_out.world.inventory.NuclearReactorGUIMenu;
 import net.mcreator.far_out.world.inventory.MissionControlGUIMenu;
 import net.mcreator.far_out.world.inventory.MassivoMapMenu;
 import net.mcreator.far_out.world.inventory.MainMapMenu;
-import net.mcreator.far_out.world.inventory.LowFreqIntegratedCircuitFabGUIMenu;
 import net.mcreator.far_out.world.inventory.LanderGUIMenu;
 import net.mcreator.far_out.world.inventory.IntegratedCircuitFabricatorGUIMenu;
 import net.mcreator.far_out.world.inventory.HydrogenFuelCellGUIMenu;
@@ -82,7 +81,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<EtauiMapMenu>> ETAUI_MAP = REGISTRY.register("etaui_map", () -> IForgeMenuType.create(EtauiMapMenu::new));
 	public static final RegistryObject<MenuType<ProxmaiMapMenu>> PROXMAI_MAP = REGISTRY.register("proxmai_map", () -> IForgeMenuType.create(ProxmaiMapMenu::new));
 	public static final RegistryObject<MenuType<MassivoMapMenu>> MASSIVO_MAP = REGISTRY.register("massivo_map", () -> IForgeMenuType.create(MassivoMapMenu::new));
-	public static final RegistryObject<MenuType<LowFreqIntegratedCircuitFabGUIMenu>> LOW_FREQ_INTEGRATED_CIRCUIT_FAB_GUI = REGISTRY.register("low_freq_integrated_circuit_fab_gui", () -> IForgeMenuType.create(LowFreqIntegratedCircuitFabGUIMenu::new));
 	public static final RegistryObject<MenuType<FissionFragmentStarshipGUIMenu>> FISSION_FRAGMENT_STARSHIP_GUI = REGISTRY.register("fission_fragment_starship_gui", () -> IForgeMenuType.create(FissionFragmentStarshipGUIMenu::new));
 	public static final RegistryObject<MenuType<GenomeModiferGUIMenu>> GENOME_MODIFER_GUI = REGISTRY.register("genome_modifer_gui", () -> IForgeMenuType.create(GenomeModiferGUIMenu::new));
 	public static final RegistryObject<MenuType<BiologicalIncubatorGUIMenu>> BIOLOGICAL_INCUBATOR_GUI = REGISTRY.register("biological_incubator_gui", () -> IForgeMenuType.create(BiologicalIncubatorGUIMenu::new));
