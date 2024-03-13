@@ -154,7 +154,6 @@ import net.mcreator.far_out.item.BacterialCultureItem;
 import net.mcreator.far_out.item.AtmosphericAnalyzerItem;
 import net.mcreator.far_out.item.AshItem;
 import net.mcreator.far_out.item.ArgonItem;
-import net.mcreator.far_out.item.ArgonFuelTankItem;
 import net.mcreator.far_out.item.AqueousAmmoniaItem;
 import net.mcreator.far_out.item.AmmoniaItem;
 import net.mcreator.far_out.item.AmmeterItem;
@@ -268,7 +267,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> FAIRING_SEGMENTS = REGISTRY.register("fairing_segments", () -> new FairingSegmentsItem());
 	public static final RegistryObject<Item> CHEMICAL_FUEL_TANK = REGISTRY.register("chemical_fuel_tank", () -> new ChemicalFuelTankItem());
 	public static final RegistryObject<Item> LIQUID_HYDROGEN_FUEL_TANK = REGISTRY.register("liquid_hydrogen_fuel_tank", () -> new LiquidHydrogenFuelTankItem());
-	public static final RegistryObject<Item> ARGON_FUEL_TANK = REGISTRY.register("argon_fuel_tank", () -> new ArgonFuelTankItem());
 	public static final RegistryObject<Item> NUCLEAR_SALT_WATER_FUEL_TANK = REGISTRY.register("nuclear_salt_water_fuel_tank", () -> new NuclearSaltWaterFuelTankItem());
 	public static final RegistryObject<Item> FUSION_FUEL_TANK = REGISTRY.register("fusion_fuel_tank", () -> new FusionFuelTankItem());
 	public static final RegistryObject<Item> OPEN_FAIRING = REGISTRY.register("open_fairing", () -> new OpenFairingItem());

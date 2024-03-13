@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.far_out.world.inventory.FairingGUIMenu;
 import net.mcreator.far_out.procedures.CalculateWattageProcedure;
 import net.mcreator.far_out.procedures.CalculateHabTimeProcedure;
-import net.mcreator.far_out.procedures.CalculateDVProcedure;
 import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
@@ -72,10 +71,6 @@ public class FairingGUISlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 0 && changeType == 0) {
-
-			CalculateDVProcedure.execute(world, entity);
-		}
 		if (slot == 2 && changeType == 0) {
 
 			CalculateWattageProcedure.execute(world, entity);

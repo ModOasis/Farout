@@ -58,7 +58,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.FAIRING_SEGMENTS.get());
 				tabData.accept(FaroutModItems.CHEMICAL_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.ARGON_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.NUCLEAR_SALT_WATER_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.FUSION_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.OPEN_FAIRING.get());

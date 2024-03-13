@@ -27,7 +27,10 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Fuel mass: 1.5 tons",
+        "Fuel type: Liquid hydrogen"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

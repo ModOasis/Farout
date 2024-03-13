@@ -1,6 +1,7 @@
 {
   "type": "forge:add_features",
   "biomes": [
+    "farout:etauos_highlands",
     "farout:etauos_lowlands",
     "farout:etauos_midlands",
     "farout:carbonated_oceans"

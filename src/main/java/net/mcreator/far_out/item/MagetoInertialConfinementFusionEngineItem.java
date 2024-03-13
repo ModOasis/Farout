@@ -18,5 +18,7 @@ public class MagetoInertialConfinementFusionEngineItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("Fuel source: Lithium-lined fusion pellets"));
+		list.add(Component.literal("Exhaust velocity: 98,000 m/s"));
 	}
 }

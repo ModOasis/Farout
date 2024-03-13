@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Fusion Fuel Tank",
+    "name": "Lithium-Lined Fusion Pellet Tank",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Rocketry"
@@ -27,13 +27,22 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Fuel mass: 1.5 tons",
+        "Fuel type: Lithium-lined fusion pellets"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
     },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

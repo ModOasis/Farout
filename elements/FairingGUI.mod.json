@@ -24,9 +24,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "CalculateDV"
-          },
           "x": 114,
           "y": 179
         }
@@ -47,6 +44,21 @@
         }
       },
       {
+        "type": "label",
+        "data": {
+          "name": "label_fuel_tanks",
+          "text": {
+            "fixedValue": "Fuel Tanks"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -61,21 +73,6 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 114,
-          "y": 152
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_fuel_tanks",
-          "text": {
-            "fixedValue": "Fuel Tanks"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 141,
           "y": 152
         }
       },

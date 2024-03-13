@@ -23,7 +23,7 @@
     "experience": 0,
     "recipes": [
       "farout:chemical_reactor_recipe",
-      "farout:low_frequency_integrated_circuit_fabricator_recipe",
+      "farout:deleted_mod_element",
       "farout:batterycraft",
       "farout:unetched_silicon_wafer_recipe"
     ]
