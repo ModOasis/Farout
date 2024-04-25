@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/musniusplanks",
+    "up": "farout:block/musniusplanks",
+    "north": "farout:block/musniusplanks",
+    "east": "farout:block/musniusplanks",
+    "south": "farout:block/musniusplanks",
+    "west": "farout:block/musniusplanks",
+    "particle": "farout:block/musniusplanks"
+  },
+  "render_type": "solid"
+}

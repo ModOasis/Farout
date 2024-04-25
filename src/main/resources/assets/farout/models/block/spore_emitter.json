@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "farout:block/spore_emitter",
-    "particle": "farout:block/spore_emitter"
-  },
-  "render_type": "cutout"
-}

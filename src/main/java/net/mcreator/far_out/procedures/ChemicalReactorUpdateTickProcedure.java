@@ -133,7 +133,7 @@ public class ChemicalReactorUpdateTickProcedure {
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.FUNGUS_PLANKS.get().asItem()) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.MUSNIUS_PLANKS.get().asItem()) {
 					{
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
@@ -1002,7 +1002,7 @@ public class ChemicalReactorUpdateTickProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.FUNGUSTRUNK.get().asItem()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem()) {
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
@@ -1074,7 +1074,7 @@ public class ChemicalReactorUpdateTickProcedure {
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.FUNGUS_CAP.get().asItem()) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == FaroutModBlocks.MUSNIUS_PLANKS.get().asItem()) {
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {

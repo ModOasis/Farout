@@ -26,7 +26,7 @@
     "rewardXP": 0,
     "achievementType": "goal",
     "parent": {
-      "value": "CUSTOM:PlaceBattery"
+      "value": "CUSTOM:Photovoltaics"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"block_placed\" x=\"37\" y=\"42\"><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:NuclearReactor</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }

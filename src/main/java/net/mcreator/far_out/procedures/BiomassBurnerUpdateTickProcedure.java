@@ -126,7 +126,7 @@ public class BiomassBurnerUpdateTickProcedure {
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FaroutModBlocks.FUNGUS_PLANKS.get().asItem() && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem() && (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = world.getBlockEntity(pos);

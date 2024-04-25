@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "farout:block/musnius_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "farout:block/musnius_wood"
+    },
+    "axis=z": {
+      "model": "farout:block/musnius_wood",
+      "x": 90
+    }
+  }
+}

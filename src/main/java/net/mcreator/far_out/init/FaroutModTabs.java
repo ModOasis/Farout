@@ -25,7 +25,6 @@ public class FaroutModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.energy")).icon(() -> new ItemStack(FaroutModBlocks.NUCLEAR_REACTOR.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FaroutModBlocks.NUCLEAR_REACTOR.get().asItem());
 				tabData.accept(FaroutModBlocks.LARGE_SOLAR_PANELS.get().asItem());
-				tabData.accept(FaroutModBlocks.BIOMASS_BURNER.get().asItem());
 				tabData.accept(FaroutModItems.SUPER_CAPACITORS.get());
 				tabData.accept(FaroutModBlocks.SUPERCONDUCTING_MAGNETIC_BATTERY.get().asItem());
 				tabData.accept(FaroutModItems.NUCLEAR_RODS.get());
@@ -39,6 +38,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
 				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
 				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
+				tabData.accept(FaroutModItems.IRON_WHEEL.get());
 			})
 
 					.build());
@@ -94,7 +94,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get());
 				tabData.accept(FaroutModItems.LOW_CAPACITY_MEMORY.get());
 				tabData.accept(FaroutModItems.INERTIAL_NAVIGATION_SYSTEM.get());
-				tabData.accept(FaroutModBlocks.HIGH_FREQUENCY_INTERGRATED_CIRCUT_FABRICATOR.get().asItem());
 				tabData.accept(FaroutModItems.LASER.get());
 				tabData.accept(FaroutModItems.UNETCHED_GRAPHENE_WAFER.get());
 				tabData.accept(FaroutModItems.PHOTOVOLTAIC_WAFER.get());
@@ -136,13 +135,7 @@ public class FaroutModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-			tabData.accept(FaroutModBlocks.FUNGUSTRUNK.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_CAP.get().asItem());
 			tabData.accept(FaroutModBlocks.LITHIUM_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_PLANKS.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_STAIRS.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_SLAB.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_BUTTON.get().asItem());
 			tabData.accept(FaroutModBlocks.SUPER_ALLOY_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.BORON_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.RHENIUM_BLOCK.get().asItem());
@@ -183,11 +176,17 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_SLAB.get().asItem());
 			tabData.accept(FaroutModBlocks.QUARTZ_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.ZINC_BLOCK.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_WOOD.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_STAIRS.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_SLAB.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_FENCE.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_FENCE_GATE.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_PRESSURE_PLATE.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_BUTTON.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_PLANKS.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(FaroutModBlocks.FUNGUS_FENCE_GATE.get().asItem());
-			tabData.accept(FaroutModBlocks.FUNGUS_PRESSURE_PLATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE_GATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_PRESSURE_PLATE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_BUTTON.get().asItem());
@@ -264,16 +263,15 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.URANIUM_CARBIDE.get());
 			tabData.accept(FaroutModItems.PLUTONIUM_CARBIDE.get());
 			tabData.accept(FaroutModItems.ZINC.get());
+			tabData.accept(FaroutModItems.IRON_ROD.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(FaroutModItems.SALTWATER_BUCKET.get());
-			tabData.accept(FaroutModBlocks.FUNGUS_FENCE.get().asItem());
 			tabData.accept(FaroutModBlocks.CARDBOARDBOX.get().asItem());
 			tabData.accept(FaroutModBlocks.CHACOA.get().asItem());
 			tabData.accept(FaroutModBlocks.CHACOAVINES.get().asItem());
 			tabData.accept(FaroutModBlocks.ALIEN_REEDS.get().asItem());
-			tabData.accept(FaroutModBlocks.SPORE_EMITTER.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE.get().asItem());
 			tabData.accept(FaroutModBlocks.SOLAR_VINES_CAP.get().asItem());
 			tabData.accept(FaroutModBlocks.SOLAR_VINES.get().asItem());
@@ -287,6 +285,8 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get().asItem());
 			tabData.accept(FaroutModItems.ETAUOSIAN_GRAIN_STALK_SEEDS.get());
 			tabData.accept(FaroutModBlocks.IMMATURE_ETAUOSIAN_GRAINSTALK.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_LEAVES.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

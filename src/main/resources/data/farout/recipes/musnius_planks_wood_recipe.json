@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "farout:musnius_wood"
+    }
+  ],
+  "result": {
+    "item": "farout:musnius_tree_trunk",
+    "count": 4
+  }
+}

@@ -37,40 +37,6 @@
       }
     },
     {
-      "name": "Fungustrunk",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungustrunk",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/FungustrunkBlock.java",
-          "src/main/java/net/mcreator/far_out/block/entity/FungustrunkBlockEntity.java",
-          "src/main/resources/assets/farout/models/block/fungustrunk.json",
-          "src/main/resources/assets/farout/models/item/fungustrunk.json",
-          "src/main/resources/assets/farout/blockstates/fungustrunk.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusCap",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_cap",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/FungusCapBlock.java",
-          "src/main/java/net/mcreator/far_out/block/entity/FungusCapBlockEntity.java",
-          "src/main/resources/assets/farout/blockstates/fungus_cap.json",
-          "src/main/resources/assets/farout/models/item/fungus_cap.json",
-          "src/main/resources/assets/farout/models/block/fungus_cap.json"
-        ]
-      }
-    },
-    {
       "name": "SporeBerriesFoodEaten",
       "type": "procedure",
       "sortid": 200,
@@ -451,247 +417,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/world/inventory/NuclearReactorGUIMenu.java",
           "src/main/java/net/mcreator/far_out/client/gui/NuclearReactorGUIScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "FungusPlanks",
-      "type": "block",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/fungus_planks.json",
-          "src/main/resources/assets/farout/models/block/fungus_planks.json",
-          "src/main/resources/assets/farout/models/item/fungus_planks.json",
-          "src/main/java/net/mcreator/far_out/block/FungusPlanksBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "FungusStairs",
-      "type": "block",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_stairs",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/fungus_stairs.json",
-          "src/main/resources/assets/farout/blockstates/fungus_stairs.json",
-          "src/main/java/net/mcreator/far_out/block/FungusStairsBlock.java",
-          "src/main/resources/assets/farout/models/block/fungus_stairs.json",
-          "src/main/resources/assets/farout/models/block/fungus_stairs_outer.json",
-          "src/main/resources/assets/farout/models/block/fungus_stairs_inner.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusSlab",
-      "type": "block",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_slab",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/fungus_slab.json",
-          "src/main/resources/assets/farout/models/block/fungus_slab_full.json",
-          "src/main/resources/assets/farout/models/block/fungus_slab_top.json",
-          "src/main/resources/assets/farout/models/block/fungus_slab.json",
-          "src/main/resources/assets/farout/models/item/fungus_slab.json",
-          "src/main/java/net/mcreator/far_out/block/FungusSlabBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "FungusFence",
-      "type": "block",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_fence",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/fungus_fence_inventory.json",
-          "src/main/resources/assets/farout/blockstates/fungus_fence.json",
-          "src/main/java/net/mcreator/far_out/block/FungusFenceBlock.java",
-          "src/main/resources/assets/farout/models/block/fungus_fence_post.json",
-          "src/main/resources/assets/farout/models/item/fungus_fence.json",
-          "src/main/resources/assets/farout/models/block/fungus_fence.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusFenceGate",
-      "type": "block",
-      "sortid": 183,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_fence_gate",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/fungus_fence_gate.json",
-          "src/main/resources/assets/farout/models/block/fungus_fence_gate_wall.json",
-          "src/main/resources/assets/farout/blockstates/fungus_fence_gate.json",
-          "src/main/resources/assets/farout/models/block/fungus_fence_gate.json",
-          "src/main/resources/assets/farout/models/block/fungus_fence_gate_wall_open.json",
-          "src/main/resources/assets/farout/models/block/fungus_fence_gate_open.json",
-          "src/main/java/net/mcreator/far_out/block/FungusFenceGateBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "FungusPressurePlate",
-      "type": "block",
-      "sortid": 184,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_pressure_plate",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/fungus_pressure_plate_down.json",
-          "src/main/resources/assets/farout/models/block/fungus_pressure_plate.json",
-          "src/main/resources/assets/farout/models/item/fungus_pressure_plate.json",
-          "src/main/resources/assets/farout/blockstates/fungus_pressure_plate.json",
-          "src/main/java/net/mcreator/far_out/block/FungusPressurePlateBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "FungusButton",
-      "type": "block",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_button",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/FungusButtonBlock.java",
-          "src/main/resources/assets/farout/models/block/fungus_button_pressed.json",
-          "src/main/resources/assets/farout/models/block/fungus_button_inventory.json",
-          "src/main/resources/assets/farout/models/item/fungus_button.json",
-          "src/main/resources/assets/farout/blockstates/fungus_button.json",
-          "src/main/resources/assets/farout/models/block/fungus_button.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusItemsTag",
-      "type": "tag",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_items_tag",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/fungus_log.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusStairsRecipe",
-      "type": "recipe",
-      "sortid": 238,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_stairs_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_stairs_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusSlabRecipe",
-      "type": "recipe",
-      "sortid": 239,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_slab_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_slab_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusFenceRecipe",
-      "type": "recipe",
-      "sortid": 240,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_fence_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_fence_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusFenceGateRecipe",
-      "type": "recipe",
-      "sortid": 241,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_fence_gate_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_fence_gate_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusPressurePlateRecipe",
-      "type": "recipe",
-      "sortid": 242,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_pressure_plate_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_pressure_plate_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusButtonRecipe",
-      "type": "recipe",
-      "sortid": 243,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_button_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_button_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FungusStickRecipe",
-      "type": "recipe",
-      "sortid": 244,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_stick_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fungus_stick_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "GetFungusPlanks",
-      "type": "recipe",
-      "sortid": 245,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "get_fungus_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/get_fungus_planks.json"
         ]
       }
     },
@@ -2059,23 +1784,6 @@
       }
     },
     {
-      "name": "BiomassBurner",
-      "type": "block",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomass_burner",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/biomass_burner.json",
-          "src/main/resources/assets/farout/blockstates/biomass_burner.json",
-          "src/main/java/net/mcreator/far_out/block/BiomassBurnerBlock.java",
-          "src/main/resources/assets/farout/models/block/biomass_burner.json",
-          "src/main/java/net/mcreator/far_out/block/entity/BiomassBurnerBlockEntity.java"
-        ]
-      }
-    },
-    {
       "name": "Motor",
       "type": "item",
       "sortid": 90,
@@ -2140,19 +1848,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/fan.json",
           "src/main/java/net/mcreator/far_out/item/FanItem.java"
-        ]
-      }
-    },
-    {
-      "name": "Biomassrecipe",
-      "type": "recipe",
-      "sortid": 341,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomassrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/biomassrecipe.json"
         ]
       }
     },
@@ -4396,25 +4091,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/sodium_hydroxide_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "SporeEmitter",
-      "type": "plant",
-      "sortid": 694,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spore_emitter",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/spore_emitter.json",
-          "src/main/java/net/mcreator/far_out/block/SporeEmitterBlock.java",
-          "src/main/resources/data/farout/worldgen/placed_feature/spore_emitter.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/spore_emitter.json",
-          "src/main/resources/data/farout/forge/biome_modifier/spore_emitter_biome_modifier.json",
-          "src/main/resources/assets/farout/blockstates/spore_emitter.json",
-          "src/main/resources/assets/farout/models/item/spore_emitter.json"
         ]
       }
     },
@@ -9306,28 +8982,6 @@
       }
     },
     {
-      "name": "FungusPlanksExtension",
-      "type": "itemextension",
-      "sortid": 1074,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_planks_extension",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
-      "name": "FungusLogsExtension",
-      "type": "itemextension",
-      "sortid": 1073,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fungus_logs_extension",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "ChemicalEngineer",
       "type": "achievement",
       "sortid": 1075,
@@ -9377,23 +9031,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/item/InertialNavigationSystemItem.java",
           "src/main/resources/assets/farout/models/item/inertial_navigation_system.json"
-        ]
-      }
-    },
-    {
-      "name": "HighFrequencyIntergratedCircutFabricator",
-      "type": "block",
-      "sortid": 1079,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "high_frequency_intergrated_circut_fabricator",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/HighFrequencyIntergratedCircutFabricatorBlock.java",
-          "src/main/resources/assets/farout/models/block/high_frequency_intergrated_circut_fabricator.json",
-          "src/main/resources/assets/farout/models/item/high_frequency_intergrated_circut_fabricator.json",
-          "src/main/java/net/mcreator/far_out/block/entity/HighFrequencyIntergratedCircutFabricatorBlockEntity.java",
-          "src/main/resources/assets/farout/blockstates/high_frequency_intergrated_circut_fabricator.json"
         ]
       }
     },
@@ -10870,19 +10507,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/small_atmospheric_lander_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "ChestRecipeFungus",
-      "type": "recipe",
-      "sortid": 1199,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chest_recipe_fungus",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/chest_recipe_fungus.json"
         ]
       }
     },
@@ -13966,8 +13590,7 @@
         "files": [
           "src/main/java/net/mcreator/far_out/client/renderer/LanderRenderer.java",
           "src/main/java/net/mcreator/far_out/entity/LanderEntity.java",
-          "src/main/java/net/mcreator/far_out/entity/model/LanderModel.java",
-          "src/main/resources/data/farout/forge/biome_modifier/lander_biome_modifier.json"
+          "src/main/java/net/mcreator/far_out/entity/model/LanderModel.java"
         ]
       }
     },
@@ -15177,6 +14800,425 @@
           "src/main/java/net/mcreator/far_out/item/AmmeterItem.java"
         ]
       }
+    },
+    {
+      "name": "SkyEffects",
+      "type": "procedure",
+      "sortid": 1475,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/SkyEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SkyEffects"
+    },
+    {
+      "name": "IronRod",
+      "type": "item",
+      "sortid": 1476,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_rod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/iron_rod.json",
+          "src/main/java/net/mcreator/far_out/item/IronRodItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IronWheel",
+      "type": "item",
+      "sortid": 1477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_wheel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/iron_wheel.json",
+          "src/main/java/net/mcreator/far_out/item/IronWheelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IronRodRecipe",
+      "type": "recipe",
+      "sortid": 1478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_rod_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/iron_rod_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IronWheelRecipe",
+      "type": "recipe",
+      "sortid": 1479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_wheel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/iron_wheel_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "StirlingEngineRecipe",
+      "type": "recipe",
+      "sortid": 1480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stirling_engine_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/stirling_engine_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusTreeTrunk",
+      "type": "block",
+      "sortid": 1481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_tree_trunk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/block/musnius_tree_trunk.json",
+          "src/main/resources/assets/farout/blockstates/musnius_tree_trunk.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusTreeTrunkBlock.java",
+          "src/main/resources/assets/farout/models/item/musnius_tree_trunk.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusTreeTrunkExtension",
+      "type": "itemextension",
+      "sortid": 1482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_tree_trunk_extension",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MusniusWood",
+      "type": "block",
+      "sortid": 1483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/MusniusWoodBlock.java",
+          "src/main/resources/assets/farout/blockstates/musnius_wood.json",
+          "src/main/resources/assets/farout/models/item/musnius_wood.json",
+          "src/main/resources/assets/farout/models/block/musnius_wood.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusLeaves",
+      "type": "block",
+      "sortid": 1486,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/MusniusLeavesBlock.java",
+          "src/main/resources/assets/farout/models/item/musnius_leaves.json",
+          "src/main/resources/assets/farout/blockstates/musnius_leaves.json",
+          "src/main/resources/assets/farout/models/block/musnius_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusStairs",
+      "type": "block",
+      "sortid": 1487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/block/musnius_stairs.json",
+          "src/main/resources/assets/farout/models/block/musnius_stairs_outer.json",
+          "src/main/resources/assets/farout/blockstates/musnius_stairs.json",
+          "src/main/resources/assets/farout/models/item/musnius_stairs.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusStairsBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusSlab",
+      "type": "block",
+      "sortid": 1488,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/musnius_slab.json",
+          "src/main/resources/assets/farout/models/block/musnius_slab_top.json",
+          "src/main/resources/assets/farout/models/block/musnius_slab_full.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusSlabBlock.java",
+          "src/main/resources/assets/farout/models/item/musnius_slab.json",
+          "src/main/resources/assets/farout/models/block/musnius_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusFence",
+      "type": "block",
+      "sortid": 1489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/block/musnius_fence_inventory.json",
+          "src/main/resources/assets/farout/blockstates/musnius_fence.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusFenceBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_fence_post.json",
+          "src/main/resources/assets/farout/models/item/musnius_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusFenceGate",
+      "type": "block",
+      "sortid": 1490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/musnius_fence_gate.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate_wall_open.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate_open.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusFenceGateBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate_wall.json",
+          "src/main/resources/assets/farout/models/item/musnius_fence_gate.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusPressurePlate",
+      "type": "block",
+      "sortid": 1491,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/musnius_pressure_plate.json",
+          "src/main/resources/assets/farout/models/block/musnius_pressure_plate_down.json",
+          "src/main/resources/assets/farout/models/block/musnius_pressure_plate.json",
+          "src/main/resources/assets/farout/models/item/musnius_pressure_plate.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusPressurePlateBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MusniusButton",
+      "type": "block",
+      "sortid": 1492,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/musnius_button.json",
+          "src/main/resources/assets/farout/models/block/musnius_button_inventory.json",
+          "src/main/resources/assets/farout/models/block/musnius_button.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusButtonBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_button_pressed.json",
+          "src/main/resources/assets/farout/blockstates/musnius_button.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusWoodRecipe",
+      "type": "recipe",
+      "sortid": 1493,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusPlanksLogRecipe",
+      "type": "recipe",
+      "sortid": 1494,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_planks_log_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusPlanksWoodRecipe",
+      "type": "recipe",
+      "sortid": 1495,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_planks_wood_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusStairsRecipe",
+      "type": "recipe",
+      "sortid": 1496,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_stairs_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusSlabRecipe",
+      "type": "recipe",
+      "sortid": 1497,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_slab_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusFenceRecipe",
+      "type": "recipe",
+      "sortid": 1498,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_fence_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 1499,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_fence_gate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 1500,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_pressure_plate_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusButtonRecipe",
+      "type": "recipe",
+      "sortid": 1501,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_button_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusStickRecipe",
+      "type": "recipe",
+      "sortid": 1502,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/musnius_stick_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusPlanks",
+      "type": "block",
+      "sortid": 1503,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/musnius_planks.json",
+          "src/main/resources/assets/farout/blockstates/musnius_planks.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusPlanksBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "MusniusTreeFeature",
+      "type": "feature",
+      "sortid": 1504,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_tree_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/worldgen/placed_feature/musnius_tree_feature.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/musnius_tree_feature.json",
+          "src/main/resources/data/farout/forge/biome_modifier/musnius_tree_feature_biome_modifier.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15950,7 +15992,6 @@
       "item.far_out.depleted_uranium": "Depleted Uranium",
       "biome.distant_frontiers.sunny_islands": "Sunny Islands",
       "gui.distant_frontiers.voltmetergui.label_voltometer": "Voltometer",
-      "block.farout.fungus_pressure_plate": "Fungus Pressure Plate",
       "gui.farout.page_1.label_itself_as_the_stars_shimmered": "itself. As the stars shimmered, I noticed something odd. First, there were a",
       "entity.distant_frontiers.capsule": "Inflatable lander",
       "item.far_out.metallic_hydrogen_bucket": "Metallic Hydrogen Bucket",
@@ -15974,13 +16015,13 @@
       "biome.no.etautosmidlands": "Etautosmidlands",
       "item.far_out.fan": "Fan",
       "block.far_out.tokamakfusionreactor": "Tokamak fusion reactor",
+      "block.farout.musnius_button": "Musnius Button",
       "item.distant_frontiers.medium_frequency_integrated_circuit": "Medium Frequency Integrated Circuit",
       "block.distant_frontiers.rhenium_block": "Block of Rhenium",
       "block.far_out.bio_jet_fuel": "Biojet Fuel",
       "block.farout.rust": "Rust",
       "block.distant_frontiers.fungus_planks": "Fungus Planks",
       "item.distant_frontiers.inflatable_habitat": "Inflatable Habitat",
-      "block.farout.fungustrunk": "Fungus Trunk",
       "gui.distant_frontiers.fairing_gui.button_load_fairing": "Load Fairing",
       "block.far_out.spore_berrie_block": "Spore Berrie Block",
       "block.far_out.liquidmethane": "Liquidmethane",
@@ -16069,7 +16110,6 @@
       "item.farout.vasmir_ion_engine": "Vasmir Ion Engine",
       "item.far_out.solid_core_nuclear_thermal_rocket": "Solid Core Nuclear Thermal Rocket",
       "gui.farout.rejona_map.label_star_system_viewer": "Star System Viewer",
-      "block.farout.biomass_burner": "Combustion Generator",
       "gui.distant_frontiers.infinatos_gui.label_other_information_is_the_farthe": "other information: is the farthest",
       "block.far_out.savanna_fungi_planks": "Savanna Fungi Planks",
       "block.far_out.integrated_circuit_fabricator": "Integrated Circuit Fabricator",
@@ -16100,7 +16140,6 @@
       "item.farout.sulfur_dust": "Sulfur",
       "item.distant_frontiers.argon": "Argon",
       "gui.distant_frontiers.terra_gui.label_mass_0434_jupiter_masses": "mass: 0.434 jupiter masses",
-      "block.farout.fungus_button": "Fungus Button",
       "item.distant_frontiers.wrench": "Wrench",
       "block.farout.cargo_pod": "Cargo Pod",
       "item.no.etaui": "Etaui Portal Igniter",
@@ -16112,13 +16151,13 @@
       "biome.farout.briny_swamps": "Briny Swamps",
       "block.far_out.propane_extractor": "Propane Extractor",
       "gui.farout.page_2.label_power_generation_fuel_tanks_a": "power generation, fuel tanks, a habitation module, and a rocket to get the ",
-      "block.farout.fungus_stairs": "Fungus Stairs",
       "item.farout.space_suit_leggings": "Space Suit Legs",
       "block.far_out.ruins_crystal_drive": "Ruins Crystal Drive",
       "gui.farout.page_2.label_now_the_food_problem_i_need_it": "I have a food problem. I need some, and fast. I packed some Chlorella algae with",
       "item.no.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
       "item.distant_frontiers.rhenium_ingot": "Rhenium ingot",
       "item.far_out.uranium_ingot": "Uranium",
+      "block.farout.musnius_wood": "Musnius Wood",
       "block.distant_frontiers.battery_block": "Battery Block",
       "block.far_out.graphite_block": "Block of Graphite",
       "item.far_out.disk_player": "Disk Player",
@@ -16265,7 +16304,6 @@
       "biome.distant_frontiers.freezing_highlands": "Freezing Highlands",
       "gui.distant_frontiers.infinatos_gui.label_orbital_speed_26_kms": "orbital speed: 26 km/s",
       "gui.distant_frontiers.terra_gui.button_back": "back",
-      "block.farout.high_frequency_intergrated_circut_fabricator": "Medium Frequency Integrated Circuit Fabricator",
       "item.no.graphiterod": "Graphite rod",
       "block.farout.solar_vines": "Solar Vines",
       "gui.distant_frontiers.rocket_dest_selector.button_proxmai": "Proxmai",
@@ -16310,6 +16348,7 @@
       "key.farout.yaw_decrease": "Yaw Decrease",
       "subtitles.etaui_music": "",
       "gui.distant_frontiers.glacieo_gui.label_atmospheric_composition": "Atmospheric composition",
+      "block.farout.musnius_pressure_plate": "Musnius Pressure Plate",
       "block.farout.cardboardbox": "Cardboard box",
       "gui.distant_frontiers.silican_gui.label_silican": "Silican",
       "gui.distant_frontiers.vulcan_gui.label_9_hydrogen_sulfide": "9% hydrogen sulfide",
@@ -16329,11 +16368,13 @@
       "item.distant_frontiers.etaui": "Etaui Portal Igniter",
       "item.farout.capacitor": "Capacitor",
       "item.far_out.limestone_filter": "Centrifugal Limestone Filter",
+      "item.farout.iron_wheel": "Iron Wheel",
       "block.far_out.silicon_ore": "Silicon Ore",
       "item.farout.super_alloy_ingot": "Super Alloy ingot",
       "block.farout.aluminium_block": "Block of Aluminium",
       "gui.farout.etaui_gui.label_orbital_speed_415_kms": "orbital speed: 41.5 km/s",
       "item.far_out.starting_lander_spawn_egg": "Starting Lander Spawn Egg",
+      "block.farout.musnius_stairs": "Musnius Stairs",
       "gui.distant_frontiers.proxmai_gui.label_of_volcanic_rock": "of volcanic rock",
       "item.farout.sodium": "Sodium",
       "biome.farout.carbonated_oceans": "Carbonated Oceans",
@@ -16523,13 +16564,11 @@
       "biome.farout.volcanic_isles": "Volcanic Isles",
       "item.distant_frontiers.lithium_hydride": "Lithium Hydride",
       "item.farout.super_alloy_shovel": "Super Alloy Shovel",
-      "block.farout.fungus_fence": "Fungus Fence",
       "gui.farout.hydrogen_fuel_cell_gui.label_hydrogen_fuel_cell": "Hydrogen fuel cell",
       "item.far_out.mageto_inertial_confinement_fusion_engine": "Mageto Inertial Confinement Fusion Engine",
       "key.farout.launch": "Launch",
       "item.distant_frontiers.uranium_dust": "Uranium Dust",
       "biome.no.fungi_forest": "Fungi Forest",
-      "block.farout.fungus_planks": "Fungus Planks",
       "item.far_out.teleport_compass": "Teleport Compass",
       "key.distant_frontiers.test": "Test",
       "block.no.lithium_block": "Block of Lithium",
@@ -16581,7 +16620,6 @@
       "item.farout.nuclear_salt_water_rocket": "Nuclear Salt Water Rocket",
       "biome.farout.atmosphereless_plains": "Atmosphereless Plains",
       "item.farout.ammonia": "Ammonia",
-      "block.farout.fungus_cap": "Fungus Cap",
       "gui.farout.formalon_map.label_star_system_viewer": "Star System Viewer",
       "gui.farout.beam_injector_gui.button_protom_beam": "Proton Beam",
       "entity.far_out.flute_fish": "Flute Fish",
@@ -16622,6 +16660,7 @@
       "item.far_out.rocket_no_fairing_spawn_egg": "Rocket Spawn Egg",
       "item.distant_frontiers.organic_molecules": "Organic Molecules",
       "item_group.farout.electronics": "Electronics",
+      "block.farout.musnius_fence": "Musnius Fence",
       "biome.no.sunny_islands": "Sunny Islands",
       "fluid.farout.sulfuric_acid": "Sulfuric Acid",
       "item.far_out.glacieo": "Glacieo Portal Igniter",
@@ -16708,7 +16747,6 @@
       "advancements.high_efficiency_nuclear_propulsion.title": "High Efficiency Nuclear Propulsion",
       "entity.farout.space_station_rocket": "Space Station Rocket",
       "item.far_out.sulfur_filter": "Centrifugal Sulfur Filter",
-      "block.farout.fungus_slab": "Fungus Slab",
       "item.farout.pipe": "Pipe",
       "block.distant_frontiers.desktop_computer": "Desktop Computer",
       "gui.distant_frontiers.massivo_gui.label_83_hydrogen": "83% hydrogen",
@@ -16888,6 +16926,7 @@
       "gui.farout.fairing_gui.label_engine": "Engine",
       "item.far_out.embededcomputer": "Embededcomputer",
       "gui.distant_frontiers.terra_gui.label_orbital_speed_335_kms": "orbital speed: 33.5 km/s",
+      "block.farout.musnius_planks": "Musnius Planks",
       "block.no.atmospheric_rocketengine": "Atmospheric Rocketengine",
       "advancements.farout_start.title": "Farout: Progression Tree",
       "block.far_out.glowstone_ore": "Glowstone Ore",
@@ -16955,6 +16994,7 @@
       "advancements.make_wool.descr": "Process a fungus log in the chemical reactor",
       "block.no.dried_fungus_trunk": "Fungus Trunk",
       "block.far_out.regolith": "Regolith",
+      "block.farout.musnius_fence_gate": "Musnius Fence Gate",
       "block.far_out.rhenium_ore": "Rhenium Ore",
       "item.distant_frontiers.mageto_inertial_confinement_fusion_engine": "Mageto Inertial Confinement Fusion Engine",
       "item.farout.hexuran_shovel": "Hexuran Shovel",
@@ -17050,6 +17090,7 @@
       "item.distant_frontiers.memorychip": "Memorychip",
       "gui.farout.fairing_gui.label_warning_fairing_cannot_be": "Warning! Fairing Cannot Be",
       "item.far_out.inflatable_module": "Inflatable Module",
+      "block.farout.musnius_tree_trunk": "Musnius Tree Trunk",
       "block.no.fungus_fence": "Fungus Fence",
       "item.distant_frontiers.ash": "Ash",
       "block.distant_frontiers.sulfur_block": "Block of Sulfur",
@@ -17201,6 +17242,7 @@
       "gui.farout.integrated_circuit_fabricator_gui.button_empty": "\u003c",
       "item.distant_frontiers.super_alloy_sword": "Super Alloy Sword",
       "item.distant_frontiers.fuel_tank": "Fuel Tank",
+      "item.farout.iron_rod": "Iron Rod",
       "item.no.embededcomputer": "Embededcomputer",
       "item.far_out.bio_plastic": "Bio Plastic",
       "gui.distant_frontiers.test_gui.button_test": "Test",
@@ -17220,6 +17262,7 @@
       "biome.farout.fungi_forests": "Fungi Forests",
       "item.far_out.light_isotopes": "Light Isotopes",
       "gui.distant_frontiers.massivo_gui.label_other_information_is_the_only_g": "other information: is the only gas ",
+      "block.farout.musnius_slab": "Musnius Slab",
       "gui.distant_frontiers.planetary_logistics_gui.label_planetary_logistics": "Planetary Logistics",
       "item.farout.etauosian_grain_stalk_seeds": "Etauosian Grain Stalk Seeds",
       "advancements.nuclear_reactor_made.title": "A controversial power source",
@@ -17246,14 +17289,12 @@
       "fluid.no.tritum": "Tritum",
       "death.attack.asphyxiation.player": "%1$s asphyxiated whilst trying to escape %2$s",
       "item.distant_frontiers.glacieo": "Glacieo Portal Igniter",
-      "block.farout.spore_emitter": "Spore Emitter",
       "block.far_out.olivine_planks": "Olivine Planks",
       "item.far_out.sounding_rocket_item": "Sounding Rocket Item",
       "item.no.microchip": "Microchip",
       "subtitles.sky_hydrozoan": "",
       "item.far_out.welding_laser": "Welding Laser",
       "block.distant_frontiers.uranium_block": "Block of Uranium",
-      "block.farout.fungus_fence_gate": "Fungus Fence Gate",
       "block.farout.bio_plastic_window": "Bio Plastic Window",
       "block.no.oxygen_tank": "Oxygen Tank",
       "block.far_out.ethanol": "Ethanol",
@@ -17264,6 +17305,7 @@
       "biome.far_out.steamylslands": "Steamy lslands",
       "item.farout.the_farout_guide": "The Farout Guide",
       "item.no.reactor_core": "Reactor Core",
+      "block.farout.musnius_leaves": "Musnius Leaves",
       "block.distant_frontiers.tokamakfusionreactor": "Tokamak fusion reactor",
       "gui.distant_frontiers.glacieo_gui.label_large_colonies_here": "large colonies here.",
       "biome.no.ammonium_ocean": "Ammonium Ocean",

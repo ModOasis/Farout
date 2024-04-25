@@ -196,7 +196,9 @@ public class OnLoadedEntityTickUpdateProcedure {
 			entity.setNoGravity(true);
 			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() - FaroutModVariables.MapVariables.get(world).Gravity / 100), (entity.getDeltaMovement().z())));
 			if (entity.getY() == world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) x, (int) z) + 1 && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("forge:machine_entity")))) {
-				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.FALL)), (float) entity.getDeltaMovement().y());
+				if (entity.getDeltaMovement().y() <= 4) {
+					entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.FALL)), (float) entity.getDeltaMovement().y());
+				}
 			}
 		} else {
 			entity.setNoGravity(false);

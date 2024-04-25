@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    " b ",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:iron_wheel"
+    },
+    "b": {
+      "item": "farout:iron_rod"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "farout:stirling_engine",
+    "count": 1
+  }
+}

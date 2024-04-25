@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "farout:block/fungus_planks",
-    "particle": "farout:block/fungus_planks"
-  },
-  "render_type": "solid"
-}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/musniustreetrunktop",
+    "up": "farout:block/musniustreetrunktop",
+    "north": "farout:block/musniustreetrunkside",
+    "east": "farout:block/musniustreetrunkside",
+    "south": "farout:block/musniustreetrunkside",
+    "west": "farout:block/musniustreetrunkside",
+    "particle": "farout:block/musniustreetrunktop"
+  },
+  "render_type": "solid"
+}
