@@ -84,7 +84,6 @@ import net.mcreator.far_out.item.LiquidSulfurDioxideItem;
 import net.mcreator.far_out.item.LiquidHydrogenFuelTankItem;
 import net.mcreator.far_out.item.LiquidCrystalItem;
 import net.mcreator.far_out.item.LiquidAmmoniaItem;
-import net.mcreator.far_out.item.LimestoneDustItem;
 import net.mcreator.far_out.item.LightIsotopesItem;
 import net.mcreator.far_out.item.LaserItem;
 import net.mcreator.far_out.item.LanderBayItem;
@@ -177,7 +176,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> POTASSIUM_NITRATE_BLOCK = block(FaroutModBlocks.POTASSIUM_NITRATE_BLOCK);
 	public static final RegistryObject<Item> GUNPOWDER_BLOCK = block(FaroutModBlocks.GUNPOWDER_BLOCK);
 	public static final RegistryObject<Item> DESKTOP_COMPUTER = block(FaroutModBlocks.DESKTOP_COMPUTER);
-	public static final RegistryObject<Item> LIMESTONE_BLOCK = block(FaroutModBlocks.LIMESTONE_BLOCK);
 	public static final RegistryObject<Item> TRUSS = block(FaroutModBlocks.TRUSS);
 	public static final RegistryObject<Item> ELECTROLYZER = block(FaroutModBlocks.ELECTROLYZER);
 	public static final RegistryObject<Item> DISPLAY = REGISTRY.register("display", () -> new DisplayItem());
@@ -200,7 +198,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MOTOR = REGISTRY.register("motor", () -> new MotorItem());
 	public static final RegistryObject<Item> PIPE = REGISTRY.register("pipe", () -> new PipeItem());
 	public static final RegistryObject<Item> FAN = REGISTRY.register("fan", () -> new FanItem());
-	public static final RegistryObject<Item> LIMESTONE_DUST = REGISTRY.register("limestone_dust", () -> new LimestoneDustItem());
 	public static final RegistryObject<Item> GRAPHITE_INGOT = REGISTRY.register("graphite_ingot", () -> new GraphiteIngotItem());
 	public static final RegistryObject<Item> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireItem());
 	public static final RegistryObject<Item> ELECTRO_MAGNET = REGISTRY.register("electro_magnet", () -> new ElectroMagnetItem());
@@ -399,7 +396,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> IRON_WHEEL = REGISTRY.register("iron_wheel", () -> new IronWheelItem());
 	public static final RegistryObject<Item> MUSNIUS_TREE_TRUNK = block(FaroutModBlocks.MUSNIUS_TREE_TRUNK);
 	public static final RegistryObject<Item> MUSNIUS_WOOD = block(FaroutModBlocks.MUSNIUS_WOOD);
-	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
 	public static final RegistryObject<Item> MUSNIUS_STAIRS = block(FaroutModBlocks.MUSNIUS_STAIRS);
 	public static final RegistryObject<Item> MUSNIUS_SLAB = block(FaroutModBlocks.MUSNIUS_SLAB);
 	public static final RegistryObject<Item> MUSNIUS_FENCE = block(FaroutModBlocks.MUSNIUS_FENCE);
@@ -407,6 +403,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MUSNIUS_PRESSURE_PLATE = block(FaroutModBlocks.MUSNIUS_PRESSURE_PLATE);
 	public static final RegistryObject<Item> MUSNIUS_BUTTON = block(FaroutModBlocks.MUSNIUS_BUTTON);
 	public static final RegistryObject<Item> MUSNIUS_PLANKS = block(FaroutModBlocks.MUSNIUS_PLANKS);
+	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -3,28 +3,28 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 9,
-    "group": "",
+    "recipeRetstackSize": 1,
+    "group": "musnius",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:MusniusPlanks"
+      },
+      {
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:LimestoneBlock"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
         "value": ""
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LimestoneDust"
+      "value": "Blocks.CRAFTING_TABLE"
     },
-    "name": "limestone_block_ore_recipe",
+    "name": "crafting_table_recipe",
     "namespace": "mod"
   }
 }

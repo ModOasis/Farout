@@ -1,13 +1,13 @@
 {
-  "feature": "farout:musnius_tree_feature",
+  "feature": "farout:musnius_forest_feature",
   "placement": [
     {
       "type": "minecraft:heightmap",
       "heightmap": "OCEAN_FLOOR_WG"
     },
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 8
+      "type": "minecraft:count",
+      "count": 2
     },
     {
       "type": "minecraft:in_square"

@@ -34,11 +34,6 @@ public class MusniusTreeTrunkBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Info: A alien tree, it bears no resemblence of trees on terra."));
-		list.add(Component.literal("It's main structural molecule is more comparable to PVC than anything else."));
-		list.add(Component.literal("These trees have become the dominant species of trees on their planet,"));
-		list.add(Component.literal("due to their ability to shoot seeds out of their trunks, thus outcompeting"));
-		list.add(Component.literal("the other tree-like species."));
 	}
 
 	@Override

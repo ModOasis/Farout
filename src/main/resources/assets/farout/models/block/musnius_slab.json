@@ -1,9 +1,9 @@
 {
   "parent": "block/slab",
   "textures": {
-    "bottom": "farout:block/musnius_planks",
-    "top": "farout:block/musnius_planks",
-    "side": "farout:block/musnius_planks"
+    "bottom": "farout:block/musniusplanks",
+    "top": "farout:block/musniusplanks",
+    "side": "farout:block/musniusplanks"
   },
   "render_type": "solid"
 }

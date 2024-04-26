@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "How hard can enginering be?",
-    "achievementDescription": "Craft, and start generating power with a geothermal or biomass generator",
+    "achievementDescription": "Craft a stirling engine and use it to generate power.",
     "achievementIcon": {
-      "value": "CUSTOM:BiomassBurner"
+      "value": "Blocks.LIGHT"
     },
     "background": "Default",
     "disableDisplay": false,

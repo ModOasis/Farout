@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    " b ",
-    " b "
+    "aa",
+    "ab",
+    " b"
   ],
   "key": {
     "a": {
-      "item": "farout:fungus_planks"
+      "item": "farout:musnius_planks"
     },
     "b": {
       "item": "minecraft:stick"

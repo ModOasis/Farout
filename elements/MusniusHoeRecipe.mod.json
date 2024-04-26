@@ -3,28 +3,19 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 3,
-    "group": "bark",
+    "recipeRetstackSize": 1,
+    "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:MusniusTreeTrunk"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": "CUSTOM:MusniusTreeTrunk"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MusniusTreeTrunk"
-      },
-      {
-        "value": "CUSTOM:MusniusTreeTrunk"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
         "value": ""
@@ -33,16 +24,25 @@
         "value": ""
       },
       {
+        "value": "Items.STICK"
+      },
+      {
         "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:MusniusWood"
+      "value": "CUSTOM:MusniusPlanks"
     },
-    "name": "musnius_wood_recipe",
+    "name": "musnius_hoe_recipe",
     "namespace": "mod"
   }
 }

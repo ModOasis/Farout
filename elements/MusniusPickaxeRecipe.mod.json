@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:FungusPlanks"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": "CUSTOM:FungusPlanks"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": "CUSTOM:FungusPlanks"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
         "value": ""
@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "Items.WOODEN_PICKAXE"
     },
-    "name": "woodenpick",
+    "name": "musnius_pickaxe_recipe",
     "namespace": "mod"
   }
 }

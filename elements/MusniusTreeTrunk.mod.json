@@ -35,13 +35,7 @@
     ],
     "name": "Musnius Tree Trunk",
     "specialInformation": {
-      "fixedValue": [
-        "Info: A alien tree, it bears no resemblence of trees on terra.",
-        "It's main structural molecule is more comparable to PVC than anything else.",
-        "These trees have become the dominant species of trees on their planet,",
-        "due to their ability to shoot seeds out of their trunks, thus outcompeting",
-        "the other tree-like species."
-      ]
+      "fixedValue": []
     },
     "hardness": 2.0,
     "resistance": 2.0,

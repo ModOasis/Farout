@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "biome",
   "definition": {
-    "name": "Fungi Forests",
+    "name": "Musnius Forests",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -17,11 +17,11 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -14417864,
+      "value": -15006678,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -14417864,
+      "value": -15006678,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -39,7 +39,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "CUSTOM:SulfuricAcidRain"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
@@ -48,48 +48,45 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.2,
-      "max": 0.2
+      "min": -0.5,
+      "max": 0.1
     },
     "genHumidity": {
-      "min": -0.2,
-      "max": 0.2
+      "min": -0.5,
+      "max": 0.5
     },
     "genContinentalness": {
-      "min": 0.0,
-      "max": 2.0
+      "min": 0.5,
+      "max": 1.0
     },
     "genErosion": {
-      "min": 0.7,
-      "max": 1.0999999999999999
+      "min": -0.5,
+      "max": 1.0
     },
     "genWeirdness": {
-      "min": 0.4337221813985616,
-      "max": 0.8337221813985616
+      "min": -1.0,
+      "max": 1.0
     },
-    "treesPerChunk": 2,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
-    "minHeight": 10,
+    "treeType": 0,
+    "minHeight": 7,
     "treeStem": {
-      "value": "CUSTOM:Fungustrunk"
+      "value": ""
     },
     "treeBranch": {
-      "value": "CUSTOM:FungusCap"
+      "value": ""
     },
     "treeVines": {
       "value": ""
     },
     "treeFruits": {
-      "value": "CUSTOM:SporeBerrieBlock"
+      "value": ""
     },
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer",
-      "AmethystGeodes",
-      "Lakes",
-      "ForestGrass"
+      "FrozenTopLayer"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

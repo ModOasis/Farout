@@ -1,10 +1,8 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "farout:fungi_forests",
     "farout:etauian_plains",
-    "farout:perchlorate_oceans",
-    "farout:limestone_moutains"
+    "farout:perchlorate_oceans"
   ],
   "features": "farout:yellow_torcher",
   "step": "vegetal_decoration"

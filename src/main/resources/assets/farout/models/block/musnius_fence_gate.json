@@ -1,7 +1,7 @@
 {
   "parent": "block/template_fence_gate",
   "textures": {
-    "texture": "farout:block/musnius_planks"
+    "texture": "farout:block/musniusplanks"
   },
   "render_type": "solid"
 }

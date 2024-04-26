@@ -1,13 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "group": "musnius",
+  "category": "equipment",
   "pattern": [
     "aa",
     "aa"
   ],
   "key": {
     "a": {
-      "item": "farout:fungus_planks"
+      "item": "farout:musnius_planks"
     }
   },
   "result": {

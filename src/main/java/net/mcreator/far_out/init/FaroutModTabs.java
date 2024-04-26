@@ -144,7 +144,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.POTASSIUM_NITRATE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.GUNPOWDER_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.DESKTOP_COMPUTER.get().asItem());
-			tabData.accept(FaroutModBlocks.LIMESTONE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.TRUSS.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_BLOCK.get().asItem());
@@ -223,7 +222,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.MOTOR.get());
 			tabData.accept(FaroutModItems.PIPE.get());
 			tabData.accept(FaroutModItems.FAN.get());
-			tabData.accept(FaroutModItems.LIMESTONE_DUST.get());
 			tabData.accept(FaroutModItems.GRAPHITE_INGOT.get());
 			tabData.accept(FaroutModItems.COPPER_WIRE.get());
 			tabData.accept(FaroutModItems.ELECTRO_MAGNET.get());

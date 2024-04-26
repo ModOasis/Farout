@@ -3,8 +3,8 @@
   "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
-    "foliage_color": -14417864,
-    "grass_color": -14417864,
+    "foliage_color": -15006678,
+    "grass_color": -15006678,
     "sky_color": -7166649,
     "fog_color": -7166649,
     "water_color": 4159204,
@@ -33,9 +33,7 @@
     [
       "minecraft:lake_lava_underground"
     ],
-    [
-      "minecraft:amethyst_geode"
-    ],
+    [],
     [],
     [],
     [],
@@ -59,10 +57,7 @@
     ],
     [],
     [],
-    [
-      "farout:fungi_forests_tree",
-      "minecraft:patch_grass_forest"
-    ],
+    [],
     [
       "minecraft:freeze_top_layer"
     ]

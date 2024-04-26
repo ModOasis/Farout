@@ -135,7 +135,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farout:fungus_planks",
+          "name": "farout:deleted_mod_element",
           "weight": 8,
           "functions": [
             {

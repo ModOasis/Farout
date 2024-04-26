@@ -2,19 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a",
-    "b"
+    "aa",
+    " b",
+    " b"
   ],
   "key": {
     "a": {
-      "item": "farout:deleted_mod_element"
+      "item": "farout:musnius_planks"
     },
     "b": {
-      "item": "minecraft:furnace"
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "farout:deleted_mod_element",
+    "item": "farout:musnius_planks",
     "count": 1
   }
 }

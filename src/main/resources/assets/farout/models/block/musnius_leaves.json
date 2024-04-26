@@ -1,7 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "farout:block/musnius_leaves",
+    "down": "farout:block/musnius_leaves",
+    "up": "farout:block/musnius_leaves",
+    "north": "farout:block/musnius_leaves",
+    "east": "farout:block/musnius_leaves",
+    "south": "farout:block/musnius_leaves",
+    "west": "farout:block/musnius_leaves",
     "particle": "farout:block/musnius_leaves"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

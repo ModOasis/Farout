@@ -2,10 +2,10 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "musnius_planks",
-    "textureTop": "musnius_planks",
+    "texture": "musniusplanks",
+    "textureTop": "musniusplanks",
     "textureLeft": "",
-    "textureFront": "musnius_planks",
+    "textureFront": "musniusplanks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 10,

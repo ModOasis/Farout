@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": "CUSTOM:MusniusPlanks"
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": "Items.STICK"
       },
       {
-        "value": "CUSTOM:LimestoneDust"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LimestoneBlock"
+      "value": "Items.WOODEN_SWORD"
     },
-    "name": "limestone_ore_block_recipe",
+    "name": "musnius_sword_recipe",
     "namespace": "mod"
   }
 }

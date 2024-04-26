@@ -69,7 +69,6 @@ import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
 import net.mcreator.far_out.block.LinearParticleAcceleratorBlock;
-import net.mcreator.far_out.block.LimestoneBlockBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
@@ -121,7 +120,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> POTASSIUM_NITRATE_BLOCK = REGISTRY.register("potassium_nitrate_block", () -> new Potassium_nitrateBlockBlock());
 	public static final RegistryObject<Block> GUNPOWDER_BLOCK = REGISTRY.register("gunpowder_block", () -> new GunpowderBlockBlock());
 	public static final RegistryObject<Block> DESKTOP_COMPUTER = REGISTRY.register("desktop_computer", () -> new DesktopComputerBlock());
-	public static final RegistryObject<Block> LIMESTONE_BLOCK = REGISTRY.register("limestone_block", () -> new LimestoneBlockBlock());
 	public static final RegistryObject<Block> TRUSS = REGISTRY.register("truss", () -> new TrussBlock());
 	public static final RegistryObject<Block> ELECTROLYZER = REGISTRY.register("electrolyzer", () -> new ElectrolyzerBlock());
 	public static final RegistryObject<Block> SALTWATER = REGISTRY.register("saltwater", () -> new SaltwaterBlock());
@@ -198,7 +196,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
 	public static final RegistryObject<Block> MUSNIUS_TREE_TRUNK = REGISTRY.register("musnius_tree_trunk", () -> new MusniusTreeTrunkBlock());
 	public static final RegistryObject<Block> MUSNIUS_WOOD = REGISTRY.register("musnius_wood", () -> new MusniusWoodBlock());
-	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
 	public static final RegistryObject<Block> MUSNIUS_STAIRS = REGISTRY.register("musnius_stairs", () -> new MusniusStairsBlock());
 	public static final RegistryObject<Block> MUSNIUS_SLAB = REGISTRY.register("musnius_slab", () -> new MusniusSlabBlock());
 	public static final RegistryObject<Block> MUSNIUS_FENCE = REGISTRY.register("musnius_fence", () -> new MusniusFenceBlock());
@@ -206,6 +203,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> MUSNIUS_PRESSURE_PLATE = REGISTRY.register("musnius_pressure_plate", () -> new MusniusPressurePlateBlock());
 	public static final RegistryObject<Block> MUSNIUS_BUTTON = REGISTRY.register("musnius_button", () -> new MusniusButtonBlock());
 	public static final RegistryObject<Block> MUSNIUS_PLANKS = REGISTRY.register("musnius_planks", () -> new MusniusPlanksBlock());
+	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

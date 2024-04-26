@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "CUSTOM:MusniusPlanks"
+      },
+      {
+        "value": "CUSTOM:MusniusPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MusniusPlanks"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
         "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": ""
+        "value": "Items.STICK"
       },
       {
         "value": ""
-      },
-      {
-        "value": "CUSTOM:FungusPlanks"
-      },
-      {
-        "value": "CUSTOM:FungusPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:FungusPlanks"
-      },
-      {
-        "value": "CUSTOM:FungusPlanks"
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.CRAFTING_TABLE"
+      "value": "Items.WOODEN_PICKAXE"
     },
-    "name": "craftingtablerecipe_1",
+    "name": "musnius_axe_recipe",
     "namespace": "mod"
   }
 }

@@ -3,6 +3,6 @@
   "biomes": {
     "type": "forge:any"
   },
-  "features": "farout:limestone_block",
-  "step": "underground_ores"
+  "features": "farout:musnius_forest_feature",
+  "step": "surface_structures"
 }
