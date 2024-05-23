@@ -34,11 +34,11 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.RUST.get().asItem());
 				tabData.accept(FaroutModItems.AQUEOUS_AMMONIA_BUCKET.get());
 				tabData.accept(FaroutModItems.BERYLLIUM_INGOT.get());
-				tabData.accept(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR.get().asItem());
 				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
 				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
 				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
 				tabData.accept(FaroutModItems.IRON_WHEEL.get());
+				tabData.accept(FaroutModBlocks.LARGE_FUEL_TANK.get().asItem());
 			})
 
 					.build());
@@ -126,7 +126,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.TOKAMAKFUSIONREACTOR.get().asItem());
 				tabData.accept(FaroutModBlocks.Z_PINCH_FUSION_REACTOR.get().asItem());
 				tabData.accept(FaroutModItems.FUSION_CHAMBER.get());
-				tabData.accept(FaroutModBlocks.PARTICLE_IONIZER.get().asItem());
 			})
 
 					.build());
@@ -277,7 +276,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.YELLOW_TORCHER.get().asItem());
 			tabData.accept(FaroutModBlocks.BLUE_TORCHER.get().asItem());
 			tabData.accept(FaroutModItems.CHLORELLA_CULTURE_BUCKET.get());
-			tabData.accept(FaroutModBlocks.CRYSTALITE_SOIL.get().asItem());
 			tabData.accept(FaroutModItems.LIQUID_SULFUR_DIOXIDE_BUCKET.get());
 			tabData.accept(FaroutModBlocks.CRUSHED_QUARTZ.get().asItem());
 			tabData.accept(FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get().asItem());
@@ -285,6 +283,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.IMMATURE_ETAUOSIAN_GRAINSTALK.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_LEAVES.get().asItem());
+			tabData.accept(FaroutModBlocks.MUSNIUS_SAPLING.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

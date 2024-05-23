@@ -56,7 +56,7 @@ public class FairingCloseProcedure {
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Delta-V", FaroutModVariables.MapVariables.get(world).DV);
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Delta-V", FaroutModVariables.MapVariables.get(world).FairingDeltaV);
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Watts", FaroutModVariables.MapVariables.get(world).SpacecraftWatts);
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("HabTime", FaroutModVariables.MapVariables.get(world).Hab);
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Mass", FaroutModVariables.MapVariables.get(world).SpacecraftMass);

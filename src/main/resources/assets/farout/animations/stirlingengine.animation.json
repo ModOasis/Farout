@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"bones": {
+				"Piston": {
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"PistonRotator": {
+					"rotation": {
+						"vector": [20, 0, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

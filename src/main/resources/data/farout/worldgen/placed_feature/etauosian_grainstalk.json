@@ -2,10 +2,6 @@
   "feature": "farout:etauosian_grainstalk",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 5
-    },
-    {
       "type": "minecraft:in_square"
     },
     {

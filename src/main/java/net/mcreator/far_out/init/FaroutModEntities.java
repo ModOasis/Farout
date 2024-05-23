@@ -33,9 +33,9 @@ public class FaroutModEntities {
 	public static final RegistryObject<EntityType<LaunchVehicleEntity>> LAUNCH_VEHICLE = register("launch_vehicle",
 			EntityType.Builder.<LaunchVehicleEntity>of(LaunchVehicleEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LaunchVehicleEntity::new)
 
-					.sized(2f, 11f));
+					.sized(3.8f, 22f));
 	public static final RegistryObject<EntityType<RocketNoFairingEntity>> ROCKET_NO_FAIRING = register("rocket_no_fairing", EntityType.Builder.<RocketNoFairingEntity>of(RocketNoFairingEntity::new, MobCategory.MISC)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RocketNoFairingEntity::new).fireImmune().sized(2f, 6f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RocketNoFairingEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpaceStationRocketEntity>> SPACE_STATION_ROCKET = register("space_station_rocket",
 			EntityType.Builder.<SpaceStationRocketEntity>of(SpaceStationRocketEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpaceStationRocketEntity::new)
 

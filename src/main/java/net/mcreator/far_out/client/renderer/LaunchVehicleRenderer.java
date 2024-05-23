@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.far_out.entity.LaunchVehicleEntity;
-import net.mcreator.far_out.client.model.ModelSmallRocket;
+import net.mcreator.far_out.client.model.ModelLaunchVehicle;
 
-public class LaunchVehicleRenderer extends MobRenderer<LaunchVehicleEntity, ModelSmallRocket<LaunchVehicleEntity>> {
+public class LaunchVehicleRenderer extends MobRenderer<LaunchVehicleEntity, ModelLaunchVehicle<LaunchVehicleEntity>> {
 	public LaunchVehicleRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelSmallRocket(context.bakeLayer(ModelSmallRocket.LAYER_LOCATION)), 3f);
+		super(context, new ModelLaunchVehicle(context.bakeLayer(ModelLaunchVehicle.LAYER_LOCATION)), 4f);
 	}
 
 	@Override

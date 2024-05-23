@@ -18,7 +18,7 @@ public class StirlingEngineBlockModel extends GeoModel<StirlingEngineTileEntity>
 	}
 
 	@Override
-	public ResourceLocation getTextureResource(StirlingEngineTileEntity entity) {
+	public ResourceLocation getTextureResource(StirlingEngineTileEntity animatable) {
 		return new ResourceLocation("farout", "textures/block/stirlingenginetex.png");
 	}
 }

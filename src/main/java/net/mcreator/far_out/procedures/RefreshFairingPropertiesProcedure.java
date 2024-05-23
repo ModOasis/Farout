@@ -30,7 +30,8 @@ public class RefreshFairingPropertiesProcedure {
 		double ExhaustVelocity = 0;
 		double Watts = 0;
 		double HabitationTime = 0;
-		if (FaroutModItems.SOLAR_COLLECTOR.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+				.getItem()) {
 			Watts = 100;
 		} else if (FaroutModBlocks.NUCLEAR_REACTOR.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
 				.getItem()) {
@@ -47,7 +48,7 @@ public class RefreshFairingPropertiesProcedure {
 						.getItem()) {
 			ISP = 450;
 			Mass = Mass + 0.1;
-			FuelCapacity = 5;
+			FuelCapacity = 7;
 			Mass = Mass + 0.05;
 		} else if (FaroutModItems.SOLID_CORE_NUCLEAR_THERMAL_ROCKET
 				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()

@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="farout"
-version="0.12"
+version="0.2"
 displayName="Farout"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/far-out"
 logoFile="logo.png"

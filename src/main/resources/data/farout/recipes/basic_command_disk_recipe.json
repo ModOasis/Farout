@@ -3,8 +3,8 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
-    "dbe"
+    "bab",
+    "cbd"
   ],
   "key": {
     "a": {
@@ -14,12 +14,9 @@
       "item": "minecraft:iron_ingot"
     },
     "c": {
-      "item": "farout:inertial_navigation_system"
-    },
-    "d": {
       "item": "farout:low_frequency_integrated_circuit"
     },
-    "e": {
+    "d": {
       "item": "farout:low_capacity_memory"
     }
   },

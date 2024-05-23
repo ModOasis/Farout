@@ -49,14 +49,14 @@
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -0.16,
-      "max": 0.16
+      "max": 0.3
     },
     "genHumidity": {
       "min": -0.16,
       "max": 0.16
     },
     "genContinentalness": {
-      "min": 0.36,
+      "min": -0.6,
       "max": 0.68
     },
     "genErosion": {

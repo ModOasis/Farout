@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:electro_magnet"
+    },
+    "b": {
+      "item": "farout:iron_rod"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:relay",
+    "count": 8
+  }
+}

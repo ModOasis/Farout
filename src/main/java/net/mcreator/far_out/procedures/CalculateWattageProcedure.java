@@ -7,7 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.far_out.network.FaroutModVariables;
-import net.mcreator.far_out.init.FaroutModItems;
 import net.mcreator.far_out.init.FaroutModBlocks;
 
 import java.util.function.Supplier;
@@ -18,7 +17,8 @@ public class CalculateWattageProcedure {
 		if (entity == null)
 			return;
 		double Watts = 0;
-		if (FaroutModItems.SOLAR_COLLECTOR.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+				.getItem()) {
 			FaroutModVariables.MapVariables.get(world).SpacecraftWatts = 100;
 			FaroutModVariables.MapVariables.get(world).syncData(world);
 		} else if (FaroutModBlocks.NUCLEAR_REACTOR.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)

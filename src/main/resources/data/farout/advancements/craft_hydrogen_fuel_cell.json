@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:hydrogen_fuel_cell"
+    },
+    "title": {
+      "translate": "advancements.craft_hydrogen_fuel_cell.title"
+    },
+    "description": {
+      "translate": "advancements.craft_hydrogen_fuel_cell.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_hydrogen_fuel_cell": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "farout:hydrogen_fuel_cell"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:microchip_crafted"
+}

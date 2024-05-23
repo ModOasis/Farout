@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "farout:block/bauxite",
-    "up": "farout:block/bauxite",
-    "north": "farout:block/bauxite",
-    "east": "farout:block/bauxite",
-    "south": "farout:block/bauxite",
-    "west": "farout:block/bauxite",
-    "particle": "farout:block/bauxite"
+    "down": "farout:block/bauxite_ore",
+    "up": "farout:block/bauxite_ore",
+    "north": "farout:block/bauxite_ore",
+    "east": "farout:block/bauxite_ore",
+    "south": "farout:block/bauxite_ore",
+    "west": "farout:block/bauxite_ore",
+    "particle": "farout:block/bauxite_ore"
   },
   "render_type": "solid"
 }

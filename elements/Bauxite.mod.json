@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "bauxite",
+    "texture": "bauxite_ore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,12 +33,12 @@
         "subtract": false
       }
     ],
-    "name": "Bauxite",
+    "name": "Bauxite Ore",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.45,
-    "resistance": 6.5,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -119,7 +119,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

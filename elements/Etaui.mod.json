@@ -4,16 +4,16 @@
   "definition": {
     "biomesInDimension": [
       {
-        "value": "CUSTOM:FungiForests"
-      },
-      {
         "value": "CUSTOM:EtauianPlains"
       },
       {
         "value": "CUSTOM:PerchlorateOceans"
       },
       {
-        "value": "CUSTOM:LimestoneMoutains"
+        "value": "CUSTOM:MusniusForests"
+      },
+      {
+        "value": "CUSTOM:EtauianShores"
       }
     ],
     "worldGenType": "Normal world gen",

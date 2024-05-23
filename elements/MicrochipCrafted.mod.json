@@ -16,8 +16,13 @@
     "rewardRecipes": [
       "ChemicalReactorRecipe",
       "LowFrequencyIntegratedCircuitFabricatorRecipe",
-      "Batterycraft",
-      "UnetchedSiliconWaferRecipe"
+      "ElectrolyzerRecipe",
+      "RelayRecipe",
+      "AmmeterRecipe",
+      "CapacitorRecipe",
+      "Piperecipe",
+      "CopperWireRecipe",
+      "HydrogenFuelCellRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,

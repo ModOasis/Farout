@@ -35,7 +35,8 @@ public class CalculatePayloadPropertiesProcedure {
 		double Watts = 0;
 		double HabitationTime = 0;
 		double PlanetaryDifficulty = 0;
-		if (FaroutModItems.SOLAR_COLLECTOR.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+				.getItem()) {
 			Watts = 100;
 		} else if (FaroutModBlocks.NUCLEAR_REACTOR.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
 				.getItem()) {
@@ -52,7 +53,7 @@ public class CalculatePayloadPropertiesProcedure {
 						.getItem()) {
 			ISP = 450;
 			Mass = Mass + 0.1;
-			FuelCapacity = 5;
+			FuelCapacity = 7;
 			Mass = Mass + 0.05;
 		} else if (FaroutModItems.SOLID_CORE_NUCLEAR_THERMAL_ROCKET
 				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
@@ -142,13 +143,12 @@ public class CalculatePayloadPropertiesProcedure {
 			}
 		}.getAmount(1) * FuelCapacity + Mass;
 		FuelFraction = WetMass / Mass;
-		FaroutModVariables.MapVariables.get(world).FairingDeltaV = ExhaustVelocity * Math.log(FuelFraction);
-		FaroutModVariables.MapVariables.get(world).syncData(world);
+		DeltaV = ExhaustVelocity * Math.log(FuelFraction);
 		FaroutModVariables.MapVariables.get(world).FairingHabTime = HabitationTime;
 		FaroutModVariables.MapVariables.get(world).syncData(world);
 		FaroutModVariables.MapVariables.get(world).FairingWattage = Watts + 0.5 * Mass;
 		FaroutModVariables.MapVariables.get(world).syncData(world);
-		if (TotalWatts > 1) {
+		if (Watts > 1) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(0)).remove(1);
 				_player.containerMenu.broadcastChanges();

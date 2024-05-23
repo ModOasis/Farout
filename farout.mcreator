@@ -5997,10 +5997,7 @@
       "registry_name": "bauxite",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/bauxite_biome_modifier.json",
           "src/main/resources/assets/farout/blockstates/bauxite.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/bauxite.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/bauxite.json",
           "src/main/java/net/mcreator/far_out/block/BauxiteBlock.java",
           "src/main/resources/assets/farout/models/block/bauxite.json",
           "src/main/resources/assets/farout/models/item/bauxite.json"
@@ -10714,41 +10711,6 @@
       }
     },
     {
-      "name": "LaunchVehicleOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 1226,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "launch_vehicle_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LaunchVehicleOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MachineEntity",
       "type": "tag",
       "sortid": 1227,
@@ -10862,19 +10824,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/algae_bar_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "AlienPlanks",
-      "type": "tag",
-      "sortid": 1238,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alien_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/forge/tags/items/alien_planks.json"
         ]
       }
     },
@@ -11289,22 +11238,6 @@
         ]
       },
       "path": "~/Trajectories"
-    },
-    {
-      "name": "CrystaliteSoil",
-      "type": "block",
-      "sortid": 1275,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystalite_soil",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/crystalite_soil.json",
-          "src/main/java/net/mcreator/far_out/block/CrystaliteSoilBlock.java",
-          "src/main/resources/assets/farout/models/item/crystalite_soil.json",
-          "src/main/resources/assets/farout/blockstates/crystalite_soil.json"
-        ]
-      }
     },
     {
       "name": "CrystallinePlains",
@@ -13555,23 +13488,6 @@
       }
     },
     {
-      "name": "LinearParticleAccelerator",
-      "type": "block",
-      "sortid": 1428,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "linear_particle_accelerator",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/linear_particle_accelerator.json",
-          "src/main/resources/assets/farout/blockstates/linear_particle_accelerator.json",
-          "src/main/java/net/mcreator/far_out/block/LinearParticleAcceleratorBlock.java",
-          "src/main/java/net/mcreator/far_out/block/entity/LinearParticleAcceleratorBlockEntity.java",
-          "src/main/resources/assets/farout/models/item/linear_particle_accelerator.json"
-        ]
-      }
-    },
-    {
       "name": "LinearParticleAcceleratorBlockAdded",
       "type": "procedure",
       "sortid": 1429,
@@ -13581,85 +13497,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/LinearParticleAcceleratorBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "LinearParticleAcceleratorUpdateTick",
-      "type": "procedure",
-      "sortid": 1430,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "linear_particle_accelerator_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LinearParticleAcceleratorUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ParticleIonizer",
-      "type": "block",
-      "sortid": 1431,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "particle_ionizer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/particle_ionizer.json",
-          "src/main/resources/assets/farout/models/item/particle_ionizer.json",
-          "src/main/resources/assets/farout/blockstates/particle_ionizer.json",
-          "src/main/java/net/mcreator/far_out/block/ParticleIonizerBlock.java",
-          "src/main/java/net/mcreator/far_out/block/entity/ParticleIonizerBlockEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "ParticleIonizerUpdateTick",
-      "type": "procedure",
-      "sortid": 1432,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "particle_ionizer_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/ParticleIonizerUpdateTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -14688,30 +14525,6 @@
       }
     },
     {
-      "name": "SkyEffects",
-      "type": "procedure",
-      "sortid": 1475,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sky_effects",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SkyEffectsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/SkyEffects"
-    },
-    {
       "name": "IronRod",
       "type": "item",
       "sortid": 1476,
@@ -15222,6 +15035,323 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/musnius_hoe_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BauxiteDeposit",
+      "type": "feature",
+      "sortid": 1515,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bauxite_deposit",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/worldgen/configured_feature/bauxite_deposit.json",
+          "src/main/resources/data/farout/forge/biome_modifier/bauxite_deposit_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/bauxite_deposit.json"
+        ]
+      }
+    },
+    {
+      "name": "BauxiteDepositAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 1516,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bauxite_deposit_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/BauxiteDepositAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "EtauianShores",
+      "type": "biome",
+      "sortid": 1517,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauian_shores",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/worldgen/biome/etauian_shores.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauiSkyEffect",
+      "type": "procedure",
+      "sortid": 1518,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etaui_sky_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/EtauiSkyEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SkyEffects"
+    },
+    {
+      "name": "LargeFuelTank",
+      "type": "block",
+      "sortid": 1519,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_fuel_tank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/LargeFuelTankBlock.java",
+          "src/main/resources/assets/farout/models/item/large_fuel_tank.json",
+          "src/main/resources/assets/farout/blockstates/large_fuel_tank.json",
+          "src/main/resources/assets/farout/models/block/large_fuel_tank.json"
+        ]
+      }
+    },
+    {
+      "name": "ElectrolyzerCraft",
+      "type": "achievement",
+      "sortid": 1520,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrolyzer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/advancements/electrolyzer_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "HydrogenFuelCellRecipe",
+      "type": "recipe",
+      "sortid": 1521,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrogen_fuel_cell_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/hydrogen_fuel_cell_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftHydrogenFuelCell",
+      "type": "achievement",
+      "sortid": 1522,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_hydrogen_fuel_cell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/advancements/craft_hydrogen_fuel_cell.json"
+        ]
+      }
+    },
+    {
+      "name": "AmmeterItemInHandTick",
+      "type": "procedure",
+      "sortid": 1523,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammeter_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/AmmeterItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmmeterRecipe",
+      "type": "recipe",
+      "sortid": 1524,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammeter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/ammeter_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "BauxiteSmelting",
+      "type": "recipe",
+      "sortid": 1525,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bauxite_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/bauxite_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "CapacitorRecipe",
+      "type": "recipe",
+      "sortid": 1526,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/capacitor_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RelayRecipe",
+      "type": "recipe",
+      "sortid": 1527,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relay_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/relay_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AlienPlanks",
+      "type": "tag",
+      "sortid": 1528,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alien_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/planks.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauosianGrainStalkToBread",
+      "type": "recipe",
+      "sortid": 1529,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_grain_stalk_to_bread",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/recipes/etauosian_grain_stalk_to_bread.json"
+        ]
+      }
+    },
+    {
+      "name": "OnWorldTickUpdate",
+      "type": "procedure",
+      "sortid": 1530,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_world_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/OnWorldTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MusniusSaplingPlantAdded",
+      "type": "procedure",
+      "sortid": 1531,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_sapling_plant_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/MusniusSaplingPlantAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MusniusSaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 1532,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_sapling_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/MusniusSaplingUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MusniusSapling",
+      "type": "plant",
+      "sortid": 1533,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musnius_sapling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/entity/MusniusSaplingBlockEntity.java",
+          "src/main/resources/assets/farout/models/block/musnius_sapling.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusSaplingBlock.java",
+          "src/main/resources/assets/farout/blockstates/musnius_sapling.json",
+          "src/main/resources/assets/farout/models/item/musnius_sapling.json"
         ]
       }
     }
@@ -15896,8 +16026,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -15906,10 +16036,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "item.farout.aluminium_ingot": "Aluminium",
-      "itemGroup.tabenergy": "Energy",
+      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "itemGroup.tabrocketry": "Rocketry",
+      "itemGroup.tabenergy": "Energy",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -15973,6 +16103,7 @@
       "item.far_out.spore_berries": "Spore Berries",
       "effect.no.radioactive": "Radioactive",
       "item.farout.raw_molybdenum": "Raw Molybdenum",
+      "block.farout.large_fuel_tank": "Large Fuel Tank",
       "biome.far_out.hori_atmosphere": "Massivo Atmosphere",
       "gui.distant_frontiers.knowledge_base_main_menu.button_infinatos": "Infinatos",
       "gui.farout.rocket_trajectory_selection.button_glacieo": "Glacieo",
@@ -15989,7 +16120,7 @@
       "gui.farout.page_3.label_the_fiery_red_plasma_enveloped_t": "The fiery red plasma enveloped the lander as I slowed down.  The parachutes",
       "item.farout.rhenium_ingot": "Rhenium ingot",
       "block.distant_frontiers.phosphorated_stone_2": "Phosphorated Stone",
-      "block.farout.bauxite": "Bauxite",
+      "block.farout.bauxite": "Bauxite Ore",
       "item.far_out.open_fairing": "Open Fairing",
       "item.far_out.lithium_deuteride": "Lithium Deuteride",
       "item.no.helium_bucket": "Helium Bottle",
@@ -16122,6 +16253,7 @@
       "block.distant_frontiers.nuclear_reactor": "Nuclear Reactor",
       "item.far_out.space_food": "Space Food",
       "gui.distant_frontiers.varas_gui.label_mass_209_moon_masses": "mass: 2.09 moon masses",
+      "advancements.electrolyzer_craft.descr": "Craft and place a electrolyzer",
       "block.far_out.olivine_pressure_plate": "Olivine Pressure Plate",
       "item.far_out.etaui": "Etaui Portal Igniter",
       "item.far_out.sodium_hydroxide": "Sodium Hydroxide",
@@ -16140,7 +16272,6 @@
       "gui.distant_frontiers.d_cgui_1.button_knowledge_base": "Knowledge base",
       "item.farout.boracite": "Boracite",
       "block.farout.lumiblossom_stairs": "Lumiblossom Stairs",
-      "block.farout.crystalite_soil": "Crystalite Block",
       "item.distant_frontiers.sky_hydrozoan_ink_sac": "Sky Hydrozoan Ink Sac",
       "item.farout.sulfur_dust": "Sulfur",
       "item.distant_frontiers.argon": "Argon",
@@ -16423,6 +16554,7 @@
       "block.no.fungus_stairs": "Fungus Stairs",
       "advancements.nozzle_crafted.title": "How hard can rocketry be?",
       "item.distant_frontiers.glowstone_filter": "Centrifugal Glowstone Filter",
+      "advancements.craft_hydrogen_fuel_cell.descr": "Craft and place a hydrogen fuel cell",
       "item.farout.aqueous_ammonia_bucket": "Aqueous Ammonia Bucket",
       "item.farout.cooked_synthetic_meat": "Cooked Synthetic Meat",
       "item.distant_frontiers.helium": "Helium",
@@ -16434,7 +16566,6 @@
       "item.distant_frontiers.silicon_filter": "Centrifugal Silicon Filter",
       "advancements.fusion_propusion.descr": "The closest we have to a miniature sun. High thrust, high efficiency propusion.",
       "item.farout.ash": "Ash",
-      "block.farout.linear_particle_accelerator": "Linear Particle Accelerator",
       "key.far_out.surfucesample": "Science Menu",
       "item.farout.sodium_hydroxide": "Sodium Hydroxide",
       "block.far_out.crystal_drive": "Crystal Drive",
@@ -16464,6 +16595,7 @@
       "entity.distant_frontiers.rocket_no_fairing": "Rocket",
       "item.no.uranium_ingot": "Uranium",
       "biome.far_out.terra_atmosphere": "Massivo Atmosphere",
+      "advancements.electrolyzer_craft.title": "Molecule Splitter",
       "gui.distant_frontiers.science_workbench_gui.label_varintegerresearch": "\u003cVAR:integer:Research\u003e",
       "gui.distant_frontiers.varas_gui.label_moons_none": "moons: none",
       "item.farout.magnetoplasmadynamic_thruster": "Magnetoplasmadynamic Thruster",
@@ -16758,7 +16890,6 @@
       "gui.distant_frontiers.massivo_gui.label_83_hydrogen": "83% hydrogen",
       "gui.distant_frontiers.terra_gui.label_contact": "contact.",
       "advancements.solar_panel_obtained.title": "The power of the sun",
-      "block.farout.particle_ionizer": "Particle Ionizer",
       "item.distant_frontiers.super_capacitors": "Super Capacitors",
       "item.no.deuterium_bucket": "Deuterium Bottle",
       "entity.far_out.capsule": "Inflatable lander",
@@ -16766,6 +16897,7 @@
       "gui.distant_frontiers.terra_gui.button_next": "next",
       "gui.distant_frontiers.terra_gui.label_81_hydrogen": "81% hydrogen",
       "item.far_out.space_suit_leggings": "Space Suit Legs",
+      "advancements.craft_hydrogen_fuel_cell.title": "Water from thin air",
       "key.far_out.test": "Test",
       "fluid.far_out.saltwater": "Saltwater",
       "item.far_out.massivo": "Massivo Portal Igniter",
@@ -17283,6 +17415,7 @@
       "biome.distant_frontiers.carbonated_oceans": "Carbonated Oceans",
       "block.distant_frontiers.linear_accelerator": "Linear Accelerator",
       "block.distant_frontiers.graphite_block": "Block of Graphite",
+      "biome.farout.etauian_shores": "Etauian Shores",
       "death.attack.asphyxiation.item": "%1$s was killed by %2$s using %3$s",
       "item.distant_frontiers.uranium_rod": "Uranium Rod",
       "item.distant_frontiers.atmospheric_nuclear_thermal_rocket": "Atmospheric Nuclear Thermal Rocket",
@@ -17308,6 +17441,7 @@
       "item.farout.the_farout_guide": "The Farout Guide",
       "item.no.reactor_core": "Reactor Core",
       "block.farout.musnius_leaves": "Musnius Leaves",
+      "block.farout.musnius_sapling": "Musnius Sapling",
       "block.distant_frontiers.tokamakfusionreactor": "Tokamak fusion reactor",
       "gui.distant_frontiers.glacieo_gui.label_large_colonies_here": "large colonies here.",
       "biome.no.ammonium_ocean": "Ammonium Ocean",
@@ -17445,7 +17579,7 @@
   "workspaceSettings": {
     "modid": "farout",
     "modName": "Farout",
-    "version": "0.12",
+    "version": "0.2",
     "description": "A space exploration mod set in a globular cluster.",
     "author": "BetaStar9108",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/far-out",

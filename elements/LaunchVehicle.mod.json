@@ -4,15 +4,27 @@
   "definition": {
     "mobName": "Launch Vehicle",
     "mobLabel": "",
-    "mobModelName": "ModelSmallRocket",
+    "mobModelName": "ModelLaunchVehicle",
     "mobModelTexture": "smallrockettex.png",
-    "solidBoundingBox": {
+    "transparentModelCondition": {
       "fixedValue": false
     },
+    "isShakingCondition": {
+      "fixedValue": false
+    },
+    "solidBoundingBox": {
+      "fixedValue": true
+    },
+    "visualScale": {
+      "fixedValue": 1.0
+    },
+    "boundingBoxScale": {
+      "fixedValue": 1.0
+    },
     "modelLayers": [],
-    "modelWidth": 2.0,
-    "modelHeight": 11.0,
-    "modelShadowSize": 3.0,
+    "modelWidth": 3.8,
+    "modelHeight": 22.0,
+    "modelShadowSize": 4.0,
     "mountedYOffset": 1.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
@@ -47,7 +59,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
@@ -60,14 +72,17 @@
     "health": 100,
     "xpAmount": 0,
     "waterMob": false,
+    "breatheUnderwater": {
+      "fixedValue": false
+    },
     "pushedByFluids": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 0,
     "inventoryStackSize": 64,
-    "disableCollisions": false,
+    "disableCollisions": true,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -102,9 +117,6 @@
     "entityDataEntries": [],
     "onRightClickedOn": {
       "name": "RocketRightClickedOnEntity"
-    },
-    "onMobTickUpdate": {
-      "name": "LaunchVehicleOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",

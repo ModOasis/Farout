@@ -6,11 +6,11 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.far_out.entity.RocketNoFairingEntity;
-import net.mcreator.far_out.client.model.ModelSmallRocketNoFairing;
+import net.mcreator.far_out.client.model.ModelUnfittedLaunchVehicle;
 
-public class RocketNoFairingRenderer extends MobRenderer<RocketNoFairingEntity, ModelSmallRocketNoFairing<RocketNoFairingEntity>> {
+public class RocketNoFairingRenderer extends MobRenderer<RocketNoFairingEntity, ModelUnfittedLaunchVehicle<RocketNoFairingEntity>> {
 	public RocketNoFairingRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelSmallRocketNoFairing(context.bakeLayer(ModelSmallRocketNoFairing.LAYER_LOCATION)), 2f);
+		super(context, new ModelUnfittedLaunchVehicle(context.bakeLayer(ModelUnfittedLaunchVehicle.LAYER_LOCATION)), 2f);
 	}
 
 	@Override

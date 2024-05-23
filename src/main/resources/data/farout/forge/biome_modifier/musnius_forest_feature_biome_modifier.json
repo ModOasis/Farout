@@ -1,8 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "farout:musnius_forests",
   "features": "farout:musnius_forest_feature",
   "step": "surface_structures"
 }

@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class BauxiteBlock extends Block {
 	public BauxiteBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.45f, 6.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

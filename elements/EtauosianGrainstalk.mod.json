@@ -87,7 +87,7 @@
       }
     ],
     "isBonemealable": true,
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 1,
     "generateFeature": true,
     "restrictionBiomes": [
       {
@@ -95,7 +95,7 @@
       }
     ],
     "generationType": "Grass",
-    "patchSize": 64,
+    "patchSize": 3,
     "generateAtAnyHeight": false
   }
 }

@@ -15,9 +15,8 @@ import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
-import net.mcreator.far_out.block.entity.ParticleIonizerBlockEntity;
 import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
-import net.mcreator.far_out.block.entity.LinearParticleAcceleratorBlockEntity;
+import net.mcreator.far_out.block.entity.MusniusSaplingBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.HydrogenFuelCellBlockEntity;
@@ -41,11 +40,10 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> INTEGRATED_CIRCUIT_FABRICATOR = register("integrated_circuit_fabricator", FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR, IntegratedCircuitFabricatorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CHEMICAL_REACTOR = register("chemical_reactor", FaroutModBlocks.CHEMICAL_REACTOR, ChemicalReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> Z_PINCH_FUSION_REACTOR = register("z_pinch_fusion_reactor", FaroutModBlocks.Z_PINCH_FUSION_REACTOR, ZPinchFusionReactorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> LINEAR_PARTICLE_ACCELERATOR = register("linear_particle_accelerator", FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR, LinearParticleAcceleratorBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> PARTICLE_IONIZER = register("particle_ionizer", FaroutModBlocks.PARTICLE_IONIZER, ParticleIonizerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> HYDROGEN_FUEL_CELL = register("hydrogen_fuel_cell", FaroutModBlocks.HYDROGEN_FUEL_CELL, HydrogenFuelCellBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<StirlingEngineTileEntity>> STIRLING_ENGINE = REGISTRY.register("stirling_engine",
 			() -> BlockEntityType.Builder.of(StirlingEngineTileEntity::new, FaroutModBlocks.STIRLING_ENGINE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> MUSNIUS_SAPLING = register("musnius_sapling", FaroutModBlocks.MUSNIUS_SAPLING, MusniusSaplingBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

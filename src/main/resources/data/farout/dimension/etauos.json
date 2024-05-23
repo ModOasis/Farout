@@ -10,14 +10,14 @@
           "parameters": {
             "temperature": [
               -0.16,
-              0.16
+              0.3
             ],
             "humidity": [
               -0.16,
               0.16
             ],
             "continentalness": [
-              0.36,
+              -0.6,
               0.68
             ],
             "weirdness": [
@@ -72,7 +72,7 @@
             ],
             "continentalness": [
               -2,
-              -0.11
+              -0.6
             ],
             "weirdness": [
               0.0727427864,
@@ -637,7 +637,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:stone"
+                            "Name": "minecraft:mud"
                           }
                         }
                       ]
@@ -655,7 +655,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:stone"
+                        "Name": "minecraft:mud"
                       }
                     }
                   }

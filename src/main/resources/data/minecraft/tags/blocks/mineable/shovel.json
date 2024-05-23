@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "farout:salt_block",
+    "farout:rust",
+    "farout:crushed_quartz",
+    "farout:basaltic_dirt"
+  ]
+}

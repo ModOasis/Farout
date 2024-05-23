@@ -40,7 +40,8 @@
       "farout:motorrecipe",
       "farout:red_torcher_recipe",
       "farout:yellow_torcher_recipe",
-      "farout:blue_torcher_recipe"
+      "farout:blue_torcher_recipe",
+      "farout:stirling_engine_recipe"
     ]
   }
 }

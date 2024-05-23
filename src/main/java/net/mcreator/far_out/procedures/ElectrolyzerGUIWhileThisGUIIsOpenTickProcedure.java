@@ -114,13 +114,11 @@ public class ElectrolyzerGUIWhileThisGUIIsOpenTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 0;
-							final int _amount = 1;
+							final ItemStack _setstack = new ItemStack(Items.BUCKET);
+							_setstack.setCount(1);
 							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								if (capability instanceof IItemHandlerModifiable) {
-									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
-									_stk.shrink(_amount);
-									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _stk);
-								}
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 							});
 						}
 					}
@@ -129,7 +127,7 @@ public class ElectrolyzerGUIWhileThisGUIIsOpenTickProcedure {
 						if (_ent != null) {
 							final int _slotid = 1;
 							final ItemStack _setstack = new ItemStack(FaroutModItems.HYDROGEN.get());
-							_setstack.setCount((int) (1 + new Object() {
+							_setstack.setCount((int) (6 + new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);
@@ -149,7 +147,7 @@ public class ElectrolyzerGUIWhileThisGUIIsOpenTickProcedure {
 						if (_ent != null) {
 							final int _slotid = 2;
 							final ItemStack _setstack = new ItemStack(FaroutModItems.OXYGEN_BOTTLE.get());
-							_setstack.setCount((int) (2 + new Object() {
+							_setstack.setCount((int) (3 + new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
 									BlockEntity _ent = world.getBlockEntity(pos);

@@ -7,7 +7,7 @@
       "value": "Blocks.PACKED_MUD"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.MUD"
     },
     "underwaterBlock": {
       "value": ""
@@ -57,7 +57,7 @@
     },
     "genContinentalness": {
       "min": -2.0,
-      "max": -0.11
+      "max": -0.6
     },
     "genErosion": {
       "min": 0.8200000000000001,

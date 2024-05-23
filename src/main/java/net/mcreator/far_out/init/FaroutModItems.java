@@ -363,7 +363,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> DATA_DISK_1 = REGISTRY.register("data_disk_1", () -> new DataDisk1Item());
 	public static final RegistryObject<Item> ATMOSPHERIC_ANALYZER = REGISTRY.register("atmospheric_analyzer", () -> new AtmosphericAnalyzerItem());
 	public static final RegistryObject<Item> OCEANUS_EMBLEM = REGISTRY.register("oceanus_emblem", () -> new OceanusEmblemItem());
-	public static final RegistryObject<Item> CRYSTALITE_SOIL = block(FaroutModBlocks.CRYSTALITE_SOIL);
 	public static final RegistryObject<Item> DRY_WATER_BUCKET = REGISTRY.register("dry_water_bucket", () -> new DryWaterItem());
 	public static final RegistryObject<Item> DEBUG_ITEM = REGISTRY.register("debug_item", () -> new DebugItemItem());
 	public static final RegistryObject<Item> ANCIENT_SEDIMENT = block(FaroutModBlocks.ANCIENT_SEDIMENT);
@@ -377,8 +376,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> AQUEOUS_AMMONIA_BUCKET = REGISTRY.register("aqueous_ammonia_bucket", () -> new AqueousAmmoniaItem());
 	public static final RegistryObject<Item> PLUTONIUM_CARBIDE = REGISTRY.register("plutonium_carbide", () -> new PlutoniumCarbideItem());
 	public static final RegistryObject<Item> BERYLLIUM_INGOT = REGISTRY.register("beryllium_ingot", () -> new BerylliumIngotItem());
-	public static final RegistryObject<Item> LINEAR_PARTICLE_ACCELERATOR = block(FaroutModBlocks.LINEAR_PARTICLE_ACCELERATOR);
-	public static final RegistryObject<Item> PARTICLE_IONIZER = block(FaroutModBlocks.PARTICLE_IONIZER);
 	public static final RegistryObject<Item> MAGNETOPLASMADYNAMIC_THRUSTER = REGISTRY.register("magnetoplasmadynamic_thruster", () -> new MagnetoplasmadynamicThrusterItem());
 	public static final RegistryObject<Item> LITHIUM_FUEL_TANK = REGISTRY.register("lithium_fuel_tank", () -> new LithiumFuelTankItem());
 	public static final RegistryObject<Item> HYDROGEN_FUEL_CELL = block(FaroutModBlocks.HYDROGEN_FUEL_CELL);
@@ -404,6 +401,8 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MUSNIUS_BUTTON = block(FaroutModBlocks.MUSNIUS_BUTTON);
 	public static final RegistryObject<Item> MUSNIUS_PLANKS = block(FaroutModBlocks.MUSNIUS_PLANKS);
 	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
+	public static final RegistryObject<Item> LARGE_FUEL_TANK = block(FaroutModBlocks.LARGE_FUEL_TANK);
+	public static final RegistryObject<Item> MUSNIUS_SAPLING = block(FaroutModBlocks.MUSNIUS_SAPLING);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

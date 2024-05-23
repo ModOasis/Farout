@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "farout:chemosynthetic_nodules",
+    "farout:lumiblossom_wood",
+    "farout:lumiblossom_log",
+    "farout:lumiblossom_planks",
+    "farout:musnius_tree_trunk",
+    "farout:musnius_wood",
+    "farout:musnius_planks"
+  ]
+}

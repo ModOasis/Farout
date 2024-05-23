@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/largefueltank_-_converted",
+  "textures": {
+    "all": "farout:block/largefueltanktex",
+    "particle": "farout:block/largefueltanktex",
+    "0": "farout:block/largefueltanktex"
+  },
+  "render_type": "solid"
+}

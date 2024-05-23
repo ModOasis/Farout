@@ -39,13 +39,13 @@ import net.mcreator.far_out.block.RheniumBlockBlock;
 import net.mcreator.far_out.block.RedTorcherBlock;
 import net.mcreator.far_out.block.QuartzOreBlock;
 import net.mcreator.far_out.block.Potassium_nitrateBlockBlock;
-import net.mcreator.far_out.block.ParticleIonizerBlock;
 import net.mcreator.far_out.block.OsmiumBlockBlock;
 import net.mcreator.far_out.block.NuclearReactorBlock;
 import net.mcreator.far_out.block.MusniusWoodBlock;
 import net.mcreator.far_out.block.MusniusTreeTrunkBlock;
 import net.mcreator.far_out.block.MusniusStairsBlock;
 import net.mcreator.far_out.block.MusniusSlabBlock;
+import net.mcreator.far_out.block.MusniusSaplingBlock;
 import net.mcreator.far_out.block.MusniusPressurePlateBlock;
 import net.mcreator.far_out.block.MusniusPlanksBlock;
 import net.mcreator.far_out.block.MusniusLeavesBlock;
@@ -68,8 +68,8 @@ import net.mcreator.far_out.block.LumiblossomButtonBlock;
 import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
-import net.mcreator.far_out.block.LinearParticleAcceleratorBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
+import net.mcreator.far_out.block.LargeFuelTankBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.HydrogenFuelCellBlock;
@@ -81,7 +81,6 @@ import net.mcreator.far_out.block.EtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.ElectrolyzerBlock;
 import net.mcreator.far_out.block.DryWaterBlock;
 import net.mcreator.far_out.block.DesktopComputerBlock;
-import net.mcreator.far_out.block.CrystaliteSoilBlock;
 import net.mcreator.far_out.block.CrystalineExoskeletonBlock;
 import net.mcreator.far_out.block.CrushedQuartzBlock;
 import net.mcreator.far_out.block.CoffiniteOreBlock;
@@ -177,7 +176,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> YELLOW_TORCHER = REGISTRY.register("yellow_torcher", () -> new YellowTorcherBlock());
 	public static final RegistryObject<Block> BLUE_TORCHER = REGISTRY.register("blue_torcher", () -> new BlueTorcherBlock());
 	public static final RegistryObject<Block> CHLORELLA_CULTURE = REGISTRY.register("chlorella_culture", () -> new ChlorellaCultureBlock());
-	public static final RegistryObject<Block> CRYSTALITE_SOIL = REGISTRY.register("crystalite_soil", () -> new CrystaliteSoilBlock());
 	public static final RegistryObject<Block> DRY_WATER = REGISTRY.register("dry_water", () -> new DryWaterBlock());
 	public static final RegistryObject<Block> ANCIENT_SEDIMENT = REGISTRY.register("ancient_sediment", () -> new AncientSedimentBlock());
 	public static final RegistryObject<Block> SALT_BLOCK = REGISTRY.register("salt_block", () -> new SaltBlockBlock());
@@ -186,8 +184,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> RUST = REGISTRY.register("rust", () -> new RustBlock());
 	public static final RegistryObject<Block> CRUSHED_QUARTZ = REGISTRY.register("crushed_quartz", () -> new CrushedQuartzBlock());
 	public static final RegistryObject<Block> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaBlock());
-	public static final RegistryObject<Block> LINEAR_PARTICLE_ACCELERATOR = REGISTRY.register("linear_particle_accelerator", () -> new LinearParticleAcceleratorBlock());
-	public static final RegistryObject<Block> PARTICLE_IONIZER = REGISTRY.register("particle_ionizer", () -> new ParticleIonizerBlock());
 	public static final RegistryObject<Block> HYDROGEN_FUEL_CELL = REGISTRY.register("hydrogen_fuel_cell", () -> new HydrogenFuelCellBlock());
 	public static final RegistryObject<Block> BASALTIC_DIRT = REGISTRY.register("basaltic_dirt", () -> new BasalticDirtBlock());
 	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
@@ -204,6 +200,8 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> MUSNIUS_BUTTON = REGISTRY.register("musnius_button", () -> new MusniusButtonBlock());
 	public static final RegistryObject<Block> MUSNIUS_PLANKS = REGISTRY.register("musnius_planks", () -> new MusniusPlanksBlock());
 	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
+	public static final RegistryObject<Block> LARGE_FUEL_TANK = REGISTRY.register("large_fuel_tank", () -> new LargeFuelTankBlock());
+	public static final RegistryObject<Block> MUSNIUS_SAPLING = REGISTRY.register("musnius_sapling", () -> new MusniusSaplingBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

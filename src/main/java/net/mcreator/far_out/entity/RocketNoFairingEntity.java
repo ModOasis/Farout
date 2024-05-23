@@ -38,6 +38,7 @@ public class RocketNoFairingEntity extends PathfinderMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(true);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -48,6 +49,11 @@ public class RocketNoFairingEntity extends PathfinderMob {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEFINED;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
 	}
 
 	@Override

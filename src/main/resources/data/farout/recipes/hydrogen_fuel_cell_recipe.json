@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "aec"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "farout:pipe"
+    },
+    "d": {
+      "item": "farout:chemicals"
+    },
+    "e": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:hydrogen_fuel_cell",
+    "count": 1
+  }
+}

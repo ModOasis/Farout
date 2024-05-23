@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "bcb",
+    "dcd"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:iron_rod"
+    },
+    "b": {
+      "item": "farout:electro_magnet"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    },
+    "d": {
+      "item": "farout:copper_wire"
+    }
+  },
+  "result": {
+    "item": "farout:ammeter",
+    "count": 1
+  }
+}
