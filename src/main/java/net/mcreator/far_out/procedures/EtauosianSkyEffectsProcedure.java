@@ -14,11 +14,15 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.client.renderer.ShaderInstance;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.Minecraft;
+
+import net.mcreator.far_out.network.FaroutModVariables;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +37,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber(value = {Dist.CLIENT})
-public class EtauiSkyEffectProcedure {
+public class EtauosianSkyEffectsProcedure {
 	private static RenderLevelStageEvent _provider = null;
 	private static Runnable _fogRenderer = null;
 	private static boolean _usingBuffers = false;
@@ -849,7 +853,7 @@ public class EtauiSkyEffectProcedure {
 			RenderSystem.enableBlend();
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-			execute(_provider, level);
+			execute(_provider, level, entity);
 			RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 			RenderSystem.enableCull();
 			RenderSystem.enableDepthTest();
@@ -859,18 +863,35 @@ public class EtauiSkyEffectProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world) {
-		execute(null, world);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world) {
-		RenderSystem.clear(16640, Minecraft.ON_OSX);
-		renderVanillasky(false, false, false, false, true, false, true);
-		{
-			ResourceLocation _texturelocation = new ResourceLocation(("farout" + ":textures/" + "sandos" + ".png"));
-			RenderSystem.setShaderTexture(0, _texturelocation);
-			Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
+		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos")))) {
+			if (_starBuffer != null)
+				_starBuffer.close();
+			_starBuffer = null;
+			RenderSystem.clear(16640, Minecraft.ON_OSX);
+			renderVanillasky(true, false, false, false, true, false, true);
+			{
+				ResourceLocation _texturelocation = new ResourceLocation((FaroutModVariables.MapVariables.get(world).ModID + ":textures/" + "sandos" + ".png"));
+				RenderSystem.setShaderTexture(0, _texturelocation);
+				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+			}
+			RenderSystem.enableBlend();
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderSun(30, (float) (world.getTimeOfDay(Minecraft.getInstance().getPartialTick()) * 360.0F), (int) (255 << 24 | 200 << 16 | 200 << 8 | 200), false);
+			{
+				ResourceLocation _texturelocation = new ResourceLocation((FaroutModVariables.MapVariables.get(world).ModID + ":textures/" + "etaui" + ".png"));
+				RenderSystem.setShaderTexture(0, _texturelocation);
+				Minecraft.getInstance().getTextureManager().bindForSetup(_texturelocation);
+			}
+			RenderSystem.enableBlend();
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			renderTexture(60, 90, -45, 0, (int) (255 << 24 | 200 << 16 | 200 << 8 | 200), false);
 		}
-		renderSun(96, (float) (world.getTimeOfDay(Minecraft.getInstance().getPartialTick()) * 360.0F), (int) (255 << 24 | 255 << 16 | 255 << 8 | 255), false);
 	}
 }

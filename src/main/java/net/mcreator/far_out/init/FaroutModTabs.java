@@ -38,7 +38,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
 				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
 				tabData.accept(FaroutModItems.IRON_WHEEL.get());
-				tabData.accept(FaroutModBlocks.LARGE_FUEL_TANK.get().asItem());
 			})
 
 					.build());

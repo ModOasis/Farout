@@ -10,7 +10,7 @@ import net.mcreator.far_out.client.model.ModelUnfittedLaunchVehicle;
 
 public class RocketNoFairingRenderer extends MobRenderer<RocketNoFairingEntity, ModelUnfittedLaunchVehicle<RocketNoFairingEntity>> {
 	public RocketNoFairingRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelUnfittedLaunchVehicle(context.bakeLayer(ModelUnfittedLaunchVehicle.LAYER_LOCATION)), 2f);
+		super(context, new ModelUnfittedLaunchVehicle(context.bakeLayer(ModelUnfittedLaunchVehicle.LAYER_LOCATION)), 4f);
 	}
 
 	@Override

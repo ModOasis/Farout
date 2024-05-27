@@ -59,6 +59,7 @@ public class LanderEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(true);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -91,6 +92,11 @@ public class LanderEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
+	}
+
+	@Override
 	public double getPassengersRidingOffset() {
 		return super.getPassengersRidingOffset() + 1;
 	}
@@ -98,6 +104,8 @@ public class LanderEntity extends Monster implements GeoEntity {
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		if (source.is(DamageTypes.FALL))
+			return false;
+		if (source.is(DamageTypes.DROWN))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -136,7 +144,7 @@ public class LanderEntity extends Monster implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		LanderOnEntityTickUpdateProcedure.execute(this.level(), this);
+		LanderOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

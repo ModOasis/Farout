@@ -69,7 +69,6 @@ import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
-import net.mcreator.far_out.block.LargeFuelTankBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.HydrogenFuelCellBlock;
@@ -200,7 +199,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> MUSNIUS_BUTTON = REGISTRY.register("musnius_button", () -> new MusniusButtonBlock());
 	public static final RegistryObject<Block> MUSNIUS_PLANKS = REGISTRY.register("musnius_planks", () -> new MusniusPlanksBlock());
 	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
-	public static final RegistryObject<Block> LARGE_FUEL_TANK = REGISTRY.register("large_fuel_tank", () -> new LargeFuelTankBlock());
 	public static final RegistryObject<Block> MUSNIUS_SAPLING = REGISTRY.register("musnius_sapling", () -> new MusniusSaplingBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

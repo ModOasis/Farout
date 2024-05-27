@@ -401,7 +401,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MUSNIUS_BUTTON = block(FaroutModBlocks.MUSNIUS_BUTTON);
 	public static final RegistryObject<Item> MUSNIUS_PLANKS = block(FaroutModBlocks.MUSNIUS_PLANKS);
 	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
-	public static final RegistryObject<Item> LARGE_FUEL_TANK = block(FaroutModBlocks.LARGE_FUEL_TANK);
 	public static final RegistryObject<Item> MUSNIUS_SAPLING = block(FaroutModBlocks.MUSNIUS_SAPLING);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {

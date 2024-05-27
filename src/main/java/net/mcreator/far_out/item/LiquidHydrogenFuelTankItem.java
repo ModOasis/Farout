@@ -12,7 +12,7 @@ import java.util.List;
 
 public class LiquidHydrogenFuelTankItem extends Item {
 	public LiquidHydrogenFuelTankItem() {
-		super(new Item.Properties().durability(200).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

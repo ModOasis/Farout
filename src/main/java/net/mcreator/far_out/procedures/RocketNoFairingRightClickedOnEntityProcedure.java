@@ -76,6 +76,7 @@ public class RocketNoFairingRightClickedOnEntityProcedure {
 				FaroutModVariables.MapVariables.get(world).SpacecraftStatus = FaroutModVariables.MapVariables.get(world).SpacecraftStatus + "" + (itemstack.getOrCreateTag().getString("VesselName") + ", Situation: Ready to launch" + ";");
 				FaroutModVariables.MapVariables.get(world).syncData(world);
 			}
+			(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setCount(0);
 		} else if (FaroutModItems.CARGO_FAIRING.get() == (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = FaroutModEntities.LAUNCH_VEHICLE.get().spawn(_level, BlockPos.containing(LaunchPosX, LaunchPosY, LaunchPosZ), MobSpawnType.MOB_SUMMONED);

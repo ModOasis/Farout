@@ -33,7 +33,6 @@
     "farout:spodumene_block",
     "farout:hydrogen_fuel_cell",
     "farout:stirling_engine",
-    "farout:zinc_block",
-    "farout:large_fuel_tank"
+    "farout:zinc_block"
   ]
 }

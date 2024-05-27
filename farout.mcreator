@@ -13111,6 +13111,14 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -15082,42 +15090,6 @@
       }
     },
     {
-      "name": "EtauiSkyEffect",
-      "type": "procedure",
-      "sortid": 1518,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etaui_sky_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EtauiSkyEffectProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/SkyEffects"
-    },
-    {
-      "name": "LargeFuelTank",
-      "type": "block",
-      "sortid": 1519,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "large_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/LargeFuelTankBlock.java",
-          "src/main/resources/assets/farout/models/item/large_fuel_tank.json",
-          "src/main/resources/assets/farout/blockstates/large_fuel_tank.json",
-          "src/main/resources/assets/farout/models/block/large_fuel_tank.json"
-        ]
-      }
-    },
-    {
       "name": "ElectrolyzerCraft",
       "type": "achievement",
       "sortid": 1520,
@@ -15352,6 +15324,52 @@
           "src/main/java/net/mcreator/far_out/block/MusniusSaplingBlock.java",
           "src/main/resources/assets/farout/blockstates/musnius_sapling.json",
           "src/main/resources/assets/farout/models/item/musnius_sapling.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauianSkyEffects",
+      "type": "procedure",
+      "sortid": 1534,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauian_sky_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/EtauianSkyEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EtauosianSkyEffects",
+      "type": "procedure",
+      "sortid": 1535,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauosian_sky_effects",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/EtauosianSkyEffectsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -16103,7 +16121,6 @@
       "item.far_out.spore_berries": "Spore Berries",
       "effect.no.radioactive": "Radioactive",
       "item.farout.raw_molybdenum": "Raw Molybdenum",
-      "block.farout.large_fuel_tank": "Large Fuel Tank",
       "biome.far_out.hori_atmosphere": "Massivo Atmosphere",
       "gui.distant_frontiers.knowledge_base_main_menu.button_infinatos": "Infinatos",
       "gui.farout.rocket_trajectory_selection.button_glacieo": "Glacieo",
