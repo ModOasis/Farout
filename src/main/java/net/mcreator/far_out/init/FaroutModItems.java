@@ -176,7 +176,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> POTASSIUM_NITRATE_BLOCK = block(FaroutModBlocks.POTASSIUM_NITRATE_BLOCK);
 	public static final RegistryObject<Item> GUNPOWDER_BLOCK = block(FaroutModBlocks.GUNPOWDER_BLOCK);
 	public static final RegistryObject<Item> DESKTOP_COMPUTER = block(FaroutModBlocks.DESKTOP_COMPUTER);
-	public static final RegistryObject<Item> TRUSS = block(FaroutModBlocks.TRUSS);
 	public static final RegistryObject<Item> ELECTROLYZER = block(FaroutModBlocks.ELECTROLYZER);
 	public static final RegistryObject<Item> DISPLAY = REGISTRY.register("display", () -> new DisplayItem());
 	public static final RegistryObject<Item> LITHIUM_INGOT = REGISTRY.register("lithium_ingot", () -> new LithiumIngotItem());

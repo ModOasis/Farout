@@ -136,7 +136,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "stirling_engine.geo.json",
+    "normal": "stirlingengine.geo.json",
     "displaySettings": "stirling_engine.item.json",
     "blockstateList": []
   }

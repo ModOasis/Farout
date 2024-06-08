@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "farout:custom/desktopcomputer",
   "textures": {
-    "down": "farout:block/blank",
-    "up": "farout:block/blank",
-    "north": "farout:block/computerscreen",
-    "east": "farout:block/blank",
-    "south": "farout:block/dc1",
-    "west": "farout:block/connectors",
-    "particle": "farout:block/blank"
+    "all": "farout:block/blank",
+    "particle": "farout:block/blank",
+    "0": "farout:block/desktopcomputertex"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

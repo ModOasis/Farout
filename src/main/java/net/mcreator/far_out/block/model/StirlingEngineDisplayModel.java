@@ -9,12 +9,12 @@ import net.mcreator.far_out.block.display.StirlingEngineDisplayItem;
 public class StirlingEngineDisplayModel extends GeoModel<StirlingEngineDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(StirlingEngineDisplayItem animatable) {
-		return new ResourceLocation("farout", "animations/stirling_engine.animation.json");
+		return new ResourceLocation("farout", "animations/stirlingengine.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(StirlingEngineDisplayItem animatable) {
-		return new ResourceLocation("farout", "geo/stirling_engine.geo.json");
+		return new ResourceLocation("farout", "geo/stirlingengine.geo.json");
 	}
 
 	@Override

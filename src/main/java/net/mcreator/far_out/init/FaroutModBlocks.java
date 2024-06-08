@@ -17,7 +17,6 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.far_out.block.ZincBlockBlock;
 import net.mcreator.far_out.block.ZPinchFusionReactorBlock;
 import net.mcreator.far_out.block.YellowTorcherBlock;
-import net.mcreator.far_out.block.TrussBlock;
 import net.mcreator.far_out.block.TokamakfusionreactorBlock;
 import net.mcreator.far_out.block.SuperconductingMagneticBatteryBlock;
 import net.mcreator.far_out.block.Super_AlloyBlockBlock;
@@ -118,7 +117,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> POTASSIUM_NITRATE_BLOCK = REGISTRY.register("potassium_nitrate_block", () -> new Potassium_nitrateBlockBlock());
 	public static final RegistryObject<Block> GUNPOWDER_BLOCK = REGISTRY.register("gunpowder_block", () -> new GunpowderBlockBlock());
 	public static final RegistryObject<Block> DESKTOP_COMPUTER = REGISTRY.register("desktop_computer", () -> new DesktopComputerBlock());
-	public static final RegistryObject<Block> TRUSS = REGISTRY.register("truss", () -> new TrussBlock());
 	public static final RegistryObject<Block> ELECTROLYZER = REGISTRY.register("electrolyzer", () -> new ElectrolyzerBlock());
 	public static final RegistryObject<Block> SALTWATER = REGISTRY.register("saltwater", () -> new SaltwaterBlock());
 	public static final RegistryObject<Block> SPORE_BERRIE_BLOCK = REGISTRY.register("spore_berrie_block", () -> new SporeBerrieBlockBlock());

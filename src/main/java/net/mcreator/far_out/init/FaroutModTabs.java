@@ -142,7 +142,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.POTASSIUM_NITRATE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.GUNPOWDER_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.DESKTOP_COMPUTER.get().asItem());
-			tabData.accept(FaroutModBlocks.TRUSS.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.GRAPHITE_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.SILICON_BLOCK.get().asItem());
