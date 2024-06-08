@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.far_out.item.ZincItem;
 import net.mcreator.far_out.item.WrenchItem;
 import net.mcreator.far_out.item.VodkaItem;
 import net.mcreator.far_out.item.VasmirIonEngineItem;
@@ -383,8 +382,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> ETAUOSIAN_GRAIN_STALK_SEEDS = REGISTRY.register("etauosian_grain_stalk_seeds", () -> new EtauosianGrainStalkSeedsItem());
 	public static final RegistryObject<Item> STIRLING_ENGINE = REGISTRY.register(FaroutModBlocks.STIRLING_ENGINE.getId().getPath(), () -> new StirlingEngineDisplayItem(FaroutModBlocks.STIRLING_ENGINE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> IMMATURE_ETAUOSIAN_GRAINSTALK = block(FaroutModBlocks.IMMATURE_ETAUOSIAN_GRAINSTALK);
-	public static final RegistryObject<Item> ZINC_BLOCK = block(FaroutModBlocks.ZINC_BLOCK);
-	public static final RegistryObject<Item> ZINC = REGISTRY.register("zinc", () -> new ZincItem());
 	public static final RegistryObject<Item> RELAY = REGISTRY.register("relay", () -> new RelayItem());
 	public static final RegistryObject<Item> CAPACITOR = REGISTRY.register("capacitor", () -> new CapacitorItem());
 	public static final RegistryObject<Item> AMMETER = REGISTRY.register("ammeter", () -> new AmmeterItem());

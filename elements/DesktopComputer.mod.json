@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "desktopcomputer:default",
-    "rotationMode": 1,
+    "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -147,7 +147,7 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -166,6 +166,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "DesktopComputerOnBlockRightClicked"
+    },
+    "onBlockAdded": {
+      "name": "DesktopComputerBlockAdded"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

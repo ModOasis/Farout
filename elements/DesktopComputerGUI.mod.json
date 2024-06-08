@@ -13,36 +13,171 @@
       {
         "type": "image",
         "data": {
-          "image": "wallpaper1blurred.png",
+          "image": "wallpaper1.png",
           "use1Xscale": false,
           "x": 114,
           "y": 22
         }
       },
       {
-        "type": "imagebutton",
+        "type": "textfield",
         "data": {
-          "name": "imagebutton_starship_button",
-          "image": "starship_button.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "OpenSpacecraftComponentsGUI"
-          },
-          "x": 123,
-          "y": 179
+          "placeholder": "Start typing to input",
+          "name": "input",
+          "width": 120,
+          "height": 20,
+          "x": 150,
+          "y": 197
         }
       },
       {
-        "type": "imagebutton",
+        "type": "label",
         "data": {
-          "name": "imagebutton_missioncontrol",
-          "image": "missioncontrol.png",
-          "hoveredImage": "",
-          "x": 159,
+          "name": "label_proc_desktop_computer_text_line",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line1",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line2",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line3",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line4",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line5",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine6"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line6",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine7"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line7",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine8"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_desktop_computer_text_line8",
+          "text": {
+            "fixedValue": "",
+            "name": "DesktopComputerTextLine9"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 114,
           "y": 179
         }
       }
     ],
+    "onTick": {
+      "name": "DesktopComputerGUIWhileThisGUIIsOpenTick"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

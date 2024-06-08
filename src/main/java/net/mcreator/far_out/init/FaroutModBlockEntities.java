@@ -21,6 +21,7 @@ import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.HydrogenFuelCellBlockEntity;
 import net.mcreator.far_out.block.entity.ElectrolyzerBlockEntity;
+import net.mcreator.far_out.block.entity.DesktopComputerBlockEntity;
 import net.mcreator.far_out.block.entity.ChemicalReactorBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoavinesBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoaBlockEntity;
@@ -29,6 +30,7 @@ import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FaroutMod.MODID);
+	public static final RegistryObject<BlockEntityType<?>> DESKTOP_COMPUTER = register("desktop_computer", FaroutModBlocks.DESKTOP_COMPUTER, DesktopComputerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ELECTROLYZER = register("electrolyzer", FaroutModBlocks.ELECTROLYZER, ElectrolyzerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SPORE_BERRIE_BLOCK = register("spore_berrie_block", FaroutModBlocks.SPORE_BERRIE_BLOCK, SporeBerrieBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NUCLEAR_REACTOR = register("nuclear_reactor", FaroutModBlocks.NUCLEAR_REACTOR, NuclearReactorBlockEntity::new);

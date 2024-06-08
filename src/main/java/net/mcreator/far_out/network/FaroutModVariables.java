@@ -189,7 +189,6 @@ public class FaroutModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "farout_mapvars";
-		public boolean Not_a_lot_of_science = false;
 		public double Probe_core_number = 0.0;
 		public double Materal_bay_data_value = 25.0;
 		public double EVA_report_data_value = 8.0;
@@ -247,6 +246,7 @@ public class FaroutModVariables {
 		public double RotationSpeed = 0;
 		public double SandosLuminosity = 0.0;
 		public String ModID = "farout";
+		public double SpaceStationLevel = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -255,7 +255,6 @@ public class FaroutModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			Not_a_lot_of_science = nbt.getBoolean("Not_a_lot_of_science");
 			Probe_core_number = nbt.getDouble("Probe_core_number");
 			Materal_bay_data_value = nbt.getDouble("Materal_bay_data_value");
 			EVA_report_data_value = nbt.getDouble("EVA_report_data_value");
@@ -313,11 +312,11 @@ public class FaroutModVariables {
 			RotationSpeed = nbt.getDouble("RotationSpeed");
 			SandosLuminosity = nbt.getDouble("SandosLuminosity");
 			ModID = nbt.getString("ModID");
+			SpaceStationLevel = nbt.getDouble("SpaceStationLevel");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putBoolean("Not_a_lot_of_science", Not_a_lot_of_science);
 			nbt.putDouble("Probe_core_number", Probe_core_number);
 			nbt.putDouble("Materal_bay_data_value", Materal_bay_data_value);
 			nbt.putDouble("EVA_report_data_value", EVA_report_data_value);
@@ -375,6 +374,7 @@ public class FaroutModVariables {
 			nbt.putDouble("RotationSpeed", RotationSpeed);
 			nbt.putDouble("SandosLuminosity", SandosLuminosity);
 			nbt.putString("ModID", ModID);
+			nbt.putDouble("SpaceStationLevel", SpaceStationLevel);
 			return nbt;
 		}
 

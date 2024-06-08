@@ -2053,6 +2053,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/block/DesktopComputerBlock.java",
+          "src/main/java/net/mcreator/far_out/block/entity/DesktopComputerBlockEntity.java",
           "src/main/resources/assets/farout/models/item/desktop_computer.json",
           "src/main/resources/assets/farout/blockstates/desktop_computer.json",
           "src/main/resources/assets/farout/models/block/desktop_computer.json"
@@ -2593,19 +2594,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/silicon_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "BiomassBurnerRecipe",
-      "type": "recipe",
-      "sortid": 450,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomass_burner_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/biomass_burner_recipe.json"
         ]
       }
     },
@@ -9608,8 +9596,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/world/inventory/DesktopComputerGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/DesktopComputerGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/network/DesktopComputerGUIButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/client/gui/DesktopComputerGUIScreen.java"
         ]
       }
     },
@@ -14392,62 +14379,6 @@
       }
     },
     {
-      "name": "Zinc",
-      "type": "item",
-      "sortid": 1467,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zinc",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/zinc.json",
-          "src/main/java/net/mcreator/far_out/item/ZincItem.java"
-        ]
-      }
-    },
-    {
-      "name": "ZincBlock",
-      "type": "block",
-      "sortid": 1466,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zinc_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/zinc_block.json",
-          "src/main/resources/assets/farout/models/item/zinc_block.json",
-          "src/main/java/net/mcreator/far_out/block/ZincBlockBlock.java",
-          "src/main/resources/assets/farout/models/block/zinc_block.json"
-        ]
-      }
-    },
-    {
-      "name": "ZincOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 1468,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zinc_ore_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/zinc_ore_block_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "ZincBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 1469,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "zinc_block_ore_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/zinc_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "Relay",
       "type": "item",
       "sortid": 1470,
@@ -15356,6 +15287,360 @@
           }
         ]
       }
+    },
+    {
+      "name": "DesktopComputerTextLine1",
+      "type": "procedure",
+      "sortid": 1536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine2",
+      "type": "procedure",
+      "sortid": 1537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine3",
+      "type": "procedure",
+      "sortid": 1538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine4",
+      "type": "procedure",
+      "sortid": 1539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine5",
+      "type": "procedure",
+      "sortid": 1540,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine6",
+      "type": "procedure",
+      "sortid": 1541,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_6",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine7",
+      "type": "procedure",
+      "sortid": 1542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_7",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine8",
+      "type": "procedure",
+      "sortid": 1543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_8",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerTextLine9",
+      "type": "procedure",
+      "sortid": 1544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_text_line_9",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerTextLine9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerBlockAdded",
+      "type": "procedure",
+      "sortid": 1545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesktopComputerGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 1546,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desktop_computer_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesktopComputerGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15364,12 +15649,6 @@
       "type": "number",
       "scope": "world",
       "value": "0"
-    },
-    {
-      "name": "Not_a_lot_of_science",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
     },
     {
       "name": "Probe_core_number",
@@ -15958,6 +16237,12 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "SpaceStationLevel",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -16502,7 +16787,6 @@
       "block.farout.rhenium_block": "Block of Rhenium",
       "key.farout.pitch_decrease": "Pitch Decrease",
       "item.distant_frontiers.computer": "Computer",
-      "block.farout.zinc_block": "Block of Zinc",
       "item.distant_frontiers.etaui": "Etaui Portal Igniter",
       "item.farout.capacitor": "Capacitor",
       "item.far_out.limestone_filter": "Centrifugal Limestone Filter",
@@ -16788,7 +17072,6 @@
       "block.far_out.truss": "Truss",
       "block.farout.immature_etauosian_grainstalk": "Etauosian Grainstalk",
       "block.no.liquidmethane": "Liquidmethane",
-      "item.farout.zinc": "Zinc ingot",
       "gui.distant_frontiers.silican_gui.label_mass_621_moon_masses": "mass: 6.21 moon masses",
       "item.farout.galactic_core_tracker": "Galactic Core Tracker",
       "biome.distant_frontiers.cold_midlands": "Cold Midlands",
@@ -17527,6 +17810,7 @@
       "item.distant_frontiers.hexuran_hoe": "Hexuran Hoe",
       "fluid.far_out.acrylonitrile": "Acrylonitrile",
       "gui.farout.chemical_reactor_gui.label_chemical_reactor": "Chemical Reactor",
+      "gui.farout.desktop_computer_gui.input": "Start typing to input",
       "gui.distant_frontiers.etauos_gui.label_1_oxygen": "1% oxygen",
       "item.far_out.lithium_filter": "Centrifugal Lithium Filter",
       "gui.distant_frontiers.varas_gui.label_atmosphere_none": "atmosphere: none",

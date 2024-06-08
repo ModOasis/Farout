@@ -14,7 +14,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.far_out.block.ZincBlockBlock;
 import net.mcreator.far_out.block.ZPinchFusionReactorBlock;
 import net.mcreator.far_out.block.YellowTorcherBlock;
 import net.mcreator.far_out.block.TokamakfusionreactorBlock;
@@ -186,7 +185,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ETAUOSIAN_GRAINSTALK = REGISTRY.register("etauosian_grainstalk", () -> new EtauosianGrainstalkBlock());
 	public static final RegistryObject<Block> STIRLING_ENGINE = REGISTRY.register("stirling_engine", () -> new StirlingEngineBlock());
 	public static final RegistryObject<Block> IMMATURE_ETAUOSIAN_GRAINSTALK = REGISTRY.register("immature_etauosian_grainstalk", () -> new ImmatureEtauosianGrainstalkBlock());
-	public static final RegistryObject<Block> ZINC_BLOCK = REGISTRY.register("zinc_block", () -> new ZincBlockBlock());
 	public static final RegistryObject<Block> MUSNIUS_TREE_TRUNK = REGISTRY.register("musnius_tree_trunk", () -> new MusniusTreeTrunkBlock());
 	public static final RegistryObject<Block> MUSNIUS_WOOD = REGISTRY.register("musnius_wood", () -> new MusniusWoodBlock());
 	public static final RegistryObject<Block> MUSNIUS_STAIRS = REGISTRY.register("musnius_stairs", () -> new MusniusStairsBlock());

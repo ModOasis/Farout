@@ -171,7 +171,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_STAIRS.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_SLAB.get().asItem());
 			tabData.accept(FaroutModBlocks.QUARTZ_ORE.get().asItem());
-			tabData.accept(FaroutModBlocks.ZINC_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_WOOD.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_STAIRS.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_SLAB.get().asItem());
@@ -257,7 +256,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.SALT_DUST.get());
 			tabData.accept(FaroutModItems.URANIUM_CARBIDE.get());
 			tabData.accept(FaroutModItems.PLUTONIUM_CARBIDE.get());
-			tabData.accept(FaroutModItems.ZINC.get());
 			tabData.accept(FaroutModItems.IRON_ROD.get());
 		}
 
