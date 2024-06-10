@@ -85,7 +85,7 @@ public class DesktopComputerGUIMenu extends AbstractContainerMenu implements Sup
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			DesktopComputerGUIWhileThisGUIIsOpenTickProcedure.execute(world, x, y, z, guistate);
+			DesktopComputerGUIWhileThisGUIIsOpenTickProcedure.execute(world, x, y, z);
 		}
 	}
 }

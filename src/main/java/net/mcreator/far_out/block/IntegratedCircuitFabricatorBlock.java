@@ -41,6 +41,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.IntegratedCircuitFabricatorGUIMenu;
 import net.mcreator.far_out.procedures.IntegratedCircuitFabricatorUpdateTickProcedure;
+import net.mcreator.far_out.procedures.IntegratedCircuitFabricatorBlockAddedProcedure;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
 
 import java.util.List;
@@ -116,6 +117,7 @@ public class IntegratedCircuitFabricatorBlock extends Block implements EntityBlo
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 20);
+		IntegratedCircuitFabricatorBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

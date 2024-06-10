@@ -50,7 +50,6 @@ import net.mcreator.far_out.item.RheniumIngotItem;
 import net.mcreator.far_out.item.RelayItem;
 import net.mcreator.far_out.item.RawMolybdenumItem;
 import net.mcreator.far_out.item.RadiatorItem;
-import net.mcreator.far_out.item.PropaneItem;
 import net.mcreator.far_out.item.Potassium_nitrateDustItem;
 import net.mcreator.far_out.item.PlutoniumCarbideItem;
 import net.mcreator.far_out.item.PipeItem;
@@ -200,7 +199,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> COPPER_WIRE = REGISTRY.register("copper_wire", () -> new CopperWireItem());
 	public static final RegistryObject<Item> ELECTRO_MAGNET = REGISTRY.register("electro_magnet", () -> new ElectroMagnetItem());
 	public static final RegistryObject<Item> SILICON_DUST = REGISTRY.register("silicon_dust", () -> new SiliconDustItem());
-	public static final RegistryObject<Item> PROPANE = REGISTRY.register("propane", () -> new PropaneItem());
 	public static final RegistryObject<Item> AMMONIA = REGISTRY.register("ammonia", () -> new AmmoniaItem());
 	public static final RegistryObject<Item> SALTWATER_BUCKET = REGISTRY.register("saltwater_bucket", () -> new SaltwaterItem());
 	public static final RegistryObject<Item> SPORE_BERRIE_BLOCK = block(FaroutModBlocks.SPORE_BERRIE_BLOCK);
@@ -263,7 +261,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> LIGHT_ISOTOPES = REGISTRY.register("light_isotopes", () -> new LightIsotopesItem());
 	public static final RegistryObject<Item> MAGETO_INERTIAL_CONFINEMENT_FUSION_ENGINE = REGISTRY.register("mageto_inertial_confinement_fusion_engine", () -> new MagetoInertialConfinementFusionEngineItem());
 	public static final RegistryObject<Item> SUPER_CAPACITORS = REGISTRY.register("super_capacitors", () -> new SuperCapacitorsItem());
-	public static final RegistryObject<Item> SUPERCONDUCTING_MAGNETIC_BATTERY = block(FaroutModBlocks.SUPERCONDUCTING_MAGNETIC_BATTERY);
 	public static final RegistryObject<Item> WRENCH = REGISTRY.register("wrench", () -> new WrenchItem());
 	public static final RegistryObject<Item> LOW_FREQUENCY_INTEGRATED_CIRCUIT = REGISTRY.register("low_frequency_integrated_circuit", () -> new LowFrequencyIntegratedCircuitItem());
 	public static final RegistryObject<Item> MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT = REGISTRY.register("medium_frequency_integrated_circuit", () -> new MediumFrequencyIntegratedCircuitItem());

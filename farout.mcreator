@@ -1156,107 +1156,6 @@
       }
     },
     {
-      "name": "BatteryBlockRedstoneOn",
-      "type": "procedure",
-      "sortid": 301,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battery_block_redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BatteryBlockRedstoneOnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BatteryBlockBlockAdded",
-      "type": "procedure",
-      "sortid": 302,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battery_block_block_added",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BatteryBlockBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BatteryBlockBlockDestroyedByPlayer",
-      "type": "procedure",
-      "sortid": 303,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battery_block_block_destroyed_by_player",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BatteryBlockBlockDestroyedByPlayerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BatteryBlockUpdateTick",
-      "type": "procedure",
-      "sortid": 304,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "battery_block_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BatteryBlockUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Batterycraft",
-      "type": "recipe",
-      "sortid": 306,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "batterycraft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/batterycraft.json"
-        ]
-      }
-    },
-    {
       "name": "LargeSolarPanelsUpdateTick",
       "type": "procedure",
       "sortid": 307,
@@ -1664,55 +1563,6 @@
       }
     },
     {
-      "name": "Biomassburnergui",
-      "type": "gui",
-      "sortid": 335,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomassburnergui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/BiomassburnerguiScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/BiomassburnerguiMenu.java"
-        ]
-      }
-    },
-    {
-      "name": "BiomassBurnerOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 336,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomass_burner_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BiomassBurnerOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Ash",
       "type": "item",
       "sortid": 89,
@@ -1723,37 +1573,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/ash.json",
           "src/main/java/net/mcreator/far_out/item/AshItem.java"
-        ]
-      }
-    },
-    {
-      "name": "BiomassBurnerUpdateTick",
-      "type": "procedure",
-      "sortid": 337,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomass_burner_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BiomassBurnerUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -2030,20 +1849,6 @@
       }
     },
     {
-      "name": "Reset",
-      "type": "procedure",
-      "sortid": 368,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reset",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/ResetProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "DesktopComputer",
       "type": "block",
       "sortid": 34,
@@ -2142,20 +1947,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/BackProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
-      "name": "AirPurifierUpdateTick",
-      "type": "procedure",
-      "sortid": 396,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/AirPurifierUpdateTickProcedure.java"
         ],
         "dependencies": []
       }
@@ -2598,19 +2389,6 @@
       }
     },
     {
-      "name": "AirPurifierRecipe",
-      "type": "recipe",
-      "sortid": 453,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/air_purifier_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "RegolithSifterRecipe",
       "type": "recipe",
       "sortid": 454,
@@ -2689,51 +2467,6 @@
       }
     },
     {
-      "name": "Propane",
-      "type": "item",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "propane",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/PropaneItem.java",
-          "src/main/resources/assets/farout/models/item/propane.json"
-        ]
-      }
-    },
-    {
-      "name": "PropaneExtractorGUIWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 465,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "propane_extractor_gui_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PropaneExtractorGUIWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Ammonia",
       "type": "item",
       "sortid": 112,
@@ -2744,87 +2477,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/item/AmmoniaItem.java",
           "src/main/resources/assets/farout/models/item/ammonia.json"
-        ]
-      }
-    },
-    {
-      "name": "AirPurifierGUI",
-      "type": "gui",
-      "sortid": 468,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/network/AirPurifierGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/client/gui/AirPurifierGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/AirPurifierGUIMenu.java"
-        ]
-      }
-    },
-    {
-      "name": "AirPurifierGUIWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 469,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier_gui_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/AirPurifierGUIWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AirPurifierOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 470,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "air_purifier_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/AirPurifierOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -3525,68 +3177,6 @@
       }
     },
     {
-      "name": "GeothermalGeneratorUpdateTick",
-      "type": "procedure",
-      "sortid": 588,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geothermal_generator_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GeothermalGeneratorUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BiomassburnerguiWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 589,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biomassburnergui_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BiomassburnerguiWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "NuclearReactorMade",
       "type": "achievement",
       "sortid": 590,
@@ -4167,56 +3757,6 @@
       }
     },
     {
-      "name": "InflatableGreenhouseOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 721,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_greenhouse_on_entity_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/InflatableGreenhouseOnEntityTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
-      "name": "InflatableGreenhouseOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 722,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_greenhouse_on_initial_entity_spawn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/InflatableGreenhouseOnInitialEntitySpawnProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
       "name": "UnequippedRocketRightclickedOnBlock",
       "type": "procedure",
       "sortid": 723,
@@ -4651,86 +4191,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GreenHouseUpdateTick",
-      "type": "procedure",
-      "sortid": 765,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_house_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GreenHouseUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GreenHouseGUI",
-      "type": "gui",
-      "sortid": 765,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_house_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/GreenHouseGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/GreenHouseGUIScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "GreenHouseOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 766,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "green_house_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GreenHouseOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -5200,41 +4660,6 @@
       "path": "~/Trajectories"
     },
     {
-      "name": "SuperconductingMagneticBatteryUpdateTick",
-      "type": "procedure",
-      "sortid": 805,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "superconducting_magnetic_battery_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SuperconductingMagneticBatteryUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SuperconductingMagneticBattery",
-      "type": "block",
-      "sortid": 805,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "superconducting_magnetic_battery",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/superconducting_magnetic_battery.json",
-          "src/main/java/net/mcreator/far_out/block/SuperconductingMagneticBatteryBlock.java",
-          "src/main/resources/assets/farout/blockstates/superconducting_magnetic_battery.json",
-          "src/main/resources/assets/farout/models/block/superconducting_magnetic_battery.json"
-        ]
-      }
-    },
-    {
       "name": "HighEfficiencyNuclearPropulsion",
       "type": "achievement",
       "sortid": 805,
@@ -5308,44 +4733,6 @@
             "name": "entity",
             "type": "entity"
           },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SuperconductingMagneticBatteryAdded",
-      "type": "procedure",
-      "sortid": 809,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "superconducting_magnetic_battery_added",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SuperconductingMagneticBatteryAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SuperConductingMagneticBatteryDestroyedByPlayer",
-      "type": "procedure",
-      "sortid": 810,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "super_conducting_magnetic_battery_destroyed_by_player",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SuperConductingMagneticBatteryDestroyedByPlayerProcedure.java"
-        ],
-        "dependencies": [
           {
             "name": "world",
             "type": "world"
@@ -8045,51 +7432,6 @@
       }
     },
     {
-      "name": "GenomeModiferGUI",
-      "type": "gui",
-      "sortid": 1024,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "genome_modifer_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/GenomeModiferGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/GenomeModiferGUIScreen.java"
-        ]
-      }
-    },
-    {
-      "name": "GenomeModiferUpdateTick",
-      "type": "procedure",
-      "sortid": 1025,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "genome_modifer_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GenomeModiferUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "BiologicalIncubatorGUI",
       "type": "gui",
       "sortid": 1026,
@@ -8113,41 +7455,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/BiologicalIncubatorOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GenomeModiferOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 1028,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "genome_modifer_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GenomeModiferOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -10951,37 +10258,6 @@
           },
           {
             "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "GenerateEtauosBase",
-      "type": "procedure",
-      "sortid": 1250,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "generate_etauos_base",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/GenerateEtauosBaseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
             "type": "number"
           },
           {
@@ -15056,10 +14332,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -15155,12 +14427,7 @@
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/OnWorldTickUpdateProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
@@ -15620,9 +14887,129 @@
         ],
         "dependencies": [
           {
-            "name": "guistate",
-            "type": "map"
+            "name": "x",
+            "type": "number"
           },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IntegratedCircuitFabricatorBlockAdded",
+      "type": "procedure",
+      "sortid": 1547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "integrated_circuit_fabricator_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IntegratedCircuitFabricatorBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LargeSolarPanelsBlockAdded",
+      "type": "procedure",
+      "sortid": 1548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_solar_panels_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LargeSolarPanelsBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StirlingEngineBlockAdded",
+      "type": "procedure",
+      "sortid": 1549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stirling_engine_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/StirlingEngineBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PowerSourceDestroyed",
+      "type": "procedure",
+      "sortid": 1550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_source_destroyed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/PowerSourceDestroyedProcedure.java"
+        ],
+        "dependencies": [
           {
             "name": "x",
             "type": "number"
@@ -15651,18 +15038,6 @@
       "value": "0"
     },
     {
-      "name": "Probe_core_number",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
-    },
-    {
-      "name": "Battery_number",
-      "type": "number",
-      "scope": "world",
-      "value": "1.0"
-    },
-    {
       "name": "TotalCapacty",
       "type": "number",
       "scope": "world",
@@ -15675,76 +15050,10 @@
       "value": "false"
     },
     {
-      "name": "Materal_bay_data_value",
-      "type": "number",
-      "scope": "map",
-      "value": "25.0"
-    },
-    {
-      "name": "EVA_report_data_value",
-      "type": "number",
-      "scope": "map",
-      "value": "8.0"
-    },
-    {
-      "name": "surface_sample_data_value",
-      "type": "number",
-      "scope": "map",
-      "value": "30.0"
-    },
-    {
-      "name": "MD",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    },
-    {
-      "name": "ED",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    },
-    {
-      "name": "SD",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    },
-    {
       "name": "MathAns",
       "type": "string",
       "scope": "map",
       "value": "\"\""
-    },
-    {
-      "name": "number1",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "number2",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "DeltaV",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "ShipLaunchReadyness",
-      "type": "string",
-      "scope": "map",
-      "value": ""
-    },
-    {
-      "name": "PD",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
     },
     {
       "name": "knowledgeBasePageNumber",
@@ -15753,112 +15062,10 @@
       "value": "0"
     },
     {
-      "name": "DeltaVReadout",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "Delta",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "Released",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
-      "name": "FuelForRocket",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "TransferStageDeltaV",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "LanderDeltaV",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "PayloadMass",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "PayloadDry",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
-    },
-    {
-      "name": "DVreqiered",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "TWR",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "LanderTWR",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0.0"
-    },
-    {
-      "name": "Setup",
-      "type": "logic",
-      "scope": "map",
-      "value": "false"
-    },
-    {
       "name": "ServerNumber",
       "type": "number",
       "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "TargetBody",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
-    {
-      "name": "RocketSetupX",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "RocketSetupY",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "RocketSetupZ",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "G",
-      "type": "number",
-      "scope": "map",
-      "value": "6.674E-11"
     },
     {
       "name": "DV",
@@ -15909,22 +15116,10 @@
       "value": "0"
     },
     {
-      "name": "SelectedRecipe",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
       "name": "SelectedTrajectory",
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
-    },
-    {
-      "name": "HasStartingMaterials",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
     },
     {
       "name": "StartupComplete",
@@ -15975,36 +15170,6 @@
       "value": "0"
     },
     {
-      "name": "GeneralScience",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "AtomicScience",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "BiologicalScience",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "ElectricalScience",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "AstrophysicalScience",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
       "name": "InFormalonSystem",
       "type": "logic",
       "scope": "player_lifetime",
@@ -16033,18 +15198,6 @@
       "type": "string",
       "scope": "player_lifetime",
       "value": "\"\""
-    },
-    {
-      "name": "EtauosBaseX",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "EtauosBaseY",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     },
     {
       "name": "OtherPlanetsKnown",
@@ -16243,6 +15396,18 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "WattageProduced",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "WattageUsed",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -16313,8 +15478,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -16323,10 +15488,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "item.farout.aluminium_ingot": "Aluminium",
-      "itemGroup.tabenergy": "Energy",
+      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "itemGroup.tabrocketry": "Rocketry",
+      "itemGroup.tabenergy": "Energy",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -16508,7 +15673,6 @@
       "item.no.depleted_uranium": "Depleted Uranium",
       "gui.distant_frontiers.rocket_printer_gui_1.label_proxmai": "Proxmai",
       "gui.farout.page_1.label_generator_there_and_hooked_it_u": "and hooked it up to my escape pod. I also need to extract the materials",
-      "gui.farout.biomassburnergui.label_biomass_burner": "Biomass burner",
       "gui.distant_frontiers.terra_gui.label_atmosphere_na_pa": "atmosphere: N/A Pa",
       "item.farout.fairing_segments": "Fairing Segment",
       "gui.farout.rocket_trajectory_selection.button_etaui": "Etaui",
@@ -16855,7 +16019,6 @@
       "item.farout.sodium_hydroxide": "Sodium Hydroxide",
       "block.far_out.crystal_drive": "Crystal Drive",
       "item.far_out.space_suit_chestplate": "Space Suit Body",
-      "item.farout.propane": "Propane",
       "item.farout.unequipped_rocket": "Unequipped Rocket",
       "item.farout.inertial_navigation_system": "Inertial Navigation System",
       "gui.distant_frontiers.upgrade_applyer_gui.button_upgrade": "Upgrade",
@@ -16886,7 +16049,6 @@
       "item.farout.magnetoplasmadynamic_thruster": "Magnetoplasmadynamic Thruster",
       "gui.distant_frontiers.oceanus_gui.label_68_nitrogen": "68% nitrogen",
       "gui.farout.page_2.label_minerals_in_it_to_separate": "in there to separate. ",
-      "gui.farout.air_purifier_gui.label_air_purifer": "Air Purifer",
       "gui.distant_frontiers.vulcan_gui.label_tital_heating_by_vulcan": "tital heating by vulcan",
       "item.distant_frontiers.pipe": "Pipe",
       "gui.distant_frontiers.d_cgui_1.label_computer": "Computer",
@@ -17155,7 +16317,6 @@
       "entity.far_out.launch_vehicle": "Launch Vehicle",
       "gui.distant_frontiers.vulcan_gui.label_vulcan": "Vulcan",
       "item.no.wearablecomputer": "Wearablecomputer",
-      "gui.farout.air_purifier_gui.label_radius": "Radius:",
       "item.far_out.metallic_hydrogen_engine": "Metallic Hydrogen Engine",
       "item.farout.emergency_rations": "Emergency Rations",
       "block.far_out.air_purifier": "Air Purifier",
@@ -17335,7 +16496,6 @@
       "gui.farout.page_3.label_day_22_t021300_i_have_gott": "Day 22, T+02:13:00 : I have gotten to the moon. The orbital insertion maneuver",
       "item.distant_frontiers.boron_ingot": "Boron ingot",
       "block.distant_frontiers.chacoa": "Chacoa",
-      "gui.farout.air_purifier_gui.button_empty1": "-",
       "item.farout.spacecraft_construction_meterials": "Spacecraft Construction Materials",
       "item.far_out.rocket_item": "Rocket",
       "gui.farout.page_3.label_atmosphere_i_undocked_with_the": "atmosphere. I undocked with the transfer vessel and began atmospheric entry. ",
@@ -17493,7 +16653,6 @@
       "item.distant_frontiers.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
       "block.distant_frontiers.silicon_block": "Block of Silicon",
       "item.farout.basic_hab_module": "Basic Hab Module",
-      "gui.farout.genome_modifer_gui.label_genome_modifer": "Genome Modifer",
       "block.far_out.biomass_burner": "Biomass Burner",
       "item.distant_frontiers.nozzle": "Nozzle",
       "block.far_out.fungus_stairs": "Fungus Stairs",
@@ -17557,7 +16716,6 @@
       "gui.distant_frontiers.proxmai_gui.label_other_information_ringed": "other information: ringed ",
       "item.farout.ironplate": "Iron plate",
       "item.distant_frontiers.basic_command_disk": "Basic Command Disk",
-      "block.farout.superconducting_magnetic_battery": "Superconducting Magnetic Battery",
       "biome.farout.lavaoceans": "Lava oceans",
       "item.far_out.methlox_bucket": "Methlox Bucket",
       "block.distant_frontiers.fungus_fence": "Fungus Fence",
@@ -17767,12 +16925,10 @@
       "item.no.space_suit_chestplate": "Space Suit Body",
       "block.far_out.alien_algae_block": "Alien Algae",
       "gui.distant_frontiers.massivo_gui.label_atmosphere_na_pa": "atmosphere: N/A Pa",
-      "gui.farout.air_purifier_gui.button_empty": "+",
       "biome.farout.desolate_deserts": "Desolate Deserts",
       "gui.farout.page_1.label_materials_from_the_raw_ores_i_co": "from the raw ores I collected, so I made a chemical reactor, and put the ores",
       "gui.distant_frontiers.knowledge_base_main_menu.button_silican": "Silican",
       "advancements.high_efficiency_nuclear_propulsion.descr": "The successor to solid cycle nuclear thermal rockets. May expel radioactive exaust",
-      "gui.farout.green_house_gui.label_greenhouse": "Greenhouse",
       "gui.farout.page_3.label_deployed_a_couple_thousand_meter": "deployed a couple thousand meters above the ground, and so, with a gentle thud,",
       "item.farout.liquid_sulfur_dioxide_bucket": "Liquid Sulfur Dioxide Bucket",
       "item.far_out.copper_filter": "Centrifugal Copper Filter",

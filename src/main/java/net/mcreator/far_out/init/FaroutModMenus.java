@@ -32,9 +32,7 @@ import net.mcreator.far_out.world.inventory.MainMapMenu;
 import net.mcreator.far_out.world.inventory.LanderGUIMenu;
 import net.mcreator.far_out.world.inventory.IntegratedCircuitFabricatorGUIMenu;
 import net.mcreator.far_out.world.inventory.HydrogenFuelCellGUIMenu;
-import net.mcreator.far_out.world.inventory.GreenHouseGUIMenu;
 import net.mcreator.far_out.world.inventory.GravityChangerMenu;
-import net.mcreator.far_out.world.inventory.GenomeModiferGUIMenu;
 import net.mcreator.far_out.world.inventory.GeneticSequencerMenu;
 import net.mcreator.far_out.world.inventory.FusionreactorguiMenu;
 import net.mcreator.far_out.world.inventory.FormalonMapMenu;
@@ -50,10 +48,8 @@ import net.mcreator.far_out.world.inventory.ChemicalReactorGUIMenu;
 import net.mcreator.far_out.world.inventory.CentrifugalseparatorGUIMenu;
 import net.mcreator.far_out.world.inventory.CargoFairingGUIMenu;
 import net.mcreator.far_out.world.inventory.CardboardboxguiMenu;
-import net.mcreator.far_out.world.inventory.BiomassburnerguiMenu;
 import net.mcreator.far_out.world.inventory.BiologicalIncubatorGUIMenu;
 import net.mcreator.far_out.world.inventory.BeamInjectorGUIMenu;
-import net.mcreator.far_out.world.inventory.AirPurifierGUIMenu;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModMenus {
@@ -64,16 +60,13 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<CentrifugalseparatorGUIMenu>> CENTRIFUGALSEPARATOR_GUI = REGISTRY.register("centrifugalseparator_gui", () -> IForgeMenuType.create(CentrifugalseparatorGUIMenu::new));
 	public static final RegistryObject<MenuType<EnergymeterGUIMenu>> ENERGYMETER_GUI = REGISTRY.register("energymeter_gui", () -> IForgeMenuType.create(EnergymeterGUIMenu::new));
 	public static final RegistryObject<MenuType<DropPodGUIMenu>> DROP_POD_GUI = REGISTRY.register("drop_pod_gui", () -> IForgeMenuType.create(DropPodGUIMenu::new));
-	public static final RegistryObject<MenuType<BiomassburnerguiMenu>> BIOMASSBURNERGUI = REGISTRY.register("biomassburnergui", () -> IForgeMenuType.create(BiomassburnerguiMenu::new));
 	public static final RegistryObject<MenuType<CardboardboxguiMenu>> CARDBOARDBOXGUI = REGISTRY.register("cardboardboxgui", () -> IForgeMenuType.create(CardboardboxguiMenu::new));
 	public static final RegistryObject<MenuType<RegolithSifterGUIMenu>> REGOLITH_SIFTER_GUI = REGISTRY.register("regolith_sifter_gui", () -> IForgeMenuType.create(RegolithSifterGUIMenu::new));
-	public static final RegistryObject<MenuType<AirPurifierGUIMenu>> AIR_PURIFIER_GUI = REGISTRY.register("air_purifier_gui", () -> IForgeMenuType.create(AirPurifierGUIMenu::new));
 	public static final RegistryObject<MenuType<ElectrolyzerGUIMenu>> ELECTROLYZER_GUI = REGISTRY.register("electrolyzer_gui", () -> IForgeMenuType.create(ElectrolyzerGUIMenu::new));
 	public static final RegistryObject<MenuType<GeneticSequencerMenu>> GENETIC_SEQUENCER = REGISTRY.register("genetic_sequencer", () -> IForgeMenuType.create(GeneticSequencerMenu::new));
 	public static final RegistryObject<MenuType<StartingLanderGUIMenu>> STARTING_LANDER_GUI = REGISTRY.register("starting_lander_gui", () -> IForgeMenuType.create(StartingLanderGUIMenu::new));
 	public static final RegistryObject<MenuType<CrystalDriveGUIMenu>> CRYSTAL_DRIVE_GUI = REGISTRY.register("crystal_drive_gui", () -> IForgeMenuType.create(CrystalDriveGUIMenu::new));
 	public static final RegistryObject<MenuType<FairingGUIMenu>> FAIRING_GUI = REGISTRY.register("fairing_gui", () -> IForgeMenuType.create(FairingGUIMenu::new));
-	public static final RegistryObject<MenuType<GreenHouseGUIMenu>> GREEN_HOUSE_GUI = REGISTRY.register("green_house_gui", () -> IForgeMenuType.create(GreenHouseGUIMenu::new));
 	public static final RegistryObject<MenuType<IntegratedCircuitFabricatorGUIMenu>> INTEGRATED_CIRCUIT_FABRICATOR_GUI = REGISTRY.register("integrated_circuit_fabricator_gui", () -> IForgeMenuType.create(IntegratedCircuitFabricatorGUIMenu::new));
 	public static final RegistryObject<MenuType<ChemicalReactorGUIMenu>> CHEMICAL_REACTOR_GUI = REGISTRY.register("chemical_reactor_gui", () -> IForgeMenuType.create(ChemicalReactorGUIMenu::new));
 	public static final RegistryObject<MenuType<BeamInjectorGUIMenu>> BEAM_INJECTOR_GUI = REGISTRY.register("beam_injector_gui", () -> IForgeMenuType.create(BeamInjectorGUIMenu::new));
@@ -82,7 +75,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<ProxmaiMapMenu>> PROXMAI_MAP = REGISTRY.register("proxmai_map", () -> IForgeMenuType.create(ProxmaiMapMenu::new));
 	public static final RegistryObject<MenuType<MassivoMapMenu>> MASSIVO_MAP = REGISTRY.register("massivo_map", () -> IForgeMenuType.create(MassivoMapMenu::new));
 	public static final RegistryObject<MenuType<FissionFragmentStarshipGUIMenu>> FISSION_FRAGMENT_STARSHIP_GUI = REGISTRY.register("fission_fragment_starship_gui", () -> IForgeMenuType.create(FissionFragmentStarshipGUIMenu::new));
-	public static final RegistryObject<MenuType<GenomeModiferGUIMenu>> GENOME_MODIFER_GUI = REGISTRY.register("genome_modifer_gui", () -> IForgeMenuType.create(GenomeModiferGUIMenu::new));
 	public static final RegistryObject<MenuType<BiologicalIncubatorGUIMenu>> BIOLOGICAL_INCUBATOR_GUI = REGISTRY.register("biological_incubator_gui", () -> IForgeMenuType.create(BiologicalIncubatorGUIMenu::new));
 	public static final RegistryObject<MenuType<ZPinchFusionReactorGUIMenu>> Z_PINCH_FUSION_REACTOR_GUI = REGISTRY.register("z_pinch_fusion_reactor_gui", () -> IForgeMenuType.create(ZPinchFusionReactorGUIMenu::new));
 	public static final RegistryObject<MenuType<RejonaMapMenu>> REJONA_MAP = REGISTRY.register("rejona_map", () -> IForgeMenuType.create(RejonaMapMenu::new));

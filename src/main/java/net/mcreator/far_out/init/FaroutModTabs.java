@@ -26,7 +26,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.NUCLEAR_REACTOR.get().asItem());
 				tabData.accept(FaroutModBlocks.LARGE_SOLAR_PANELS.get().asItem());
 				tabData.accept(FaroutModItems.SUPER_CAPACITORS.get());
-				tabData.accept(FaroutModBlocks.SUPERCONDUCTING_MAGNETIC_BATTERY.get().asItem());
 				tabData.accept(FaroutModItems.NUCLEAR_RODS.get());
 				tabData.accept(FaroutModBlocks.ANCIENT_SEDIMENT.get().asItem());
 				tabData.accept(FaroutModBlocks.SALT_BLOCK.get().asItem());
@@ -222,7 +221,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.COPPER_WIRE.get());
 			tabData.accept(FaroutModItems.ELECTRO_MAGNET.get());
 			tabData.accept(FaroutModItems.SILICON_DUST.get());
-			tabData.accept(FaroutModItems.PROPANE.get());
 			tabData.accept(FaroutModItems.AMMONIA.get());
 			tabData.accept(FaroutModItems.AIRTIGHT_FABRIC.get());
 			tabData.accept(FaroutModItems.ARGON.get());

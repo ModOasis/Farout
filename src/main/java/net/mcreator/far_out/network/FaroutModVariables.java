@@ -77,31 +77,14 @@ public class FaroutModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Boot_Complete = original.Boot_Complete;
-			clone.number1 = original.number1;
-			clone.number2 = original.number2;
 			clone.knowledgeBasePageNumber = original.knowledgeBasePageNumber;
-			clone.DeltaVReadout = original.DeltaVReadout;
-			clone.Delta = original.Delta;
-			clone.TargetBody = original.TargetBody;
 			clone.SelectedTrajectory = original.SelectedTrajectory;
-			clone.HasStartingMaterials = original.HasStartingMaterials;
 			clone.ToggleTutorial = original.ToggleTutorial;
 			clone.Progress = original.Progress;
 			clone.VehicleMode = original.VehicleMode;
 			clone.CurrentSystemID = original.CurrentSystemID;
 			clone.PlayerStarSystem = original.PlayerStarSystem;
 			if (!event.isWasDeath()) {
-				clone.DeltaV = original.DeltaV;
-				clone.FuelForRocket = original.FuelForRocket;
-				clone.TransferStageDeltaV = original.TransferStageDeltaV;
-				clone.LanderDeltaV = original.LanderDeltaV;
-				clone.PayloadMass = original.PayloadMass;
-				clone.DVreqiered = original.DVreqiered;
-				clone.TWR = original.TWR;
-				clone.LanderTWR = original.LanderTWR;
-				clone.RocketSetupX = original.RocketSetupX;
-				clone.RocketSetupY = original.RocketSetupY;
-				clone.RocketSetupZ = original.RocketSetupZ;
 				clone.InFormalonSystem = original.InFormalonSystem;
 				clone.DepartureBody = original.DepartureBody;
 				clone.UsingComputer = original.UsingComputer;
@@ -141,10 +124,11 @@ public class FaroutModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "farout_worldvars";
 		public double Energy = 0;
-		public double Battery_number = 1.0;
 		public double TotalCapacty = 10.0;
 		public String InterstellarVesselProgress = "12345678S";
 		public double SpaceStation = 0;
+		public double WattageProduced = 0;
+		public double WattageUsed = 0;
 
 		public static WorldVariables load(CompoundTag tag) {
 			WorldVariables data = new WorldVariables();
@@ -154,19 +138,21 @@ public class FaroutModVariables {
 
 		public void read(CompoundTag nbt) {
 			Energy = nbt.getDouble("Energy");
-			Battery_number = nbt.getDouble("Battery_number");
 			TotalCapacty = nbt.getDouble("TotalCapacty");
 			InterstellarVesselProgress = nbt.getString("InterstellarVesselProgress");
 			SpaceStation = nbt.getDouble("SpaceStation");
+			WattageProduced = nbt.getDouble("WattageProduced");
+			WattageUsed = nbt.getDouble("WattageUsed");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("Energy", Energy);
-			nbt.putDouble("Battery_number", Battery_number);
 			nbt.putDouble("TotalCapacty", TotalCapacty);
 			nbt.putString("InterstellarVesselProgress", InterstellarVesselProgress);
 			nbt.putDouble("SpaceStation", SpaceStation);
+			nbt.putDouble("WattageProduced", WattageProduced);
+			nbt.putDouble("WattageUsed", WattageUsed);
 			return nbt;
 		}
 
@@ -189,21 +175,8 @@ public class FaroutModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "farout_mapvars";
-		public double Probe_core_number = 0.0;
-		public double Materal_bay_data_value = 25.0;
-		public double EVA_report_data_value = 8.0;
-		public double surface_sample_data_value = 30.0;
-		public double MD = 1.0;
-		public double ED = 1.0;
-		public double SD = 1.0;
 		public String MathAns = "\"\"";
-		public String ShipLaunchReadyness = "";
-		public double PD = 1.0;
-		public boolean Released = false;
-		public double PayloadDry = 0.0;
-		public boolean Setup = false;
 		public double ServerNumber = 0;
-		public double G = 6.674E-11;
 		public double DV = 0;
 		public double Hab = 0;
 		public boolean FireTime = false;
@@ -212,21 +185,13 @@ public class FaroutModVariables {
 		public double AccessLocationX = 0;
 		public double AccessLocationY = 0;
 		public double AccessLocationZ = 0;
-		public double SelectedRecipe = 0;
 		public boolean StartupComplete = false;
 		public double SelectedMicrochipRecipe = 3.0;
 		public double Tick = 0;
 		public double FairingHabTime = 0;
 		public double FairingDeltaV = 0;
 		public double FairingWattage = 0;
-		public double GeneralScience = 0;
-		public double AtomicScience = 0;
-		public double BiologicalScience = 0;
-		public double ElectricalScience = 0;
-		public double AstrophysicalScience = 0;
 		public boolean InterstellarVesselMade = false;
-		public double EtauosBaseX = 0;
-		public double EtauosBaseY = 0;
 		public boolean OtherPlanetsKnown = false;
 		public String Vessels = "\"\"";
 		public String InTransit = "S12345678F";
@@ -255,21 +220,8 @@ public class FaroutModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			Probe_core_number = nbt.getDouble("Probe_core_number");
-			Materal_bay_data_value = nbt.getDouble("Materal_bay_data_value");
-			EVA_report_data_value = nbt.getDouble("EVA_report_data_value");
-			surface_sample_data_value = nbt.getDouble("surface_sample_data_value");
-			MD = nbt.getDouble("MD");
-			ED = nbt.getDouble("ED");
-			SD = nbt.getDouble("SD");
 			MathAns = nbt.getString("MathAns");
-			ShipLaunchReadyness = nbt.getString("ShipLaunchReadyness");
-			PD = nbt.getDouble("PD");
-			Released = nbt.getBoolean("Released");
-			PayloadDry = nbt.getDouble("PayloadDry");
-			Setup = nbt.getBoolean("Setup");
 			ServerNumber = nbt.getDouble("ServerNumber");
-			G = nbt.getDouble("G");
 			DV = nbt.getDouble("DV");
 			Hab = nbt.getDouble("Hab");
 			FireTime = nbt.getBoolean("FireTime");
@@ -278,21 +230,13 @@ public class FaroutModVariables {
 			AccessLocationX = nbt.getDouble("AccessLocationX");
 			AccessLocationY = nbt.getDouble("AccessLocationY");
 			AccessLocationZ = nbt.getDouble("AccessLocationZ");
-			SelectedRecipe = nbt.getDouble("SelectedRecipe");
 			StartupComplete = nbt.getBoolean("StartupComplete");
 			SelectedMicrochipRecipe = nbt.getDouble("SelectedMicrochipRecipe");
 			Tick = nbt.getDouble("Tick");
 			FairingHabTime = nbt.getDouble("FairingHabTime");
 			FairingDeltaV = nbt.getDouble("FairingDeltaV");
 			FairingWattage = nbt.getDouble("FairingWattage");
-			GeneralScience = nbt.getDouble("GeneralScience");
-			AtomicScience = nbt.getDouble("AtomicScience");
-			BiologicalScience = nbt.getDouble("BiologicalScience");
-			ElectricalScience = nbt.getDouble("ElectricalScience");
-			AstrophysicalScience = nbt.getDouble("AstrophysicalScience");
 			InterstellarVesselMade = nbt.getBoolean("InterstellarVesselMade");
-			EtauosBaseX = nbt.getDouble("EtauosBaseX");
-			EtauosBaseY = nbt.getDouble("EtauosBaseY");
 			OtherPlanetsKnown = nbt.getBoolean("OtherPlanetsKnown");
 			Vessels = nbt.getString("Vessels");
 			InTransit = nbt.getString("InTransit");
@@ -317,21 +261,8 @@ public class FaroutModVariables {
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("Probe_core_number", Probe_core_number);
-			nbt.putDouble("Materal_bay_data_value", Materal_bay_data_value);
-			nbt.putDouble("EVA_report_data_value", EVA_report_data_value);
-			nbt.putDouble("surface_sample_data_value", surface_sample_data_value);
-			nbt.putDouble("MD", MD);
-			nbt.putDouble("ED", ED);
-			nbt.putDouble("SD", SD);
 			nbt.putString("MathAns", MathAns);
-			nbt.putString("ShipLaunchReadyness", ShipLaunchReadyness);
-			nbt.putDouble("PD", PD);
-			nbt.putBoolean("Released", Released);
-			nbt.putDouble("PayloadDry", PayloadDry);
-			nbt.putBoolean("Setup", Setup);
 			nbt.putDouble("ServerNumber", ServerNumber);
-			nbt.putDouble("G", G);
 			nbt.putDouble("DV", DV);
 			nbt.putDouble("Hab", Hab);
 			nbt.putBoolean("FireTime", FireTime);
@@ -340,21 +271,13 @@ public class FaroutModVariables {
 			nbt.putDouble("AccessLocationX", AccessLocationX);
 			nbt.putDouble("AccessLocationY", AccessLocationY);
 			nbt.putDouble("AccessLocationZ", AccessLocationZ);
-			nbt.putDouble("SelectedRecipe", SelectedRecipe);
 			nbt.putBoolean("StartupComplete", StartupComplete);
 			nbt.putDouble("SelectedMicrochipRecipe", SelectedMicrochipRecipe);
 			nbt.putDouble("Tick", Tick);
 			nbt.putDouble("FairingHabTime", FairingHabTime);
 			nbt.putDouble("FairingDeltaV", FairingDeltaV);
 			nbt.putDouble("FairingWattage", FairingWattage);
-			nbt.putDouble("GeneralScience", GeneralScience);
-			nbt.putDouble("AtomicScience", AtomicScience);
-			nbt.putDouble("BiologicalScience", BiologicalScience);
-			nbt.putDouble("ElectricalScience", ElectricalScience);
-			nbt.putDouble("AstrophysicalScience", AstrophysicalScience);
 			nbt.putBoolean("InterstellarVesselMade", InterstellarVesselMade);
-			nbt.putDouble("EtauosBaseX", EtauosBaseX);
-			nbt.putDouble("EtauosBaseY", EtauosBaseY);
 			nbt.putBoolean("OtherPlanetsKnown", OtherPlanetsKnown);
 			nbt.putString("Vessels", Vessels);
 			nbt.putString("InTransit", InTransit);
@@ -468,25 +391,8 @@ public class FaroutModVariables {
 
 	public static class PlayerVariables {
 		public boolean Boot_Complete = false;
-		public double number1 = 0;
-		public double number2 = 0;
-		public double DeltaV = 0;
 		public double knowledgeBasePageNumber = 0;
-		public double DeltaVReadout = 0;
-		public double Delta = 0;
-		public double FuelForRocket = 0;
-		public double TransferStageDeltaV = 0;
-		public double LanderDeltaV = 0;
-		public double PayloadMass = 0;
-		public double DVreqiered = 0;
-		public double TWR = 0;
-		public double LanderTWR = 0.0;
-		public double TargetBody = 0;
-		public double RocketSetupX = 0;
-		public double RocketSetupY = 0;
-		public double RocketSetupZ = 0;
 		public String SelectedTrajectory = "\"\"";
-		public boolean HasStartingMaterials = false;
 		public boolean ToggleTutorial = true;
 		public double Progress = 0;
 		public boolean InFormalonSystem = false;
@@ -512,25 +418,8 @@ public class FaroutModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putBoolean("Boot_Complete", Boot_Complete);
-			nbt.putDouble("number1", number1);
-			nbt.putDouble("number2", number2);
-			nbt.putDouble("DeltaV", DeltaV);
 			nbt.putDouble("knowledgeBasePageNumber", knowledgeBasePageNumber);
-			nbt.putDouble("DeltaVReadout", DeltaVReadout);
-			nbt.putDouble("Delta", Delta);
-			nbt.putDouble("FuelForRocket", FuelForRocket);
-			nbt.putDouble("TransferStageDeltaV", TransferStageDeltaV);
-			nbt.putDouble("LanderDeltaV", LanderDeltaV);
-			nbt.putDouble("PayloadMass", PayloadMass);
-			nbt.putDouble("DVreqiered", DVreqiered);
-			nbt.putDouble("TWR", TWR);
-			nbt.putDouble("LanderTWR", LanderTWR);
-			nbt.putDouble("TargetBody", TargetBody);
-			nbt.putDouble("RocketSetupX", RocketSetupX);
-			nbt.putDouble("RocketSetupY", RocketSetupY);
-			nbt.putDouble("RocketSetupZ", RocketSetupZ);
 			nbt.putString("SelectedTrajectory", SelectedTrajectory);
-			nbt.putBoolean("HasStartingMaterials", HasStartingMaterials);
 			nbt.putBoolean("ToggleTutorial", ToggleTutorial);
 			nbt.putDouble("Progress", Progress);
 			nbt.putBoolean("InFormalonSystem", InFormalonSystem);
@@ -553,25 +442,8 @@ public class FaroutModVariables {
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			Boot_Complete = nbt.getBoolean("Boot_Complete");
-			number1 = nbt.getDouble("number1");
-			number2 = nbt.getDouble("number2");
-			DeltaV = nbt.getDouble("DeltaV");
 			knowledgeBasePageNumber = nbt.getDouble("knowledgeBasePageNumber");
-			DeltaVReadout = nbt.getDouble("DeltaVReadout");
-			Delta = nbt.getDouble("Delta");
-			FuelForRocket = nbt.getDouble("FuelForRocket");
-			TransferStageDeltaV = nbt.getDouble("TransferStageDeltaV");
-			LanderDeltaV = nbt.getDouble("LanderDeltaV");
-			PayloadMass = nbt.getDouble("PayloadMass");
-			DVreqiered = nbt.getDouble("DVreqiered");
-			TWR = nbt.getDouble("TWR");
-			LanderTWR = nbt.getDouble("LanderTWR");
-			TargetBody = nbt.getDouble("TargetBody");
-			RocketSetupX = nbt.getDouble("RocketSetupX");
-			RocketSetupY = nbt.getDouble("RocketSetupY");
-			RocketSetupZ = nbt.getDouble("RocketSetupZ");
 			SelectedTrajectory = nbt.getString("SelectedTrajectory");
-			HasStartingMaterials = nbt.getBoolean("HasStartingMaterials");
 			ToggleTutorial = nbt.getBoolean("ToggleTutorial");
 			Progress = nbt.getDouble("Progress");
 			InFormalonSystem = nbt.getBoolean("InFormalonSystem");
@@ -613,25 +485,8 @@ public class FaroutModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Boot_Complete = message.data.Boot_Complete;
-					variables.number1 = message.data.number1;
-					variables.number2 = message.data.number2;
-					variables.DeltaV = message.data.DeltaV;
 					variables.knowledgeBasePageNumber = message.data.knowledgeBasePageNumber;
-					variables.DeltaVReadout = message.data.DeltaVReadout;
-					variables.Delta = message.data.Delta;
-					variables.FuelForRocket = message.data.FuelForRocket;
-					variables.TransferStageDeltaV = message.data.TransferStageDeltaV;
-					variables.LanderDeltaV = message.data.LanderDeltaV;
-					variables.PayloadMass = message.data.PayloadMass;
-					variables.DVreqiered = message.data.DVreqiered;
-					variables.TWR = message.data.TWR;
-					variables.LanderTWR = message.data.LanderTWR;
-					variables.TargetBody = message.data.TargetBody;
-					variables.RocketSetupX = message.data.RocketSetupX;
-					variables.RocketSetupY = message.data.RocketSetupY;
-					variables.RocketSetupZ = message.data.RocketSetupZ;
 					variables.SelectedTrajectory = message.data.SelectedTrajectory;
-					variables.HasStartingMaterials = message.data.HasStartingMaterials;
 					variables.ToggleTutorial = message.data.ToggleTutorial;
 					variables.Progress = message.data.Progress;
 					variables.InFormalonSystem = message.data.InFormalonSystem;

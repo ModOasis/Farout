@@ -17,7 +17,6 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.far_out.block.ZPinchFusionReactorBlock;
 import net.mcreator.far_out.block.YellowTorcherBlock;
 import net.mcreator.far_out.block.TokamakfusionreactorBlock;
-import net.mcreator.far_out.block.SuperconductingMagneticBatteryBlock;
 import net.mcreator.far_out.block.Super_AlloyBlockBlock;
 import net.mcreator.far_out.block.SulfuricAcidBlock;
 import net.mcreator.far_out.block.SulfurBlockBlock;
@@ -130,7 +129,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> CHACOAVINES = REGISTRY.register("chacoavines", () -> new ChacoavinesBlock());
 	public static final RegistryObject<Block> ALIEN_REEDS = REGISTRY.register("alien_reeds", () -> new AlienReedsBlock());
 	public static final RegistryObject<Block> BIO_PLASTIC_WINDOW = REGISTRY.register("bio_plastic_window", () -> new BioPlasticWindowBlock());
-	public static final RegistryObject<Block> SUPERCONDUCTING_MAGNETIC_BATTERY = REGISTRY.register("superconducting_magnetic_battery", () -> new SuperconductingMagneticBatteryBlock());
 	public static final RegistryObject<Block> INTEGRATED_CIRCUIT_FABRICATOR = REGISTRY.register("integrated_circuit_fabricator", () -> new IntegratedCircuitFabricatorBlock());
 	public static final RegistryObject<Block> CHEMICAL_REACTOR = REGISTRY.register("chemical_reactor", () -> new ChemicalReactorBlock());
 	public static final RegistryObject<Block> ALUMINIUM_BLOCK = REGISTRY.register("aluminium_block", () -> new AluminiumBlockBlock());
