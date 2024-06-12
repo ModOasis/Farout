@@ -1,7 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "farout:item/nuclearreactor"
-  },
-  "render_type": "translucent"
-}

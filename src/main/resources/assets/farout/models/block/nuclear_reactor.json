@@ -1,9 +1,0 @@
-{
-  "parent": "farout:custom/nuclearreactor",
-  "textures": {
-    "all": "farout:block/nuclearreactor",
-    "particle": "farout:block/nuclearreactor",
-    "0": "farout:block/nuclearreactortexture"
-  },
-  "render_type": "solid"
-}

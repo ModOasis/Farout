@@ -22,11 +22,9 @@ import net.mcreator.far_out.FaroutMod;
 public class FaroutModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FaroutMod.MODID);
 	public static final RegistryObject<CreativeModeTab> ENERGY = REGISTRY.register("energy",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.energy")).icon(() -> new ItemStack(FaroutModBlocks.NUCLEAR_REACTOR.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(FaroutModBlocks.NUCLEAR_REACTOR.get().asItem());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.energy")).icon(() -> new ItemStack(FaroutModItems.REACTOR_ICON.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FaroutModBlocks.LARGE_SOLAR_PANELS.get().asItem());
 				tabData.accept(FaroutModItems.SUPER_CAPACITORS.get());
-				tabData.accept(FaroutModItems.NUCLEAR_RODS.get());
 				tabData.accept(FaroutModBlocks.ANCIENT_SEDIMENT.get().asItem());
 				tabData.accept(FaroutModBlocks.SALT_BLOCK.get().asItem());
 				tabData.accept(FaroutModBlocks.LUMIBLOSSOM_LEAVES.get().asItem());
@@ -85,7 +83,6 @@ public class FaroutModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.electronics")).icon(() -> new ItemStack(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get());
 				tabData.accept(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get());
-				tabData.accept(FaroutModItems.HIGH_FREQUENCY_INTEGRATED_CIRCUIT.get());
 				tabData.accept(FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR.get().asItem());
 				tabData.accept(FaroutModItems.UNETCHED_SILICON_WAFER.get());
 				tabData.accept(FaroutModItems.HIGH_CAPACITY_MEMORY.get());

@@ -155,7 +155,7 @@ public class OnLoadedEntityTickUpdateProcedure {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("farout:asphyxiation")))), 1);
 			}
 		}
-		if (FaroutModVariables.WorldVariables.get(world).Energy > 0) {
+		if (FaroutModVariables.WorldVariables.get(world).WattageProduced > 0) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:microchip_crafted"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -164,7 +164,7 @@ public class OnLoadedEntityTickUpdateProcedure {
 						_player.getAdvancements().award(_adv, criteria);
 				}
 			}
-		} else if (FaroutModVariables.WorldVariables.get(world).Energy >= 100000) {
+		} else if (FaroutModVariables.WorldVariables.get(world).WattageProduced >= 1000) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:extreme_voltage"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

@@ -54,8 +54,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 268,
-          "y": 75
+          "x": 276,
+          "y": 80
         }
       },
       {
@@ -66,6 +66,135 @@
           "x": 128,
           "y": 54
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow0.png",
+          "use1Xscale": false,
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow1"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow2"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow3"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow4"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow5"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow6"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow7"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow8"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow9"
+          },
+          "x": 213,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow10"
+          },
+          "x": 213,
+          "y": 80
+        }
       }
     ],
     "gridSettings": {
@@ -73,7 +202,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

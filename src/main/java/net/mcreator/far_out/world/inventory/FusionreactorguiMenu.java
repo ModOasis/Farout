@@ -89,7 +89,7 @@ public class FusionreactorguiMenu extends AbstractContainerMenu implements Suppl
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 19, 61) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 143, 39) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 151, 44) {
 			private final int slot = 2;
 
 			@Override

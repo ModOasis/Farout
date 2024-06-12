@@ -37,7 +37,6 @@ import net.mcreator.far_out.block.RedTorcherBlock;
 import net.mcreator.far_out.block.QuartzOreBlock;
 import net.mcreator.far_out.block.Potassium_nitrateBlockBlock;
 import net.mcreator.far_out.block.OsmiumBlockBlock;
-import net.mcreator.far_out.block.NuclearReactorBlock;
 import net.mcreator.far_out.block.MusniusWoodBlock;
 import net.mcreator.far_out.block.MusniusTreeTrunkBlock;
 import net.mcreator.far_out.block.MusniusStairsBlock;
@@ -118,7 +117,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ELECTROLYZER = REGISTRY.register("electrolyzer", () -> new ElectrolyzerBlock());
 	public static final RegistryObject<Block> SALTWATER = REGISTRY.register("saltwater", () -> new SaltwaterBlock());
 	public static final RegistryObject<Block> SPORE_BERRIE_BLOCK = REGISTRY.register("spore_berrie_block", () -> new SporeBerrieBlockBlock());
-	public static final RegistryObject<Block> NUCLEAR_REACTOR = REGISTRY.register("nuclear_reactor", () -> new NuclearReactorBlock());
 	public static final RegistryObject<Block> TOKAMAKFUSIONREACTOR = REGISTRY.register("tokamakfusionreactor", () -> new TokamakfusionreactorBlock());
 	public static final RegistryObject<Block> LARGE_SOLAR_PANELS = REGISTRY.register("large_solar_panels", () -> new LargeSolarPanelsBlock());
 	public static final RegistryObject<Block> GRAPHITE_ORE = REGISTRY.register("graphite_ore", () -> new GraphiteOreBlock());

@@ -4,7 +4,7 @@
   "definition": {
     "name": "Energy",
     "icon": {
-      "value": "CUSTOM:NuclearReactor"
+      "value": "CUSTOM:ReactorIcon"
     },
     "showSearch": false
   }

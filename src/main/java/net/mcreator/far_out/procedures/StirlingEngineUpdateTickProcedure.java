@@ -51,14 +51,14 @@ public class StirlingEngineUpdateTickProcedure {
 					return false;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "Latch"))) {
-				if ((new Object() {
+				if (new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
 							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
-				}.getValue(world, BlockPos.containing(x, y, z), "ProducedEnergy")) == true) {
+				}.getValue(world, BlockPos.containing(x, y, z), "ProducedEnergy")) {
 					FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced - 1;
 					FaroutModVariables.WorldVariables.get(world).syncData(world);
 					if (!world.isClientSide()) {

@@ -30,7 +30,7 @@
       "farout:liquid_hydrogen_fuel_tank_recipe",
       "farout:inflatable_habitat_recipe",
       "farout:inflatable_module_recipe",
-      "farout:nuclear_reactor_recipe",
+      "farout:deleted_mod_element",
       "farout:advanced_command_disk_recipe",
       "farout:galactic_core_tracker_recipe"
     ]

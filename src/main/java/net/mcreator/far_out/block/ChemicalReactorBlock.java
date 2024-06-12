@@ -31,6 +31,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.procedures.IntegratedCircuitFabricatorBlockAddedProcedure;
 import net.mcreator.far_out.procedures.ChemicalSynthesizerOnBlockRightClickedProcedure;
 import net.mcreator.far_out.procedures.ChemicalReactorUpdateTickProcedure;
 import net.mcreator.far_out.block.entity.ChemicalReactorBlockEntity;
@@ -86,6 +87,7 @@ public class ChemicalReactorBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 20);
+		IntegratedCircuitFabricatorBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

@@ -15,7 +15,6 @@ import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
 import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
-import net.mcreator.far_out.block.entity.NuclearReactorBlockEntity;
 import net.mcreator.far_out.block.entity.MusniusSaplingBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
@@ -33,7 +32,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> DESKTOP_COMPUTER = register("desktop_computer", FaroutModBlocks.DESKTOP_COMPUTER, DesktopComputerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ELECTROLYZER = register("electrolyzer", FaroutModBlocks.ELECTROLYZER, ElectrolyzerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SPORE_BERRIE_BLOCK = register("spore_berrie_block", FaroutModBlocks.SPORE_BERRIE_BLOCK, SporeBerrieBlockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> NUCLEAR_REACTOR = register("nuclear_reactor", FaroutModBlocks.NUCLEAR_REACTOR, NuclearReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TOKAMAKFUSIONREACTOR = register("tokamakfusionreactor", FaroutModBlocks.TOKAMAKFUSIONREACTOR, TokamakfusionreactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LARGE_SOLAR_PANELS = register("large_solar_panels", FaroutModBlocks.LARGE_SOLAR_PANELS, LargeSolarPanelsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CARDBOARDBOX = register("cardboardbox", FaroutModBlocks.CARDBOARDBOX, CardboardboxBlockEntity::new);

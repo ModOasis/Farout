@@ -9,6 +9,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.FusionreactorguiMenu;
+import net.mcreator.far_out.procedures.Arrow9Procedure;
+import net.mcreator.far_out.procedures.Arrow8Procedure;
+import net.mcreator.far_out.procedures.Arrow7Procedure;
+import net.mcreator.far_out.procedures.Arrow6Procedure;
+import net.mcreator.far_out.procedures.Arrow5Procedure;
+import net.mcreator.far_out.procedures.Arrow4Procedure;
+import net.mcreator.far_out.procedures.Arrow3Procedure;
+import net.mcreator.far_out.procedures.Arrow2Procedure;
+import net.mcreator.far_out.procedures.Arrow1Procedure;
+import net.mcreator.far_out.procedures.Arrow10Procedure;
 
 import java.util.HashMap;
 
@@ -49,6 +59,38 @@ public class FusionreactorguiScreen extends AbstractContainerScreen<Fusionreacto
 
 		guiGraphics.blit(new ResourceLocation("farout:textures/screens/deuterium_bottle.png"), this.leftPos + 2, this.topPos + 17, 0, 0, 16, 16, 16, 16);
 
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow0.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+
+		if (Arrow1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow1.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow2.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow3.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow4Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow4.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow5Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow5.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow6Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow6.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow7Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow7.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow8Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow8.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow9Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow9.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow10Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow10.png"), this.leftPos + 87, this.topPos + 43, 0, 0, 16, 16, 16, 16);
+		}
 		RenderSystem.disableBlend();
 	}
 

@@ -34,12 +34,8 @@ import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
 
-import java.io.File;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class FaroutModVariables {
-	public static File SystemData = new File("");
-
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		FaroutMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
@@ -88,9 +84,6 @@ public class FaroutModVariables {
 				clone.InFormalonSystem = original.InFormalonSystem;
 				clone.DepartureBody = original.DepartureBody;
 				clone.UsingComputer = original.UsingComputer;
-				clone.WantedPitch = original.WantedPitch;
-				clone.WantedYaw = original.WantedYaw;
-				clone.WantedEngineStatus = original.WantedEngineStatus;
 				clone.Xvel = original.Xvel;
 				clone.Yvel = original.Yvel;
 				clone.Zvel = original.Zvel;
@@ -123,8 +116,6 @@ public class FaroutModVariables {
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "farout_worldvars";
-		public double Energy = 0;
-		public double TotalCapacty = 10.0;
 		public String InterstellarVesselProgress = "12345678S";
 		public double SpaceStation = 0;
 		public double WattageProduced = 0;
@@ -137,8 +128,6 @@ public class FaroutModVariables {
 		}
 
 		public void read(CompoundTag nbt) {
-			Energy = nbt.getDouble("Energy");
-			TotalCapacty = nbt.getDouble("TotalCapacty");
 			InterstellarVesselProgress = nbt.getString("InterstellarVesselProgress");
 			SpaceStation = nbt.getDouble("SpaceStation");
 			WattageProduced = nbt.getDouble("WattageProduced");
@@ -147,8 +136,6 @@ public class FaroutModVariables {
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
-			nbt.putDouble("Energy", Energy);
-			nbt.putDouble("TotalCapacty", TotalCapacty);
 			nbt.putString("InterstellarVesselProgress", InterstellarVesselProgress);
 			nbt.putDouble("SpaceStation", SpaceStation);
 			nbt.putDouble("WattageProduced", WattageProduced);
@@ -187,7 +174,6 @@ public class FaroutModVariables {
 		public double AccessLocationZ = 0;
 		public boolean StartupComplete = false;
 		public double SelectedMicrochipRecipe = 3.0;
-		public double Tick = 0;
 		public double FairingHabTime = 0;
 		public double FairingDeltaV = 0;
 		public double FairingWattage = 0;
@@ -202,14 +188,8 @@ public class FaroutModVariables {
 		public double Gravity = 9.81;
 		public double AirResistance = 0.0;
 		public double GravitationalMultiplier = 200.0;
-		public String CurrentWorldSaveName = "\"\"";
 		public String SpacecraftStatus = "\"\"";
-		public String SpacecraftType = "\"\"";
-		public String SpacecraftFuelCapacity = "\"\"";
 		public String WorkingSudoArray = "~Hey;Hi~";
-		public double WantedIndex = 1.0;
-		public double RotationSpeed = 0;
-		public double SandosLuminosity = 0.0;
 		public String ModID = "farout";
 		public double SpaceStationLevel = 0;
 
@@ -232,7 +212,6 @@ public class FaroutModVariables {
 			AccessLocationZ = nbt.getDouble("AccessLocationZ");
 			StartupComplete = nbt.getBoolean("StartupComplete");
 			SelectedMicrochipRecipe = nbt.getDouble("SelectedMicrochipRecipe");
-			Tick = nbt.getDouble("Tick");
 			FairingHabTime = nbt.getDouble("FairingHabTime");
 			FairingDeltaV = nbt.getDouble("FairingDeltaV");
 			FairingWattage = nbt.getDouble("FairingWattage");
@@ -247,14 +226,8 @@ public class FaroutModVariables {
 			Gravity = nbt.getDouble("Gravity");
 			AirResistance = nbt.getDouble("AirResistance");
 			GravitationalMultiplier = nbt.getDouble("GravitationalMultiplier");
-			CurrentWorldSaveName = nbt.getString("CurrentWorldSaveName");
 			SpacecraftStatus = nbt.getString("SpacecraftStatus");
-			SpacecraftType = nbt.getString("SpacecraftType");
-			SpacecraftFuelCapacity = nbt.getString("SpacecraftFuelCapacity");
 			WorkingSudoArray = nbt.getString("WorkingSudoArray");
-			WantedIndex = nbt.getDouble("WantedIndex");
-			RotationSpeed = nbt.getDouble("RotationSpeed");
-			SandosLuminosity = nbt.getDouble("SandosLuminosity");
 			ModID = nbt.getString("ModID");
 			SpaceStationLevel = nbt.getDouble("SpaceStationLevel");
 		}
@@ -273,7 +246,6 @@ public class FaroutModVariables {
 			nbt.putDouble("AccessLocationZ", AccessLocationZ);
 			nbt.putBoolean("StartupComplete", StartupComplete);
 			nbt.putDouble("SelectedMicrochipRecipe", SelectedMicrochipRecipe);
-			nbt.putDouble("Tick", Tick);
 			nbt.putDouble("FairingHabTime", FairingHabTime);
 			nbt.putDouble("FairingDeltaV", FairingDeltaV);
 			nbt.putDouble("FairingWattage", FairingWattage);
@@ -288,14 +260,8 @@ public class FaroutModVariables {
 			nbt.putDouble("Gravity", Gravity);
 			nbt.putDouble("AirResistance", AirResistance);
 			nbt.putDouble("GravitationalMultiplier", GravitationalMultiplier);
-			nbt.putString("CurrentWorldSaveName", CurrentWorldSaveName);
 			nbt.putString("SpacecraftStatus", SpacecraftStatus);
-			nbt.putString("SpacecraftType", SpacecraftType);
-			nbt.putString("SpacecraftFuelCapacity", SpacecraftFuelCapacity);
 			nbt.putString("WorkingSudoArray", WorkingSudoArray);
-			nbt.putDouble("WantedIndex", WantedIndex);
-			nbt.putDouble("RotationSpeed", RotationSpeed);
-			nbt.putDouble("SandosLuminosity", SandosLuminosity);
 			nbt.putString("ModID", ModID);
 			nbt.putDouble("SpaceStationLevel", SpaceStationLevel);
 			return nbt;
@@ -401,9 +367,6 @@ public class FaroutModVariables {
 		public boolean UsingComputer = false;
 		public double CurrentSystemID = 0;
 		public String PlayerStarSystem = "\"\"";
-		public double WantedPitch = 0;
-		public double WantedYaw = 0;
-		public boolean WantedEngineStatus = false;
 		public double Xvel = 0;
 		public double Yvel = 0;
 		public double Zvel = 0;
@@ -428,9 +391,6 @@ public class FaroutModVariables {
 			nbt.putBoolean("UsingComputer", UsingComputer);
 			nbt.putDouble("CurrentSystemID", CurrentSystemID);
 			nbt.putString("PlayerStarSystem", PlayerStarSystem);
-			nbt.putDouble("WantedPitch", WantedPitch);
-			nbt.putDouble("WantedYaw", WantedYaw);
-			nbt.putBoolean("WantedEngineStatus", WantedEngineStatus);
 			nbt.putDouble("Xvel", Xvel);
 			nbt.putDouble("Yvel", Yvel);
 			nbt.putDouble("Zvel", Zvel);
@@ -452,9 +412,6 @@ public class FaroutModVariables {
 			UsingComputer = nbt.getBoolean("UsingComputer");
 			CurrentSystemID = nbt.getDouble("CurrentSystemID");
 			PlayerStarSystem = nbt.getString("PlayerStarSystem");
-			WantedPitch = nbt.getDouble("WantedPitch");
-			WantedYaw = nbt.getDouble("WantedYaw");
-			WantedEngineStatus = nbt.getBoolean("WantedEngineStatus");
 			Xvel = nbt.getDouble("Xvel");
 			Yvel = nbt.getDouble("Yvel");
 			Zvel = nbt.getDouble("Zvel");
@@ -495,9 +452,6 @@ public class FaroutModVariables {
 					variables.UsingComputer = message.data.UsingComputer;
 					variables.CurrentSystemID = message.data.CurrentSystemID;
 					variables.PlayerStarSystem = message.data.PlayerStarSystem;
-					variables.WantedPitch = message.data.WantedPitch;
-					variables.WantedYaw = message.data.WantedYaw;
-					variables.WantedEngineStatus = message.data.WantedEngineStatus;
 					variables.Xvel = message.data.Xvel;
 					variables.Yvel = message.data.Yvel;
 					variables.Zvel = message.data.Zvel;

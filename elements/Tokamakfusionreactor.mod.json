@@ -103,7 +103,7 @@
     "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "Fusionreactorgui",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -127,8 +127,11 @@
     "onRightClicked": {
       "name": "TokamakfusionreactorOnBlockRightClicked"
     },
+    "onBlockAdded": {
+      "name": "HydrogenFuelCellBlockAdded"
+    },
     "onTickUpdate": {
-      "name": "TokamakfusionreactorUpdateTick"
+      "name": "TokamakFusionReactorOnUpdateTick"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

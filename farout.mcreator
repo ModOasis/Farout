@@ -87,11 +87,11 @@
       "registry_name": "spore_berrie_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/spore_berrie_block.json",
+          "src/main/resources/assets/farout/models/block/spore_berrie_block.json",
           "src/main/java/net/mcreator/far_out/block/entity/SporeBerrieBlockBlockEntity.java",
-          "src/main/java/net/mcreator/far_out/block/SporeBerrieBlockBlock.java",
+          "src/main/resources/assets/farout/blockstates/spore_berrie_block.json",
           "src/main/resources/assets/farout/models/item/spore_berrie_block.json",
-          "src/main/resources/assets/farout/models/block/spore_berrie_block.json"
+          "src/main/java/net/mcreator/far_out/block/SporeBerrieBlockBlock.java"
         ]
       }
     },
@@ -127,8 +127,8 @@
       "registry_name": "display",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/DisplayItem.java",
-          "src/main/resources/assets/farout/models/item/display.json"
+          "src/main/resources/assets/farout/models/item/display.json",
+          "src/main/java/net/mcreator/far_out/item/DisplayItem.java"
         ]
       }
     },
@@ -145,9 +145,9 @@
         "eb": false,
         "ec": true,
         "files": [
-          "src/main/resources/assets/farout/models/item/space_suit_helmet.json",
           "src/main/java/net/mcreator/far_out/item/SpaceSuitItem.java",
           "src/main/resources/assets/farout/models/item/space_suit_chestplate.json",
+          "src/main/resources/assets/farout/models/item/space_suit_helmet.json",
           "src/main/resources/assets/farout/models/item/space_suit_leggings.json"
         ]
       }
@@ -276,10 +276,10 @@
       "registry_name": "sunny_islands",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/sunny_islands_tree.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/sunny_islands_tree.json",
           "src/main/java/net/mcreator/far_out/world/features/treedecorators/SunnyIslandsLeaveDecorator.java",
           "src/main/resources/data/farout/worldgen/biome/sunny_islands.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/sunny_islands_tree.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/sunny_islands_tree.json",
           "src/main/java/net/mcreator/far_out/world/features/treedecorators/SunnyIslandsTrunkDecorator.java"
         ]
       }
@@ -328,8 +328,8 @@
       "registry_name": "lithium_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/LithiumIngotItem.java",
-          "src/main/resources/assets/farout/models/item/lithium_ingot.json"
+          "src/main/resources/assets/farout/models/item/lithium_ingot.json",
+          "src/main/java/net/mcreator/far_out/item/LithiumIngotItem.java"
         ]
       }
     },
@@ -342,10 +342,10 @@
       "registry_name": "lithium_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/LithiumBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/lithium_block.json",
           "src/main/resources/assets/farout/models/block/lithium_block.json",
-          "src/main/resources/assets/farout/blockstates/lithium_block.json"
+          "src/main/resources/assets/farout/models/item/lithium_block.json",
+          "src/main/resources/assets/farout/blockstates/lithium_block.json",
+          "src/main/java/net/mcreator/far_out/block/LithiumBlockBlock.java"
         ]
       }
     },
@@ -384,39 +384,8 @@
       "registry_name": "graphiterod",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/GraphiterodItem.java",
-          "src/main/resources/assets/farout/models/item/graphiterod.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearReactor",
-      "type": "block",
-      "sortid": 153,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/NuclearReactorBlockEntity.java",
-          "src/main/resources/assets/farout/models/item/nuclear_reactor.json",
-          "src/main/java/net/mcreator/far_out/block/NuclearReactorBlock.java",
-          "src/main/resources/assets/farout/models/block/nuclear_reactor.json",
-          "src/main/resources/assets/farout/blockstates/nuclear_reactor.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearReactorGUI",
-      "type": "gui",
-      "sortid": 235,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/NuclearReactorGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/NuclearReactorGUIScreen.java"
+          "src/main/resources/assets/farout/models/item/graphiterod.json",
+          "src/main/java/net/mcreator/far_out/item/GraphiterodItem.java"
         ]
       }
     },
@@ -429,8 +398,8 @@
       "registry_name": "depleted_uranium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/depleted_uranium.json",
-          "src/main/java/net/mcreator/far_out/item/DepletedUraniumItem.java"
+          "src/main/java/net/mcreator/far_out/item/DepletedUraniumItem.java",
+          "src/main/resources/assets/farout/models/item/depleted_uranium.json"
         ]
       }
     },
@@ -454,10 +423,10 @@
       "registry_name": "tokamakfusionreactor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/TokamakfusionreactorBlockEntity.java",
-          "src/main/resources/assets/farout/models/block/tokamakfusionreactor.json",
           "src/main/resources/assets/farout/blockstates/tokamakfusionreactor.json",
+          "src/main/java/net/mcreator/far_out/block/entity/TokamakfusionreactorBlockEntity.java",
           "src/main/resources/assets/farout/models/item/tokamakfusionreactor.json",
+          "src/main/resources/assets/farout/models/block/tokamakfusionreactor.json",
           "src/main/java/net/mcreator/far_out/block/TokamakfusionreactorBlock.java"
         ]
       }
@@ -471,8 +440,8 @@
       "registry_name": "fusionreactorgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/FusionreactorguiMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/FusionreactorguiScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/FusionreactorguiScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/FusionreactorguiMenu.java"
         ]
       }
     },
@@ -512,37 +481,6 @@
       }
     },
     {
-      "name": "TokamakfusionreactorUpdateTick",
-      "type": "procedure",
-      "sortid": 249,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tokamakfusionreactor_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/TokamakfusionreactorUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Voltmetergui",
       "type": "gui",
       "sortid": 250,
@@ -551,8 +489,8 @@
       "registry_name": "voltmetergui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/VoltmeterguiMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/VoltmeterguiScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/VoltmeterguiScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/VoltmeterguiMenu.java"
         ]
       }
     },
@@ -645,8 +583,8 @@
         "files": [
           "src/main/java/net/mcreator/far_out/block/Super_AlloyBlockBlock.java",
           "src/main/resources/assets/farout/blockstates/super_alloy_block.json",
-          "src/main/resources/assets/farout/models/block/super_alloy_block.json",
-          "src/main/resources/assets/farout/models/item/super_alloy_block.json"
+          "src/main/resources/assets/farout/models/item/super_alloy_block.json",
+          "src/main/resources/assets/farout/models/block/super_alloy_block.json"
         ]
       }
     },
@@ -685,8 +623,8 @@
       "registry_name": "super_alloy_pickaxe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/Super_AlloyPickaxeItem.java",
-          "src/main/resources/assets/farout/models/item/super_alloy_pickaxe.json"
+          "src/main/resources/assets/farout/models/item/super_alloy_pickaxe.json",
+          "src/main/java/net/mcreator/far_out/item/Super_AlloyPickaxeItem.java"
         ]
       }
     },
@@ -713,8 +651,8 @@
       "registry_name": "super_alloy_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/Super_AlloySwordItem.java",
-          "src/main/resources/assets/farout/models/item/super_alloy_sword.json"
+          "src/main/resources/assets/farout/models/item/super_alloy_sword.json",
+          "src/main/java/net/mcreator/far_out/item/Super_AlloySwordItem.java"
         ]
       }
     },
@@ -741,8 +679,8 @@
       "registry_name": "super_alloy_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/super_alloy_hoe.json",
-          "src/main/java/net/mcreator/far_out/item/Super_AlloyHoeItem.java"
+          "src/main/java/net/mcreator/far_out/item/Super_AlloyHoeItem.java",
+          "src/main/resources/assets/farout/models/item/super_alloy_hoe.json"
         ]
       }
     },
@@ -835,9 +773,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/blockstates/boron_block.json",
-          "src/main/java/net/mcreator/far_out/block/BoronBlockBlock.java",
           "src/main/resources/assets/farout/models/item/boron_block.json",
-          "src/main/resources/assets/farout/models/block/boron_block.json"
+          "src/main/resources/assets/farout/models/block/boron_block.json",
+          "src/main/java/net/mcreator/far_out/block/BoronBlockBlock.java"
         ]
       }
     },
@@ -891,9 +829,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/block/RheniumBlockBlock.java",
-          "src/main/resources/assets/farout/models/block/rhenium_block.json",
+          "src/main/resources/assets/farout/blockstates/rhenium_block.json",
           "src/main/resources/assets/farout/models/item/rhenium_block.json",
-          "src/main/resources/assets/farout/blockstates/rhenium_block.json"
+          "src/main/resources/assets/farout/models/block/rhenium_block.json"
         ]
       }
     },
@@ -932,8 +870,8 @@
       "registry_name": "osmium_ingot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/OsmiumIngotItem.java",
-          "src/main/resources/assets/farout/models/item/osmium_ingot.json"
+          "src/main/resources/assets/farout/models/item/osmium_ingot.json",
+          "src/main/java/net/mcreator/far_out/item/OsmiumIngotItem.java"
         ]
       }
     },
@@ -946,8 +884,8 @@
       "registry_name": "osmium_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/osmium_block.json",
           "src/main/java/net/mcreator/far_out/block/OsmiumBlockBlock.java",
+          "src/main/resources/assets/farout/models/item/osmium_block.json",
           "src/main/resources/assets/farout/models/block/osmium_block.json",
           "src/main/resources/assets/farout/blockstates/osmium_block.json"
         ]
@@ -1044,44 +982,13 @@
       "registry_name": "large_solar_panels",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/large_solar_panels.json",
-          "src/main/resources/assets/farout/blockstates/large_solar_panels.json",
-          "src/main/java/net/mcreator/far_out/block/entity/LargeSolarPanelsBlockEntity.java",
           "src/main/resources/assets/farout/models/block/large_solar_panels_full.json",
-          "src/main/resources/assets/farout/models/item/large_solar_panels.json",
           "src/main/java/net/mcreator/far_out/block/LargeSolarPanelsBlock.java",
+          "src/main/resources/assets/farout/blockstates/large_solar_panels.json",
+          "src/main/resources/assets/farout/models/block/large_solar_panels.json",
+          "src/main/resources/assets/farout/models/item/large_solar_panels.json",
+          "src/main/java/net/mcreator/far_out/block/entity/LargeSolarPanelsBlockEntity.java",
           "src/main/resources/assets/farout/models/block/large_solar_panels_top.json"
-        ]
-      }
-    },
-    {
-      "name": "LargeSolarPanelpro",
-      "type": "procedure",
-      "sortid": 280,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "large_solar_panelpro",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LargeSolarPanelproProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -1108,8 +1015,8 @@
       "registry_name": "helium_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/helium_3.json",
-          "src/main/java/net/mcreator/far_out/item/Helium3Item.java"
+          "src/main/java/net/mcreator/far_out/item/Helium3Item.java",
+          "src/main/resources/assets/farout/models/item/helium_3.json"
         ]
       }
     },
@@ -1138,20 +1045,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/helium.json",
           "src/main/java/net/mcreator/far_out/item/HeliumItem.java"
-        ]
-      }
-    },
-    {
-      "name": "EnergymeterGUI",
-      "type": "gui",
-      "sortid": 300,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energymeter_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/EnergymeterGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/EnergymeterGUIMenu.java"
         ]
       }
     },
@@ -1281,8 +1174,8 @@
       "registry_name": "hexuran_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/hexuran_pickaxe.json",
-          "src/main/java/net/mcreator/far_out/item/HexuranPickaxeItem.java"
+          "src/main/java/net/mcreator/far_out/item/HexuranPickaxeItem.java",
+          "src/main/resources/assets/farout/models/item/hexuran_pickaxe.json"
         ]
       }
     },
@@ -1337,8 +1230,8 @@
       "registry_name": "hexuran_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/hexuran_hoe.json",
-          "src/main/java/net/mcreator/far_out/item/HexuranHoeItem.java"
+          "src/main/java/net/mcreator/far_out/item/HexuranHoeItem.java",
+          "src/main/resources/assets/farout/models/item/hexuran_hoe.json"
         ]
       }
     },
@@ -1429,8 +1322,8 @@
       "registry_name": "drop_pod_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/DropPodGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/DropPodGUIScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/DropPodGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/DropPodGUIMenu.java"
         ]
       }
     },
@@ -1443,8 +1336,8 @@
       "registry_name": "sulfur_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SulfurDustItem.java",
-          "src/main/resources/assets/farout/models/item/sulfur_dust.json"
+          "src/main/resources/assets/farout/models/item/sulfur_dust.json",
+          "src/main/java/net/mcreator/far_out/item/SulfurDustItem.java"
         ]
       }
     },
@@ -1458,9 +1351,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/block/SulfurBlockBlock.java",
-          "src/main/resources/assets/farout/blockstates/sulfur_block.json",
+          "src/main/resources/assets/farout/models/item/sulfur_block.json",
           "src/main/resources/assets/farout/models/block/sulfur_block.json",
-          "src/main/resources/assets/farout/models/item/sulfur_block.json"
+          "src/main/resources/assets/farout/blockstates/sulfur_block.json"
         ]
       }
     },
@@ -1499,8 +1392,8 @@
       "registry_name": "potassium_nitrate_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/potassium_nitrate_dust.json",
-          "src/main/java/net/mcreator/far_out/item/Potassium_nitrateDustItem.java"
+          "src/main/java/net/mcreator/far_out/item/Potassium_nitrateDustItem.java",
+          "src/main/resources/assets/farout/models/item/potassium_nitrate_dust.json"
         ]
       }
     },
@@ -1513,10 +1406,10 @@
       "registry_name": "potassium_nitrate_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/farout/blockstates/potassium_nitrate_block.json",
           "src/main/java/net/mcreator/far_out/block/Potassium_nitrateBlockBlock.java",
           "src/main/resources/assets/farout/models/block/potassium_nitrate_block.json",
-          "src/main/resources/assets/farout/models/item/potassium_nitrate_block.json",
-          "src/main/resources/assets/farout/blockstates/potassium_nitrate_block.json"
+          "src/main/resources/assets/farout/models/item/potassium_nitrate_block.json"
         ]
       }
     },
@@ -1529,10 +1422,10 @@
       "registry_name": "gunpowder_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/gunpowder_block.json",
-          "src/main/resources/assets/farout/blockstates/gunpowder_block.json",
+          "src/main/java/net/mcreator/far_out/block/GunpowderBlockBlock.java",
           "src/main/resources/assets/farout/models/item/gunpowder_block.json",
-          "src/main/java/net/mcreator/far_out/block/GunpowderBlockBlock.java"
+          "src/main/resources/assets/farout/blockstates/gunpowder_block.json",
+          "src/main/resources/assets/farout/models/block/gunpowder_block.json"
         ]
       }
     },
@@ -1680,11 +1573,11 @@
       "registry_name": "cardboardbox",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/cardboardbox.json",
           "src/main/resources/assets/farout/models/item/cardboardbox.json",
-          "src/main/resources/assets/farout/blockstates/cardboardbox.json",
+          "src/main/java/net/mcreator/far_out/block/entity/CardboardboxBlockEntity.java",
+          "src/main/resources/assets/farout/models/block/cardboardbox.json",
           "src/main/java/net/mcreator/far_out/block/CardboardboxBlock.java",
-          "src/main/java/net/mcreator/far_out/block/entity/CardboardboxBlockEntity.java"
+          "src/main/resources/assets/farout/blockstates/cardboardbox.json"
         ]
       }
     },
@@ -1732,11 +1625,11 @@
       "registry_name": "chacoa",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/ChacoaBlockEntity.java",
-          "src/main/resources/assets/farout/models/block/chacoa.json",
+          "src/main/resources/assets/farout/models/item/chacoa.json",
           "src/main/java/net/mcreator/far_out/block/ChacoaBlock.java",
+          "src/main/resources/assets/farout/models/block/chacoa.json",
           "src/main/resources/assets/farout/blockstates/chacoa.json",
-          "src/main/resources/assets/farout/models/item/chacoa.json"
+          "src/main/java/net/mcreator/far_out/block/entity/ChacoaBlockEntity.java"
         ]
       }
     },
@@ -1749,11 +1642,11 @@
       "registry_name": "chacoavines",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/ChacoavinesBlockEntity.java",
           "src/main/resources/assets/farout/blockstates/chacoavines.json",
           "src/main/java/net/mcreator/far_out/block/ChacoavinesBlock.java",
-          "src/main/resources/assets/farout/models/item/chacoavines.json",
-          "src/main/resources/assets/farout/models/block/chacoavines.json"
+          "src/main/resources/assets/farout/models/block/chacoavines.json",
+          "src/main/java/net/mcreator/far_out/block/entity/ChacoavinesBlockEntity.java",
+          "src/main/resources/assets/farout/models/item/chacoavines.json"
         ]
       }
     },
@@ -1768,8 +1661,8 @@
         "ep": false,
         "files": [
           "src/main/java/net/mcreator/far_out/world/dimension/SilicanDimension.java",
-          "src/main/resources/data/farout/dimension_type/silican.json",
-          "src/main/resources/data/farout/dimension/silican.json"
+          "src/main/resources/data/farout/dimension/silican.json",
+          "src/main/resources/data/farout/dimension_type/silican.json"
         ]
       }
     },
@@ -1859,9 +1752,9 @@
         "files": [
           "src/main/java/net/mcreator/far_out/block/DesktopComputerBlock.java",
           "src/main/java/net/mcreator/far_out/block/entity/DesktopComputerBlockEntity.java",
-          "src/main/resources/assets/farout/models/item/desktop_computer.json",
           "src/main/resources/assets/farout/blockstates/desktop_computer.json",
-          "src/main/resources/assets/farout/models/block/desktop_computer.json"
+          "src/main/resources/assets/farout/models/block/desktop_computer.json",
+          "src/main/resources/assets/farout/models/item/desktop_computer.json"
         ]
       }
     },
@@ -1952,37 +1845,6 @@
       }
     },
     {
-      "name": "NuclearReactorGUIWhileThisGUIIsOpenTick",
-      "type": "procedure",
-      "sortid": 408,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_gui_while_this_gui_is_open_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/NuclearReactorGUIWhileThisGUIIsOpenTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "RegolithSifterGUI",
       "type": "gui",
       "sortid": 417,
@@ -1991,8 +1853,8 @@
       "registry_name": "regolith_sifter_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/RegolithSifterGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/RegolithSifterGUIScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/RegolithSifterGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/RegolithSifterGUIMenu.java"
         ]
       }
     },
@@ -2172,8 +2034,8 @@
       "registry_name": "graphite_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/graphite_ingot.json",
-          "src/main/java/net/mcreator/far_out/item/GraphiteIngotItem.java"
+          "src/main/java/net/mcreator/far_out/item/GraphiteIngotItem.java",
+          "src/main/resources/assets/farout/models/item/graphite_ingot.json"
         ]
       }
     },
@@ -2186,13 +2048,13 @@
       "registry_name": "graphite_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/graphite_ore_biome_modifier.json",
-          "src/main/resources/assets/farout/models/item/graphite_ore.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/graphite_ore.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/graphite_ore.json",
           "src/main/resources/assets/farout/models/block/graphite_ore.json",
+          "src/main/resources/data/farout/forge/biome_modifier/graphite_ore_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/graphite_ore.json",
+          "src/main/resources/assets/farout/blockstates/graphite_ore.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/graphite_ore.json",
           "src/main/java/net/mcreator/far_out/block/GraphiteOreBlock.java",
-          "src/main/resources/assets/farout/blockstates/graphite_ore.json"
+          "src/main/resources/assets/farout/models/item/graphite_ore.json"
         ]
       },
       "path": "~/Ores"
@@ -2206,10 +2068,10 @@
       "registry_name": "graphite_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/graphite_block.json",
           "src/main/resources/assets/farout/blockstates/graphite_block.json",
-          "src/main/java/net/mcreator/far_out/block/GraphiteBlockBlock.java",
-          "src/main/resources/assets/farout/models/block/graphite_block.json"
+          "src/main/resources/assets/farout/models/item/graphite_block.json",
+          "src/main/resources/assets/farout/models/block/graphite_block.json",
+          "src/main/java/net/mcreator/far_out/block/GraphiteBlockBlock.java"
         ]
       }
     },
@@ -2301,8 +2163,8 @@
       "registry_name": "electro_magnet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/electro_magnet.json",
-          "src/main/java/net/mcreator/far_out/item/ElectroMagnetItem.java"
+          "src/main/java/net/mcreator/far_out/item/ElectroMagnetItem.java",
+          "src/main/resources/assets/farout/models/item/electro_magnet.json"
         ]
       }
     },
@@ -2341,8 +2203,8 @@
       "registry_name": "silicon_dust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/silicon_dust.json",
-          "src/main/java/net/mcreator/far_out/item/SiliconDustItem.java"
+          "src/main/java/net/mcreator/far_out/item/SiliconDustItem.java",
+          "src/main/resources/assets/farout/models/item/silicon_dust.json"
         ]
       }
     },
@@ -2355,10 +2217,10 @@
       "registry_name": "silicon_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/silicon_block.json",
+          "src/main/resources/assets/farout/models/item/silicon_block.json",
           "src/main/resources/assets/farout/models/block/silicon_block.json",
           "src/main/java/net/mcreator/far_out/block/SiliconBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/silicon_block.json"
+          "src/main/resources/assets/farout/blockstates/silicon_block.json"
         ]
       }
     },
@@ -2596,11 +2458,11 @@
       "registry_name": "electrolyzer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/electrolyzer.json",
-          "src/main/resources/assets/farout/models/item/electrolyzer.json",
-          "src/main/resources/assets/farout/blockstates/electrolyzer.json",
           "src/main/java/net/mcreator/far_out/block/entity/ElectrolyzerBlockEntity.java",
-          "src/main/java/net/mcreator/far_out/block/ElectrolyzerBlock.java"
+          "src/main/resources/assets/farout/models/item/electrolyzer.json",
+          "src/main/java/net/mcreator/far_out/block/ElectrolyzerBlock.java",
+          "src/main/resources/assets/farout/models/block/electrolyzer.json",
+          "src/main/resources/assets/farout/blockstates/electrolyzer.json"
         ]
       }
     },
@@ -2646,19 +2508,6 @@
       }
     },
     {
-      "name": "NuclearReactorRecipe",
-      "type": "recipe",
-      "sortid": 496,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/nuclear_reactor_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "DisplayRecipe",
       "type": "recipe",
       "sortid": 499,
@@ -2681,8 +2530,8 @@
       "metadata": {
         "ep": false,
         "files": [
-          "src/main/java/net/mcreator/far_out/world/dimension/EtauiDimension.java",
           "src/main/resources/data/farout/dimension_type/etaui.json",
+          "src/main/java/net/mcreator/far_out/world/dimension/EtauiDimension.java",
           "src/main/resources/data/farout/dimension/etaui.json"
         ]
       }
@@ -2697,12 +2546,12 @@
       "metadata": {
         "gb": true,
         "files": [
-          "src/main/resources/assets/farout/blockstates/saltwater.json",
-          "src/main/java/net/mcreator/far_out/item/SaltwaterItem.java",
-          "src/main/resources/assets/farout/models/item/saltwater_bucket.json",
-          "src/main/resources/assets/farout/models/block/saltwater.json",
           "src/main/java/net/mcreator/far_out/fluid/types/SaltwaterFluidType.java",
+          "src/main/resources/assets/farout/blockstates/saltwater.json",
+          "src/main/resources/assets/farout/models/block/saltwater.json",
+          "src/main/resources/assets/farout/models/item/saltwater_bucket.json",
           "src/main/java/net/mcreator/far_out/fluid/SaltwaterFluid.java",
+          "src/main/java/net/mcreator/far_out/item/SaltwaterItem.java",
           "src/main/java/net/mcreator/far_out/block/SaltwaterBlock.java"
         ]
       }
@@ -2731,8 +2580,8 @@
         "ep": false,
         "files": [
           "src/main/resources/data/farout/dimension/glacieo.json",
-          "src/main/resources/data/farout/dimension_type/glacieo.json",
-          "src/main/java/net/mcreator/far_out/world/dimension/GlacieoDimension.java"
+          "src/main/java/net/mcreator/far_out/world/dimension/GlacieoDimension.java",
+          "src/main/resources/data/farout/dimension_type/glacieo.json"
         ]
       }
     },
@@ -2820,9 +2669,9 @@
       "metadata": {
         "ep": false,
         "files": [
+          "src/main/resources/data/farout/dimension/varas.json",
           "src/main/java/net/mcreator/far_out/world/dimension/VarasDimension.java",
-          "src/main/resources/data/farout/dimension_type/varas.json",
-          "src/main/resources/data/farout/dimension/varas.json"
+          "src/main/resources/data/farout/dimension_type/varas.json"
         ]
       }
     },
@@ -2946,8 +2795,8 @@
       "registry_name": "solid_core_nuclear_thermal_rocket",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SolidCoreNuclearThermalRocketItem.java",
-          "src/main/resources/assets/farout/models/item/solid_core_nuclear_thermal_rocket.json"
+          "src/main/resources/assets/farout/models/item/solid_core_nuclear_thermal_rocket.json",
+          "src/main/java/net/mcreator/far_out/item/SolidCoreNuclearThermalRocketItem.java"
         ]
       }
     },
@@ -2960,8 +2809,8 @@
       "registry_name": "vasmir_ion_engine",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/VasmirIonEngineItem.java",
-          "src/main/resources/assets/farout/models/item/vasmir_ion_engine.json"
+          "src/main/resources/assets/farout/models/item/vasmir_ion_engine.json",
+          "src/main/java/net/mcreator/far_out/item/VasmirIonEngineItem.java"
         ]
       }
     },
@@ -3054,8 +2903,8 @@
       "registry_name": "airtight_fabric",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/AirtightFabricItem.java",
-          "src/main/resources/assets/farout/models/item/airtight_fabric.json"
+          "src/main/resources/assets/farout/models/item/airtight_fabric.json",
+          "src/main/java/net/mcreator/far_out/item/AirtightFabricItem.java"
         ]
       }
     },
@@ -3198,13 +3047,13 @@
       "registry_name": "alien_reeds",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/placed_feature/alien_reeds.json",
-          "src/main/resources/data/farout/forge/biome_modifier/alien_reeds_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/alien_reeds.json",
           "src/main/resources/assets/farout/blockstates/alien_reeds.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/alien_reeds.json",
+          "src/main/java/net/mcreator/far_out/block/AlienReedsBlock.java",
           "src/main/resources/assets/farout/models/item/alien_reeds.json",
           "src/main/resources/assets/farout/models/block/alien_reeds.json",
-          "src/main/java/net/mcreator/far_out/block/AlienReedsBlock.java",
-          "src/main/resources/data/farout/worldgen/configured_feature/alien_reeds.json"
+          "src/main/resources/data/farout/forge/biome_modifier/alien_reeds_biome_modifier.json"
         ]
       }
     },
@@ -3296,8 +3145,8 @@
       "registry_name": "inflatable_hab_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/InflatableHabRingItem.java",
-          "src/main/resources/assets/farout/models/item/inflatable_hab_ring.json"
+          "src/main/resources/assets/farout/models/item/inflatable_hab_ring.json",
+          "src/main/java/net/mcreator/far_out/item/InflatableHabRingItem.java"
         ]
       }
     },
@@ -3338,10 +3187,10 @@
       "registry_name": "bio_plastic_window",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/bio_plastic_window.json",
+          "src/main/resources/assets/farout/models/item/bio_plastic_window.json",
           "src/main/java/net/mcreator/far_out/block/BioPlasticWindowBlock.java",
           "src/main/resources/assets/farout/models/block/bio_plastic_window.json",
-          "src/main/resources/assets/farout/models/item/bio_plastic_window.json"
+          "src/main/resources/assets/farout/blockstates/bio_plastic_window.json"
         ]
       }
     },
@@ -3380,8 +3229,8 @@
       "registry_name": "inflatable_habitat",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/inflatable_habitat.json",
-          "src/main/java/net/mcreator/far_out/item/InflatableHabitatItem.java"
+          "src/main/java/net/mcreator/far_out/item/InflatableHabitatItem.java",
+          "src/main/resources/assets/farout/models/item/inflatable_habitat.json"
         ]
       }
     },
@@ -3475,8 +3324,8 @@
       "metadata": {
         "ep": false,
         "files": [
-          "src/main/resources/data/farout/dimension_type/massivo.json",
           "src/main/java/net/mcreator/far_out/world/dimension/MassivoDimension.java",
+          "src/main/resources/data/farout/dimension_type/massivo.json",
           "src/main/resources/data/farout/dimension/massivo.json"
         ]
       }
@@ -3537,8 +3386,8 @@
       "registry_name": "sodium_hydroxide",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SodiumHydroxideItem.java",
-          "src/main/resources/assets/farout/models/item/sodium_hydroxide.json"
+          "src/main/resources/assets/farout/models/item/sodium_hydroxide.json",
+          "src/main/java/net/mcreator/far_out/item/SodiumHydroxideItem.java"
         ]
       }
     },
@@ -3602,8 +3451,8 @@
       "registry_name": "genetic_sequencer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/GeneticSequencerMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/GeneticSequencerScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/GeneticSequencerScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/GeneticSequencerMenu.java"
         ]
       }
     },
@@ -3652,8 +3501,8 @@
       "registry_name": "starting_lander_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/StartingLanderGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/StartingLanderGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/StartingLanderGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/StartingLanderGUIScreen.java"
         ]
       }
     },
@@ -3988,10 +3837,10 @@
       "registry_name": "fairing_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/network/FairingGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/client/gui/FairingGUIScreen.java",
           "src/main/java/net/mcreator/far_out/world/inventory/FairingGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/network/FairingGUISlotMessage.java"
+          "src/main/java/net/mcreator/far_out/network/FairingGUIButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/network/FairingGUISlotMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/FairingGUIScreen.java"
         ]
       }
     },
@@ -4107,8 +3956,8 @@
       "registry_name": "chemical_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/ChemicalFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/chemical_fuel_tank.json"
+          "src/main/resources/assets/farout/models/item/chemical_fuel_tank.json",
+          "src/main/java/net/mcreator/far_out/item/ChemicalFuelTankItem.java"
         ]
       }
     },
@@ -4121,8 +3970,8 @@
       "registry_name": "liquid_hydrogen_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/liquid_hydrogen_fuel_tank.json",
-          "src/main/java/net/mcreator/far_out/item/LiquidHydrogenFuelTankItem.java"
+          "src/main/java/net/mcreator/far_out/item/LiquidHydrogenFuelTankItem.java",
+          "src/main/resources/assets/farout/models/item/liquid_hydrogen_fuel_tank.json"
         ]
       }
     },
@@ -4135,8 +3984,8 @@
       "registry_name": "nuclear_salt_water_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/nuclear_salt_water_fuel_tank.json",
-          "src/main/java/net/mcreator/far_out/item/NuclearSaltWaterFuelTankItem.java"
+          "src/main/java/net/mcreator/far_out/item/NuclearSaltWaterFuelTankItem.java",
+          "src/main/resources/assets/farout/models/item/nuclear_salt_water_fuel_tank.json"
         ]
       }
     },
@@ -4163,8 +4012,8 @@
       "registry_name": "rocket_no_fairing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/entity/RocketNoFairingEntity.java",
-          "src/main/java/net/mcreator/far_out/client/renderer/RocketNoFairingRenderer.java"
+          "src/main/java/net/mcreator/far_out/client/renderer/RocketNoFairingRenderer.java",
+          "src/main/java/net/mcreator/far_out/entity/RocketNoFairingEntity.java"
         ]
       }
     },
@@ -4236,8 +4085,8 @@
       "registry_name": "open_fairing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/OpenFairingItem.java",
-          "src/main/resources/assets/farout/models/item/open_fairing.json"
+          "src/main/resources/assets/farout/models/item/open_fairing.json",
+          "src/main/java/net/mcreator/far_out/item/OpenFairingItem.java"
         ]
       }
     },
@@ -4278,8 +4127,8 @@
       "registry_name": "empty_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/empty_fuel_tank.json",
-          "src/main/java/net/mcreator/far_out/item/EmptyFuelTankItem.java"
+          "src/main/java/net/mcreator/far_out/item/EmptyFuelTankItem.java",
+          "src/main/resources/assets/farout/models/item/empty_fuel_tank.json"
         ]
       }
     },
@@ -4305,8 +4154,8 @@
       "registry_name": "lithium_deuteride",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/lithium_deuteride.json",
-          "src/main/java/net/mcreator/far_out/item/LithiumDeuterideItem.java"
+          "src/main/java/net/mcreator/far_out/item/LithiumDeuterideItem.java",
+          "src/main/resources/assets/farout/models/item/lithium_deuteride.json"
         ]
       }
     },
@@ -4373,8 +4222,8 @@
       "registry_name": "super_capacitors",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SuperCapacitorsItem.java",
-          "src/main/resources/assets/farout/models/item/super_capacitors.json"
+          "src/main/resources/assets/farout/models/item/super_capacitors.json",
+          "src/main/java/net/mcreator/far_out/item/SuperCapacitorsItem.java"
         ]
       }
     },
@@ -4749,8 +4598,8 @@
       "registry_name": "wrench",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/wrench.json",
-          "src/main/java/net/mcreator/far_out/item/WrenchItem.java"
+          "src/main/java/net/mcreator/far_out/item/WrenchItem.java",
+          "src/main/resources/assets/farout/models/item/wrench.json"
         ]
       }
     },
@@ -4763,8 +4612,8 @@
       "registry_name": "low_frequency_integrated_circuit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/LowFrequencyIntegratedCircuitItem.java",
-          "src/main/resources/assets/farout/models/item/low_frequency_integrated_circuit.json"
+          "src/main/resources/assets/farout/models/item/low_frequency_integrated_circuit.json",
+          "src/main/java/net/mcreator/far_out/item/LowFrequencyIntegratedCircuitItem.java"
         ]
       }
     },
@@ -4779,20 +4628,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/medium_frequency_integrated_circuit.json",
           "src/main/java/net/mcreator/far_out/item/MediumFrequencyIntegratedCircuitItem.java"
-        ]
-      }
-    },
-    {
-      "name": "HighFrequencyIntegratedCircuit",
-      "type": "item",
-      "sortid": 816,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "high_frequency_integrated_circuit",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/high_frequency_integrated_circuit.json",
-          "src/main/java/net/mcreator/far_out/item/HighFrequencyIntegratedCircuitItem.java"
         ]
       }
     },
@@ -4843,9 +4678,9 @@
       "registry_name": "integrated_circuit_fabricator_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/far_out/network/IntegratedCircuitFabricatorGUIButtonMessage.java",
           "src/main/java/net/mcreator/far_out/world/inventory/IntegratedCircuitFabricatorGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/IntegratedCircuitFabricatorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/network/IntegratedCircuitFabricatorGUIButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/client/gui/IntegratedCircuitFabricatorGUIScreen.java"
         ]
       }
     },
@@ -4924,9 +4759,9 @@
       "registry_name": "integrated_circuit_fabricator",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/integrated_circuit_fabricator.json",
           "src/main/java/net/mcreator/far_out/block/entity/IntegratedCircuitFabricatorBlockEntity.java",
           "src/main/java/net/mcreator/far_out/block/IntegratedCircuitFabricatorBlock.java",
+          "src/main/resources/assets/farout/models/block/integrated_circuit_fabricator.json",
           "src/main/resources/assets/farout/blockstates/integrated_circuit_fabricator.json",
           "src/main/resources/assets/farout/models/item/integrated_circuit_fabricator.json"
         ]
@@ -4941,8 +4776,8 @@
       "registry_name": "organic_molecules",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/OrganicMoleculesItem.java",
-          "src/main/resources/assets/farout/models/item/organic_molecules.json"
+          "src/main/resources/assets/farout/models/item/organic_molecules.json",
+          "src/main/java/net/mcreator/far_out/item/OrganicMoleculesItem.java"
         ]
       }
     },
@@ -5034,8 +4869,8 @@
       "registry_name": "sulfuric_acid_rain",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/particles/sulfuric_acid_rain.json",
-          "src/main/java/net/mcreator/far_out/client/particle/SulfuricAcidRainParticle.java"
+          "src/main/java/net/mcreator/far_out/client/particle/SulfuricAcidRainParticle.java",
+          "src/main/resources/assets/farout/particles/sulfuric_acid_rain.json"
         ]
       }
     },
@@ -5062,29 +4897,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/FairingCloseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "NuclearReactorBlockAdded",
-      "type": "procedure",
-      "sortid": 234,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_block_added",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/NuclearReactorBlockAddedProcedure.java"
         ],
         "dependencies": [
           {
@@ -5160,7 +4972,7 @@
       "name": "CalculatePayloadProperties",
       "type": "procedure",
       "sortid": 851,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "calculate_payload_properties",
       "metadata": {
@@ -5210,7 +5022,7 @@
       "name": "CalculateWattage",
       "type": "procedure",
       "sortid": 853,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "calculate_wattage",
       "metadata": {
@@ -5238,8 +5050,8 @@
       "registry_name": "chemical_reactor_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/ChemicalReactorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/ChemicalReactorGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/ChemicalReactorGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/ChemicalReactorGUIScreen.java"
         ]
       }
     },
@@ -5252,11 +5064,11 @@
       "registry_name": "chemical_reactor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/ChemicalReactorBlockEntity.java",
-          "src/main/resources/assets/farout/models/item/chemical_reactor.json",
           "src/main/java/net/mcreator/far_out/block/ChemicalReactorBlock.java",
+          "src/main/java/net/mcreator/far_out/block/entity/ChemicalReactorBlockEntity.java",
           "src/main/resources/assets/farout/blockstates/chemical_reactor.json",
-          "src/main/resources/assets/farout/models/block/chemical_reactor.json"
+          "src/main/resources/assets/farout/models/block/chemical_reactor.json",
+          "src/main/resources/assets/farout/models/item/chemical_reactor.json"
         ]
       }
     },
@@ -5314,10 +5126,10 @@
       "registry_name": "aluminium_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/AluminiumBlockBlock.java",
+          "src/main/resources/assets/farout/models/item/aluminium_block.json",
           "src/main/resources/assets/farout/blockstates/aluminium_block.json",
-          "src/main/resources/assets/farout/models/block/aluminium_block.json",
-          "src/main/resources/assets/farout/models/item/aluminium_block.json"
+          "src/main/java/net/mcreator/far_out/block/AluminiumBlockBlock.java",
+          "src/main/resources/assets/farout/models/block/aluminium_block.json"
         ]
       }
     },
@@ -5356,10 +5168,10 @@
       "registry_name": "bauxite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/bauxite.json",
           "src/main/java/net/mcreator/far_out/block/BauxiteBlock.java",
-          "src/main/resources/assets/farout/models/block/bauxite.json",
-          "src/main/resources/assets/farout/models/item/bauxite.json"
+          "src/main/resources/assets/farout/blockstates/bauxite.json",
+          "src/main/resources/assets/farout/models/item/bauxite.json",
+          "src/main/resources/assets/farout/models/block/bauxite.json"
         ]
       }
     },
@@ -5372,8 +5184,8 @@
       "registry_name": "carborundum_ingot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/carborundum_ingot.json",
-          "src/main/java/net/mcreator/far_out/item/CarborundumIngotItem.java"
+          "src/main/java/net/mcreator/far_out/item/CarborundumIngotItem.java",
+          "src/main/resources/assets/farout/models/item/carborundum_ingot.json"
         ]
       }
     },
@@ -5386,10 +5198,10 @@
       "registry_name": "carborundum_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/carborundum_block.json",
           "src/main/resources/assets/farout/blockstates/carborundum_block.json",
-          "src/main/resources/assets/farout/models/block/carborundum_block.json",
-          "src/main/java/net/mcreator/far_out/block/CarborundumBlockBlock.java"
+          "src/main/java/net/mcreator/far_out/block/CarborundumBlockBlock.java",
+          "src/main/resources/assets/farout/models/item/carborundum_block.json",
+          "src/main/resources/assets/farout/models/block/carborundum_block.json"
         ]
       }
     },
@@ -5454,8 +5266,8 @@
       "registry_name": "unactivated_glowstone_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/UnactivatedGlowstoneDustItem.java",
-          "src/main/resources/assets/farout/models/item/unactivated_glowstone_dust.json"
+          "src/main/resources/assets/farout/models/item/unactivated_glowstone_dust.json",
+          "src/main/java/net/mcreator/far_out/item/UnactivatedGlowstoneDustItem.java"
         ]
       }
     },
@@ -5468,8 +5280,8 @@
       "registry_name": "sphalerite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/sphalerite.json",
-          "src/main/java/net/mcreator/far_out/item/SphaleriteItem.java"
+          "src/main/java/net/mcreator/far_out/item/SphaleriteItem.java",
+          "src/main/resources/assets/farout/models/item/sphalerite.json"
         ]
       }
     },
@@ -5482,13 +5294,13 @@
       "registry_name": "sphalerite_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/sphalerite_ore.json",
           "src/main/java/net/mcreator/far_out/block/SphaleriteOreBlock.java",
-          "src/main/resources/data/farout/worldgen/placed_feature/sphalerite_ore.json",
           "src/main/resources/assets/farout/blockstates/sphalerite_ore.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/sphalerite_ore.json",
           "src/main/resources/assets/farout/models/block/sphalerite_ore.json",
+          "src/main/resources/assets/farout/models/item/sphalerite_ore.json",
           "src/main/resources/data/farout/forge/biome_modifier/sphalerite_ore_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/sphalerite_ore.json"
+          "src/main/resources/data/farout/worldgen/placed_feature/sphalerite_ore.json"
         ]
       },
       "path": "~/Ores"
@@ -5502,9 +5314,9 @@
       "registry_name": "sphalerite_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/SphaleriteBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/sphalerite_block.json",
           "src/main/resources/assets/farout/blockstates/sphalerite_block.json",
+          "src/main/resources/assets/farout/models/item/sphalerite_block.json",
+          "src/main/java/net/mcreator/far_out/block/SphaleriteBlockBlock.java",
           "src/main/resources/assets/farout/models/block/sphalerite_block.json"
         ]
       }
@@ -5570,8 +5382,8 @@
       "registry_name": "boracite",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/BoraciteItem.java",
-          "src/main/resources/assets/farout/models/item/boracite.json"
+          "src/main/resources/assets/farout/models/item/boracite.json",
+          "src/main/java/net/mcreator/far_out/item/BoraciteItem.java"
         ]
       }
     },
@@ -5584,13 +5396,13 @@
       "registry_name": "boracite_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/BoraciteOreBlock.java",
-          "src/main/resources/data/farout/forge/biome_modifier/boracite_ore_biome_modifier.json",
-          "src/main/resources/assets/farout/models/block/boracite_ore.json",
           "src/main/resources/data/farout/worldgen/placed_feature/boracite_ore.json",
           "src/main/resources/assets/farout/blockstates/boracite_ore.json",
+          "src/main/java/net/mcreator/far_out/block/BoraciteOreBlock.java",
+          "src/main/resources/data/farout/forge/biome_modifier/boracite_ore_biome_modifier.json",
+          "src/main/resources/assets/farout/models/item/boracite_ore.json",
           "src/main/resources/data/farout/worldgen/configured_feature/boracite_ore.json",
-          "src/main/resources/assets/farout/models/item/boracite_ore.json"
+          "src/main/resources/assets/farout/models/block/boracite_ore.json"
         ]
       },
       "path": "~/Ores"
@@ -5604,10 +5416,10 @@
       "registry_name": "boracite_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/boracite_block.json",
           "src/main/resources/assets/farout/blockstates/boracite_block.json",
+          "src/main/java/net/mcreator/far_out/block/BoraciteBlockBlock.java",
           "src/main/resources/assets/farout/models/block/boracite_block.json",
-          "src/main/java/net/mcreator/far_out/block/BoraciteBlockBlock.java"
+          "src/main/resources/assets/farout/models/item/boracite_block.json"
         ]
       }
     },
@@ -5673,13 +5485,13 @@
       "registry_name": "molybdenite",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/molybdenite_biome_modifier.json",
-          "src/main/java/net/mcreator/far_out/block/MolybdenumOreBlock.java",
-          "src/main/resources/data/farout/worldgen/configured_feature/molybdenite.json",
-          "src/main/resources/assets/farout/blockstates/molybdenite.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/molybdenite.json",
           "src/main/resources/assets/farout/models/item/molybdenite.json",
-          "src/main/resources/assets/farout/models/block/molybdenite.json"
+          "src/main/resources/assets/farout/models/block/molybdenite.json",
+          "src/main/resources/data/farout/forge/biome_modifier/molybdenite_biome_modifier.json",
+          "src/main/resources/assets/farout/blockstates/molybdenite.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/molybdenite.json",
+          "src/main/java/net/mcreator/far_out/block/MolybdenumOreBlock.java",
+          "src/main/resources/data/farout/worldgen/placed_feature/molybdenite.json"
         ]
       },
       "path": "~/Ores"
@@ -5693,10 +5505,10 @@
       "registry_name": "molybdenum_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/farout/blockstates/molybdenum_block.json",
           "src/main/resources/assets/farout/models/block/molybdenum_block.json",
           "src/main/java/net/mcreator/far_out/block/MolybdenumBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/molybdenum_block.json",
-          "src/main/resources/assets/farout/blockstates/molybdenum_block.json"
+          "src/main/resources/assets/farout/models/item/molybdenum_block.json"
         ]
       }
     },
@@ -5760,29 +5572,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/item/RawMolybdenumItem.java",
           "src/main/resources/assets/farout/models/item/raw_molybdenum.json"
-        ]
-      }
-    },
-    {
-      "name": "EnergymeterGUIValue",
-      "type": "procedure",
-      "sortid": 902,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energymeter_gui_value",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EnergymeterGUIValueProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -5868,8 +5657,8 @@
       "registry_name": "hydrogen",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/HydrogenItem.java",
-          "src/main/resources/assets/farout/models/item/hydrogen.json"
+          "src/main/resources/assets/farout/models/item/hydrogen.json",
+          "src/main/java/net/mcreator/far_out/item/HydrogenItem.java"
         ]
       }
     },
@@ -5882,8 +5671,8 @@
       "registry_name": "basic_command_disk",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/BasicCommandDiskItem.java",
-          "src/main/resources/assets/farout/models/item/basic_command_disk.json"
+          "src/main/resources/assets/farout/models/item/basic_command_disk.json",
+          "src/main/java/net/mcreator/far_out/item/BasicCommandDiskItem.java"
         ]
       }
     },
@@ -5934,8 +5723,8 @@
       "registry_name": "beam_injector_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/BeamInjectorGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/BeamInjectorGUIScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/BeamInjectorGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/BeamInjectorGUIMenu.java"
         ]
       }
     },
@@ -6031,11 +5820,11 @@
         "files": [
           "src/main/java/net/mcreator/far_out/fluid/types/SulfuricAcidFluidType.java",
           "src/main/java/net/mcreator/far_out/item/SulfuricAcidItem.java",
+          "src/main/resources/assets/farout/models/block/sulfuric_acid.json",
+          "src/main/java/net/mcreator/far_out/block/SulfuricAcidBlock.java",
           "src/main/resources/assets/farout/blockstates/sulfuric_acid.json",
           "src/main/java/net/mcreator/far_out/fluid/SulfuricAcidFluid.java",
-          "src/main/java/net/mcreator/far_out/block/SulfuricAcidBlock.java",
-          "src/main/resources/assets/farout/models/item/sulfuric_acid_bucket.json",
-          "src/main/resources/assets/farout/models/block/sulfuric_acid.json"
+          "src/main/resources/assets/farout/models/item/sulfuric_acid_bucket.json"
         ]
       }
     },
@@ -6048,10 +5837,10 @@
       "registry_name": "chemosynthetic_nodules",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/ChemosyntheticNodulesBlock.java",
-          "src/main/resources/assets/farout/models/block/chemosynthetic_nodules.json",
+          "src/main/resources/assets/farout/models/item/chemosynthetic_nodules.json",
           "src/main/resources/assets/farout/blockstates/chemosynthetic_nodules.json",
-          "src/main/resources/assets/farout/models/item/chemosynthetic_nodules.json"
+          "src/main/resources/assets/farout/models/block/chemosynthetic_nodules.json",
+          "src/main/java/net/mcreator/far_out/block/ChemosyntheticNodulesBlock.java"
         ]
       }
     },
@@ -6064,8 +5853,8 @@
       "registry_name": "hydrogen_fluoride_mist",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/particles/hydrogen_fluoride_mist.json",
-          "src/main/java/net/mcreator/far_out/client/particle/HydrogenFluorideMistParticle.java"
+          "src/main/java/net/mcreator/far_out/client/particle/HydrogenFluorideMistParticle.java",
+          "src/main/resources/assets/farout/particles/hydrogen_fluoride_mist.json"
         ]
       }
     },
@@ -6145,9 +5934,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/blockstates/crystaline_exoskeleton.json",
+          "src/main/java/net/mcreator/far_out/block/CrystalineExoskeletonBlock.java",
           "src/main/resources/assets/farout/models/block/crystaline_exoskeleton.json",
-          "src/main/resources/assets/farout/models/item/crystaline_exoskeleton.json",
-          "src/main/java/net/mcreator/far_out/block/CrystalineExoskeletonBlock.java"
+          "src/main/resources/assets/farout/models/item/crystaline_exoskeleton.json"
         ]
       }
     },
@@ -6160,13 +5949,13 @@
       "registry_name": "monazite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/monazite.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/monazite.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/monazite.json",
+          "src/main/resources/assets/farout/models/item/monazite.json",
+          "src/main/resources/data/farout/forge/biome_modifier/monazite_biome_modifier.json",
           "src/main/java/net/mcreator/far_out/block/MonaziteBlock.java",
           "src/main/resources/assets/farout/blockstates/monazite.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/monazite.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/monazite.json",
-          "src/main/resources/data/farout/forge/biome_modifier/monazite_biome_modifier.json",
-          "src/main/resources/assets/farout/models/item/monazite.json"
+          "src/main/resources/assets/farout/models/block/monazite.json"
         ]
       }
     },
@@ -6179,13 +5968,13 @@
       "registry_name": "green_oil",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/fluid/GreenOilFluid.java",
-          "src/main/java/net/mcreator/far_out/block/GreenOilBlock.java",
           "src/main/resources/assets/farout/models/block/green_oil.json",
-          "src/main/java/net/mcreator/far_out/fluid/types/GreenOilFluidType.java",
           "src/main/resources/assets/farout/blockstates/green_oil.json",
+          "src/main/java/net/mcreator/far_out/block/GreenOilBlock.java",
           "src/main/resources/assets/farout/models/item/green_oil_bucket.json",
-          "src/main/java/net/mcreator/far_out/item/GreenOilItem.java"
+          "src/main/java/net/mcreator/far_out/item/GreenOilItem.java",
+          "src/main/java/net/mcreator/far_out/fluid/GreenOilFluid.java",
+          "src/main/java/net/mcreator/far_out/fluid/types/GreenOilFluidType.java"
         ]
       }
     },
@@ -6226,10 +6015,10 @@
       "registry_name": "asphalt",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/asphalt.json",
-          "src/main/java/net/mcreator/far_out/block/AsphaltBlock.java",
           "src/main/resources/assets/farout/models/item/asphalt.json",
-          "src/main/resources/assets/farout/blockstates/asphalt.json"
+          "src/main/resources/assets/farout/blockstates/asphalt.json",
+          "src/main/java/net/mcreator/far_out/block/AsphaltBlock.java",
+          "src/main/resources/assets/farout/models/block/asphalt.json"
         ]
       }
     },
@@ -6255,8 +6044,8 @@
       "registry_name": "moja",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/dimension/moja.json",
           "src/main/resources/data/farout/dimension_type/moja.json",
+          "src/main/resources/data/farout/dimension/moja.json",
           "src/main/java/net/mcreator/far_out/world/dimension/MojaDimension.java"
         ]
       }
@@ -6299,8 +6088,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/placed_feature/craters.json",
-          "src/main/resources/data/farout/forge/biome_modifier/craters_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/craters.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/craters.json",
+          "src/main/resources/data/farout/forge/biome_modifier/craters_biome_modifier.json"
         ]
       }
     },
@@ -6313,8 +6102,8 @@
       "registry_name": "volcano_tops",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/volcano_tops_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/configured_feature/volcano_tops.json",
+          "src/main/resources/data/farout/forge/biome_modifier/volcano_tops_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/placed_feature/volcano_tops.json"
         ]
       }
@@ -6341,9 +6130,9 @@
       "registry_name": "melu",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/dimension_type/melu.json",
           "src/main/resources/data/farout/dimension/melu.json",
-          "src/main/java/net/mcreator/far_out/world/dimension/MeluDimension.java"
+          "src/main/java/net/mcreator/far_out/world/dimension/MeluDimension.java",
+          "src/main/resources/data/farout/dimension_type/melu.json"
         ]
       }
     },
@@ -6370,8 +6159,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/world/dimension/HelusDimension.java",
-          "src/main/resources/data/farout/dimension_type/helus.json",
-          "src/main/resources/data/farout/dimension/helus.json"
+          "src/main/resources/data/farout/dimension/helus.json",
+          "src/main/resources/data/farout/dimension_type/helus.json"
         ]
       }
     },
@@ -6384,13 +6173,13 @@
       "registry_name": "liquid_ammonia",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/LiquidAmmoniaBlock.java",
-          "src/main/resources/assets/farout/blockstates/liquid_ammonia.json",
-          "src/main/java/net/mcreator/far_out/item/LiquidAmmoniaItem.java",
-          "src/main/java/net/mcreator/far_out/fluid/LiquidAmmoniaFluid.java",
-          "src/main/resources/assets/farout/models/item/liquid_ammonia_bucket.json",
           "src/main/java/net/mcreator/far_out/fluid/types/LiquidAmmoniaFluidType.java",
-          "src/main/resources/assets/farout/models/block/liquid_ammonia.json"
+          "src/main/java/net/mcreator/far_out/fluid/LiquidAmmoniaFluid.java",
+          "src/main/java/net/mcreator/far_out/block/LiquidAmmoniaBlock.java",
+          "src/main/resources/assets/farout/models/block/liquid_ammonia.json",
+          "src/main/resources/assets/farout/models/item/liquid_ammonia_bucket.json",
+          "src/main/java/net/mcreator/far_out/item/LiquidAmmoniaItem.java",
+          "src/main/resources/assets/farout/blockstates/liquid_ammonia.json"
         ]
       }
     },
@@ -6431,12 +6220,12 @@
       "registry_name": "muddy_hills",
       "metadata": {
         "files": [
+          "src/main/resources/data/farout/worldgen/placed_feature/muddy_hills_tree.json",
+          "src/main/java/net/mcreator/far_out/world/features/treedecorators/MuddyHillsFruitDecorator.java",
           "src/main/resources/data/farout/worldgen/configured_feature/muddy_hills_tree.json",
           "src/main/java/net/mcreator/far_out/world/features/treedecorators/MuddyHillsTrunkDecorator.java",
-          "src/main/java/net/mcreator/far_out/world/features/treedecorators/MuddyHillsFruitDecorator.java",
-          "src/main/java/net/mcreator/far_out/world/features/treedecorators/MuddyHillsLeaveDecorator.java",
-          "src/main/resources/data/farout/worldgen/placed_feature/muddy_hills_tree.json",
-          "src/main/resources/data/farout/worldgen/biome/muddy_hills.json"
+          "src/main/resources/data/farout/worldgen/biome/muddy_hills.json",
+          "src/main/java/net/mcreator/far_out/world/features/treedecorators/MuddyHillsLeaveDecorator.java"
         ]
       }
     },
@@ -6450,8 +6239,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/world/dimension/ZevDimension.java",
-          "src/main/resources/data/farout/dimension/zev.json",
-          "src/main/resources/data/farout/dimension_type/zev.json"
+          "src/main/resources/data/farout/dimension_type/zev.json",
+          "src/main/resources/data/farout/dimension/zev.json"
         ]
       }
     },
@@ -6464,9 +6253,9 @@
       "registry_name": "sandos_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/SandosMapScreen.java",
           "src/main/java/net/mcreator/far_out/network/SandosMapButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/SandosMapMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/SandosMapMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/SandosMapScreen.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -6480,9 +6269,9 @@
       "registry_name": "etaui_map",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/far_out/world/inventory/EtauiMapMenu.java",
           "src/main/java/net/mcreator/far_out/client/gui/EtauiMapScreen.java",
-          "src/main/java/net/mcreator/far_out/network/EtauiMapButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/EtauiMapMenu.java"
+          "src/main/java/net/mcreator/far_out/network/EtauiMapButtonMessage.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -6496,9 +6285,9 @@
       "registry_name": "proxmai_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/network/ProxmaiMapButtonMessage.java",
           "src/main/java/net/mcreator/far_out/world/inventory/ProxmaiMapMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/ProxmaiMapScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/ProxmaiMapScreen.java",
+          "src/main/java/net/mcreator/far_out/network/ProxmaiMapButtonMessage.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -6512,9 +6301,9 @@
       "registry_name": "massivo_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/network/MassivoMapButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/MassivoMapScreen.java",
           "src/main/java/net/mcreator/far_out/world/inventory/MassivoMapMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/MassivoMapScreen.java"
+          "src/main/java/net/mcreator/far_out/network/MassivoMapButtonMessage.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -6959,8 +6748,8 @@
       "registry_name": "emergency_rations",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/EmergencyRationsItem.java",
-          "src/main/resources/assets/farout/models/item/emergency_rations.json"
+          "src/main/resources/assets/farout/models/item/emergency_rations.json",
+          "src/main/java/net/mcreator/far_out/item/EmergencyRationsItem.java"
         ]
       }
     },
@@ -6992,10 +6781,10 @@
       "registry_name": "cargo_pod",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/cargo_pod.json",
-          "src/main/resources/assets/farout/blockstates/cargo_pod.json",
           "src/main/resources/assets/farout/models/block/cargo_pod.json",
-          "src/main/java/net/mcreator/far_out/block/CargoPodBlock.java"
+          "src/main/java/net/mcreator/far_out/block/CargoPodBlock.java",
+          "src/main/resources/assets/farout/blockstates/cargo_pod.json",
+          "src/main/resources/assets/farout/models/item/cargo_pod.json"
         ]
       }
     },
@@ -7040,8 +6829,8 @@
       "registry_name": "unetched_silicon_wafer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/unetched_silicon_wafer.json",
-          "src/main/java/net/mcreator/far_out/item/UnetchedSiliconWaferItem.java"
+          "src/main/java/net/mcreator/far_out/item/UnetchedSiliconWaferItem.java",
+          "src/main/resources/assets/farout/models/item/unetched_silicon_wafer.json"
         ]
       }
     },
@@ -7067,8 +6856,8 @@
       "registry_name": "high_capacity_memory",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/high_capacity_memory.json",
-          "src/main/java/net/mcreator/far_out/item/HighCapacityMemoryItem.java"
+          "src/main/java/net/mcreator/far_out/item/HighCapacityMemoryItem.java",
+          "src/main/resources/assets/farout/models/item/high_capacity_memory.json"
         ]
       }
     },
@@ -7177,26 +6966,6 @@
       }
     },
     {
-      "name": "EnergyMeterGuiCode",
-      "type": "procedure",
-      "sortid": 1002,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "energy_meter_gui_code",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EnergyMeterGuiCodeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AirtightHabitatWall",
       "type": "block",
       "sortid": 1003,
@@ -7205,10 +6974,10 @@
       "registry_name": "airtight_habitat_wall",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/AirtightHabitatWallBlock.java",
+          "src/main/resources/assets/farout/blockstates/airtight_habitat_wall.json",
           "src/main/resources/assets/farout/models/item/airtight_habitat_wall.json",
           "src/main/resources/assets/farout/models/block/airtight_habitat_wall.json",
-          "src/main/resources/assets/farout/blockstates/airtight_habitat_wall.json"
+          "src/main/java/net/mcreator/far_out/block/AirtightHabitatWallBlock.java"
         ]
       }
     },
@@ -7221,9 +6990,9 @@
       "registry_name": "spooky_towers",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/spooky_towers_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/spooky_towers.json",
           "src/main/resources/data/farout/worldgen/configured_feature/spooky_towers.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/spooky_towers.json"
+          "src/main/resources/data/farout/forge/biome_modifier/spooky_towers_biome_modifier.json"
         ]
       }
     },
@@ -7236,8 +7005,8 @@
       "registry_name": "coal_deposits",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/coal_deposits_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/placed_feature/coal_deposits.json",
+          "src/main/resources/data/farout/forge/biome_modifier/coal_deposits_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/configured_feature/coal_deposits.json"
         ]
       }
@@ -7264,8 +7033,8 @@
       "registry_name": "bacterial_culture",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/BacterialCultureItem.java",
-          "src/main/resources/assets/farout/models/item/bacterial_culture.json"
+          "src/main/resources/assets/farout/models/item/bacterial_culture.json",
+          "src/main/java/net/mcreator/far_out/item/BacterialCultureItem.java"
         ]
       }
     },
@@ -7309,8 +7078,8 @@
       "registry_name": "synthetic_meat",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SyntheticMeatItem.java",
-          "src/main/resources/assets/farout/models/item/synthetic_meat.json"
+          "src/main/resources/assets/farout/models/item/synthetic_meat.json",
+          "src/main/java/net/mcreator/far_out/item/SyntheticMeatItem.java"
         ]
       }
     },
@@ -7426,8 +7195,8 @@
       "registry_name": "fission_fragment_starship_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/FissionFragmentStarshipGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/FissionFragmentStarshipGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/FissionFragmentStarshipGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/FissionFragmentStarshipGUIScreen.java"
         ]
       }
     },
@@ -7440,8 +7209,8 @@
       "registry_name": "biological_incubator_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/BiologicalIncubatorGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/BiologicalIncubatorGUIScreen.java"
+          "src/main/java/net/mcreator/far_out/client/gui/BiologicalIncubatorGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/BiologicalIncubatorGUIMenu.java"
         ]
       }
     },
@@ -7481,20 +7250,6 @@
       }
     },
     {
-      "name": "NuclearRods",
-      "type": "item",
-      "sortid": 1029,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_rods",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/NuclearRodsItem.java",
-          "src/main/resources/assets/farout/models/item/nuclear_rods.json"
-        ]
-      }
-    },
-    {
       "name": "ZPinchFusionReactor",
       "type": "block",
       "sortid": 1030,
@@ -7503,11 +7258,11 @@
       "registry_name": "z_pinch_fusion_reactor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/z_pinch_fusion_reactor.json",
-          "src/main/resources/assets/farout/models/item/z_pinch_fusion_reactor.json",
-          "src/main/java/net/mcreator/far_out/block/entity/ZPinchFusionReactorBlockEntity.java",
           "src/main/java/net/mcreator/far_out/block/ZPinchFusionReactorBlock.java",
-          "src/main/resources/assets/farout/blockstates/z_pinch_fusion_reactor.json"
+          "src/main/java/net/mcreator/far_out/block/entity/ZPinchFusionReactorBlockEntity.java",
+          "src/main/resources/assets/farout/models/item/z_pinch_fusion_reactor.json",
+          "src/main/resources/assets/farout/blockstates/z_pinch_fusion_reactor.json",
+          "src/main/resources/assets/farout/models/block/z_pinch_fusion_reactor.json"
         ]
       }
     },
@@ -7551,8 +7306,8 @@
       "registry_name": "z_pinch_fusion_reactor_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/ZPinchFusionReactorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/ZPinchFusionReactorGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/ZPinchFusionReactorGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/ZPinchFusionReactorGUIScreen.java"
         ]
       }
     },
@@ -7682,8 +7437,8 @@
       "registry_name": "fusion_chamber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/fusion_chamber.json",
-          "src/main/java/net/mcreator/far_out/item/FusionChamberItem.java"
+          "src/main/java/net/mcreator/far_out/item/FusionChamberItem.java",
+          "src/main/resources/assets/farout/models/item/fusion_chamber.json"
         ]
       }
     },
@@ -7949,8 +7704,8 @@
       "registry_name": "coffinite",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/coffinite.json",
-          "src/main/java/net/mcreator/far_out/item/CoffiniteItem.java"
+          "src/main/java/net/mcreator/far_out/item/CoffiniteItem.java",
+          "src/main/resources/assets/farout/models/item/coffinite.json"
         ]
       }
     },
@@ -7963,13 +7718,13 @@
       "registry_name": "coffinite_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/coffinite_ore_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/coffinite_ore.json",
-          "src/main/java/net/mcreator/far_out/block/CoffiniteOreBlock.java",
           "src/main/resources/assets/farout/blockstates/coffinite_ore.json",
-          "src/main/resources/assets/farout/models/item/coffinite_ore.json",
+          "src/main/resources/assets/farout/models/block/coffinite_ore.json",
+          "src/main/resources/data/farout/forge/biome_modifier/coffinite_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/far_out/block/CoffiniteOreBlock.java",
           "src/main/resources/data/farout/worldgen/placed_feature/coffinite_ore.json",
-          "src/main/resources/assets/farout/models/block/coffinite_ore.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/coffinite_ore.json",
+          "src/main/resources/assets/farout/models/item/coffinite_ore.json"
         ]
       }
     },
@@ -7982,10 +7737,10 @@
       "registry_name": "coffinite_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/CoffiniteBlockBlock.java",
-          "src/main/resources/assets/farout/blockstates/coffinite_block.json",
+          "src/main/resources/assets/farout/models/item/coffinite_block.json",
           "src/main/resources/assets/farout/models/block/coffinite_block.json",
-          "src/main/resources/assets/farout/models/item/coffinite_block.json"
+          "src/main/resources/assets/farout/blockstates/coffinite_block.json",
+          "src/main/java/net/mcreator/far_out/block/CoffiniteBlockBlock.java"
         ]
       }
     },
@@ -8037,8 +7792,8 @@
       "registry_name": "oxygen_bottle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/oxygen_bottle.json",
-          "src/main/java/net/mcreator/far_out/item/OxygenBottleItem.java"
+          "src/main/java/net/mcreator/far_out/item/OxygenBottleItem.java",
+          "src/main/resources/assets/farout/models/item/oxygen_bottle.json"
         ]
       }
     },
@@ -8067,11 +7822,11 @@
         "files": [
           "src/main/java/net/mcreator/far_out/block/SpodumeneOreBlock.java",
           "src/main/resources/data/farout/worldgen/placed_feature/spodumene_ore.json",
-          "src/main/resources/assets/farout/models/item/spodumene_ore.json",
           "src/main/resources/data/farout/forge/biome_modifier/spodumene_ore_biome_modifier.json",
           "src/main/resources/assets/farout/blockstates/spodumene_ore.json",
-          "src/main/resources/assets/farout/models/block/spodumene_ore.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/spodumene_ore.json"
+          "src/main/resources/assets/farout/models/item/spodumene_ore.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/spodumene_ore.json",
+          "src/main/resources/assets/farout/models/block/spodumene_ore.json"
         ]
       }
     },
@@ -8084,10 +7839,10 @@
       "registry_name": "spodumene_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/spodumene_block.json",
-          "src/main/resources/assets/farout/models/block/spodumene_block.json",
+          "src/main/resources/assets/farout/models/item/spodumene_block.json",
           "src/main/java/net/mcreator/far_out/block/SpodumeneBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/spodumene_block.json"
+          "src/main/resources/assets/farout/blockstates/spodumene_block.json",
+          "src/main/resources/assets/farout/models/block/spodumene_block.json"
         ]
       }
     },
@@ -8205,8 +7960,8 @@
       "registry_name": "laser",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/LaserItem.java",
-          "src/main/resources/assets/farout/models/item/laser.json"
+          "src/main/resources/assets/farout/models/item/laser.json",
+          "src/main/java/net/mcreator/far_out/item/LaserItem.java"
         ]
       }
     },
@@ -8233,8 +7988,8 @@
       "registry_name": "galactic_core_tracker",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/galactic_core_tracker.json",
-          "src/main/java/net/mcreator/far_out/item/GalacticCoreTrackerItem.java"
+          "src/main/java/net/mcreator/far_out/item/GalacticCoreTrackerItem.java",
+          "src/main/resources/assets/farout/models/item/galactic_core_tracker.json"
         ]
       }
     },
@@ -8274,37 +8029,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/laser_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "HighFrequencyIntergratedCircutFabricatorUpdateTick",
-      "type": "procedure",
-      "sortid": 1086,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "high_frequency_intergrated_circut_fabricator_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/HighFrequencyIntergratedCircutFabricatorUpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -8349,8 +8073,8 @@
       "registry_name": "high_heat_load_graphine_radiators",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/high_heat_load_graphine_radiators.json",
-          "src/main/java/net/mcreator/far_out/item/HighHeatLoadGraphineRadiatorsItem.java"
+          "src/main/java/net/mcreator/far_out/item/HighHeatLoadGraphineRadiatorsItem.java",
+          "src/main/resources/assets/farout/models/item/high_heat_load_graphine_radiators.json"
         ]
       }
     },
@@ -8379,10 +8103,10 @@
       "registry_name": "lumiblossom_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/lumiblossom_log.json",
           "src/main/java/net/mcreator/far_out/block/LumiblossomLogBlock.java",
-          "src/main/resources/assets/farout/models/block/lumiblossom_log.json",
-          "src/main/resources/assets/farout/models/item/lumiblossom_log.json"
+          "src/main/resources/assets/farout/models/item/lumiblossom_log.json",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_log.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_log.json"
         ]
       }
     },
@@ -8396,9 +8120,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/models/item/lumiblossom_planks.json",
+          "src/main/java/net/mcreator/far_out/block/LumiblossomPlanksBlock.java",
           "src/main/resources/assets/farout/blockstates/lumiblossom_planks.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_planks.json",
-          "src/main/java/net/mcreator/far_out/block/LumiblossomPlanksBlock.java"
+          "src/main/resources/assets/farout/models/block/lumiblossom_planks.json"
         ]
       }
     },
@@ -8411,12 +8135,12 @@
       "registry_name": "lumiblossom_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/lumiblossom_stairs.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_stairs_inner.json",
-          "src/main/java/net/mcreator/far_out/block/LumiblossomStairsBlock.java",
           "src/main/resources/assets/farout/models/block/lumiblossom_stairs.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_stairs_outer.json",
-          "src/main/resources/assets/farout/models/item/lumiblossom_stairs.json"
+          "src/main/java/net/mcreator/far_out/block/LumiblossomStairsBlock.java",
+          "src/main/resources/assets/farout/models/item/lumiblossom_stairs.json",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_stairs.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_stairs_inner.json"
         ]
       }
     },
@@ -8429,12 +8153,12 @@
       "registry_name": "lumiblossom_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/lumiblossom_slab.json",
-          "src/main/resources/assets/farout/models/item/lumiblossom_slab.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_slab.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_slab_full.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_slab_top.json",
-          "src/main/java/net/mcreator/far_out/block/LumiblossomSlabBlock.java"
+          "src/main/java/net/mcreator/far_out/block/LumiblossomSlabBlock.java",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_slab.json",
+          "src/main/resources/assets/farout/models/item/lumiblossom_slab.json"
         ]
       }
     },
@@ -8448,11 +8172,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/models/block/lumiblossom_fence.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_fence_post.json",
-          "src/main/resources/assets/farout/blockstates/lumiblossom_fence.json",
-          "src/main/java/net/mcreator/far_out/block/LumiblossomFenceBlock.java",
           "src/main/resources/assets/farout/models/item/lumiblossom_fence.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_fence_inventory.json"
+          "src/main/resources/assets/farout/models/block/lumiblossom_fence_inventory.json",
+          "src/main/java/net/mcreator/far_out/block/LumiblossomFenceBlock.java",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_fence.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_fence_post.json"
         ]
       }
     },
@@ -8466,12 +8190,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate_open.json",
-          "src/main/java/net/mcreator/far_out/block/LumiblossomFenceGateBlock.java",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_fence_gate.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate_wall.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate_wall_open.json",
           "src/main/resources/assets/farout/models/item/lumiblossom_fence_gate.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate_wall_open.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_fence_gate_wall.json",
-          "src/main/resources/assets/farout/blockstates/lumiblossom_fence_gate.json"
+          "src/main/java/net/mcreator/far_out/block/LumiblossomFenceGateBlock.java"
         ]
       }
     },
@@ -8484,10 +8208,10 @@
       "registry_name": "lumiblossom_pressure_plate",
       "metadata": {
         "files": [
+          "src/main/resources/assets/farout/blockstates/lumiblossom_pressure_plate.json",
+          "src/main/resources/assets/farout/models/item/lumiblossom_pressure_plate.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_pressure_plate.json",
           "src/main/java/net/mcreator/far_out/block/LumiblossomPressurePlateBlock.java",
-          "src/main/resources/assets/farout/models/item/lumiblossom_pressure_plate.json",
-          "src/main/resources/assets/farout/blockstates/lumiblossom_pressure_plate.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_pressure_plate_down.json"
         ]
       }
@@ -8501,11 +8225,11 @@
       "registry_name": "lumiblossom_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/lumiblossom_button.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_button_inventory.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_button_pressed.json",
           "src/main/java/net/mcreator/far_out/block/LumiblossomButtonBlock.java",
+          "src/main/resources/assets/farout/models/block/lumiblossom_button_inventory.json",
+          "src/main/resources/assets/farout/models/item/lumiblossom_button.json",
           "src/main/resources/assets/farout/blockstates/lumiblossom_button.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_button_pressed.json",
           "src/main/resources/assets/farout/models/block/lumiblossom_button.json"
         ]
       }
@@ -8660,19 +8384,6 @@
       }
     },
     {
-      "name": "MolecularSwitches",
-      "type": "achievement",
-      "sortid": 1115,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molecular_switches",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/molecular_switches.json"
-        ]
-      }
-    },
-    {
       "name": "ThermonuclearBombRedstoneOn",
       "type": "procedure",
       "sortid": 1116,
@@ -8695,13 +8406,13 @@
       "registry_name": "quartz_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/quartz_ore.json",
           "src/main/java/net/mcreator/far_out/block/QuartzOreBlock.java",
-          "src/main/resources/assets/farout/models/item/quartz_ore.json",
-          "src/main/resources/data/farout/forge/biome_modifier/quartz_ore_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/placed_feature/quartz_ore.json",
+          "src/main/resources/assets/farout/models/item/quartz_ore.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/quartz_ore.json",
+          "src/main/resources/assets/farout/models/block/quartz_ore.json",
           "src/main/resources/assets/farout/blockstates/quartz_ore.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/quartz_ore.json"
+          "src/main/resources/data/farout/forge/biome_modifier/quartz_ore_biome_modifier.json"
         ]
       }
     },
@@ -8784,8 +8495,8 @@
       "registry_name": "rejona_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/RejonaMapScreen.java",
           "src/main/java/net/mcreator/far_out/network/RejonaMapButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/RejonaMapScreen.java",
           "src/main/java/net/mcreator/far_out/world/inventory/RejonaMapMenu.java"
         ]
       },
@@ -8800,9 +8511,9 @@
       "registry_name": "orax_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/network/OraxMapButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/OraxMapScreen.java",
           "src/main/java/net/mcreator/far_out/world/inventory/OraxMapMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/OraxMapScreen.java"
+          "src/main/java/net/mcreator/far_out/network/OraxMapButtonMessage.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -8851,9 +8562,9 @@
       "registry_name": "main_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/MainMapMenu.java",
+          "src/main/java/net/mcreator/far_out/network/MainMapButtonMessage.java",
           "src/main/java/net/mcreator/far_out/client/gui/MainMapScreen.java",
-          "src/main/java/net/mcreator/far_out/network/MainMapButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/MainMapMenu.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -8971,7 +8682,7 @@
       "name": "RefreshFairingProperties",
       "type": "procedure",
       "sortid": 1130,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "refresh_fairing_properties",
       "metadata": {
@@ -8999,8 +8710,8 @@
       "registry_name": "solar_collector",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/SolarCollectorItem.java",
-          "src/main/resources/assets/farout/models/item/solar_collector.json"
+          "src/main/resources/assets/farout/models/item/solar_collector.json",
+          "src/main/java/net/mcreator/far_out/item/SolarCollectorItem.java"
         ]
       }
     },
@@ -9013,8 +8724,8 @@
       "registry_name": "interstellar_habitation_module",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/InterstellarHabitationModuleItem.java",
-          "src/main/resources/assets/farout/models/item/interstellar_habitation_module.json"
+          "src/main/resources/assets/farout/models/item/interstellar_habitation_module.json",
+          "src/main/java/net/mcreator/far_out/item/InterstellarHabitationModuleItem.java"
         ]
       }
     },
@@ -9027,8 +8738,8 @@
       "registry_name": "photovoltaic_wafer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/PhotovoltaicWaferItem.java",
-          "src/main/resources/assets/farout/models/item/photovoltaic_wafer.json"
+          "src/main/resources/assets/farout/models/item/photovoltaic_wafer.json",
+          "src/main/java/net/mcreator/far_out/item/PhotovoltaicWaferItem.java"
         ]
       }
     },
@@ -9112,8 +8823,8 @@
       "registry_name": "fission_fragment_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/FissionFragmentFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/fission_fragment_fuel_tank.json"
+          "src/main/resources/assets/farout/models/item/fission_fragment_fuel_tank.json",
+          "src/main/java/net/mcreator/far_out/item/FissionFragmentFuelTankItem.java"
         ]
       }
     },
@@ -9126,8 +8837,8 @@
       "registry_name": "starship_core",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/StarshipCoreItem.java",
-          "src/main/resources/assets/farout/models/item/starship_core.json"
+          "src/main/resources/assets/farout/models/item/starship_core.json",
+          "src/main/java/net/mcreator/far_out/item/StarshipCoreItem.java"
         ]
       }
     },
@@ -9235,9 +8946,9 @@
       "registry_name": "cargo_fairing_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/CargoFairingGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/CargoFairingGUIMenu.java",
           "src/main/java/net/mcreator/far_out/network/CargoFairingGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/CargoFairingGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/client/gui/CargoFairingGUIScreen.java"
         ]
       }
     },
@@ -9514,8 +9225,8 @@
       "registry_name": "the_farout_guide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/the_farout_guide.json",
-          "src/main/java/net/mcreator/far_out/item/TheFaroutGuideItem.java"
+          "src/main/java/net/mcreator/far_out/item/TheFaroutGuideItem.java",
+          "src/main/resources/assets/farout/models/item/the_farout_guide.json"
         ]
       },
       "path": "~/TheFaroutGuide"
@@ -9627,8 +9338,8 @@
       "registry_name": "cryogenic_stasis_chamber",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/CryogenicStasisChamberItem.java",
-          "src/main/resources/assets/farout/models/item/cryogenic_stasis_chamber.json"
+          "src/main/resources/assets/farout/models/item/cryogenic_stasis_chamber.json",
+          "src/main/java/net/mcreator/far_out/item/CryogenicStasisChamberItem.java"
         ]
       }
     },
@@ -9693,9 +9404,9 @@
       "registry_name": "lander_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/network/LanderGUIButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/LanderGUIMenu.java",
           "src/main/java/net/mcreator/far_out/client/gui/LanderGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/LanderGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/network/LanderGUIButtonMessage.java"
         ]
       }
     },
@@ -9764,9 +9475,9 @@
         "files": [
           "src/main/resources/assets/farout/models/block/solar_vines_cap.json",
           "src/main/resources/assets/farout/blockstates/solar_vines_cap.json",
+          "src/main/java/net/mcreator/far_out/block/SolarVinesCapBlock.java",
           "src/main/resources/assets/farout/models/block/solar_vines_cap_down.json",
-          "src/main/resources/assets/farout/models/item/solar_vines_cap.json",
-          "src/main/java/net/mcreator/far_out/block/SolarVinesCapBlock.java"
+          "src/main/resources/assets/farout/models/item/solar_vines_cap.json"
         ]
       }
     },
@@ -9779,10 +9490,10 @@
       "registry_name": "solar_vines",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/SolarVinesBlock.java",
-          "src/main/resources/assets/farout/blockstates/solar_vines.json",
           "src/main/resources/assets/farout/models/item/solar_vines.json",
-          "src/main/resources/assets/farout/models/block/solar_vines.json"
+          "src/main/resources/assets/farout/models/block/solar_vines.json",
+          "src/main/resources/assets/farout/blockstates/solar_vines.json",
+          "src/main/java/net/mcreator/far_out/block/SolarVinesBlock.java"
         ]
       }
     },
@@ -9795,9 +9506,9 @@
       "registry_name": "solar_vines_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/placed_feature/solar_vines_feature.json",
           "src/main/resources/data/farout/forge/biome_modifier/solar_vines_feature_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/solar_vines_feature.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/solar_vines_feature.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/solar_vines_feature.json"
         ]
       }
     },
@@ -9842,8 +9553,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/client/gui/OreExtractorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/network/OreExtractorGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/OreExtractorGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/OreExtractorGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/network/OreExtractorGUIButtonMessage.java"
         ]
       }
     },
@@ -9901,13 +9612,13 @@
       "registry_name": "red_torcher",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/red_torcher.json",
-          "src/main/resources/assets/farout/blockstates/red_torcher.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/red_torcher.json",
-          "src/main/resources/assets/farout/models/item/red_torcher.json",
-          "src/main/resources/assets/farout/models/block/red_torcher.json",
+          "src/main/resources/data/farout/forge/biome_modifier/red_torcher_biome_modifier.json",
           "src/main/java/net/mcreator/far_out/block/RedTorcherBlock.java",
-          "src/main/resources/data/farout/forge/biome_modifier/red_torcher_biome_modifier.json"
+          "src/main/resources/assets/farout/models/item/red_torcher.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/red_torcher.json",
+          "src/main/resources/assets/farout/blockstates/red_torcher.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/red_torcher.json",
+          "src/main/resources/assets/farout/models/block/red_torcher.json"
         ]
       }
     },
@@ -9933,13 +9644,13 @@
       "registry_name": "yellow_torcher",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/yellow_torcher.json",
-          "src/main/java/net/mcreator/far_out/block/YellowTorcherBlock.java",
-          "src/main/resources/data/farout/worldgen/placed_feature/yellow_torcher.json",
-          "src/main/resources/data/farout/forge/biome_modifier/yellow_torcher_biome_modifier.json",
-          "src/main/resources/assets/farout/blockstates/yellow_torcher.json",
           "src/main/resources/assets/farout/models/item/yellow_torcher.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/yellow_torcher.json"
+          "src/main/resources/assets/farout/models/block/yellow_torcher.json",
+          "src/main/resources/data/farout/forge/biome_modifier/yellow_torcher_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/yellow_torcher.json",
+          "src/main/resources/assets/farout/blockstates/yellow_torcher.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/yellow_torcher.json",
+          "src/main/java/net/mcreator/far_out/block/YellowTorcherBlock.java"
         ]
       }
     },
@@ -9965,13 +9676,13 @@
       "registry_name": "blue_torcher",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/placed_feature/blue_torcher.json",
           "src/main/resources/assets/farout/models/item/blue_torcher.json",
-          "src/main/resources/data/farout/forge/biome_modifier/blue_torcher_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/blue_torcher.json",
+          "src/main/resources/assets/farout/blockstates/blue_torcher.json",
           "src/main/resources/assets/farout/models/block/blue_torcher.json",
-          "src/main/java/net/mcreator/far_out/block/BlueTorcherBlock.java",
+          "src/main/resources/data/farout/forge/biome_modifier/blue_torcher_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/configured_feature/blue_torcher.json",
-          "src/main/resources/assets/farout/blockstates/blue_torcher.json"
+          "src/main/java/net/mcreator/far_out/block/BlueTorcherBlock.java"
         ]
       }
     },
@@ -10010,13 +9721,13 @@
       "registry_name": "chlorella_culture",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/fluid/types/ChlorellaCultureFluidType.java",
-          "src/main/java/net/mcreator/far_out/item/ChlorellaCultureItem.java",
-          "src/main/java/net/mcreator/far_out/fluid/ChlorellaCultureFluid.java",
           "src/main/java/net/mcreator/far_out/block/ChlorellaCultureBlock.java",
+          "src/main/java/net/mcreator/far_out/fluid/types/ChlorellaCultureFluidType.java",
+          "src/main/resources/assets/farout/models/block/chlorella_culture.json",
           "src/main/resources/assets/farout/models/item/chlorella_culture_bucket.json",
           "src/main/resources/assets/farout/blockstates/chlorella_culture.json",
-          "src/main/resources/assets/farout/models/block/chlorella_culture.json"
+          "src/main/java/net/mcreator/far_out/fluid/ChlorellaCultureFluid.java",
+          "src/main/java/net/mcreator/far_out/item/ChlorellaCultureItem.java"
         ]
       }
     },
@@ -10060,8 +9771,8 @@
       "registry_name": "dried_chlorella",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/DriedChlorellaItem.java",
-          "src/main/resources/assets/farout/models/item/dried_chlorella.json"
+          "src/main/resources/assets/farout/models/item/dried_chlorella.json",
+          "src/main/java/net/mcreator/far_out/item/DriedChlorellaItem.java"
         ]
       }
     },
@@ -10074,8 +9785,8 @@
       "registry_name": "algae_bar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/AlgaeBarItem.java",
-          "src/main/resources/assets/farout/models/item/algae_bar.json"
+          "src/main/resources/assets/farout/models/item/algae_bar.json",
+          "src/main/java/net/mcreator/far_out/item/AlgaeBarItem.java"
         ]
       }
     },
@@ -10130,9 +9841,9 @@
       "registry_name": "page_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/Page2Menu.java",
           "src/main/java/net/mcreator/far_out/client/gui/Page2Screen.java",
-          "src/main/java/net/mcreator/far_out/network/Page2ButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/network/Page2ButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/Page2Menu.java"
         ]
       },
       "path": "~/TheTravelersTales"
@@ -10146,9 +9857,9 @@
       "registry_name": "page_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/Page3Screen.java",
+          "src/main/java/net/mcreator/far_out/network/Page3ButtonMessage.java",
           "src/main/java/net/mcreator/far_out/world/inventory/Page3Menu.java",
-          "src/main/java/net/mcreator/far_out/network/Page3ButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/client/gui/Page3Screen.java"
         ]
       },
       "path": "~/TheTravelersTales"
@@ -10320,8 +10031,8 @@
       "registry_name": "atmospheric_analyzer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/AtmosphericAnalyzerItem.java",
-          "src/main/resources/assets/farout/models/item/atmospheric_analyzer.json"
+          "src/main/resources/assets/farout/models/item/atmospheric_analyzer.json",
+          "src/main/java/net/mcreator/far_out/item/AtmosphericAnalyzerItem.java"
         ]
       }
     },
@@ -10413,8 +10124,8 @@
       "registry_name": "oceanus_emblem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/oceanus_emblem.json",
-          "src/main/java/net/mcreator/far_out/item/OceanusEmblemItem.java"
+          "src/main/java/net/mcreator/far_out/item/OceanusEmblemItem.java",
+          "src/main/resources/assets/farout/models/item/oceanus_emblem.json"
         ]
       }
     },
@@ -10688,8 +10399,8 @@
       "registry_name": "starship_components_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/StarshipComponentsGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/StarshipComponentsGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/StarshipComponentsGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/StarshipComponentsGUIScreen.java"
         ]
       }
     },
@@ -10888,13 +10599,13 @@
       "registry_name": "dry_water",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/dry_water_bucket.json",
-          "src/main/java/net/mcreator/far_out/fluid/DryWaterFluid.java",
-          "src/main/java/net/mcreator/far_out/item/DryWaterItem.java",
           "src/main/resources/assets/farout/models/block/dry_water.json",
-          "src/main/java/net/mcreator/far_out/fluid/types/DryWaterFluidType.java",
           "src/main/resources/assets/farout/blockstates/dry_water.json",
-          "src/main/java/net/mcreator/far_out/block/DryWaterBlock.java"
+          "src/main/java/net/mcreator/far_out/fluid/DryWaterFluid.java",
+          "src/main/java/net/mcreator/far_out/block/DryWaterBlock.java",
+          "src/main/resources/assets/farout/models/item/dry_water_bucket.json",
+          "src/main/java/net/mcreator/far_out/item/DryWaterItem.java",
+          "src/main/java/net/mcreator/far_out/fluid/types/DryWaterFluidType.java"
         ]
       }
     },
@@ -10907,9 +10618,9 @@
       "registry_name": "formalon_map",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/FormalonMapScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/FormalonMapMenu.java",
           "src/main/java/net/mcreator/far_out/network/FormalonMapButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/FormalonMapMenu.java"
+          "src/main/java/net/mcreator/far_out/client/gui/FormalonMapScreen.java"
         ]
       }
     },
@@ -11083,41 +10794,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/DataDisk1RightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "NuclearReactorOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 1308,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/NuclearReactorOnBlockRightClickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -11650,8 +11326,8 @@
       "registry_name": "starship_control_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/StarshipControlGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/StarshipControlGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/StarshipControlGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/StarshipControlGUIScreen.java"
         ]
       }
     },
@@ -11713,10 +11389,10 @@
       "registry_name": "ancient_sediment",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/ancient_sediment.json",
-          "src/main/java/net/mcreator/far_out/block/AncientSedimentBlock.java",
           "src/main/resources/assets/farout/blockstates/ancient_sediment.json",
-          "src/main/resources/assets/farout/models/item/ancient_sediment.json"
+          "src/main/resources/assets/farout/models/item/ancient_sediment.json",
+          "src/main/resources/assets/farout/models/block/ancient_sediment.json",
+          "src/main/java/net/mcreator/far_out/block/AncientSedimentBlock.java"
         ]
       }
     },
@@ -11729,9 +11405,9 @@
       "registry_name": "ancient_plains",
       "metadata": {
         "files": [
+          "src/main/resources/data/farout/worldgen/configured_feature/ancient_plains_tree.json",
           "src/main/resources/data/farout/worldgen/placed_feature/ancient_plains_tree.json",
-          "src/main/resources/data/farout/worldgen/biome/ancient_plains.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/ancient_plains_tree.json"
+          "src/main/resources/data/farout/worldgen/biome/ancient_plains.json"
         ]
       }
     },
@@ -11817,8 +11493,8 @@
         "files": [
           "src/main/java/net/mcreator/far_out/block/SaltBlockBlock.java",
           "src/main/resources/assets/farout/models/block/salt_block.json",
-          "src/main/resources/assets/farout/models/item/salt_block.json",
-          "src/main/resources/assets/farout/blockstates/salt_block.json"
+          "src/main/resources/assets/farout/blockstates/salt_block.json",
+          "src/main/resources/assets/farout/models/item/salt_block.json"
         ]
       }
     },
@@ -11858,8 +11534,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/forge/biome_modifier/salt_pile_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/salt_pile.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/salt_pile.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/salt_pile.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/salt_pile.json"
         ]
       }
     },
@@ -11872,12 +11548,12 @@
       "registry_name": "liquid_sulfur_dioxide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/liquid_sulfur_dioxide.json",
-          "src/main/resources/assets/farout/models/item/liquid_sulfur_dioxide_bucket.json",
-          "src/main/java/net/mcreator/far_out/fluid/types/LiquidSulfurDioxideFluidType.java",
-          "src/main/java/net/mcreator/far_out/item/LiquidSulfurDioxideItem.java",
           "src/main/resources/assets/farout/blockstates/liquid_sulfur_dioxide.json",
           "src/main/java/net/mcreator/far_out/block/LiquidSulfurDioxideBlock.java",
+          "src/main/resources/assets/farout/models/item/liquid_sulfur_dioxide_bucket.json",
+          "src/main/java/net/mcreator/far_out/item/LiquidSulfurDioxideItem.java",
+          "src/main/java/net/mcreator/far_out/fluid/types/LiquidSulfurDioxideFluidType.java",
+          "src/main/resources/assets/farout/models/block/liquid_sulfur_dioxide.json",
           "src/main/java/net/mcreator/far_out/fluid/LiquidSulfurDioxideFluid.java"
         ]
       }
@@ -11904,10 +11580,10 @@
       "registry_name": "lumiblossom_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/lumiblossom_leaves.json",
-          "src/main/resources/assets/farout/models/block/lumiblossom_leaves.json",
           "src/main/java/net/mcreator/far_out/block/LumiblossomLeavesBlock.java",
-          "src/main/resources/assets/farout/models/item/lumiblossom_leaves.json"
+          "src/main/resources/assets/farout/models/item/lumiblossom_leaves.json",
+          "src/main/resources/assets/farout/models/block/lumiblossom_leaves.json",
+          "src/main/resources/assets/farout/blockstates/lumiblossom_leaves.json"
         ]
       }
     },
@@ -11920,8 +11596,8 @@
       "registry_name": "mission_control_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/MissionControlGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/MissionControlGUIMenu.java"
+          "src/main/java/net/mcreator/far_out/world/inventory/MissionControlGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/MissionControlGUIScreen.java"
         ]
       }
     },
@@ -12394,9 +12070,9 @@
       "registry_name": "rust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/rust.json",
-          "src/main/resources/assets/farout/blockstates/rust.json",
           "src/main/java/net/mcreator/far_out/block/RustBlock.java",
+          "src/main/resources/assets/farout/blockstates/rust.json",
+          "src/main/resources/assets/farout/models/item/rust.json",
           "src/main/resources/assets/farout/models/block/rust.json"
         ]
       }
@@ -12410,10 +12086,10 @@
       "registry_name": "crushed_quartz",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/crushed_quartz.json",
-          "src/main/resources/assets/farout/blockstates/crushed_quartz.json",
           "src/main/java/net/mcreator/far_out/block/CrushedQuartzBlock.java",
-          "src/main/resources/assets/farout/models/item/crushed_quartz.json"
+          "src/main/resources/assets/farout/models/item/crushed_quartz.json",
+          "src/main/resources/assets/farout/blockstates/crushed_quartz.json",
+          "src/main/resources/assets/farout/models/block/crushed_quartz.json"
         ]
       }
     },
@@ -12455,9 +12131,9 @@
       "registry_name": "methogen_2_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/methogen_2_feature.json",
           "src/main/resources/data/farout/worldgen/placed_feature/methogen_2_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/methogen_2_feature_biome_modifier.json"
+          "src/main/resources/data/farout/forge/biome_modifier/methogen_2_feature_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/methogen_2_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -12472,8 +12148,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/configured_feature/methogen_3_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/methogen_3_feature_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/methogen_3_feature.json"
+          "src/main/resources/data/farout/worldgen/placed_feature/methogen_3_feature.json",
+          "src/main/resources/data/farout/forge/biome_modifier/methogen_3_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -12487,9 +12163,9 @@
       "registry_name": "crystalinedendron_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/farout/forge/biome_modifier/crystalinedendron_feature_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/placed_feature/crystalinedendron_feature.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/crystalinedendron_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/crystalinedendron_feature_biome_modifier.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/crystalinedendron_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -12503,8 +12179,8 @@
       "registry_name": "giant_cactus_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/giant_cactus_feature.json",
           "src/main/resources/data/farout/forge/biome_modifier/giant_cactus_feature_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/giant_cactus_feature.json",
           "src/main/resources/data/farout/worldgen/placed_feature/giant_cactus_feature.json"
         ],
         "has_nbt_structure": true
@@ -12519,8 +12195,8 @@
       "registry_name": "oceanus_jungle_tree_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/worldgen/configured_feature/oceanus_jungle_tree_feature.json",
           "src/main/resources/data/farout/worldgen/placed_feature/oceanus_jungle_tree_feature.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/oceanus_jungle_tree_feature.json",
           "src/main/resources/data/farout/forge/biome_modifier/oceanus_jungle_tree_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
@@ -12535,9 +12211,9 @@
       "registry_name": "etauian_tree_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/etauian_tree_feature_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/placed_feature/etauian_tree_feature.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/etauian_tree_feature.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/etauian_tree_feature.json",
+          "src/main/resources/data/farout/forge/biome_modifier/etauian_tree_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -12567,10 +12243,10 @@
       "registry_name": "etauian_base_feature",
       "metadata": {
         "files": [
+          "src/main/resources/data/farout/worldgen/configured_feature/etauian_base_feature.json",
           "src/main/resources/data/farout/worldgen/placed_feature/etauian_base_feature.json",
           "src/main/java/net/mcreator/far_out/world/features/EtauianBaseFeatureFeature.java",
-          "src/main/resources/data/farout/forge/biome_modifier/etauian_base_feature_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/etauian_base_feature.json"
+          "src/main/resources/data/farout/forge/biome_modifier/etauian_base_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -12584,10 +12260,10 @@
       "registry_name": "etauosian_base_feature",
       "metadata": {
         "files": [
-          "src/main/resources/data/farout/forge/biome_modifier/etauosian_base_feature_biome_modifier.json",
           "src/main/resources/data/farout/worldgen/configured_feature/etauosian_base_feature.json",
           "src/main/resources/data/farout/worldgen/placed_feature/etauosian_base_feature.json",
-          "src/main/java/net/mcreator/far_out/world/features/EtauosianBaseFeatureFeature.java"
+          "src/main/java/net/mcreator/far_out/world/features/EtauosianBaseFeatureFeature.java",
+          "src/main/resources/data/farout/forge/biome_modifier/etauosian_base_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -12602,8 +12278,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/placed_feature/volcano_structure_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/volcano_structure_feature_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/volcano_structure_feature.json"
+          "src/main/resources/data/farout/worldgen/configured_feature/volcano_structure_feature.json",
+          "src/main/resources/data/farout/forge/biome_modifier/volcano_structure_feature_biome_modifier.json"
         ],
         "has_nbt_structure": true
       }
@@ -12618,8 +12294,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/configured_feature/hemin_small_dripstone_feature.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/hemin_small_dripstone_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/hemin_small_dripstone_feature_biome_modifier.json"
+          "src/main/resources/data/farout/forge/biome_modifier/hemin_small_dripstone_feature_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/placed_feature/hemin_small_dripstone_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -12634,8 +12310,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/placed_feature/hemin_large_dripstone_feature.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/hemin_large_dripstone_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/hemin_large_dripstone_feature_biome_modifier.json"
+          "src/main/resources/data/farout/forge/biome_modifier/hemin_large_dripstone_feature_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/hemin_large_dripstone_feature.json"
         ],
         "has_nbt_structure": true
       }
@@ -12662,9 +12338,9 @@
       "registry_name": "lander",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/client/renderer/LanderRenderer.java",
           "src/main/java/net/mcreator/far_out/entity/LanderEntity.java",
-          "src/main/java/net/mcreator/far_out/entity/model/LanderModel.java"
+          "src/main/java/net/mcreator/far_out/entity/model/LanderModel.java",
+          "src/main/java/net/mcreator/far_out/client/renderer/LanderRenderer.java"
         ]
       }
     },
@@ -12691,13 +12367,13 @@
       "registry_name": "aqueous_ammonia",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/fluid/AqueousAmmoniaFluid.java",
-          "src/main/resources/assets/farout/models/item/aqueous_ammonia_bucket.json",
+          "src/main/resources/assets/farout/blockstates/aqueous_ammonia.json",
           "src/main/java/net/mcreator/far_out/block/AqueousAmmoniaBlock.java",
           "src/main/java/net/mcreator/far_out/item/AqueousAmmoniaItem.java",
           "src/main/java/net/mcreator/far_out/fluid/types/AqueousAmmoniaFluidType.java",
-          "src/main/resources/assets/farout/blockstates/aqueous_ammonia.json",
-          "src/main/resources/assets/farout/models/block/aqueous_ammonia.json"
+          "src/main/resources/assets/farout/models/block/aqueous_ammonia.json",
+          "src/main/resources/assets/farout/models/item/aqueous_ammonia_bucket.json",
+          "src/main/java/net/mcreator/far_out/fluid/AqueousAmmoniaFluid.java"
         ]
       }
     },
@@ -12710,8 +12386,8 @@
       "registry_name": "plutonium_carbide",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/plutonium_carbide.json",
-          "src/main/java/net/mcreator/far_out/item/PlutoniumCarbideItem.java"
+          "src/main/java/net/mcreator/far_out/item/PlutoniumCarbideItem.java",
+          "src/main/resources/assets/farout/models/item/plutonium_carbide.json"
         ]
       }
     },
@@ -12782,8 +12458,8 @@
       "registry_name": "magnetoplasmadynamic_thruster",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/MagnetoplasmadynamicThrusterItem.java",
-          "src/main/resources/assets/farout/models/item/magnetoplasmadynamic_thruster.json"
+          "src/main/resources/assets/farout/models/item/magnetoplasmadynamic_thruster.json",
+          "src/main/java/net/mcreator/far_out/item/MagnetoplasmadynamicThrusterItem.java"
         ]
       }
     },
@@ -12796,8 +12472,8 @@
       "registry_name": "lithium_fuel_tank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/lithium_fuel_tank.json",
-          "src/main/java/net/mcreator/far_out/item/LithiumFuelTankItem.java"
+          "src/main/java/net/mcreator/far_out/item/LithiumFuelTankItem.java",
+          "src/main/resources/assets/farout/models/item/lithium_fuel_tank.json"
         ]
       }
     },
@@ -12810,9 +12486,9 @@
       "registry_name": "hydrogen_fuel_cell",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/HydrogenFuelCellBlockEntity.java",
           "src/main/resources/assets/farout/models/item/hydrogen_fuel_cell.json",
           "src/main/java/net/mcreator/far_out/block/HydrogenFuelCellBlock.java",
+          "src/main/java/net/mcreator/far_out/block/entity/HydrogenFuelCellBlockEntity.java",
           "src/main/resources/assets/farout/blockstates/hydrogen_fuel_cell.json",
           "src/main/resources/assets/farout/models/block/hydrogen_fuel_cell.json"
         ]
@@ -13259,9 +12935,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/farout/models/block/basaltic_dirt.json",
+          "src/main/resources/assets/farout/blockstates/basaltic_dirt.json",
           "src/main/resources/assets/farout/models/item/basaltic_dirt.json",
-          "src/main/java/net/mcreator/far_out/block/BasalticDirtBlock.java",
-          "src/main/resources/assets/farout/blockstates/basaltic_dirt.json"
+          "src/main/java/net/mcreator/far_out/block/BasalticDirtBlock.java"
         ]
       }
     },
@@ -13275,10 +12951,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/configured_feature/etauosian_grainstalk.json",
-          "src/main/resources/assets/farout/blockstates/etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/models/block/etauosian_grainstalk.json",
           "src/main/resources/data/farout/worldgen/placed_feature/etauosian_grainstalk.json",
           "src/main/resources/assets/farout/models/item/etauosian_grainstalk.json",
-          "src/main/resources/assets/farout/models/block/etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/blockstates/etauosian_grainstalk.json",
           "src/main/java/net/mcreator/far_out/block/EtauosianGrainstalkBlock.java",
           "src/main/resources/data/farout/forge/biome_modifier/etauosian_grainstalk_biome_modifier.json"
         ]
@@ -13332,8 +13008,8 @@
       "registry_name": "etauosian_grain_stalk_seeds",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/EtauosianGrainStalkSeedsItem.java",
-          "src/main/resources/assets/farout/models/item/etauosian_grain_stalk_seeds.json"
+          "src/main/resources/assets/farout/models/item/etauosian_grain_stalk_seeds.json",
+          "src/main/java/net/mcreator/far_out/item/EtauosianGrainStalkSeedsItem.java"
         ]
       }
     },
@@ -13377,16 +13053,16 @@
       "registry_name": "stirling_engine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/custom/stirling_engine_particle.json",
-          "src/main/java/net/mcreator/far_out/block/model/StirlingEngineDisplayModel.java",
-          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/far_out/block/StirlingEngineBlock.java",
-          "src/main/java/net/mcreator/far_out/block/display/StirlingEngineDisplayItem.java",
+          "src/main/resources/assets/farout/models/item/stirling_engine.json",
           "src/main/java/net/mcreator/far_out/block/model/StirlingEngineBlockModel.java",
-          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineTileRenderer.java",
+          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineDisplayItemRenderer.java",
           "src/main/java/net/mcreator/far_out/block/entity/StirlingEngineTileEntity.java",
           "src/main/resources/assets/farout/blockstates/stirling_engine.json",
-          "src/main/resources/assets/farout/models/item/stirling_engine.json"
+          "src/main/java/net/mcreator/far_out/block/display/StirlingEngineDisplayItem.java",
+          "src/main/java/net/mcreator/far_out/block/StirlingEngineBlock.java",
+          "src/main/java/net/mcreator/far_out/block/model/StirlingEngineDisplayModel.java",
+          "src/main/resources/assets/farout/models/custom/stirling_engine_particle.json",
+          "src/main/java/net/mcreator/far_out/block/renderer/StirlingEngineTileRenderer.java"
         ]
       }
     },
@@ -13399,9 +13075,9 @@
       "registry_name": "immature_etauosian_grainstalk",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/ImmatureEtauosianGrainstalkBlock.java",
-          "src/main/resources/assets/farout/models/block/immature_etauosian_grainstalk.json",
           "src/main/resources/assets/farout/blockstates/immature_etauosian_grainstalk.json",
+          "src/main/resources/assets/farout/models/block/immature_etauosian_grainstalk.json",
+          "src/main/java/net/mcreator/far_out/block/ImmatureEtauosianGrainstalkBlock.java",
           "src/main/resources/assets/farout/models/item/immature_etauosian_grainstalk.json"
         ]
       }
@@ -13663,8 +13339,8 @@
       "registry_name": "relay",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/item/RelayItem.java",
-          "src/main/resources/assets/farout/models/item/relay.json"
+          "src/main/resources/assets/farout/models/item/relay.json",
+          "src/main/java/net/mcreator/far_out/item/RelayItem.java"
         ]
       }
     },
@@ -13746,8 +13422,8 @@
       "registry_name": "iron_wheel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/iron_wheel.json",
-          "src/main/java/net/mcreator/far_out/item/IronWheelItem.java"
+          "src/main/java/net/mcreator/far_out/item/IronWheelItem.java",
+          "src/main/resources/assets/farout/models/item/iron_wheel.json"
         ]
       }
     },
@@ -13799,10 +13475,10 @@
       "registry_name": "musnius_tree_trunk",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/musnius_tree_trunk.json",
           "src/main/resources/assets/farout/blockstates/musnius_tree_trunk.json",
+          "src/main/resources/assets/farout/models/item/musnius_tree_trunk.json",
           "src/main/java/net/mcreator/far_out/block/MusniusTreeTrunkBlock.java",
-          "src/main/resources/assets/farout/models/item/musnius_tree_trunk.json"
+          "src/main/resources/assets/farout/models/block/musnius_tree_trunk.json"
         ]
       }
     },
@@ -13826,10 +13502,10 @@
       "registry_name": "musnius_wood",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/MusniusWoodBlock.java",
-          "src/main/resources/assets/farout/blockstates/musnius_wood.json",
           "src/main/resources/assets/farout/models/item/musnius_wood.json",
-          "src/main/resources/assets/farout/models/block/musnius_wood.json"
+          "src/main/resources/assets/farout/blockstates/musnius_wood.json",
+          "src/main/resources/assets/farout/models/block/musnius_wood.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusWoodBlock.java"
         ]
       }
     },
@@ -13842,12 +13518,12 @@
       "registry_name": "musnius_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/musnius_stairs.json",
-          "src/main/resources/assets/farout/models/block/musnius_stairs_outer.json",
-          "src/main/resources/assets/farout/blockstates/musnius_stairs.json",
           "src/main/resources/assets/farout/models/item/musnius_stairs.json",
+          "src/main/resources/assets/farout/models/block/musnius_stairs_outer.json",
           "src/main/java/net/mcreator/far_out/block/MusniusStairsBlock.java",
-          "src/main/resources/assets/farout/models/block/musnius_stairs_inner.json"
+          "src/main/resources/assets/farout/models/block/musnius_stairs.json",
+          "src/main/resources/assets/farout/models/block/musnius_stairs_inner.json",
+          "src/main/resources/assets/farout/blockstates/musnius_stairs.json"
         ]
       }
     },
@@ -13860,12 +13536,12 @@
       "registry_name": "musnius_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/musnius_slab.json",
-          "src/main/resources/assets/farout/models/block/musnius_slab_top.json",
           "src/main/resources/assets/farout/models/block/musnius_slab_full.json",
-          "src/main/java/net/mcreator/far_out/block/MusniusSlabBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_slab.json",
+          "src/main/resources/assets/farout/blockstates/musnius_slab.json",
           "src/main/resources/assets/farout/models/item/musnius_slab.json",
-          "src/main/resources/assets/farout/models/block/musnius_slab.json"
+          "src/main/java/net/mcreator/far_out/block/MusniusSlabBlock.java",
+          "src/main/resources/assets/farout/models/block/musnius_slab_top.json"
         ]
       }
     },
@@ -13878,12 +13554,12 @@
       "registry_name": "musnius_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/block/musnius_fence_inventory.json",
           "src/main/resources/assets/farout/blockstates/musnius_fence.json",
-          "src/main/resources/assets/farout/models/block/musnius_fence.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_inventory.json",
+          "src/main/resources/assets/farout/models/item/musnius_fence.json",
           "src/main/java/net/mcreator/far_out/block/MusniusFenceBlock.java",
-          "src/main/resources/assets/farout/models/block/musnius_fence_post.json",
-          "src/main/resources/assets/farout/models/item/musnius_fence.json"
+          "src/main/resources/assets/farout/models/block/musnius_fence.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_post.json"
         ]
       }
     },
@@ -13896,13 +13572,13 @@
       "registry_name": "musnius_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/blockstates/musnius_fence_gate.json",
-          "src/main/resources/assets/farout/models/block/musnius_fence_gate_wall_open.json",
-          "src/main/resources/assets/farout/models/block/musnius_fence_gate_open.json",
-          "src/main/java/net/mcreator/far_out/block/MusniusFenceGateBlock.java",
           "src/main/resources/assets/farout/models/block/musnius_fence_gate.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate_open.json",
+          "src/main/resources/assets/farout/models/block/musnius_fence_gate_wall_open.json",
+          "src/main/resources/assets/farout/models/item/musnius_fence_gate.json",
           "src/main/resources/assets/farout/models/block/musnius_fence_gate_wall.json",
-          "src/main/resources/assets/farout/models/item/musnius_fence_gate.json"
+          "src/main/resources/assets/farout/blockstates/musnius_fence_gate.json",
+          "src/main/java/net/mcreator/far_out/block/MusniusFenceGateBlock.java"
         ]
       }
     },
@@ -13915,11 +13591,11 @@
       "registry_name": "musnius_pressure_plate",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/far_out/block/MusniusPressurePlateBlock.java",
           "src/main/resources/assets/farout/blockstates/musnius_pressure_plate.json",
-          "src/main/resources/assets/farout/models/block/musnius_pressure_plate_down.json",
-          "src/main/resources/assets/farout/models/block/musnius_pressure_plate.json",
           "src/main/resources/assets/farout/models/item/musnius_pressure_plate.json",
-          "src/main/java/net/mcreator/far_out/block/MusniusPressurePlateBlock.java"
+          "src/main/resources/assets/farout/models/block/musnius_pressure_plate.json",
+          "src/main/resources/assets/farout/models/block/musnius_pressure_plate_down.json"
         ]
       }
     },
@@ -13932,12 +13608,12 @@
       "registry_name": "musnius_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/musnius_button.json",
-          "src/main/resources/assets/farout/models/block/musnius_button_inventory.json",
-          "src/main/resources/assets/farout/models/block/musnius_button.json",
+          "src/main/resources/assets/farout/blockstates/musnius_button.json",
           "src/main/java/net/mcreator/far_out/block/MusniusButtonBlock.java",
+          "src/main/resources/assets/farout/models/item/musnius_button.json",
           "src/main/resources/assets/farout/models/block/musnius_button_pressed.json",
-          "src/main/resources/assets/farout/blockstates/musnius_button.json"
+          "src/main/resources/assets/farout/models/block/musnius_button_inventory.json",
+          "src/main/resources/assets/farout/models/block/musnius_button.json"
         ]
       }
     },
@@ -14080,10 +13756,10 @@
       "registry_name": "musnius_planks",
       "metadata": {
         "files": [
-          "src/main/resources/assets/farout/models/item/musnius_planks.json",
+          "src/main/resources/assets/farout/models/block/musnius_planks.json",
           "src/main/resources/assets/farout/blockstates/musnius_planks.json",
           "src/main/java/net/mcreator/far_out/block/MusniusPlanksBlock.java",
-          "src/main/resources/assets/farout/models/block/musnius_planks.json"
+          "src/main/resources/assets/farout/models/item/musnius_planks.json"
         ]
       }
     },
@@ -14097,8 +13773,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/placed_feature/musnius_tree_feature.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/musnius_tree_feature.json",
-          "src/main/resources/data/farout/forge/biome_modifier/musnius_tree_feature_biome_modifier.json"
+          "src/main/resources/data/farout/forge/biome_modifier/musnius_tree_feature_biome_modifier.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/musnius_tree_feature.json"
         ]
       }
     },
@@ -14111,10 +13787,10 @@
       "registry_name": "musnius_leaves",
       "metadata": {
         "files": [
+          "src/main/resources/assets/farout/models/block/musnius_leaves.json",
           "src/main/java/net/mcreator/far_out/block/MusniusLeavesBlock.java",
           "src/main/resources/assets/farout/models/item/musnius_leaves.json",
-          "src/main/resources/assets/farout/blockstates/musnius_leaves.json",
-          "src/main/resources/assets/farout/models/block/musnius_leaves.json"
+          "src/main/resources/assets/farout/blockstates/musnius_leaves.json"
         ]
       }
     },
@@ -14128,8 +13804,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/forge/biome_modifier/musnius_forest_feature_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/musnius_forest_feature.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/musnius_forest_feature.json"
+          "src/main/resources/data/farout/worldgen/placed_feature/musnius_forest_feature.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/musnius_forest_feature.json"
         ]
       }
     },
@@ -14320,25 +13996,6 @@
       }
     },
     {
-      "name": "AmmeterItemInHandTick",
-      "type": "procedure",
-      "sortid": 1523,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ammeter_item_in_hand_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/AmmeterItemInHandTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AmmeterRecipe",
       "type": "recipe",
       "sortid": 1524,
@@ -14417,20 +14074,6 @@
       }
     },
     {
-      "name": "OnWorldTickUpdate",
-      "type": "procedure",
-      "sortid": 1530,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "on_world_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/OnWorldTickUpdateProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "MusniusSaplingPlantAdded",
       "type": "procedure",
       "sortid": 1531,
@@ -14501,11 +14144,11 @@
       "registry_name": "musnius_sapling",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/block/entity/MusniusSaplingBlockEntity.java",
+          "src/main/resources/assets/farout/blockstates/musnius_sapling.json",
+          "src/main/resources/assets/farout/models/item/musnius_sapling.json",
           "src/main/resources/assets/farout/models/block/musnius_sapling.json",
           "src/main/java/net/mcreator/far_out/block/MusniusSaplingBlock.java",
-          "src/main/resources/assets/farout/blockstates/musnius_sapling.json",
-          "src/main/resources/assets/farout/models/item/musnius_sapling.json"
+          "src/main/java/net/mcreator/far_out/block/entity/MusniusSaplingBlockEntity.java"
         ]
       }
     },
@@ -14999,15 +14642,60 @@
       }
     },
     {
-      "name": "PowerSourceDestroyed",
-      "type": "procedure",
+      "name": "ReactorIcon",
+      "type": "item",
       "sortid": 1550,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "power_source_destroyed",
+      "registry_name": "reactor_icon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PowerSourceDestroyedProcedure.java"
+          "src/main/resources/assets/farout/models/item/reactor_icon.json",
+          "src/main/java/net/mcreator/far_out/item/ReactorIconItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ZPinchFusionReactorBlockAdded",
+      "type": "procedure",
+      "sortid": 1551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "z_pinch_fusion_reactor_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ZPinchFusionReactorBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TokamakFusionReactorOnUpdateTick",
+      "type": "procedure",
+      "sortid": 1552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tokamak_fusion_reactor_on_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/TokamakFusionReactorOnUpdateTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -15031,18 +14719,6 @@
     }
   ],
   "variable_elements": [
-    {
-      "name": "Energy",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "TotalCapacty",
-      "type": "number",
-      "scope": "world",
-      "value": "10.0"
-    },
     {
       "name": "Boot_Complete",
       "type": "logic",
@@ -15132,12 +14808,6 @@
       "type": "number",
       "scope": "map",
       "value": "3.0"
-    },
-    {
-      "name": "Tick",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
     },
     {
       "name": "ToggleTutorial",
@@ -15278,25 +14948,7 @@
       "value": "200.0"
     },
     {
-      "name": "CurrentWorldSaveName",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
       "name": "SpacecraftStatus",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "SpacecraftType",
-      "type": "string",
-      "scope": "map",
-      "value": "\"\""
-    },
-    {
-      "name": "SpacecraftFuelCapacity",
       "type": "string",
       "scope": "map",
       "value": "\"\""
@@ -15306,42 +14958,6 @@
       "type": "string",
       "scope": "map",
       "value": "~Hey;Hi~"
-    },
-    {
-      "name": "WantedIndex",
-      "type": "number",
-      "scope": "map",
-      "value": "1.0"
-    },
-    {
-      "name": "WantedPitch",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "WantedYaw",
-      "type": "number",
-      "scope": "player_lifetime",
-      "value": "0"
-    },
-    {
-      "name": "WantedEngineStatus",
-      "type": "logic",
-      "scope": "player_lifetime",
-      "value": "false"
-    },
-    {
-      "name": "RotationSpeed",
-      "type": "number",
-      "scope": "map",
-      "value": "0"
-    },
-    {
-      "name": "SandosLuminosity",
-      "type": "number",
-      "scope": "map",
-      "value": "0.0"
     },
     {
       "name": "SystemData",
@@ -15478,8 +15094,8 @@
   ],
   "language_map": {
     "en_us": {
-      "block.farout.osmium_block": "Block of Osmium",
       "effect.distant_frontiers.oxygen": "Oxygen",
+      "block.farout.osmium_block": "Block of Osmium",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -15488,10 +15104,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.farout.aluminium_ingot": "Aluminium",
       "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
-      "itemGroup.tabrocketry": "Rocketry",
+      "item.farout.aluminium_ingot": "Aluminium",
       "itemGroup.tabenergy": "Energy",
+      "itemGroup.tabrocketry": "Rocketry",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -15749,7 +15365,6 @@
       "item.far_out.disk_player": "Disk Player",
       "item.far_out.hexuraningot": "Hexuran ingot",
       "item.distant_frontiers.hexuran_shovel": "Hexuran Shovel",
-      "advancements.molecular_switches.descr": "Craft a high frequency integrated circuit ",
       "biome.farout.musnius_forests": "Musnius Forests",
       "block.far_out.fungus_fence_gate": "Fungus Fence Gate",
       "block.farout.lumiblossom_fence": "Lumiblossom Fence",
@@ -15785,7 +15400,6 @@
       "gui.distant_frontiers.energymeter_gui.label_energy_production": "Energy production:",
       "item.far_out.vodka": "Vodka",
       "itemGroup.tabnuclear_fusion": "Nuclear Fusion",
-      "advancements.molecular_switches.title": "Molecular Switches",
       "block.distant_frontiers.zeolite_ore": "Zeolite Ore",
       "gui.farout.page_3.label_i_must_be_in_a_globular_cluster": "I must be in a globular cluster, far away from the milky way.",
       "gui.farout.beam_injector_gui.button_fire_beam": "Fire beam!",
@@ -15905,7 +15519,6 @@
       "biome.distant_frontiers.etauos_lowlands": "Etautos lowlands",
       "block.distant_frontiers.electrolyzer": "Electrolyzer",
       "item.distant_frontiers.laser_weapon": "Laser Weapon",
-      "gui.farout.nuclear_reactor_gui.label_nuclear_reactor": "Nuclear Reactor",
       "block.far_out.tracking_station": "Tracking Station",
       "advancements.massivo_land.descr": "Teleport yourself into a gas giant.",
       "item.far_out.oceanus": "Oceanus Portal Igniter",
@@ -16284,7 +15897,6 @@
       "gui.distant_frontiers.etauos_gui.label_etauos": "Etauos",
       "item.distant_frontiers.advanced_control_center": "Advanced Control Center",
       "block.far_out.graphite_ore": "Graphite Ore",
-      "item.farout.high_frequency_integrated_circuit": "High Frequency Integrated Circuit",
       "block.farout.potassium_nitrate_block": "Block of Potassium_nitrate",
       "block.far_out.limestone_block": "Block of Limestone",
       "gui.farout.page_2.label_materials_from_the_raw_ores_i_co": "from the raw ores I collected, so I made a chemical reactor, and put the ores",
@@ -16543,7 +16155,6 @@
       "gui.distant_frontiers.oceanus_gui.label_oceanus": "Oceanus",
       "item.distant_frontiers.open_core_nuclear_thermal_rocket": "Open Cycle Gas Core Nuclear Thermal Rocket",
       "item.distant_frontiers.etauos": "Etauos Portal Igniter",
-      "gui.farout.energymeter_gui.label_energy_production": "Energy production:",
       "item.distant_frontiers.varas": "Varas Portal Igniter",
       "gui.farout.page_3.label_generator_there_and_hooked_it_u": "and hooked it up to my escape pod. I also need to extract the materials",
       "item.distant_frontiers.osmium_filter": "Centrifugal Osmium Filter",
@@ -16598,7 +16209,6 @@
       "block.far_out.silicon_block": "Block of Silicon",
       "gui.farout.page_2.label_generator_there_and_hooked_it_u": "and hooked it up to my escape pod. I also need to extract the materials",
       "gui.farout.page_2.label_day_21_today_is_the_day_i_am_h": "Day 21: Today is the day. I am heading to the moon. Over the last 2 weeks, I",
-      "block.farout.nuclear_reactor": "Nuclear Reactor",
       "block.far_out.upgrade_applyer": "Upgrade Applyer",
       "entity.far_out.starting_lander": "Starting Lander",
       "item.far_out.liquid_hydrogen_fuel_tank": "Liquid Hydrogen Fuel Tank",
@@ -16641,7 +16251,6 @@
       "advancements.low_frequency_microchip_crafted.title": "Homemade microchips",
       "item.far_out.borated_steel_ingot": "Borated Steel",
       "block.far_out.tundra_fungus_planks": "Tundra_Fungus Planks",
-      "item.farout.nuclear_rods": "Nuclear Rods",
       "item.far_out.airtight_fabric": "Airtight Fabric",
       "entity.farout.capsule": "Inflatable lander",
       "death.attack.asphyxiation": "%1$s asphyxiated",
@@ -16758,6 +16367,7 @@
       "biome.farout.dry_plains": "Dry Plains",
       "biome.distant_frontiers.burninghighlands": "Burning highlands",
       "gui.distant_frontiers.proxmai_gui.label_proxmai": "Proxmai",
+      "item.farout.reactor_icon": "Reactor Icon",
       "block.farout.desktop_computer": "Desktop Computer",
       "biome.farout.sunny_islands": "Sunny Islands",
       "item.far_out.etauos": "Etauos Portal Igniter",

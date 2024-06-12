@@ -3,20 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fuelrod",
+    "texture": "energysymbol",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Nuclear Rods",
+    "name": "Reactor Icon",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Energy"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 10000,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

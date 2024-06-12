@@ -38,8 +38,6 @@ import javax.annotation.Nullable;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import java.io.File;
-
 @Mod.EventBusSubscriber
 public class NosurfuceProcedure {
 	@SubscribeEvent
@@ -55,7 +53,6 @@ public class NosurfuceProcedure {
 		if (entity == null)
 			return;
 		String Gamemode = "";
-		File FaroutSaveData = new File("");
 		boolean Interplanetry = false;
 		double X = 0;
 		double Y = 0;

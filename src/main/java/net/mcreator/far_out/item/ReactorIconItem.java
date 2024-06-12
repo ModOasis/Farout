@@ -10,8 +10,8 @@ import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-public class HighFrequencyIntegratedCircuitItem extends Item {
-	public HighFrequencyIntegratedCircuitItem() {
+public class ReactorIconItem extends Item {
+	public ReactorIconItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 

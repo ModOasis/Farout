@@ -48,6 +48,7 @@ import net.mcreator.far_out.item.SaltwaterItem;
 import net.mcreator.far_out.item.SaltDustItem;
 import net.mcreator.far_out.item.RheniumIngotItem;
 import net.mcreator.far_out.item.RelayItem;
+import net.mcreator.far_out.item.ReactorIconItem;
 import net.mcreator.far_out.item.RawMolybdenumItem;
 import net.mcreator.far_out.item.RadiatorItem;
 import net.mcreator.far_out.item.Potassium_nitrateDustItem;
@@ -63,7 +64,6 @@ import net.mcreator.far_out.item.OpenCargoFairingItem;
 import net.mcreator.far_out.item.OceanusEmblemItem;
 import net.mcreator.far_out.item.NuclearSaltWaterRocketItem;
 import net.mcreator.far_out.item.NuclearSaltWaterFuelTankItem;
-import net.mcreator.far_out.item.NuclearRodsItem;
 import net.mcreator.far_out.item.NozzleItem;
 import net.mcreator.far_out.item.MotorItem;
 import net.mcreator.far_out.item.MoonshineItem;
@@ -96,7 +96,6 @@ import net.mcreator.far_out.item.InflatableHabRingItem;
 import net.mcreator.far_out.item.InertialNavigationSystemItem;
 import net.mcreator.far_out.item.HydrogenItem;
 import net.mcreator.far_out.item.HighHeatLoadGraphineRadiatorsItem;
-import net.mcreator.far_out.item.HighFrequencyIntegratedCircuitItem;
 import net.mcreator.far_out.item.HighCapacityMemoryItem;
 import net.mcreator.far_out.item.HexuraningotItem;
 import net.mcreator.far_out.item.HexuranSwordItem;
@@ -218,7 +217,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> HEXURAN_SHOVEL = REGISTRY.register("hexuran_shovel", () -> new HexuranShovelItem());
 	public static final RegistryObject<Item> HEXURAN_HOE = REGISTRY.register("hexuran_hoe", () -> new HexuranHoeItem());
 	public static final RegistryObject<Item> GRAPHITEROD = REGISTRY.register("graphiterod", () -> new GraphiterodItem());
-	public static final RegistryObject<Item> NUCLEAR_REACTOR = block(FaroutModBlocks.NUCLEAR_REACTOR);
 	public static final RegistryObject<Item> TOKAMAKFUSIONREACTOR = block(FaroutModBlocks.TOKAMAKFUSIONREACTOR);
 	public static final RegistryObject<Item> LARGE_SOLAR_PANELS = block(FaroutModBlocks.LARGE_SOLAR_PANELS);
 	public static final RegistryObject<Item> GRAPHITE_ORE = block(FaroutModBlocks.GRAPHITE_ORE);
@@ -264,7 +262,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> WRENCH = REGISTRY.register("wrench", () -> new WrenchItem());
 	public static final RegistryObject<Item> LOW_FREQUENCY_INTEGRATED_CIRCUIT = REGISTRY.register("low_frequency_integrated_circuit", () -> new LowFrequencyIntegratedCircuitItem());
 	public static final RegistryObject<Item> MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT = REGISTRY.register("medium_frequency_integrated_circuit", () -> new MediumFrequencyIntegratedCircuitItem());
-	public static final RegistryObject<Item> HIGH_FREQUENCY_INTEGRATED_CIRCUIT = REGISTRY.register("high_frequency_integrated_circuit", () -> new HighFrequencyIntegratedCircuitItem());
 	public static final RegistryObject<Item> GRAPHENE = REGISTRY.register("graphene", () -> new GrapheneItem());
 	public static final RegistryObject<Item> INTEGRATED_CIRCUIT_FABRICATOR = block(FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR);
 	public static final RegistryObject<Item> ORGANIC_MOLECULES = REGISTRY.register("organic_molecules", () -> new OrganicMoleculesItem());
@@ -309,7 +306,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> COOKED_SYNTHETIC_MEAT = REGISTRY.register("cooked_synthetic_meat", () -> new CookedSyntheticMeatItem());
 	public static final RegistryObject<Item> SMALL_ATMOSPHERIC_LANDER = REGISTRY.register("small_atmospheric_lander", () -> new SmallAtmosphericLanderItem());
 	public static final RegistryObject<Item> MEAT_PROTEIN_GENE = REGISTRY.register("meat_protein_gene", () -> new MeatProteinGeneItem());
-	public static final RegistryObject<Item> NUCLEAR_RODS = REGISTRY.register("nuclear_rods", () -> new NuclearRodsItem());
 	public static final RegistryObject<Item> Z_PINCH_FUSION_REACTOR = block(FaroutModBlocks.Z_PINCH_FUSION_REACTOR);
 	public static final RegistryObject<Item> FUSION_CHAMBER = REGISTRY.register("fusion_chamber", () -> new FusionChamberItem());
 	public static final RegistryObject<Item> COFFINITE_ORE = block(FaroutModBlocks.COFFINITE_ORE);
@@ -395,6 +391,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MUSNIUS_PLANKS = block(FaroutModBlocks.MUSNIUS_PLANKS);
 	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
 	public static final RegistryObject<Item> MUSNIUS_SAPLING = block(FaroutModBlocks.MUSNIUS_SAPLING);
+	public static final RegistryObject<Item> REACTOR_ICON = REGISTRY.register("reactor_icon", () -> new ReactorIconItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -28,6 +28,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.procedures.StirlingEngineUpdateTickProcedure;
+import net.mcreator.far_out.procedures.StirlingEngineBlockAddedProcedure;
 import net.mcreator.far_out.init.FaroutModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -100,6 +101,7 @@ public class StirlingEngineBlock extends BaseEntityBlock implements EntityBlock 
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
+		StirlingEngineBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:nuclear_reactor"
+      "item": "farout:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.nuclear_reactor_made.title"
@@ -21,7 +21,7 @@
         "location": [
           {
             "condition": "minecraft:block_state_property",
-            "block": "farout:nuclear_reactor"
+            "block": "farout:deleted_mod_element"
           }
         ]
       }

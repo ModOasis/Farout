@@ -25,7 +25,6 @@ import net.mcreator.far_out.client.gui.Page2Screen;
 import net.mcreator.far_out.client.gui.Page1Screen;
 import net.mcreator.far_out.client.gui.OreExtractorGUIScreen;
 import net.mcreator.far_out.client.gui.OraxMapScreen;
-import net.mcreator.far_out.client.gui.NuclearReactorGUIScreen;
 import net.mcreator.far_out.client.gui.MissionControlGUIScreen;
 import net.mcreator.far_out.client.gui.MassivoMapScreen;
 import net.mcreator.far_out.client.gui.MainMapScreen;
@@ -39,7 +38,6 @@ import net.mcreator.far_out.client.gui.FormalonMapScreen;
 import net.mcreator.far_out.client.gui.FissionFragmentStarshipGUIScreen;
 import net.mcreator.far_out.client.gui.FairingGUIScreen;
 import net.mcreator.far_out.client.gui.EtauiMapScreen;
-import net.mcreator.far_out.client.gui.EnergymeterGUIScreen;
 import net.mcreator.far_out.client.gui.ElectrolyzerGUIScreen;
 import net.mcreator.far_out.client.gui.DropPodGUIScreen;
 import net.mcreator.far_out.client.gui.DesktopComputerGUIScreen;
@@ -56,11 +54,9 @@ public class FaroutModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(FaroutModMenus.NUCLEAR_REACTOR_GUI.get(), NuclearReactorGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.FUSIONREACTORGUI.get(), FusionreactorguiScreen::new);
 			MenuScreens.register(FaroutModMenus.VOLTMETERGUI.get(), VoltmeterguiScreen::new);
 			MenuScreens.register(FaroutModMenus.CENTRIFUGALSEPARATOR_GUI.get(), CentrifugalseparatorGUIScreen::new);
-			MenuScreens.register(FaroutModMenus.ENERGYMETER_GUI.get(), EnergymeterGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.DROP_POD_GUI.get(), DropPodGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.CARDBOARDBOXGUI.get(), CardboardboxguiScreen::new);
 			MenuScreens.register(FaroutModMenus.REGOLITH_SIFTER_GUI.get(), RegolithSifterGUIScreen::new);

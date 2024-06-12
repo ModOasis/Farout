@@ -35,8 +35,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.far_out.procedures.TokamakfusionreactorUpdateTickProcedure;
 import net.mcreator.far_out.procedures.TokamakfusionreactorOnBlockRightClickedProcedure;
+import net.mcreator.far_out.procedures.TokamakFusionReactorOnUpdateTickProcedure;
+import net.mcreator.far_out.procedures.HydrogenFuelCellBlockAddedProcedure;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 
 import java.util.List;
@@ -107,6 +108,7 @@ public class TokamakfusionreactorBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 10);
+		HydrogenFuelCellBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -115,7 +117,7 @@ public class TokamakfusionreactorBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		TokamakfusionreactorUpdateTickProcedure.execute(world, x, y, z);
+		TokamakFusionReactorOnUpdateTickProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}
 
