@@ -22,7 +22,7 @@ public class CalculateWattageProcedure {
 				.getItem()) {
 			FaroutModVariables.MapVariables.get(world).SpacecraftWatts = 100;
 			FaroutModVariables.MapVariables.get(world).syncData(world);
-		} else if (FaroutModItems.DELETED_MOD_ELEMENT.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+		} else if (FaroutModItems.LIGHT_ISOTOPES.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
 				.getItem()) {
 			FaroutModVariables.MapVariables.get(world).SpacecraftWatts = 500;
 			FaroutModVariables.MapVariables.get(world).syncData(world);

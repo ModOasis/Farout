@@ -18,7 +18,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.far_out.init.FaroutModItems;
-import net.mcreator.far_out.client.gui.VoltmeterguiScreen;
+import net.mcreator.far_out.client.gui.AmmeterGUIScreen;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
@@ -29,7 +29,7 @@ public class AmmeterInventoryCapability implements ICapabilitySerializable<Compo
 	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == FaroutModItems.AMMETER.get()) {
-			if (Minecraft.getInstance().screen instanceof VoltmeterguiScreen) {
+			if (Minecraft.getInstance().screen instanceof AmmeterGUIScreen) {
 				Minecraft.getInstance().player.closeContainer();
 			}
 		}

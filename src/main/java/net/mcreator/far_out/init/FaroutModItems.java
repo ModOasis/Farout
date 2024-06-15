@@ -36,6 +36,7 @@ import net.mcreator.far_out.item.StarshipCoreItem;
 import net.mcreator.far_out.item.SporeBerriesItem;
 import net.mcreator.far_out.item.SpodumeneItem;
 import net.mcreator.far_out.item.SphaleriteItem;
+import net.mcreator.far_out.item.SpaceshipBlueprintItem;
 import net.mcreator.far_out.item.SpacecraftConstructionMeterialsItem;
 import net.mcreator.far_out.item.SpaceSuitItem;
 import net.mcreator.far_out.item.SolidCoreNuclearThermalRocketItem;
@@ -392,6 +393,8 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> MUSNIUS_LEAVES = block(FaroutModBlocks.MUSNIUS_LEAVES);
 	public static final RegistryObject<Item> MUSNIUS_SAPLING = block(FaroutModBlocks.MUSNIUS_SAPLING);
 	public static final RegistryObject<Item> REACTOR_ICON = REGISTRY.register("reactor_icon", () -> new ReactorIconItem());
+	public static final RegistryObject<Item> DESIGNING_WORKBENCH = block(FaroutModBlocks.DESIGNING_WORKBENCH);
+	public static final RegistryObject<Item> SPACESHIP_BLUEPRINT = REGISTRY.register("spaceship_blueprint", () -> new SpaceshipBlueprintItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

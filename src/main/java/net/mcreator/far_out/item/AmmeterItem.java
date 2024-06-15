@@ -22,7 +22,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 
-import net.mcreator.far_out.world.inventory.VoltmeterguiMenu;
+import net.mcreator.far_out.world.inventory.AmmeterGUIMenu;
 import net.mcreator.far_out.item.inventory.AmmeterInventoryCapability;
 
 import javax.annotation.Nullable;
@@ -56,7 +56,7 @@ public class AmmeterItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new VoltmeterguiMenu(id, inventory, packetBuffer);
+					return new AmmeterGUIMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());

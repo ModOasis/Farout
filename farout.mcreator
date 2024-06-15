@@ -481,55 +481,6 @@
       }
     },
     {
-      "name": "Voltmetergui",
-      "type": "gui",
-      "sortid": 250,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "voltmetergui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/VoltmeterguiScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/VoltmeterguiMenu.java"
-        ]
-      }
-    },
-    {
-      "name": "VoltometerOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 251,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "voltometer_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/VoltometerOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Lavaoceans",
       "type": "biome",
       "sortid": 252,
@@ -4972,7 +4923,7 @@
       "name": "CalculatePayloadProperties",
       "type": "procedure",
       "sortid": 851,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "calculate_payload_properties",
       "metadata": {
@@ -5022,7 +4973,7 @@
       "name": "CalculateWattage",
       "type": "procedure",
       "sortid": 853,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "calculate_wattage",
       "metadata": {
@@ -8682,7 +8633,7 @@
       "name": "RefreshFairingProperties",
       "type": "procedure",
       "sortid": 1130,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "refresh_fairing_properties",
       "metadata": {
@@ -14716,6 +14667,194 @@
           }
         ]
       }
+    },
+    {
+      "name": "ReturnEnergyUsed",
+      "type": "procedure",
+      "sortid": 1553,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_energy_used",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnEnergyUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnEnergyProduced",
+      "type": "procedure",
+      "sortid": 1554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_energy_produced",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnEnergyProducedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TotalEnergySurplus",
+      "type": "procedure",
+      "sortid": 1555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "total_energy_surplus",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/TotalEnergySurplusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AmmeterGUI",
+      "type": "gui",
+      "sortid": 1556,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammeter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/client/gui/AmmeterGUIScreen.java",
+          "src/main/java/net/mcreator/far_out/world/inventory/AmmeterGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "AmmeterRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 1557,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ammeter_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/AmmeterRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesigningWorkbench",
+      "type": "block",
+      "sortid": 1558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "designing_workbench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/designing_workbench.json",
+          "src/main/resources/assets/farout/blockstates/designing_workbench.json",
+          "src/main/java/net/mcreator/far_out/block/DesigningWorkbenchBlock.java",
+          "src/main/resources/assets/farout/models/block/designing_workbench.json"
+        ]
+      }
+    },
+    {
+      "name": "SpaceshipBlueprint",
+      "type": "item",
+      "sortid": 1559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spaceship_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/spaceship_blueprint.json",
+          "src/main/java/net/mcreator/far_out/item/SpaceshipBlueprintItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DesigningWorkbenchGUI",
+      "type": "gui",
+      "sortid": 1560,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "designing_workbench_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/world/inventory/DesigningWorkbenchGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/client/gui/DesigningWorkbenchGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "DesigningWorkbenchOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 1561,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "designing_workbench_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesigningWorkbenchOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15094,8 +15233,8 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.farout.osmium_block": "Block of Osmium",
+      "effect.distant_frontiers.oxygen": "Oxygen",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -15104,10 +15243,10 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "item.farout.aluminium_ingot": "Aluminium",
-      "itemGroup.tabenergy": "Energy",
+      "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
       "itemGroup.tabrocketry": "Rocketry",
+      "itemGroup.tabenergy": "Energy",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -15134,6 +15273,7 @@
       "gui.farout.page_2.label_the_goal_is_this_going_to_the_h": "The goal is this: going to the habitable moon, and back.",
       "advancements.massivo_land.title": "CHEATER",
       "gui.distant_frontiers.rocket_dest_selector.button_etauos": "Etauos",
+      "gui.farout.designing_workbench_gui.label_propulsion_system": "Propulsion system:",
       "item.distant_frontiers.graphiterod": "Graphite rod",
       "block.no.heat_exchanger": "Heat Exchanger",
       "block.no.uranium_ore": "Uranium Ore",
@@ -15253,8 +15393,10 @@
       "gui.farout.page_2.label_i_crashed_on_an_alien_world_wi": "day 1: I crashed on an alien world with green skies and purple plant life. ",
       "block.distant_frontiers.cesium_block": "Block of Cesium",
       "gui.distant_frontiers.fairing_gui.label_hab_timevarintegerhab": "Hab Time:\u003cVAR:integer:Hab\u003e",
+      "gui.farout.designing_workbench_gui.label_habitation_module": "Habitation module:",
       "item.far_out.unmannedlanderitem": "Unmanned lander ",
       "block.farout.sphalerite_ore": "Sphalerite Ore",
+      "gui.farout.designing_workbench_gui.label_control_unit": "Control unit:",
       "block.far_out.chacoavines": "Chacoa mycelium",
       "block.far_out.savanna_fungi_fence_gate": "Savanna Fungi Fence Gate",
       "gui.farout.page_2.label_lot_of_raw_materials_like_spodu": "lot of raw materials, like spodumene, and iron, so I collected some materials,",
@@ -15333,6 +15475,7 @@
       "item.farout.saltwater_bucket": "Saltwater Bucket",
       "item.distant_frontiers.space_suit_chestplate": "Space Suit Body",
       "item.far_out.habatis": "Habatis Portal Igniter",
+      "gui.farout.designing_workbench_gui.label_surplus_wattage": "Surplus wattage:",
       "gui.distant_frontiers.silican_gui.label_has_life_that_is_based_on_silico": "Has life that is based on silicon,",
       "item.far_out.rhenium_filter": "Centrifugal Rhenium Filter",
       "gui.distant_frontiers.d_cgui_1.button_knowledge_base": "Knowledge base",
@@ -15470,6 +15613,7 @@
       "item.far_out.helium": "Helium",
       "item.farout.medium_frequency_integrated_circuit": "Medium Frequency Integrated Circuit",
       "block.far_out.tundra_fungus_fence_gate": "Tundra Fungus Fence Gate",
+      "gui.farout.designing_workbench_gui.label_habitation_time": "Habitation time:",
       "block.far_out.ailen_moss": "Ailen Moss",
       "item.farout.graphite_ingot": "Graphite",
       "block.distant_frontiers.chacoavines": "Chacoa mycelium",
@@ -15612,7 +15756,6 @@
       "item.far_out.bio_jet_fuel_bucket": "BioJet Fuel Bucket",
       "item.distant_frontiers.silicon_dust": "Silicon",
       "block.far_out.varas_base_foundation": "Varas Base Foundation",
-      "gui.farout.voltmetergui.label_voltometer": "Voltometer",
       "block.no.fungus_stairs": "Fungus Stairs",
       "advancements.nozzle_crafted.title": "How hard can rocketry be?",
       "item.distant_frontiers.glowstone_filter": "Centrifugal Glowstone Filter",
@@ -15720,6 +15863,7 @@
       "item.distant_frontiers.solid_core_nuclear_thermal_rocket": "Solid Core Nuclear Thermal Rocket",
       "gui.distant_frontiers.regolith_sifter_gui.label_regolith_sifter": " Regolith Sifter",
       "item.no.oxygen_bottle": "Oxygen Bottle",
+      "block.farout.designing_workbench": "Designing Workbench",
       "item.farout.salt_dust": "Salt",
       "block.farout.gunpowder_block": "Block of Gunpowder",
       "block.farout.lithium_block": "Block of Lithium",
@@ -15800,13 +15944,13 @@
       "gui.distant_frontiers.oceanus_gui.label_other_information_mosty_made": "other information: mosty made",
       "item.far_out.alienalgae": "Alien algae clump",
       "advancements.exotic_nuclear_propulsion.title": "Exotic Nuclear Propulsion",
-      "gui.farout.voltmetergui.label_energy": "\u003cenergy\u003e",
       "gui.distant_frontiers.oceanus_gui.label_ago_its_orbital_period_and": "ago. It\u0027s orbital period and",
       "gui.farout.page_3.label_minerals_in_it_to_separate": "in there to separate. ",
       "item.farout.hydrogen": "Hydrogen",
       "block.farout.airtight_habitat_wall": "Airtight Habitat Wall",
       "item.distant_frontiers.vulcan": "Vulcan Portal Igniter",
       "biome.far_out.space": "Space",
+      "item.farout.spaceship_blueprint": "Spaceship Blueprint",
       "item.farout.argon": "Argon",
       "advancements.nozzle_crafted.descr": "Craft a rocket.",
       "block.farout.chacoavines": "Chacoa mycelium",
@@ -16140,6 +16284,7 @@
       "gui.distant_frontiers.genetic_sequencer.label_exotic_nucleotide_translator": "Exotic nucleotide translator",
       "item.no.sky_hydrozoan_spawn_egg": "Sky Hydrozoan Spawn Egg",
       "gui.farout.page_3.label_i_glanced_at_the_beautiful_calci": "I glanced at the beautiful calcite highlands, with blue oceans,",
+      "gui.farout.designing_workbench_gui.label_electric_generator": "Electric generator:",
       "gui.farout.fairing_gui.label_button_is_pressed": "Button Is Pressed",
       "gui.farout.page_2.label_that_if_you_can_get_your_ship_in": "that if you can get your ship into orbit, you\u0027re halfway to anywhere. The ",
       "block.distant_frontiers.acrylonitrile": "Acrylonitrile",
@@ -16308,6 +16453,7 @@
       "biome.far_out.silican_midlands": "Silican Midlands",
       "gui.farout.rocket_trajectory_selection.button_infinatos": "Infinatos",
       "gui.farout.page_2.label_chlorella_is_like_a_miracle_food": "Chlorella is like a miracle food, because it has a high protein, fat and carb",
+      "gui.farout.designing_workbench_gui.label_dv": "ΔV:",
       "block.far_out.olivine_wood": "Olivine Wood",
       "effect.far_out.oxygen": "Oxygen",
       "item.farout.basic_command_disk": "Basic Command Disk",

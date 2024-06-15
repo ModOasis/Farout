@@ -22,7 +22,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class VoltmeterguiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class DesigningWorkbenchGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -35,8 +35,8 @@ public class VoltmeterguiMenu extends AbstractContainerMenu implements Supplier<
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public VoltmeterguiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(FaroutModMenus.VOLTMETERGUI.get(), id);
+	public DesigningWorkbenchGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(FaroutModMenus.DESIGNING_WORKBENCH_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);

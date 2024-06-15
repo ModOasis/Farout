@@ -12,7 +12,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.far_out.client.gui.ZPinchFusionReactorGUIScreen;
-import net.mcreator.far_out.client.gui.VoltmeterguiScreen;
 import net.mcreator.far_out.client.gui.StartingLanderGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipControlGUIScreen;
 import net.mcreator.far_out.client.gui.StarshipComponentsGUIScreen;
@@ -41,6 +40,7 @@ import net.mcreator.far_out.client.gui.EtauiMapScreen;
 import net.mcreator.far_out.client.gui.ElectrolyzerGUIScreen;
 import net.mcreator.far_out.client.gui.DropPodGUIScreen;
 import net.mcreator.far_out.client.gui.DesktopComputerGUIScreen;
+import net.mcreator.far_out.client.gui.DesigningWorkbenchGUIScreen;
 import net.mcreator.far_out.client.gui.CrystalDriveGUIScreen;
 import net.mcreator.far_out.client.gui.ChemicalReactorGUIScreen;
 import net.mcreator.far_out.client.gui.CentrifugalseparatorGUIScreen;
@@ -48,6 +48,7 @@ import net.mcreator.far_out.client.gui.CargoFairingGUIScreen;
 import net.mcreator.far_out.client.gui.CardboardboxguiScreen;
 import net.mcreator.far_out.client.gui.BiologicalIncubatorGUIScreen;
 import net.mcreator.far_out.client.gui.BeamInjectorGUIScreen;
+import net.mcreator.far_out.client.gui.AmmeterGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class FaroutModScreens {
@@ -55,7 +56,6 @@ public class FaroutModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(FaroutModMenus.FUSIONREACTORGUI.get(), FusionreactorguiScreen::new);
-			MenuScreens.register(FaroutModMenus.VOLTMETERGUI.get(), VoltmeterguiScreen::new);
 			MenuScreens.register(FaroutModMenus.CENTRIFUGALSEPARATOR_GUI.get(), CentrifugalseparatorGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.DROP_POD_GUI.get(), DropPodGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.CARDBOARDBOXGUI.get(), CardboardboxguiScreen::new);
@@ -91,6 +91,8 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.STARSHIP_CONTROL_GUI.get(), StarshipControlGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.MISSION_CONTROL_GUI.get(), MissionControlGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.HYDROGEN_FUEL_CELL_GUI.get(), HydrogenFuelCellGUIScreen::new);
+			MenuScreens.register(FaroutModMenus.AMMETER_GUI.get(), AmmeterGUIScreen::new);
+			MenuScreens.register(FaroutModMenus.DESIGNING_WORKBENCH_GUI.get(), DesigningWorkbenchGUIScreen::new);
 		});
 	}
 }

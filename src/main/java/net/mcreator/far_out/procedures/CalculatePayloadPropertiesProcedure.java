@@ -35,10 +35,9 @@ public class CalculatePayloadPropertiesProcedure {
 		double Watts = 0;
 		double HabitationTime = 0;
 		double PlanetaryDifficulty = 0;
-		if (FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
+		if (FaroutModItems.SOLAR_COLLECTOR.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
 			Watts = 100;
-		} else if (FaroutModItems.DELETED_MOD_ELEMENT.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+		} else if (FaroutModItems.MOLYBDENUM_INGOT.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
 				.getItem()) {
 			Watts = 500;
 		} else if (FaroutModBlocks.Z_PINCH_FUSION_REACTOR.get()

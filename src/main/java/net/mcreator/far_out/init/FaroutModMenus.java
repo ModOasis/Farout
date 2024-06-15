@@ -12,7 +12,6 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.mcreator.far_out.world.inventory.ZPinchFusionReactorGUIMenu;
-import net.mcreator.far_out.world.inventory.VoltmeterguiMenu;
 import net.mcreator.far_out.world.inventory.StartingLanderGUIMenu;
 import net.mcreator.far_out.world.inventory.StarshipControlGUIMenu;
 import net.mcreator.far_out.world.inventory.StarshipComponentsGUIMenu;
@@ -41,6 +40,7 @@ import net.mcreator.far_out.world.inventory.EtauiMapMenu;
 import net.mcreator.far_out.world.inventory.ElectrolyzerGUIMenu;
 import net.mcreator.far_out.world.inventory.DropPodGUIMenu;
 import net.mcreator.far_out.world.inventory.DesktopComputerGUIMenu;
+import net.mcreator.far_out.world.inventory.DesigningWorkbenchGUIMenu;
 import net.mcreator.far_out.world.inventory.CrystalDriveGUIMenu;
 import net.mcreator.far_out.world.inventory.ChemicalReactorGUIMenu;
 import net.mcreator.far_out.world.inventory.CentrifugalseparatorGUIMenu;
@@ -48,12 +48,12 @@ import net.mcreator.far_out.world.inventory.CargoFairingGUIMenu;
 import net.mcreator.far_out.world.inventory.CardboardboxguiMenu;
 import net.mcreator.far_out.world.inventory.BiologicalIncubatorGUIMenu;
 import net.mcreator.far_out.world.inventory.BeamInjectorGUIMenu;
+import net.mcreator.far_out.world.inventory.AmmeterGUIMenu;
 import net.mcreator.far_out.FaroutMod;
 
 public class FaroutModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, FaroutMod.MODID);
 	public static final RegistryObject<MenuType<FusionreactorguiMenu>> FUSIONREACTORGUI = REGISTRY.register("fusionreactorgui", () -> IForgeMenuType.create(FusionreactorguiMenu::new));
-	public static final RegistryObject<MenuType<VoltmeterguiMenu>> VOLTMETERGUI = REGISTRY.register("voltmetergui", () -> IForgeMenuType.create(VoltmeterguiMenu::new));
 	public static final RegistryObject<MenuType<CentrifugalseparatorGUIMenu>> CENTRIFUGALSEPARATOR_GUI = REGISTRY.register("centrifugalseparator_gui", () -> IForgeMenuType.create(CentrifugalseparatorGUIMenu::new));
 	public static final RegistryObject<MenuType<DropPodGUIMenu>> DROP_POD_GUI = REGISTRY.register("drop_pod_gui", () -> IForgeMenuType.create(DropPodGUIMenu::new));
 	public static final RegistryObject<MenuType<CardboardboxguiMenu>> CARDBOARDBOXGUI = REGISTRY.register("cardboardboxgui", () -> IForgeMenuType.create(CardboardboxguiMenu::new));
@@ -89,4 +89,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<StarshipControlGUIMenu>> STARSHIP_CONTROL_GUI = REGISTRY.register("starship_control_gui", () -> IForgeMenuType.create(StarshipControlGUIMenu::new));
 	public static final RegistryObject<MenuType<MissionControlGUIMenu>> MISSION_CONTROL_GUI = REGISTRY.register("mission_control_gui", () -> IForgeMenuType.create(MissionControlGUIMenu::new));
 	public static final RegistryObject<MenuType<HydrogenFuelCellGUIMenu>> HYDROGEN_FUEL_CELL_GUI = REGISTRY.register("hydrogen_fuel_cell_gui", () -> IForgeMenuType.create(HydrogenFuelCellGUIMenu::new));
+	public static final RegistryObject<MenuType<AmmeterGUIMenu>> AMMETER_GUI = REGISTRY.register("ammeter_gui", () -> IForgeMenuType.create(AmmeterGUIMenu::new));
+	public static final RegistryObject<MenuType<DesigningWorkbenchGUIMenu>> DESIGNING_WORKBENCH_GUI = REGISTRY.register("designing_workbench_gui", () -> IForgeMenuType.create(DesigningWorkbenchGUIMenu::new));
 }

@@ -34,6 +34,7 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem());
 				tabData.accept(FaroutModBlocks.BASALTIC_DIRT.get().asItem());
 				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
+				tabData.accept(FaroutModItems.AMMETER.get());
 				tabData.accept(FaroutModItems.IRON_WHEEL.get());
 			})
 
@@ -76,6 +77,8 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.CRYOGENIC_STASIS_CHAMBER.get());
 				tabData.accept(FaroutModItems.MAGNETOPLASMADYNAMIC_THRUSTER.get());
 				tabData.accept(FaroutModItems.LITHIUM_FUEL_TANK.get());
+				tabData.accept(FaroutModBlocks.DESIGNING_WORKBENCH.get().asItem());
+				tabData.accept(FaroutModItems.SPACESHIP_BLUEPRINT.get());
 			})
 
 					.build());
@@ -95,7 +98,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.DATA_DISK_1.get());
 				tabData.accept(FaroutModItems.RELAY.get());
 				tabData.accept(FaroutModItems.CAPACITOR.get());
-				tabData.accept(FaroutModItems.AMMETER.get());
 			})
 
 					.build());

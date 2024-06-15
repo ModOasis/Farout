@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "farout:low_frequency_integrated_circuit",
-    "farout:medium_frequency_integrated_circuit",
-    "farout:high_frequency_integrated_circuit"
+    "farout:medium_frequency_integrated_circuit"
   ]
 }

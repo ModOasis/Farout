@@ -76,6 +76,7 @@ import net.mcreator.far_out.block.EtauosianGrainstalkBlock;
 import net.mcreator.far_out.block.ElectrolyzerBlock;
 import net.mcreator.far_out.block.DryWaterBlock;
 import net.mcreator.far_out.block.DesktopComputerBlock;
+import net.mcreator.far_out.block.DesigningWorkbenchBlock;
 import net.mcreator.far_out.block.CrystalineExoskeletonBlock;
 import net.mcreator.far_out.block.CrushedQuartzBlock;
 import net.mcreator.far_out.block.CoffiniteOreBlock;
@@ -192,6 +193,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> MUSNIUS_PLANKS = REGISTRY.register("musnius_planks", () -> new MusniusPlanksBlock());
 	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
 	public static final RegistryObject<Block> MUSNIUS_SAPLING = REGISTRY.register("musnius_sapling", () -> new MusniusSaplingBlock());
+	public static final RegistryObject<Block> DESIGNING_WORKBENCH = REGISTRY.register("designing_workbench", () -> new DesigningWorkbenchBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

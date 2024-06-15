@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "ammeter",
+    "texture": "paper",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Ammeter",
+    "name": "Spaceship Blueprint",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Energy"
+      "value": "CUSTOM:Rocketry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -32,8 +32,8 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "AmmeterGUI",
-    "inventorySize": 0,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
