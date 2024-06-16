@@ -15,7 +15,7 @@
         "data": {
           "image": "canvas.png",
           "use1Xscale": false,
-          "x": 34,
+          "x": 35,
           "y": 0
         }
       },
@@ -80,24 +80,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "chemical_propulsion_small.png",
-          "use1Xscale": false,
-          "x": 87,
-          "y": 143
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "solar_generator.png",
-          "use1Xscale": false,
-          "x": 71,
-          "y": 129
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_surplus_wattage",
@@ -145,10 +127,31 @@
       {
         "type": "image",
         "data": {
+          "image": "chemical_propulsion_small.png",
+          "use1Xscale": false,
+          "x": 79,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "solar_generator.png",
+          "use1Xscale": false,
+          "x": 63,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
           "image": "basic_habitation.png",
           "use1Xscale": false,
-          "x": 87,
-          "y": 115
+          "displayCondition": {
+            "name": "BasicHabVisibiltyCondition"
+          },
+          "x": 79,
+          "y": 25
         }
       },
       {
@@ -157,7 +160,10 @@
           "name": "imagebutton_arrow",
           "image": "arrow.png",
           "hoveredImage": "arrow_pressed.png",
-          "x": 240,
+          "onClick": {
+            "name": "IncrementHabID"
+          },
+          "x": 244,
           "y": 26
         }
       },
@@ -167,8 +173,123 @@
           "name": "imagebutton_arrow_left",
           "image": "arrow_left.png",
           "hoveredImage": "arrow_left_pressed.png",
-          "x": 132,
+          "onClick": {
+            "name": "DecrementHabID"
+          },
+          "x": 119,
           "y": 26
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left1",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "x": 119,
+          "y": 54
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 244,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 244,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left2",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "x": 119,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow3",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 244,
+          "y": 116
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left3",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "x": 119,
+          "y": 115
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_recalculate",
+          "text": "Recalculate",
+          "isUndecorated": true,
+          "width": 82,
+          "height": 20,
+          "x": 149,
+          "y": 219
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_habitation_module",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnHabitationModule"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 131,
+          "y": 28
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inflatable_habitat.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InflatableHabitatVisiblity"
+          },
+          "x": 78,
+          "y": -8
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inflatable_centrifuge.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InflatableCentrifugeVisibility"
+          },
+          "x": 62,
+          "y": 24
         }
       }
     ],
@@ -177,7 +298,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

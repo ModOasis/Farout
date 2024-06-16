@@ -23,7 +23,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -219,7 +218,5 @@ public class OnLoadedEntityTickUpdateProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FaroutModBlocks.LIQUID_SULFUR_DIOXIDE.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == FaroutModBlocks.LIQUID_AMMONIA.get()) {
 			entity.setTicksFrozen((int) (entity.getTicksFrozen() + 1));
 		}
-		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal((FaroutModVariables.WorldVariables.get(world).WattageProduced + ", " + FaroutModVariables.WorldVariables.get(world).WattageUsed)), false);
 	}
 }

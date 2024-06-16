@@ -3,7 +3,7 @@
   "textures": {
     "all": "farout:block/designingworkbenchtex",
     "particle": "farout:block/designingworkbenchtex",
-    "1": "farout:block/designingworkbenchtex"
+    "0": "farout:block/designingworkbenchtex"
   },
   "render_type": "cutout_mipped"
 }

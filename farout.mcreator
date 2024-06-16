@@ -14788,6 +14788,7 @@
         "files": [
           "src/main/resources/assets/farout/models/item/designing_workbench.json",
           "src/main/resources/assets/farout/blockstates/designing_workbench.json",
+          "src/main/java/net/mcreator/far_out/block/entity/DesigningWorkbenchBlockEntity.java",
           "src/main/java/net/mcreator/far_out/block/DesigningWorkbenchBlock.java",
           "src/main/resources/assets/farout/models/block/designing_workbench.json"
         ]
@@ -14816,6 +14817,7 @@
       "registry_name": "designing_workbench_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/far_out/network/DesigningWorkbenchGUIButtonMessage.java",
           "src/main/java/net/mcreator/far_out/world/inventory/DesigningWorkbenchGUIMenu.java",
           "src/main/java/net/mcreator/far_out/client/gui/DesigningWorkbenchGUIScreen.java"
         ]
@@ -14837,6 +14839,227 @@
             "name": "entity",
             "type": "entity"
           },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IncrementHabID",
+      "type": "procedure",
+      "sortid": 1562,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_hab_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IncrementHabIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecrementHabID",
+      "type": "procedure",
+      "sortid": 1563,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decrement_hab_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DecrementHabIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesigningWorkbenchBlockAdded",
+      "type": "procedure",
+      "sortid": 1564,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "designing_workbench_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DesigningWorkbenchBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnHabitationModule",
+      "type": "procedure",
+      "sortid": 1565,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_habitation_module",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnHabitationModuleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BasicHabVisibiltyCondition",
+      "type": "procedure",
+      "sortid": 1566,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_hab_visibilty_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/BasicHabVisibiltyConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InflatableHabitatVisiblity",
+      "type": "procedure",
+      "sortid": 1567,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inflatable_habitat_visiblity",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/InflatableHabitatVisiblityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InflatableCentrifugeVisibility",
+      "type": "procedure",
+      "sortid": 1568,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inflatable_centrifuge_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/InflatableCentrifugeVisibilityProcedure.java"
+        ],
+        "dependencies": [
           {
             "name": "x",
             "type": "number"
@@ -16442,6 +16665,7 @@
       "item.no.space_suit_leggings": "Space Suit Legs",
       "biome.no.massvio_space": "Massvio Space",
       "gui.farout.page_3.label_i_made_a_pickaxe_using_a_long": "I made a pickaxe using a long, sharpened stone and a stick. This world has a",
+      "gui.farout.designing_workbench_gui.button_recalculate": "Recalculate",
       "item.far_out.unmanned_payload": "Unmanned Payload",
       "block.distant_frontiers.aluminium_block": "Block of Aluminium",
       "biome.farout.icy_plains": "Icy Plains",

@@ -21,6 +21,7 @@ import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
 import net.mcreator.far_out.block.entity.HydrogenFuelCellBlockEntity;
 import net.mcreator.far_out.block.entity.ElectrolyzerBlockEntity;
 import net.mcreator.far_out.block.entity.DesktopComputerBlockEntity;
+import net.mcreator.far_out.block.entity.DesigningWorkbenchBlockEntity;
 import net.mcreator.far_out.block.entity.ChemicalReactorBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoavinesBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoaBlockEntity;
@@ -44,6 +45,7 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<StirlingEngineTileEntity>> STIRLING_ENGINE = REGISTRY.register("stirling_engine",
 			() -> BlockEntityType.Builder.of(StirlingEngineTileEntity::new, FaroutModBlocks.STIRLING_ENGINE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> MUSNIUS_SAPLING = register("musnius_sapling", FaroutModBlocks.MUSNIUS_SAPLING, MusniusSaplingBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> DESIGNING_WORKBENCH = register("designing_workbench", FaroutModBlocks.DESIGNING_WORKBENCH, DesigningWorkbenchBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

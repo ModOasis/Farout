@@ -54,7 +54,7 @@ public class IntegratedCircuitFabricatorGUIScreen extends AbstractContainerScree
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow.png"), this.leftPos + 85, this.topPos + 25, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow.png"), this.leftPos + 85, this.topPos + 25, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}

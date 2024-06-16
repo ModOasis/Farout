@@ -71,46 +71,46 @@
       {
         "mx": -7.0,
         "my": 14.0,
-        "mz": 0.0,
+        "mz": 11.0,
         "Mx": 23.0,
         "My": 22.0,
-        "Mz": 5.0,
+        "Mz": 16.0,
         "subtract": false
       },
       {
-        "mx": -5.0,
+        "mx": -3.0,
         "my": 14.0,
-        "mz": 9.0,
-        "Mx": -1.0,
+        "mz": 1.0,
+        "Mx": 1.0,
         "My": 15.0,
-        "Mz": 15.0,
+        "Mz": 7.0,
         "subtract": false
       },
       {
-        "mx": 17.0,
+        "mx": 15.46447,
         "my": 14.0,
-        "mz": 9.0,
-        "Mx": 21.0,
+        "mz": 0.70711,
+        "Mx": 19.46447,
         "My": 15.0,
-        "Mz": 15.0,
+        "Mz": 6.70711,
         "subtract": false
       },
       {
-        "mx": 3.0,
+        "mx": 3.72731,
         "my": 14.0,
-        "mz": 9.0,
-        "Mx": 4.0,
+        "mz": 3.34358,
+        "Mx": 4.72731,
         "My": 15.0,
-        "Mz": 13.0,
+        "Mz": 7.34358,
         "subtract": false
       },
       {
         "mx": 7.0,
         "my": 13.25,
-        "mz": 7.0,
+        "mz": 1.0,
         "Mx": 12.0,
         "My": 14.25,
-        "Mz": 15.0,
+        "Mz": 9.0,
         "subtract": false
       }
     ],
@@ -183,9 +183,9 @@
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "isBonemealable": false,
-    "hasInventory": false,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "hasInventory": true,
+    "guiBoundTo": "DesigningWorkbenchGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -200,8 +200,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "DesigningWorkbenchOnBlockRightClicked"
+    "onBlockAdded": {
+      "name": "DesigningWorkbenchBlockAdded"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
