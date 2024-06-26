@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:nuclear_salt_water_rocket"
+      "item": "farout:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.exotic_nuclear_propulsion.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "farout:nuclear_salt_water_rocket"
+              "farout:deleted_mod_element"
             ],
             "count": {
               "min": 1,

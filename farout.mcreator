@@ -37,25 +37,6 @@
       }
     },
     {
-      "name": "SporeBerriesFoodEaten",
-      "type": "procedure",
-      "sortid": 200,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spore_berries_food_eaten",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SporeBerriesFoodEatenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "LiquidoxygenbucketMobplayerCollidesBlock",
       "type": "procedure",
       "sortid": 201,
@@ -65,46 +46,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/LiquidoxygenbucketMobplayerCollidesBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "SporeBerrieBlock",
-      "type": "plant",
-      "sortid": 118,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spore_berrie_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/block/spore_berrie_block.json",
-          "src/main/java/net/mcreator/far_out/block/entity/SporeBerrieBlockBlockEntity.java",
-          "src/main/resources/assets/farout/blockstates/spore_berrie_block.json",
-          "src/main/resources/assets/farout/models/item/spore_berrie_block.json",
-          "src/main/java/net/mcreator/far_out/block/SporeBerrieBlockBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "SporeBerriesRightClickedOnBlock",
-      "type": "procedure",
-      "sortid": 202,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spore_berries_right_clicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/SporeBerriesRightClickedOnBlockProcedure.java"
         ],
         "dependencies": [
           {
@@ -882,20 +823,6 @@
       }
     },
     {
-      "name": "CentrifugalseparatorGUI",
-      "type": "gui",
-      "sortid": 272,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "centrifugalseparator_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/CentrifugalseparatorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/CentrifugalseparatorGUIMenu.java"
-        ]
-      }
-    },
-    {
       "name": "Etauos",
       "type": "dimension",
       "sortid": 136,
@@ -1265,20 +1192,6 @@
       }
     },
     {
-      "name": "DropPodGUI",
-      "type": "gui",
-      "sortid": 323,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "drop_pod_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/DropPodGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/DropPodGUIMenu.java"
-        ]
-      }
-    },
-    {
       "name": "SulfurDust",
       "type": "item",
       "sortid": 87,
@@ -1498,20 +1411,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/kno_3recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "Cardboardboxgui",
-      "type": "gui",
-      "sortid": 343,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cardboardboxgui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/CardboardboxguiScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/CardboardboxguiMenu.java"
         ]
       }
     },
@@ -2267,19 +2166,6 @@
       }
     },
     {
-      "name": "HabatationModuleRecipe",
-      "type": "recipe",
-      "sortid": 463,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "habatation_module_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/habatation_module_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "Ammonia",
       "type": "item",
       "sortid": 112,
@@ -2414,20 +2300,6 @@
           "src/main/java/net/mcreator/far_out/block/ElectrolyzerBlock.java",
           "src/main/resources/assets/farout/models/block/electrolyzer.json",
           "src/main/resources/assets/farout/blockstates/electrolyzer.json"
-        ]
-      }
-    },
-    {
-      "name": "SporeBerries",
-      "type": "item",
-      "sortid": 119,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spore_berries",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/spore_berries.json",
-          "src/main/java/net/mcreator/far_out/item/SporeBerriesItem.java"
         ]
       }
     },
@@ -2710,76 +2582,6 @@
       }
     },
     {
-      "name": "ChemicalRocketEngine",
-      "type": "item",
-      "sortid": 541,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chemical_rocket_engine",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/ChemicalRocketEngineItem.java",
-          "src/main/resources/assets/farout/models/item/chemical_rocket_engine.json"
-        ]
-      }
-    },
-    {
-      "name": "OpenCoreNuclearThermalRocket",
-      "type": "item",
-      "sortid": 543,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_core_nuclear_thermal_rocket",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/OpenCoreNuclearThermalRocketItem.java",
-          "src/main/resources/assets/farout/models/item/open_core_nuclear_thermal_rocket.json"
-        ]
-      }
-    },
-    {
-      "name": "SolidCoreNuclearThermalRocket",
-      "type": "item",
-      "sortid": 543,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solid_core_nuclear_thermal_rocket",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/solid_core_nuclear_thermal_rocket.json",
-          "src/main/java/net/mcreator/far_out/item/SolidCoreNuclearThermalRocketItem.java"
-        ]
-      }
-    },
-    {
-      "name": "VasmirIonEngine",
-      "type": "item",
-      "sortid": 546,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vasmir_ion_engine",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/vasmir_ion_engine.json",
-          "src/main/java/net/mcreator/far_out/item/VasmirIonEngineItem.java"
-        ]
-      }
-    },
-    {
-      "name": "NuclearSaltWaterRocket",
-      "type": "item",
-      "sortid": 547,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_salt_water_rocket",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/NuclearSaltWaterRocketItem.java",
-          "src/main/resources/assets/farout/models/item/nuclear_salt_water_rocket.json"
-        ]
-      }
-    },
-    {
       "name": "LaunchPadRecipe",
       "type": "recipe",
       "sortid": 556,
@@ -2789,59 +2591,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/launch_pad_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "Nozzle",
-      "type": "item",
-      "sortid": 557,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nozzle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/NozzleItem.java",
-          "src/main/resources/assets/farout/models/item/nozzle.json"
-        ]
-      }
-    },
-    {
-      "name": "ChemicalRocketRecipe",
-      "type": "recipe",
-      "sortid": 558,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chemical_rocket_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/chemical_rocket_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "OpenCycleGasCoreNuclearThermalRocket",
-      "type": "recipe",
-      "sortid": 560,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_cycle_gas_core_nuclear_thermal_rocket",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/open_cycle_gas_core_nuclear_thermal_rocket.json"
-        ]
-      }
-    },
-    {
-      "name": "SolidCoreNuclearThermalRocketRecipe",
-      "type": "recipe",
-      "sortid": 562,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solid_core_nuclear_thermal_rocket_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/solid_core_nuclear_thermal_rocket_recipe.json"
         ]
       }
     },
@@ -2869,32 +2618,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/air_tight_fabric_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "VasmirIonEngineRecipe",
-      "type": "recipe",
-      "sortid": 575,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vasmir_ion_engine_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/vasmir_ion_engine_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearSaltWaterRocketRecipe",
-      "type": "recipe",
-      "sortid": 577,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_salt_water_rocket_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/nuclear_salt_water_rocket_recipe.json"
         ]
       }
     },
@@ -2947,19 +2670,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/advancements/microchip_crafted.json"
-        ]
-      }
-    },
-    {
-      "name": "NozzleRecipe",
-      "type": "recipe",
-      "sortid": 583,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nozzle_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/nozzle_recipe.json"
         ]
       }
     },
@@ -3088,34 +2798,6 @@
       }
     },
     {
-      "name": "InflatableHabRing",
-      "type": "item",
-      "sortid": 646,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_hab_ring",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/inflatable_hab_ring.json",
-          "src/main/java/net/mcreator/far_out/item/InflatableHabRingItem.java"
-        ]
-      }
-    },
-    {
-      "name": "InflatableSegment",
-      "type": "item",
-      "sortid": 647,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_segment",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/InflatableSegmentItem.java",
-          "src/main/resources/assets/farout/models/item/inflatable_segment.json"
-        ]
-      }
-    },
-    {
       "name": "BioPlastic",
       "type": "item",
       "sortid": 648,
@@ -3159,33 +2841,6 @@
       }
     },
     {
-      "name": "InflatableHabRingRecipe",
-      "type": "recipe",
-      "sortid": 650,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_hab_ring_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/inflatable_hab_ring_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "InflatableHabitat",
-      "type": "item",
-      "sortid": 651,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_habitat",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/InflatableHabitatItem.java",
-          "src/main/resources/assets/farout/models/item/inflatable_habitat.json"
-        ]
-      }
-    },
-    {
       "name": "InflatableModule",
       "type": "item",
       "sortid": 652,
@@ -3196,59 +2851,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/inflatable_module.json",
           "src/main/java/net/mcreator/far_out/item/InflatableModuleItem.java"
-        ]
-      }
-    },
-    {
-      "name": "InflatableHabitatRecipe",
-      "type": "recipe",
-      "sortid": 652,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_habitat_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/inflatable_habitat_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "BasicHabModule",
-      "type": "item",
-      "sortid": 653,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_hab_module",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/basic_hab_module.json",
-          "src/main/java/net/mcreator/far_out/item/BasicHabModuleItem.java"
-        ]
-      }
-    },
-    {
-      "name": "BasicHabModuleRecipe",
-      "type": "recipe",
-      "sortid": 654,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_hab_module_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/basic_hab_module_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "InflatableModuleRecipe",
-      "type": "recipe",
-      "sortid": 655,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inflatable_module_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/inflatable_module_recipe.json"
         ]
       }
     },
@@ -3557,55 +3159,6 @@
       }
     },
     {
-      "name": "UnequippedRocketRightclickedOnBlock",
-      "type": "procedure",
-      "sortid": 723,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unequipped_rocket_rightclicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/UnequippedRocketRightclickedOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "UnequippedRocket",
-      "type": "item",
-      "sortid": 723,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unequipped_rocket",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/UnequippedRocketItem.java",
-          "src/main/resources/assets/farout/models/item/unequipped_rocket.json"
-        ]
-      }
-    },
-    {
       "name": "Utilization",
       "type": "procedure",
       "sortid": 727,
@@ -3780,22 +3333,6 @@
       }
     },
     {
-      "name": "FairingGUI",
-      "type": "gui",
-      "sortid": 744,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/world/inventory/FairingGUIMenu.java",
-          "src/main/java/net/mcreator/far_out/network/FairingGUIButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/network/FairingGUISlotMessage.java",
-          "src/main/java/net/mcreator/far_out/client/gui/FairingGUIScreen.java"
-        ]
-      }
-    },
-    {
       "name": "LaunchVehicle",
       "type": "livingentity",
       "sortid": 744,
@@ -3806,196 +3343,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/entity/LaunchVehicleEntity.java",
           "src/main/java/net/mcreator/far_out/client/renderer/LaunchVehicleRenderer.java"
-        ]
-      }
-    },
-    {
-      "name": "FairingRightclicked",
-      "type": "procedure",
-      "sortid": 745,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/FairingRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "FairingSegments",
-      "type": "item",
-      "sortid": 746,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_segments",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/FairingSegmentsItem.java",
-          "src/main/resources/assets/farout/models/item/fairing_segments.json"
-        ]
-      }
-    },
-    {
-      "name": "Fairing",
-      "type": "item",
-      "sortid": 744,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/fairing.json",
-          "src/main/java/net/mcreator/far_out/item/FairingItem.java"
-        ]
-      }
-    },
-    {
-      "name": "FairingCraft",
-      "type": "recipe",
-      "sortid": 747,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fairing_craft.json"
-        ]
-      }
-    },
-    {
-      "name": "FairingSegmentsCraft",
-      "type": "recipe",
-      "sortid": 748,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_segments_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fairing_segments_craft.json"
-        ]
-      }
-    },
-    {
-      "name": "ChemicalFuelTank",
-      "type": "item",
-      "sortid": 749,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chemical_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/chemical_fuel_tank.json",
-          "src/main/java/net/mcreator/far_out/item/ChemicalFuelTankItem.java"
-        ]
-      }
-    },
-    {
-      "name": "LiquidHydrogenFuelTank",
-      "type": "item",
-      "sortid": 750,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liquid_hydrogen_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/LiquidHydrogenFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/liquid_hydrogen_fuel_tank.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearSaltWaterFuelTank",
-      "type": "item",
-      "sortid": 753,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_salt_water_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/NuclearSaltWaterFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/nuclear_salt_water_fuel_tank.json"
-        ]
-      }
-    },
-    {
-      "name": "FusionFuelTank",
-      "type": "item",
-      "sortid": 754,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fusion_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/FusionFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/fusion_fuel_tank.json"
-        ]
-      }
-    },
-    {
-      "name": "RocketNoFairing",
-      "type": "livingentity",
-      "sortid": 759,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rocket_no_fairing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/renderer/RocketNoFairingRenderer.java",
-          "src/main/java/net/mcreator/far_out/entity/RocketNoFairingEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "RocketNoFairingRightClickedOnEntity",
-      "type": "procedure",
-      "sortid": 760,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rocket_no_fairing_right_clicked_on_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/RocketNoFairingRightClickedOnEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -4028,20 +3375,6 @@
       }
     },
     {
-      "name": "OpenFairing",
-      "type": "item",
-      "sortid": 773,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_fairing",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/open_fairing.json",
-          "src/main/java/net/mcreator/far_out/item/OpenFairingItem.java"
-        ]
-      }
-    },
-    {
       "name": "BoratedSteelIngot",
       "type": "item",
       "sortid": 778,
@@ -4070,33 +3403,6 @@
       }
     },
     {
-      "name": "EmptyFuelTank",
-      "type": "item",
-      "sortid": 781,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/EmptyFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/empty_fuel_tank.json"
-        ]
-      }
-    },
-    {
-      "name": "EmptyFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 782,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/empty_fuel_tank_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "LithiumDeuteride",
       "type": "item",
       "sortid": 783,
@@ -4107,32 +3413,6 @@
         "files": [
           "src/main/java/net/mcreator/far_out/item/LithiumDeuterideItem.java",
           "src/main/resources/assets/farout/models/item/lithium_deuteride.json"
-        ]
-      }
-    },
-    {
-      "name": "ChemicalFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 785,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chemical_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/chemical_fuel_tank_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "CryogenicTankRecipe",
-      "type": "recipe",
-      "sortid": 786,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryogenic_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/cryogenic_tank_recipe.json"
         ]
       }
     },
@@ -4151,20 +3431,6 @@
       }
     },
     {
-      "name": "MagetoInertialConfinementFusionEngine",
-      "type": "item",
-      "sortid": 789,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mageto_inertial_confinement_fusion_engine",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/MagetoInertialConfinementFusionEngineItem.java",
-          "src/main/resources/assets/farout/models/item/mageto_inertial_confinement_fusion_engine.json"
-        ]
-      }
-    },
-    {
       "name": "SuperCapacitors",
       "type": "item",
       "sortid": 790,
@@ -4179,19 +3445,6 @@
       }
     },
     {
-      "name": "MagnetoInertialConfinmentFusionEngineRecipe",
-      "type": "recipe",
-      "sortid": 790,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magneto_inertial_confinment_fusion_engine_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/magneto_inertial_confinment_fusion_engine_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "SuperCapacitorRecipe",
       "type": "recipe",
       "sortid": 791,
@@ -4201,45 +3454,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/super_capacitor_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "ArgonFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 793,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "argon_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/argon_fuel_tank_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearSaltWaterFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 794,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_salt_water_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/nuclear_salt_water_fuel_tank_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "FusionFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 795,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fusion_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/fusion_fuel_tank_recipe.json"
         ]
       }
     },
@@ -4839,29 +4053,6 @@
       }
     },
     {
-      "name": "FairingClose",
-      "type": "procedure",
-      "sortid": 840,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fairing_close",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/FairingCloseProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "FireTime",
       "type": "procedure",
       "sortid": 845,
@@ -4916,56 +4107,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/worldgen/biome/carbonated_oceans.json"
-        ]
-      }
-    },
-    {
-      "name": "CalculatePayloadProperties",
-      "type": "procedure",
-      "sortid": 851,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "calculate_payload_properties",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/CalculatePayloadPropertiesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "CalculateHabTime",
-      "type": "procedure",
-      "sortid": 852,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "calculate_hab_time",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/CalculateHabTimeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -5610,34 +4751,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/hydrogen.json",
           "src/main/java/net/mcreator/far_out/item/HydrogenItem.java"
-        ]
-      }
-    },
-    {
-      "name": "BasicCommandDisk",
-      "type": "item",
-      "sortid": 915,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "basic_command_disk",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/basic_command_disk.json",
-          "src/main/java/net/mcreator/far_out/item/BasicCommandDiskItem.java"
-        ]
-      }
-    },
-    {
-      "name": "AdvancedCommandDisk",
-      "type": "item",
-      "sortid": 916,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advanced_command_disk",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/advanced_command_disk.json",
-          "src/main/java/net/mcreator/far_out/item/AdvancedCommandDiskItem.java"
         ]
       }
     },
@@ -7152,55 +6265,6 @@
       }
     },
     {
-      "name": "BiologicalIncubatorGUI",
-      "type": "gui",
-      "sortid": 1026,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biological_incubator_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/BiologicalIncubatorGUIScreen.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/BiologicalIncubatorGUIMenu.java"
-        ]
-      }
-    },
-    {
-      "name": "BiologicalIncubatorOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 1027,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "biological_incubator_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/BiologicalIncubatorOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "ZPinchFusionReactor",
       "type": "block",
       "sortid": 1030,
@@ -8583,6 +7647,22 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -8602,6 +7682,22 @@
           "src/main/java/net/mcreator/far_out/procedures/FairingDeltaVProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
           {
             "name": "world",
             "type": "world"
@@ -8623,6 +7719,22 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -8642,27 +7754,21 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "SolarCollector",
-      "type": "item",
-      "sortid": 1131,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solar_collector",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/solar_collector.json",
-          "src/main/java/net/mcreator/far_out/item/SolarCollectorItem.java"
         ]
       }
     },
@@ -9137,19 +8243,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "RocketRecipe",
-      "type": "recipe",
-      "sortid": 1166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rocket_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/rocket_recipe.json"
         ]
       }
     },
@@ -9768,141 +8861,6 @@
       }
     },
     {
-      "name": "Page1",
-      "type": "gui",
-      "sortid": 1239,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "page_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/Page1Screen.java",
-          "src/main/java/net/mcreator/far_out/network/Page1ButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/Page1Menu.java"
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
-      "name": "Page2",
-      "type": "gui",
-      "sortid": 1240,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "page_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/client/gui/Page2Screen.java",
-          "src/main/java/net/mcreator/far_out/network/Page2ButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/Page2Menu.java"
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
-      "name": "Page3",
-      "type": "gui",
-      "sortid": 1241,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "page_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/network/Page3ButtonMessage.java",
-          "src/main/java/net/mcreator/far_out/world/inventory/Page3Menu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/Page3Screen.java"
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
-      "name": "PageAdvance",
-      "type": "procedure",
-      "sortid": 1242,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "page_advance",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PageAdvanceProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
-      "name": "PageRetreat",
-      "type": "procedure",
-      "sortid": 1243,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "page_retreat",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/PageRetreatProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
-      "name": "DataDisk1",
-      "type": "item",
-      "sortid": 1245,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "data_disk_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/data_disk_1.json",
-          "src/main/java/net/mcreator/far_out/item/DataDisk1Item.java"
-        ]
-      },
-      "path": "~/TheTravelersTales"
-    },
-    {
       "name": "OreExtractorToggleOn",
       "type": "procedure",
       "sortid": 1247,
@@ -9961,19 +8919,6 @@
       }
     },
     {
-      "name": "LiquidHydrogenFuelTankRecipe",
-      "type": "recipe",
-      "sortid": 1254,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liquid_hydrogen_fuel_tank_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/liquid_hydrogen_fuel_tank_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "AtmosphericAnalyzer",
       "type": "item",
       "sortid": 1261,
@@ -10012,41 +8957,6 @@
           "src/main/java/net/mcreator/far_out/procedures/DiskDriveBlockAddedProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DiskDriveRunningOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 1270,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "disk_drive_running_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/DiskDriveRunningOnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -10736,41 +9646,6 @@
       }
     },
     {
-      "name": "DataDisk1Rightclicked",
-      "type": "procedure",
-      "sortid": 1307,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "data_disk_1_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/DataDisk1RightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "LandingProcedure",
       "type": "procedure",
       "sortid": 1309,
@@ -11192,19 +10067,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "CargoFairingRecipe",
-      "type": "recipe",
-      "sortid": 1336,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cargo_fairing_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/cargo_fairing_recipe.json"
         ]
       }
     },
@@ -12397,34 +11259,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "MagnetoplasmadynamicThruster",
-      "type": "item",
-      "sortid": 1433,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magnetoplasmadynamic_thruster",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/magnetoplasmadynamic_thruster.json",
-          "src/main/java/net/mcreator/far_out/item/MagnetoplasmadynamicThrusterItem.java"
-        ]
-      }
-    },
-    {
-      "name": "LithiumFuelTank",
-      "type": "item",
-      "sortid": 1434,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lithium_fuel_tank",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/LithiumFuelTankItem.java",
-          "src/main/resources/assets/farout/models/item/lithium_fuel_tank.json"
         ]
       }
     },
@@ -15078,6 +13912,1344 @@
           }
         ]
       }
+    },
+    {
+      "name": "ChemicalRocketVisibility",
+      "type": "procedure",
+      "sortid": 1569,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chemical_rocket_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ChemicalRocketVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SolidCoreNuclearThermalRocketVisibility",
+      "type": "procedure",
+      "sortid": 1570,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_core_nuclear_thermal_rocket_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/SolidCoreNuclearThermalRocketVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IncrementPropID",
+      "type": "procedure",
+      "sortid": 1571,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_prop_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IncrementPropIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecrementPropID",
+      "type": "procedure",
+      "sortid": 1572,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decrement_prop_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DecrementPropIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnPropulsionModule",
+      "type": "procedure",
+      "sortid": 1573,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_propulsion_module",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnPropulsionModuleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IncrementCompID",
+      "type": "procedure",
+      "sortid": 1574,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_comp_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IncrementCompIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecrementCompID",
+      "type": "procedure",
+      "sortid": 1575,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decrement_comp_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DecrementCompIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnControlModule",
+      "type": "procedure",
+      "sortid": 1576,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_control_module",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnControlModuleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IncrementPowID",
+      "type": "procedure",
+      "sortid": 1577,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_pow_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IncrementPowIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecrementPowID",
+      "type": "procedure",
+      "sortid": 1578,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decrement_pow_id",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DecrementPowIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnPowerSource",
+      "type": "procedure",
+      "sortid": 1579,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_power_source",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnPowerSourceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GasCoreNuclearThermalRocketVisibility",
+      "type": "procedure",
+      "sortid": 1580,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_core_nuclear_thermal_rocket_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/GasCoreNuclearThermalRocketVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SolarPanelsVisibility",
+      "type": "procedure",
+      "sortid": 1581,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solar_panels_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/SolarPanelsVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NuclearReactorVisibility",
+      "type": "procedure",
+      "sortid": 1582,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_reactor_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/NuclearReactorVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MicrowaveElectrothermalVisibility",
+      "type": "procedure",
+      "sortid": 1583,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "microwave_electrothermal_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/MicrowaveElectrothermalVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagnetoplasmaThruster",
+      "type": "procedure",
+      "sortid": 1584,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetoplasma_thruster",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/MagnetoplasmaThrusterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NuclearSaltWaterRocketVisibility",
+      "type": "procedure",
+      "sortid": 1585,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclear_salt_water_rocket_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/NuclearSaltWaterRocketVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MirrorCellRocketVisibility",
+      "type": "procedure",
+      "sortid": 1586,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mirror_cell_rocket_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/MirrorCellRocketVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntimatterPlasmaEngineVisibility",
+      "type": "procedure",
+      "sortid": 1587,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimatter_plasma_engine_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/AntimatterPlasmaEngineVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CopyDataToBlueprint",
+      "type": "procedure",
+      "sortid": 1588,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copy_data_to_blueprint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/CopyDataToBlueprintProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaunchpadTiles",
+      "type": "block",
+      "sortid": 1589,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launchpad_tiles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/blockstates/launchpad_tiles.json",
+          "src/main/resources/assets/farout/models/item/launchpad_tiles.json",
+          "src/main/resources/assets/farout/models/block/launchpad_tiles.json",
+          "src/main/java/net/mcreator/far_out/block/LaunchpadTilesBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RocketryIcon",
+      "type": "item",
+      "sortid": 1590,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocketry_icon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/rocketry_icon.json",
+          "src/main/java/net/mcreator/far_out/item/RocketryIconItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblyManager",
+      "type": "block",
+      "sortid": 1592,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembly_manager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/entity/RocketAssemblyManagerBlockEntity.java",
+          "src/main/resources/assets/farout/models/item/rocket_assembly_manager.json",
+          "src/main/resources/assets/farout/blockstates/rocket_assembly_manager.json",
+          "src/main/resources/assets/farout/models/block/rocket_assembly_manager.json",
+          "src/main/java/net/mcreator/far_out/block/RocketAssemblyManagerBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblyManagerGUI",
+      "type": "gui",
+      "sortid": 1593,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembly_manager_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/world/inventory/RocketAssemblyManagerGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/network/RocketAssemblyManagerGUIButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/RocketAssemblyManagerGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ItemPlaceholderVisibility",
+      "type": "procedure",
+      "sortid": 1594,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_placeholder_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ItemPlaceholderVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnControlLevel",
+      "type": "procedure",
+      "sortid": 1595,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_control_level",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnControlLevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblerBlockAdded",
+      "type": "procedure",
+      "sortid": 1596,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembler_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblerUpdateTick",
+      "type": "procedure",
+      "sortid": 1597,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembler_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssembler",
+      "type": "animatedblock",
+      "sortid": 1598,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/renderer/RocketAssemblerTileRenderer.java",
+          "src/main/java/net/mcreator/far_out/block/model/RocketAssemblerBlockModel.java",
+          "src/main/java/net/mcreator/far_out/block/model/RocketAssemblerDisplayModel.java",
+          "src/main/java/net/mcreator/far_out/block/display/RocketAssemblerDisplayItem.java",
+          "src/main/resources/assets/farout/models/item/rocket_assembler.json",
+          "src/main/resources/assets/farout/models/custom/rocket_assembler_particle.json",
+          "src/main/java/net/mcreator/far_out/block/RocketAssemblerBlock.java",
+          "src/main/java/net/mcreator/far_out/block/renderer/RocketAssemblerDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/far_out/block/entity/RocketAssemblerTileEntity.java",
+          "src/main/resources/assets/farout/blockstates/rocket_assembler.json"
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 1599,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembler_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblerOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredient1",
+      "type": "procedure",
+      "sortid": 1600,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredient_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredient1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredients",
+      "type": "procedure",
+      "sortid": 1601,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredients",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredientsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LiquidMethaneBlockAdded",
+      "type": "procedure",
+      "sortid": 1602,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_methane_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LiquidMethaneBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LiquidMethane",
+      "type": "fluid",
+      "sortid": 1603,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_methane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/block/LiquidMethaneBlock.java",
+          "src/main/resources/assets/farout/models/block/liquid_methane.json",
+          "src/main/java/net/mcreator/far_out/fluid/LiquidMethaneFluid.java",
+          "src/main/java/net/mcreator/far_out/fluid/types/LiquidMethaneFluidType.java",
+          "src/main/java/net/mcreator/far_out/item/LiquidMethaneItem.java",
+          "src/main/resources/assets/farout/models/item/liquid_methane_bucket.json",
+          "src/main/resources/assets/farout/blockstates/liquid_methane.json"
+        ]
+      }
+    },
+    {
+      "name": "Xenon",
+      "type": "item",
+      "sortid": 1604,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xenon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/XenonItem.java",
+          "src/main/resources/assets/farout/models/item/xenon.json"
+        ]
+      }
+    },
+    {
+      "name": "HafniumCarbonitrideIngot",
+      "type": "item",
+      "sortid": 1605,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hafnium_carbonitride_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/HafniumCarbonitrideIngotItem.java",
+          "src/main/resources/assets/farout/models/item/hafnium_carbonitride_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "SolidAntimatterPenningTrap",
+      "type": "item",
+      "sortid": 1606,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_antimatter_penning_trap",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/farout/models/item/solid_antimatter_penning_trap.json",
+          "src/main/java/net/mcreator/far_out/item/SolidAntimatterPenningTrapItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PenningTrap",
+      "type": "item",
+      "sortid": 1607,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "penning_trap",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/item/PenningTrapItem.java",
+          "src/main/resources/assets/farout/models/item/penning_trap.json"
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredient2",
+      "type": "procedure",
+      "sortid": 1608,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredient_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredient2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredient3",
+      "type": "procedure",
+      "sortid": 1609,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredient_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredient3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredient4",
+      "type": "procedure",
+      "sortid": 1610,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredient_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredient4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReturnIngredient5",
+      "type": "procedure",
+      "sortid": 1611,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_ingredient_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ReturnIngredient5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblyManagerBlockAdded",
+      "type": "procedure",
+      "sortid": 1612,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembly_manager_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblyManagerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IncrementPage",
+      "type": "procedure",
+      "sortid": 1613,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increment_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/IncrementPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DecrementPage",
+      "type": "procedure",
+      "sortid": 1614,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decrement_page",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DecrementPageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblyManagerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 1617,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembly_manager_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblyManagerOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ItemPlaceholderIngotVisibility",
+      "type": "procedure",
+      "sortid": 1618,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_placeholder_ingot_visibility",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/ItemPlaceholderIngotVisibilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RocketAssemblyManagerGUIThisGUIIsOpened",
+      "type": "procedure",
+      "sortid": 1619,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rocket_assembly_manager_gui_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/RocketAssemblyManagerGUIThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15456,8 +15628,8 @@
   ],
   "language_map": {
     "en_us": {
-      "block.farout.osmium_block": "Block of Osmium",
       "effect.distant_frontiers.oxygen": "Oxygen",
+      "block.farout.osmium_block": "Block of Osmium",
       "block.far_out.osmium_block": "Block of Osmium",
       "entity.far_out.rocket_no_fairing": "Rocket",
       "gui.distant_frontiers.terra_gui.label_empty": "",
@@ -15466,10 +15638,11 @@
       "biome.no.frostylowlands": "Frosty lowlands",
       "item.far_out.atmospheric_chemical_rocket_engine": "Atmospheric Chemical Rocket Engine",
       "gui.distant_frontiers.varas_gui.label_orbital_speed_212_kms": "orbital speed: 21.2 km/s",
-      "item.farout.aluminium_ingot": "Aluminium",
       "item.distant_frontiers.li_h_6_tank": "Lithium Hydride Fuel Tank",
-      "itemGroup.tabrocketry": "Rocketry",
+      "item.farout.aluminium_ingot": "Aluminium ingot",
       "itemGroup.tabenergy": "Energy",
+      "itemGroup.tabrocketry": "Rocketry",
+      "gui.farout.rocket_assembly_manager_gui.label_control_level": "Control level:",
       "item.far_out.basic_command_center": "Basic Command Center",
       "block.farout.sulfuric_acid": "Sulfuric Acid",
       "block.far_out.fungus_button": "Fungus Button",
@@ -15491,16 +15664,13 @@
       "item.farout.cargo_fairing": "Cargo Fairing",
       "gui.distant_frontiers.massivo_gui.label_2_ethanol": "2% ethanol",
       "gui.distant_frontiers.etauos_gui.label_76_ethanol": "76% ethanol",
-      "gui.farout.page_1.label_and_i_placed_the_raw_iron_into_a": "and I placed the raw iron into a furnace I built. Then, I then made a sterling",
       "gui.farout.page_3.label_itself_as_the_stars_shimmered": "itself. As the stars shimmered, I noticed something odd. First, there were a",
-      "gui.farout.page_2.label_the_goal_is_this_going_to_the_h": "The goal is this: going to the habitable moon, and back.",
       "advancements.massivo_land.title": "CHEATER",
       "gui.distant_frontiers.rocket_dest_selector.button_etauos": "Etauos",
       "gui.farout.designing_workbench_gui.label_propulsion_system": "Propulsion system:",
       "item.distant_frontiers.graphiterod": "Graphite rod",
       "block.no.heat_exchanger": "Heat Exchanger",
       "block.no.uranium_ore": "Uranium Ore",
-      "gui.farout.page_1.label_and_watched_the_sun_go_down_and": "and watched the sun go down, for the planet’s habitable moon to reveal",
       "advancements.supplies_intact.descr": "Take the supplies from the cargo pod",
       "block.distant_frontiers.limestone_block": "Block of Limestone",
       "item.far_out.ash": "Ash",
@@ -15529,7 +15699,6 @@
       "item.distant_frontiers.limestone_filter": "Centrifugal Limestone Filter",
       "gui.farout.page_2.label_itself_as_the_stars_shimmered": "itself. As the stars shimmered, I noticed something odd. First, there were a",
       "subtitles.robot_arm_move": "",
-      "gui.farout.page_2.label_atmosphere_but_that_should_be_m": "atmosphere, but that should besolved by wearing face covering. Unfortunately,",
       "gui.farout.rocket_trajectory_selection.button_vulcan": "Vulcan",
       "item.far_out.spore_berries": "Spore Berries",
       "effect.no.radioactive": "Radioactive",
@@ -15539,15 +15708,14 @@
       "gui.farout.rocket_trajectory_selection.button_glacieo": "Glacieo",
       "advancements.argon_gas_obtained.descr": "Obtain argon.",
       "gui.distant_frontiers.starting_lander_gui.label_starting_lander_inventory": "Starting lander inventory",
+      "fluid.farout.liquid_methane": "Liquid Methane",
       "gui.distant_frontiers.massivo_gui.label_13_helium": "13% helium",
       "block.distant_frontiers.saltwater": "Saltwater",
       "gui.distant_frontiers.vulcan_gui.label_other_information_exteremely": "other information: exteremely",
-      "gui.farout.fairing_gui.label_modifed_when_the_load_fairing": "Modifed When The \"Load Fairing\"",
       "item.far_out.varas": "Varas Portal Igniter",
       "gui.farout.sandos_map.label_star_system_viewer": "Star System Viewer",
       "gui.distant_frontiers.etauos_gui.label_other_information_has_ethanol": "other information: has ethanol",
       "block.distant_frontiers.sphalerite_ore": "Sphalerite Ore",
-      "gui.farout.page_3.label_the_fiery_red_plasma_enveloped_t": "The fiery red plasma enveloped the lander as I slowed down.  The parachutes",
       "item.farout.rhenium_ingot": "Rhenium ingot",
       "block.distant_frontiers.phosphorated_stone_2": "Phosphorated Stone",
       "block.farout.bauxite": "Bauxite Ore",
@@ -15558,7 +15726,6 @@
       "item.far_out.depleted_uranium": "Depleted Uranium",
       "biome.distant_frontiers.sunny_islands": "Sunny Islands",
       "gui.distant_frontiers.voltmetergui.label_voltometer": "Voltometer",
-      "gui.farout.page_1.label_itself_as_the_stars_shimmered": "itself. As the stars shimmered, I noticed something odd. First, there were a",
       "entity.distant_frontiers.capsule": "Inflatable lander",
       "item.far_out.metallic_hydrogen_bucket": "Metallic Hydrogen Bucket",
       "fluid.farout.dry_water": "Dry Water",
@@ -15637,7 +15804,6 @@
       "block.distant_frontiers.carborundum_block": "Block of Carborundum",
       "item.far_out.lander_spawn_egg": "Lander Spawn Egg",
       "fluid.far_out.ethanol": "Ethanol",
-      "gui.farout.page_3.label_was_a_bit_tricky_as_the_engine": "was a bit tricky, as the engine did not light the first time, so the lander’s ",
       "block.farout.lumiblossom_leaves": "Lumiblossom Leaves",
       "advancements.medium_freq_microchip_crafted.title": "Faster, Better, Cheaper.",
       "gui.distant_frontiers.energymeter_gui.label_varintegerenergyvarintege": "\u003cVAR:integer:Energy\u003e/\u003cVAR:integer:TotalCapacty\u003e",
@@ -15653,28 +15819,22 @@
       "item.no.teleport_compass": "Teleport Compass",
       "item.no.depleted_uranium": "Depleted Uranium",
       "gui.distant_frontiers.rocket_printer_gui_1.label_proxmai": "Proxmai",
-      "gui.farout.page_1.label_generator_there_and_hooked_it_u": "and hooked it up to my escape pod. I also need to extract the materials",
       "gui.distant_frontiers.terra_gui.label_atmosphere_na_pa": "atmosphere: N/A Pa",
-      "item.farout.fairing_segments": "Fairing Segment",
       "gui.farout.rocket_trajectory_selection.button_etaui": "Etaui",
       "block.farout.aqueous_ammonia": "Aqueous Ammonia",
-      "gui.farout.page_1.label_day_2_i_woke_up_and_got_to_work": "Day 2: I woke up and got to work. First, I did a bit more mining for iron, ",
       "subtitles.electric_hum": "",
       "item.distant_frontiers.rhenium_filter": "Centrifugal Rhenium Filter",
       "block.distant_frontiers.clean_air": "Clean Air",
       "block.distant_frontiers.regolith_sifter": "Centrifugal Extractor",
       "gui.distant_frontiers.beam_injector_gui.button_electron_beam": "Electron Beam",
       "block.distant_frontiers.plutonium_block": "Block of Plutonium",
-      "gui.farout.page_2.label_have_been_fabricating_microchips": "have been fabricating microchips, making rocket engines, a landing module,",
       "block.far_out.olivine_button": "Olivine Button",
-      "gui.farout.page_1.label_lot_of_raw_materials_like_spodu": "lot of raw materials, like spodumene, and iron, so I collected some materials,",
       "gui.distant_frontiers.etaui_gui.label_atmosphere_1568_kpa": "atmosphere: 156.8 KPa",
       "gui.distant_frontiers.etauos_gui.label_mass_638_moon_masses": "mass: 6.38 moon masses",
       "item.farout.helium": "Helium",
       "item.farout.lithium_ingot": "Lithium",
       "item.distant_frontiers.super_alloy_pickaxe": "Super Alloy Pickaxe",
       "gui.farout.page_2.label_lot_of_stars_in_the_sky_you_cou": "lot of stars in the sky, you could see at least 10,000 of them. Secondly,",
-      "item.farout.vasmir_ion_engine": "Vasmir Ion Engine",
       "item.far_out.solid_core_nuclear_thermal_rocket": "Solid Core Nuclear Thermal Rocket",
       "gui.farout.rejona_map.label_star_system_viewer": "Star System Viewer",
       "gui.distant_frontiers.infinatos_gui.label_other_information_is_the_farthe": "other information: is the farthest",
@@ -15718,10 +15878,8 @@
       "item.farout.space_suit_helmet": "Space Suit Helmet",
       "biome.farout.briny_swamps": "Briny Swamps",
       "block.far_out.propane_extractor": "Propane Extractor",
-      "gui.farout.page_2.label_power_generation_fuel_tanks_a": "power generation, fuel tanks, a habitation module, and a rocket to get the ",
       "item.farout.space_suit_leggings": "Space Suit Legs",
       "block.far_out.ruins_crystal_drive": "Ruins Crystal Drive",
-      "gui.farout.page_2.label_now_the_food_problem_i_need_it": "I have a food problem. I need some, and fast. I packed some Chlorella algae with",
       "item.no.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
       "item.distant_frontiers.rhenium_ingot": "Rhenium ingot",
       "item.far_out.uranium_ingot": "Uranium",
@@ -15729,6 +15887,7 @@
       "block.distant_frontiers.battery_block": "Battery Block",
       "block.far_out.graphite_block": "Block of Graphite",
       "item.far_out.disk_player": "Disk Player",
+      "gui.farout.rocket_assembly_manager_gui.label_habitation_time": "Habitation time:",
       "item.far_out.hexuraningot": "Hexuran ingot",
       "item.distant_frontiers.hexuran_shovel": "Hexuran Shovel",
       "biome.farout.musnius_forests": "Musnius Forests",
@@ -15743,9 +15902,9 @@
       "item.farout.debug_item": "Debug Item",
       "biome.no.massvio_surface": "Massvio Surface",
       "item.distant_frontiers.graphene": "Graphene",
-      "gui.farout.page_3.label_a_spacious_common_area_and_an_a": "a spacious common area, and an airlock for permanent habitation. ",
       "item.farout.wrench": "Wrench",
       "item.far_out.atmospheric_nuclear_thermal_rocket": "Atmospheric Nuclear Thermal Rocket",
+      "item.farout.solid_antimatter_penning_trap": "Solid Antimatter Penning Trap",
       "advancements.etauos_landed.descr": "You landed on etauos, and were not violently killed!",
       "biome.far_out.volcanic_isles": "Volcanic Isles",
       "biome.farout.high_pressure_plains": "High Pressure Plains",
@@ -15758,7 +15917,6 @@
       "gui.farout.lander_gui.button_starship": "Starship",
       "entity.far_out.rocket": "Rocket",
       "item.distant_frontiers.nuclear_salt_water_rocket": "Nuclear Salt Water Rocket",
-      "gui.farout.page_2.label_assembly_into_orbit_i_am_curren": "assembly into orbit. I am currently sitting in the lander, waiting for liftoff.",
       "block.far_out.lithium_ore": "Lithium Ore",
       "advancements.the_other_worlds.descr": "Go interplanetary",
       "gui.distant_frontiers.rocket_printer_gui_1.label_etauos": "etauos",
@@ -15787,6 +15945,7 @@
       "block.far_out.olivine_fence": "Olivine Fence",
       "biome.far_out.massivo_atmosphere": "Massivo Atmosphere",
       "item.far_out.super_alloy_hoe": "Super Alloy Hoe",
+      "item.farout.hafnium_carbonitride_ingot": "Hafnium Carbonitride Ingot",
       "item.distant_frontiers.hexuraningot": "Hexuran ingot",
       "gui.distant_frontiers.glacieo_gui.label_methane_47": "Methane: 47%",
       "biome.distant_frontiers.lavaoceans": "Lava oceans",
@@ -15823,7 +15982,6 @@
       "block.far_out.desktop_computer": "Desktop Computer",
       "itemGroup.tabunnmanned_rocketry": "Unnmanned Rocketry",
       "item.farout.dried_chlorella": "Dried Chlorella",
-      "item.farout.inflatable_segment": "Inflatable Segment",
       "block.no.slime_mats": "Bacterial Mat",
       "gui.distant_frontiers.varas_gui.label_other_information_has_a_phospho": "other information: has a phosphorus",
       "gui.distant_frontiers.oceanus_gui.label_to_life_on_earth_14_billion_yea": "to life on earth 1.4 billion years",
@@ -15844,7 +16002,6 @@
       "block.no.purple_grass": "Purple Grass",
       "item.no.memorychip": "Memorychip",
       "block.farout.molybdenite": "Molybdite Ore",
-      "gui.farout.page_2.label_day_21_t000500_the_journey": "Day 21, T+00:05:00 : The journey into orbit was flawless, It is nice to know",
       "gui.distant_frontiers.silican_gui.label_hydrogen_24": "Hydrogen: 24%",
       "gui.farout.page_2.label_i_made_a_pickaxe_using_a_long": "I made a pickaxe using a long, sharpened stone and a stick. This world has a",
       "item.far_out.display": "Display",
@@ -15863,7 +16020,7 @@
       "gui.distant_frontiers.glacieo_gui.label_moons_none": "moons: none",
       "gui.distant_frontiers.glacieo_gui.label_ozone_14": "Ozone: 14%",
       "block.far_out.savanna_fungi_slab": "Savanna Fungi Slab",
-      "gui.farout.page_1.label_i_made_a_pickaxe_using_a_long": "I made a pickaxe using a long, sharpened stone and a stick. This world has a",
+      "gui.farout.designing_workbench_gui.Name": "Blueprint name:",
       "item.far_out.vapor": "Vapor Portal Igniter",
       "entity.no.sky_hydrozoan": "Sky Hydrozoan",
       "item.farout.cryogenic_stasis_chamber": "Cryogenic Stasis Chamber",
@@ -15926,8 +16083,7 @@
       "gui.farout.page_3.label_lot_of_raw_materials_like_spodu": "lot of raw materials, like spodumene, and iron, so I collected some materials,",
       "item.distant_frontiers.space_suit_helmet": "Space Suit Helmet",
       "item.far_out.launch_vehicle_spawn_egg": "Launch Vehicle Spawn Egg",
-      "gui.farout.page_2.label_so_i_made_a_5x5_glass_dome": "me, so I made a 7x7 glass dome, in order to make a oxygenated environment.",
-      "gui.farout.page_2.label_somewhere_a_bit_more_permanent": "somewhere a bit more permanent. Luckily, the habitable moon has somewhat",
+      "gui.farout.rocket_assembly_manager_gui.button_refresh": "Refresh list",
       "block.farout.rhenium_block": "Block of Rhenium",
       "key.farout.pitch_decrease": "Pitch Decrease",
       "item.distant_frontiers.computer": "Computer",
@@ -15945,7 +16101,6 @@
       "item.farout.sodium": "Sodium",
       "biome.farout.carbonated_oceans": "Carbonated Oceans",
       "item.far_out.mollus": "Mollus Portal Igniter",
-      "item.farout.solar_collector": "Solar Collector",
       "block.distant_frontiers.molybdenite": "Molybdite Ore",
       "item.farout.liquid_ammonia_bucket": "Liquid Ammonia Bucket",
       "block.far_out.tundra_fungus_slab": "Tundra Fungus Slab",
@@ -15998,7 +16153,6 @@
       "item.farout.sodium_hydroxide": "Sodium Hydroxide",
       "block.far_out.crystal_drive": "Crystal Drive",
       "item.far_out.space_suit_chestplate": "Space Suit Body",
-      "item.farout.unequipped_rocket": "Unequipped Rocket",
       "item.farout.inertial_navigation_system": "Inertial Navigation System",
       "gui.distant_frontiers.upgrade_applyer_gui.button_upgrade": "Upgrade",
       "block.far_out.savanna_fungi_fence": "Savanna Fungi Fence",
@@ -16025,7 +16179,6 @@
       "advancements.electrolyzer_craft.title": "Molecule Splitter",
       "gui.distant_frontiers.science_workbench_gui.label_varintegerresearch": "\u003cVAR:integer:Research\u003e",
       "gui.distant_frontiers.varas_gui.label_moons_none": "moons: none",
-      "item.farout.magnetoplasmadynamic_thruster": "Magnetoplasmadynamic Thruster",
       "gui.distant_frontiers.oceanus_gui.label_68_nitrogen": "68% nitrogen",
       "gui.farout.page_2.label_minerals_in_it_to_separate": "in there to separate. ",
       "gui.distant_frontiers.vulcan_gui.label_tital_heating_by_vulcan": "tital heating by vulcan",
@@ -16035,7 +16188,6 @@
       "itemGroup.tabchemistry": "Chemistry",
       "block.far_out.saltwater": "Saltwater",
       "block.farout.quartz_ore": "Quartz Ore",
-      "block.farout.spore_berrie_block": "Spore Berrie Block",
       "item.far_out.semiautomaticrifle": "automatic rifle",
       "gui.distant_frontiers.etauos_gui.label_atmosphere_141_kpa": "atmosphere: 14.1 KPa",
       "item.distant_frontiers.embededcomputer": "Embededcomputer",
@@ -16048,7 +16200,6 @@
       "advancements.ad_astra.title": "Ad Astra",
       "entity.far_out.votod_astronaut": "Votod Astronaut",
       "item.distant_frontiers.capsule_spawn_egg": "Inflatable lander Spawn Egg",
-      "gui.farout.page_1.label_i_crashed_on_an_alien_world_wi": "day 1: I crashed on an alien world with green skies and purple plant life. ",
       "item.no.display": "Display",
       "item.far_out.pipe": "Pipe",
       "item.far_out.saltwater_bucket": "Saltwater Bucket",
@@ -16060,7 +16211,6 @@
       "block.distant_frontiers.graphite_ore": "Graphite Ore",
       "key.farout.engine_ignite": "Engine Ignite",
       "gui.distant_frontiers.silican_gui.label_argon_35": "Argon 35%",
-      "item.farout.open_fairing": "Open Fairing",
       "item.distant_frontiers.electro_magnet": "Electro Magnet",
       "fluid.no.helium": "Helium",
       "item.distant_frontiers.ammonia": "Ammonia",
@@ -16075,7 +16225,6 @@
       "subtitles.sky_hydrozoan_death": "",
       "item.far_out.vulcan": "Vulcan Portal Igniter",
       "gui.distant_frontiers.oceanus_gui.label_2_other_gases": "2% other gases",
-      "item.farout.open_core_nuclear_thermal_rocket": "Open Cycle Gas Core Nuclear Thermal Rocket",
       "block.distant_frontiers.osmium_block": "Block of Osmium",
       "biome.distant_frontiers.volcanic_isles": "Volcanic Isles",
       "biome.farout.unstable_oceans": "Unstable Oceans",
@@ -16091,7 +16240,6 @@
       "block.farout.gunpowder_block": "Block of Gunpowder",
       "block.farout.lithium_block": "Block of Lithium",
       "block.distant_frontiers.chemical_reactor": "Chemical Synthesizer",
-      "gui.farout.fairing_gui.label_habitation": "Habitation",
       "item.farout.super_alloy_axe": "Super Alloy Axe",
       "item.farout.high_capacity_memory": "High Capacity Memory",
       "block.no.fungus_planks": "Fungus Planks",
@@ -16108,11 +16256,8 @@
       "advancements.exotic_nuclear_propulsion.descr": "The pinnacle of nuclear propulsion, and the most radioactive rocket ever made. Do NOT Point At Home Planet.",
       "item.farout.display": "Display",
       "block.farout.liquid_ammonia": "Liquid Ammonia",
-      "gui.farout.page_3.button_empty1": "\u003c",
-      "item.farout.spore_berries": "Spore Berries",
       "item.distant_frontiers.lander_spawn_egg": "Lander Spawn Egg",
       "item.distant_frontiers.space_suit_leggings": "Space Suit Legs",
-      "gui.farout.page_2.label_translunar_injection_will_begin": "trans-lunar injection will begin shortly.",
       "block.no.spore_berrie_block": "Spore Berrie Block",
       "item.far_out.atmospheric_metallic_hydrogen_engine": "Atmospheric Metallic Hydrogen Engine",
       "item.distant_frontiers.light_isotopes": "Light Isotopes",
@@ -16125,7 +16270,6 @@
       "fluid.distant_frontiers.liquidmethane": "Liquidmethane",
       "gui.distant_frontiers.science_workbench_gui.label_advanced_research": " Advanced research:",
       "gui.distant_frontiers.rocket_printer_gui_1.label_varas": "varas",
-      "gui.farout.centrifugalseparator_gui.label_centrifugal_separator": "centrifugal separator",
       "biome.farout.volcanic_isles": "Volcanic Isles",
       "item.distant_frontiers.lithium_hydride": "Lithium Hydride",
       "item.farout.super_alloy_shovel": "Super Alloy Shovel",
@@ -16138,14 +16282,12 @@
       "key.distant_frontiers.test": "Test",
       "block.no.lithium_block": "Block of Lithium",
       "biome.far_out.sunny_islands": "Sunny Islands",
-      "gui.farout.fairing_gui.button_load_fairing": "Load Fairing",
       "gui.distant_frontiers.rocket_dest_selector.label_destanation_planets_and_moons": "Destanation Planets and Moons",
       "biome.far_out.silicanlowlands": "Silican lowlands",
       "advancements.playing_god.title": "Designer Orginisms",
       "block.distant_frontiers.biomass_burner": "Biomass Burner",
       "gui.distant_frontiers.beam_injector_gui.label_linear_accelerator_beam_configur": "Linear Accelerator Beam Configuration",
       "biome.far_out.etautoslowlands": "Etautos lowlands",
-      "item.farout.mageto_inertial_confinement_fusion_engine": "Mageto Inertial Confinement Fusion Engine",
       "item.distant_frontiers.metallic_hydrogen_engine": "Metallic Hydrogen Engine",
       "block.far_out.nuclear_reactor": "Nuclear Reactor",
       "item.far_out.graphene": "Graphene",
@@ -16179,10 +16321,8 @@
       "block.farout.chacoavines": "Chacoa mycelium",
       "gui.farout.lander_gui.button_rendezvous_with_transfer_stage": "Transfer stage",
       "block.far_out.fungus_cap": "Fungus Cap",
-      "gui.farout.fairing_gui.label_electric": "Electric",
       "block.farout.z_pinch_fusion_reactor": "Z Pinch Fusion Reactor",
       "fluid.farout.liquid_sulfur_dioxide": "Liquid Sulfur Dioxide",
-      "item.farout.nuclear_salt_water_rocket": "Nuclear Salt Water Rocket",
       "biome.farout.atmosphereless_plains": "Atmosphereless Plains",
       "item.farout.ammonia": "Ammonia",
       "gui.farout.formalon_map.label_star_system_viewer": "Star System Viewer",
@@ -16196,12 +16336,10 @@
       "item.distant_frontiers.display": "Display",
       "block.farout.basaltic_dirt": "Basaltic Dirt",
       "item.distant_frontiers.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
-      "item.farout.fusion_fuel_tank": "Lithium-Lined Fusion Pellet Tank",
       "gui.distant_frontiers.fairing_gui.label_electric": "Electric",
       "item.farout.unetched_graphene_wafer": "Unetched Graphene Wafer",
       "block.farout.sulfur_block": "Block of Sulfur",
       "item.far_out.inflatable_greenhouse_spawn_egg": "Inflatable Greenhouse Spawn Egg",
-      "item.farout.chemical_fuel_tank": "Chemical Fuel Tank",
       "block.far_out.bio_plastic_window": "Bio Plastic Window",
       "gui.distant_frontiers.etaui_gui.label_mass_0988_earth_masses": "mass: 0.988 earth masses",
       "biome.far_out.lavaoceans": "Lava oceans",
@@ -16209,7 +16347,6 @@
       "item.farout.borated_steel_ingot": "Borated Steel",
       "gui.distant_frontiers.infinatos_gui.label_empty": "",
       "item.distant_frontiers.saltwater_bucket": "Saltwater Bucket",
-      "gui.farout.page_2.label_day_7_so_far_these_last_few_da": "Day 7: So far, these last few days consisted of surviving, but I need to go  ",
       "item.far_out.quartz_filter": "Centrifugal Quartz Filter",
       "block.far_out.truss": "Truss",
       "block.farout.immature_etauosian_grainstalk": "Etauosian Grainstalk",
@@ -16229,14 +16366,13 @@
       "fluid.farout.sulfuric_acid": "Sulfuric Acid",
       "item.far_out.glacieo": "Glacieo Portal Igniter",
       "biome.far_out.etautosmidlands": "Etautosmidlands",
+      "item.farout.liquid_methane_bucket": "Liquid Methane Bucket",
       "item.far_out.solarpanels": "Solar panels",
       "advancements.extreme_voltage.title": "Extreme Voltage",
       "block.far_out.superconducting_magnetic_battery": "Superconducting Magnetic Battery",
       "item.distant_frontiers.infinatos": "Infinatos Portal Igniter",
-      "gui.farout.page_3.label_own_thrusters_were_used_to_push": "own thrusters were used to push the fuel to the engine, which made it light up. ",
       "item.far_out.atmospheric_fusion_rocket": "Atmospheric Fusion Rocket",
       "gui.distant_frontiers.vulcan_gui.label_1_other_gases": "1% other gases",
-      "entity.farout.rocket_no_fairing": "Rocket",
       "item.distant_frontiers.memory_stick": "Memory Stick",
       "gui.distant_frontiers.integrated_circuit_fabricator_gui.label_integrated_circuit_fabricator": "Integrated Circuit Fabricator",
       "block.farout.airlock_door": "Airlock Door",
@@ -16253,7 +16389,6 @@
       "item.far_out.lh_2_bucket": "LH2 Bucket",
       "gui.distant_frontiers.terra_gui.label_anything_that_is_sent_there_lose": "anything that is sent there loses ",
       "gui.farout.beam_injector_gui.button_electron_beam": "Electron Beam",
-      "gui.farout.fairing_gui.label_fuel_tanks": "Fuel Tanks",
       "item.far_out.chemical_fuel_tank": "Chemical Fuel Tank",
       "biome.distant_frontiers.etauos_highlands": "Etautos Highlands",
       "block.farout.boracite_block": "Block of Boracite",
@@ -16275,11 +16410,10 @@
       "gui.farout.page_1.button_empty1": "\u003c",
       "block.distant_frontiers.boron_block": "Block of Boron",
       "block.far_out.rhenium_block": "Block of Rhenium",
+      "item.farout.xenon": "Xenon",
       "item.far_out.radiator": "Radiator",
-      "item.farout.lithium_fuel_tank": "Lithium Fuel Tank",
       "item.distant_frontiers.vodka": "Vodka",
       "item.far_out.space_suit_helmet": "Space Suit Helmet",
-      "gui.farout.biological_incubator_gui.label_biological_incubator": "Biological Incubator",
       "item.farout.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "item.far_out.medium_frequency_integrated_circuit": "Medium Frequency Integrated Circuit",
       "advancements.fusion_propusion.title": "Fusion Propusion",
@@ -16287,7 +16421,6 @@
       "gui.distant_frontiers.silican_gui.label_nitrogen_41": "nitrogen: 41%",
       "gui.distant_frontiers.rocket_printer_gui_1.label_glacieo": "glacieo",
       "item.farout.green_oil_bucket": "Green Oil Bucket",
-      "item.farout.solid_core_nuclear_thermal_rocket": "Solid Core Nuclear Thermal Rocket",
       "item.distant_frontiers.parachute": "Parachute",
       "biome.farout.asphalt_plains": "Asphalt Plains",
       "item.distant_frontiers.hydrogen": "Hydrogen",
@@ -16299,8 +16432,8 @@
       "item.far_out.metallic_hydrogen_engine": "Metallic Hydrogen Engine",
       "item.farout.emergency_rations": "Emergency Rations",
       "block.far_out.air_purifier": "Air Purifier",
-      "gui.farout.page_2.button_empty1": "\u003c",
       "item.far_out.generator": "Generator",
+      "gui.farout.rocket_assembly_manager_gui.label_rocket_stats": "Spacecraft stats:",
       "item.distant_frontiers.sky_hydrozoan_dried_ink_sac": "Sky Hydrozoan Dried Ink Sac",
       "gui.distant_frontiers.oceanus_gui.label_mass_114_earth_masses": "mass: 1.14 earth masses",
       "biome.farout.etauian_plains": "Etauian Plains",
@@ -16329,7 +16462,6 @@
       "block.farout.asphalt": "Asphalt",
       "key.farout.pitch_increase": "Pitch Increase",
       "gui.distant_frontiers.oceanus_gui.label_up_of_lslands_life_is_equivalen": "up of lslands, life is equivalent",
-      "item.farout.chemical_rocket_engine": "Chemical Rocket Engine",
       "item.far_out.osmium_filter": "Centrifugal Osmium Filter",
       "fluid.far_out.methlox": "Methlox",
       "gui.farout.integrated_circuit_fabricator_gui.button_empty1": "\u003e",
@@ -16387,7 +16519,6 @@
       "block.distant_frontiers.quartz_ore": "Quartz Ore",
       "gui.distant_frontiers.science_workbench_gui.button_research": "research",
       "item.farout.atmospheric_analyzer": "Atmospheric Analyzer",
-      "gui.farout.page_2.button_empty": "\u003e",
       "item.far_out.graphite_ingot": "Graphite",
       "entity.distant_frontiers.launch_vehicle": "Launch Vehicle",
       "item.far_out.motor": "Motor",
@@ -16444,7 +16575,6 @@
       "gui.farout.page_2.label_the_milky_way_galaxy_in_its_enti": "the milky way galaxy in its entirety, a small spiral of gas in the sky. ",
       "item.farout.vodka": "Vodka",
       "item.distant_frontiers.zeolite": "Zeolite",
-      "gui.farout.page_1.button_empty": "\u003e",
       "item.distant_frontiers.rocket_item": "Rocket",
       "gui.distant_frontiers.science_workbench_gui.label_research": "Research:",
       "item.distant_frontiers.atmospheric_fusion_rocket": "Atmospheric Fusion Rocket",
@@ -16456,7 +16586,6 @@
       "block.distant_frontiers.bio_plastic_window": "Bio Plastic Window",
       "block.farout.hydrogen_fuel_cell": "Hydrogen Fuel Cell",
       "advancements.argon_gas_obtained.title": "A very noble gas",
-      "gui.farout.page_1.label_nobody_is_coming_here_anytime_so": "generator. Nobody is coming here anytime soon, so I better make myself",
       "item.far_out.hexuran_sword": "Hexuran Sword",
       "item.distant_frontiers.sulfur_dust": "Sulfur",
       "biome.farout.warm_oceans": "Warm Oceans",
@@ -16468,23 +16597,19 @@
       "item.farout.osmium_ingot": "Osmium ingot",
       "item.distant_frontiers.super_alloy_axe": "Super Alloy Axe",
       "gui.distant_frontiers.etaui_gui.label_moons_1": "moons: 1",
-      "gui.farout.page_1.label_i_must_be_in_a_globular_cluster": "I must be in a globular cluster, far away from the milky way.",
       "item.distant_frontiers.super_alloy_ingot": "Super Alloy ingot",
       "entity.farout.lander": "lander",
       "gui.distant_frontiers.fairing_gui.label_button_is_pressed": "Button Is Pressed",
-      "gui.farout.page_3.label_day_22_t021300_i_have_gott": "Day 22, T+02:13:00 : I have gotten to the moon. The orbital insertion maneuver",
       "item.distant_frontiers.boron_ingot": "Boron ingot",
       "block.distant_frontiers.chacoa": "Chacoa",
       "item.farout.spacecraft_construction_meterials": "Spacecraft Construction Materials",
       "item.far_out.rocket_item": "Rocket",
-      "gui.farout.page_3.label_atmosphere_i_undocked_with_the": "atmosphere. I undocked with the transfer vessel and began atmospheric entry. ",
       "item.farout.fission_fragment_engine": "Fission Fragment Engine",
-      "gui.farout.page_3.label_ad_astra": "Ad Astra!",
       "item.farout.boron_ingot": "Boron ingot",
       "block.distant_frontiers.super_alloy_block": "Block of Super Alloy",
       "item.farout.chemicals": "Chemicals",
-      "gui.farout.fairing_gui.label_engine": "Engine",
       "item.far_out.embededcomputer": "Embededcomputer",
+      "block.farout.rocket_assembler": "Rocket Assembler",
       "gui.distant_frontiers.terra_gui.label_orbital_speed_335_kms": "orbital speed: 33.5 km/s",
       "block.farout.musnius_planks": "Musnius Planks",
       "block.no.atmospheric_rocketengine": "Atmospheric Rocketengine",
@@ -16496,7 +16621,6 @@
       "item.distant_frontiers.limestone_dust": "Limestone",
       "gui.farout.page_2.label_day_2_i_woke_up_and_got_to_work": "Day 2: I woke up and got to work. First, I did a bit more mining for iron, ",
       "advancements.advanced_fusion.title": "Advanced Fusion",
-      "gui.farout.page_1.label_lot_of_stars_in_the_sky_you_cou": "lot of stars in the sky, you could see at least 10,000 of them. Secondly,",
       "biome.far_out.phosphorus_hills": "Phosphorus Hills",
       "item.no.computer": "Computer",
       "block.far_out.fungus_pressure_plate": "Fungus Pressure Plate",
@@ -16504,19 +16628,16 @@
       "biome.farout.massivo_atmosphere": "Massivo Atmosphere",
       "item.farout.coffinite": "Coffinite",
       "gui.distant_frontiers.fairing_gui.label_control_unit": "Control Unit",
+      "gui.farout.rocket_assembly_manager_gui.label_items_needed": "Items needed:",
       "gui.distant_frontiers.genetic_sequencer.label_exotic_nucleotide_translator": "Exotic nucleotide translator",
       "item.no.sky_hydrozoan_spawn_egg": "Sky Hydrozoan Spawn Egg",
-      "gui.farout.page_3.label_i_glanced_at_the_beautiful_calci": "I glanced at the beautiful calcite highlands, with blue oceans,",
       "gui.farout.designing_workbench_gui.label_electric_generator": "Electric generator:",
-      "gui.farout.fairing_gui.label_button_is_pressed": "Button Is Pressed",
-      "gui.farout.page_2.label_that_if_you_can_get_your_ship_in": "that if you can get your ship into orbit, you\u0027re halfway to anywhere. The ",
       "block.distant_frontiers.acrylonitrile": "Acrylonitrile",
       "block.far_out.sulfur_block": "Block of Sulfur",
       "biome.far_out.fungi_forests": "Fungi Forests",
       "item.distant_frontiers.diamond_filter": "Centrifugal Diamond Filter",
       "item.far_out.inflatable_segment": "Inflatable Segment",
       "block.no.heatshield": "Heatshield",
-      "item.farout.fairing": "Fairing",
       "block.far_out.fungus_slab": "Fungus Slab",
       "biome.no.etautoslowlands": "Etautos lowlands",
       "block.farout.crushed_quartz": "Crushed Quartz",
@@ -16555,17 +16676,14 @@
       "block.no.dried_fungus_trunk": "Fungus Trunk",
       "block.far_out.regolith": "Regolith",
       "block.farout.musnius_fence_gate": "Musnius Fence Gate",
+      "block.farout.liquid_methane": "Liquid Methane",
       "block.far_out.rhenium_ore": "Rhenium Ore",
       "item.distant_frontiers.mageto_inertial_confinement_fusion_engine": "Mageto Inertial Confinement Fusion Engine",
       "item.farout.hexuran_shovel": "Hexuran Shovel",
       "advancements.ad_astra.descr": "Go to another star",
-      "gui.farout.page_3.label_muddy_shores_and_blue_plantlif": "muddy shores, and blue plant-life, the whole thing covered in a brown",
-      "gui.farout.page_1.label_minerals_in_it_to_separate": "in there to separate. ",
       "gui.farout.energymeter_gui.label_varintegerenergyvarintege": "\u003cVAR:integer:Energy\u003e/\u003cVAR:integer:TotalCapacty\u003e",
-      "gui.farout.page_3.label_hopped_out_planted_my_flag_and": "I hopped out, planted my flag, and started making a base, with a greenhouse,",
       "block.far_out.uranium_ore": "Uranium Ore",
       "item.far_out.early_interplanetary_probe": "Early Interplanetary Probe",
-      "gui.farout.fairing_gui.label_generator": "Generator",
       "item.far_out.spacegrademeal": "Space grade meal",
       "gui.distant_frontiers.knowledge_base_main_menu.button_etaui": "Etaui",
       "item.far_out.liquidphosphorus_bucket": "Liquidphosphorus Bucket",
@@ -16576,7 +16694,6 @@
       "item.farout.interstellar_habitation_module": "Interstellar Habitation Module",
       "block.far_out.silicon_block": "Block of Silicon",
       "gui.farout.page_2.label_generator_there_and_hooked_it_u": "and hooked it up to my escape pod. I also need to extract the materials",
-      "gui.farout.page_2.label_day_21_today_is_the_day_i_am_h": "Day 21: Today is the day. I am heading to the moon. Over the last 2 weeks, I",
       "block.far_out.upgrade_applyer": "Upgrade Applyer",
       "entity.far_out.starting_lander": "Starting Lander",
       "item.far_out.liquid_hydrogen_fuel_tank": "Liquid Hydrogen Fuel Tank",
@@ -16592,11 +16709,10 @@
       "item.far_out.benzene": "Benzene",
       "gui.distant_frontiers.oceanus_gui.label_orbital_speed_53_kms": "orbital speed: 53 km/s",
       "gui.farout.electrolyzer_gui.label_electrolyzer": "Electrolyzer",
-      "gui.farout.fairing_gui.label_control_unit": "Control Unit",
-      "gui.farout.page_1.label_escape_pod_is_running_out_of_pow": "comfortable. There is a lava pool nearby, so I placed the generator there,",
       "item.far_out.boron_ingot": "Boron ingot",
       "item.far_out.ammonia": "Ammonia",
       "gui.distant_frontiers.etauos_gui.label_orbital_speed_311_kms": "orbital speed: 3.11 km/s",
+      "item.farout.penning_trap": "Penning Trap",
       "item.far_out.sky_hydrozoan_spawn_egg": "Sky Hydrozoan Spawn Egg",
       "gui.distant_frontiers.rocket_dest_selector.button_silican": "Silican",
       "item_group.farout.nuclear_fusion": "Nuclear Fusion",
@@ -16609,8 +16725,6 @@
       "item.no.tritum_bucket": "Tritum Bottle",
       "item.far_out.empty_fuel_tank": "Empty Fuel Tank",
       "item.distant_frontiers.chemical_rocket_engine": "Chemical Rocket Engine",
-      "item.farout.inflatable_habitat": "Inflatable Habitat",
-      "item.farout.data_disk_1": "Data Disk 1",
       "biome.distant_frontiers.etauos_midlands": "Etautosmidlands",
       "item.farout.lander_bay": "Lander Bay",
       "item.no.spore_berries": "Spore Berries",
@@ -16626,10 +16740,8 @@
       "item.far_out.plutonium_filter": "Centrifugal Plutonium Filter",
       "item.far_out.vasmir_ion_engine": "Vasmir Ion Engine",
       "gui.distant_frontiers.voltmetergui.label_energy": "\u003cenergy\u003e",
-      "gui.farout.page_2.label_habitable_conditions_only_thing": "habitable conditions, only thing that is concerning is the brown dust in the",
       "item.distant_frontiers.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
       "block.distant_frontiers.silicon_block": "Block of Silicon",
-      "item.farout.basic_hab_module": "Basic Hab Module",
       "block.far_out.biomass_burner": "Biomass Burner",
       "item.distant_frontiers.nozzle": "Nozzle",
       "block.far_out.fungus_stairs": "Fungus Stairs",
@@ -16640,11 +16752,11 @@
       "item.distant_frontiers.advanced_command_disk": "Advanced Command Disk",
       "item.far_out.hexuran_axe": "Hexuran Axe",
       "gui.distant_frontiers.centrifugalseparator_gui.label_centrifugal_separator": "centrifugal separator",
+      "block.farout.rocket_assembly_manager": "Rocket Assembly Manager",
       "item.distant_frontiers.silican": "Silican Portal Igniter",
       "block.farout.molybdenum_block": "Block of Molybdenum",
       "biome.distant_frontiers.methane_seas": "Methane Seas",
       "item.distant_frontiers.memorychip": "Memorychip",
-      "gui.farout.fairing_gui.label_warning_fairing_cannot_be": "Warning! Fairing Cannot Be",
       "item.far_out.inflatable_module": "Inflatable Module",
       "block.farout.musnius_tree_trunk": "Musnius Tree Trunk",
       "block.no.fungus_fence": "Fungus Fence",
@@ -16676,11 +16788,10 @@
       "block.distant_frontiers.fungus_stairs": "Fungus Stairs",
       "biome.far_out.silican_midlands": "Silican Midlands",
       "gui.farout.rocket_trajectory_selection.button_infinatos": "Infinatos",
-      "gui.farout.page_2.label_chlorella_is_like_a_miracle_food": "Chlorella is like a miracle food, because it has a high protein, fat and carb",
+      "item.farout.rocketry_icon": "Rocketry Icon",
       "gui.farout.designing_workbench_gui.label_dv": "ΔV:",
       "block.far_out.olivine_wood": "Olivine Wood",
       "effect.far_out.oxygen": "Oxygen",
-      "item.farout.basic_command_disk": "Basic Command Disk",
       "block.farout.coffinite_ore": "Coffinite Ore",
       "item.farout.hexuraningot": "Hexuran ingot",
       "item.far_out.super_alloy_pickaxe": "Super Alloy Pickaxe",
@@ -16746,10 +16857,8 @@
       "entity.far_out.sky_hydrozoan": "Sky Hydrozoan",
       "item.far_out.microchip": "Microchip",
       "block.far_out.tundra_fungus_button": "Tundra Fungus Button",
-      "gui.farout.page_1.label_the_milky_way_galaxy_in_its_enti": "the milky way galaxy in its entirety, a small spiral of gas in the sky. ",
       "item.farout.uranium_carbide": "Uranium Carbide",
       "item.distant_frontiers.plutonium_ingot": "Plutonium",
-      "item.farout.empty_fuel_tank": "Empty Fuel Tank",
       "item.far_out.chemical_rocket_engine": "Chemical Rocket Engine",
       "item.far_out.super_alloy_sword": "Super Alloy Sword",
       "block.far_out.plutonium_block": "Block of Plutonium",
@@ -16765,7 +16874,6 @@
       "gui.distant_frontiers.etaui_gui.label_orbital_speed_415_kms": "orbital speed: 41.5 km/s",
       "entity.far_out.unmannedlander": "Unmanned lander",
       "block.no.deuterium": "Deuterium",
-      "gui.farout.page_2.label_and_can_grow_provided_that_there": "content, and can grow provided that there is light and air.",
       "block.no.lithium_ore": "Lithium Ore",
       "block.far_out.cesium_block": "Block of Cesium",
       "gui.distant_frontiers.teleport.label_teleport": "teleport",
@@ -16784,7 +16892,6 @@
       "item.far_out.memorychip": "Memorychip",
       "block.distant_frontiers.launch_pad": "Launch Pad",
       "item.far_out.inflatable_habitat": "Inflatable Habitat",
-      "item.farout.liquid_hydrogen_fuel_tank": "Liquid Hydrogen Fuel Tank",
       "gui.distant_frontiers.electrolyzer_gui.label_electrolyzer": "Electrolyzer",
       "item.far_out.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "item.distant_frontiers.massivo": "Massivo Portal Igniter",
@@ -16828,7 +16935,7 @@
       "gui.distant_frontiers.proxmai_gui.label_atmosphere_none": "atmosphere: none",
       "item.distant_frontiers.tritium": "Tritium",
       "gui.distant_frontiers.science_workbench_gui.label_varintegeradvancedresearch": "\u003cVAR:integer:AdvancedResearch\u003e",
-      "gui.farout.fairing_gui.button_refresh": "Refresh Stats",
+      "gui.farout.rocket_assembly_manager_gui.label_dv": "ΔV:",
       "gui.distant_frontiers.silican_gui.label_was_soon_abandoned_this_is_the": "was soon abandoned. this is the",
       "gui.distant_frontiers.fairing_gui.label_total_wattage_varintegerspac": "Total Wattage: \u003cVAR:integer:SpacecraftWatts\u003e",
       "item.far_out.limestone_dust": "Limestone",
@@ -16850,6 +16957,7 @@
       "item.far_out.sounding_rocket_item": "Sounding Rocket Item",
       "item.no.microchip": "Microchip",
       "subtitles.sky_hydrozoan": "",
+      "block.farout.launchpad_tiles": "Launchpad Tiles",
       "item.far_out.welding_laser": "Welding Laser",
       "block.distant_frontiers.uranium_block": "Block of Uranium",
       "block.farout.bio_plastic_window": "Bio Plastic Window",
@@ -16869,7 +16977,6 @@
       "biome.no.ammonium_ocean": "Ammonium Ocean",
       "block.far_out.planetary_logistics_module": "Planetary Logistics Module",
       "block.far_out.electrolyzer": "Electrolyzer",
-      "item.farout.nuclear_salt_water_fuel_tank": "Nuclear Salt Water Fuel Tank",
       "item.far_out.rhenium_ingot": "Rhenium ingot",
       "gui.distant_frontiers.varas_gui.label_empty": "",
       "block.far_out.silane": "Silane",
@@ -16885,7 +16992,6 @@
       "item.far_out.helium_3": "Helium 3",
       "block.no.tritum": "Tritum",
       "item.farout.hexuran_pickaxe": "Hexuran Pickaxe",
-      "item.farout.inflatable_hab_ring": "Inflatable Habitation Centrifuge",
       "item.distant_frontiers.unmanned_payload": "Unmanned Payload",
       "biome.no.purplegrass_plains": "Fungi Plains",
       "block.distant_frontiers.boracite_block": "Block of Boracite",
@@ -16906,10 +17012,8 @@
       "block.far_out.alien_algae_block": "Alien Algae",
       "gui.distant_frontiers.massivo_gui.label_atmosphere_na_pa": "atmosphere: N/A Pa",
       "biome.farout.desolate_deserts": "Desolate Deserts",
-      "gui.farout.page_1.label_materials_from_the_raw_ores_i_co": "from the raw ores I collected, so I made a chemical reactor, and put the ores",
       "gui.distant_frontiers.knowledge_base_main_menu.button_silican": "Silican",
       "advancements.high_efficiency_nuclear_propulsion.descr": "The successor to solid cycle nuclear thermal rockets. May expel radioactive exaust",
-      "gui.farout.page_3.label_deployed_a_couple_thousand_meter": "deployed a couple thousand meters above the ground, and so, with a gentle thud,",
       "item.farout.liquid_sulfur_dioxide_bucket": "Liquid Sulfur Dioxide Bucket",
       "item.far_out.copper_filter": "Centrifugal Copper Filter",
       "gui.distant_frontiers.oceanus_gui.label_atmosphere_131_kpa": "atmosphere: 131 KPa",
@@ -16938,7 +17042,6 @@
       "block.farout.yellow_torcher": "Yellow Torcher",
       "block.far_out.liquidoxygenbucket": "Liquid oxygen bucket",
       "item.far_out.goldfilter": "Centrifugal Gold Filter",
-      "item.farout.nozzle": "Nozzle",
       "item.farout.silicon_dust": "Silicon Ingot",
       "item.farout.airtight_fabric": "Airtight Fabric",
       "block.far_out.sulfur_ore": "Sulfur Ore",
@@ -16959,7 +17062,6 @@
       "fluid.far_out.metallic_hydrogen": "Metallic Hydrogen",
       "block.far_out.ammonia_ice": "Ammonia Ice",
       "gui.distant_frontiers.science_workbench_gui.label_empty": "",
-      "item.farout.advanced_command_disk": "Advanced Command Disk",
       "gui.distant_frontiers.science_workbench_gui.label_empty1": ""
     }
   },

@@ -17,7 +17,7 @@
       "item": "farout:copper_wire"
     },
     "d": {
-      "item": "farout:empty_fuel_tank"
+      "item": "farout:deleted_mod_element"
     },
     "e": {
       "tag": "minecraft:wool"

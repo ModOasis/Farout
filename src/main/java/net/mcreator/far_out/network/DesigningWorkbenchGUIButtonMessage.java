@@ -12,8 +12,15 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.DesigningWorkbenchGUIMenu;
+import net.mcreator.far_out.procedures.IncrementPropIDProcedure;
+import net.mcreator.far_out.procedures.IncrementPowIDProcedure;
 import net.mcreator.far_out.procedures.IncrementHabIDProcedure;
+import net.mcreator.far_out.procedures.IncrementCompIDProcedure;
+import net.mcreator.far_out.procedures.DecrementPropIDProcedure;
+import net.mcreator.far_out.procedures.DecrementPowIDProcedure;
 import net.mcreator.far_out.procedures.DecrementHabIDProcedure;
+import net.mcreator.far_out.procedures.DecrementCompIDProcedure;
+import net.mcreator.far_out.procedures.CopyDataToBlueprintProcedure;
 import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
@@ -63,13 +70,41 @@ public class DesigningWorkbenchGUIButtonMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 1) {
+		if (buttonID == 0) {
 
 			IncrementHabIDProcedure.execute(world, x, y, z);
 		}
-		if (buttonID == 2) {
+		if (buttonID == 1) {
 
 			DecrementHabIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 2) {
+
+			DecrementCompIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 3) {
+
+			IncrementCompIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 4) {
+
+			IncrementPropIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 5) {
+
+			DecrementPropIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 6) {
+
+			IncrementPowIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 7) {
+
+			DecrementPowIDProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 8) {
+
+			CopyDataToBlueprintProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

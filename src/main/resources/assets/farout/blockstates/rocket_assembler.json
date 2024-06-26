@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:custom/rocket_assembler_particle"
+    },
+    "facing=east": {
+      "model": "farout:custom/rocket_assembler_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:custom/rocket_assembler_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:custom/rocket_assembler_particle",
+      "y": 270
+    }
+  }
+}

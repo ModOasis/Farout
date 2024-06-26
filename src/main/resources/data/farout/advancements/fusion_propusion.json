@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:mageto_inertial_confinement_fusion_engine"
+      "item": "farout:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.fusion_propusion.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "farout:mageto_inertial_confinement_fusion_engine"
+              "farout:deleted_mod_element"
             ],
             "count": {
               "min": 1,

@@ -13,6 +13,7 @@ import net.mcreator.far_out.client.model.Modelsteve;
 import net.mcreator.far_out.client.model.Modelcustom_model;
 import net.mcreator.far_out.client.model.ModelVotodSuited;
 import net.mcreator.far_out.client.model.ModelVotod;
+import net.mcreator.far_out.client.model.ModelUnssembledLaunchVehicle;
 import net.mcreator.far_out.client.model.ModelUnmanned_lander;
 import net.mcreator.far_out.client.model.ModelUnfittedLaunchVehicle;
 import net.mcreator.far_out.client.model.ModelStartingLander;
@@ -47,6 +48,7 @@ public class FaroutModModels {
 		event.registerLayerDefinition(ModelSmallRocket.LAYER_LOCATION, ModelSmallRocket::createBodyLayer);
 		event.registerLayerDefinition(ModelUnmanned_lander.LAYER_LOCATION, ModelUnmanned_lander::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceSuitLeggings.LAYER_LOCATION, ModelSpaceSuitLeggings::createBodyLayer);
+		event.registerLayerDefinition(ModelUnssembledLaunchVehicle.LAYER_LOCATION, ModelUnssembledLaunchVehicle::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceSuitBody.LAYER_LOCATION, ModelSpaceSuitBody::createBodyLayer);
 		event.registerLayerDefinition(ModelSky_Hydrozoan.LAYER_LOCATION, ModelSky_Hydrozoan::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceSuit.LAYER_LOCATION, ModelSpaceSuit::createBodyLayer);

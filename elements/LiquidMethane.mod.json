@@ -1,0 +1,48 @@
+{
+  "_fv": 57,
+  "_type": "fluid",
+  "definition": {
+    "name": "Liquid Methane",
+    "bucketName": "Liquid Methane Bucket",
+    "textureStill": "liquid_methane_still",
+    "textureFlowing": "liquid_methane_flow",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 2,
+    "levelDecrease": 1,
+    "slopeFindDistance": 3,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "WATER_DROP"
+    },
+    "flowStrength": 0.5,
+    "luminosity": 0,
+    "density": 424,
+    "viscosity": 1000,
+    "temperature": 111,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "BUILDING_BLOCKS"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 0.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 0,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
+    "onBlockAdded": {
+      "name": "LiquidMethaneBlockAdded"
+    }
+  }
+}

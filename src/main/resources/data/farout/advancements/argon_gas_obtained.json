@@ -35,7 +35,7 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "farout:vasmir_ion_engine_recipe"
+      "farout:deleted_mod_element"
     ]
   },
   "parent": "farout:nuclear_reactor_made"

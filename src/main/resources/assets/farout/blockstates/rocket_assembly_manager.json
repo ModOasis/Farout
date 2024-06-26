@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/rocket_assembly_manager"
+    },
+    "facing=east": {
+      "model": "farout:block/rocket_assembly_manager",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/rocket_assembly_manager",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/rocket_assembly_manager",
+      "y": 270
+    }
+  }
+}

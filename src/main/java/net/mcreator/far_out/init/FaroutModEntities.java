@@ -17,7 +17,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.far_out.entity.SpaceStationRocketEntity;
-import net.mcreator.far_out.entity.RocketNoFairingEntity;
 import net.mcreator.far_out.entity.LaunchVehicleEntity;
 import net.mcreator.far_out.entity.LanderEntity;
 import net.mcreator.far_out.entity.CapsuleEntity;
@@ -34,8 +33,6 @@ public class FaroutModEntities {
 			EntityType.Builder.<LaunchVehicleEntity>of(LaunchVehicleEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LaunchVehicleEntity::new)
 
 					.sized(3.8f, 22f));
-	public static final RegistryObject<EntityType<RocketNoFairingEntity>> ROCKET_NO_FAIRING = register("rocket_no_fairing", EntityType.Builder.<RocketNoFairingEntity>of(RocketNoFairingEntity::new, MobCategory.MISC)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RocketNoFairingEntity::new).fireImmune().sized(38f, 22f));
 	public static final RegistryObject<EntityType<SpaceStationRocketEntity>> SPACE_STATION_ROCKET = register("space_station_rocket",
 			EntityType.Builder.<SpaceStationRocketEntity>of(SpaceStationRocketEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpaceStationRocketEntity::new)
 
@@ -54,7 +51,6 @@ public class FaroutModEntities {
 		event.enqueueWork(() -> {
 			CapsuleEntity.init();
 			LaunchVehicleEntity.init();
-			RocketNoFairingEntity.init();
 			SpaceStationRocketEntity.init();
 			LanderEntity.init();
 		});
@@ -64,7 +60,6 @@ public class FaroutModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CAPSULE.get(), CapsuleEntity.createAttributes().build());
 		event.put(LAUNCH_VEHICLE.get(), LaunchVehicleEntity.createAttributes().build());
-		event.put(ROCKET_NO_FAIRING.get(), RocketNoFairingEntity.createAttributes().build());
 		event.put(SPACE_STATION_ROCKET.get(), SpaceStationRocketEntity.createAttributes().build());
 		event.put(LANDER.get(), LanderEntity.createAttributes().build());
 	}

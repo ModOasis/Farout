@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "farout:block/spore_berries",
-    "particle": "farout:block/spore_berries"
-  },
-  "render_type": "cutout"
-}

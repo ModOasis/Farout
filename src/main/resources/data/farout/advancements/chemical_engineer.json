@@ -35,7 +35,7 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "farout:chemical_rocket_recipe",
+      "farout:deleted_mod_element",
       "farout:electrolyzer_recipe"
     ]
   },

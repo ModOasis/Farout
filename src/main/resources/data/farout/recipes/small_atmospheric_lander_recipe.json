@@ -14,7 +14,7 @@
       "item": "farout:aluminium_ingot"
     },
     "c": {
-      "item": "farout:basic_command_disk"
+      "item": "farout:deleted_mod_element"
     },
     "d": {
       "tag": "minecraft:wool"
@@ -23,10 +23,10 @@
       "item": "farout:copper_wire"
     },
     "f": {
-      "item": "farout:chemical_fuel_tank"
+      "item": "farout:deleted_mod_element"
     },
     "g": {
-      "item": "farout:chemical_rocket_engine"
+      "item": "farout:deleted_mod_element"
     }
   },
   "result": {

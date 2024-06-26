@@ -4,7 +4,7 @@
   "definition": {
     "name": "Rocketry",
     "icon": {
-      "value": "CUSTOM:UnequippedRocket"
+      "value": "CUSTOM:RocketryIcon"
     },
     "showSearch": false
   }

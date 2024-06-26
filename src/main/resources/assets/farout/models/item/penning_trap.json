@@ -1,0 +1,7 @@
+{
+  "parent": "farout:custom/penningtrap",
+  "textures": {
+    "0": "farout:block/solidantihydrogennpenningtrap",
+    "particle": "farout:item/spacesolarcells"
+  }
+}

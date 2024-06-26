@@ -20,6 +20,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.mcreator.far_out.fluid.SulfuricAcidFluid;
 import net.mcreator.far_out.fluid.SaltwaterFluid;
 import net.mcreator.far_out.fluid.LiquidSulfurDioxideFluid;
+import net.mcreator.far_out.fluid.LiquidMethaneFluid;
 import net.mcreator.far_out.fluid.LiquidAmmoniaFluid;
 import net.mcreator.far_out.fluid.GreenOilFluid;
 import net.mcreator.far_out.fluid.DryWaterFluid;
@@ -45,6 +46,8 @@ public class FaroutModFluids {
 	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_SULFUR_DIOXIDE = REGISTRY.register("flowing_liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_AQUEOUS_AMMONIA = REGISTRY.register("flowing_aqueous_ammonia", () -> new AqueousAmmoniaFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> LIQUID_METHANE = REGISTRY.register("liquid_methane", () -> new LiquidMethaneFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_METHANE = REGISTRY.register("flowing_liquid_methane", () -> new LiquidMethaneFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -66,6 +69,8 @@ public class FaroutModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_SULFUR_DIOXIDE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(AQUEOUS_AMMONIA.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_AQUEOUS_AMMONIA.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(LIQUID_METHANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_METHANE.get(), RenderType.translucent());
 		}
 	}
 }

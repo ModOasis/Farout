@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/at1",
+    "up": "farout:block/launch_pad_tiles_top",
+    "north": "farout:block/launch_pad_tiles_side",
+    "east": "farout:block/launch_pad_tiles_side",
+    "south": "farout:block/launch_pad_tiles_side",
+    "west": "farout:block/launch_pad_tiles_side",
+    "particle": "farout:block/at1"
+  },
+  "render_type": "solid"
+}

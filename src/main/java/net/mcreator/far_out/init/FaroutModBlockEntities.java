@@ -14,7 +14,8 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 import net.mcreator.far_out.block.entity.TokamakfusionreactorBlockEntity;
 import net.mcreator.far_out.block.entity.StirlingEngineTileEntity;
-import net.mcreator.far_out.block.entity.SporeBerrieBlockBlockEntity;
+import net.mcreator.far_out.block.entity.RocketAssemblyManagerBlockEntity;
+import net.mcreator.far_out.block.entity.RocketAssemblerTileEntity;
 import net.mcreator.far_out.block.entity.MusniusSaplingBlockEntity;
 import net.mcreator.far_out.block.entity.LargeSolarPanelsBlockEntity;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
@@ -32,7 +33,6 @@ public class FaroutModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, FaroutMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> DESKTOP_COMPUTER = register("desktop_computer", FaroutModBlocks.DESKTOP_COMPUTER, DesktopComputerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ELECTROLYZER = register("electrolyzer", FaroutModBlocks.ELECTROLYZER, ElectrolyzerBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SPORE_BERRIE_BLOCK = register("spore_berrie_block", FaroutModBlocks.SPORE_BERRIE_BLOCK, SporeBerrieBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> TOKAMAKFUSIONREACTOR = register("tokamakfusionreactor", FaroutModBlocks.TOKAMAKFUSIONREACTOR, TokamakfusionreactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LARGE_SOLAR_PANELS = register("large_solar_panels", FaroutModBlocks.LARGE_SOLAR_PANELS, LargeSolarPanelsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CARDBOARDBOX = register("cardboardbox", FaroutModBlocks.CARDBOARDBOX, CardboardboxBlockEntity::new);
@@ -46,6 +46,9 @@ public class FaroutModBlockEntities {
 			() -> BlockEntityType.Builder.of(StirlingEngineTileEntity::new, FaroutModBlocks.STIRLING_ENGINE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> MUSNIUS_SAPLING = register("musnius_sapling", FaroutModBlocks.MUSNIUS_SAPLING, MusniusSaplingBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DESIGNING_WORKBENCH = register("designing_workbench", FaroutModBlocks.DESIGNING_WORKBENCH, DesigningWorkbenchBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> ROCKET_ASSEMBLY_MANAGER = register("rocket_assembly_manager", FaroutModBlocks.ROCKET_ASSEMBLY_MANAGER, RocketAssemblyManagerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<RocketAssemblerTileEntity>> ROCKET_ASSEMBLER = REGISTRY.register("rocket_assembler",
+			() -> BlockEntityType.Builder.of(RocketAssemblerTileEntity::new, FaroutModBlocks.ROCKET_ASSEMBLER.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

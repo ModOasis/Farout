@@ -21,7 +21,6 @@ import net.mcreator.far_out.block.Super_AlloyBlockBlock;
 import net.mcreator.far_out.block.SulfuricAcidBlock;
 import net.mcreator.far_out.block.SulfurBlockBlock;
 import net.mcreator.far_out.block.StirlingEngineBlock;
-import net.mcreator.far_out.block.SporeBerrieBlockBlock;
 import net.mcreator.far_out.block.SpodumeneOreBlock;
 import net.mcreator.far_out.block.SpodumeneBlockBlock;
 import net.mcreator.far_out.block.SphaleriteOreBlock;
@@ -32,6 +31,8 @@ import net.mcreator.far_out.block.SiliconBlockBlock;
 import net.mcreator.far_out.block.SaltwaterBlock;
 import net.mcreator.far_out.block.SaltBlockBlock;
 import net.mcreator.far_out.block.RustBlock;
+import net.mcreator.far_out.block.RocketAssemblyManagerBlock;
+import net.mcreator.far_out.block.RocketAssemblerBlock;
 import net.mcreator.far_out.block.RheniumBlockBlock;
 import net.mcreator.far_out.block.RedTorcherBlock;
 import net.mcreator.far_out.block.QuartzOreBlock;
@@ -63,7 +64,9 @@ import net.mcreator.far_out.block.LumiblossomFenceBlock;
 import net.mcreator.far_out.block.LumiblossomButtonBlock;
 import net.mcreator.far_out.block.LithiumBlockBlock;
 import net.mcreator.far_out.block.LiquidSulfurDioxideBlock;
+import net.mcreator.far_out.block.LiquidMethaneBlock;
 import net.mcreator.far_out.block.LiquidAmmoniaBlock;
+import net.mcreator.far_out.block.LaunchpadTilesBlock;
 import net.mcreator.far_out.block.LargeSolarPanelsBlock;
 import net.mcreator.far_out.block.IntegratedCircuitFabricatorBlock;
 import net.mcreator.far_out.block.ImmatureEtauosianGrainstalkBlock;
@@ -117,7 +120,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> DESKTOP_COMPUTER = REGISTRY.register("desktop_computer", () -> new DesktopComputerBlock());
 	public static final RegistryObject<Block> ELECTROLYZER = REGISTRY.register("electrolyzer", () -> new ElectrolyzerBlock());
 	public static final RegistryObject<Block> SALTWATER = REGISTRY.register("saltwater", () -> new SaltwaterBlock());
-	public static final RegistryObject<Block> SPORE_BERRIE_BLOCK = REGISTRY.register("spore_berrie_block", () -> new SporeBerrieBlockBlock());
 	public static final RegistryObject<Block> TOKAMAKFUSIONREACTOR = REGISTRY.register("tokamakfusionreactor", () -> new TokamakfusionreactorBlock());
 	public static final RegistryObject<Block> LARGE_SOLAR_PANELS = REGISTRY.register("large_solar_panels", () -> new LargeSolarPanelsBlock());
 	public static final RegistryObject<Block> GRAPHITE_ORE = REGISTRY.register("graphite_ore", () -> new GraphiteOreBlock());
@@ -194,6 +196,10 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> MUSNIUS_LEAVES = REGISTRY.register("musnius_leaves", () -> new MusniusLeavesBlock());
 	public static final RegistryObject<Block> MUSNIUS_SAPLING = REGISTRY.register("musnius_sapling", () -> new MusniusSaplingBlock());
 	public static final RegistryObject<Block> DESIGNING_WORKBENCH = REGISTRY.register("designing_workbench", () -> new DesigningWorkbenchBlock());
+	public static final RegistryObject<Block> LAUNCHPAD_TILES = REGISTRY.register("launchpad_tiles", () -> new LaunchpadTilesBlock());
+	public static final RegistryObject<Block> ROCKET_ASSEMBLY_MANAGER = REGISTRY.register("rocket_assembly_manager", () -> new RocketAssemblyManagerBlock());
+	public static final RegistryObject<Block> ROCKET_ASSEMBLER = REGISTRY.register("rocket_assembler", () -> new RocketAssemblerBlock());
+	public static final RegistryObject<Block> LIQUID_METHANE = REGISTRY.register("liquid_methane", () -> new LiquidMethaneBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

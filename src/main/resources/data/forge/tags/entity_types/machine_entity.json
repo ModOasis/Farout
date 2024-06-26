@@ -4,7 +4,6 @@
     "farout:capsule",
     "farout:lander",
     "farout:launch_vehicle",
-    "farout:rocket_no_fairing",
     "farout:space_station_rocket"
   ]
 }

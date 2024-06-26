@@ -15,8 +15,8 @@
         "data": {
           "image": "canvas.png",
           "use1Xscale": false,
-          "x": 35,
-          "y": 0
+          "x": 36,
+          "y": -1
         }
       },
       {
@@ -90,8 +90,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 150,
-          "y": 161
+          "x": 168,
+          "y": 136
         }
       },
       {
@@ -105,8 +105,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 150,
-          "y": 188
+          "x": 168,
+          "y": 160
         }
       },
       {
@@ -120,8 +120,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 150,
-          "y": 206
+          "x": 168,
+          "y": 185
         }
       },
       {
@@ -129,6 +129,9 @@
         "data": {
           "image": "chemical_propulsion_small.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ChemicalRocketVisibility"
+          },
           "x": 79,
           "y": 53
         }
@@ -138,6 +141,9 @@
         "data": {
           "image": "solar_generator.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "SolarPanelsVisibility"
+          },
           "x": 63,
           "y": 39
         }
@@ -186,8 +192,11 @@
           "name": "imagebutton_arrow_left1",
           "image": "arrow_left.png",
           "hoveredImage": "arrow_left_pressed.png",
-          "x": 119,
-          "y": 54
+          "onClick": {
+            "name": "DecrementCompID"
+          },
+          "x": 123,
+          "y": 53
         }
       },
       {
@@ -196,28 +205,11 @@
           "name": "imagebutton_arrow1",
           "image": "arrow.png",
           "hoveredImage": "arrow_pressed.png",
-          "x": 244,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_arrow2",
-          "image": "arrow.png",
-          "hoveredImage": "arrow_pressed.png",
-          "x": 244,
-          "y": 80
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_arrow_left2",
-          "image": "arrow_left.png",
-          "hoveredImage": "arrow_left_pressed.png",
-          "x": 119,
-          "y": 80
+          "onClick": {
+            "name": "IncrementCompID"
+          },
+          "x": 246,
+          "y": 52
         }
       },
       {
@@ -226,8 +218,11 @@
           "name": "imagebutton_arrow3",
           "image": "arrow.png",
           "hoveredImage": "arrow_pressed.png",
-          "x": 244,
-          "y": 116
+          "onClick": {
+            "name": "IncrementPropID"
+          },
+          "x": 247,
+          "y": 115
         }
       },
       {
@@ -236,20 +231,11 @@
           "name": "imagebutton_arrow_left3",
           "image": "arrow_left.png",
           "hoveredImage": "arrow_left_pressed.png",
-          "x": 119,
-          "y": 115
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_recalculate",
-          "text": "Recalculate",
-          "isUndecorated": true,
-          "width": 82,
-          "height": 20,
-          "x": 149,
-          "y": 219
+          "onClick": {
+            "name": "DecrementPropID"
+          },
+          "x": 114,
+          "y": 116
         }
       },
       {
@@ -290,6 +276,248 @@
           },
           "x": 62,
           "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "solid_core_nuclear_thermal_propulsion_small.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "SolidCoreNuclearThermalRocketVisibility"
+          },
+          "x": 79,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_propulsion_module",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnPropulsionModule"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 126,
+          "y": 119
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_control_module",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnControlModule"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 134,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_fairing_delta_v",
+          "text": {
+            "fixedValue": "",
+            "name": "FairingDeltaV"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_fairing_hab",
+          "text": {
+            "fixedValue": "",
+            "name": "FairingHab"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 169
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_fairing_wattage",
+          "text": {
+            "fixedValue": "",
+            "name": "FairingWattage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gas_core_nuclear_thermal_propulsion.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GasCoreNuclearThermalRocketVisibility"
+          },
+          "x": 79,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "nuclear_reactor.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "NuclearReactorVisibility"
+          },
+          "x": 66,
+          "y": 37
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "IncrementPowID"
+          },
+          "x": 246,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left2",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "DecrementPowID"
+          },
+          "x": 114,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_power_source",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnPowerSource"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 126,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "magnetoplasma_thruster.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MagnetoplasmaThruster"
+          },
+          "x": 78,
+          "y": 50
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hall_efffect_thruster.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MicrowaveElectrothermalVisibility"
+          },
+          "x": 79,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "nuclear_salt_water_rocket.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "NuclearSaltWaterRocketVisibility"
+          },
+          "x": 79,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mirror_cell_fusion_rocket.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MirrorCellRocketVisibility"
+          },
+          "x": 78,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "antimatter_engine.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "AntimatterPlasmaEngineVisibility"
+          },
+          "x": 79,
+          "y": 54
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_approve_blueprint",
+          "image": "approve_blueprint.png",
+          "hoveredImage": "approve_blueprint_pressed.png",
+          "onClick": {
+            "name": "CopyDataToBlueprint"
+          },
+          "x": 62,
+          "y": 199
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Blueprint name:",
+          "name": "Name",
+          "width": 120,
+          "height": 20,
+          "x": 102,
+          "y": 206
         }
       }
     ],

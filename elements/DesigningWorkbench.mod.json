@@ -184,7 +184,7 @@
     "breakHarvestLevel": 0,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "DesigningWorkbenchGUI",
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -200,6 +200,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "DesigningWorkbenchOnBlockRightClicked"
+    },
     "onBlockAdded": {
       "name": "DesigningWorkbenchBlockAdded"
     },

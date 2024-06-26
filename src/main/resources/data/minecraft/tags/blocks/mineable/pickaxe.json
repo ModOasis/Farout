@@ -32,6 +32,9 @@
     "farout:spodumene_ore",
     "farout:spodumene_block",
     "farout:hydrogen_fuel_cell",
-    "farout:stirling_engine"
+    "farout:stirling_engine",
+    "farout:launchpad_tiles",
+    "farout:rocket_assembly_manager",
+    "farout:rocket_assembler"
   ]
 }

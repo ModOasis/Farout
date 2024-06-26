@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:chemical_rocket_engine"
+      "item": "farout:deleted_mod_element"
     },
     "title": {
       "translate": "advancements.nozzle_crafted.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "farout:chemical_rocket_engine"
+              "farout:deleted_mod_element"
             ],
             "count": {
               "min": 1,
@@ -35,14 +35,14 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "farout:basic_hab_module_recipe",
-      "farout:empty_fuel_tank_recipe",
-      "farout:chemical_fuel_tank_recipe",
-      "farout:chemical_rocket_recipe",
+      "farout:deleted_mod_element",
+      "farout:deleted_mod_element",
+      "farout:deleted_mod_element",
+      "farout:deleted_mod_element",
       "farout:basic_command_disk_recipe",
-      "farout:fairing_craft",
-      "farout:fairing_segments_craft",
-      "farout:rocket_recipe",
+      "farout:deleted_mod_element",
+      "farout:deleted_mod_element",
+      "farout:deleted_mod_element",
       "farout:small_atmospheric_lander_recipe"
     ]
   },

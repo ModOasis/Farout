@@ -1,0 +1,7 @@
+{
+  "parent": "farout:custom/solidantihydrogenpenningtrap",
+  "textures": {
+    "0": "farout:block/solidantihydrogennpenningtrap",
+    "particle": "farout:item/solarcollector"
+  }
+}

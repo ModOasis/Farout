@@ -36,37 +36,17 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModBlocks.STIRLING_ENGINE.get().asItem());
 				tabData.accept(FaroutModItems.AMMETER.get());
 				tabData.accept(FaroutModItems.IRON_WHEEL.get());
+				tabData.accept(FaroutModItems.SOLID_ANTIMATTER_PENNING_TRAP.get());
+				tabData.accept(FaroutModItems.PENNING_TRAP.get());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> ROCKETRY = REGISTRY.register("rocketry",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.rocketry")).icon(() -> new ItemStack(FaroutModItems.UNEQUIPPED_ROCKET.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(FaroutModItems.CHEMICAL_ROCKET_ENGINE.get());
-				tabData.accept(FaroutModItems.OPEN_CORE_NUCLEAR_THERMAL_ROCKET.get());
-				tabData.accept(FaroutModItems.SOLID_CORE_NUCLEAR_THERMAL_ROCKET.get());
-				tabData.accept(FaroutModItems.VASMIR_ION_ENGINE.get());
-				tabData.accept(FaroutModItems.NUCLEAR_SALT_WATER_ROCKET.get());
-				tabData.accept(FaroutModItems.NOZZLE.get());
-				tabData.accept(FaroutModItems.INFLATABLE_HAB_RING.get());
-				tabData.accept(FaroutModItems.INFLATABLE_SEGMENT.get());
-				tabData.accept(FaroutModItems.INFLATABLE_HABITAT.get());
-				tabData.accept(FaroutModItems.BASIC_HAB_MODULE.get());
-				tabData.accept(FaroutModItems.UNEQUIPPED_ROCKET.get());
-				tabData.accept(FaroutModItems.FAIRING_SEGMENTS.get());
-				tabData.accept(FaroutModItems.CHEMICAL_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.NUCLEAR_SALT_WATER_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.FUSION_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.OPEN_FAIRING.get());
-				tabData.accept(FaroutModItems.EMPTY_FUEL_TANK.get());
-				tabData.accept(FaroutModItems.MAGETO_INERTIAL_CONFINEMENT_FUSION_ENGINE.get());
-				tabData.accept(FaroutModItems.BASIC_COMMAND_DISK.get());
-				tabData.accept(FaroutModItems.ADVANCED_COMMAND_DISK.get());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farout.rocketry")).icon(() -> new ItemStack(FaroutModItems.ROCKETRY_ICON.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FaroutModItems.FISSION_FRAGMENT_ENGINE.get());
 				tabData.accept(FaroutModItems.SMALL_ATMOSPHERIC_LANDER.get());
 				tabData.accept(FaroutModItems.GALACTIC_CORE_TRACKER.get());
 				tabData.accept(FaroutModItems.HIGH_HEAT_LOAD_GRAPHINE_RADIATORS.get());
-				tabData.accept(FaroutModItems.SOLAR_COLLECTOR.get());
 				tabData.accept(FaroutModItems.INTERSTELLAR_HABITATION_MODULE.get());
 				tabData.accept(FaroutModItems.FISSION_FRAGMENT_FUEL_TANK.get());
 				tabData.accept(FaroutModItems.STARSHIP_CORE.get());
@@ -75,10 +55,11 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.SPACECRAFT_CONSTRUCTION_METERIALS.get());
 				tabData.accept(FaroutModItems.OPEN_CARGO_FAIRING.get());
 				tabData.accept(FaroutModItems.CRYOGENIC_STASIS_CHAMBER.get());
-				tabData.accept(FaroutModItems.MAGNETOPLASMADYNAMIC_THRUSTER.get());
-				tabData.accept(FaroutModItems.LITHIUM_FUEL_TANK.get());
 				tabData.accept(FaroutModBlocks.DESIGNING_WORKBENCH.get().asItem());
 				tabData.accept(FaroutModItems.SPACESHIP_BLUEPRINT.get());
+				tabData.accept(FaroutModBlocks.LAUNCHPAD_TILES.get().asItem());
+				tabData.accept(FaroutModBlocks.ROCKET_ASSEMBLY_MANAGER.get().asItem());
+				tabData.accept(FaroutModBlocks.ROCKET_ASSEMBLER.get().asItem());
 			})
 
 					.build());
@@ -95,7 +76,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.LASER.get());
 				tabData.accept(FaroutModItems.UNETCHED_GRAPHENE_WAFER.get());
 				tabData.accept(FaroutModItems.PHOTOVOLTAIC_WAFER.get());
-				tabData.accept(FaroutModItems.DATA_DISK_1.get());
 				tabData.accept(FaroutModItems.RELAY.get());
 				tabData.accept(FaroutModItems.CAPACITOR.get());
 			})
@@ -177,6 +157,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.MUSNIUS_PRESSURE_PLATE.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_BUTTON.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_PLANKS.get().asItem());
+			tabData.accept(FaroutModItems.LIQUID_METHANE_BUCKET.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
@@ -254,6 +235,8 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.URANIUM_CARBIDE.get());
 			tabData.accept(FaroutModItems.PLUTONIUM_CARBIDE.get());
 			tabData.accept(FaroutModItems.IRON_ROD.get());
+			tabData.accept(FaroutModItems.XENON.get());
+			tabData.accept(FaroutModItems.HAFNIUM_CARBONITRIDE_INGOT.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -280,8 +263,6 @@ public class FaroutModTabs {
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-			tabData.accept(FaroutModBlocks.SPORE_BERRIE_BLOCK.get().asItem());
-			tabData.accept(FaroutModItems.SPORE_BERRIES.get());
 			tabData.accept(FaroutModItems.VODKA.get());
 			tabData.accept(FaroutModItems.EMERGENCY_RATIONS.get());
 			tabData.accept(FaroutModItems.SYNTHETIC_MEAT.get());

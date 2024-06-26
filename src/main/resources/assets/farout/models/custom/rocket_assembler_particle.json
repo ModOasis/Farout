@@ -1,0 +1,6 @@
+{
+  "parent": "farout:displaysettings/rocketassembler.item",
+  "textures": {
+    "particle": "farout:block/rocketassemblertex"
+  }
+}

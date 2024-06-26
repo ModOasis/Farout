@@ -2,23 +2,14 @@ package net.mcreator.far_out.procedures;
 
 import org.checkerframework.checker.units.qual.Mass;
 
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.far_out.network.FaroutModVariables;
-import net.mcreator.far_out.init.FaroutModItems;
-import net.mcreator.far_out.init.FaroutModBlocks;
-
-import java.util.function.Supplier;
-import java.util.Map;
+import net.minecraft.world.level.Level;
+import net.minecraft.core.BlockPos;
 
 public class RefreshFairingPropertiesProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean InterplanatryCapable = false;
 		double Mass = 0;
 		double FuelCapacity = 0;
@@ -30,119 +21,220 @@ public class RefreshFairingPropertiesProcedure {
 		double ExhaustVelocity = 0;
 		double Watts = 0;
 		double HabitationTime = 0;
-		if (FaroutModBlocks.HYDROGEN_FUEL_CELL.get().asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
-			Watts = 100;
-		} else if (FaroutModItems.SULFURIC_ACID_BUCKET.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
-			Watts = 500;
-		} else if (FaroutModBlocks.Z_PINCH_FUSION_REACTOR.get()
-				.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
-			Watts = 10000;
-		} else if (FaroutModBlocks.TOKAMAKFUSIONREACTOR.get()
-				.asItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem()) {
-			Watts = 100000;
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PowID") == 0) {
+			Watts = Watts + 10;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PowID") == 1) {
+			Watts = Watts + 200;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PowID") == 2) {
+			Watts = Watts + 1000;
 		}
-		if (FaroutModItems.CHEMICAL_ROCKET_ENGINE.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
-				&& FaroutModItems.CHEMICAL_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 0) {
 			ISP = 450;
 			Mass = Mass + 0.1;
 			FuelCapacity = 7;
 			Mass = Mass + 0.05;
-		} else if (FaroutModItems.SOLID_CORE_NUCLEAR_THERMAL_ROCKET
-				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
-				&& FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
-			ISP = 950;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 1) {
+			ISP = 1000;
 			Mass = Mass + 1;
-			FuelCapacity = 1.5;
+			FuelCapacity = 20;
 			Mass = Mass + 0.1;
-		} else if (FaroutModItems.OPEN_CORE_NUCLEAR_THERMAL_ROCKET
-				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
-				&& FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
-			ISP = 1500;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 2) {
+			ISP = 1490;
 			Mass = Mass + 2;
-			FuelCapacity = 1.5;
+			FuelCapacity = 20;
 			Mass = Mass + 0.1;
-		} else if (FaroutModItems.MAGNETOPLASMADYNAMIC_THRUSTER
-				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
-				&& FaroutModItems.LITHIUM_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
-			Mass = Mass + 1;
-			ISP = 3200;
-			FuelCapacity = 1;
-			Mass = Mass + 1;
-		} else if (FaroutModItems.VASMIR_ION_ENGINE.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
-				.getItem()
-				&& FaroutModItems.LIQUID_HYDROGEN_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
-			ISP = 5700;
-			Watts = Watts - 2000;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 3) {
 			Mass = Mass + 0.5;
-			FuelCapacity = 1.5;
+			ISP = 1550;
+			FuelCapacity = 10;
+			Watts = Watts - 100;
 			Mass = Mass + 0.1;
-		} else if (FaroutModItems.NUCLEAR_SALT_WATER_ROCKET.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
-				.getItem()
-				&& FaroutModItems.NUCLEAR_SALT_WATER_FUEL_TANK
-						.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()) {
-			ISP = 6730;
-			Mass = Mass + 5;
-			FuelCapacity = 15;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 4) {
+			ISP = 3000;
+			Watts = Watts - 200;
 			Mass = Mass + 0.5;
-		} else if (FaroutModItems.MAGETO_INERTIAL_CONFINEMENT_FUSION_ENGINE
-				.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
-				&& FaroutModItems.FUSION_FUEL_TANK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.getItem()) {
-			ISP = 10000;
-			Watts = Watts - 4000;
-			Mass = Mass + 1.5;
 			FuelCapacity = 10;
 			Mass = Mass + 0.1;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 5) {
+			ISP = 6730;
+			Mass = Mass + 5;
+			FuelCapacity = 20;
+			Mass = Mass + 0.5;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 6) {
+			ISP = 20000;
+			Mass = Mass + 1.5;
+			FuelCapacity = 15;
+			Mass = Mass + 0.1;
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 7) {
+			Mass = Mass + 0.5;
+			Mass = Mass + 5;
+			FuelCapacity = 15;
+			ISP = 100000;
+			Watts = TotalWatts + 400;
 		} else {
 			FuelCapacity = 0;
 			ISP = 0;
 			Mass = Mass + 0;
 			Watts = Watts - 0;
 		}
-		if (FaroutModItems.BASIC_HAB_MODULE.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 0) {
 			Mass = Mass + 0.5;
 			HabitationTime = 5;
-		} else if (FaroutModItems.INFLATABLE_HABITAT.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 1) {
 			Mass = Mass + 1.5;
 			HabitationTime = 25;
-		} else if (FaroutModItems.INFLATABLE_HAB_RING.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 2) {
 			Mass = Mass + 6.5;
 			HabitationTime = 90;
 		}
-		if (FaroutModItems.BASIC_COMMAND_DISK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).getItem()) {
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "CompID") == 0) {
 			Mass = Mass + 0.1;
 			InterplanatryCapable = false;
-		} else if (FaroutModItems.ADVANCED_COMMAND_DISK.get() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY)
-				.getItem()) {
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "CompID") == 1) {
 			InterplanatryCapable = true;
 			Mass = Mass + 0.08;
 		}
 		ExhaustVelocity = ISP * 9.8;
-		WetMass = new Object() {
-			public int getAmount(int sltid) {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-					if (stack != null)
-						return stack.getCount();
-				}
-				return 0;
-			}
-		}.getAmount(1) * FuelCapacity + Mass;
+		WetMass = FuelCapacity + Mass;
 		FuelFraction = WetMass / Mass;
-		FaroutModVariables.MapVariables.get(world).FairingDeltaV = ExhaustVelocity * Math.log(FuelFraction);
-		FaroutModVariables.MapVariables.get(world).syncData(world);
-		FaroutModVariables.MapVariables.get(world).FairingHabTime = HabitationTime;
-		FaroutModVariables.MapVariables.get(world).syncData(world);
-		FaroutModVariables.MapVariables.get(world).FairingWattage = Watts + 0.5 * Mass;
-		FaroutModVariables.MapVariables.get(world).syncData(world);
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("\u0394V", Math.round(ExhaustVelocity * Math.log(FuelFraction)));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("HabTime", Math.round(HabitationTime));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("Wattage", Math.round(Watts + 0.5 * Mass));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 	}
 }

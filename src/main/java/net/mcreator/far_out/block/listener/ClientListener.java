@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.far_out.init.FaroutModBlockEntities;
 import net.mcreator.far_out.block.renderer.StirlingEngineTileRenderer;
+import net.mcreator.far_out.block.renderer.RocketAssemblerTileRenderer;
 import net.mcreator.far_out.FaroutMod;
 
 @Mod.EventBusSubscriber(modid = FaroutMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -16,5 +17,6 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(FaroutModBlockEntities.STIRLING_ENGINE.get(), context -> new StirlingEngineTileRenderer());
+		event.registerBlockEntityRenderer(FaroutModBlockEntities.ROCKET_ASSEMBLER.get(), context -> new RocketAssemblerTileRenderer());
 	}
 }
