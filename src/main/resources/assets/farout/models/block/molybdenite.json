@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "farout:block/molybdenum_ore",
-    "particle": "farout:block/molybdenum_ore"
-  },
-  "render_type": "solid"
-}

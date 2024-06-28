@@ -80,6 +80,10 @@ public class FaroutModVariables {
 			clone.VehicleMode = original.VehicleMode;
 			clone.CurrentSystemID = original.CurrentSystemID;
 			clone.PlayerStarSystem = original.PlayerStarSystem;
+			clone.EngineTechLevel = original.EngineTechLevel;
+			clone.HabTechLevel = original.HabTechLevel;
+			clone.GeneratorTechLevel = original.GeneratorTechLevel;
+			clone.ControlUnitTechLevel = original.ControlUnitTechLevel;
 			if (!event.isWasDeath()) {
 				clone.InFormalonSystem = original.InFormalonSystem;
 				clone.DepartureBody = original.DepartureBody;
@@ -192,6 +196,7 @@ public class FaroutModVariables {
 		public String WorkingSudoArray = "~Hey;Hi~";
 		public String ModID = "farout";
 		public double SpaceStationLevel = 0;
+		public String SelectedDimension = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -230,6 +235,7 @@ public class FaroutModVariables {
 			WorkingSudoArray = nbt.getString("WorkingSudoArray");
 			ModID = nbt.getString("ModID");
 			SpaceStationLevel = nbt.getDouble("SpaceStationLevel");
+			SelectedDimension = nbt.getString("SelectedDimension");
 		}
 
 		@Override
@@ -264,6 +270,7 @@ public class FaroutModVariables {
 			nbt.putString("WorkingSudoArray", WorkingSudoArray);
 			nbt.putString("ModID", ModID);
 			nbt.putDouble("SpaceStationLevel", SpaceStationLevel);
+			nbt.putString("SelectedDimension", SelectedDimension);
 			return nbt;
 		}
 
@@ -372,6 +379,10 @@ public class FaroutModVariables {
 		public double Zvel = 0;
 		public double Pitch = 0;
 		public double Yaw = 0;
+		public double EngineTechLevel = 0;
+		public double HabTechLevel = 0;
+		public double GeneratorTechLevel = 0;
+		public double ControlUnitTechLevel = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -396,6 +407,10 @@ public class FaroutModVariables {
 			nbt.putDouble("Zvel", Zvel);
 			nbt.putDouble("Pitch", Pitch);
 			nbt.putDouble("Yaw", Yaw);
+			nbt.putDouble("EngineTechLevel", EngineTechLevel);
+			nbt.putDouble("HabTechLevel", HabTechLevel);
+			nbt.putDouble("GeneratorTechLevel", GeneratorTechLevel);
+			nbt.putDouble("ControlUnitTechLevel", ControlUnitTechLevel);
 			return nbt;
 		}
 
@@ -417,6 +432,10 @@ public class FaroutModVariables {
 			Zvel = nbt.getDouble("Zvel");
 			Pitch = nbt.getDouble("Pitch");
 			Yaw = nbt.getDouble("Yaw");
+			EngineTechLevel = nbt.getDouble("EngineTechLevel");
+			HabTechLevel = nbt.getDouble("HabTechLevel");
+			GeneratorTechLevel = nbt.getDouble("GeneratorTechLevel");
+			ControlUnitTechLevel = nbt.getDouble("ControlUnitTechLevel");
 		}
 	}
 
@@ -457,6 +476,10 @@ public class FaroutModVariables {
 					variables.Zvel = message.data.Zvel;
 					variables.Pitch = message.data.Pitch;
 					variables.Yaw = message.data.Yaw;
+					variables.EngineTechLevel = message.data.EngineTechLevel;
+					variables.HabTechLevel = message.data.HabTechLevel;
+					variables.GeneratorTechLevel = message.data.GeneratorTechLevel;
+					variables.ControlUnitTechLevel = message.data.ControlUnitTechLevel;
 				}
 			});
 			context.setPacketHandled(true);

@@ -1,6 +1,8 @@
 {
   "type": "forge:add_features",
-  "biomes": "#is_overworld",
+  "biomes": {
+    "type": "forge:any"
+  },
   "features": "farout:graphite_ore",
   "step": "underground_ores"
 }

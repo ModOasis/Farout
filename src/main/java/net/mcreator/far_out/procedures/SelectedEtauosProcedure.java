@@ -9,7 +9,7 @@ public class SelectedEtauosProcedure {
 		if (entity == null)
 			return;
 		{
-			String _setval = "etauos";
+			String _setval = "Etauos";
 			entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.SelectedTrajectory = _setval;
 				capability.syncPlayerVariables(entity);

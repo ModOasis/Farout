@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 433,
-    "height": 196,
+    "width": 240,
+    "height": 240,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,82 +13,10 @@
       {
         "type": "image",
         "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": -1,
-          "y": 18
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": 198,
-          "y": 17
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": 393,
-          "y": 17
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_star_system_viewer",
-          "text": {
-            "fixedValue": "Star System Viewer"
-          },
-          "color": {
-            "value": -54228,
-            "falpha": 0.0
-          },
-          "x": 157,
-          "y": 19
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_zoom_out",
-          "image": "zoom_out.png",
-          "hoveredImage": "",
-          "onClick": {
-            "name": "ZoomOut"
-          },
-          "x": 411,
-          "y": 197
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_etauipixelcenter",
-          "image": "etauipixelcenter.png",
-          "hoveredImage": "etauipixelcenter.png",
-          "onClick": {
-            "name": "EtauiTrajectories"
-          },
-          "x": 51,
-          "y": 89
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_etauos",
-          "image": "etauos.png",
-          "hoveredImage": "etauos.png",
-          "onClick": {
-            "name": "EtauosTrajectories"
-          },
-          "x": 294,
-          "y": 107
+          "image": "etauimap.png",
+          "use1Xscale": true,
+          "x": 95,
+          "y": 0
         }
       },
       {
@@ -99,10 +27,10 @@
             "fixedValue": "",
             "name": "EtauiReadout"
           },
-          "width": 66,
-          "height": 66,
-          "x": 51,
-          "y": 88
+          "width": 26,
+          "height": 30,
+          "x": 201,
+          "y": 105
         }
       },
       {
@@ -113,10 +41,30 @@
             "fixedValue": "",
             "name": "EtauosReadout"
           },
-          "width": 34,
-          "height": 35,
-          "x": 293,
-          "y": 105
+          "width": 14,
+          "height": 15,
+          "x": 173,
+          "y": 16
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 368,
+          "y": 164
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory",
+          "image": "settrajectory.png",
+          "hoveredImage": "",
+          "x": 171,
+          "y": 18
         }
       }
     ],

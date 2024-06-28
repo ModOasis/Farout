@@ -20,7 +20,7 @@
     },
     "canRespawnHere": false,
     "hasFog": false,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": true,
     "sleepResult": "DENY",
     "hasSkyLight": true,
@@ -29,7 +29,7 @@
       "value": ""
     },
     "portalParticles": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "PORTAL"
     },
     "portalLuminance": 0,
     "portalSound": {

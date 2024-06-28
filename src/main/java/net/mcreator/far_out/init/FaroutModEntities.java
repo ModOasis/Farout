@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.far_out.entity.SpaceStationRocketEntity;
 import net.mcreator.far_out.entity.LaunchVehicleEntity;
 import net.mcreator.far_out.entity.LanderEntity;
 import net.mcreator.far_out.entity.CapsuleEntity;
@@ -31,10 +30,6 @@ public class FaroutModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LaunchVehicleEntity>> LAUNCH_VEHICLE = register("launch_vehicle",
 			EntityType.Builder.<LaunchVehicleEntity>of(LaunchVehicleEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LaunchVehicleEntity::new)
-
-					.sized(3.8f, 22f));
-	public static final RegistryObject<EntityType<SpaceStationRocketEntity>> SPACE_STATION_ROCKET = register("space_station_rocket",
-			EntityType.Builder.<SpaceStationRocketEntity>of(SpaceStationRocketEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpaceStationRocketEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LanderEntity>> LANDER = register("lander",
@@ -51,7 +46,6 @@ public class FaroutModEntities {
 		event.enqueueWork(() -> {
 			CapsuleEntity.init();
 			LaunchVehicleEntity.init();
-			SpaceStationRocketEntity.init();
 			LanderEntity.init();
 		});
 	}
@@ -60,7 +54,6 @@ public class FaroutModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CAPSULE.get(), CapsuleEntity.createAttributes().build());
 		event.put(LAUNCH_VEHICLE.get(), LaunchVehicleEntity.createAttributes().build());
-		event.put(SPACE_STATION_ROCKET.get(), SpaceStationRocketEntity.createAttributes().build());
 		event.put(LANDER.get(), LanderEntity.createAttributes().build());
 	}
 }

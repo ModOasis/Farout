@@ -19,6 +19,7 @@ import net.mcreator.far_out.client.gui.SandosMapScreen;
 import net.mcreator.far_out.client.gui.RocketAssemblyManagerGUIScreen;
 import net.mcreator.far_out.client.gui.RejonaMapScreen;
 import net.mcreator.far_out.client.gui.RegolithSifterGUIScreen;
+import net.mcreator.far_out.client.gui.ReadyForLaunchGUIScreen;
 import net.mcreator.far_out.client.gui.ProxmaiMapScreen;
 import net.mcreator.far_out.client.gui.OreExtractorGUIScreen;
 import net.mcreator.far_out.client.gui.OraxMapScreen;
@@ -79,6 +80,7 @@ public class FaroutModScreens {
 			MenuScreens.register(FaroutModMenus.AMMETER_GUI.get(), AmmeterGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.DESIGNING_WORKBENCH_GUI.get(), DesigningWorkbenchGUIScreen::new);
 			MenuScreens.register(FaroutModMenus.ROCKET_ASSEMBLY_MANAGER_GUI.get(), RocketAssemblyManagerGUIScreen::new);
+			MenuScreens.register(FaroutModMenus.READY_FOR_LAUNCH_GUI.get(), ReadyForLaunchGUIScreen::new);
 		});
 	}
 }

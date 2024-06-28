@@ -5,7 +5,7 @@
     "mobName": "Launch Vehicle",
     "mobLabel": "",
     "mobModelName": "ModelLaunchVehicle",
-    "mobModelTexture": "smallrockettex.png",
+    "mobModelTexture": "no_glow.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -21,9 +21,26 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelLayers": [],
-    "modelWidth": 3.8,
-    "modelHeight": 22.0,
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "launchvehicleunassembled.png",
+        "glow": false,
+        "condition": {
+          "name": "LaunchVehicleDisplayCondition"
+        }
+      },
+      {
+        "model": "Default",
+        "texture": "smallrockettex.png",
+        "glow": false,
+        "condition": {
+          "name": "LaunchVehicleDisplayCondition1"
+        }
+      }
+    ],
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 4.0,
     "mountedYOffset": 1.0,
     "hasSpawnEgg": false,
@@ -93,7 +110,7 @@
     "immuneToDrowning": true,
     "immuneToLightning": true,
     "immuneToPotions": false,
-    "immuneToPlayer": false,
+    "immuneToPlayer": true,
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": true,
@@ -114,9 +131,18 @@
     "stepSound": {
       "value": ""
     },
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "name": "ReadyForLaunch",
+        "type": "logic",
+        "value": false
+      }
+    ],
     "onRightClickedOn": {
       "name": "RocketRightClickedOnEntity"
+    },
+    "onMobTickUpdate": {
+      "name": "LaunchVehicleOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",

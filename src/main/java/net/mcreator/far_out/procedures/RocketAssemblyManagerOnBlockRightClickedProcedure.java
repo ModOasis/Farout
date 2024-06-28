@@ -2,6 +2,7 @@ package net.mcreator.far_out.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -15,6 +16,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.RocketAssemblyManagerGUIMenu;
+import net.mcreator.far_out.world.inventory.ReadyForLaunchGUIMenu;
 import net.mcreator.far_out.init.FaroutModBlocks;
 
 import io.netty.buffer.Unpooled;
@@ -169,6 +171,44 @@ public class RocketAssemblyManagerOnBlockRightClickedProcedure {
 						return new RocketAssemblyManagerGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
+			}
+			if (new Object() {
+				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getBoolean(tag);
+					return false;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "RocketReadyForLaunch")) {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("ReadyForLaunchGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new ReadyForLaunchGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
+			} else {
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = BlockPos.containing(x, y, z);
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return Component.literal("RocketAssemblyManagerGUI");
+						}
+
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new RocketAssemblyManagerGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
 		}
 	}

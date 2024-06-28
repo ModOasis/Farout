@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "farout:block/coffinite_ore",
-    "particle": "farout:block/coffinite_ore"
+    "all": "farout:block/coffiniteore",
+    "particle": "farout:block/coffiniteore"
   },
   "render_type": "solid"
 }

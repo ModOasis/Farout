@@ -230,7 +230,7 @@
       "type": "dimension",
       "sortid": 130,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "oceanus",
       "metadata": {
         "ep": false,
@@ -698,20 +698,6 @@
       }
     },
     {
-      "name": "RheniumIngot",
-      "type": "item",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rhenium_ingot",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/RheniumIngotItem.java",
-          "src/main/resources/assets/farout/models/item/rhenium_ingot.json"
-        ]
-      }
-    },
-    {
       "name": "RheniumBlock",
       "type": "block",
       "sortid": 17,
@@ -750,20 +736,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/rhenium_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "OsmiumIngot",
-      "type": "item",
-      "sortid": 72,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "osmium_ingot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/osmium_ingot.json",
-          "src/main/java/net/mcreator/far_out/item/OsmiumIngotItem.java"
         ]
       }
     },
@@ -2635,45 +2607,6 @@
       }
     },
     {
-      "name": "NozzleCrafted",
-      "type": "achievement",
-      "sortid": 579,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nozzle_crafted",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/nozzle_crafted.json"
-        ]
-      }
-    },
-    {
-      "name": "EtauosLanded",
-      "type": "achievement",
-      "sortid": 579,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauos_landed",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/etauos_landed.json"
-        ]
-      }
-    },
-    {
-      "name": "MicrochipCrafted",
-      "type": "achievement",
-      "sortid": 582,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "microchip_crafted",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/microchip_crafted.json"
-        ]
-      }
-    },
-    {
       "name": "PowerMeterRecipe",
       "type": "recipe",
       "sortid": 586,
@@ -2683,19 +2616,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/power_meter_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "NuclearReactorMade",
-      "type": "achievement",
-      "sortid": 590,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuclear_reactor_made",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/nuclear_reactor_made.json"
         ]
       }
     },
@@ -2732,19 +2652,6 @@
       }
     },
     {
-      "name": "MakeWool",
-      "type": "achievement",
-      "sortid": 593,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "make_wool",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/make_wool.json"
-        ]
-      }
-    },
-    {
       "name": "Argon",
       "type": "item",
       "sortid": 594,
@@ -2755,45 +2662,6 @@
         "files": [
           "src/main/resources/assets/farout/models/item/argon.json",
           "src/main/java/net/mcreator/far_out/item/ArgonItem.java"
-        ]
-      }
-    },
-    {
-      "name": "ExtremeVoltage",
-      "type": "achievement",
-      "sortid": 593,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "extreme_voltage",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/extreme_voltage.json"
-        ]
-      }
-    },
-    {
-      "name": "ArgonGasObtained",
-      "type": "achievement",
-      "sortid": 596,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "argon_gas_obtained",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/argon_gas_obtained.json"
-        ]
-      }
-    },
-    {
-      "name": "FusionReactorPlaced",
-      "type": "achievement",
-      "sortid": 598,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fusion_reactor_placed",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/fusion_reactor_placed.json"
         ]
       }
     },
@@ -3674,64 +3542,6 @@
       "path": "~/Trajectories"
     },
     {
-      "name": "HighEfficiencyNuclearPropulsion",
-      "type": "achievement",
-      "sortid": 805,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "high_efficiency_nuclear_propulsion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/high_efficiency_nuclear_propulsion.json"
-        ]
-      }
-    },
-    {
-      "name": "FusionPropusion",
-      "type": "achievement",
-      "sortid": 806,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fusion_propusion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/fusion_propusion.json"
-        ]
-      }
-    },
-    {
-      "name": "ExoticNuclearPropulsion",
-      "type": "achievement",
-      "sortid": 806,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "exotic_nuclear_propulsion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/exotic_nuclear_propulsion.json"
-        ]
-      }
-    },
-    {
-      "name": "LaunchVehicleOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 807,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "launch_vehicle_on_entity_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/LaunchVehicleOnEntityTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "DontDie",
       "type": "procedure",
       "sortid": 808,
@@ -4378,26 +4188,6 @@
       }
     },
     {
-      "name": "SphaleriteOre",
-      "type": "block",
-      "sortid": 881,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sphalerite_ore",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/block/SphaleriteOreBlock.java",
-          "src/main/resources/assets/farout/blockstates/sphalerite_ore.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/sphalerite_ore.json",
-          "src/main/resources/assets/farout/models/block/sphalerite_ore.json",
-          "src/main/resources/assets/farout/models/item/sphalerite_ore.json",
-          "src/main/resources/data/farout/forge/biome_modifier/sphalerite_ore_biome_modifier.json",
-          "src/main/resources/data/farout/worldgen/placed_feature/sphalerite_ore.json"
-        ]
-      },
-      "path": "~/Ores"
-    },
-    {
       "name": "SphaleriteBlock",
       "type": "block",
       "sortid": 882,
@@ -4555,82 +4345,6 @@
       }
     },
     {
-      "name": "MolybdenumIngot",
-      "type": "item",
-      "sortid": 897,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molybdenum_ingot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/molybdenum_ingot.json",
-          "src/main/java/net/mcreator/far_out/item/MolybdenumIngotItem.java"
-        ]
-      }
-    },
-    {
-      "name": "MolybdenumOre",
-      "type": "block",
-      "sortid": 895,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molybdenite",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/models/item/molybdenite.json",
-          "src/main/resources/assets/farout/models/block/molybdenite.json",
-          "src/main/resources/data/farout/forge/biome_modifier/molybdenite_biome_modifier.json",
-          "src/main/resources/assets/farout/blockstates/molybdenite.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/molybdenite.json",
-          "src/main/java/net/mcreator/far_out/block/MolybdenumOreBlock.java",
-          "src/main/resources/data/farout/worldgen/placed_feature/molybdenite.json"
-        ]
-      },
-      "path": "~/Ores"
-    },
-    {
-      "name": "MolybdenumBlock",
-      "type": "block",
-      "sortid": 896,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molybdenum_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/farout/blockstates/molybdenum_block.json",
-          "src/main/resources/assets/farout/models/block/molybdenum_block.json",
-          "src/main/java/net/mcreator/far_out/block/MolybdenumBlockBlock.java",
-          "src/main/resources/assets/farout/models/item/molybdenum_block.json"
-        ]
-      }
-    },
-    {
-      "name": "MolybdenumOreBlockRecipe",
-      "type": "recipe",
-      "sortid": 899,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molybdenum_ore_block_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/molybdenum_ore_block_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "MolybdenumBlockOreRecipe",
-      "type": "recipe",
-      "sortid": 900,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "molybdenum_block_ore_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/molybdenum_block_ore_recipe.json"
-        ]
-      }
-    },
-    {
       "name": "AlloyingStationGUIWhileThisGUIIsOpenTick",
       "type": "procedure",
       "sortid": 898,
@@ -4650,20 +4364,6 @@
             "name": "itemstack",
             "type": "itemstack"
           }
-        ]
-      }
-    },
-    {
-      "name": "RawMolybdenum",
-      "type": "item",
-      "sortid": 901,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "raw_molybdenum",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/RawMolybdenumItem.java",
-          "src/main/resources/assets/farout/models/item/raw_molybdenum.json"
         ]
       }
     },
@@ -5005,25 +4705,6 @@
       }
     },
     {
-      "name": "Monazite",
-      "type": "block",
-      "sortid": 940,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "monazite",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/worldgen/placed_feature/monazite.json",
-          "src/main/resources/data/farout/worldgen/configured_feature/monazite.json",
-          "src/main/resources/assets/farout/models/item/monazite.json",
-          "src/main/resources/data/farout/forge/biome_modifier/monazite_biome_modifier.json",
-          "src/main/java/net/mcreator/far_out/block/MonaziteBlock.java",
-          "src/main/resources/assets/farout/blockstates/monazite.json",
-          "src/main/resources/assets/farout/models/block/monazite.json"
-        ]
-      }
-    },
-    {
       "name": "GreenOil",
       "type": "fluid",
       "sortid": 941,
@@ -5334,8 +5015,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/far_out/world/inventory/EtauiMapMenu.java",
-          "src/main/java/net/mcreator/far_out/client/gui/EtauiMapScreen.java",
-          "src/main/java/net/mcreator/far_out/network/EtauiMapButtonMessage.java"
+          "src/main/java/net/mcreator/far_out/client/gui/EtauiMapScreen.java"
         ]
       },
       "path": "~/SystemMaps"
@@ -6076,19 +5756,6 @@
       }
     },
     {
-      "name": "MediumFreqMicrochipCrafted",
-      "type": "achievement",
-      "sortid": 1011,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "medium_freq_microchip_crafted",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/medium_freq_microchip_crafted.json"
-        ]
-      }
-    },
-    {
       "name": "BacterialCulture",
       "type": "item",
       "sortid": 1012,
@@ -6567,20 +6234,6 @@
       "path": "~/Trajectories"
     },
     {
-      "name": "SpaceStationRocket",
-      "type": "livingentity",
-      "sortid": 1046,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "space_station_rocket",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/entity/SpaceStationRocketEntity.java",
-          "src/main/java/net/mcreator/far_out/client/renderer/SpaceStationRocketRenderer.java"
-        ]
-      }
-    },
-    {
       "name": "RadiusUp",
       "type": "procedure",
       "sortid": 1047,
@@ -6699,10 +6352,6 @@
           "src/main/java/net/mcreator/far_out/procedures/MaterialCraftedProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -6901,45 +6550,6 @@
       }
     },
     {
-      "name": "SuppliesIntact",
-      "type": "achievement",
-      "sortid": 1072,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "supplies_intact",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/supplies_intact.json"
-        ]
-      }
-    },
-    {
-      "name": "ChemicalEngineer",
-      "type": "achievement",
-      "sortid": 1075,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chemical_engineer",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/chemical_engineer.json"
-        ]
-      }
-    },
-    {
-      "name": "PlayingGod",
-      "type": "achievement",
-      "sortid": 1076,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "playing_god",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/playing_god.json"
-        ]
-      }
-    },
-    {
       "name": "BasicCommandDiskRecipe",
       "type": "recipe",
       "sortid": 1077,
@@ -6981,20 +6591,6 @@
       }
     },
     {
-      "name": "UnetchedGrapheneWafer",
-      "type": "item",
-      "sortid": 1081,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unetched_graphene_wafer",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/far_out/item/UnetchedGrapheneWaferItem.java",
-          "src/main/resources/assets/farout/models/item/unetched_graphene_wafer.json"
-        ]
-      }
-    },
-    {
       "name": "GalacticCoreTracker",
       "type": "item",
       "sortid": 1082,
@@ -7018,19 +6614,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/advanced_command_disk_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "UnetchedGrapheneWaferRecipe",
-      "type": "recipe",
-      "sortid": 1084,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "unetched_graphene_wafer_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/recipes/unetched_graphene_wafer_recipe.json"
         ]
       }
     },
@@ -7063,19 +6646,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "LowFrequencyMicrochipCrafted",
-      "type": "achievement",
-      "sortid": 1090,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "low_frequency_microchip_crafted",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/low_frequency_microchip_crafted.json"
         ]
       }
     },
@@ -7816,32 +7386,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "SolarPanelObtained",
-      "type": "achievement",
-      "sortid": 1137,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "solar_panel_obtained",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/solar_panel_obtained.json"
-        ]
-      }
-    },
-    {
-      "name": "Photovoltaics",
-      "type": "achievement",
-      "sortid": 1138,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "photovoltaics",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/photovoltaics.json"
         ]
       }
     },
@@ -8603,19 +8147,6 @@
       }
     },
     {
-      "name": "AdAstra",
-      "type": "achievement",
-      "sortid": 1216,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ad_astra",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/ad_astra.json"
-        ]
-      }
-    },
-    {
       "name": "FissionFragmentRocketRecipe",
       "type": "recipe",
       "sortid": 1218,
@@ -8991,32 +8522,6 @@
       }
     },
     {
-      "name": "TheOtherWorlds",
-      "type": "achievement",
-      "sortid": 1272,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_other_worlds",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/the_other_worlds.json"
-        ]
-      }
-    },
-    {
-      "name": "AdvancedFusion",
-      "type": "achievement",
-      "sortid": 1273,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "advanced_fusion",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/advanced_fusion.json"
-        ]
-      }
-    },
-    {
       "name": "EtauiReadout",
       "type": "procedure",
       "sortid": 1274,
@@ -9027,27 +8532,6 @@
         "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/far_out/procedures/EtauiReadoutProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Trajectories"
-    },
-    {
-      "name": "EtauosReadout",
-      "type": "procedure",
-      "sortid": 1276,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "etauos_readout",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/far_out/procedures/EtauosReadoutProcedure.java"
         ],
         "dependencies": [
           {
@@ -9881,19 +9365,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/loot_tables/etauosian_base_loot.json"
-        ]
-      }
-    },
-    {
-      "name": "MassivoLand",
-      "type": "achievement",
-      "sortid": 1323,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "massivo_land",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/massivo_land.json"
         ]
       }
     },
@@ -12742,19 +12213,6 @@
       }
     },
     {
-      "name": "ElectrolyzerCraft",
-      "type": "achievement",
-      "sortid": 1520,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "electrolyzer_craft",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/electrolyzer_craft.json"
-        ]
-      }
-    },
-    {
       "name": "HydrogenFuelCellRecipe",
       "type": "recipe",
       "sortid": 1521,
@@ -12764,19 +12222,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/farout/recipes/hydrogen_fuel_cell_recipe.json"
-        ]
-      }
-    },
-    {
-      "name": "CraftHydrogenFuelCell",
-      "type": "achievement",
-      "sortid": 1522,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "craft_hydrogen_fuel_cell",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/farout/advancements/craft_hydrogen_fuel_cell.json"
         ]
       }
     },
@@ -15250,6 +14695,259 @@
           }
         ]
       }
+    },
+    {
+      "name": "LaunchVehicleDisplayCondition",
+      "type": "procedure",
+      "sortid": 1620,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch_vehicle_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LaunchVehicleDisplayConditionProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "LaunchVehicleDisplayCondition1",
+      "type": "procedure",
+      "sortid": 1621,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch_vehicle_display_condition_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LaunchVehicleDisplayCondition1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckIfComplete",
+      "type": "procedure",
+      "sortid": 1622,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_if_complete",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/CheckIfCompleteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stralakite",
+      "type": "block",
+      "sortid": 1623,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stralakite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/farout/forge/biome_modifier/stralakite_biome_modifier.json",
+          "src/main/resources/assets/farout/models/block/stralakite.json",
+          "src/main/java/net/mcreator/far_out/block/StralakiteBlock.java",
+          "src/main/resources/data/farout/worldgen/placed_feature/stralakite.json",
+          "src/main/resources/data/farout/worldgen/configured_feature/stralakite.json",
+          "src/main/resources/assets/farout/models/item/stralakite.json",
+          "src/main/resources/assets/farout/blockstates/stralakite.json"
+        ]
+      }
+    },
+    {
+      "name": "EtauosReadout",
+      "type": "procedure",
+      "sortid": 1624,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "etauos_readout",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/EtauosReadoutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenEtauiMap",
+      "type": "procedure",
+      "sortid": 1625,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_etaui_map",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/OpenEtauiMapProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ReadyForLaunchGUI",
+      "type": "gui",
+      "sortid": 1626,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ready_for_launch_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/world/inventory/ReadyForLaunchGUIMenu.java",
+          "src/main/java/net/mcreator/far_out/network/ReadyForLaunchGUIButtonMessage.java",
+          "src/main/java/net/mcreator/far_out/client/gui/ReadyForLaunchGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "DisplayTrajectory",
+      "type": "procedure",
+      "sortid": 1627,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_trajectory",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/DisplayTrajectoryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LaunchVehicleOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 1628,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launch_vehicle_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LaunchVehicleOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Launchit",
+      "type": "procedure",
+      "sortid": 1629,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launchit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/far_out/procedures/LaunchitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15558,6 +15256,36 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "EngineTechLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "HabTechLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "GeneratorTechLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "ControlUnitTechLevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "SelectedDimension",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [
@@ -15657,7 +15385,6 @@
       "block.no.voltometer": "Voltometer",
       "block.far_out.olivine_slab": "Olivine Slab",
       "item.far_out.tritium": "Tritium",
-      "advancements.microchip_crafted.descr": "Craft a stirling engine and use it to generate power.",
       "block.no.nuclear_reactor": "Nuclear Reactor",
       "gui.distant_frontiers.beam_injector_gui.button_fire_beam": "Fire beam!",
       "block.distant_frontiers.lithium_block": "Block of Lithium",
@@ -15665,13 +15392,11 @@
       "gui.distant_frontiers.massivo_gui.label_2_ethanol": "2% ethanol",
       "gui.distant_frontiers.etauos_gui.label_76_ethanol": "76% ethanol",
       "gui.farout.page_3.label_itself_as_the_stars_shimmered": "itself. As the stars shimmered, I noticed something odd. First, there were a",
-      "advancements.massivo_land.title": "CHEATER",
       "gui.distant_frontiers.rocket_dest_selector.button_etauos": "Etauos",
       "gui.farout.designing_workbench_gui.label_propulsion_system": "Propulsion system:",
       "item.distant_frontiers.graphiterod": "Graphite rod",
       "block.no.heat_exchanger": "Heat Exchanger",
       "block.no.uranium_ore": "Uranium Ore",
-      "advancements.supplies_intact.descr": "Take the supplies from the cargo pod",
       "block.distant_frontiers.limestone_block": "Block of Limestone",
       "item.far_out.ash": "Ash",
       "item.distant_frontiers.battery": "Battery",
@@ -15702,11 +15427,9 @@
       "gui.farout.rocket_trajectory_selection.button_vulcan": "Vulcan",
       "item.far_out.spore_berries": "Spore Berries",
       "effect.no.radioactive": "Radioactive",
-      "item.farout.raw_molybdenum": "Raw Molybdenum",
       "biome.far_out.hori_atmosphere": "Massivo Atmosphere",
       "gui.distant_frontiers.knowledge_base_main_menu.button_infinatos": "Infinatos",
       "gui.farout.rocket_trajectory_selection.button_glacieo": "Glacieo",
-      "advancements.argon_gas_obtained.descr": "Obtain argon.",
       "gui.distant_frontiers.starting_lander_gui.label_starting_lander_inventory": "Starting lander inventory",
       "fluid.farout.liquid_methane": "Liquid Methane",
       "gui.distant_frontiers.massivo_gui.label_13_helium": "13% helium",
@@ -15716,7 +15439,6 @@
       "gui.farout.sandos_map.label_star_system_viewer": "Star System Viewer",
       "gui.distant_frontiers.etauos_gui.label_other_information_has_ethanol": "other information: has ethanol",
       "block.distant_frontiers.sphalerite_ore": "Sphalerite Ore",
-      "item.farout.rhenium_ingot": "Rhenium ingot",
       "block.distant_frontiers.phosphorated_stone_2": "Phosphorated Stone",
       "block.farout.bauxite": "Bauxite Ore",
       "item.far_out.open_fairing": "Open Fairing",
@@ -15732,7 +15454,6 @@
       "gui.distant_frontiers.d_cgui_1.button_message": "Message",
       "block.far_out.cesium_ore": "Cesium Ore",
       "item.far_out.cesium_filter": "Centrifugal Cesium Filter",
-      "advancements.fusion_reactor_placed.descr": "Craft and place a Z-pinch fusion reactor",
       "block.distant_frontiers.zeolite_block": "Block of Zeolite",
       "block.no.fungus_slab": "Fungus Slab",
       "gui.farout.etaui_map.button_set_trajectory": "Set Trajectory",
@@ -15743,7 +15464,6 @@
       "item.far_out.super_alloy_axe": "Super Alloy Axe",
       "item.farout.lander_spawn_egg": "lander Spawn Egg",
       "block.no.neutronirratiator": "Neutron irratiator",
-      "advancements.chemical_engineer.title": "Chemical Engineer",
       "biome.far_out.cold_midlands": "Cold Midlands",
       "biome.no.etautosmidlands": "Etautosmidlands",
       "item.far_out.fan": "Fan",
@@ -15785,7 +15505,6 @@
       "gui.distant_frontiers.fairing_gui.label_hab_timevarintegerhab": "Hab Time:\u003cVAR:integer:Hab\u003e",
       "gui.farout.designing_workbench_gui.label_habitation_module": "Habitation module:",
       "item.far_out.unmannedlanderitem": "Unmanned lander ",
-      "block.farout.sphalerite_ore": "Sphalerite Ore",
       "gui.farout.designing_workbench_gui.label_control_unit": "Control unit:",
       "block.far_out.chacoavines": "Chacoa mycelium",
       "block.far_out.savanna_fungi_fence_gate": "Savanna Fungi Fence Gate",
@@ -15794,7 +15513,6 @@
       "gui.distant_frontiers.etauos_gui.label_empty": "",
       "item.far_out.graphiterod": "Graphite rod",
       "gui.distant_frontiers.etauos_gui.label_has_simple_life_in_ethanol_ocean": "has simple life in ethanol oceans.",
-      "advancements.make_wool.title": "Hippies hate him!",
       "biome.far_out.pressurized_sea": "Pressurized Sea",
       "item.distant_frontiers.argon_fuel_tank": "Argon Fuel Tank",
       "entity.distant_frontiers.lander": "Lander",
@@ -15805,7 +15523,6 @@
       "item.far_out.lander_spawn_egg": "Lander Spawn Egg",
       "fluid.far_out.ethanol": "Ethanol",
       "block.farout.lumiblossom_leaves": "Lumiblossom Leaves",
-      "advancements.medium_freq_microchip_crafted.title": "Faster, Better, Cheaper.",
       "gui.distant_frontiers.energymeter_gui.label_varintegerenergyvarintege": "\u003cVAR:integer:Energy\u003e/\u003cVAR:integer:TotalCapacty\u003e",
       "gui.distant_frontiers.science_workbench_gui.label_science_workbench": "Science Workbench",
       "block.far_out.tundra_fungus_stairs": "Tundra Fungus Stairs",
@@ -15844,14 +15561,12 @@
       "block.distant_frontiers.nuclear_reactor": "Nuclear Reactor",
       "item.far_out.space_food": "Space Food",
       "gui.distant_frontiers.varas_gui.label_mass_209_moon_masses": "mass: 2.09 moon masses",
-      "advancements.electrolyzer_craft.descr": "Craft and place a electrolyzer",
       "block.far_out.olivine_pressure_plate": "Olivine Pressure Plate",
       "item.far_out.etaui": "Etaui Portal Igniter",
       "item.far_out.sodium_hydroxide": "Sodium Hydroxide",
       "biome.no.freezing_highlands": "Freezing Highlands",
       "item.distant_frontiers.rocket_no_fairing_spawn_egg": "Rocket Spawn Egg",
       "block.farout.lumiblossom_slab": "Lumiblossom Slab",
-      "advancements.low_frequency_microchip_crafted.descr": "Fabricate a low frequency microchip",
       "key.farout.test": "Test",
       "item.distant_frontiers.welding_laser": "Welding Laser",
       "gui.farout.orax_map.label_star_system_viewer": "Star System Viewer",
@@ -15905,7 +15620,6 @@
       "item.farout.wrench": "Wrench",
       "item.far_out.atmospheric_nuclear_thermal_rocket": "Atmospheric Nuclear Thermal Rocket",
       "item.farout.solid_antimatter_penning_trap": "Solid Antimatter Penning Trap",
-      "advancements.etauos_landed.descr": "You landed on etauos, and were not violently killed!",
       "biome.far_out.volcanic_isles": "Volcanic Isles",
       "biome.farout.high_pressure_plains": "High Pressure Plains",
       "block.far_out.spore_emitter": "Spore Emitter",
@@ -15918,13 +15632,13 @@
       "entity.far_out.rocket": "Rocket",
       "item.distant_frontiers.nuclear_salt_water_rocket": "Nuclear Salt Water Rocket",
       "block.far_out.lithium_ore": "Lithium Ore",
-      "advancements.the_other_worlds.descr": "Go interplanetary",
       "gui.distant_frontiers.rocket_printer_gui_1.label_etauos": "etauos",
       "item.far_out.unequipped_rocket": "Unequipped Rocket",
       "gui.distant_frontiers.energymeter_gui.label_energy_production": "Energy production:",
       "item.far_out.vodka": "Vodka",
       "itemGroup.tabnuclear_fusion": "Nuclear Fusion",
       "block.distant_frontiers.zeolite_ore": "Zeolite Ore",
+      "gui.farout.ready_for_launch_gui.label_ready_for_launch": "Ready for launch",
       "gui.farout.page_3.label_i_must_be_in_a_globular_cluster": "I must be in a globular cluster, far away from the milky way.",
       "gui.farout.beam_injector_gui.button_fire_beam": "Fire beam!",
       "block.distant_frontiers.cardboardbox": "Cardboard box",
@@ -15937,6 +15651,7 @@
       "gui.distant_frontiers.massivo_gui.label_orbital_speed_325_kms": "orbital speed: 32.5 km/s",
       "item.far_out.super_alloy_ingot": "Super Alloy ingot",
       "block.distant_frontiers.truss": "Truss",
+      "gui.farout.ready_for_launch_gui.label_target_trajectory": "Target trajectory:",
       "itemGroup.tabelectronics": "Electronics",
       "fluid.no.liquidmethane": "Liquidmethane",
       "item.far_out.fusion_fuel_tank": "Fusion Fuel Tank",
@@ -15998,22 +15713,17 @@
       "block.far_out.ailen_moss": "Ailen Moss",
       "item.farout.graphite_ingot": "Graphite",
       "block.distant_frontiers.chacoavines": "Chacoa mycelium",
-      "advancements.the_other_worlds.title": "The Other Worlds",
       "block.no.purple_grass": "Purple Grass",
       "item.no.memorychip": "Memorychip",
-      "block.farout.molybdenite": "Molybdite Ore",
       "gui.distant_frontiers.silican_gui.label_hydrogen_24": "Hydrogen: 24%",
       "gui.farout.page_2.label_i_made_a_pickaxe_using_a_long": "I made a pickaxe using a long, sharpened stone and a stick. This world has a",
       "item.far_out.display": "Display",
-      "advancements.playing_god.descr": "Use the genome modifer to genetically modify some bacteria",
       "gui.distant_frontiers.terra_gui.label_7_methane": "7% methane",
       "block.farout.lumiblossom_log": "Lumiblossom Log",
       "gui.farout.page_2.label_and_i_placed_the_raw_iron_into_a": "and I placed the raw iron into a furnace I built. Then, I then made a sterling",
       "item.farout.beryllium_ingot": "Beryllium Ingot",
-      "advancements.solar_panel_obtained.descr": "Craft a solar panel",
       "fluid.far_out.lh_2": "LH2",
       "block.distant_frontiers.varas_base_foundation": "Varas Base Foundation",
-      "block.farout.monazite": "Monazite",
       "block.distant_frontiers.polymerizer": "Polymerizer",
       "biome.no.lavaoceans": "Lava oceans",
       "item.far_out.capsule_spawn_egg": "Inflatable lander Spawn Egg",
@@ -16044,7 +15754,6 @@
       "block.distant_frontiers.electrolyzer": "Electrolyzer",
       "item.distant_frontiers.laser_weapon": "Laser Weapon",
       "block.far_out.tracking_station": "Tracking Station",
-      "advancements.massivo_land.descr": "Teleport yourself into a gas giant.",
       "item.far_out.oceanus": "Oceanus Portal Igniter",
       "item.far_out.argon": "Argon",
       "item.farout.synthetic_meat": "Synthetic Meat",
@@ -16076,7 +15785,6 @@
       "block.farout.cardboardbox": "Cardboard box",
       "gui.distant_frontiers.silican_gui.label_silican": "Silican",
       "gui.distant_frontiers.vulcan_gui.label_9_hydrogen_sulfide": "9% hydrogen sulfide",
-      "advancements.supplies_intact.title": "Supplies Intact...",
       "item.distant_frontiers.proxmai": "Proxmai Portal Igniter",
       "item.farout.super_alloy_hoe": "Super Alloy Hoe",
       "fluid.farout.liquid_ammonia": "Liquid Ammonia",
@@ -16135,19 +15843,15 @@
       "item.distant_frontiers.silicon_dust": "Silicon",
       "block.far_out.varas_base_foundation": "Varas Base Foundation",
       "block.no.fungus_stairs": "Fungus Stairs",
-      "advancements.nozzle_crafted.title": "How hard can rocketry be?",
       "item.distant_frontiers.glowstone_filter": "Centrifugal Glowstone Filter",
-      "advancements.craft_hydrogen_fuel_cell.descr": "Craft and place a hydrogen fuel cell",
       "item.farout.aqueous_ammonia_bucket": "Aqueous Ammonia Bucket",
       "item.farout.cooked_synthetic_meat": "Cooked Synthetic Meat",
       "item.distant_frontiers.helium": "Helium",
       "block.far_out.quartz_ore": "Quartz Ore",
       "block.far_out.olivine_fence_gate": "Olivine Fence Gate",
       "item.far_out.sulfur_dust": "Sulfur",
-      "advancements.microchip_crafted.title": "How hard can enginering be?",
       "block.no.fungus_fence_gate": "Fungus Fence Gate",
       "item.distant_frontiers.silicon_filter": "Centrifugal Silicon Filter",
-      "advancements.fusion_propusion.descr": "The closest we have to a miniature sun. High thrust, high efficiency propusion.",
       "item.farout.ash": "Ash",
       "key.far_out.surfucesample": "Science Menu",
       "item.farout.sodium_hydroxide": "Sodium Hydroxide",
@@ -16176,7 +15880,6 @@
       "entity.distant_frontiers.rocket_no_fairing": "Rocket",
       "item.no.uranium_ingot": "Uranium",
       "biome.far_out.terra_atmosphere": "Massivo Atmosphere",
-      "advancements.electrolyzer_craft.title": "Molecule Splitter",
       "gui.distant_frontiers.science_workbench_gui.label_varintegerresearch": "\u003cVAR:integer:Research\u003e",
       "gui.distant_frontiers.varas_gui.label_moons_none": "moons: none",
       "gui.distant_frontiers.oceanus_gui.label_68_nitrogen": "68% nitrogen",
@@ -16191,13 +15894,11 @@
       "item.far_out.semiautomaticrifle": "automatic rifle",
       "gui.distant_frontiers.etauos_gui.label_atmosphere_141_kpa": "atmosphere: 14.1 KPa",
       "item.distant_frontiers.embededcomputer": "Embededcomputer",
-      "advancements.fusion_reactor_placed.title": "The power of a star",
       "block.distant_frontiers.sulfuric_acid": "Sulfuric Acid",
       "item.farout.bio_plastic": "Bio Plastic",
       "block.far_out.landerfairing": "Lander fairing",
       "item.distant_frontiers.fairing": "Fairing",
       "block.farout.ailen_moss": "Ailen Moss",
-      "advancements.ad_astra.title": "Ad Astra",
       "entity.far_out.votod_astronaut": "Votod Astronaut",
       "item.distant_frontiers.capsule_spawn_egg": "Inflatable lander Spawn Egg",
       "item.no.display": "Display",
@@ -16253,7 +15954,6 @@
       "item.far_out.fairing_segments": "Fairing Segment",
       "biome.no.cold_mid_lands": "Cold Midlands",
       "item.farout.super_alloy_pickaxe": "Super Alloy Pickaxe",
-      "advancements.exotic_nuclear_propulsion.descr": "The pinnacle of nuclear propulsion, and the most radioactive rocket ever made. Do NOT Point At Home Planet.",
       "item.farout.display": "Display",
       "block.farout.liquid_ammonia": "Liquid Ammonia",
       "item.distant_frontiers.lander_spawn_egg": "Lander Spawn Egg",
@@ -16284,7 +15984,6 @@
       "biome.far_out.sunny_islands": "Sunny Islands",
       "gui.distant_frontiers.rocket_dest_selector.label_destanation_planets_and_moons": "Destanation Planets and Moons",
       "biome.far_out.silicanlowlands": "Silican lowlands",
-      "advancements.playing_god.title": "Designer Orginisms",
       "block.distant_frontiers.biomass_burner": "Biomass Burner",
       "gui.distant_frontiers.beam_injector_gui.label_linear_accelerator_beam_configur": "Linear Accelerator Beam Configuration",
       "biome.far_out.etautoslowlands": "Etautos lowlands",
@@ -16308,7 +16007,6 @@
       "key.farout.yaw_increase": "Yaw Increase",
       "gui.distant_frontiers.oceanus_gui.label_other_information_mosty_made": "other information: mosty made",
       "item.far_out.alienalgae": "Alien algae clump",
-      "advancements.exotic_nuclear_propulsion.title": "Exotic Nuclear Propulsion",
       "gui.distant_frontiers.oceanus_gui.label_ago_its_orbital_period_and": "ago. It\u0027s orbital period and",
       "gui.farout.page_3.label_minerals_in_it_to_separate": "in there to separate. ",
       "item.farout.hydrogen": "Hydrogen",
@@ -16317,7 +16015,6 @@
       "biome.far_out.space": "Space",
       "item.farout.spaceship_blueprint": "Spaceship Blueprint",
       "item.farout.argon": "Argon",
-      "advancements.nozzle_crafted.descr": "Craft a rocket.",
       "block.farout.chacoavines": "Chacoa mycelium",
       "gui.farout.lander_gui.button_rendezvous_with_transfer_stage": "Transfer stage",
       "block.far_out.fungus_cap": "Fungus Cap",
@@ -16326,6 +16023,7 @@
       "biome.farout.atmosphereless_plains": "Atmosphereless Plains",
       "item.farout.ammonia": "Ammonia",
       "gui.farout.formalon_map.label_star_system_viewer": "Star System Viewer",
+      "gui.farout.ready_for_launch_gui.button_launch": "Launch!",
       "gui.farout.beam_injector_gui.button_protom_beam": "Proton Beam",
       "entity.far_out.flute_fish": "Flute Fish",
       "block.far_out.algaeprocessor": "Bacterial bioreactor",
@@ -16337,7 +16035,6 @@
       "block.farout.basaltic_dirt": "Basaltic Dirt",
       "item.distant_frontiers.sulfuric_acid_bucket": "Sulfuric Acid Bucket",
       "gui.distant_frontiers.fairing_gui.label_electric": "Electric",
-      "item.farout.unetched_graphene_wafer": "Unetched Graphene Wafer",
       "block.farout.sulfur_block": "Block of Sulfur",
       "item.far_out.inflatable_greenhouse_spawn_egg": "Inflatable Greenhouse Spawn Egg",
       "block.far_out.bio_plastic_window": "Bio Plastic Window",
@@ -16358,6 +16055,7 @@
       "block.far_out.clean_air": "Clean Air",
       "item.farout.medium_capacity_memory": "Medium Capacity Memory",
       "block.farout.lumiblossom_planks": "Lumiblossom Planks",
+      "gui.farout.ready_for_launch_gui.button_set_trajectory": "Set trajectory",
       "item.far_out.rocket_no_fairing_spawn_egg": "Rocket Spawn Egg",
       "item.distant_frontiers.organic_molecules": "Organic Molecules",
       "item_group.farout.electronics": "Electronics",
@@ -16368,7 +16066,6 @@
       "biome.far_out.etautosmidlands": "Etautosmidlands",
       "item.farout.liquid_methane_bucket": "Liquid Methane Bucket",
       "item.far_out.solarpanels": "Solar panels",
-      "advancements.extreme_voltage.title": "Extreme Voltage",
       "block.far_out.superconducting_magnetic_battery": "Superconducting Magnetic Battery",
       "item.distant_frontiers.infinatos": "Infinatos Portal Igniter",
       "item.far_out.atmospheric_fusion_rocket": "Atmospheric Fusion Rocket",
@@ -16416,7 +16113,6 @@
       "item.far_out.space_suit_helmet": "Space Suit Helmet",
       "item.farout.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "item.far_out.medium_frequency_integrated_circuit": "Medium Frequency Integrated Circuit",
-      "advancements.fusion_propusion.title": "Fusion Propusion",
       "item.farout.ammeter": "Ammeter",
       "gui.distant_frontiers.silican_gui.label_nitrogen_41": "nitrogen: 41%",
       "gui.distant_frontiers.rocket_printer_gui_1.label_glacieo": "glacieo",
@@ -16439,14 +16135,11 @@
       "biome.farout.etauian_plains": "Etauian Plains",
       "gui.distant_frontiers.proxmai_gui.label_orbital_speed_99_kms": "orbital speed: 99 km/s",
       "item.distant_frontiers.solarpanels": "Solar panels",
-      "advancements.high_efficiency_nuclear_propulsion.title": "High Efficiency Nuclear Propulsion",
-      "entity.farout.space_station_rocket": "Space Station Rocket",
       "item.far_out.sulfur_filter": "Centrifugal Sulfur Filter",
       "item.farout.pipe": "Pipe",
       "block.distant_frontiers.desktop_computer": "Desktop Computer",
       "gui.distant_frontiers.massivo_gui.label_83_hydrogen": "83% hydrogen",
       "gui.distant_frontiers.terra_gui.label_contact": "contact.",
-      "advancements.solar_panel_obtained.title": "The power of the sun",
       "item.distant_frontiers.super_capacitors": "Super Capacitors",
       "item.no.deuterium_bucket": "Deuterium Bottle",
       "entity.far_out.capsule": "Inflatable lander",
@@ -16454,7 +16147,6 @@
       "gui.distant_frontiers.terra_gui.button_next": "next",
       "gui.distant_frontiers.terra_gui.label_81_hydrogen": "81% hydrogen",
       "item.far_out.space_suit_leggings": "Space Suit Legs",
-      "advancements.craft_hydrogen_fuel_cell.title": "Water from thin air",
       "key.far_out.test": "Test",
       "fluid.far_out.saltwater": "Saltwater",
       "item.far_out.massivo": "Massivo Portal Igniter",
@@ -16571,21 +16263,17 @@
       "gui.farout.gravity_changer.Gravity": "1",
       "block.far_out.nuclear_salt_water": "Nuclear Salt Water",
       "entity.far_out.inflatable_greenhouse": "Inflatable Greenhouse",
-      "advancements.etauos_landed.title": "First step",
       "gui.farout.page_2.label_the_milky_way_galaxy_in_its_enti": "the milky way galaxy in its entirety, a small spiral of gas in the sky. ",
       "item.farout.vodka": "Vodka",
       "item.distant_frontiers.zeolite": "Zeolite",
       "item.distant_frontiers.rocket_item": "Rocket",
       "gui.distant_frontiers.science_workbench_gui.label_research": "Research:",
       "item.distant_frontiers.atmospheric_fusion_rocket": "Atmospheric Fusion Rocket",
-      "advancements.chemical_engineer.descr": "Craft a chemical reactor",
       "block.no.fungustrunk": "Fungus Trunk",
       "item.far_out.liquidoxygenbucket_bucket": "Liquid oxygen Bucket",
       "gui.distant_frontiers.fairing_gui.label_vvarintegerdv": "∆v:\u003cVAR:integer:DV\u003e",
-      "item.farout.molybdenum_ingot": "Molybdenum",
       "block.distant_frontiers.bio_plastic_window": "Bio Plastic Window",
       "block.farout.hydrogen_fuel_cell": "Hydrogen Fuel Cell",
-      "advancements.argon_gas_obtained.title": "A very noble gas",
       "item.far_out.hexuran_sword": "Hexuran Sword",
       "item.distant_frontiers.sulfur_dust": "Sulfur",
       "biome.farout.warm_oceans": "Warm Oceans",
@@ -16594,7 +16282,6 @@
       "gamerule.startWithTutorial.description": "This gives a tutorial to this mod, starting with landing on this planet up to heading to another celestal body. It is a good idea to leave this on if you are a beginner.",
       "item.no.flightcomputer": "Flight computer",
       "item.no.helium_3_bucket": "Helium 3 Bottle",
-      "item.farout.osmium_ingot": "Osmium ingot",
       "item.distant_frontiers.super_alloy_axe": "Super Alloy Axe",
       "gui.distant_frontiers.etaui_gui.label_moons_1": "moons: 1",
       "item.distant_frontiers.super_alloy_ingot": "Super Alloy ingot",
@@ -16620,7 +16307,6 @@
       "block.farout.coffinite_block": "Block of Coffinite",
       "item.distant_frontiers.limestone_dust": "Limestone",
       "gui.farout.page_2.label_day_2_i_woke_up_and_got_to_work": "Day 2: I woke up and got to work. First, I did a bit more mining for iron, ",
-      "advancements.advanced_fusion.title": "Advanced Fusion",
       "biome.far_out.phosphorus_hills": "Phosphorus Hills",
       "item.no.computer": "Computer",
       "block.far_out.fungus_pressure_plate": "Fungus Pressure Plate",
@@ -16667,12 +16353,10 @@
       "item.distant_frontiers.low_frequency_integrated_circuit": "Low Frequency Integrated Circuit",
       "gui.farout.regolith_sifter_gui.label_regolith_sifter": " Regolith Sifter",
       "block.far_out.metallic_hydrogen": "Metallic Hydrogen",
-      "advancements.medium_freq_microchip_crafted.descr": "Craft a medium frequency integrated circuit.",
       "block.no.methlox": "Methlox",
       "block.distant_frontiers.sphalerite_block": "Block of Sphalerite",
       "block.distant_frontiers.liquidmethane": "Liquidmethane",
       "gui.distant_frontiers.etaui_gui.label_ammonia_oceans_life_is_equivale": "ammonia oceans. life is equivalent",
-      "advancements.make_wool.descr": "Process a fungus log in the chemical reactor",
       "block.no.dried_fungus_trunk": "Fungus Trunk",
       "block.far_out.regolith": "Regolith",
       "block.farout.musnius_fence_gate": "Musnius Fence Gate",
@@ -16680,7 +16364,6 @@
       "block.far_out.rhenium_ore": "Rhenium Ore",
       "item.distant_frontiers.mageto_inertial_confinement_fusion_engine": "Mageto Inertial Confinement Fusion Engine",
       "item.farout.hexuran_shovel": "Hexuran Shovel",
-      "advancements.ad_astra.descr": "Go to another star",
       "gui.farout.energymeter_gui.label_varintegerenergyvarintege": "\u003cVAR:integer:Energy\u003e/\u003cVAR:integer:TotalCapacty\u003e",
       "block.far_out.uranium_ore": "Uranium Ore",
       "item.far_out.early_interplanetary_probe": "Early Interplanetary Probe",
@@ -16730,7 +16413,6 @@
       "item.no.spore_berries": "Spore Berries",
       "fluid.far_out.nuclear_salt_water": "Nuclear Salt Water",
       "item.distant_frontiers.quartz_filter": "Centrifugal Quartz Filter",
-      "advancements.low_frequency_microchip_crafted.title": "Homemade microchips",
       "item.far_out.borated_steel_ingot": "Borated Steel",
       "block.far_out.tundra_fungus_planks": "Tundra_Fungus Planks",
       "item.far_out.airtight_fabric": "Airtight Fabric",
@@ -16754,7 +16436,6 @@
       "gui.distant_frontiers.centrifugalseparator_gui.label_centrifugal_separator": "centrifugal separator",
       "block.farout.rocket_assembly_manager": "Rocket Assembly Manager",
       "item.distant_frontiers.silican": "Silican Portal Igniter",
-      "block.farout.molybdenum_block": "Block of Molybdenum",
       "biome.distant_frontiers.methane_seas": "Methane Seas",
       "item.distant_frontiers.memorychip": "Memorychip",
       "item.far_out.inflatable_module": "Inflatable Module",
@@ -16818,6 +16499,7 @@
       "item.distant_frontiers.uranium_filter": "Centrifugal Uranium Filter",
       "block.far_out.acrylonitrile": "Acrylonitrile",
       "block.distant_frontiers.liquidoxygenbucket": "Liquid oxygen bucket",
+      "block.farout.stralakite": "Stralakite",
       "item.farout.spodumene": "Spodumene",
       "item.far_out.nuclear_salt_water_rocket": "Nuclear Salt Water Rocket",
       "gui.distant_frontiers.oceanus_gui.label_30_oxygen": "30% oxygen",
@@ -16839,6 +16521,7 @@
       "block.farout.electrolyzer": "Electrolyzer",
       "gui.farout.cargo_fairing_gui.label_cargo_fairing": "Cargo Fairing",
       "gui.farout.page_3.label_nobody_is_coming_here_anytime_so": "generator. Nobody is coming here anytime soon, so I better make myself",
+      "gui.farout.ready_for_launch_gui.label_empty": "",
       "block.distant_frontiers.spore_berrie_block": "Spore Berrie Block",
       "item.far_out.rocket_spawn_egg": "Rocket Spawn Egg",
       "advancements.farout_start.descr": "You have landed on etaui, a planet with tree like fungus and simple animal life.",
@@ -16864,7 +16547,6 @@
       "block.far_out.plutonium_block": "Block of Plutonium",
       "block.farout.tokamakfusionreactor": "Tokamak fusion reactor",
       "item.distant_frontiers.iron_filter": "Centrifugal Iron Filter",
-      "advancements.advanced_fusion.descr": "More fuel modes!",
       "block.far_out.launch_pad": "Launch Pad",
       "gui.distant_frontiers.d_cgui_1.button_system_map": "System map",
       "item.farout.starship_core": "Starship Core",
@@ -16897,7 +16579,6 @@
       "item.distant_frontiers.massivo": "Massivo Portal Igniter",
       "item.distant_frontiers.chemical_fuel_tank": "Chemical Fuel Tank",
       "gui.distant_frontiers.air_purifier_gui.label_air_purifer": "Air Purifer",
-      "advancements.photovoltaics.descr": "Obtain Photovoltaics",
       "gui.distant_frontiers.oceanus_gui.label_atmospheric_composition": "Atmospheric composition:",
       "item.farout.low_capacity_memory": "Low Capacity Memory",
       "gui.distant_frontiers.rocket_dest_selector.button_glacieo": "Glacieo",
@@ -16928,7 +16609,6 @@
       "block.farout.musnius_slab": "Musnius Slab",
       "gui.distant_frontiers.planetary_logistics_gui.label_planetary_logistics": "Planetary Logistics",
       "item.farout.etauosian_grain_stalk_seeds": "Etauosian Grain Stalk Seeds",
-      "advancements.nuclear_reactor_made.title": "A controversial power source",
       "item.far_out.hori": "Massivo Portal Igniter",
       "gui.distant_frontiers.massivo_gui.label_2_salt": "2% salt",
       "gui.farout.massivo_map.label_star_system_viewer": "Star System Viewer",
@@ -16981,7 +16661,6 @@
       "gui.distant_frontiers.varas_gui.label_empty": "",
       "block.far_out.silane": "Silane",
       "gui.distant_frontiers.terra_gui.label_3_ammonia": "3% ammonia",
-      "advancements.extreme_voltage.descr": "Have at least 15,000 kW of energy in your grid",
       "block.distant_frontiers.lithium_ore": "Lithium Ore",
       "item.farout.carborundum_ingot": "Carborundum",
       "item.distant_frontiers.sulfur_filter": "Centrifugal Sulfur Filter",
@@ -16996,7 +16675,6 @@
       "biome.no.purplegrass_plains": "Fungi Plains",
       "block.distant_frontiers.boracite_block": "Block of Boracite",
       "item.distant_frontiers.aluminium_ingot": "Aluminium",
-      "advancements.nuclear_reactor_made.descr": "Craft and place a nuclear reactor",
       "item.distant_frontiers.potassium_nitrate_dust": "Potassium nitrate",
       "item.far_out.boron_filter": "Centrifugal Boron Filter",
       "entity.far_out.lander": "Lander",
@@ -17013,7 +16691,6 @@
       "gui.distant_frontiers.massivo_gui.label_atmosphere_na_pa": "atmosphere: N/A Pa",
       "biome.farout.desolate_deserts": "Desolate Deserts",
       "gui.distant_frontiers.knowledge_base_main_menu.button_silican": "Silican",
-      "advancements.high_efficiency_nuclear_propulsion.descr": "The successor to solid cycle nuclear thermal rockets. May expel radioactive exaust",
       "item.farout.liquid_sulfur_dioxide_bucket": "Liquid Sulfur Dioxide Bucket",
       "item.far_out.copper_filter": "Centrifugal Copper Filter",
       "gui.distant_frontiers.oceanus_gui.label_atmosphere_131_kpa": "atmosphere: 131 KPa",
@@ -17025,7 +16702,6 @@
       "item.farout.plutonium_carbide": "Plutonium Carbide",
       "item.farout.open_cargo_fairing": "Open Cargo Fairing",
       "block.far_out.fungustrunk": "Fungus Trunk",
-      "advancements.photovoltaics.title": "Photovoltaics Galore!",
       "gui.distant_frontiers.terra_gui.label_are_terraformed_the_people_arou": "are terraformed. the people around ",
       "gui.distant_frontiers.vulcan_gui.label_orbital_speed_454_kms": "orbital speed: 4.54 km/s",
       "biome.farout.crystalline_plains": "Crystalline Plains",

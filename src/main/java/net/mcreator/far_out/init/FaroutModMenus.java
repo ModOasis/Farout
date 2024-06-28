@@ -19,6 +19,7 @@ import net.mcreator.far_out.world.inventory.SandosMapMenu;
 import net.mcreator.far_out.world.inventory.RocketAssemblyManagerGUIMenu;
 import net.mcreator.far_out.world.inventory.RejonaMapMenu;
 import net.mcreator.far_out.world.inventory.RegolithSifterGUIMenu;
+import net.mcreator.far_out.world.inventory.ReadyForLaunchGUIMenu;
 import net.mcreator.far_out.world.inventory.ProxmaiMapMenu;
 import net.mcreator.far_out.world.inventory.OreExtractorGUIMenu;
 import net.mcreator.far_out.world.inventory.OraxMapMenu;
@@ -77,4 +78,5 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<AmmeterGUIMenu>> AMMETER_GUI = REGISTRY.register("ammeter_gui", () -> IForgeMenuType.create(AmmeterGUIMenu::new));
 	public static final RegistryObject<MenuType<DesigningWorkbenchGUIMenu>> DESIGNING_WORKBENCH_GUI = REGISTRY.register("designing_workbench_gui", () -> IForgeMenuType.create(DesigningWorkbenchGUIMenu::new));
 	public static final RegistryObject<MenuType<RocketAssemblyManagerGUIMenu>> ROCKET_ASSEMBLY_MANAGER_GUI = REGISTRY.register("rocket_assembly_manager_gui", () -> IForgeMenuType.create(RocketAssemblyManagerGUIMenu::new));
+	public static final RegistryObject<MenuType<ReadyForLaunchGUIMenu>> READY_FOR_LAUNCH_GUI = REGISTRY.register("ready_for_launch_gui", () -> IForgeMenuType.create(ReadyForLaunchGUIMenu::new));
 }

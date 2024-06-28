@@ -74,7 +74,6 @@ public class FaroutModTabs {
 				tabData.accept(FaroutModItems.LOW_CAPACITY_MEMORY.get());
 				tabData.accept(FaroutModItems.INERTIAL_NAVIGATION_SYSTEM.get());
 				tabData.accept(FaroutModItems.LASER.get());
-				tabData.accept(FaroutModItems.UNETCHED_GRAPHENE_WAFER.get());
 				tabData.accept(FaroutModItems.PHOTOVOLTAIC_WAFER.get());
 				tabData.accept(FaroutModItems.RELAY.get());
 				tabData.accept(FaroutModItems.CAPACITOR.get());
@@ -127,15 +126,10 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.ALUMINIUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.BAUXITE.get().asItem());
 			tabData.accept(FaroutModBlocks.CARBORUNDUM_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.SPHALERITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.SPHALERITE_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.BORACITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.BORACITE_BLOCK.get().asItem());
-			tabData.accept(FaroutModBlocks.MOLYBDENITE.get().asItem());
-			tabData.accept(FaroutModBlocks.MOLYBDENUM_BLOCK.get().asItem());
 			tabData.accept(FaroutModBlocks.CHEMOSYNTHETIC_NODULES.get().asItem());
 			tabData.accept(FaroutModBlocks.CRYSTALINE_EXOSKELETON.get().asItem());
-			tabData.accept(FaroutModBlocks.MONAZITE.get().asItem());
 			tabData.accept(FaroutModBlocks.ASPHALT.get().asItem());
 			tabData.accept(FaroutModItems.LIQUID_AMMONIA_BUCKET.get());
 			tabData.accept(FaroutModBlocks.AIRTIGHT_HABITAT_WALL.get().asItem());
@@ -184,8 +178,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.DEPLETED_URANIUM.get());
 			tabData.accept(FaroutModItems.SUPER_ALLOY_INGOT.get());
 			tabData.accept(FaroutModItems.BORON_INGOT.get());
-			tabData.accept(FaroutModItems.RHENIUM_INGOT.get());
-			tabData.accept(FaroutModItems.OSMIUM_INGOT.get());
 			tabData.accept(FaroutModItems.HELIUM_3.get());
 			tabData.accept(FaroutModItems.HELIUM.get());
 			tabData.accept(FaroutModItems.IRONPLATE.get());
@@ -197,7 +189,6 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.MOTOR.get());
 			tabData.accept(FaroutModItems.PIPE.get());
 			tabData.accept(FaroutModItems.FAN.get());
-			tabData.accept(FaroutModItems.GRAPHITE_INGOT.get());
 			tabData.accept(FaroutModItems.COPPER_WIRE.get());
 			tabData.accept(FaroutModItems.ELECTRO_MAGNET.get());
 			tabData.accept(FaroutModItems.SILICON_DUST.get());
@@ -217,13 +208,12 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModItems.CARBORUNDUM_INGOT.get());
 			tabData.accept(FaroutModItems.SPHALERITE.get());
 			tabData.accept(FaroutModItems.BORACITE.get());
-			tabData.accept(FaroutModItems.MOLYBDENUM_INGOT.get());
-			tabData.accept(FaroutModItems.RAW_MOLYBDENUM.get());
 			tabData.accept(FaroutModItems.HYDROGEN.get());
 			tabData.accept(FaroutModItems.SULFURIC_ACID_BUCKET.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(FaroutModItems.GRAPHITE_INGOT.get());
 			tabData.accept(FaroutModItems.GRAPHITEROD.get());
 			tabData.accept(FaroutModItems.SODIUM_HYDROXIDE.get());
 			tabData.accept(FaroutModItems.UNACTIVATED_GLOWSTONE_DUST.get());
@@ -245,6 +235,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.CHACOA.get().asItem());
 			tabData.accept(FaroutModBlocks.CHACOAVINES.get().asItem());
 			tabData.accept(FaroutModBlocks.ALIEN_REEDS.get().asItem());
+			tabData.accept(FaroutModBlocks.BORACITE_ORE.get().asItem());
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE.get().asItem());
 			tabData.accept(FaroutModBlocks.SOLAR_VINES_CAP.get().asItem());
 			tabData.accept(FaroutModBlocks.SOLAR_VINES.get().asItem());
@@ -260,6 +251,7 @@ public class FaroutModTabs {
 			tabData.accept(FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_LEAVES.get().asItem());
 			tabData.accept(FaroutModBlocks.MUSNIUS_SAPLING.get().asItem());
+			tabData.accept(FaroutModBlocks.STRALAKITE.get().asItem());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

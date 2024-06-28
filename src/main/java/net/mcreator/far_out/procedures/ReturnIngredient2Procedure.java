@@ -2,8 +2,10 @@ package net.mcreator.far_out.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.core.BlockPos;
 
@@ -28,6 +30,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.IRON_INGOT).toString()))) + "x " + "Iron";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.IRON_INGOT).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -44,6 +71,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.PLUTONIUM_CARBIDE.get()).toString()))) + "x " + "Plutonium carbide";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.PLUTONIUM_CARBIDE.get()).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -60,6 +112,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()))) + "x " + "Low freq. IC";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -76,6 +153,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HAFNIUM_CARBONITRIDE_INGOT.get()).toString()))) + "x " + "Hafnium Carbonitride";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HAFNIUM_CARBONITRIDE_INGOT.get()).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -92,6 +194,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get()).toString()))) + "x " + "Med. cap. memory";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get()).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -108,6 +235,31 @@ public class ReturnIngredient2Procedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.GALACTIC_CORE_TRACKER.get()).toString()))) + "x " + "Galactic Core Tracker";
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.GALACTIC_CORE_TRACKER.get()).toString())) == 0) {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("ItemsCompleted", (new Object() {
+							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "ItemsCompleted") + 1));
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+			}
 		}
 		return Test;
 	}

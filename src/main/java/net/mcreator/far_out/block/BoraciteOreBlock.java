@@ -22,7 +22,7 @@ import java.util.Collections;
 
 public class BoraciteOreBlock extends Block {
 	public BoraciteOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2f, 5f).requiresCorrectToolForDrops());
 	}
 
 	@Override

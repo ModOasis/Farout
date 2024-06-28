@@ -22,7 +22,7 @@ import java.util.Collections;
 
 public class CoffiniteOreBlock extends Block {
 	public CoffiniteOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f, 5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(7f, 10f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -20,10 +20,10 @@ import net.mcreator.far_out.block.TokamakfusionreactorBlock;
 import net.mcreator.far_out.block.Super_AlloyBlockBlock;
 import net.mcreator.far_out.block.SulfuricAcidBlock;
 import net.mcreator.far_out.block.SulfurBlockBlock;
+import net.mcreator.far_out.block.StralakiteBlock;
 import net.mcreator.far_out.block.StirlingEngineBlock;
 import net.mcreator.far_out.block.SpodumeneOreBlock;
 import net.mcreator.far_out.block.SpodumeneBlockBlock;
-import net.mcreator.far_out.block.SphaleriteOreBlock;
 import net.mcreator.far_out.block.SphaleriteBlockBlock;
 import net.mcreator.far_out.block.SolarVinesCapBlock;
 import net.mcreator.far_out.block.SolarVinesBlock;
@@ -49,9 +49,6 @@ import net.mcreator.far_out.block.MusniusLeavesBlock;
 import net.mcreator.far_out.block.MusniusFenceGateBlock;
 import net.mcreator.far_out.block.MusniusFenceBlock;
 import net.mcreator.far_out.block.MusniusButtonBlock;
-import net.mcreator.far_out.block.MonaziteBlock;
-import net.mcreator.far_out.block.MolybdenumOreBlock;
-import net.mcreator.far_out.block.MolybdenumBlockBlock;
 import net.mcreator.far_out.block.LumiblossomWoodBlock;
 import net.mcreator.far_out.block.LumiblossomStairsBlock;
 import net.mcreator.far_out.block.LumiblossomSlabBlock;
@@ -135,16 +132,12 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ALUMINIUM_BLOCK = REGISTRY.register("aluminium_block", () -> new AluminiumBlockBlock());
 	public static final RegistryObject<Block> BAUXITE = REGISTRY.register("bauxite", () -> new BauxiteBlock());
 	public static final RegistryObject<Block> CARBORUNDUM_BLOCK = REGISTRY.register("carborundum_block", () -> new CarborundumBlockBlock());
-	public static final RegistryObject<Block> SPHALERITE_ORE = REGISTRY.register("sphalerite_ore", () -> new SphaleriteOreBlock());
 	public static final RegistryObject<Block> SPHALERITE_BLOCK = REGISTRY.register("sphalerite_block", () -> new SphaleriteBlockBlock());
 	public static final RegistryObject<Block> BORACITE_ORE = REGISTRY.register("boracite_ore", () -> new BoraciteOreBlock());
 	public static final RegistryObject<Block> BORACITE_BLOCK = REGISTRY.register("boracite_block", () -> new BoraciteBlockBlock());
-	public static final RegistryObject<Block> MOLYBDENITE = REGISTRY.register("molybdenite", () -> new MolybdenumOreBlock());
-	public static final RegistryObject<Block> MOLYBDENUM_BLOCK = REGISTRY.register("molybdenum_block", () -> new MolybdenumBlockBlock());
 	public static final RegistryObject<Block> SULFURIC_ACID = REGISTRY.register("sulfuric_acid", () -> new SulfuricAcidBlock());
 	public static final RegistryObject<Block> CHEMOSYNTHETIC_NODULES = REGISTRY.register("chemosynthetic_nodules", () -> new ChemosyntheticNodulesBlock());
 	public static final RegistryObject<Block> CRYSTALINE_EXOSKELETON = REGISTRY.register("crystaline_exoskeleton", () -> new CrystalineExoskeletonBlock());
-	public static final RegistryObject<Block> MONAZITE = REGISTRY.register("monazite", () -> new MonaziteBlock());
 	public static final RegistryObject<Block> GREEN_OIL = REGISTRY.register("green_oil", () -> new GreenOilBlock());
 	public static final RegistryObject<Block> ASPHALT = REGISTRY.register("asphalt", () -> new AsphaltBlock());
 	public static final RegistryObject<Block> LIQUID_AMMONIA = REGISTRY.register("liquid_ammonia", () -> new LiquidAmmoniaBlock());
@@ -200,6 +193,7 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ROCKET_ASSEMBLY_MANAGER = REGISTRY.register("rocket_assembly_manager", () -> new RocketAssemblyManagerBlock());
 	public static final RegistryObject<Block> ROCKET_ASSEMBLER = REGISTRY.register("rocket_assembler", () -> new RocketAssemblerBlock());
 	public static final RegistryObject<Block> LIQUID_METHANE = REGISTRY.register("liquid_methane", () -> new LiquidMethaneBlock());
+	public static final RegistryObject<Block> STRALAKITE = REGISTRY.register("stralakite", () -> new StralakiteBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

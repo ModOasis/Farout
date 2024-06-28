@@ -45,7 +45,7 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 216;
+		this.imageWidth = 246;
 		this.imageHeight = 179;
 	}
 
@@ -65,10 +65,10 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		if (ItemPlaceholderVisibilityProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("farout:textures/screens/paper.png"), this.leftPos + 8, this.topPos + 76, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/paper.png"), this.leftPos + 23, this.topPos + 76, 0, 0, 16, 16, 16, 16);
 		}
 		if (ItemPlaceholderIngotVisibilityProcedure.execute(entity)) {
-			guiGraphics.blit(new ResourceLocation("farout:textures/screens/aluminium_ingot.png"), this.leftPos + 44, this.topPos + 76, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/aluminium_ingot.png"), this.leftPos + 59, this.topPos + 76, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -89,35 +89,35 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_rocket_stats"), 8, 4, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_dv"), 8, 22, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_habitation_time"), 8, 40, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_control_level"), 8, 58, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_rocket_stats"), 23, 4, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_dv"), 23, 22, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_habitation_time"), 23, 40, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_control_level"), 23, 58, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				FairingDeltaVProcedure.execute(world, x, y, z, entity), 8, 31, -12829636, false);
+				FairingDeltaVProcedure.execute(world, x, y, z, entity), 23, 31, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				FairingHabProcedure.execute(world, x, y, z, entity), 8, 49, -12829636, false);
+				FairingHabProcedure.execute(world, x, y, z, entity), 23, 49, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnControlLevelProcedure.execute(entity), 8, 67, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_items_needed"), 116, 22, -12829636, false);
+				ReturnControlLevelProcedure.execute(entity), 23, 67, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.rocket_assembly_manager_gui.label_items_needed"), 131, 22, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnIngredient1Procedure.execute(world, x, y, z), 116, 31, -12829636, false);
+				ReturnIngredient1Procedure.execute(world, x, y, z), 131, 31, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnIngredient2Procedure.execute(world, x, y, z), 116, 40, -12829636, false);
+				ReturnIngredient2Procedure.execute(world, x, y, z), 131, 40, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnIngredient3Procedure.execute(world, x, y, z), 116, 49, -12829636, false);
+				ReturnIngredient3Procedure.execute(world, x, y, z), 131, 49, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnIngredient4Procedure.execute(world, x, y, z), 116, 58, -12829636, false);
+				ReturnIngredient4Procedure.execute(world, x, y, z), 131, 58, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				ReturnIngredient5Procedure.execute(world, x, y, z), 116, 67, -12829636, false);
+				ReturnIngredient5Procedure.execute(world, x, y, z), 131, 67, -12829636, false);
 	}
 
 	@Override
@@ -128,7 +128,7 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 	@Override
 	public void init() {
 		super.init();
-		button_refresh = new PlainTextButton(this.leftPos + 116, this.topPos + 4, 61, 20, Component.translatable("gui.farout.rocket_assembly_manager_gui.button_refresh"), e -> {
+		button_refresh = new PlainTextButton(this.leftPos + 131, this.topPos + 4, 61, 20, Component.translatable("gui.farout.rocket_assembly_manager_gui.button_refresh"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new RocketAssemblyManagerGUIButtonMessage(0, x, y, z));
 				RocketAssemblyManagerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -136,7 +136,7 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 		}, this.font);
 		guistate.put("button:button_refresh", button_refresh);
 		this.addRenderableWidget(button_refresh);
-		imagebutton_arrow = new ImageButton(this.leftPos + 188, this.topPos + 76, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_arrow.png"), 16, 32, e -> {
+		imagebutton_arrow = new ImageButton(this.leftPos + 203, this.topPos + 76, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_arrow.png"), 16, 32, e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new RocketAssemblyManagerGUIButtonMessage(1, x, y, z));
 				RocketAssemblyManagerGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -144,7 +144,7 @@ public class RocketAssemblyManagerGUIScreen extends AbstractContainerScreen<Rock
 		});
 		guistate.put("button:imagebutton_arrow", imagebutton_arrow);
 		this.addRenderableWidget(imagebutton_arrow);
-		imagebutton_arrow_left = new ImageButton(this.leftPos + 116, this.topPos + 76, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_arrow_left.png"), 16, 32, e -> {
+		imagebutton_arrow_left = new ImageButton(this.leftPos + 131, this.topPos + 76, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_arrow_left.png"), 16, 32, e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new RocketAssemblyManagerGUIButtonMessage(2, x, y, z));
 				RocketAssemblyManagerGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);

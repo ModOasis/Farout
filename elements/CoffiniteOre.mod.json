@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "coffinite_ore",
+    "texture": "coffiniteore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -37,8 +37,8 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 3.0,
-    "resistance": 5.0,
+    "hardness": 7.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

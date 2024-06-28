@@ -18,13 +18,20 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.far_out.procedures.RocketRightClickedOnEntityProcedure;
+import net.mcreator.far_out.procedures.LaunchVehicleOnEntityTickUpdateProcedure;
 import net.mcreator.far_out.init.FaroutModEntities;
 
 public class LaunchVehicleEntity extends Monster {
+	public static final EntityDataAccessor<Boolean> DATA_ReadyForLaunch = SynchedEntityData.defineId(LaunchVehicleEntity.class, EntityDataSerializers.BOOLEAN);
+
 	public LaunchVehicleEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(FaroutModEntities.LAUNCH_VEHICLE.get(), world);
 	}
@@ -40,6 +47,12 @@ public class LaunchVehicleEntity extends Monster {
 	@Override
 	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
+	}
+
+	@Override
+	protected void defineSynchedData() {
+		super.defineSynchedData();
+		this.entityData.define(DATA_ReadyForLaunch, false);
 	}
 
 	@Override
@@ -65,6 +78,8 @@ public class LaunchVehicleEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
+		if (damagesource.getDirectEntity() instanceof Player)
+			return false;
 		if (damagesource.is(DamageTypes.DROWN))
 			return false;
 		if (damagesource.is(DamageTypes.LIGHTNING_BOLT))
@@ -72,6 +87,19 @@ public class LaunchVehicleEntity extends Monster {
 		if (damagesource.is(DamageTypes.FALLING_ANVIL))
 			return false;
 		return super.hurt(damagesource, amount);
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putBoolean("DataReadyForLaunch", this.entityData.get(DATA_ReadyForLaunch));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("DataReadyForLaunch"))
+			this.entityData.set(DATA_ReadyForLaunch, compound.getBoolean("DataReadyForLaunch"));
 	}
 
 	@Override
@@ -87,6 +115,12 @@ public class LaunchVehicleEntity extends Monster {
 
 		RocketRightClickedOnEntityProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
+	}
+
+	@Override
+	public void baseTick() {
+		super.baseTick();
+		LaunchVehicleOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

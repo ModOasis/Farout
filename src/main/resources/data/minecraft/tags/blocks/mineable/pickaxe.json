@@ -18,13 +18,9 @@
     "farout:aluminium_block",
     "farout:bauxite",
     "farout:carborundum_block",
-    "farout:sphalerite_ore",
     "farout:sphalerite_block",
     "farout:boracite_ore",
     "farout:boracite_block",
-    "farout:molybdenite",
-    "farout:molybdenum_block",
-    "farout:monazite",
     "farout:asphalt",
     "farout:cargo_pod",
     "farout:coffinite_ore",
@@ -35,6 +31,7 @@
     "farout:stirling_engine",
     "farout:launchpad_tiles",
     "farout:rocket_assembly_manager",
-    "farout:rocket_assembler"
+    "farout:rocket_assembler",
+    "farout:stralakite"
   ]
 }

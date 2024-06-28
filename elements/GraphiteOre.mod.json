@@ -46,7 +46,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:GraphiteIngot"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -120,11 +120,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "generateFeature": true,
-    "restrictionBiomes": [
-      {
-        "value": "#is_overworld"
-      }
-    ],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE#0"
@@ -140,9 +136,9 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 11,
-    "frequencyOnChunk": 7,
-    "minGenerateHeight": 1,
-    "maxGenerateHeight": 63
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": -20,
+    "maxGenerateHeight": 20
   }
 }

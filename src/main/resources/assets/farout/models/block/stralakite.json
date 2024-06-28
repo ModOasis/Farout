@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/stralakite",
+    "up": "farout:block/stralakite",
+    "north": "farout:block/stralakite",
+    "east": "farout:block/stralakite",
+    "south": "farout:block/stralakite",
+    "west": "farout:block/stralakite",
+    "particle": "farout:block/stralakite"
+  },
+  "render_type": "solid"
+}

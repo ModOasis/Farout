@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "farout:block/sphalerite_ore",
-    "particle": "farout:block/sphalerite_ore"
-  },
-  "render_type": "solid"
-}

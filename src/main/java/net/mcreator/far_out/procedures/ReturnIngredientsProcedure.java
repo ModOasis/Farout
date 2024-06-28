@@ -28,6 +28,7 @@ public class ReturnIngredientsProcedure {
 		String Generator = "";
 		String Controller = "";
 		String Hab = "";
+		double NumUsed = 0;
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -335,6 +336,15 @@ public class ReturnIngredientsProcedure {
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
 				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString()), 0);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("ItemsCompleted", 0);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

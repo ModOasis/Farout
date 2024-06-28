@@ -12,8 +12,6 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.far_out.world.inventory.EtauiMapMenu;
 import net.mcreator.far_out.procedures.EtauosReadoutProcedure;
 import net.mcreator.far_out.procedures.EtauiReadoutProcedure;
-import net.mcreator.far_out.network.EtauiMapButtonMessage;
-import net.mcreator.far_out.FaroutMod;
 
 import java.util.HashMap;
 
@@ -24,9 +22,8 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_zoom_out;
-	ImageButton imagebutton_etauipixelcenter;
-	ImageButton imagebutton_etauos;
+	ImageButton imagebutton_arrow;
+	ImageButton imagebutton_settrajectory;
 
 	public EtauiMapScreen(EtauiMapMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -35,8 +32,8 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 433;
-		this.imageHeight = 196;
+		this.imageWidth = 240;
+		this.imageHeight = 240;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("farout:textures/screens/etaui_map.png");
@@ -46,9 +43,9 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 54 && mouseX < leftPos + 120 && mouseY > topPos + 66 && mouseY < topPos + 132)
+		if (mouseX > leftPos + 107 && mouseX < leftPos + 133 && mouseY > topPos + 105 && mouseY < topPos + 135)
 			guiGraphics.renderTooltip(font, Component.literal(EtauiReadoutProcedure.execute(entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 296 && mouseX < leftPos + 330 && mouseY > topPos + 83 && mouseY < topPos + 118)
+		if (mouseX > leftPos + 79 && mouseX < leftPos + 93 && mouseY > topPos + 16 && mouseY < topPos + 31)
 			guiGraphics.renderTooltip(font, Component.literal(EtauosReadoutProcedure.execute(entity)), mouseX, mouseY);
 	}
 
@@ -59,11 +56,7 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 2, this.topPos + -4, 0, 0, 200, 200, 200, 200);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 201, this.topPos + -5, 0, 0, 200, 200, 200, 200);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 396, this.topPos + -5, 0, 0, 200, 200, 200, 200);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/etauimap.png"), this.leftPos + 1, this.topPos + 0, 0, 0, 240, 240, 240, 240);
 
 		RenderSystem.disableBlend();
 	}
@@ -84,7 +77,6 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.etaui_map.label_star_system_viewer"), 160, -3, -54228, false);
 	}
 
 	@Override
@@ -95,29 +87,13 @@ public class EtauiMapScreen extends AbstractContainerScreen<EtauiMapMenu> {
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_zoom_out = new ImageButton(this.leftPos + 414, this.topPos + 175, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_zoom_out.png"), 16, 32, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new EtauiMapButtonMessage(0, x, y, z));
-				EtauiMapButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
+		imagebutton_arrow = new ImageButton(this.leftPos + 274, this.topPos + 164, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_arrow.png"), 16, 32, e -> {
 		});
-		guistate.put("button:imagebutton_zoom_out", imagebutton_zoom_out);
-		this.addRenderableWidget(imagebutton_zoom_out);
-		imagebutton_etauipixelcenter = new ImageButton(this.leftPos + 54, this.topPos + 67, 64, 64, 0, 0, 64, new ResourceLocation("farout:textures/screens/atlas/imagebutton_etauipixelcenter.png"), 64, 128, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new EtauiMapButtonMessage(1, x, y, z));
-				EtauiMapButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
+		guistate.put("button:imagebutton_arrow", imagebutton_arrow);
+		this.addRenderableWidget(imagebutton_arrow);
+		imagebutton_settrajectory = new ImageButton(this.leftPos + 77, this.topPos + 18, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_settrajectory.png"), 16, 32, e -> {
 		});
-		guistate.put("button:imagebutton_etauipixelcenter", imagebutton_etauipixelcenter);
-		this.addRenderableWidget(imagebutton_etauipixelcenter);
-		imagebutton_etauos = new ImageButton(this.leftPos + 297, this.topPos + 85, 32, 32, 0, 0, 32, new ResourceLocation("farout:textures/screens/atlas/imagebutton_etauos.png"), 32, 64, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new EtauiMapButtonMessage(2, x, y, z));
-				EtauiMapButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_etauos", imagebutton_etauos);
-		this.addRenderableWidget(imagebutton_etauos);
+		guistate.put("button:imagebutton_settrajectory", imagebutton_settrajectory);
+		this.addRenderableWidget(imagebutton_settrajectory);
 	}
 }

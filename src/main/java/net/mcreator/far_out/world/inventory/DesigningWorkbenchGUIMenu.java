@@ -16,6 +16,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.procedures.RefreshFairingPropertiesProcedure;
 import net.mcreator.far_out.init.FaroutModMenus;
 
 import java.util.function.Supplier;
@@ -48,6 +49,7 @@ public class DesigningWorkbenchGUIMenu extends AbstractContainerMenu implements 
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
+		RefreshFairingPropertiesProcedure.execute(world, x, y, z);
 	}
 
 	@Override

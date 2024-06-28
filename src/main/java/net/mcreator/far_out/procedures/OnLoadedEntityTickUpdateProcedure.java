@@ -87,7 +87,7 @@ public class OnLoadedEntityTickUpdateProcedure {
 		}
 		if ((ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:massivo"))) == (entity.level().dimension())) {
 			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:massivo_land"));
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:deleted_mod_element"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 				if (!_ap.isDone()) {
 					for (String criteria : _ap.getRemainingCriteria())
@@ -154,45 +154,13 @@ public class OnLoadedEntityTickUpdateProcedure {
 				entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("farout:asphyxiation")))), 1);
 			}
 		}
-		if (FaroutModVariables.WorldVariables.get(world).WattageProduced > 0) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:microchip_crafted"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
-		} else if (FaroutModVariables.WorldVariables.get(world).WattageProduced >= 1000) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:extreme_voltage"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
+		if (FaroutModVariables.WorldVariables.get(world).WattageProduced > 0) {/*code*/
+		} else if (FaroutModVariables.WorldVariables.get(world).WattageProduced >= 1000) {/*code*/
 		}
-		if ((entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).InFormalonSystem) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:ad_astra"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
+		if ((entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).InFormalonSystem) {/*code*/
 		}
 		if (!((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos"))) || (entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui")))
-				|| (entity.level().dimension()) == Level.OVERWORLD)) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:the_other_worlds"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
+				|| (entity.level().dimension()) == Level.OVERWORLD)) {/*code*/
 		}
 		if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() instanceof LiquidBlock)) {
 			entity.setNoGravity(true);

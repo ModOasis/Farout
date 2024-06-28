@@ -15,7 +15,7 @@ import net.minecraft.client.model.EntityModel;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-// Made with Blockbench 4.10.1
+// Made with Blockbench 4.10.3
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 public class ModelUnfittedLaunchVehicle<T extends Entity> extends EntityModel<T> {
@@ -38,7 +38,9 @@ public class ModelUnfittedLaunchVehicle<T extends Entity> extends EntityModel<T>
 						.addBox(-8.0F, -12.0F, 14.0F, 16.0F, 12.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(168, 104).addBox(-8.0F, -150.25F, -8.0F, 16.0F, 12.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(96, 35)
 						.addBox(21.0F, -152.0F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 17).addBox(-1.0F, -2.0F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 197)
 						.addBox(-26.0F, -186.0F, -1.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 197).addBox(24.0F, -186.0F, -1.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 197)
-						.addBox(-2.0F, -186.0F, -26.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 197).addBox(-2.0F, -186.0F, 26.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)),
+						.addBox(-2.0F, -186.0F, -26.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(60, 197).addBox(-2.0F, -186.0F, 26.0F, 2.0F, 33.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(192, 68)
+						.addBox(-1.0F, -287.0F, -1.0F, 2.0F, 22.0F, 2.0F, new CubeDeformation(23.0F)).texOffs(93, 217).addBox(-11.0F, -324.0F, -12.0F, 23.0F, 11.0F, 23.0F, new CubeDeformation(6.0F)).texOffs(156, 185)
+						.addBox(-11.0F, -339.0F, -12.0F, 23.0F, 11.0F, 23.0F, new CubeDeformation(-2.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		PartDefinition cube_r1 = bb_main.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 0).addBox(21.0F, -8.5F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -143.5F, 0.0F, 0.0F, 0.7854F, 0.0F));

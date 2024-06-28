@@ -2,7 +2,7 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "boracite_ore",
+    "texture": "boriciteore",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -37,12 +37,12 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 3.0,
+    "hardness": 2.0,
     "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "DECORATIONS"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

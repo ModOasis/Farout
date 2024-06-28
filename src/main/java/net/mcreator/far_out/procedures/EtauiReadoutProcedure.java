@@ -39,6 +39,6 @@ public class EtauiReadoutProcedure {
 			DeltaV = 32;
 			OrbitalPeriod = 82;
 		}
-		return "Required \u0394V:" + DeltaV + "Km/s";
+		return "Required \u0394V:" + DeltaV + "Km/s," + " Transit time:" + OrbitalPeriod + " days";
 	}
 }
