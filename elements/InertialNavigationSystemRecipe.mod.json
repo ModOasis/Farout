@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:CopperWire"
+      },
+      {
+        "value": "CUSTOM:BasicSolarCell"
+      },
+      {
+        "value": "CUSTOM:Motor"
+      },
+      {
+        "value": "CUSTOM:BasicSolarCell"
+      },
+      {
+        "value": "CUSTOM:Ironplate"
+      },
+      {
+        "value": "CUSTOM:LowFrequencyIntegratedCircuit"
+      },
+      {
+        "value": "CUSTOM:Ironplate"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:InertialNavigationSystem"
+    },
+    "name": "inertial_navigation_system_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "farout:block/kempat_planks",
+    "particle": "farout:block/kempat_planks"
+  },
+  "render_type": "solid"
+}

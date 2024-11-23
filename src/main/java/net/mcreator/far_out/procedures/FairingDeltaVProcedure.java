@@ -19,17 +19,69 @@ public class FairingDeltaVProcedure {
 			return "";
 		String ReturnValue = "";
 		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof DesigningWorkbenchGUIMenu) {
-			ReturnValue = "" + (new Object() {
+			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "\u0394V"));
+			}.getValue(world, BlockPos.containing(x, y, z), "\u0394VVehicle") < 1000000) {
+				ReturnValue = (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "\u0394V")) + " m/s";
+			} else {
+				ReturnValue = Math.round((new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "\u0394V")) / 2997280) + "% c";
+			}
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "\u0394VVehicle") < 0) {
+				ReturnValue = "N/A";
+			}
 		} else {
-			ReturnValue = ""
-					+ ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("\u0394V"));
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "\u0394VVehicle") < 1000000) {
+				ReturnValue = ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag()
+						.getDouble("\u0394V")) + " m/s";
+			} else {
+				ReturnValue = Math
+						.round((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("\u0394V")
+								/ 2997280)
+						+ "% c";
+			}
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, BlockPos.containing(x, y, z), "\u0394V") < 0) {
+				ReturnValue = "N/A";
+			}
 		}
 		return ReturnValue;
 	}

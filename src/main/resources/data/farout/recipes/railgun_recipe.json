@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "a  ",
+    "abb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "farout:electro_magnet"
+    }
+  },
+  "result": {
+    "item": "farout:railgun",
+    "count": 1
+  }
+}

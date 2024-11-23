@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Average capitulation amount",
+    "description": "amount of kills needed on the enemy side to force a capitulation.",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1000
+  }
+}

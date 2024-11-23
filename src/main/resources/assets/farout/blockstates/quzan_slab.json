@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farout:block/quzan_slab"
+    },
+    "type=top": {
+      "model": "farout:block/quzan_slab_top"
+    },
+    "type=double": {
+      "model": "farout:block/quzan_slab_full"
+    }
+  }
+}

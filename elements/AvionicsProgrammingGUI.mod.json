@@ -1,0 +1,175 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 190,
+    "height": 193,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 15,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "planetary_transfer_summary.png",
+          "use1Xscale": true,
+          "x": 138,
+          "y": 61
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "terra.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingATerraCondition"
+          },
+          "x": 146,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "desert.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingALacustrinePlanetCondition"
+          },
+          "x": 146,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moonlike.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingAAirlessPlanet"
+          },
+          "x": 146,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oceanic.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingOceanicPlanet"
+          },
+          "x": 146,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "<->"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 203,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_set_trajectory",
+          "text": "Set Trajectory",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenGUIs"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 178,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 201,
+          "y": 113
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "terra.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtATerraCondition"
+          },
+          "x": 253,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "desert.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtALacustrinePlanetCondition"
+          },
+          "x": 253,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moonlike.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtAAirlessPlanet"
+          },
+          "x": 253,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oceanic.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtAOceanicPlanet"
+          },
+          "x": 253,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 5,
+      "sy": 5,
+      "ox": 5,
+      "oy": 5,
+      "snapOnGrid": true
+    }
+  }
+}

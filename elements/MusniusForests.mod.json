@@ -1,13 +1,13 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "biome",
   "definition": {
     "name": "Musnius Forests",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:Purplegrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:ChlorinatedEarth"
     },
     "underwaterBlock": {
       "value": "Blocks.SAND#0"

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:small_atmospheric_lander"
+    },
+    "title": {
+      "translate": "advancements.place_lander.title"
+    },
+    "description": {
+      "translate": "advancements.place_lander.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "place_lander_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:small_atmospheric_lander"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:mini_baikonur"
+}

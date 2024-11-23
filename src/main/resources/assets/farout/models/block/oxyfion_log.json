@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/oxyfion_log_top",
+    "up": "farout:block/oxyfion_log_top",
+    "north": "farout:block/oxyfion_log_side",
+    "east": "farout:block/oxyfion_log_side",
+    "south": "farout:block/oxyfion_log_side",
+    "west": "farout:block/oxyfion_log_side",
+    "particle": "farout:block/oxyfion_log_top"
+  },
+  "render_type": "solid"
+}

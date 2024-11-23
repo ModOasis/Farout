@@ -1,0 +1,45 @@
+{
+  "_fv": 60,
+  "_type": "fluid",
+  "definition": {
+    "name": "Magma",
+    "bucketName": "Magma Bucket",
+    "textureStill": "magma",
+    "textureFlowing": "magma",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 2,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "CUSTOM:SulfuricAcidRain"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 0,
+    "density": 5000,
+    "viscosity": 10000,
+    "temperature": 1500,
+    "type": "LAVA",
+    "generateBucket": true,
+    "textureBucket": "m2sg32cfnocc1",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 15,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 0,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT"
+  }
+}

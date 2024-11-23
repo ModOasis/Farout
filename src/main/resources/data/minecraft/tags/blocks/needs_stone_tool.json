@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "farout:copper_cable",
+    "farout:heat_pipe_bent",
+    "farout:heat_pipe",
+    "farout:stralakite",
+    "farout:rocket_assembly_manager",
+    "farout:launchpad_tiles",
+    "farout:hydrogen_fuel_cell",
+    "farout:cargo_pod",
+    "farout:asphalt",
+    "farout:bauxite"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "biome",
   "definition": {
     "name": "Burning highlands",
@@ -31,7 +31,7 @@
     "moodSoundDelay": 6000,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "CUSTOM:SulfuricAcidRain"
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.0,
@@ -77,7 +77,6 @@
     },
     "defaultFeatures": [
       "Caves",
-      "Ores",
       "FrozenTopLayer"
     ],
     "spawnStronghold": false,

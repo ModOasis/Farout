@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,7 +21,7 @@
         "value": "Blocks.GLASS"
       },
       {
-        "value": "CUSTOM:BasicCommandDisk"
+        "value": "CUSTOM:LowFrequencyIntegratedCircuit"
       },
       {
         "value": "Blocks.WOOL"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:CopperWire"
       },
       {
-        "value": "CUSTOM:ChemicalFuelTank"
+        "value": "CUSTOM:OxygenBottle"
       },
       {
-        "value": "CUSTOM:ChemicalRocketEngine"
+        "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:ChemicalFuelTank"
+        "value": "CUSTOM:Methane"
       }
     ],
     "recipeReturnStack": {

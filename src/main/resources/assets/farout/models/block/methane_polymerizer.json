@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/methanepolymarizer",
+  "textures": {
+    "all": "farout:block/airtight_habitat_wall",
+    "particle": "farout:block/airtight_habitat_wall",
+    "0": "farout:block/methanepolymerizertex"
+  },
+  "render_type": "solid"
+}

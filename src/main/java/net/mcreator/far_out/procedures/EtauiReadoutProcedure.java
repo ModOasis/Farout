@@ -11,34 +11,46 @@ public class EtauiReadoutProcedure {
 			return "";
 		double DeltaV = 0;
 		double OrbitalPeriod = 0;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:proxmai")))) {
-			DeltaV = 76;
+		Entity TargetEntity = null;
+		boolean Interplanetry = false;
+		boolean Result = false;
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:proxmai"))) {
+			DeltaV = 38000;
 			OrbitalPeriod = 15.5;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:vulcan")))) {
-			DeltaV = 76;
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:vulcan"))) {
+			DeltaV = 38000;
 			OrbitalPeriod = 15.5;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus")))) {
-			DeltaV = 20;
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus"))) {
+			DeltaV = 10000;
 			OrbitalPeriod = 25;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui")))) {
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui"))) {
 			DeltaV = 0;
 			OrbitalPeriod = 0;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos")))) {
-			DeltaV = 11;
+			Interplanetry = false;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos"))) {
+			DeltaV = 5000;
 			OrbitalPeriod = 1;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:varas")))) {
-			DeltaV = 40;
+			Interplanetry = false;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:varas"))) {
+			DeltaV = 24000;
 			OrbitalPeriod = 53;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:glacieo")))) {
-			DeltaV = 40;
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:glacieo"))) {
+			DeltaV = 24000;
 			OrbitalPeriod = 53;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican")))) {
-			DeltaV = 40;
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican"))) {
+			DeltaV = 24000;
 			OrbitalPeriod = 53;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:infinatos")))) {
-			DeltaV = 32;
+			Interplanetry = true;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:infinatos"))) {
+			DeltaV = 25000;
 			OrbitalPeriod = 82;
+			Interplanetry = true;
 		}
-		return "Required \u0394V:" + DeltaV + "Km/s," + " Transit time:" + OrbitalPeriod + " days";
+		return "Etaui: " + "\u0394V: " + DeltaV + " Hab time:" + OrbitalPeriod;
 	}
 }

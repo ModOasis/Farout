@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:boron_ingot"
+    },
+    "title": {
+      "translate": "advancements.obtain_boron.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_boron.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_boron_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:boron_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:molecular_scissors"
+}

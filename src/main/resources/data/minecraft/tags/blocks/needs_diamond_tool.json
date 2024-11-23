@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "farout:radioisotope_thermoelectric_generator",
+    "farout:matter_antimatter_compressor",
+    "farout:constratium_ore",
+    "farout:uranistone"
+  ]
+}

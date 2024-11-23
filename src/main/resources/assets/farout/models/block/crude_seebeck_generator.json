@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/seebeck_gen_top_bottom",
+    "up": "farout:block/seebeck_gen_top_bottom",
+    "north": "farout:block/seebeck_generator_front",
+    "east": "farout:block/seebeck_gen_sides",
+    "south": "farout:block/seebeck_generator_front",
+    "west": "farout:block/seebeck_gen_sides",
+    "particle": "farout:block/seebeck_gen_top_bottom"
+  },
+  "render_type": "solid"
+}

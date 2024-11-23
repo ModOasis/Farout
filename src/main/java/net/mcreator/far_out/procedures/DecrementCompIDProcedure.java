@@ -6,8 +6,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
+import java.util.HashMap;
+
 public class DecrementCompIDProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, HashMap guistate) {
+		if (guistate == null)
+			return;
 		if (0 < new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -32,7 +36,7 @@ public class DecrementCompIDProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			RefreshFairingPropertiesProcedure.execute(world, x, y, z);
+			RefreshFairingPropertiesProcedure.execute(world, x, y, z, guistate);
 		}
 	}
 }

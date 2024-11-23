@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SolarCollector"
+      "value": "CUSTOM:SolarPanels"
     },
     "name": "solar_collector_recipe",
     "namespace": "mod"

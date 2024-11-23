@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:graphiterod"
+    }
+  },
+  "result": {
+    "item": "farout:graphite_rod_assembly",
+    "count": 1
+  }
+}

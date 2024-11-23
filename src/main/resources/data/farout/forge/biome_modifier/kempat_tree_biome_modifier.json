@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:etauos_lowlands",
+  "features": "farout:kempat_tree",
+  "step": "surface_structures"
+}

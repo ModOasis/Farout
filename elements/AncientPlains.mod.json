@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "biome",
   "definition": {
     "name": "Ancient Plains",
@@ -44,34 +44,34 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -1.0,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -1.0,
+      "max": 1.0
     },
     "genContinentalness": {
-      "min": 0.3,
+      "min": 0.05,
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -1.0,
+      "max": 1.0
     },
     "genWeirdness": {
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
-    "treeType": 1,
+    "treeType": 0,
     "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.POINTED_DRIPSTONE"
+      "value": ""
     },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "treeVines": {
       "value": ""
@@ -82,7 +82,9 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "ExtraGoldOre",
+      "TaigaRocks"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

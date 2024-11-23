@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "efe"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "farout:basic_solar_cell"
+    },
+    "d": {
+      "item": "farout:motor"
+    },
+    "e": {
+      "item": "farout:ironplate"
+    },
+    "f": {
+      "item": "farout:low_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:inertial_navigation_system",
+    "count": 1
+  }
+}

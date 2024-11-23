@@ -4,7 +4,7 @@
   "pattern": [
     "aba",
     "cde",
-    "fgf"
+    "fgh"
   ],
   "key": {
     "a": {
@@ -14,7 +14,7 @@
       "item": "farout:aluminium_ingot"
     },
     "c": {
-      "item": "farout:deleted_mod_element"
+      "item": "farout:low_frequency_integrated_circuit"
     },
     "d": {
       "tag": "minecraft:wool"
@@ -23,10 +23,13 @@
       "item": "farout:copper_wire"
     },
     "f": {
-      "item": "farout:deleted_mod_element"
+      "item": "farout:oxygen_bottle"
     },
     "g": {
-      "item": "farout:deleted_mod_element"
+      "item": "minecraft:iron_ingot"
+    },
+    "h": {
+      "item": "farout:methane"
     }
   },
   "result": {

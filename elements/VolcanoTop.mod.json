@@ -1,0 +1,13 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:VolcanicHighlands"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_lake\"><value name=\"fluid\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:Magma</field></block></value><value name=\"border\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.BASALT</field></block></value></block></value><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">150</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">312</field></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_in_square\"><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

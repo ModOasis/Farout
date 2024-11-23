@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "farout:atmosphereless_plains",
+    "farout:burninghighlands",
+    "farout:volcanic_isles",
+    "farout:cratered_shores"
+  ],
+  "features": "farout:crater",
+  "step": "surface_structures"
+}

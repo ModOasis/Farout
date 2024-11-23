@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "nuclear_fusion_jei",
+    "result": {
+      "value": "CUSTOM:Helium"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Deuterium"
+      },
+      {
+        "value": "CUSTOM:Helium3"
+      }
+    ]
+  }
+}

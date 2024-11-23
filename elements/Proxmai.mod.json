@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -12,7 +12,7 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.VOID_AIR"
+      "value": "Blocks.STONE#0"
     },
     "airColor": {
       "value": -16777216,
@@ -37,6 +37,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Proxmai Portal Igniter",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },

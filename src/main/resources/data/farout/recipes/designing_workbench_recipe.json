@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "item": "farout:graphite_ingot"
+    },
+    "c": {
+      "item": "farout:musnius_planks"
+    }
+  },
+  "result": {
+    "item": "farout:designing_workbench",
+    "count": 1
+  }
+}

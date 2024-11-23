@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "farout:block/boriciteore",
-    "particle": "farout:block/boriciteore"
-  },
-  "render_type": "solid"
-}

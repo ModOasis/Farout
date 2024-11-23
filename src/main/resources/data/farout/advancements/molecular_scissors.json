@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:electrolyzer"
+    },
+    "title": {
+      "translate": "advancements.molecular_scissors.title"
+    },
+    "description": {
+      "translate": "advancements.molecular_scissors.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "molecular_scissors_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:the_first_kilowatt"
+}

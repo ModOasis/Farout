@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:bauxite_nugget"
+    }
+  ],
+  "output": {
+    "item": "minecraft:clay_ball",
+    "count": 1
+  }
+}

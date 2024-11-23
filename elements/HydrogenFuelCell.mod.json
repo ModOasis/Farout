@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "block",
   "definition": {
     "texture": "at1",
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Hydrogen Fuel Cell",
+    "name": "Fuel Cell",
     "specialInformation": {
       "fixedValue": []
     },
@@ -130,6 +130,12 @@
     },
     "onTickUpdate": {
       "name": "HydrogenFuelCellUpdateTick"
+    },
+    "onDestroyedByPlayer": {
+      "name": "ElectrolyzerBlockDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
+      "name": "ElectrolyzerBlockDestroyedByPlayer"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

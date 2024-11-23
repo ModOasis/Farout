@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:bauxite_nugget"
+    },
+    "title": {
+      "translate": "advancements.the_formalon_eye.title"
+    },
+    "description": {
+      "translate": "advancements.the_formalon_eye.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_formalon_eye_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:homecoming"
+}

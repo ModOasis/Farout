@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:subspace_catalyst"
+    },
+    "title": {
+      "translate": "advancements.gateway.title"
+    },
+    "description": {
+      "translate": "advancements.gateway.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gateway_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:lands_of_the_forgotten"
+}

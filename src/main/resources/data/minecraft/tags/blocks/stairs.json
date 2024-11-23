@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "farout:hyperstable_alloy_stairs",
+    "farout:keranon_stairs",
+    "farout:oxyfion_stairs",
+    "farout:quzan_stairs",
+    "farout:kempat_stairs",
+    "farout:musnius_stairs",
+    "farout:lumiblossom_stairs"
+  ]
+}

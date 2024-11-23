@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:pyrite_nugget"
+    }
+  ],
+  "output": {
+    "item": "minecraft:iron_ingot",
+    "count": 1
+  }
+}

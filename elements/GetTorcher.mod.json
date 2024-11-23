@@ -1,0 +1,29 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Get Torcher",
+    "achievementDescription": "Obtain a torcher",
+    "achievementIcon": {
+      "value": "CUSTOM:RedTorcher"
+    },
+    "background": "Default",
+    "disableDisplay": true,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RedTorcherRecipe",
+      "YellowTorcherRecipe",
+      "BlueTorcherRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:FaroutStart"
+    },
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\" x=\"208\" y=\"115\"/></next></block></xml>"
+  }
+}

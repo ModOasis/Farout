@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "texture": "farout:block/keranon_planks"
+  },
+  "render_type": "solid"
+}

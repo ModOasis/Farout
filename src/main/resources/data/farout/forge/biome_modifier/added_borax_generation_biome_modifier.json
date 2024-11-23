@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:sandy_wastes",
+  "features": "farout:added_borax_generation",
+  "step": "surface_structures"
+}

@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "electrolysis",
+    "result": {
+      "value": "CUSTOM:OxygenBottle"
+    },
+    "count": 3,
+    "ingredients": [
+      {
+        "value": "Items.WATER_BUCKET"
+      }
+    ]
+  }
+}

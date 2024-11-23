@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farout:block/quzan_planks",
+    "particle": "farout:block/quzan_planks"
+  },
+  "render_type": "solid"
+}

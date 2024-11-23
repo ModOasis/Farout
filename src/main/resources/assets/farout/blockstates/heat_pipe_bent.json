@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/heat_pipe_bent"
+    },
+    "facing=east": {
+      "model": "farout:block/heat_pipe_bent",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/heat_pipe_bent",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/heat_pipe_bent",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "farout:block/heat_pipe_bent",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "farout:block/heat_pipe_bent",
+      "x": 90
+    }
+  }
+}

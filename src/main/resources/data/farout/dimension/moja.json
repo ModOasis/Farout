@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "farout:desolate_deserts",
+          "biome": "farout:fungal_swamps",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -30,7 +30,10 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:mud"
+        "Name": "minecraft:water",
+        "Properties": {
+          "level": "0"
+        }
       },
       "spawn_target": [],
       "noise": {
@@ -380,7 +383,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "farout:desolate_deserts"
+                "farout:fungal_swamps"
               ]
             },
             "then_run": {
@@ -414,14 +417,17 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:sand"
+                              "Name": "minecraft:mycelium",
+                              "Properties": {
+                                "snowy": "false"
+                              }
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:mud"
+                            "Name": "minecraft:dirt"
                           }
                         }
                       ]
@@ -439,7 +445,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:sandstone"
+                        "Name": "minecraft:dirt"
                       }
                     }
                   }

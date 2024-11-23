@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "farout:block/quzan_planks",
+    "top": "farout:block/quzan_planks",
+    "side": "farout:block/quzan_planks"
+  },
+  "render_type": "solid"
+}

@@ -92,7 +92,7 @@ public class ZPinchFusionReactorUpdateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
-							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM_3.get());
+							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM_3.get()).copy();
 							_setstack.setCount((int) (1 + new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);
@@ -159,7 +159,7 @@ public class ZPinchFusionReactorUpdateTickProcedure {
 						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 						if (_ent != null) {
 							final int _slotid = 2;
-							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM.get());
+							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM.get()).copy();
 							_setstack.setCount((int) (1 + new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									AtomicInteger _retval = new AtomicInteger(0);

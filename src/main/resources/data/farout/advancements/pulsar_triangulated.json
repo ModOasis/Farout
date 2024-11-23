@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:structure_void"
+    },
+    "title": {
+      "translate": "advancements.pulsar_triangulated.title"
+    },
+    "description": {
+      "translate": "advancements.pulsar_triangulated.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pulsar_triangulated_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:the_formalon_eye"
+}

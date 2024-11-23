@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -30,15 +30,15 @@
     "bootsSpecialInformation": {
       "fixedValue": []
     },
-    "helmetModelName": "ModelSpaceSuit2",
+    "helmetModelName": "ModelSpaceSuit",
     "helmetModelPart": "Head",
     "helmetModelTexture": "spacesuit2tex.png",
-    "bodyModelName": "ModelSpaceSuit2",
+    "bodyModelName": "ModelSpaceSuit",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
     "bodyModelTexture": "spacesuit2tex.png",
-    "leggingsModelName": "ModelSpaceSuit2",
+    "leggingsModelName": "ModelSpaceSuit",
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
     "leggingsModelTexture": "spacesuit2tex.png",
@@ -71,19 +71,19 @@
       "fixedValue": false
     },
     "maxDamage": 5,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "damageValueHelmet": 1,
+    "damageValueBody": 3,
+    "damageValueLeggings": 2,
+    "damageValueBoots": 1,
     "enchantability": 9,
-    "toughness": 0.5,
+    "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": "item.armor.equip_generic"
     },
     "repairItems": [
       {
-        "value": "CUSTOM:AirtightFabric"
+        "value": "CUSTOM:Ironplate"
       }
     ]
   }

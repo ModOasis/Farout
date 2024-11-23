@@ -94,7 +94,7 @@ public class HydrogenFuelCellBlockEntity extends RandomizableContainerBlockEntit
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Hydrogen Fuel Cell");
+		return Component.literal("Fuel Cell");
 	}
 
 	@Override

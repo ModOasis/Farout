@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:aetherian_conqueror_emblem"
+    },
+    "title": {
+      "translate": "advancements.the_killing_of_a_god.title"
+    },
+    "description": {
+      "translate": "advancements.the_killing_of_a_god.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_killing_of_a_god_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:railgun_recipe",
+      "farout:deleted_mod_element"
+    ]
+  },
+  "parent": "farout:gateway"
+}

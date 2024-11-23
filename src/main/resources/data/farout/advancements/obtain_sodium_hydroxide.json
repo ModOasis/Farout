@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:sodium_hydroxide"
+    },
+    "title": {
+      "translate": "advancements.obtain_sodium_hydroxide.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_sodium_hydroxide.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_sodium_hydroxide_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:sodium_hydroxide"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:boron_recipe"
+    ]
+  },
+  "parent": "farout:molecular_scissors"
+}

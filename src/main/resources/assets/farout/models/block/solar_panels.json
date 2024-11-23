@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/solarpanel",
+  "textures": {
+    "all": "farout:block/solarpaneltex",
+    "particle": "farout:block/solarpaneltex",
+    "0": "farout:block/solarpaneltex"
+  },
+  "render_type": "solid"
+}

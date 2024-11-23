@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "farout:custom/lander_-_converted",
   "textures": {
-    "layer0": "farout:item/smallatmosphericlander"
+    "0": "farout:block/landeritemtex",
+    "particle": "farout:item/gas_core_ntr"
   }
 }

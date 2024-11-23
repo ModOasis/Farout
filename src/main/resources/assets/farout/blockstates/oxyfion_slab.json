@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "farout:block/oxyfion_slab"
+    },
+    "type=top": {
+      "model": "farout:block/oxyfion_slab_top"
+    },
+    "type=double": {
+      "model": "farout:block/oxyfion_slab_full"
+    }
+  }
+}

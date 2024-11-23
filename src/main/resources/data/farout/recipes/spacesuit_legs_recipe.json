@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "farout:airtight_fabric"
+    }
+  },
+  "result": {
+    "item": "farout:space_suit_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Designing rockets",
+    "achievementDescription": "Use a designing workbench to make a blueprint of a spacecraft",
+    "achievementIcon": {
+      "value": "CUSTOM:SpaceshipBlueprint"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RocketAssemblerRecipe",
+      "RocketAssemblyManagerRecipe",
+      "LaunchPadRecipe",
+      "CathodeRayTubeMonitorRecipe",
+      "SmallAtmosphericLanderRecipe",
+      "InertialNavigationUnitRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:CrackingCoal"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

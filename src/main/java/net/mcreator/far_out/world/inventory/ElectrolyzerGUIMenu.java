@@ -8,7 +8,6 @@ import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.ContainerLevelAccess;
@@ -20,7 +19,9 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.network.ElectrolyzerGUISlotMessage;
 import net.mcreator.far_out.init.FaroutModMenus;
+import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -80,14 +81,15 @@ public class ElectrolyzerGUIMenu extends AbstractContainerMenu implements Suppli
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 44) {
 			private final int slot = 0;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Items.WATER_BUCKET == stack.getItem();
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 133, 26) {
 			private final int slot = 1;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(1, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -96,6 +98,12 @@ public class ElectrolyzerGUIMenu extends AbstractContainerMenu implements Suppli
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 62) {
 			private final int slot = 2;
+
+			@Override
+			public void onTake(Player entity, ItemStack stack) {
+				super.onTake(entity, stack);
+				slotChanged(2, 1, 0);
+			}
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -243,6 +251,13 @@ public class ElectrolyzerGUIMenu extends AbstractContainerMenu implements Suppli
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			FaroutMod.PACKET_HANDLER.sendToServer(new ElectrolyzerGUISlotMessage(slotid, x, y, z, ctype, meta));
+			ElectrolyzerGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

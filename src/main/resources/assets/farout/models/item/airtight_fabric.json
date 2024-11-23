@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "farout:item/air_tight_frabic"
+    "layer0": "farout:item/airtightfabric"
   }
 }

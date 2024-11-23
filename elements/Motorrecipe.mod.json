@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 6,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -15,7 +15,7 @@
         "value": ""
       },
       {
-        "value": "Blocks.IRON_BARS"
+        "value": "CUSTOM:IronRod"
       },
       {
         "value": ""

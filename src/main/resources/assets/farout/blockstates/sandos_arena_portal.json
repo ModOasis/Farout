@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "farout:block/sandos_arena_portal_ew"
+    },
+    "axis=x": {
+      "model": "farout:block/sandos_arena_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass"
+    },
+    "b": {
+      "item": "farout:spaceship_blueprint"
+    },
+    "c": {
+      "item": "farout:basic_solar_cell"
+    }
+  },
+  "result": {
+    "item": "farout:telescope_blueprint",
+    "count": 1
+  }
+}

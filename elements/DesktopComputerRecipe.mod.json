@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,7 +21,7 @@
         "value": "CUSTOM:Ironplate"
       },
       {
-        "value": "CUSTOM:Display"
+        "value": "CUSTOM:CathodeRayTubeMonitor"
       },
       {
         "value": "CUSTOM:MediumFrequencyIntegratedCircuit"

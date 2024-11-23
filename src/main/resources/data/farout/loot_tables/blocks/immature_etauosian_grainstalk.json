@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farout:blocks/immature_etauosian_grainstalk",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farout:etauosian_grain_stalk_seeds"
+        }
+      ]
+    }
+  ]
+}

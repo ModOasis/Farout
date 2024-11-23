@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "farout:bio_plastic_window",
-    "farout:musnius_leaves"
+    "farout:red_algae",
+    "farout:musnius_leaves",
+    "farout:bio_plastic_window"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/ammonicite",
+    "up": "farout:block/ammonicite",
+    "north": "farout:block/ammonicite",
+    "east": "farout:block/ammonicite",
+    "south": "farout:block/ammonicite",
+    "west": "farout:block/ammonicite",
+    "particle": "farout:block/ammonicite"
+  },
+  "render_type": "solid"
+}

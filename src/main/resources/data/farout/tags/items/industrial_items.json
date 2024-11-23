@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "farout:stirling_engine",
+    "farout:ammeter",
+    "farout:electrolyzer",
+    "farout:low_frequency_integrated_circuit",
+    "farout:motor",
+    "farout:hydrogen",
+    "farout:oxygen_bottle",
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:diamond",
+    "minecraft:copper_ingot",
+    "farout:copper_wire"
+  ]
+}

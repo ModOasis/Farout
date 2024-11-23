@@ -1,0 +1,168 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 189,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rocketry",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_increase_your_dv_you_can",
+          "text": {
+            "fixedValue": "Watts are the least important,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_increase_your_ratio_of_massfuel",
+          "text": {
+            "fixedValue": "as they only provide for ion"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_or_raise_your_exhaust",
+          "text": {
+            "fixedValue": "engines."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_second_is_more_pratical_in_t",
+          "text": {
+            "fixedValue": "Once you are done with your"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in_this_mod",
+          "text": {
+            "fixedValue": "blueprint, press the checkmark."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "Back"
+          },
+          "x": 132,
+          "y": 215
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "Next"
+          },
+          "x": 276,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_now_you_need_to_make_a_rocket",
+          "text": {
+            "fixedValue": "Now you need to make a rocket."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_for_this_you_need_a_launchpad",
+          "text": {
+            "fixedValue": "For this, you need a launchpad."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 116
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/kempat_log_top",
+    "up": "farout:block/kempat_log_top",
+    "north": "farout:block/kempat_log_side",
+    "east": "farout:block/kempat_log_side",
+    "south": "farout:block/kempat_log_side",
+    "west": "farout:block/kempat_log_side",
+    "particle": "farout:block/kempat_log_top"
+  },
+  "render_type": "solid"
+}

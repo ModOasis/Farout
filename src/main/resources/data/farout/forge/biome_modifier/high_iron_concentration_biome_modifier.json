@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:burninghighlands",
+  "features": "farout:high_iron_concentration",
+  "step": "raw_generation"
+}

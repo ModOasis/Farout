@@ -113,11 +113,6 @@ public class FusionreactorguiScreen extends AbstractContainerScreen<Fusionreacto
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

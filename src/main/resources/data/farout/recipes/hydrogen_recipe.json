@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "farout:hydrogen",
+    "count": 6
+  }
+}

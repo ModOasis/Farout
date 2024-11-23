@@ -49,7 +49,7 @@ public class DesigningWorkbenchGUIMenu extends AbstractContainerMenu implements 
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		RefreshFairingPropertiesProcedure.execute(world, x, y, z);
+		RefreshFairingPropertiesProcedure.execute(world, x, y, z, guistate);
 	}
 
 	@Override

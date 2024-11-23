@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    " cd"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    },
+    "c": {
+      "item": "farout:polyethylene"
+    },
+    "d": {
+      "item": "farout:pipe"
+    }
+  },
+  "result": {
+    "item": "farout:space_suit_helmet",
+    "count": 1
+  }
+}

@@ -1,13 +1,16 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:WarmOceans"
+      },
+      {
         "value": "CUSTOM:SunnyIslands"
       },
       {
-        "value": "CUSTOM:WarmOceans"
+        "value": "CUSTOM:HumidPlains"
       }
     ],
     "worldGenType": "Normal world gen",
@@ -15,13 +18,13 @@
       "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.WATER"
+      "value": "Blocks.FLOWING_WATER"
     },
     "canRespawnHere": false,
     "hasFog": false,
     "isDark": true,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "sleepResult": "BED_EXPLODES",
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "portalFrame": {
@@ -36,6 +39,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Oceanus Portal Igniter",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },

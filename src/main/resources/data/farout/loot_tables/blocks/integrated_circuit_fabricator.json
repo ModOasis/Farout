@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farout:blocks/integrated_circuit_fabricator",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farout:integrated_circuit_fabricator"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "farout:block/keranon_planks"
+  },
+  "render_type": "solid"
+}

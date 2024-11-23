@@ -1,0 +1,15 @@
+{
+  "type": "farout:circuit_fabrication",
+  "ingredients": [
+    {
+      "item": "farout:unetched_silicon_wafer"
+    },
+    {
+      "item": "farout:medium_frequency_integrated_circuit_photomask"
+    }
+  ],
+  "output": {
+    "item": "farout:medium_frequency_integrated_circuit",
+    "count": 1
+  }
+}

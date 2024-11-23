@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/solar_vines_cap",
+    "up": "farout:block/solar_vines_cap",
+    "north": "farout:block/solar_vines_cap",
+    "east": "farout:block/solar_vines_cap",
+    "south": "farout:block/solar_vines_cap",
+    "west": "farout:block/solar_vines_cap",
+    "particle": "farout:block/solar_vines_cap"
+  },
+  "render_type": "cutout"
+}

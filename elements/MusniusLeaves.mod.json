@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "block",
   "definition": {
     "texture": "musnius_leaves",
@@ -46,7 +46,7 @@
     },
     "destroyTool": "hoe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:MusniusSapling"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "block",
   "definition": {
     "texture": "rust",
@@ -42,7 +42,7 @@
     "hasGravity": true,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Energy"
+      "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "shovel",
     "customDrop": {

@@ -13,20 +13,15 @@ import net.mcreator.far_out.client.model.Modelsteve;
 import net.mcreator.far_out.client.model.Modelcustom_model;
 import net.mcreator.far_out.client.model.ModelVotodSuited;
 import net.mcreator.far_out.client.model.ModelVotod;
-import net.mcreator.far_out.client.model.ModelUnssembledLaunchVehicle;
-import net.mcreator.far_out.client.model.ModelUnmanned_lander;
 import net.mcreator.far_out.client.model.ModelUnfittedLaunchVehicle;
 import net.mcreator.far_out.client.model.ModelStartingLander;
-import net.mcreator.far_out.client.model.ModelSpaceSuitLeggings;
 import net.mcreator.far_out.client.model.ModelSpaceSuitFixedHead;
 import net.mcreator.far_out.client.model.ModelSpaceSuitFixed;
-import net.mcreator.far_out.client.model.ModelSpaceSuitBody;
 import net.mcreator.far_out.client.model.ModelSpaceSuit2;
 import net.mcreator.far_out.client.model.ModelSpaceSuit;
 import net.mcreator.far_out.client.model.ModelSpaceCapusle;
 import net.mcreator.far_out.client.model.ModelSounding_Rocket;
 import net.mcreator.far_out.client.model.ModelSmallRocketNoFairing;
-import net.mcreator.far_out.client.model.ModelSmallRocket;
 import net.mcreator.far_out.client.model.ModelSky_Hydrozoan;
 import net.mcreator.far_out.client.model.ModelRocketNoFairing;
 import net.mcreator.far_out.client.model.ModelPlane1;
@@ -40,16 +35,12 @@ import net.mcreator.far_out.client.model.ModelFlutefish;
 import net.mcreator.far_out.client.model.ModelFarOut_spacesuit_head;
 import net.mcreator.far_out.client.model.ModelCargoPod;
 import net.mcreator.far_out.client.model.ModelCapsule;
+import net.mcreator.far_out.client.model.ModelBullet_Converted;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class FaroutModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelSmallRocket.LAYER_LOCATION, ModelSmallRocket::createBodyLayer);
-		event.registerLayerDefinition(ModelUnmanned_lander.LAYER_LOCATION, ModelUnmanned_lander::createBodyLayer);
-		event.registerLayerDefinition(ModelSpaceSuitLeggings.LAYER_LOCATION, ModelSpaceSuitLeggings::createBodyLayer);
-		event.registerLayerDefinition(ModelUnssembledLaunchVehicle.LAYER_LOCATION, ModelUnssembledLaunchVehicle::createBodyLayer);
-		event.registerLayerDefinition(ModelSpaceSuitBody.LAYER_LOCATION, ModelSpaceSuitBody::createBodyLayer);
 		event.registerLayerDefinition(ModelSky_Hydrozoan.LAYER_LOCATION, ModelSky_Hydrozoan::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceSuit.LAYER_LOCATION, ModelSpaceSuit::createBodyLayer);
 		event.registerLayerDefinition(ModelVotodSuited.LAYER_LOCATION, ModelVotodSuited::createBodyLayer);
@@ -60,6 +51,7 @@ public class FaroutModModels {
 		event.registerLayerDefinition(ModelLaunchVehicle.LAYER_LOCATION, ModelLaunchVehicle::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceSuitFixedHead.LAYER_LOCATION, ModelSpaceSuitFixedHead::createBodyLayer);
 		event.registerLayerDefinition(ModelSpaceCapusle.LAYER_LOCATION, ModelSpaceCapusle::createBodyLayer);
+		event.registerLayerDefinition(ModelBullet_Converted.LAYER_LOCATION, ModelBullet_Converted::createBodyLayer);
 		event.registerLayerDefinition(ModelSmallRocketNoFairing.LAYER_LOCATION, ModelSmallRocketNoFairing::createBodyLayer);
 		event.registerLayerDefinition(ModelUnfittedLaunchVehicle.LAYER_LOCATION, ModelUnfittedLaunchVehicle::createBodyLayer);
 		event.registerLayerDefinition(ModelCapsule.LAYER_LOCATION, ModelCapsule::createBodyLayer);

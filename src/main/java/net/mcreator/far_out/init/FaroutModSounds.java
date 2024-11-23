@@ -23,4 +23,9 @@ public class FaroutModSounds {
 	public static final RegistryObject<SoundEvent> ROBOT_ARM_MOVE = REGISTRY.register("robot_arm_move", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "robot_arm_move")));
 	public static final RegistryObject<SoundEvent> GUN_FIRE = REGISTRY.register("gun_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "gun_fire")));
 	public static final RegistryObject<SoundEvent> RICKROLL = REGISTRY.register("rickroll", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "rickroll")));
+	public static final RegistryObject<SoundEvent> MALFUNCTION = REGISTRY.register("malfunction", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "malfunction")));
+	public static final RegistryObject<SoundEvent> AUTOMATIC_RIFLE_FIRE = REGISTRY.register("automatic_rifle_fire", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "automatic_rifle_fire")));
+	public static final RegistryObject<SoundEvent> BUTTON_PRESS = REGISTRY.register("button_press", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "button_press")));
+	public static final RegistryObject<SoundEvent> BEEP = REGISTRY.register("beep", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "beep")));
+	public static final RegistryObject<SoundEvent> ROCKET_ENGINE_NOISE = REGISTRY.register("rocket_engine_noise", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("farout", "rocket_engine_noise")));
 }

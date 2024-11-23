@@ -1,0 +1,81 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 320,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "canvas.png",
+          "use1Xscale": false,
+          "x": 36,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left3",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "SwitchToStation"
+          },
+          "x": 78,
+          "y": 215
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_approve_blueprint",
+          "image": "approve_blueprint.png",
+          "hoveredImage": "approve_blueprint_pressed.png",
+          "onClick": {
+            "name": "CopyDataToBlueprint"
+          },
+          "x": 213,
+          "y": 197
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cargossto.png",
+          "use1Xscale": false,
+          "x": 123,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cargo_ssto",
+          "text": {
+            "fixedValue": "Cargo SSTO"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 17
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

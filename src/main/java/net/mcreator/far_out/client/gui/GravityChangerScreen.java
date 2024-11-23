@@ -74,11 +74,6 @@ public class GravityChangerScreen extends AbstractContainerScreen<GravityChanger
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		Gravity = new EditBox(this.font, this.leftPos + 19, this.topPos + 39, 118, 18, Component.translatable("gui.farout.gravity_changer.Gravity")) {

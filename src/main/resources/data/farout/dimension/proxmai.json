@@ -21,7 +21,7 @@
     },
     "settings": {
       "name": "farout:proxmai",
-      "sea_level": 63,
+      "sea_level": 38,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
@@ -30,7 +30,7 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:void_air"
+        "Name": "minecraft:stone"
       },
       "spawn_target": [],
       "noise": {

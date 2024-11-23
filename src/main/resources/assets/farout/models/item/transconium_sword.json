@@ -1,0 +1,7 @@
+{
+  "parent": "farout:custom/transconiumsword",
+  "textures": {
+    "0": "farout:block/transconiumswordtex",
+    "particle": "farout:item/super_alloy_sword"
+  }
+}

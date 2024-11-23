@@ -88,11 +88,6 @@ public class RejonaMapScreen extends AbstractContainerScreen<RejonaMapMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		imagebutton_zoom_out = new ImageButton(this.leftPos + 414, this.topPos + 175, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_zoom_out.png"), 16, 32, e -> {

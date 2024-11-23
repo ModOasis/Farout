@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -21,13 +21,13 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:IronRod"
       },
       {
-        "value": "Items.WATER_BUCKET"
+        "value": "CUSTOM:IronRod"
       },
       {
         "value": "Blocks.STONE"
@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:LaunchPad"
+      "value": "CUSTOM:LaunchpadTiles"
     },
     "name": "launch_pad_recipe",
     "namespace": "mod"

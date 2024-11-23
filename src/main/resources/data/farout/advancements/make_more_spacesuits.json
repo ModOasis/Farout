@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:space_suit_chestplate"
+    },
+    "title": {
+      "translate": "advancements.make_more_spacesuits.title"
+    },
+    "description": {
+      "translate": "advancements.make_more_spacesuits.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "make_more_spacesuits_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:obtain_airtight_plastic"
+}

@@ -1,0 +1,199 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_electrolyzer",
+          "text": {
+            "fixedValue": "Methane Polyermizer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 44
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "GiveElectrolyzerAdvancement"
+          },
+          "x": 258,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow0.png",
+          "use1Xscale": false,
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow1"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow2"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow3"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow4"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow5"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow6"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow7"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow8"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow9"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow10"
+          },
+          "x": 204,
+          "y": 80
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

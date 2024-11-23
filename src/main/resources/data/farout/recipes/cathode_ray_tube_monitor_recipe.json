@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "cde",
+    "abb"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "d": {
+      "tag": "forge:dyes"
+    },
+    "e": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "farout:cathode_ray_tube_monitor",
+    "count": 3
+  }
+}

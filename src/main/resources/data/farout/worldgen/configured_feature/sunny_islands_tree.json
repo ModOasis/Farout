@@ -18,7 +18,7 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "farout:lumiblossom_log",
+        "Name": "farout:quzan_log",
         "Properties": {
           "axis": "y"
         }
@@ -27,7 +27,12 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "farout:lumiblossom_leaves"
+        "Name": "farout:quzan_leaves",
+        "Properties": {
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
+        }
       }
     },
     "trunk_placer": {

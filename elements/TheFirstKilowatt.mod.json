@@ -1,0 +1,33 @@
+{
+  "_fv": 60,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "The First Kilowatt",
+    "achievementDescription": "Use the stirling engine to generate electricity by placing it on a furnace, or graphite rod assembly with uranium/plutonium, or lava.",
+    "achievementIcon": {
+      "value": "CUSTOM:LightbulbEmblem"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "ElectrolyzerRecipe",
+      "CopperWireRecipe",
+      "CoalGasificationReactorRecipe",
+      "RelayRecipe",
+      "CapacitorRecipe",
+      "Motorrecipe",
+      "ElectromagnetRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:TakingInventoryFarout"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

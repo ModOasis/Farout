@@ -1,0 +1,96 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 420,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "etauimap.png",
+          "use1Xscale": true,
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionscreen.png",
+          "use1Xscale": true,
+          "x": 4,
+          "y": 3
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_proxmai",
+          "text": "Etaui",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "EtauiTrajectories"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 33,
+          "y": 29
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_oceanus",
+          "text": "Etauos",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "EtauosTrajectories"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 32,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_etaui",
+          "text": {
+            "fixedValue": "Etaui"
+          },
+          "width": 72,
+          "height": 72,
+          "x": 203,
+          "y": 86
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_etauos",
+          "text": {
+            "fixedValue": "Etauos"
+          },
+          "width": 31,
+          "height": 32,
+          "x": 286,
+          "y": 16
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

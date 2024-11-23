@@ -1,8 +1,13 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "farout:block/sulfur_ore_block",
-    "particle": "farout:block/sulfur_ore_block"
+    "down": "farout:block/sulpur",
+    "up": "farout:block/sulpur",
+    "north": "farout:block/sulpur",
+    "east": "farout:block/sulpur",
+    "south": "farout:block/sulpur",
+    "west": "farout:block/sulpur",
+    "particle": "farout:block/sulpur"
   },
   "render_type": "solid"
 }

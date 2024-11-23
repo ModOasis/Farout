@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:lush_deserts",
+  "features": "farout:cactus",
+  "step": "surface_structures"
+}

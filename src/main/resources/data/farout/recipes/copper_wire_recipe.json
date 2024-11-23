@@ -9,11 +9,11 @@
       "item": "minecraft:copper_ingot"
     },
     "b": {
-      "item": "minecraft:iron_bars"
+      "item": "farout:iron_rod"
     }
   },
   "result": {
     "item": "farout:copper_wire",
-    "count": 5
+    "count": 12
   }
 }

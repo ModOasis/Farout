@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,7 @@
         "data": {
           "image": "canvas.png",
           "use1Xscale": false,
-          "x": 36,
+          "x": 33,
           "y": -1
         }
       },
@@ -37,21 +37,6 @@
       {
         "type": "label",
         "data": {
-          "name": "label_control_unit",
-          "text": {
-            "fixedValue": "Control unit:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 150,
-          "y": 44
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_electric_generator",
           "text": {
             "fixedValue": "Electric generator:"
@@ -61,7 +46,7 @@
             "falpha": 0.0
           },
           "x": 150,
-          "y": 71
+          "y": 60
         }
       },
       {
@@ -121,7 +106,7 @@
             "falpha": 0.0
           },
           "x": 168,
-          "y": 185
+          "y": 182
         }
       },
       {
@@ -130,7 +115,7 @@
           "image": "chemical_propulsion_small.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "ChemicalRocketVisibility"
+            "name": "ChemicalRocketVisibilityProcedure"
           },
           "x": 79,
           "y": 53
@@ -184,32 +169,6 @@
           },
           "x": 119,
           "y": 26
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_arrow_left1",
-          "image": "arrow_left.png",
-          "hoveredImage": "arrow_left_pressed.png",
-          "onClick": {
-            "name": "DecrementCompID"
-          },
-          "x": 123,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_arrow1",
-          "image": "arrow.png",
-          "hoveredImage": "arrow_pressed.png",
-          "onClick": {
-            "name": "IncrementCompID"
-          },
-          "x": 246,
-          "y": 52
         }
       },
       {
@@ -309,33 +268,17 @@
       {
         "type": "label",
         "data": {
-          "name": "label_proc_return_control_module",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnControlModule"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 134,
-          "y": 57
-        }
-      },
-      {
-        "type": "label",
-        "data": {
           "name": "label_proc_fairing_delta_v",
           "text": {
             "fixedValue": "",
-            "name": "FairingDeltaV"
+            "name": "ReturnDeltaV"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 168,
-          "y": 194
+          "x": 285,
+          "y": 191
         }
       },
       {
@@ -404,7 +347,7 @@
             "name": "IncrementPowID"
           },
           "x": 246,
-          "y": 80
+          "y": 70
         }
       },
       {
@@ -417,7 +360,7 @@
             "name": "DecrementPowID"
           },
           "x": 114,
-          "y": 80
+          "y": 71
         }
       },
       {
@@ -433,7 +376,7 @@
             "falpha": 0.0
           },
           "x": 126,
-          "y": 83
+          "y": 73
         }
       },
       {
@@ -469,7 +412,7 @@
             "name": "NuclearSaltWaterRocketVisibility"
           },
           "x": 79,
-          "y": 53
+          "y": 63
         }
       },
       {
@@ -487,13 +430,13 @@
       {
         "type": "image",
         "data": {
-          "image": "antimatter_engine.png",
+          "image": "warp_drive.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "AntimatterPlasmaEngineVisibility"
           },
           "x": 79,
-          "y": 54
+          "y": 63
         }
       },
       {
@@ -518,6 +461,221 @@
           "height": 20,
           "x": 102,
           "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ihm.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "CryogenicHabVisibility"
+          },
+          "x": 79,
+          "y": -8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_trajectory_dv",
+          "text": {
+            "fixedValue": "Trajectory ΔV: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 182
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oceanic.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingOceanicPlanet"
+          },
+          "x": 312,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "desert.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingALacustrinePlanetCondition"
+          },
+          "x": 312,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moonlike.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingAAirlessPlanet"
+          },
+          "x": 312,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "terra.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "LeavingATerraCondition"
+          },
+          "x": 312,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "terra.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtATerraCondition"
+          },
+          "x": 312,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_etaui",
+          "text": {
+            "fixedValue": "Etaui"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oceanic.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtAOceanicPlanet"
+          },
+          "x": 312,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moonlike.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtAAirlessPlanet"
+          },
+          "x": 312,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "desert.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "ArrivingAtALacustrinePlanetCondition"
+          },
+          "x": 312,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_set_trajectory",
+          "text": "Set trajectory",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenGUIs"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 286,
+          "y": 154
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_delta_v",
+          "text": {
+            "fixedValue": "",
+            "name": "FairingDeltaV"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 190
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_calculate_trajectory",
+          "text": "Calculate Trajectory",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "DeltaVSolver"
+          },
+          "width": 129,
+          "height": 20,
+          "x": 274,
+          "y": 171
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_travel_time",
+          "text": {
+            "fixedValue": "Travel time:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 284,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_trajectory_travel_ti",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTrajectoryTravelTime"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 285,
+          "y": 214
         }
       }
     ],

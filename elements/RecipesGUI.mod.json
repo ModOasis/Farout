@@ -1,0 +1,124 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_table_of_contents",
+          "text": {
+            "fixedValue": "Recipes:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 8
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rocketry_and_space_travel",
+          "text": "Electrolyzer recipes",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenElectrolyzerRecipeGUI"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 141,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_recipes",
+          "text": "Gasification reactor recipes",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "CoalGasificationReactorRecipesProcedure"
+          },
+          "width": 144,
+          "height": 20,
+          "x": 141,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fuel_cell_recipes",
+          "text": "Fuel cell recipes",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenHydrogenFuelCellRecipes"
+          },
+          "width": 113,
+          "height": 20,
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_nuclear_reactor_recipes",
+          "text": "Nuclear reactor recipes",
+          "isUndecorated": true,
+          "width": 145,
+          "height": 20,
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_polymerizer_recipes",
+          "text": "Polymerizer recipes",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "MethanePolymerizerRecipeGUI"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fusion_reactor_recipes",
+          "text": "Fusion reactor recipes",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenFusionReactorRecipes"
+          },
+          "width": 140,
+          "height": 20,
+          "x": 141,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 172,
+    "height": 233,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_table_of_contents",
+          "text": {
+            "fixedValue": "Table of contents:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_rocketry_and_space_travel",
+          "text": "Rocketry and space travel",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenRocketryGUI"
+          },
+          "width": 155,
+          "height": 20,
+          "x": 141,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "book_and_quill_writing.png",
+          "use1Xscale": true,
+          "x": 125,
+          "y": -1
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

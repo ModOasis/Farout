@@ -1,0 +1,45 @@
+{
+  "_fv": 60,
+  "_type": "fluid",
+  "definition": {
+    "name": "Iron Pentacarbonyl",
+    "bucketName": "Iron Pentacarbonyl Bucket",
+    "textureStill": "iron_pentacarbonyl_still",
+    "textureFlowing": "iron_pentacarbonyl_flow",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 7,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "CUSTOM:SulfuricAcidRain"
+    },
+    "flowStrength": 1.0,
+    "luminosity": 0,
+    "density": 1430,
+    "viscosity": 300,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "CUSTOM:Energy"
+    },
+    "emptySound": {
+      "value": ""
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 0,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT"
+  }
+}

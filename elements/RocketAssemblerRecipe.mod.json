@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Motor"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Motor"
+      },
+      {
+        "value": "CUSTOM:IronRod"
+      },
+      {
+        "value": "CUSTOM:LowFrequencyIntegratedCircuit"
+      },
+      {
+        "value": "CUSTOM:IronRod"
+      },
+      {
+        "value": "CUSTOM:Motor"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Motor"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RocketAssembler"
+    },
+    "name": "rocket_assembler_recipe",
+    "namespace": "mod"
+  }
+}

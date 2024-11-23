@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -37,6 +37,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "UraniumCarbideRightclickedOnBlock"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "projectile": {

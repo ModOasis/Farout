@@ -1,122 +1,175 @@
 package net.mcreator.far_out.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
-import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
-import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
-import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.far_out.network.FaroutModVariables;
-import net.mcreator.far_out.entity.LaunchVehicleEntity;
-import net.mcreator.far_out.FaroutMod;
+import net.mcreator.far_out.world.inventory.ReadyForLaunchGUIMenu;
 
-import java.util.Comparator;
+import io.netty.buffer.Unpooled;
 
 public class HelusTrajectoriesProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double DeltaV = 0;
 		double OrbitalPeriod = 0;
-		boolean Interplanetry = false;
 		Entity TargetEntity = null;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:carbos")))) {
+		boolean Interplanetry = false;
+		boolean Result = false;
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:proxmai")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:vulcan"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:varas"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:glacieo")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:infinatos"))) {
+			DeltaV = 3000000;
+			OrbitalPeriod = 998;
+		}
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:venasion")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:lestas"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:neqion")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:radiatos"))
+				|| (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:kalasmos")) || (entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:pryson"))) {
+			DeltaV = 30000000;
+			OrbitalPeriod = 998;
+		}
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:carbos"))) {
 			Interplanetry = true;
-			DeltaV = 196;
+			DeltaV = 100000;
 			OrbitalPeriod = 80;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:moja")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:moja"))) {
 			Interplanetry = true;
-			DeltaV = 89;
+			DeltaV = 45000;
 			OrbitalPeriod = 47;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:rejona")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:rejona"))) {
 			Interplanetry = true;
-			DeltaV = 24;
+			DeltaV = 24000;
 			OrbitalPeriod = 138;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:melu")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:melu"))) {
 			Interplanetry = true;
-			DeltaV = 24;
+			DeltaV = 24000;
 			OrbitalPeriod = 138;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus"))) {
 			Interplanetry = false;
 			DeltaV = 0;
 			OrbitalPeriod = 0;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:orax")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:orax"))) {
 			Interplanetry = true;
-			DeltaV = 24;
+			DeltaV = 24000;
 			OrbitalPeriod = 372;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:zev")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:zev"))) {
 			Interplanetry = true;
-			DeltaV = 24;
+			DeltaV = 24000;
 			OrbitalPeriod = 372;
 		}
-		if ((entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).VehicleMode) {
-			if (!world.getEntitiesOfClass(LaunchVehicleEntity.class,
-					AABB.ofSize(new Vec3(FaroutModVariables.MapVariables.get(world).AccessLocationX, FaroutModVariables.MapVariables.get(world).AccessLocationY, FaroutModVariables.MapVariables.get(world).AccessLocationZ), 20, 20, 20), e -> true)
-					.isEmpty()) {
-				TargetEntity = (Entity) world.getEntitiesOfClass(LaunchVehicleEntity.class,
-						AABB.ofSize(new Vec3(FaroutModVariables.MapVariables.get(world).AccessLocationX, FaroutModVariables.MapVariables.get(world).AccessLocationY, FaroutModVariables.MapVariables.get(world).AccessLocationZ), 20, 20, 20), e -> true)
-						.stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(FaroutModVariables.MapVariables.get(world).AccessLocationX, FaroutModVariables.MapVariables.get(world).AccessLocationY, FaroutModVariables.MapVariables.get(world).AccessLocationZ)).findFirst().orElse(null);
-				if (DeltaV / 2 < TargetEntity.getPersistentData().getDouble("Delta-V") && OrbitalPeriod <= TargetEntity.getPersistentData().getDouble("HabTime")
-						&& !(!Interplanetry && TargetEntity.getPersistentData().getBoolean("InterplanetryCapable"))) {
-					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-						ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus"));
-						if (_player.level().dimension() == destinationType)
-							return;
-						ServerLevel nextLevel = _player.server.getLevel(destinationType);
-						if (nextLevel != null) {
-							_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-							_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-							_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-							for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-								_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-							_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
-						}
+		Result = false;
+		if (Interplanetry == false && (new Object() {
+			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getBoolean(tag);
+				return false;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HasAdvancedControl")) == true) {
+			Result = true;
+		} else if (Interplanetry == true && (new Object() {
+			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getBoolean(tag);
+				return false;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HasAdvancedControl")) == false) {
+			Result = false;
+		} else if (Interplanetry == true && (new Object() {
+			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getBoolean(tag);
+				return false;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HasAdvancedControl")) == true) {
+			Result = true;
+		} else if (Interplanetry == false && (new Object() {
+			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getBoolean(tag);
+				return false;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HasAdvancedControl")) == false) {
+			Result = true;
+		}
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "\u0394V") >= DeltaV / 2 && new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabTime") >= OrbitalPeriod / 2 && true) {
+			if (entity instanceof ServerPlayer _ent) {
+				BlockPos _bpos = BlockPos.containing(x, y, z);
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+					@Override
+					public Component getDisplayName() {
+						return Component.literal("ReadyForLaunchGUI");
 					}
-				}
+
+					@Override
+					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+						return new ReadyForLaunchGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					}
+				}, _bpos);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putString("Destination", "helus");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("TransferDV", (DeltaV / 2));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		} else {
-			FaroutModVariables.MapVariables.get(world).InTransit = FaroutModVariables.WorldVariables.get(world).InterstellarVesselProgress;
-			FaroutModVariables.MapVariables.get(world).syncData(world);
-			FaroutMod.queueServerWork((int) FaroutModVariables.MapVariables.get(world).TransportDelay, () -> {
-				if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
-					ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus"));
-					if (_player.level().dimension() == destinationType)
-						return;
-					ServerLevel nextLevel = _player.server.getLevel(destinationType);
-					if (nextLevel != null) {
-						_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-						_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
-						_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
-						for (MobEffectInstance _effectinstance : _player.getActiveEffects())
-							_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
-						_player.connection.send(new ClientboundLevelEventPacket(1032, BlockPos.ZERO, 0, false));
-					}
-				}
-				FaroutMod.queueServerWork((int) FaroutModVariables.MapVariables.get(world).ArrivalDelay, () -> {
-					if (FaroutModVariables.MapVariables.get(world).InTransit.contains("F")) {
-						FaroutModVariables.WorldVariables.get(world).InterstellarVesselProgress = FaroutModVariables.MapVariables.get(world).InTransit.replace("F", "H");
-						FaroutModVariables.WorldVariables.get(world).syncData(world);
-					} else if (FaroutModVariables.MapVariables.get(world).InTransit.contains("H")) {
-						FaroutModVariables.WorldVariables.get(world).InterstellarVesselProgress = "11111101F";
-						FaroutModVariables.WorldVariables.get(world).syncData(world);
-					}
-				});
-			});
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putString("Destination", "");
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 		}
 	}
 }

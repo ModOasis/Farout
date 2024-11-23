@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/graphite_rod_assembly_uranium"
+    },
+    "facing=east": {
+      "model": "farout:block/graphite_rod_assembly_uranium",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/graphite_rod_assembly_uranium",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/graphite_rod_assembly_uranium",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "farout:block/graphite_rod_assembly_uranium",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "farout:block/graphite_rod_assembly_uranium",
+      "x": 90
+    }
+  }
+}

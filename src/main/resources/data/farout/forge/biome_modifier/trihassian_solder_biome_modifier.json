@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "farout:humid_plains",
+    "farout:sunny_islands"
+  ],
+  "spawners": {
+    "type": "farout:trihassian_solder",
+    "weight": 20,
+    "minCount": 10,
+    "maxCount": 20
+  }
+}

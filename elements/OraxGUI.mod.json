@@ -1,0 +1,57 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 240,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "orax.png",
+          "use1Xscale": true,
+          "x": 94,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory3",
+          "image": "settrajectory4.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OraxTrajectories"
+          },
+          "x": 142,
+          "y": 57
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory2",
+          "image": "settrajectory.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "ZevTrajectories"
+          },
+          "x": 188,
+          "y": 2
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

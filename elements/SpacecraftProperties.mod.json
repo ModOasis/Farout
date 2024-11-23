@@ -1,0 +1,85 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 300,
+    "height": 196,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "wallpaper1.png",
+          "use1Xscale": false,
+          "x": 60,
+          "y": 17
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Start typing to input",
+          "name": "input",
+          "width": 120,
+          "height": 20,
+          "x": 132,
+          "y": 197
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_enter",
+          "text": "Enter",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "DesktopComputerGUIWhileThisGUIIsOpenTick"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 258,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_enter_in_a_command",
+          "text": {
+            "fixedValue": "Enter in a command.",
+            "name": "ReturnSpacecraftName"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 26
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "wallpaper1.png",
+          "use1Xscale": false,
+          "x": 168,
+          "y": 17
+        }
+      }
+    ],
+    "onTick": {
+      "name": "DesktopComputerGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

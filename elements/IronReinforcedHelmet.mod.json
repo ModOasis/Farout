@@ -1,0 +1,28 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:SpaceSuit.helmet"
+    },
+    "smithingInputAdditionStack": {
+      "value": "Items.IRON_HELMET"
+    },
+    "smithingInputTemplateStack": {
+      "value": ""
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:IronReinforcedSpaceSuit.helmet"
+    },
+    "name": "iron_reinforced_helmet",
+    "namespace": "mod"
+  }
+}

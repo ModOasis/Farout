@@ -6,15 +6,11 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
+import net.minecraft.client.gui.components.PlainTextButton;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.FormalonMapMenu;
-import net.mcreator.far_out.procedures.RejonaReadoutProcedure;
-import net.mcreator.far_out.procedures.OraxReadoutProcedure;
-import net.mcreator.far_out.procedures.MojaReadoutProcedure;
-import net.mcreator.far_out.procedures.HelusReadoutProcedure;
-import net.mcreator.far_out.procedures.CarbosReadoutProcedure;
 import net.mcreator.far_out.network.FormalonMapButtonMessage;
 import net.mcreator.far_out.FaroutMod;
 
@@ -27,11 +23,11 @@ public class FormalonMapScreen extends AbstractContainerScreen<FormalonMapMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_carbos;
-	ImageButton imagebutton_moja;
-	ImageButton imagebutton_rejona;
-	ImageButton imagebutton_helus;
-	ImageButton imagebutton_fixedglitch;
+	Button button_proxmai;
+	Button button_oceanus;
+	Button button_etaui;
+	Button button_massivo;
+	Button button_infinatos;
 
 	public FormalonMapScreen(FormalonMapMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -40,8 +36,8 @@ public class FormalonMapScreen extends AbstractContainerScreen<FormalonMapMenu> 
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 433;
-		this.imageHeight = 196;
+		this.imageWidth = 420;
+		this.imageHeight = 240;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("farout:textures/screens/formalon_map.png");
@@ -51,16 +47,6 @@ public class FormalonMapScreen extends AbstractContainerScreen<FormalonMapMenu> 
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 82 && mouseX < leftPos + 132 && mouseY > topPos + 76 && mouseY < topPos + 127)
-			guiGraphics.renderTooltip(font, Component.literal(CarbosReadoutProcedure.execute(entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 142 && mouseX < leftPos + 209 && mouseY > topPos + 65 && mouseY < topPos + 132)
-			guiGraphics.renderTooltip(font, Component.literal(MojaReadoutProcedure.execute(entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 225 && mouseX < leftPos + 276 && mouseY > topPos + 76 && mouseY < topPos + 127)
-			guiGraphics.renderTooltip(font, Component.literal(RejonaReadoutProcedure.execute(entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 294 && mouseX < leftPos + 335 && mouseY > topPos + 81 && mouseY < topPos + 121)
-			guiGraphics.renderTooltip(font, Component.literal(HelusReadoutProcedure.execute(entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 366 && mouseX < leftPos + 432 && mouseY > topPos + 53 && mouseY < topPos + 157)
-			guiGraphics.renderTooltip(font, Component.literal(OraxReadoutProcedure.execute(entity)), mouseX, mouseY);
 	}
 
 	@Override
@@ -70,13 +56,9 @@ public class FormalonMapScreen extends AbstractContainerScreen<FormalonMapMenu> 
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 2, this.topPos + -4, 0, 0, 200, 200, 200, 200);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/formalonmap.png"), this.leftPos + -6, this.topPos + 1, 0, 0, 430, 240, 430, 240);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 201, this.topPos + -5, 0, 0, 200, 200, 200, 200);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/space_background.png"), this.leftPos + 396, this.topPos + -5, 0, 0, 200, 200, 200, 200);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/1712134285.png"), this.leftPos + -99, this.topPos + -5, 0, 0, 200, 200, 200, 200);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/selectionscreen.png"), this.leftPos + 0, this.topPos + 3, 0, 0, 100, 240, 100, 240);
 
 		RenderSystem.disableBlend();
 	}
@@ -97,56 +79,50 @@ public class FormalonMapScreen extends AbstractContainerScreen<FormalonMapMenu> 
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.formalon_map.label_star_system_viewer"), 160, -3, -54228, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_carbos = new ImageButton(this.leftPos + 81, this.topPos + 76, 50, 50, 0, 0, 50, new ResourceLocation("farout:textures/screens/atlas/imagebutton_carbos.png"), 50, 100, e -> {
+		button_proxmai = new PlainTextButton(this.leftPos + 29, this.topPos + 29, 61, 20, Component.translatable("gui.farout.formalon_map.button_proxmai"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new FormalonMapButtonMessage(0, x, y, z));
 				FormalonMapButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		});
-		guistate.put("button:imagebutton_carbos", imagebutton_carbos);
-		this.addRenderableWidget(imagebutton_carbos);
-		imagebutton_moja = new ImageButton(this.leftPos + 144, this.topPos + 67, 65, 65, 0, 0, 65, new ResourceLocation("farout:textures/screens/atlas/imagebutton_moja.png"), 65, 130, e -> {
+		}, this.font);
+		guistate.put("button:button_proxmai", button_proxmai);
+		this.addRenderableWidget(button_proxmai);
+		button_oceanus = new PlainTextButton(this.leftPos + 28, this.topPos + 67, 61, 20, Component.translatable("gui.farout.formalon_map.button_oceanus"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new FormalonMapButtonMessage(1, x, y, z));
 				FormalonMapButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		});
-		guistate.put("button:imagebutton_moja", imagebutton_moja);
-		this.addRenderableWidget(imagebutton_moja);
-		imagebutton_rejona = new ImageButton(this.leftPos + 225, this.topPos + 76, 49, 49, 0, 0, 49, new ResourceLocation("farout:textures/screens/atlas/imagebutton_rejona.png"), 49, 98, e -> {
+		}, this.font);
+		guistate.put("button:button_oceanus", button_oceanus);
+		this.addRenderableWidget(button_oceanus);
+		button_etaui = new PlainTextButton(this.leftPos + 29, this.topPos + 112, 51, 20, Component.translatable("gui.farout.formalon_map.button_etaui"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new FormalonMapButtonMessage(2, x, y, z));
 				FormalonMapButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		});
-		guistate.put("button:imagebutton_rejona", imagebutton_rejona);
-		this.addRenderableWidget(imagebutton_rejona);
-		imagebutton_helus = new ImageButton(this.leftPos + 295, this.topPos + 81, 40, 40, 0, 0, 40, new ResourceLocation("farout:textures/screens/atlas/imagebutton_helus.png"), 40, 80, e -> {
+		}, this.font);
+		guistate.put("button:button_etaui", button_etaui);
+		this.addRenderableWidget(button_etaui);
+		button_massivo = new PlainTextButton(this.leftPos + 30, this.topPos + 150, 61, 20, Component.translatable("gui.farout.formalon_map.button_massivo"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new FormalonMapButtonMessage(3, x, y, z));
 				FormalonMapButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		});
-		guistate.put("button:imagebutton_helus", imagebutton_helus);
-		this.addRenderableWidget(imagebutton_helus);
-		imagebutton_fixedglitch = new ImageButton(this.leftPos + 315, this.topPos + 4, 200, 200, 0, 0, 200, new ResourceLocation("farout:textures/screens/atlas/imagebutton_fixedglitch.png"), 200, 400, e -> {
+		}, this.font);
+		guistate.put("button:button_massivo", button_massivo);
+		this.addRenderableWidget(button_massivo);
+		button_infinatos = new PlainTextButton(this.leftPos + 29, this.topPos + 196, 72, 20, Component.translatable("gui.farout.formalon_map.button_infinatos"), e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new FormalonMapButtonMessage(4, x, y, z));
 				FormalonMapButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		});
-		guistate.put("button:imagebutton_fixedglitch", imagebutton_fixedglitch);
-		this.addRenderableWidget(imagebutton_fixedglitch);
+		}, this.font);
+		guistate.put("button:button_infinatos", button_infinatos);
+		this.addRenderableWidget(button_infinatos);
 	}
 }

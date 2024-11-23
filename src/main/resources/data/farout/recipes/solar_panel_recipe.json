@@ -1,0 +1,15 @@
+{
+  "type": "farout:circuit_fabrication",
+  "ingredients": [
+    {
+      "item": "farout:unetched_silicon_wafer"
+    },
+    {
+      "item": "farout:photovoltaic_wafer_photomask"
+    }
+  ],
+  "output": {
+    "item": "farout:photovoltaic_wafer",
+    "count": 1
+  }
+}

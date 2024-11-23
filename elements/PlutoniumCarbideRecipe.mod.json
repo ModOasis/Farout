@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "graphite_moderation",
+    "result": {
+      "value": "CUSTOM:PlutoniumCarbide"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:UraniumCarbide"
+      }
+    ]
+  }
+}

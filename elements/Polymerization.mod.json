@@ -1,0 +1,31 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "methane_polymerizer_jei.png",
+    "width": 176,
+    "height": 87,
+    "icon": {
+      "value": "CUSTOM:MethanePolymerizer"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Polymerization",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 15,
+        "y": 34,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 132,
+        "y": 34,
+        "slotid": 0
+      }
+    ]
+  }
+}

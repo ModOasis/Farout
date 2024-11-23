@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "farout:space_suit_leggings"
+  },
+  "addition": {
+    "item": "minecraft:diamond_leggings"
+  },
+  "result": {
+    "item": "farout:diamond_reinfoced_space_suit_leggings"
+  }
+}

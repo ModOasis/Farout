@@ -1,11 +1,11 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 246,
+    "width": 281,
     "height": 179,
-    "inventoryOffsetX": 0,
+    "inventoryOffsetX": 40,
     "inventoryOffsetY": 8,
     "renderBgLayer": true,
     "doesPauseGame": false,
@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "CUSTOM:SpaceshipBlueprint"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -24,8 +24,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 114,
-          "y": 107
+          "x": 78,
+          "y": 53
         }
       },
       {
@@ -36,8 +36,8 @@
           "displayCondition": {
             "name": "ItemPlaceholderVisibility"
           },
-          "x": 114,
-          "y": 107
+          "x": 78,
+          "y": 53
         }
       },
       {
@@ -51,7 +51,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 114,
+          "x": 78,
           "y": 35
         }
       },
@@ -66,8 +66,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 114,
-          "y": 53
+          "x": 78,
+          "y": 71
         }
       },
       {
@@ -81,22 +81,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 114,
-          "y": 71
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_control_level",
-          "text": {
-            "fixedValue": "Control level:"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 114,
+          "x": 78,
           "y": 89
         }
       },
@@ -112,8 +97,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 114,
-          "y": 62
+          "x": 78,
+          "y": 80
         }
       },
       {
@@ -128,23 +113,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 114,
-          "y": 80
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_f",
-          "text": {
-            "fixedValue": "f",
-            "name": "ReturnControlLevel"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 114,
+          "x": 78,
           "y": 98
         }
       },
@@ -159,7 +128,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 222,
+          "x": 177,
           "y": 53
         }
       },
@@ -175,39 +144,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 222,
+          "x": 177,
           "y": 62
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_refresh",
-          "text": "Refresh list",
-          "isUndecorated": true,
-          "onClick": {
-            "name": "ReturnIngredients"
-          },
-          "width": 61,
-          "height": 20,
-          "x": 222,
-          "y": 35
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_ingredient_2",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnIngredient2"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 222,
-          "y": 71
         }
       },
       {
@@ -216,13 +154,13 @@
           "name": "label_proc_return_ingredient_3",
           "text": {
             "fixedValue": "",
-            "name": "ReturnIngredient3"
+            "name": "ReturnIngredient2"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 222,
+          "x": 177,
           "y": 80
         }
       },
@@ -231,14 +169,14 @@
         "data": {
           "name": "label_proc_return_ingredient_4",
           "text": {
-            "fixedValue": "",
-            "name": "ReturnIngredient4"
+            "fixedValue": "/",
+            "name": "Fraction2"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 222,
+          "x": 177,
           "y": 89
         }
       },
@@ -248,40 +186,29 @@
           "name": "label_proc_return_ingredient_5",
           "text": {
             "fixedValue": "",
-            "name": "ReturnIngredient5"
+            "name": "ReturnIngredient3"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 222,
+          "x": 177,
           "y": 98
         }
       },
       {
-        "type": "imagebutton",
+        "type": "button",
         "data": {
-          "name": "imagebutton_arrow",
-          "image": "arrow.png",
-          "hoveredImage": "arrow_pressed.png",
+          "name": "button_launch",
+          "text": "Launch",
+          "isUndecorated": false,
           "onClick": {
-            "name": "IncrementPage"
+            "name": "FractionCheck1"
           },
-          "x": 294,
-          "y": 107
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_arrow_left",
-          "image": "arrow_left.png",
-          "hoveredImage": "arrow_left_pressed.png",
-          "onClick": {
-            "name": "DecrementPage"
-          },
-          "x": 222,
-          "y": 107
+          "width": 56,
+          "height": 20,
+          "x": 285,
+          "y": 71
         }
       },
       {
@@ -298,8 +225,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 150,
-          "y": 107
+          "x": 123,
+          "y": 53
         }
       },
       {
@@ -307,11 +234,81 @@
         "data": {
           "image": "aluminium_ingot.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "ItemPlaceholderIngotVisibility"
+          "x": 123,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_1712134285",
+          "image": "arrowdown.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "IncrementPage"
           },
-          "x": 150,
+          "x": 267,
+          "y": 116
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrowup",
+          "image": "arrowup.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "DecrementPage"
+          },
+          "x": 267,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "/",
+            "name": "Fraction1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "/",
+            "name": "Fraction3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
           "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "Refresh",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "CopyToAssemblyManager"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 195,
+          "y": 35
         }
       }
     ],

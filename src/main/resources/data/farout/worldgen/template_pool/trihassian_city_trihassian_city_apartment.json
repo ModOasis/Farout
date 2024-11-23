@@ -1,0 +1,17 @@
+{
+  "name": "farout:trihassian_city_trihassian_city_apartment",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farout:trihassian_apartment",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "farout:graphite_moderation",
+  "ingredients": [
+    {
+      "item": "farout:uranium_carbide"
+    }
+  ],
+  "output": {
+    "item": "farout:plutonium_carbide",
+    "count": 1
+  }
+}

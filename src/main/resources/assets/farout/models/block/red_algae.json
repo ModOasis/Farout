@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/red_algae",
+    "up": "farout:block/red_algae",
+    "north": "farout:block/red_algae",
+    "east": "farout:block/red_algae",
+    "south": "farout:block/red_algae",
+    "west": "farout:block/red_algae",
+    "particle": "farout:block/red_algae"
+  },
+  "render_type": "solid"
+}

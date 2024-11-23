@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "farout:custom/rocketassemblymanager",
   "textures": {
-    "down": "farout:block/placeholder",
-    "up": "farout:block/placeholder",
-    "north": "farout:block/cb3",
-    "east": "farout:block/placeholder",
-    "south": "farout:block/placeholder",
-    "west": "farout:block/placeholder",
-    "particle": "farout:block/placeholder"
+    "all": "farout:block/placeholder",
+    "particle": "farout:block/placeholder",
+    "0": "farout:block/rocketassemblymanagertex"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "electrolysis",
+    "result": {
+      "value": "CUSTOM:SulfurDust"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:PyriteNugget"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "circuit_fabrication_jei.png",
+    "width": 208,
+    "height": 85,
+    "icon": {
+      "value": "CUSTOM:IntegratedCircuitFabricator"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Circuit Fabrication",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 41,
+        "y": 26,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 41,
+        "y": 53,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 140,
+        "y": 35,
+        "slotid": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 60,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Activate Lander Thruster",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "ActivateLanderThrusterOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "ActivateLanderThrusterOnKeyReleased"
+    }
+  }
+}

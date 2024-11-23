@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/unactivatedlamp",
+    "up": "farout:block/unactivatedlamp",
+    "north": "farout:block/unactivatedlamp",
+    "east": "farout:block/unactivatedlamp",
+    "south": "farout:block/unactivatedlamp",
+    "west": "farout:block/unactivatedlamp",
+    "particle": "farout:block/unactivatedlamp"
+  },
+  "render_type": "solid"
+}

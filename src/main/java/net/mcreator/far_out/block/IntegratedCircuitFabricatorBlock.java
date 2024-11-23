@@ -7,7 +7,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,8 +21,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -41,11 +38,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.IntegratedCircuitFabricatorGUIMenu;
 import net.mcreator.far_out.procedures.IntegratedCircuitFabricatorUpdateTickProcedure;
-import net.mcreator.far_out.procedures.IntegratedCircuitFabricatorBlockAddedProcedure;
+import net.mcreator.far_out.procedures.HydrogenFuelCellBlockAddedProcedure;
 import net.mcreator.far_out.block.entity.IntegratedCircuitFabricatorBlockEntity;
-
-import java.util.List;
-import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
@@ -55,11 +49,6 @@ public class IntegratedCircuitFabricatorBlock extends Block implements EntityBlo
 	public IntegratedCircuitFabricatorBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -106,18 +95,10 @@ public class IntegratedCircuitFabricatorBlock extends Block implements EntityBlo
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 20);
-		IntegratedCircuitFabricatorBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		HydrogenFuelCellBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

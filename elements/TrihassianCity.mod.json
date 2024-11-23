@@ -1,0 +1,51 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "trihassian_city_road_apartment",
+    "projection": "terrain_matching",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 10,
+    "separation": 4,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:HumidPlains"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "trihassian_city_apartment",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 2,
+            "structure": "trihassian_apartment",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "trihassian_city_road_apartment",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 2,
+            "structure": "trihassian_city_road_apartment",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "block",
   "definition": {
     "texture": "electrolyzertex",
@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Chemistry"
+      "value": "TRANSPORTATION"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -103,8 +103,8 @@
     "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "ElectrolyzerGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

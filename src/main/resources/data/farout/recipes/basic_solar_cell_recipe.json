@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:cobblestone"
+    },
+    "c": {
+      "item": "farout:silicon_dust"
+    }
+  },
+  "result": {
+    "item": "farout:basic_solar_cell",
+    "count": 6
+  }
+}

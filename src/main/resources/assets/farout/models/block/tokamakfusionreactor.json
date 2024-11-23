@@ -3,7 +3,7 @@
   "textures": {
     "all": "farout:block/tokomakfusionreactortex",
     "particle": "farout:block/tokomakfusionreactortex",
-    "0": "farout:block/tokomakfusionreactortex"
+    "1": "farout:block/tokomakfusionreactortex"
   },
   "render_type": "solid"
 }

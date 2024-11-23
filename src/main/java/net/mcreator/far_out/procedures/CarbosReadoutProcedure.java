@@ -11,28 +11,38 @@ public class CarbosReadoutProcedure {
 			return "";
 		double DeltaV = 0;
 		double OrbitalPeriod = 0;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:carbos")))) {
+		Entity TargetEntity = null;
+		boolean Interplanetry = false;
+		boolean Result = false;
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:carbos"))) {
+			Interplanetry = false;
 			DeltaV = 0;
 			OrbitalPeriod = 0;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:moja")))) {
-			DeltaV = 108;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:moja"))) {
+			Interplanetry = true;
+			DeltaV = 54000;
 			OrbitalPeriod = 13.6;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:rejona")))) {
-			DeltaV = 176;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:rejona"))) {
+			Interplanetry = true;
+			DeltaV = 90000;
 			OrbitalPeriod = 40;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:melu")))) {
-			DeltaV = 176;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:melu"))) {
+			Interplanetry = true;
+			DeltaV = 90000;
 			OrbitalPeriod = 40;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus")))) {
-			DeltaV = 196;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:helus"))) {
+			Interplanetry = true;
+			DeltaV = 100000;
 			OrbitalPeriod = 80;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:orax")))) {
-			DeltaV = 216;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:orax"))) {
+			Interplanetry = true;
+			DeltaV = 11000;
 			OrbitalPeriod = 250;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:zev")))) {
-			DeltaV = 216;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:zev"))) {
+			Interplanetry = true;
+			DeltaV = 11000;
 			OrbitalPeriod = 250;
 		}
-		return "Required \u0394V:" + DeltaV + "Km/s";
+		return "Carbos: " + "\u0394V: " + DeltaV + " Hab time:" + OrbitalPeriod;
 	}
 }

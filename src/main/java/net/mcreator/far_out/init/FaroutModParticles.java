@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.far_out.client.particle.SulfuricAcidRainParticle;
 import net.mcreator.far_out.client.particle.HydrogenFluorideMistParticle;
+import net.mcreator.far_out.client.particle.CopperWireParticleParticle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class FaroutModParticles {
@@ -18,5 +19,6 @@ public class FaroutModParticles {
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(FaroutModParticleTypes.SULFURIC_ACID_RAIN.get(), SulfuricAcidRainParticle::provider);
 		event.registerSpriteSet(FaroutModParticleTypes.HYDROGEN_FLUORIDE_MIST.get(), HydrogenFluorideMistParticle::provider);
+		event.registerSpriteSet(FaroutModParticleTypes.COPPER_WIRE_PARTICLE.get(), CopperWireParticleParticle::provider);
 	}
 }

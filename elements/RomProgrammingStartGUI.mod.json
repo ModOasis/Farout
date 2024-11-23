@@ -1,0 +1,97 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 190,
+    "height": 193,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 15,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "planetary_transfer_summary.png",
+          "use1Xscale": true,
+          "x": 138,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "No programmable items:"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 63
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "AvionicsGuidanceSystemRightclicked"
+          },
+          "x": 203,
+          "y": 113
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_please_insert_a_programmable",
+          "text": {
+            "fixedValue": "Please insert a programmable"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 83
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_device_into_the_slot_below",
+          "text": {
+            "fixedValue": "device into the slot below."
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 143,
+          "y": 93
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 5,
+      "sy": 5,
+      "ox": 5,
+      "oy": 5,
+      "snapOnGrid": true
+    }
+  }
+}

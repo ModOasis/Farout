@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/supercooled_ice",
+    "up": "farout:block/supercooled_ice",
+    "north": "farout:block/supercooled_ice",
+    "east": "farout:block/supercooled_ice",
+    "south": "farout:block/supercooled_ice",
+    "west": "farout:block/supercooled_ice",
+    "particle": "farout:block/supercooled_ice"
+  },
+  "render_type": "solid"
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Items.WATER_BUCKET"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -51,6 +51,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "GiveElectrolyzerAdvancement"
+          },
           "x": 258,
           "y": 62
         }
@@ -63,17 +66,11 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "GiveElectrolyzerAdvancement"
+          },
           "x": 258,
           "y": 98
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "waterbucket.png",
-          "use1Xscale": false,
-          "x": 132,
-          "y": 80
         }
       },
       {

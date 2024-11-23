@@ -1,16 +1,16 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "air_tight_frabic",
+    "texture": "airtightfabric",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Airtight Fabric",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "MATERIALS"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
@@ -42,6 +48,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "eat"
+    "animation": "none"
   }
 }

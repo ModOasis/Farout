@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "farout:block/hyperstablealloy",
+    "top": "farout:block/hyperstablealloy",
+    "side": "farout:block/hyperstablealloy"
+  },
+  "render_type": "solid"
+}

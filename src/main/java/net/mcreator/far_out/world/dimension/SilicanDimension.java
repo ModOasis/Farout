@@ -21,7 +21,7 @@ public class SilicanDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(DimensionSpecialEffects.OverworldEffects.CLOUD_LEVEL, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(0.3960784314, 0.6039215686, 0.5294117647);
+					return new Vec3(0, 0, 0);
 				}
 
 				@Override

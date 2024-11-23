@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "nuclear_irradiation",
+    "result": {
+      "value": "CUSTOM:Deuterium"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Hydrogen"
+      }
+    ]
+  }
+}

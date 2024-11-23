@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:xenon"
+    },
+    "title": {
+      "translate": "advancements.heavier_than_air.title"
+    },
+    "description": {
+      "translate": "advancements.heavier_than_air.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heavier_than_air_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:xenon"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:the_power_of_an_atom"
+}

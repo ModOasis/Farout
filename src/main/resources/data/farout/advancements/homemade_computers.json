@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:low_frequency_integrated_circuit"
+    },
+    "title": {
+      "translate": "advancements.homemade_computers.title"
+    },
+    "description": {
+      "translate": "advancements.homemade_computers.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "homemade_computers_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:unetched_silicon_wafer_recipe",
+      "farout:laser_recipe",
+      "farout:integrated_circuit_fabricator_recipe",
+      "farout:medium_frequency_ic_recipe",
+      "farout:medium_capacity_memory_recipe",
+      "farout:inertial_navigation_unit_recipe",
+      "farout:photovoltaic_wafer_recipe"
+    ]
+  },
+  "parent": "farout:obtain_basic_electronics"
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:IronRod"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.generic.explode"
+    },
+    "igniteFire": true,
+    "power": 100.0,
+    "damage": 2.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "RailgunRodProjectileHitsBlock"
+    }
+  }
+}

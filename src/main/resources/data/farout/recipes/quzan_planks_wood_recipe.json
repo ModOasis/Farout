@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "farout:quzan_wood"
+    }
+  ],
+  "result": {
+    "item": "farout:quzan_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farout:blocks/kempat_pressure_plate",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farout:kempat_pressure_plate"
+        }
+      ]
+    }
+  ]
+}

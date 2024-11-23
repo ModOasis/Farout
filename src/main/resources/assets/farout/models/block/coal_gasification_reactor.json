@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/coalgasificationreactor_-_converted",
+  "textures": {
+    "all": "farout:block/coalgasificationreactortex",
+    "particle": "farout:block/coalgasificationreactortex",
+    "0": "farout:block/coalgasificationreactortex"
+  },
+  "render_type": "solid"
+}

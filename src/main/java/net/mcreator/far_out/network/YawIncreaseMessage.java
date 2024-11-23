@@ -52,7 +52,7 @@ public class YawIncreaseMessage {
 			return;
 		if (type == 0) {
 
-			YawIncreaseOnKeyPressedProcedure.execute(entity);
+			YawIncreaseOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farout:super_alloy_ingot",
+          "name": "farout:deleted_mod_element",
           "weight": 10,
           "functions": [
             {

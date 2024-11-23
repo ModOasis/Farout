@@ -1,5 +1,5 @@
 {
-  "parent": "farout:displaysettings/stirling_engine.item",
+  "parent": "farout:displaysettings/stirlingengine.item",
   "textures": {
     "particle": "farout:block/stirlingenginetex"
   }

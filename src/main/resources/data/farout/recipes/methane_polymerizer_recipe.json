@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bcb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:ironplate"
+    },
+    "b": {
+      "item": "farout:copper_wire"
+    },
+    "c": {
+      "item": "farout:graphiterod"
+    }
+  },
+  "result": {
+    "item": "farout:methane_polymerizer",
+    "count": 1
+  }
+}

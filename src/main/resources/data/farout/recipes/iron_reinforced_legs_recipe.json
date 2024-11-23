@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "farout:space_suit_leggings"
+  },
+  "addition": {
+    "item": "minecraft:iron_leggings"
+  },
+  "result": {
+    "item": "farout:iron_reinforced_space_suit_leggings"
+  }
+}

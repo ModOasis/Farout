@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:spaceship_blueprint"
+    },
+    "title": {
+      "translate": "advancements.make_blueprint.title"
+    },
+    "description": {
+      "translate": "advancements.make_blueprint.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "make_blueprint_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:rocket_assembler_recipe",
+      "farout:rocket_assembly_manager_recipe",
+      "farout:launch_pad_recipe",
+      "farout:cathode_ray_tube_monitor_recipe",
+      "farout:small_atmospheric_lander_recipe",
+      "farout:inertial_navigation_unit_recipe"
+    ]
+  },
+  "parent": "farout:cracking_coal"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "farout:dying_plains",
+    "farout:evaporating_oceans",
+    "farout:sunny_islands",
+    "farout:warm_oceans"
+  ],
+  "features": "farout:high_coal_content",
+  "step": "raw_generation"
+}

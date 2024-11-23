@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:delta_feature",
+  "config": {
+    "contents": {
+      "Name": "minecraft:yellow_terracotta"
+    },
+    "rim": {
+      "Name": "minecraft:yellow_terracotta"
+    },
+    "size": 15,
+    "rim_size": 15
+  }
+}

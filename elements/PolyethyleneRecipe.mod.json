@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "polymerization",
+    "result": {
+      "value": "CUSTOM:Polyethylene"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Methane"
+      }
+    ]
+  }
+}

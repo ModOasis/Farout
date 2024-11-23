@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farout:blocks/light_water_moderation_tanks",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farout:light_water_moderation_tanks"
+        }
+      ]
+    }
+  ]
+}

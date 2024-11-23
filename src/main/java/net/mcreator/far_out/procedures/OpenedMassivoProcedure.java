@@ -13,7 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.far_out.world.inventory.MassivoMapMenu;
+import net.mcreator.far_out.world.inventory.SandosMassivoMapMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -26,12 +26,12 @@ public class OpenedMassivoProcedure {
 			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("MassivoMap");
+					return Component.literal("SandosMassivoMap");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new MassivoMapMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					return new SandosMassivoMapMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
 		}

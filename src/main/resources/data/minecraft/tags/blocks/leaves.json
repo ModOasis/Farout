@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "farout:keranon_leaves",
+    "farout:oxyfion_leaves",
+    "farout:quzan_leaves",
+    "farout:kempat_leaves",
+    "farout:musnius_leaves"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "farout:custom/bullet",
+  "textures": {
+    "0": "farout:block/bullettexture",
+    "missing": "farout:block/bullettexture",
+    "particle": "farout:item/nuclear_salt_water_rocket"
+  }
+}

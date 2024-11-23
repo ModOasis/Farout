@@ -1,0 +1,12 @@
+{
+  "type": "farout:polymerization",
+  "ingredients": [
+    {
+      "item": "farout:methane"
+    }
+  ],
+  "output": {
+    "item": "farout:polyethylene",
+    "count": 1
+  }
+}

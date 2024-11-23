@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/coppercable",
+  "textures": {
+    "all": "farout:block/coppercabletexture",
+    "particle": "farout:block/coppercabletexture",
+    "0": "farout:block/coppercabletexture"
+  },
+  "render_type": "cutout"
+}

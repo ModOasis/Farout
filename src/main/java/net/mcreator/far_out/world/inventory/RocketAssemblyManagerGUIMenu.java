@@ -20,7 +20,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.init.FaroutModMenus;
-import net.mcreator.far_out.init.FaroutModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -78,22 +77,17 @@ public class RocketAssemblyManagerGUIMenu extends AbstractContainerMenu implemen
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 24, 77) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 6, 23) {
 			private final int slot = 0;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return FaroutModItems.SPACESHIP_BLUEPRINT.get() == stack.getItem();
-			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 60, 77) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 51, 23) {
 			private final int slot = 1;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 35 + 8 + sj * 18, 14 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 93 + 8 + sj * 18, 14 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 35 + 8 + si * 18, 14 + 142));
+			this.addSlot(new Slot(inv, si, 93 + 8 + si * 18, 14 + 142));
 	}
 
 	@Override

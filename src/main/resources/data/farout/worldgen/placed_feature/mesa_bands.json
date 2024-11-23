@@ -1,0 +1,32 @@
+{
+  "feature": "farout:mesa_bands",
+  "placement": [
+    {
+      "type": "minecraft:surface_relative_threshold_filter",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "min_inclusive": -8,
+      "max_inclusive": 0
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": 0,
+          "max_inclusive": 0
+        }
+      },
+      "y_spread": {
+        "type": "uniform",
+        "value": {
+          "min_inclusive": -4,
+          "max_inclusive": 4
+        }
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": 4
+    }
+  ]
+}

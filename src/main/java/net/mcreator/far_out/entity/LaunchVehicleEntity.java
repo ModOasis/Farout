@@ -4,10 +4,14 @@ package net.mcreator.far_out.entity;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -24,6 +28,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.procedures.RocketRightClickedOnEntityProcedure;
 import net.mcreator.far_out.procedures.LaunchVehicleOnEntityTickUpdateProcedure;
@@ -31,6 +36,7 @@ import net.mcreator.far_out.init.FaroutModEntities;
 
 public class LaunchVehicleEntity extends Monster {
 	public static final EntityDataAccessor<Boolean> DATA_ReadyForLaunch = SynchedEntityData.defineId(LaunchVehicleEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Boolean> DATA_Launching = SynchedEntityData.defineId(LaunchVehicleEntity.class, EntityDataSerializers.BOOLEAN);
 
 	public LaunchVehicleEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(FaroutModEntities.LAUNCH_VEHICLE.get(), world);
@@ -42,6 +48,7 @@ public class LaunchVehicleEntity extends Monster {
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
+		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
@@ -53,6 +60,12 @@ public class LaunchVehicleEntity extends Monster {
 	protected void defineSynchedData() {
 		super.defineSynchedData();
 		this.entityData.define(DATA_ReadyForLaunch, false);
+		this.entityData.define(DATA_Launching, false);
+	}
+
+	@Override
+	protected PathNavigation createNavigation(Level world) {
+		return new FlyingPathNavigation(this, world);
 	}
 
 	@Override
@@ -77,6 +90,11 @@ public class LaunchVehicleEntity extends Monster {
 	}
 
 	@Override
+	public boolean causeFallDamage(float l, float d, DamageSource source) {
+		return false;
+	}
+
+	@Override
 	public boolean hurt(DamageSource damagesource, float amount) {
 		if (damagesource.getDirectEntity() instanceof Player)
 			return false;
@@ -93,6 +111,7 @@ public class LaunchVehicleEntity extends Monster {
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putBoolean("DataReadyForLaunch", this.entityData.get(DATA_ReadyForLaunch));
+		compound.putBoolean("DataLaunching", this.entityData.get(DATA_Launching));
 	}
 
 	@Override
@@ -100,6 +119,8 @@ public class LaunchVehicleEntity extends Monster {
 		super.readAdditionalSaveData(compound);
 		if (compound.contains("DataReadyForLaunch"))
 			this.entityData.set(DATA_ReadyForLaunch, compound.getBoolean("DataReadyForLaunch"));
+		if (compound.contains("DataLaunching"))
+			this.entityData.set(DATA_Launching, compound.getBoolean("DataLaunching"));
 	}
 
 	@Override
@@ -156,6 +177,20 @@ public class LaunchVehicleEntity extends Monster {
 		return true;
 	}
 
+	@Override
+	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+	}
+
+	@Override
+	public void setNoGravity(boolean ignored) {
+		super.setNoGravity(true);
+	}
+
+	public void aiStep() {
+		super.aiStep();
+		this.setNoGravity(true);
+	}
+
 	public static void init() {
 	}
 
@@ -166,6 +201,7 @@ public class LaunchVehicleEntity extends Monster {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 }

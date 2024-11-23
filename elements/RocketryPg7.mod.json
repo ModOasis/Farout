@@ -1,0 +1,363 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 189,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rocketry",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "Back"
+          },
+          "x": 132,
+          "y": 215
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "Next"
+          },
+          "x": 276,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_when_you_construct_a_launchpad",
+          "text": {
+            "fixedValue": "When you construct a launchpad, "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rightclick_the_rocket_assembly",
+          "text": {
+            "fixedValue": "right-click the rocket assembly"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_manager",
+          "text": {
+            "fixedValue": "manager. Place your blueprint in"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_blueprint_slot_and_put_the",
+          "text": {
+            "fixedValue": "the blueprint slot, and put the"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_items_required_into_the_ingot",
+          "text": {
+            "fixedValue": "items required into the ingot"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_slot",
+          "text": {
+            "fixedValue": "slot. Use the arrows in the GUI"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_find_what_you_need",
+          "text": {
+            "fixedValue": "to find what materials you need"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_build_the_spaceship",
+          "text": {
+            "fixedValue": "to build the spaceship."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_once_all_of_the_materials_read",
+          "text": {
+            "fixedValue": "Once all of the materials read"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0_close_the_gui_and_open_it",
+          "text": {
+            "fixedValue": "0, close the GUI and open it"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_once_more_this_is_the_part_wher",
+          "text": {
+            "fixedValue": "once more. this is the part where"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_put_in_the_trajectory",
+          "text": {
+            "fixedValue": "you put in the trajectory for the"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spaceship_they_are_cyclic_so_t",
+          "text": {
+            "fixedValue": "spaceship. they are cyclic, so"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_from_the_source_and_the",
+          "text": {
+            "fixedValue": "from the \"source\" and the"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_destination",
+          "text": {
+            "fixedValue": "\"destination\" planet. click on"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_set_trajectory_and_click",
+          "text": {
+            "fixedValue": "\"Set trajectory\", and click on a"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_celestial_body_hover_over_it_to",
+          "text": {
+            "fixedValue": "celestial body. hover over it to"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_get_its_delta_v_and_mission_tim",
+          "text": {
+            "fixedValue": "get it's delta v and mission time"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_if_your_spacecraft_is_good_for",
+          "text": {
+            "fixedValue": ". if your spacecraft is good for"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_that_it_will_launch",
+          "text": {
+            "fixedValue": "that, it will launch."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 206
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

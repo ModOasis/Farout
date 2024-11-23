@@ -26,11 +26,11 @@ public class LifeformOriginProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui"))) == (entity.level().dimension())) {
+		if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui")) == (entity.level().dimension())) {
 			entity.getPersistentData().putString("Origin", "Etaui");
-		} else if ((ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus"))) == (entity.level().dimension())) {
+		} else if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus")) == (entity.level().dimension())) {
 			entity.getPersistentData().putString("Origin", "Oceanus");
-		} else if ((ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican"))) == (entity.level().dimension())) {
+		} else if (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican")) == (entity.level().dimension())) {
 			entity.getPersistentData().putString("Origin", "Silican");
 		}
 	}

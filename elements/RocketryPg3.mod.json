@@ -1,0 +1,273 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 189,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_example",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lets_say_that_a_spacecraft_is",
+          "text": {
+            "fixedValue": "Getting to other celestial bodies"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_reqires_you_to_accelerate_and",
+          "text": {
+            "fixedValue": "reqires you to accelerate and "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_deaccelerate_whitch_requires",
+          "text": {
+            "fixedValue": "deaccelerate, which requires"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fuel",
+          "text": {
+            "fixedValue": "fuel."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_accelerate_or_deaccelerate",
+          "text": {
+            "fixedValue": "To accelerate or deaccelerate,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_need_to_chance_your_velocity",
+          "text": {
+            "fixedValue": "you need to chance your velocity,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_thus_you_need_dv",
+          "text": {
+            "fixedValue": "and thus, you need ΔV."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dv_can_be_calculated_using",
+          "text": {
+            "fixedValue": "ΔV can be calculated using this"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_equation",
+          "text": {
+            "fixedValue": "equation:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dv_27xvexmfm",
+          "text": {
+            "fixedValue": "ΔV = 2.7*VE*(m0/m1)"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_where_ve_is_exhaust_velocity",
+          "text": {
+            "fixedValue": "Where VE is exhaust velocity, m0"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_is_the_mass_of_the_spacecraft",
+          "text": {
+            "fixedValue": "is the mass of the spacecraft"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_without_fuel_and_f_is_the_fuel",
+          "text": {
+            "fixedValue": "with fuel, and m1 is the"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mass",
+          "text": {
+            "fixedValue": "spacecraft mass without."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "Next"
+          },
+          "x": 285,
+          "y": 206
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "Back"
+          },
+          "x": 132,
+          "y": 206
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

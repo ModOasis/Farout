@@ -62,5 +62,50 @@
         "stream": true
       }
     ]
+  },
+  "malfunction": {
+    "subtitle": "subtitles.malfunction",
+    "sounds": [
+      {
+        "name": "farout:635861__wax_vibe__glitch-sci-fi-4",
+        "stream": false
+      }
+    ]
+  },
+  "automatic_rifle_fire": {
+    "subtitle": "subtitles.automatic_rifle_fire",
+    "sounds": [
+      {
+        "name": "farout:stg44",
+        "stream": false
+      }
+    ]
+  },
+  "button_press": {
+    "subtitle": "subtitles.button_press",
+    "sounds": [
+      {
+        "name": "farout:button-press-40018",
+        "stream": false
+      }
+    ]
+  },
+  "beep": {
+    "subtitle": "subtitles.beep",
+    "sounds": [
+      {
+        "name": "farout:microwave-beep-44673",
+        "stream": false
+      }
+    ]
+  },
+  "rocket_engine_noise": {
+    "subtitle": "subtitles.rocket_engine_noise",
+    "sounds": [
+      {
+        "name": "farout:rocket-launch-sfx-253937",
+        "stream": false
+      }
+    ]
   }
 }

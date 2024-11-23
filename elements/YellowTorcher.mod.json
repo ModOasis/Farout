@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -78,22 +78,23 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:ChlorinatedEarth"
+      },
+      {
+        "value": "CUSTOM:Purplegrass"
+      }
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 4,
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:FungiForests"
-      },
-      {
         "value": "CUSTOM:EtauianPlains"
       },
       {
         "value": "CUSTOM:PerchlorateOceans"
-      },
-      {
-        "value": "CUSTOM:LimestoneMoutains"
       }
     ],
     "generationType": "Flower",

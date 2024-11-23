@@ -1,13 +1,26 @@
 {
   "replace": false,
   "values": [
-    "farout:chemosynthetic_nodules",
-    "farout:lumiblossom_wood",
-    "farout:lumiblossom_log",
-    "farout:lumiblossom_planks",
-    "farout:musnius_tree_trunk",
-    "farout:musnius_wood",
+    "farout:chemistry_workbench",
+    "farout:keranon_planks",
+    "farout:keranon_log",
+    "farout:keranon_wood",
+    "farout:oxyfion_planks",
+    "farout:oxyfion_log",
+    "farout:oxyfion_wood",
+    "farout:quzan_planks",
+    "farout:quzan_log",
+    "farout:quzan_wood",
+    "farout:kempat_planks",
+    "farout:kempat_log",
+    "farout:kempat_wood",
+    "farout:designing_workbench",
     "farout:musnius_planks",
-    "farout:designing_workbench"
+    "farout:musnius_wood",
+    "farout:musnius_tree_trunk",
+    "farout:lumiblossom_planks",
+    "farout:lumiblossom_log",
+    "farout:lumiblossom_wood",
+    "farout:chemosynthetic_nodules"
   ]
 }

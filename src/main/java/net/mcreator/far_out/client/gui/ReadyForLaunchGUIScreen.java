@@ -6,13 +6,9 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.ReadyForLaunchGUIMenu;
-import net.mcreator.far_out.procedures.DisplayTrajectoryProcedure;
-import net.mcreator.far_out.network.ReadyForLaunchGUIButtonMessage;
-import net.mcreator.far_out.FaroutMod;
 
 import java.util.HashMap;
 
@@ -23,8 +19,6 @@ public class ReadyForLaunchGUIScreen extends AbstractContainerScreen<ReadyForLau
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_set_trajectory;
-	Button button_launch;
 
 	public ReadyForLaunchGUIScreen(ReadyForLaunchGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -33,8 +27,8 @@ public class ReadyForLaunchGUIScreen extends AbstractContainerScreen<ReadyForLau
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 1;
+		this.imageHeight = 1;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("farout:textures/screens/ready_for_launch_gui.png");
@@ -71,37 +65,11 @@ public class ReadyForLaunchGUIScreen extends AbstractContainerScreen<ReadyForLau
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.ready_for_launch_gui.label_ready_for_launch"), 42, 7, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.ready_for_launch_gui.label_target_trajectory"), 42, 88, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.ready_for_launch_gui.label_empty"), 42, 106, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				DisplayTrajectoryProcedure.execute(entity), 42, 106, -12829636, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.ready_for_launch_gui.label_empty"), -45, 23, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_set_trajectory = Button.builder(Component.translatable("gui.farout.ready_for_launch_gui.button_set_trajectory"), e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new ReadyForLaunchGUIButtonMessage(0, x, y, z));
-				ReadyForLaunchGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 42, this.topPos + 52, 98, 20).build();
-		guistate.put("button:button_set_trajectory", button_set_trajectory);
-		this.addRenderableWidget(button_set_trajectory);
-		button_launch = Button.builder(Component.translatable("gui.farout.ready_for_launch_gui.button_launch"), e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new ReadyForLaunchGUIButtonMessage(1, x, y, z));
-				ReadyForLaunchGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}).bounds(this.leftPos + 60, this.topPos + 142, 61, 20).build();
-		guistate.put("button:button_launch", button_launch);
-		this.addRenderableWidget(button_launch);
 	}
 }

@@ -19,17 +19,17 @@ public class FairingWattageProcedure {
 			return "";
 		String ReturnValue = "";
 		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof DesigningWorkbenchGUIMenu) {
-			ReturnValue = "" + (new Object() {
+			ReturnValue = (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, BlockPos.containing(x, y, z), "Wattage"));
+			}.getValue(world, BlockPos.containing(x, y, z), "Wattage")) + "kW";
 		} else {
-			ReturnValue = ""
-					+ ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("Wattage"));
+			ReturnValue = ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("Wattage"))
+					+ "kW";
 		}
 		return ReturnValue;
 	}

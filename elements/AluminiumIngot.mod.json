@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -10,7 +10,7 @@
     "name": "Aluminium ingot",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "MATERIALS"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/hyperstablealloy",
+    "up": "farout:block/hyperstablealloy",
+    "north": "farout:block/hyperstablealloy",
+    "east": "farout:block/hyperstablealloy",
+    "south": "farout:block/hyperstablealloy",
+    "west": "farout:block/hyperstablealloy",
+    "particle": "farout:block/hyperstablealloy"
+  },
+  "render_type": "solid"
+}

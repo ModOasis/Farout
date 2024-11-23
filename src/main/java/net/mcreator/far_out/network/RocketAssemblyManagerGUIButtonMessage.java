@@ -12,9 +12,10 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.RocketAssemblyManagerGUIMenu;
-import net.mcreator.far_out.procedures.ReturnIngredientsProcedure;
 import net.mcreator.far_out.procedures.IncrementPageProcedure;
+import net.mcreator.far_out.procedures.FractionCheck1Procedure;
 import net.mcreator.far_out.procedures.DecrementPageProcedure;
+import net.mcreator.far_out.procedures.CopyToAssemblyManagerProcedure;
 import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
@@ -66,15 +67,19 @@ public class RocketAssemblyManagerGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ReturnIngredientsProcedure.execute(world, x, y, z, entity);
+			FractionCheck1Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			IncrementPageProcedure.execute(world, x, y, z);
+			CopyToAssemblyManagerProcedure.execute(world, x, y, z);
 		}
 		if (buttonID == 2) {
 
-			DecrementPageProcedure.execute(world, x, y, z);
+			IncrementPageProcedure.execute(world, x, y, z, guistate);
+		}
+		if (buttonID == 3) {
+
+			DecrementPageProcedure.execute(world, x, y, z, guistate);
 		}
 	}
 

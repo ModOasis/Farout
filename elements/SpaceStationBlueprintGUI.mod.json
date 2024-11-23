@@ -1,0 +1,229 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 320,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "canvas.png",
+          "use1Xscale": false,
+          "x": 36,
+          "y": 0
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stationhull.png",
+          "use1Xscale": false,
+          "x": 114,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_production_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnProductionPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 37
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_storage_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnStoragePoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 55
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_energy_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnEnergyPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 73
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_pressed",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "IncrementProductionPoints"
+          },
+          "x": 168,
+          "y": 35
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "IncrementEnergyPoints"
+          },
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow1",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 168,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "DecrementEnergyPoints"
+          },
+          "x": 123,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left1",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "DecrementStoragePoints"
+          },
+          "x": 123,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left2",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "DecrementProductionPoints"
+          },
+          "x": 123,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_total_points",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnTotalPoints"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 112,
+          "y": 15
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left3",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "SwitchToSpacecraft"
+          },
+          "x": 78,
+          "y": 215
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Space  station module name",
+          "name": "name",
+          "width": 144,
+          "height": 20,
+          "x": 87,
+          "y": 170
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_approve_blueprint",
+          "image": "approve_blueprint.png",
+          "hoveredImage": "approve_blueprint_pressed.png",
+          "onClick": {
+            "name": "CopyDataToBlueprint"
+          },
+          "x": 213,
+          "y": 197
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow2",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "SwitchToSSTO"
+          },
+          "x": 195,
+          "y": 215
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

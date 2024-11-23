@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farout:block/crude_seebeck_generator"
+    },
+    "facing=east": {
+      "model": "farout:block/crude_seebeck_generator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farout:block/crude_seebeck_generator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farout:block/crude_seebeck_generator",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "farout:block/crude_seebeck_generator",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "farout:block/crude_seebeck_generator",
+      "x": 90
+    }
+  }
+}

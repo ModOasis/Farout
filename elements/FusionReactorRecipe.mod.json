@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:HafniumCarbonitrideIngot"
       },
       {
         "value": "CUSTOM:ElectroMagnet"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:HafniumCarbonitrideIngot"
       },
       {
         "value": "CUSTOM:ElectroMagnet"
@@ -30,13 +30,13 @@
         "value": "CUSTOM:ElectroMagnet"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:HafniumCarbonitrideIngot"
       },
       {
         "value": "CUSTOM:MediumFrequencyIntegratedCircuit"
       },
       {
-        "value": "CUSTOM:Super_AlloyIngot"
+        "value": "CUSTOM:HafniumCarbonitrideIngot"
       }
     ],
     "recipeReturnStack": {

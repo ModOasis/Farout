@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/uranistone",
+    "up": "farout:block/uranistone",
+    "north": "farout:block/uranistone",
+    "east": "farout:block/uranistone",
+    "south": "farout:block/uranistone",
+    "west": "farout:block/uranistone",
+    "particle": "farout:block/uranistone"
+  },
+  "render_type": "solid"
+}

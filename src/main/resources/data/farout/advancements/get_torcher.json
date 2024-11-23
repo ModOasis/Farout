@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "get_torcher_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:red_torcher_recipe",
+      "farout:yellow_torcher_recipe",
+      "farout:blue_torcher_recipe"
+    ]
+  },
+  "parent": "farout:farout_start"
+}

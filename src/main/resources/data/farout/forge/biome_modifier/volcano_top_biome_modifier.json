@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:volcanic_highlands",
+  "features": "farout:volcano_top",
+  "step": "surface_structures"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:volcanic_isles",
+  "features": "farout:varas_spires",
+  "step": "surface_structures"
+}

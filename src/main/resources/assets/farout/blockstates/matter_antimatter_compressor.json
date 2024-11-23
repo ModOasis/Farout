@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farout:block/matter_antimatter_compressor"
+    }
+  }
+}

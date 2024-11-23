@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "bdb"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "farout:ironplate"
+    },
+    "c": {
+      "item": "farout:cathode_ray_tube_monitor"
+    },
+    "d": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:radio_locator_forward",
+    "count": 1
+  }
+}

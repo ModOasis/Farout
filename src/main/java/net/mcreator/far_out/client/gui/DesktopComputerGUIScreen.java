@@ -7,18 +7,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.DesktopComputerGUIMenu;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine9Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine8Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine7Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine6Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine5Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine4Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine3Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine2Procedure;
-import net.mcreator.far_out.procedures.DesktopComputerTextLine1Procedure;
+import net.mcreator.far_out.network.DesktopComputerGUIButtonMessage;
+import net.mcreator.far_out.FaroutMod;
 
 import java.util.HashMap;
 
@@ -30,6 +24,7 @@ public class DesktopComputerGUIScreen extends AbstractContainerScreen<DesktopCom
 	private final int x, y, z;
 	private final Player entity;
 	EditBox input;
+	Button button_enter;
 
 	public DesktopComputerGUIScreen(DesktopComputerGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -38,7 +33,7 @@ public class DesktopComputerGUIScreen extends AbstractContainerScreen<DesktopCom
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 199;
+		this.imageWidth = 300;
 		this.imageHeight = 196;
 	}
 
@@ -59,7 +54,9 @@ public class DesktopComputerGUIScreen extends AbstractContainerScreen<DesktopCom
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/wallpaper1.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 200, 200, 200, 200);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/wallpaper1.png"), this.leftPos + -4, this.topPos + -5, 0, 0, 200, 200, 200, 200);
+
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/wallpaper1.png"), this.leftPos + 104, this.topPos + -5, 0, 0, 200, 200, 200, 200);
 
 		RenderSystem.disableBlend();
 	}
@@ -83,44 +80,14 @@ public class DesktopComputerGUIScreen extends AbstractContainerScreen<DesktopCom
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine1Procedure.execute(world, x, y, z), 0, 13, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine2Procedure.execute(world, x, y, z), 0, 31, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine3Procedure.execute(world, x, y, z), 0, 49, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine4Procedure.execute(world, x, y, z), 0, 67, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine5Procedure.execute(world, x, y, z), 0, 85, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine6Procedure.execute(world, x, y, z), 0, 103, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine7Procedure.execute(world, x, y, z), 0, 121, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine8Procedure.execute(world, x, y, z), 0, 139, -1, false);
-		guiGraphics.drawString(this.font,
-
-				DesktopComputerTextLine9Procedure.execute(world, x, y, z), 0, 157, -1, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.desktop_computer_gui.label_enter_in_a_command"), 59, 13, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.desktop_computer_gui.label_type_help_to_get_list_of_comma"), 59, 31, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		input = new EditBox(this.font, this.leftPos + 37, this.topPos + 176, 118, 18, Component.translatable("gui.farout.desktop_computer_gui.input")) {
+		input = new EditBox(this.font, this.leftPos + 69, this.topPos + 176, 118, 18, Component.translatable("gui.farout.desktop_computer_gui.input")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -143,5 +110,13 @@ public class DesktopComputerGUIScreen extends AbstractContainerScreen<DesktopCom
 		input.setMaxLength(32767);
 		guistate.put("text:input", input);
 		this.addWidget(this.input);
+		button_enter = Button.builder(Component.translatable("gui.farout.desktop_computer_gui.button_enter"), e -> {
+			if (true) {
+				FaroutMod.PACKET_HANDLER.sendToServer(new DesktopComputerGUIButtonMessage(0, x, y, z));
+				DesktopComputerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 194, this.topPos + 175, 51, 20).build();
+		guistate.put("button:button_enter", button_enter);
+		this.addRenderableWidget(button_enter);
 	}
 }

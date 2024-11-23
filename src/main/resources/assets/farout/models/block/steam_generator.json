@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/steamturbine",
+  "textures": {
+    "all": "farout:block/steamturbinetexture",
+    "particle": "farout:block/steamturbinetexture",
+    "0": "farout:block/steamturbinetexture"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:iron_bars"
+      "item": "farout:iron_rod"
     },
     "b": {
       "item": "minecraft:copper_ingot"
@@ -22,6 +22,6 @@
   },
   "result": {
     "item": "farout:motor",
-    "count": 1
+    "count": 6
   }
 }

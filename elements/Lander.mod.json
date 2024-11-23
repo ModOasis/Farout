@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedentity",
   "definition": {
     "mobName": "lander",
@@ -14,21 +14,7 @@
     },
     "entityDataEntries": [
       {
-        "min": -2147483648,
-        "max": 2147483647,
-        "name": "Pitch",
-        "type": "integer",
-        "value": 0
-      },
-      {
-        "min": -2147483648,
-        "max": 2147483647,
-        "name": "Yaw",
-        "type": "integer",
-        "value": 0
-      },
-      {
-        "name": "EngineOn",
+        "name": "ThrusterState",
         "type": "logic",
         "value": false
       }
@@ -36,7 +22,8 @@
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
-    "mountedYOffset": 1.0,
+    "mountedYOffset": 1.5,
+    "stepHeight": 0.6,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
       "value": -1,
@@ -84,17 +71,17 @@
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "inventorySize": 0,
     "inventoryStackSize": 64,
-    "deathTime": 20,
+    "deathTime": 1,
     "lerp": 4,
     "disableCollisions": false,
     "ridable": true,
-    "canControlForward": false,
-    "canControlStrafe": false,
+    "canControlForward": true,
+    "canControlStrafe": true,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": true,
+    "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": true,
     "immuneToLightning": false,
@@ -119,6 +106,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "whenMobDies": {
+      "name": "LanderEntityDies"
     },
     "onMobTickUpdate": {
       "name": "LanderOnEntityTickUpdate"

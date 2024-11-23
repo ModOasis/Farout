@@ -6,12 +6,20 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.IntegratedCircuitFabricatorGUIMenu;
-import net.mcreator.far_out.network.IntegratedCircuitFabricatorGUIButtonMessage;
-import net.mcreator.far_out.FaroutMod;
+import net.mcreator.far_out.procedures.ItemPlaceholderIngotVisibilityProcedure;
+import net.mcreator.far_out.procedures.Arrow9Procedure;
+import net.mcreator.far_out.procedures.Arrow8Procedure;
+import net.mcreator.far_out.procedures.Arrow7Procedure;
+import net.mcreator.far_out.procedures.Arrow6Procedure;
+import net.mcreator.far_out.procedures.Arrow5Procedure;
+import net.mcreator.far_out.procedures.Arrow4Procedure;
+import net.mcreator.far_out.procedures.Arrow3Procedure;
+import net.mcreator.far_out.procedures.Arrow2Procedure;
+import net.mcreator.far_out.procedures.Arrow1Procedure;
+import net.mcreator.far_out.procedures.Arrow10Procedure;
 
 import java.util.HashMap;
 
@@ -22,10 +30,6 @@ public class IntegratedCircuitFabricatorGUIScreen extends AbstractContainerScree
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_medium_capacity_memory;
-	ImageButton imagebutton_mf_chip;
-	ImageButton imagebutton_inertialnavigationsystem;
-	ImageButton imagebutton_photovoltaicwafer;
 
 	public IntegratedCircuitFabricatorGUIScreen(IntegratedCircuitFabricatorGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -54,8 +58,41 @@ public class IntegratedCircuitFabricatorGUIScreen extends AbstractContainerScree
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow.png"), this.leftPos + 85, this.topPos + 25, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow0.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
 
+		if (Arrow1Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow1.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow2Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow2.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow3Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow3.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow4Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow4.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow5Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow5.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow6Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow6.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow7Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow7.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow8Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow8.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow9Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow9.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (Arrow10Procedure.execute(world, x, y, z)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow10.png"), this.leftPos + 94, this.topPos + 34, 0, 0, 16, 16, 16, 16);
+		}
+		if (ItemPlaceholderIngotVisibilityProcedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("farout:textures/screens/low_frequency_integrated_circuit_photomask.png"), this.leftPos + 40, this.topPos + 25, 0, 0, 16, 16, 16, 16);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -79,44 +116,7 @@ public class IntegratedCircuitFabricatorGUIScreen extends AbstractContainerScree
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
-		imagebutton_medium_capacity_memory = new ImageButton(this.leftPos + 67, this.topPos + 61, 32, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_medium_capacity_memory.png"), 32, 32, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new IntegratedCircuitFabricatorGUIButtonMessage(0, x, y, z));
-				IntegratedCircuitFabricatorGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_medium_capacity_memory", imagebutton_medium_capacity_memory);
-		this.addRenderableWidget(imagebutton_medium_capacity_memory);
-		imagebutton_mf_chip = new ImageButton(this.leftPos + 40, this.topPos + 61, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_mf_chip.png"), 16, 32, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new IntegratedCircuitFabricatorGUIButtonMessage(1, x, y, z));
-				IntegratedCircuitFabricatorGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_mf_chip", imagebutton_mf_chip);
-		this.addRenderableWidget(imagebutton_mf_chip);
-		imagebutton_inertialnavigationsystem = new ImageButton(this.leftPos + 103, this.topPos + 61, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_inertialnavigationsystem.png"), 16, 32, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new IntegratedCircuitFabricatorGUIButtonMessage(2, x, y, z));
-				IntegratedCircuitFabricatorGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_inertialnavigationsystem", imagebutton_inertialnavigationsystem);
-		this.addRenderableWidget(imagebutton_inertialnavigationsystem);
-		imagebutton_photovoltaicwafer = new ImageButton(this.leftPos + 121, this.topPos + 61, 18, 18, 0, 0, 18, new ResourceLocation("farout:textures/screens/atlas/imagebutton_photovoltaicwafer.png"), 18, 36, e -> {
-			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new IntegratedCircuitFabricatorGUIButtonMessage(3, x, y, z));
-				IntegratedCircuitFabricatorGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
-			}
-		});
-		guistate.put("button:imagebutton_photovoltaicwafer", imagebutton_photovoltaicwafer);
-		this.addRenderableWidget(imagebutton_photovoltaicwafer);
 	}
 }

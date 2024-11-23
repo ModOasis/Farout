@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -25,7 +25,7 @@
       "value": ""
     },
     "portalParticles": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "PORTAL"
     },
     "portalLuminance": 0,
     "portalSound": {
@@ -33,6 +33,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Massivo Portal Igniter",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },

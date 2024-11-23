@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "eee"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:copper_wire"
+    },
+    "b": {
+      "item": "farout:cathode_ray_tube_monitor"
+    },
+    "c": {
+      "item": "farout:low_capacity_memory"
+    },
+    "d": {
+      "item": "farout:low_frequency_integrated_circuit"
+    },
+    "e": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "farout:rocket_assembly_manager",
+    "count": 1
+  }
+}

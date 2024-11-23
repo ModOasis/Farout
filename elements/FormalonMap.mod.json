@@ -1,10 +1,10 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 433,
-    "height": 196,
+    "width": 420,
+    "height": 240,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,187 +13,94 @@
       {
         "type": "image",
         "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": -1,
-          "y": 18
+          "image": "formalonmap.png",
+          "use1Xscale": true,
+          "x": -2,
+          "y": 1
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": 198,
-          "y": 17
+          "image": "selectionscreen.png",
+          "use1Xscale": true,
+          "x": 4,
+          "y": 3
         }
       },
       {
-        "type": "image",
+        "type": "button",
         "data": {
-          "image": "space_background.png",
-          "use1Xscale": false,
-          "x": 393,
-          "y": 17
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_star_system_viewer",
-          "text": {
-            "fixedValue": "Star System Viewer"
-          },
-          "color": {
-            "value": -54228,
-            "falpha": 0.0
-          },
-          "x": 157,
-          "y": 19
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "1712134285.png",
-          "use1Xscale": false,
-          "x": -102,
-          "y": 17
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_carbos",
-          "image": "carbos.png",
-          "hoveredImage": "",
+          "name": "button_proxmai",
+          "text": "Carbos",
+          "isUndecorated": true,
           "onClick": {
             "name": "CarbosTrajectories"
           },
-          "x": 78,
-          "y": 98
+          "width": 61,
+          "height": 20,
+          "x": 33,
+          "y": 29
         }
       },
       {
-        "type": "imagebutton",
+        "type": "button",
         "data": {
-          "name": "imagebutton_moja",
-          "image": "moja.png",
-          "hoveredImage": "",
+          "name": "button_oceanus",
+          "text": "Moja",
+          "isUndecorated": true,
           "onClick": {
             "name": "MojaTrajectories"
           },
-          "x": 141,
-          "y": 89
+          "width": 61,
+          "height": 20,
+          "x": 32,
+          "y": 67
         }
       },
       {
-        "type": "imagebutton",
+        "type": "button",
         "data": {
-          "name": "imagebutton_rejona",
-          "image": "rejona.png",
-          "hoveredImage": "",
+          "name": "button_etaui",
+          "text": "Rejona",
+          "isUndecorated": true,
           "onClick": {
-            "name": "OpenedRejona"
+            "name": "OpenRejona"
           },
-          "x": 222,
-          "y": 98
+          "width": 51,
+          "height": 20,
+          "x": 33,
+          "y": 112
         }
       },
       {
-        "type": "imagebutton",
+        "type": "button",
         "data": {
-          "name": "imagebutton_helus",
-          "image": "helus.png",
-          "hoveredImage": "",
+          "name": "button_massivo",
+          "text": "Helus",
+          "isUndecorated": true,
           "onClick": {
             "name": "HelusTrajectories"
           },
-          "x": 292,
-          "y": 103
+          "width": 61,
+          "height": 20,
+          "x": 34,
+          "y": 150
         }
       },
       {
-        "type": "imagebutton",
+        "type": "button",
         "data": {
-          "name": "imagebutton_fixedglitch",
-          "image": "fixedglitch.png",
-          "hoveredImage": "",
+          "name": "button_infinatos",
+          "text": "Orax",
+          "isUndecorated": true,
           "onClick": {
-            "name": "OpenedOrax"
+            "name": "OpenOrax"
           },
-          "x": 312,
-          "y": 26
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_carbos_readout",
-          "text": {
-            "fixedValue": "",
-            "name": "CarbosReadout"
-          },
-          "width": 50,
-          "height": 51,
-          "x": 79,
-          "y": 98
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_moja_readout",
-          "text": {
-            "fixedValue": "",
-            "name": "MojaReadout"
-          },
-          "width": 67,
-          "height": 67,
-          "x": 139,
-          "y": 87
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_rejona_readout",
-          "text": {
-            "fixedValue": "",
-            "name": "RejonaReadout"
-          },
-          "width": 51,
-          "height": 51,
-          "x": 222,
-          "y": 98
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_helus_readout",
-          "text": {
-            "fixedValue": "",
-            "name": "HelusReadout"
-          },
-          "width": 41,
-          "height": 40,
-          "x": 291,
-          "y": 103
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_proc_orax_readout",
-          "text": {
-            "fixedValue": "",
-            "name": "OraxReadout"
-          },
-          "width": 66,
-          "height": 104,
-          "x": 363,
-          "y": 75
+          "width": 72,
+          "height": 20,
+          "x": 33,
+          "y": 196
         }
       }
     ],

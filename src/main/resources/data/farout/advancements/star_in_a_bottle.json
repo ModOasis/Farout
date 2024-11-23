@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:tokamakfusionreactor"
+    },
+    "title": {
+      "translate": "advancements.star_in_a_bottle.title"
+    },
+    "description": {
+      "translate": "advancements.star_in_a_bottle.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "star_in_a_bottle_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:heavy_hydrogen"
+}

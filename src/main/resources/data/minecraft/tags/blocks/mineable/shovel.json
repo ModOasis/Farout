@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
-    "farout:salt_block",
-    "farout:rust",
+    "farout:purplegrass",
+    "farout:chlorinated_earth",
+    "farout:basaltic_dirt",
     "farout:crushed_quartz",
-    "farout:basaltic_dirt"
+    "farout:rust",
+    "farout:salt_block"
   ]
 }

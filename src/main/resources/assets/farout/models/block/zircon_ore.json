@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/zircon_ore",
+    "up": "farout:block/zircon_ore",
+    "north": "farout:block/zircon_ore",
+    "east": "farout:block/zircon_ore",
+    "south": "farout:block/zircon_ore",
+    "west": "farout:block/zircon_ore",
+    "particle": "farout:block/zircon_ore"
+  },
+  "render_type": "solid"
+}

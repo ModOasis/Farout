@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:medium_frequency_integrated_circuit"
+    },
+    "title": {
+      "translate": "advancements.microscopic_switches.title"
+    },
+    "description": {
+      "translate": "advancements.microscopic_switches.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "microscopic_switches_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:desktop_computer_recipe"
+    ]
+  },
+  "parent": "farout:homemade_computers"
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "farout:hydrogen_sulfide",
+    "farout:breathable_air",
+    "farout:magma",
+    "farout:iron_pentacarbonyl",
+    "farout:liquid_methane",
+    "farout:aqueous_ammonia",
+    "farout:liquid_sulfur_dioxide",
+    "farout:chlorella_culture",
+    "farout:liquid_ammonia",
+    "farout:green_oil",
+    "farout:sulfuric_acid",
+    "farout:saltwater"
+  ]
+}

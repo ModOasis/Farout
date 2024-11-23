@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/moderator_up",
+    "up": "farout:block/moderator_up",
+    "north": "farout:block/light_water_moderation_tank",
+    "east": "farout:block/light_water_moderation_tank",
+    "south": "farout:block/light_water_moderation_tank",
+    "west": "farout:block/light_water_moderation_tank",
+    "particle": "farout:block/moderator_up"
+  },
+  "render_type": "solid"
+}

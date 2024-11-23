@@ -4,25 +4,21 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="farout"
-version="0.2"
+version="1.0"
 displayName="Farout"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/far-out"
 logoFile="logo.png"
 credits="Made By BetaStar9108."
 authors="BetaStar9108"
-description="A space exploration mod set in a globular cluster."
+description="A space exploration mod set in a globular cluster. Spread across 3 stars with 23 explorable planets and moons, this is the premier of minecraft space exploration mods."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
 
 [[dependencies.farout]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.farout]]
-    modId="forge"
-    mandatory=true
-    versionRange="[47.2.0]"
     ordering="NONE"
     side="BOTH"
 

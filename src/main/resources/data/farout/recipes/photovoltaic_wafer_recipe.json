@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "farout:photovoltaic_wafer_photomask",
+    "count": 9
+  }
+}

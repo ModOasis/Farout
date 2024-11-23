@@ -1,11 +1,15 @@
 
 package net.mcreator.far_out.block;
 
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraftforge.network.NetworkHooks;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,38 +24,41 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.world.inventory.ElectrolyzerGUIMenu;
 import net.mcreator.far_out.procedures.ElectrolyzerOnBlockRightClickedProcedure;
 import net.mcreator.far_out.procedures.ElectrolyzerGUIWhileThisGUIIsOpenTickProcedure;
 import net.mcreator.far_out.block.entity.ElectrolyzerBlockEntity;
 
-import java.util.List;
-import java.util.Collections;
+import io.netty.buffer.Unpooled;
 
 public class ElectrolyzerBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ElectrolyzerBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(6f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(6f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
 	}
 
 	@Override
@@ -70,8 +77,26 @@ public class ElectrolyzerBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return switch (state.getValue(FACING)) {
+				default -> Shapes.or(box(0, 0, 0, 16, 1, 16), box(0, 15, 0, 16, 16, 16), box(2, 1, 2, 14, 15, 14), box(3, 6, 14, 4, 7, 15), box(3, 1, 15, 4, 7, 16), box(9, 10, 14, 10, 11, 15), box(9, 1, 15, 10, 11, 16));
+				case NORTH -> Shapes.or(box(0, 0, 0, 16, 1, 16), box(0, 15, 0, 16, 16, 16), box(2, 1, 2, 14, 15, 14), box(12, 6, 1, 13, 7, 2), box(12, 1, 0, 13, 7, 1), box(6, 10, 1, 7, 11, 2), box(6, 1, 0, 7, 11, 1));
+				case EAST -> Shapes.or(box(0, 0, 0, 16, 1, 16), box(0, 15, 0, 16, 16, 16), box(2, 1, 2, 14, 15, 14), box(14, 6, 12, 15, 7, 13), box(15, 1, 12, 16, 7, 13), box(14, 10, 6, 15, 11, 7), box(15, 1, 6, 16, 11, 7));
+				case WEST -> Shapes.or(box(0, 0, 0, 16, 1, 16), box(0, 15, 0, 16, 16, 16), box(2, 1, 2, 14, 15, 14), box(1, 6, 3, 2, 7, 4), box(0, 1, 3, 1, 7, 4), box(1, 10, 9, 2, 11, 10), box(0, 1, 9, 1, 11, 10));
+			};
+		}
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 16, 16);
+			case NORTH -> box(0, 0, 0, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 16, 16, 16);
+			case WEST -> box(0, 0, 0, 16, 16, 16);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -85,14 +110,6 @@ public class ElectrolyzerBlock extends Block implements EntityBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override
@@ -114,6 +131,19 @@ public class ElectrolyzerBlock extends Block implements EntityBlock {
 	@Override
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
+		if (entity instanceof ServerPlayer player) {
+			NetworkHooks.openScreen(player, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("Electrolyzer");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new ElectrolyzerGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+				}
+			}, pos);
+		}
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();

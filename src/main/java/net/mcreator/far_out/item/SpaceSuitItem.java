@@ -6,9 +6,7 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -18,17 +16,15 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.far_out.init.FaroutModItems;
-import net.mcreator.far_out.client.model.ModelSpaceSuit2;
+import net.mcreator.far_out.client.model.ModelSpaceSuit;
 
 import java.util.function.Consumer;
 import java.util.Map;
-import java.util.List;
 import java.util.Collections;
 
 public abstract class SpaceSuitItem extends ArmorItem {
@@ -41,7 +37,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{2, 5, 6, 2}[type.getSlot().getIndex()];
+				return new int[]{1, 2, 3, 1}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -56,7 +52,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(FaroutModItems.AIRTIGHT_FABRIC.get()));
+				return Ingredient.of(new ItemStack(FaroutModItems.IRONPLATE.get()));
 			}
 
 			@Override
@@ -66,7 +62,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0.5f;
+				return 0f;
 			}
 
 			@Override
@@ -87,7 +83,7 @@ public abstract class SpaceSuitItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head", new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
+							Map.of("head", new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
@@ -100,18 +96,8 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 
@@ -126,9 +112,9 @@ public abstract class SpaceSuitItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).Body, "left_arm",
-							new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).LeftArm, "right_arm",
-							new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).Body, "left_arm",
+							new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).LeftArm, "right_arm",
+							new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).RightArm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -139,18 +125,8 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 
@@ -166,8 +142,8 @@ public abstract class SpaceSuitItem extends ArmorItem {
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("left_leg", new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).LeftLeg, "right_leg",
-									new ModelSpaceSuit2(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit2.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							Map.of("left_leg", new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).LeftLeg, "right_leg",
+									new ModelSpaceSuit(Minecraft.getInstance().getEntityModels().bakeLayer(ModelSpaceSuit.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
@@ -179,18 +155,8 @@ public abstract class SpaceSuitItem extends ArmorItem {
 		}
 
 		@Override
-		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, world, list, flag);
-		}
-
-		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "farout:textures/entities/spacesuit2tex.png";
-		}
-
-		@Override
-		public boolean makesPiglinsNeutral(ItemStack itemstack, LivingEntity entity) {
-			return false;
 		}
 	}
 }

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:uranium_carbide"
+    },
+    "title": {
+      "translate": "advancements.uranium_fever.title"
+    },
+    "description": {
+      "translate": "advancements.uranium_fever.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "uranium_fever_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:uranium_carbide"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:the_first_kilowatt"
+}

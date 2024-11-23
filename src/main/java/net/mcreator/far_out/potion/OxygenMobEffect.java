@@ -15,11 +15,6 @@ public class OxygenMobEffect extends MobEffect {
 	}
 
 	@Override
-	public String getDescriptionId() {
-		return "effect.farout.oxygen";
-	}
-
-	@Override
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}

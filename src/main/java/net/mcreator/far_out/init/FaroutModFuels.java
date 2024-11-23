@@ -17,5 +17,11 @@ public class FaroutModFuels {
 		ItemStack itemstack = event.getItemStack();
 		if (itemstack.getItem() == FaroutModBlocks.MUSNIUS_TREE_TRUNK.get().asItem())
 			event.setBurnTime(1600);
+		else if (itemstack.getItem() == FaroutModItems.METHANE.get())
+			event.setBurnTime(2400);
+		else if (itemstack.getItem() == FaroutModItems.HYDROGEN.get())
+			event.setBurnTime(3600);
+		else if (itemstack.getItem() == FaroutModItems.METHANE.get())
+			event.setBurnTime(2750);
 	}
 }

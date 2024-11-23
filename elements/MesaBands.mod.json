@@ -1,0 +1,13 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "RAW_GENERATION",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:DryMesas"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_delta\"><value name=\"contents\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.STAINED_HARDENED_CLAY#4</field></block></value><value name=\"rim\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.STAINED_HARDENED_CLAY#4</field></block></value><value name=\"size\"><block type=\"int_provider_constant\"><field name=\"value\">15</field></block></value><value name=\"rimSize\"><block type=\"int_provider_constant\"><field name=\"value\">15</field></block></value></block></value><next><block type=\"placement_surface_relative_threshold\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><field name=\"min\">-8</field><field name=\"max\">0</field><next><block type=\"placement_offset\"><value name=\"xz\"><block type=\"int_provider_uniform\"><field name=\"min\">0</field><field name=\"max\">0</field></block></value><value name=\"y\"><block type=\"int_provider_uniform\"><field name=\"min\">-4</field><field name=\"max\">4</field></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">4</field></block></value></block></next></block></next></block></next></block></xml>"
+  }
+}

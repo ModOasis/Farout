@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "item": "farout:oxygen_bottle",
+    "count": 3
+  }
+}

@@ -34,6 +34,15 @@ public class ReturnHabitationModuleProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 2) {
 			Hab = " Inflatable centrifuge";
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 3) {
+			Hab = " Cryogenic stasis chamber";
 		}
 		return Hab;
 	}

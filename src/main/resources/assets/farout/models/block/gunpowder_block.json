@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "farout:block/gunpowder_ore_block",
-    "particle": "farout:block/gunpowder_ore_block"
-  },
-  "render_type": "solid"
-}

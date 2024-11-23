@@ -78,7 +78,7 @@ public class FusionreactorguiMenu extends AbstractContainerMenu implements Suppl
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 20, 18) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 17) {
 			private final int slot = 0;
 
 			@Override
@@ -86,7 +86,7 @@ public class FusionreactorguiMenu extends AbstractContainerMenu implements Suppl
 				return FaroutModItems.DEUTERIUM.get() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 19, 61) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 62) {
 			private final int slot = 1;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 151, 44) {

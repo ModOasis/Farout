@@ -1,0 +1,103 @@
+{
+  "_fv": 60,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_h_speed",
+          "text": {
+            "fixedValue": "V. speed  H. speed"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 71,
+          "y": 214
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_target_spacecraft",
+          "text": {
+            "fixedValue": "Target Spacecraft"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 175,
+          "y": 1
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_target_speed",
+          "text": {
+            "fixedValue": "Target Velocity"
+          },
+          "color": {
+            "value": -6710887,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 259,
+          "y": 213
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sdf",
+          "text": {
+            "fixedValue": "sdf",
+            "name": "VerticalSpeed"
+          },
+          "color": {
+            "value": -14638336,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 73,
+          "y": 227
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_selected_spacecraft",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnSelectedSpacecraft"
+          },
+          "color": {
+            "value": -16142592,
+            "falpha": 0.0
+          },
+          "anchorPoint": "CENTER",
+          "x": 164,
+          "y": 15
+        }
+      }
+    ],
+    "baseTexture": "landerui.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "LanderFlightGUIDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

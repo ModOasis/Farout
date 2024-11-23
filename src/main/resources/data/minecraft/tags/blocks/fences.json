@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "farout:keranon_fence",
+    "farout:oxyfion_fence",
+    "farout:quzan_fence",
+    "farout:kempat_fence",
+    "farout:musnius_fence",
+    "farout:lumiblossom_fence"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:inertial_navigation_system"
+    },
+    "title": {
+      "translate": "advancements.built_starship.title"
+    },
+    "description": {
+      "translate": "advancements.built_starship.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "built_starship_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:deleted_mod_element"
+}

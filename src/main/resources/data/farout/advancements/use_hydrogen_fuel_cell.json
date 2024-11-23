@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:hydrogen_fuel_cell"
+    },
+    "title": {
+      "translate": "advancements.use_hydrogen_fuel_cell.title"
+    },
+    "description": {
+      "translate": "advancements.use_hydrogen_fuel_cell.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "use_hydrogen_fuel_cell_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:molecular_scissors"
+}

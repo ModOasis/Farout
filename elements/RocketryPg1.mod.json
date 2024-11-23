@@ -1,0 +1,287 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 189,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_table_of_contents",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_get_to_other_planets",
+          "text": {
+            "fixedValue": "To get to other planets and moons,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_will_need_a_spacecraft_but",
+          "text": {
+            "fixedValue": "you will need a spacecraft. But"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_before_you_build_one_you_need",
+          "text": {
+            "fixedValue": "before you build one, you need to"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_design_it",
+          "text": {
+            "fixedValue": "design it."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_in_order_to_do_that_you_need_to",
+          "text": {
+            "fixedValue": "In order to do that, you need to"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_make_a_designing_workbench",
+          "text": {
+            "fixedValue": "make a designing workbench. you"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_use_blueprints_and_you_get_a_de",
+          "text": {
+            "fixedValue": "need a blueprint, and get a"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_finished_design_out",
+          "text": {
+            "fixedValue": "finished design out."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lets_see_how_it_works",
+          "text": {
+            "fixedValue": "Let's see how it works."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_recipe_for_designing_workbench",
+          "text": {
+            "fixedValue": "Recipe for designing workbench:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 161
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "screenshot_2024-07-12_141250.png",
+          "use1Xscale": true,
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_musnius_planks",
+          "text": {
+            "fixedValue": "musnius planks"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 222,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_musnius_planks1",
+          "text": {
+            "fixedValue": "musnius planks"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 204,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_musnius_planks2",
+          "text": {
+            "fixedValue": "musnius planks"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 186,
+          "y": 197
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bookshelf",
+          "text": {
+            "fixedValue": "bookshelf"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 186,
+          "y": 179
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_bookshelf1",
+          "text": {
+            "fixedValue": "bookshelf"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 222,
+          "y": 179
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_graphite",
+          "text": {
+            "fixedValue": "graphite"
+          },
+          "width": 18,
+          "height": 18,
+          "x": 204,
+          "y": 179
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "Next"
+          },
+          "x": 285,
+          "y": 215
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "farout:steam_generator",
+    "farout:light_water_moderation_tanks",
+    "farout:constratium_block",
+    "farout:zircon_ore",
+    "farout:spodumene_ore",
+    "farout:coffinite_ore",
+    "farout:bio_plastic_window",
+    "farout:graphite_ore",
+    "farout:tokamakfusionreactor"
+  ]
+}

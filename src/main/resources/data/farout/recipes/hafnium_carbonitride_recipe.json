@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:zircon"
+    }
+  ],
+  "output": {
+    "item": "farout:hafnium_carbonitride_ingot",
+    "count": 1
+  }
+}

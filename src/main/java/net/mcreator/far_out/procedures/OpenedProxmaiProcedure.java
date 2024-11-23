@@ -13,7 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.far_out.world.inventory.ProxmaiMapMenu;
+import net.mcreator.far_out.world.inventory.SandosProxmaiMapMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -26,12 +26,12 @@ public class OpenedProxmaiProcedure {
 			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("ProxmaiMap");
+					return Component.literal("SandosProxmaiMap");
 				}
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new ProxmaiMapMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					return new SandosProxmaiMapMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
 		}

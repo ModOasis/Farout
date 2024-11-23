@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:lonsdaleite"
+    }
+  },
+  "result": {
+    "item": "farout:lonsdaleite_armor_chestplate",
+    "count": 1
+  }
+}

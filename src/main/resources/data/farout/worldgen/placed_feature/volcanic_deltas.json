@@ -1,0 +1,16 @@
+{
+  "feature": "farout:volcanic_deltas",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 10
+    }
+  ]
+}

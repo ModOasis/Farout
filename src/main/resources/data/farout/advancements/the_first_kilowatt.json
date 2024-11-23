@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:lightbulb_emblem"
+    },
+    "title": {
+      "translate": "advancements.the_first_kilowatt.title"
+    },
+    "description": {
+      "translate": "advancements.the_first_kilowatt.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_first_kilowatt_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:electrolyzer_recipe",
+      "farout:copper_wire_recipe",
+      "farout:coal_gasification_reactor_recipe",
+      "farout:relay_recipe",
+      "farout:capacitor_recipe",
+      "farout:motorrecipe",
+      "farout:electromagnet_recipe"
+    ]
+  },
+  "parent": "farout:taking_inventory_farout"
+}

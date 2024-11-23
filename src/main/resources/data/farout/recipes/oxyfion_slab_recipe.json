@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:oxyfion_planks"
+    }
+  },
+  "result": {
+    "item": "farout:oxyfion_slab",
+    "count": 6
+  }
+}

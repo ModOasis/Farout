@@ -1,0 +1,12 @@
+{
+  "type": "farout:nuclear_irradiation",
+  "ingredients": [
+    {
+      "item": "farout:hydrogen"
+    }
+  ],
+  "output": {
+    "item": "farout:deuterium",
+    "count": 1
+  }
+}

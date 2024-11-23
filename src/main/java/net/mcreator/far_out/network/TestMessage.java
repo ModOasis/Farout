@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.far_out.procedures.VolcanoProcedure;
+import net.mcreator.far_out.procedures.SorterProcedure;
 import net.mcreator.far_out.FaroutMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class TestMessage {
 			return;
 		if (type == 0) {
 
-			VolcanoProcedure.execute(world, x, y, z);
+			SorterProcedure.execute(world, x, y, z);
 		}
 	}
 

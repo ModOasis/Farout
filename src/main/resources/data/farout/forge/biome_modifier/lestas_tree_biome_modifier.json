@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:serene_plains",
+  "features": "farout:lestas_tree",
+  "step": "surface_structures"
+}

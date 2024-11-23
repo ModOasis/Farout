@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.KarvonWarpship",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 13,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 2, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-17, 12, -8], "size": [32, 32, 37], "uv": [0, 99]},
+						{"origin": [-17, 12, 29], "size": [32, 32, 67], "uv": [0, 0]},
+						{"origin": [-17, 13, -19], "size": [32, 28, 11], "uv": [170, 115]},
+						{"origin": [-17, 14, -30], "size": [32, 24, 11], "uv": [96, 184]},
+						{"origin": [-17, 15, -38], "size": [32, 20, 8], "uv": [182, 184]},
+						{"origin": [-17, 16, -46], "size": [32, 16, 8], "uv": [195, 0]},
+						{"origin": [-17, 17, -54], "size": [32, 12, 8], "uv": [202, 154]},
+						{"origin": [-17, 18, -62], "size": [32, 8, 8], "uv": [131, 48]},
+						{"origin": [-33, 44, 62], "size": [16, 16, 32], "uv": [166, 67]},
+						{"origin": [15, 44, 62], "size": [16, 16, 32], "uv": [166, 67]},
+						{"origin": [15, -4, 62], "size": [16, 16, 32], "uv": [166, 67]},
+						{"origin": [-33, -4, 62], "size": [16, 16, 32], "uv": [166, 67]}
+					]
+				}
+			]
+		}
+	]
+}

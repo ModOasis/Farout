@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/nuclearfuelrodsbottom",
+    "up": "farout:block/nuclearfuelrodsbottom",
+    "north": "farout:block/nuclearfuelrodsside",
+    "east": "farout:block/nuclearfuelrodsside",
+    "south": "farout:block/nuclearfuelrodsside",
+    "west": "farout:block/nuclearfuelrodsside",
+    "particle": "farout:block/nuclearfuelrodsbottom"
+  },
+  "render_type": "solid"
+}

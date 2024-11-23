@@ -1,0 +1,31 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "nuclear_reactor_gui.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:NuclearReactor"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Nuclear Fission",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 42,
+        "y": 25,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 114,
+        "y": 25,
+        "slotid": 0
+      }
+    ]
+  }
+}

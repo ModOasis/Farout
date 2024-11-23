@@ -1,0 +1,31 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "nucleartransmutationjei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:GraphiteRodAssembly"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Graphite Moderation",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 7,
+        "y": 36,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 145,
+        "y": 36,
+        "slotid": 0
+      }
+    ]
+  }
+}

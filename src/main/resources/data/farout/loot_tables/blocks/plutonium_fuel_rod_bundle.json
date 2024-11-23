@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farout:blocks/plutonium_fuel_rod_bundle",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farout:plutonium_fuel_rod_bundle"
+        }
+      ]
+    }
+  ]
+}

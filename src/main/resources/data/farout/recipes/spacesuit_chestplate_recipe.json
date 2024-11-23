@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cdc",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:polyethylene"
+    },
+    "b": {
+      "item": "farout:copper_wire"
+    },
+    "c": {
+      "item": "farout:airtight_fabric"
+    },
+    "d": {
+      "item": "farout:ironplate"
+    }
+  },
+  "result": {
+    "item": "farout:space_suit_chestplate",
+    "count": 1
+  }
+}

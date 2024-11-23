@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "farout:block/unactivated_lamp"
+    },
+    "blockstate=1": {
+      "model": "farout:block/lamp_blockstate_blockstate_0"
+    }
+  }
+}

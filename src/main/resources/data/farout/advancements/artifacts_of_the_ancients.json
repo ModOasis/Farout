@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:sandos_starmap"
+    },
+    "title": {
+      "translate": "advancements.artifacts_of_the_ancients.title"
+    },
+    "description": {
+      "translate": "advancements.artifacts_of_the_ancients.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "artifacts_of_the_ancients_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:touchdown"
+}

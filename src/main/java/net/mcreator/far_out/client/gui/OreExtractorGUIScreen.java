@@ -73,11 +73,6 @@ public class OreExtractorGUIScreen extends AbstractContainerScreen<OreExtractorG
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_togglemining = Button.builder(Component.translatable("gui.farout.ore_extractor_gui.button_togglemining"), e -> {

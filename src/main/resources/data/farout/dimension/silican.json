@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "farout:briny_swamps",
+          "biome": "farout:crystal_plains",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -21,19 +21,16 @@
     },
     "settings": {
       "name": "farout:silican",
-      "sea_level": 63,
+      "sea_level": 38,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
       "ore_veins_enabled": true,
       "default_block": {
-        "Name": "minecraft:smooth_quartz"
+        "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "farout:aqueous_ammonia",
-        "Properties": {
-          "level": "0"
-        }
+        "Name": "minecraft:amethyst_block"
       },
       "spawn_target": [],
       "noise": {
@@ -383,7 +380,7 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "farout:briny_swamps"
+                "farout:crystal_plains"
               ]
             },
             "then_run": {
@@ -417,14 +414,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "farout:chacoa"
+                              "Name": "minecraft:budding_amethyst"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "farout:crushed_quartz"
+                            "Name": "minecraft:stone"
                           }
                         }
                       ]
@@ -442,7 +439,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "farout:crushed_quartz"
+                        "Name": "minecraft:stone"
                       }
                     }
                   }

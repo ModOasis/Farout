@@ -69,11 +69,6 @@ public class GeneticSequencerScreen extends AbstractContainerScreen<GeneticSeque
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 	}

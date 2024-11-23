@@ -19,15 +19,14 @@ import net.mcreator.far_out.network.YawIncreaseMessage;
 import net.mcreator.far_out.network.YawDecreaseMessage;
 import net.mcreator.far_out.network.TestMessage;
 import net.mcreator.far_out.network.TestKeyMessage;
-import net.mcreator.far_out.network.PitchIncreaseMessage;
-import net.mcreator.far_out.network.PitchDecreaseMessage;
-import net.mcreator.far_out.network.LaunchMessage;
-import net.mcreator.far_out.network.EngineIgniteMessage;
+import net.mcreator.far_out.network.IncrementSpacecraftMessage;
+import net.mcreator.far_out.network.DecrementSpacecraftIndexMessage;
+import net.mcreator.far_out.network.ActivateLanderThrusterMessage;
 import net.mcreator.far_out.FaroutMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class FaroutModKeyMappings {
-	public static final KeyMapping TEST = new KeyMapping("key.farout.test", GLFW.GLFW_KEY_KP_ADD, "key.categories.creative") {
+	public static final KeyMapping TEST = new KeyMapping("key.farout.test", GLFW.GLFW_KEY_END, "key.categories.creative") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -49,45 +48,6 @@ public class FaroutModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new TestKeyMessage(0, 0));
 				TestKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping LAUNCH = new KeyMapping("key.farout.launch", GLFW.GLFW_KEY_ENTER, "key.categories.gameplay") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new LaunchMessage(0, 0));
-				LaunchMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping PITCH_DECREASE = new KeyMapping("key.farout.pitch_decrease", GLFW.GLFW_KEY_DOWN, "key.categories.movement") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new PitchDecreaseMessage(0, 0));
-				PitchDecreaseMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
-	public static final KeyMapping PITCH_INCREASE = new KeyMapping("key.farout.pitch_increase", GLFW.GLFW_KEY_UP, "key.categories.movement") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new PitchIncreaseMessage(0, 0));
-				PitchIncreaseMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -118,36 +78,61 @@ public class FaroutModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping ENGINE_IGNITE = new KeyMapping("key.farout.engine_ignite", GLFW.GLFW_KEY_Z, "key.categories.movement") {
+	public static final KeyMapping ACTIVATE_LANDER_THRUSTER = new KeyMapping("key.farout.activate_lander_thruster", GLFW.GLFW_KEY_Z, "key.categories.movement") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new EngineIgniteMessage(0, 0));
-				EngineIgniteMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-				ENGINE_IGNITE_LASTPRESS = System.currentTimeMillis();
+				FaroutMod.PACKET_HANDLER.sendToServer(new ActivateLanderThrusterMessage(0, 0));
+				ActivateLanderThrusterMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				ACTIVATE_LANDER_THRUSTER_LASTPRESS = System.currentTimeMillis();
 			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - ENGINE_IGNITE_LASTPRESS);
-				FaroutMod.PACKET_HANDLER.sendToServer(new EngineIgniteMessage(1, dt));
-				EngineIgniteMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+				int dt = (int) (System.currentTimeMillis() - ACTIVATE_LANDER_THRUSTER_LASTPRESS);
+				FaroutMod.PACKET_HANDLER.sendToServer(new ActivateLanderThrusterMessage(1, dt));
+				ActivateLanderThrusterMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
 	};
-	private static long ENGINE_IGNITE_LASTPRESS = 0;
+	public static final KeyMapping INCREMENT_SPACECRAFT = new KeyMapping("key.farout.increment_spacecraft", GLFW.GLFW_KEY_RIGHT, "key.categories.gameplay") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FaroutMod.PACKET_HANDLER.sendToServer(new IncrementSpacecraftMessage(0, 0));
+				IncrementSpacecraftMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping DECREMENT_SPACECRAFT_INDEX = new KeyMapping("key.farout.decrement_spacecraft_index", GLFW.GLFW_KEY_LEFT, "key.categories.gameplay") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				FaroutMod.PACKET_HANDLER.sendToServer(new DecrementSpacecraftIndexMessage(0, 0));
+				DecrementSpacecraftIndexMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	private static long ACTIVATE_LANDER_THRUSTER_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(TEST);
 		event.register(TEST_KEY);
-		event.register(LAUNCH);
-		event.register(PITCH_DECREASE);
-		event.register(PITCH_INCREASE);
 		event.register(YAW_INCREASE);
 		event.register(YAW_DECREASE);
-		event.register(ENGINE_IGNITE);
+		event.register(ACTIVATE_LANDER_THRUSTER);
+		event.register(INCREMENT_SPACECRAFT);
+		event.register(DECREMENT_SPACECRAFT_INDEX);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -157,12 +142,11 @@ public class FaroutModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				TEST.consumeClick();
 				TEST_KEY.consumeClick();
-				LAUNCH.consumeClick();
-				PITCH_DECREASE.consumeClick();
-				PITCH_INCREASE.consumeClick();
 				YAW_INCREASE.consumeClick();
 				YAW_DECREASE.consumeClick();
-				ENGINE_IGNITE.consumeClick();
+				ACTIVATE_LANDER_THRUSTER.consumeClick();
+				INCREMENT_SPACECRAFT.consumeClick();
+				DECREMENT_SPACECRAFT_INDEX.consumeClick();
 			}
 		}
 	}

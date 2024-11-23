@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farout:block/oxyfion_leaves",
+    "particle": "farout:block/oxyfion_leaves"
+  }
+}

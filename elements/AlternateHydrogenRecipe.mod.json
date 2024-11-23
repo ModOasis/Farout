@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "gasification",
+    "result": {
+      "value": "CUSTOM:Hydrogen"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.COAL"
+      },
+      {
+        "value": "CUSTOM:OxygenBottle"
+      }
+    ]
+  }
+}

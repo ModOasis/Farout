@@ -1,48 +1,16 @@
 {
-  "_fv": 57,
-  "_type": "recipe",
+  "_fv": 60,
+  "_type": "jeirecipe",
   "definition": {
-    "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "",
-    "cookingBookCategory": "MISC",
-    "xpReward": 0.0,
-    "cookingTime": 200,
-    "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
-    "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Sodium"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.POTIONITEM"
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "category": "electrolysis",
+    "result": {
       "value": "CUSTOM:SodiumHydroxide"
     },
-    "name": "sodium_hydroxide_recipe",
-    "namespace": "mod"
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Borax"
+      }
+    ]
   }
 }

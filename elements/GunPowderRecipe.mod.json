@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -24,7 +24,7 @@
         "value": ""
       },
       {
-        "value": "Items.COAL#1"
+        "value": "Items.COAL"
       },
       {
         "value": "CUSTOM:Potassium_nitrateDust"

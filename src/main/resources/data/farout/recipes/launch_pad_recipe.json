@@ -11,14 +11,14 @@
       "item": "minecraft:iron_ingot"
     },
     "b": {
-      "item": "minecraft:water_bucket"
+      "item": "farout:iron_rod"
     },
     "c": {
       "tag": "minecraft:stone"
     }
   },
   "result": {
-    "item": "farout:deleted_mod_element",
+    "item": "farout:launchpad_tiles",
     "count": 6
   }
 }

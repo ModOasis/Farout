@@ -1,0 +1,15 @@
+{
+  "type": "farout:nuclear_fusion_jei",
+  "ingredients": [
+    {
+      "item": "farout:deuterium"
+    },
+    {
+      "item": "farout:deuterium"
+    }
+  ],
+  "output": {
+    "item": "farout:helium_3",
+    "count": 1
+  }
+}

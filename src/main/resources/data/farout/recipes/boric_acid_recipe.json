@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:borax"
+    }
+  ],
+  "output": {
+    "item": "farout:boric_acid",
+    "count": 1
+  }
+}

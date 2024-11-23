@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/lonsdaleite",
+    "up": "farout:block/lonsdaleite",
+    "north": "farout:block/lonsdaleite",
+    "east": "farout:block/lonsdaleite",
+    "south": "farout:block/lonsdaleite",
+    "west": "farout:block/lonsdaleite",
+    "particle": "farout:block/lonsdaleite"
+  },
+  "render_type": "solid"
+}

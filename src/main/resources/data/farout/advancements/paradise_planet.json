@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:oceanus_emblem"
+    },
+    "title": {
+      "translate": "advancements.paradise_planet.title"
+    },
+    "description": {
+      "translate": "advancements.paradise_planet.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "paradise_planet_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "farout:oceanus"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:radio_locator_recipe"
+    ]
+  },
+  "parent": "farout:touchdown"
+}

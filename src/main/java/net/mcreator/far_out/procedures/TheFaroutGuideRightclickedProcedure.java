@@ -1,22 +1,39 @@
 package net.mcreator.far_out.procedures;
 
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.far_out.world.inventory.TableOfContentsMenu;
+
+import io.netty.buffer.Unpooled;
 
 public class TheFaroutGuideRightclickedProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			Entity _ent = entity;
-			if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
-								_ent.level().getServer(), _ent),
-						"tellraw @a [\"\",{\"text\":\"Tutorial\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://docs.google.com/document/d/1XfLpFX2x_G3SVVG_I4y6dkzYSBI7otoXRpO7vUDkhk0/edit?usp=drive_link\"}}]");
-			}
+		if (entity instanceof ServerPlayer _ent) {
+			BlockPos _bpos = BlockPos.containing(x, y, z);
+			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("TableOfContents");
+				}
+
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new TableOfContentsMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+				}
+			}, _bpos);
 		}
 	}
 }

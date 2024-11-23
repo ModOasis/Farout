@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "farout:block/oxyfion_planks",
+    "particle": "farout:block/oxyfion_planks"
+  },
+  "render_type": "solid"
+}

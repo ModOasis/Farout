@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "coppercabletexture"
+      },
+      "name": "default"
+    }
+  }
+}

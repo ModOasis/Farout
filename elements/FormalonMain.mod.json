@@ -1,0 +1,83 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 240,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "formalonx1.png",
+          "use1Xscale": true,
+          "x": 95,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory",
+          "image": "settrajectory.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CarbosTrajectories"
+          },
+          "x": 173,
+          "y": 131
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory1",
+          "image": "settrajectory.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MojaTrajectories"
+          },
+          "x": 134,
+          "y": 60
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory2",
+          "image": "settrajectory.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenedRejona"
+          },
+          "x": 278,
+          "y": 17
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_zoom_out",
+          "image": "zoom_out.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "FormalonZoomOut"
+          },
+          "x": 312,
+          "y": 218
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

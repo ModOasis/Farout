@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_pane"
+    },
+    "b": {
+      "tag": "forge:stained_glass_panes"
+    }
+  },
+  "result": {
+    "item": "farout:medium_frequency_integrated_circuit_photomask",
+    "count": 9
+  }
+}

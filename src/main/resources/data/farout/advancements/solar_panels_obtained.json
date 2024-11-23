@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:solar_panels"
+    },
+    "title": {
+      "translate": "advancements.solar_panels_obtained.title"
+    },
+    "description": {
+      "translate": "advancements.solar_panels_obtained.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "solar_panels_obtained_0": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "farout:solar_panels"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "farout:microscopic_switches"
+}

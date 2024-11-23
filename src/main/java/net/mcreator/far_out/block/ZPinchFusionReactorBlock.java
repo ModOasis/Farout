@@ -4,7 +4,6 @@ package net.mcreator.far_out.block;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -13,8 +12,6 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -33,9 +30,6 @@ import net.mcreator.far_out.world.inventory.ZPinchFusionReactorGUIMenu;
 import net.mcreator.far_out.procedures.ZPinchFusionReactorUpdateTickProcedure;
 import net.mcreator.far_out.block.entity.ZPinchFusionReactorBlockEntity;
 
-import java.util.List;
-import java.util.Collections;
-
 import io.netty.buffer.Unpooled;
 
 public class ZPinchFusionReactorBlock extends Block implements EntityBlock {
@@ -44,21 +38,8 @@ public class ZPinchFusionReactorBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-	}
-
-	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
 	}
 
 	@Override

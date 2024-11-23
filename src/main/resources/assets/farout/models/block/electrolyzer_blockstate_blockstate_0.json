@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/electrolyzer",
+  "textures": {
+    "all": "farout:block/activated_lamp",
+    "particle": "farout:block/electrolyzertex",
+    "0": "farout:block/electrolyzertex"
+  },
+  "render_type": "solid"
+}

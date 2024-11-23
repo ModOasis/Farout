@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": [],
+  "base": {
+    "item": "farout:space_suit_chestplate"
+  },
+  "addition": {
+    "item": "minecraft:diamond_chestplate"
+  },
+  "result": {
+    "item": "farout:diamond_reinfoced_space_suit_chestplate"
+  }
+}

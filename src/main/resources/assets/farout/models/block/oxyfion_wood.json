@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "farout:block/oxyfion_log_side",
+    "particle": "farout:block/oxyfion_log_side"
+  },
+  "render_type": "solid"
+}

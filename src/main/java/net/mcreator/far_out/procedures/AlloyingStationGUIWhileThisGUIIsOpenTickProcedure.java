@@ -44,7 +44,7 @@ public class AlloyingStationGUIWhileThisGUIIsOpenTickProcedure {
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(Items.IRON_SWORD);
+					ItemStack _setstack = new ItemStack(Items.IRON_SWORD).copy();
 					_setstack.setCount(1);
 					((Slot) _slots.get(2)).set(_setstack);
 					_player.containerMenu.broadcastChanges();

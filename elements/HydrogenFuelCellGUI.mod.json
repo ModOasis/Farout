@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -254,6 +254,21 @@
           },
           "x": 222,
           "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "?",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenHydrogenFuelCellRecipes"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 285,
+          "y": 44
         }
       }
     ],

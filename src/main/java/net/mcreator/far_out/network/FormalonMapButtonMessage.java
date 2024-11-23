@@ -12,8 +12,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.world.inventory.FormalonMapMenu;
-import net.mcreator.far_out.procedures.OpenedRejonaProcedure;
-import net.mcreator.far_out.procedures.OpenedOraxProcedure;
+import net.mcreator.far_out.procedures.OpenRejonaProcedure;
+import net.mcreator.far_out.procedures.OpenOraxProcedure;
 import net.mcreator.far_out.procedures.MojaTrajectoriesProcedure;
 import net.mcreator.far_out.procedures.HelusTrajectoriesProcedure;
 import net.mcreator.far_out.procedures.CarbosTrajectoriesProcedure;
@@ -68,23 +68,23 @@ public class FormalonMapButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			CarbosTrajectoriesProcedure.execute(world, entity);
+			CarbosTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			MojaTrajectoriesProcedure.execute(world, entity);
+			MojaTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			OpenedRejonaProcedure.execute(world, x, y, z, entity);
+			OpenRejonaProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 3) {
 
-			HelusTrajectoriesProcedure.execute(world, entity);
+			HelusTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 4) {
 
-			OpenedOraxProcedure.execute(world, x, y, z, entity);
+			OpenOraxProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

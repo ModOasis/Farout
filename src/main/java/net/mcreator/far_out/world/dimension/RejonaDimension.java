@@ -21,7 +21,7 @@ public class RejonaDimension {
 			DimensionSpecialEffects customEffect = new DimensionSpecialEffects(DimensionSpecialEffects.OverworldEffects.CLOUD_LEVEL, true, DimensionSpecialEffects.SkyType.NORMAL, false, false) {
 				@Override
 				public Vec3 getBrightnessDependentFogColor(Vec3 color, float sunHeight) {
-					return new Vec3(0.5882352941, 0.7333333333, 0.8941176471);
+					return new Vec3(0.6274509804, 0.7803921569, 0.8392156863);
 				}
 
 				@Override

@@ -1,0 +1,19 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "circuit_fabrication",
+    "result": {
+      "value": "CUSTOM:PhotovoltaicWafer"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:UnetchedSiliconWafer"
+      },
+      {
+        "value": "CUSTOM:PhotovoltaicWaferPhotomask"
+      }
+    ]
+  }
+}

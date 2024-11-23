@@ -1,10 +1,10 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "tab",
   "definition": {
     "name": "Chemistry",
     "icon": {
-      "value": "CUSTOM:Chemicals"
+      "value": "CUSTOM:Methane"
     },
     "showSearch": false
   }

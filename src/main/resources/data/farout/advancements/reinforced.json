@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:iron_reinforced_space_suit_chestplate"
+    },
+    "title": {
+      "translate": "advancements.reinforced.title"
+    },
+    "description": {
+      "translate": "advancements.reinforced.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "reinforced_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:iron_reinforced_space_suit_helmet"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "reinforced_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:iron_reinforced_space_suit_chestplate"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "reinforced_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:iron_reinforced_space_suit_leggings"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:diamond_reinforced_chestplate_recipe",
+      "farout:diamond_reinforced_legs_recipe",
+      "farout:diamond_reinforced_helmet_recipe"
+    ]
+  },
+  "parent": "farout:make_more_spacesuits"
+}

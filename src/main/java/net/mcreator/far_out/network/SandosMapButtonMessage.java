@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.far_out.world.inventory.SandosMapMenu;
 import net.mcreator.far_out.procedures.OpenedProxmaiProcedure;
 import net.mcreator.far_out.procedures.OpenedMassivoProcedure;
-import net.mcreator.far_out.procedures.OpenedEtauiProcedure;
+import net.mcreator.far_out.procedures.OpenEtauiProcedure;
 import net.mcreator.far_out.procedures.OceanusTrajectoriesProcedure;
 import net.mcreator.far_out.procedures.InfinatosTrajectoriesProcedure;
 import net.mcreator.far_out.FaroutMod;
@@ -72,19 +72,19 @@ public class SandosMapButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			OceanusTrajectoriesProcedure.execute(world, entity);
+			OceanusTrajectoriesProcedure.execute(world, x, y, z);
 		}
 		if (buttonID == 2) {
 
-			OpenedEtauiProcedure.execute(world, x, y, z, entity);
+			OpenEtauiProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 3) {
 
-			InfinatosTrajectoriesProcedure.execute(world, entity);
+			OpenedMassivoProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 4) {
 
-			OpenedMassivoProcedure.execute(world, x, y, z, entity);
+			InfinatosTrajectoriesProcedure.execute(world, x, y, z);
 		}
 	}
 

@@ -1,0 +1,129 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 150,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_electrolyzer",
+          "text": {
+            "fixedValue": "Electrolyzer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 178,
+          "y": 43
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "GiveElectrolyzerAdvancement"
+          },
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": true
+          },
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "GiveElectrolyzerAdvancement"
+          },
+          "x": 258,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Arrow10"
+          },
+          "x": 204,
+          "y": 80
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "onClick": {
+            "name": "IncrementElectrolyzerRecipe"
+          },
+          "x": 222,
+          "y": 98
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "DecrementElectroylzerRecipe"
+          },
+          "x": 186,
+          "y": 98
+        }
+      }
+    ],
+    "onTick": {
+      "name": "ElectrolyzerGUIRecipesWhileThisGUIIsOpenTick"
+    },
+    "onClosed": {
+      "name": "ElectrolyzerGUIRecipesThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

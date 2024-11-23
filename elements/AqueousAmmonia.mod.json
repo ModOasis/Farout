@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "fluid",
   "definition": {
     "name": "Aqueous Ammonia",
@@ -24,7 +24,7 @@
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
-      "value": "CUSTOM:Energy"
+      "value": "DECORATIONS"
     },
     "emptySound": {
       "value": ""

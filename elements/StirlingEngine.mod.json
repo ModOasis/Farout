@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "animatedblock",
   "definition": {
     "texture": "stirlingenginetex",
@@ -101,13 +101,6 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "CUSTOM:SulfuricAcidRain"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -132,6 +125,12 @@
     "onTickUpdate": {
       "name": "StirlingEngineUpdateTick"
     },
+    "onDestroyedByPlayer": {
+      "name": "ElectrolyzerBlockDestroyedByPlayer"
+    },
+    "onDestroyedByExplosion": {
+      "name": "ElectrolyzerBlockDestroyedByPlayer"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",
@@ -140,7 +139,7 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "stirlingengine.geo.json",
-    "displaySettings": "stirling_engine.item.json",
+    "displaySettings": "stirlingengine.item.json",
     "blockstateList": []
   }
 }

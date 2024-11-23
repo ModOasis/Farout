@@ -42,15 +42,6 @@ public class ReturnPropulsionModuleProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 3) {
-			Propulsion = " Hall effect thruster";
-		} else if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 4) {
 			Propulsion = " Magnetoplasma thruster";
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -59,8 +50,17 @@ public class ReturnPropulsionModuleProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
+		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 4) {
+			Propulsion = " Lorentz thruster";
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
 		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 5) {
-			Propulsion = " Nuclear brine rocket";
+			Propulsion = " Fission fragment rocket";
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -69,7 +69,7 @@ public class ReturnPropulsionModuleProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 6) {
-			Propulsion = " Mirror cell fusion rocket";
+			Propulsion = " Inertal fusion rocket";
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -78,7 +78,7 @@ public class ReturnPropulsionModuleProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "PropID") == 7) {
-			Propulsion = " Antimatter plasma rocket";
+			Propulsion = " Quantum tunnelling drive";
 		}
 		return Propulsion;
 	}

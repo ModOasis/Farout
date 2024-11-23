@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "farout:cratered_shores",
-  "features": "farout:craters",
-  "step": "top_layer_modification"
-}

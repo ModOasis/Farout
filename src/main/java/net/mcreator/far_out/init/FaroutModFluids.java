@@ -19,11 +19,13 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.far_out.fluid.SulfuricAcidFluid;
 import net.mcreator.far_out.fluid.SaltwaterFluid;
+import net.mcreator.far_out.fluid.MagmaFluid;
 import net.mcreator.far_out.fluid.LiquidSulfurDioxideFluid;
 import net.mcreator.far_out.fluid.LiquidMethaneFluid;
 import net.mcreator.far_out.fluid.LiquidAmmoniaFluid;
+import net.mcreator.far_out.fluid.IronPentacarbonylFluid;
+import net.mcreator.far_out.fluid.HydrogenSulfideFluid;
 import net.mcreator.far_out.fluid.GreenOilFluid;
-import net.mcreator.far_out.fluid.DryWaterFluid;
 import net.mcreator.far_out.fluid.ChlorellaCultureFluid;
 import net.mcreator.far_out.fluid.AqueousAmmoniaFluid;
 import net.mcreator.far_out.FaroutMod;
@@ -40,14 +42,18 @@ public class FaroutModFluids {
 	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_AMMONIA = REGISTRY.register("flowing_liquid_ammonia", () -> new LiquidAmmoniaFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> CHLORELLA_CULTURE = REGISTRY.register("chlorella_culture", () -> new ChlorellaCultureFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_CHLORELLA_CULTURE = REGISTRY.register("flowing_chlorella_culture", () -> new ChlorellaCultureFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> DRY_WATER = REGISTRY.register("dry_water", () -> new DryWaterFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_DRY_WATER = REGISTRY.register("flowing_dry_water", () -> new DryWaterFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> LIQUID_SULFUR_DIOXIDE = REGISTRY.register("liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_SULFUR_DIOXIDE = REGISTRY.register("flowing_liquid_sulfur_dioxide", () -> new LiquidSulfurDioxideFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> AQUEOUS_AMMONIA = REGISTRY.register("aqueous_ammonia", () -> new AqueousAmmoniaFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_AQUEOUS_AMMONIA = REGISTRY.register("flowing_aqueous_ammonia", () -> new AqueousAmmoniaFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> LIQUID_METHANE = REGISTRY.register("liquid_methane", () -> new LiquidMethaneFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_LIQUID_METHANE = REGISTRY.register("flowing_liquid_methane", () -> new LiquidMethaneFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> IRON_PENTACARBONYL = REGISTRY.register("iron_pentacarbonyl", () -> new IronPentacarbonylFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_IRON_PENTACARBONYL = REGISTRY.register("flowing_iron_pentacarbonyl", () -> new IronPentacarbonylFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> MAGMA = REGISTRY.register("magma", () -> new MagmaFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_MAGMA = REGISTRY.register("flowing_magma", () -> new MagmaFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> HYDROGEN_SULFIDE = REGISTRY.register("hydrogen_sulfide", () -> new HydrogenSulfideFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_HYDROGEN_SULFIDE = REGISTRY.register("flowing_hydrogen_sulfide", () -> new HydrogenSulfideFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -63,14 +69,18 @@ public class FaroutModFluids {
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_AMMONIA.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(CHLORELLA_CULTURE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_CHLORELLA_CULTURE.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(DRY_WATER.get(), RenderType.translucent());
-			ItemBlockRenderTypes.setRenderLayer(FLOWING_DRY_WATER.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(LIQUID_SULFUR_DIOXIDE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_SULFUR_DIOXIDE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(AQUEOUS_AMMONIA.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_AQUEOUS_AMMONIA.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(LIQUID_METHANE.get(), RenderType.translucent());
 			ItemBlockRenderTypes.setRenderLayer(FLOWING_LIQUID_METHANE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(IRON_PENTACARBONYL.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_IRON_PENTACARBONYL.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(MAGMA.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_MAGMA.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(HYDROGEN_SULFIDE.get(), RenderType.translucent());
+			ItemBlockRenderTypes.setRenderLayer(FLOWING_HYDROGEN_SULFIDE.get(), RenderType.translucent());
 		}
 	}
 }

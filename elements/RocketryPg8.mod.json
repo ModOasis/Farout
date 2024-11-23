@@ -1,0 +1,239 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 208,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rocketry",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "onClick": {
+            "name": "Back"
+          },
+          "x": 132,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_now_you_must_craft_a_lander",
+          "text": {
+            "fixedValue": "Now, you must craft a lander,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_using_the_recipe_below",
+          "text": {
+            "fixedValue": "using the recipe below."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_place_your_lander_down_and_righ",
+          "text": {
+            "fixedValue": "Place your lander down, and right"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_click_on_it_a_menu_will_appear",
+          "text": {
+            "fixedValue": "click on it. a menu will appear,"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 125
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_showing_your_crafts_in_order",
+          "text": {
+            "fixedValue": "showing your crafts in order"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 134
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_of_whitch_was_usedlaunched",
+          "text": {
+            "fixedValue": "of which was used/launched"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_most_recently",
+          "text": {
+            "fixedValue": "the most recently."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_click_the_button_next_to_your",
+          "text": {
+            "fixedValue": "Click the button next to your"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spacecraft_and",
+          "text": {
+            "fixedValue": "spacecraft name, and you will be"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 179
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_transported_to_your_planet",
+          "text": {
+            "fixedValue": "transported to the planet that"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 188
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_is_in_the_bottom_line_that_is_no",
+          "text": {
+            "fixedValue": "is in the bottom line that is not"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 197
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_planet_you_are_on",
+          "text": {
+            "fixedValue": "the planet you are on."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 206
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "screenshot_2024-07-18_154034.png",
+          "use1Xscale": true,
+          "x": 141,
+          "y": 44
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:dry_mesas",
+  "features": "farout:mesa_bands",
+  "step": "raw_generation"
+}

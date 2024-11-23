@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bbb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "b": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "result": {
+    "item": "farout:inertial_nav_unit_photomask",
+    "count": 9
+  }
+}

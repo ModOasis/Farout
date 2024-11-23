@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -31,11 +31,17 @@
         "A guide on how to survive and thrive in this mod."
       ]
     },
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "TableOfContents",
+    "inventorySize": 0,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

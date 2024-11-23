@@ -6,6 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.HydrogenFuelCellGUIMenu;
@@ -23,6 +24,8 @@ import net.mcreator.far_out.procedures.Arrow3Procedure;
 import net.mcreator.far_out.procedures.Arrow2Procedure;
 import net.mcreator.far_out.procedures.Arrow1Procedure;
 import net.mcreator.far_out.procedures.Arrow10Procedure;
+import net.mcreator.far_out.network.HydrogenFuelCellGUIButtonMessage;
+import net.mcreator.far_out.FaroutMod;
 
 import java.util.HashMap;
 
@@ -33,6 +36,7 @@ public class HydrogenFuelCellGUIScreen extends AbstractContainerScreen<HydrogenF
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_empty;
 
 	public HydrogenFuelCellGUIScreen(HydrogenFuelCellGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -128,12 +132,15 @@ public class HydrogenFuelCellGUIScreen extends AbstractContainerScreen<HydrogenF
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
+		button_empty = Button.builder(Component.translatable("gui.farout.hydrogen_fuel_cell_gui.button_empty"), e -> {
+			if (true) {
+				FaroutMod.PACKET_HANDLER.sendToServer(new HydrogenFuelCellGUIButtonMessage(0, x, y, z));
+				HydrogenFuelCellGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 159, this.topPos + 7, 9, 20).build();
+		guistate.put("button:button_empty", button_empty);
+		this.addRenderableWidget(button_empty);
 	}
 }

@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "fusion_reactor_jei.png",
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:Tokamakfusionreactor"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Nuclear Fusion",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 19,
+        "y": 60,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 19,
+        "y": 17,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 150,
+        "y": 38,
+        "slotid": 0
+      }
+    ]
+  }
+}

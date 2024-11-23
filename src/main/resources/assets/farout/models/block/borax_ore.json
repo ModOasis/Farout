@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/borax_ore",
+    "up": "farout:block/borax_ore",
+    "north": "farout:block/borax_ore",
+    "east": "farout:block/borax_ore",
+    "south": "farout:block/borax_ore",
+    "west": "farout:block/borax_ore",
+    "particle": "farout:block/borax_ore"
+  },
+  "render_type": "solid"
+}

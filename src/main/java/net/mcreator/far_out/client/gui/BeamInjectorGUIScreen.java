@@ -78,11 +78,6 @@ public class BeamInjectorGUIScreen extends AbstractContainerScreen<BeamInjectorG
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
 		button_protom_beam = Button.builder(Component.translatable("gui.farout.beam_injector_gui.button_protom_beam"), e -> {

@@ -1,0 +1,56 @@
+{
+  "_fv": 60,
+  "_type": "animateditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "automaticrifletex",
+    "name": "Automatic Rifle",
+    "idle": "animation.AutomaticRifle.Idle",
+    "rarity": "COMMON",
+    "displaySettings": "automaticrifle.item.json",
+    "leftArm": "Left",
+    "rightArm": "Right",
+    "perspective": "All Perspectives",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "firstPersonArms": true,
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 30,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "enableArmPose": true,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "AutomaticRifleRightclicked"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "crossbow",
+    "normal": "automaticrifle.geo.json",
+    "armPoseList": [],
+    "disableSwing": true
+  }
+}

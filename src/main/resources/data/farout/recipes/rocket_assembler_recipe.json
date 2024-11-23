@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "farout:motor"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "farout:iron_rod"
+    },
+    "d": {
+      "item": "farout:low_frequency_integrated_circuit"
+    }
+  },
+  "result": {
+    "item": "farout:rocket_assembler",
+    "count": 1
+  }
+}

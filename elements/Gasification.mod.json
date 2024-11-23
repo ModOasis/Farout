@@ -1,0 +1,37 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "coal_gasification_jei.png",
+    "width": 176,
+    "height": 87,
+    "icon": {
+      "value": "CUSTOM:CoalGasificationReactor"
+    },
+    "craftingtable": {
+      "value": ""
+    },
+    "enableCraftingtable": false,
+    "title": "Gasification",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 15,
+        "y": 16,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 15,
+        "y": 52,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 132,
+        "y": 16,
+        "slotid": 0
+      }
+    ]
+  }
+}

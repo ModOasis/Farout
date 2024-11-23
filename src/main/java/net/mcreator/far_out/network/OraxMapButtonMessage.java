@@ -69,7 +69,7 @@ public class OraxMapButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			OraxTrajectoriesProcedure.execute(world, entity);
+			OraxTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "farout:block/kempat_planks",
+    "top": "farout:block/kempat_planks",
+    "side": "farout:block/kempat_planks"
+  },
+  "render_type": "solid"
+}

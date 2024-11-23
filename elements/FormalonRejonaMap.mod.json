@@ -1,0 +1,96 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 420,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "rejonamap.png",
+          "use1Xscale": true,
+          "x": 4,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selectionscreen.png",
+          "use1Xscale": true,
+          "x": 4,
+          "y": 3
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_proxmai",
+          "text": "Rejona",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "RejonaTrajectories"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 33,
+          "y": 29
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_oceanus",
+          "text": "Melu",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "MeluTrajectories"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 32,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_vulcan",
+          "text": {
+            "fixedValue": "Melu"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 99,
+          "y": 67
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proxmai",
+          "text": {
+            "fixedValue": "Rejona"
+          },
+          "width": 105,
+          "height": 107,
+          "x": 162,
+          "y": 72
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

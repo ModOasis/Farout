@@ -6,8 +6,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
+import java.util.HashMap;
+
 public class IncrementPageProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, HashMap guistate) {
+		if (guistate == null)
+			return;
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -15,7 +19,14 @@ public class IncrementPageProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "Page") < 5) {
+		}.getValue(world, BlockPos.containing(x, y, z), ((new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "Page") + 2) + "L")) != 0) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -32,7 +43,7 @@ public class IncrementPageProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			RefreshFairingPropertiesProcedure.execute(world, x, y, z);
+			RefreshFairingPropertiesProcedure.execute(world, x, y, z, guistate);
 		}
 	}
 }

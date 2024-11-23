@@ -52,7 +52,7 @@ public class TestKeyMessage {
 			return;
 		if (type == 0) {
 
-			TestKeyOnKeyPressedProcedure.execute(world);
+			TestKeyOnKeyPressedProcedure.execute(entity);
 		}
 	}
 

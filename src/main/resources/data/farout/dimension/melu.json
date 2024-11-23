@@ -21,7 +21,7 @@
     },
     "settings": {
       "name": "farout:melu",
-      "sea_level": 63,
+      "sea_level": 50,
       "legacy_random_source": false,
       "disable_mob_generation": false,
       "aquifers_enabled": true,
@@ -30,7 +30,10 @@
         "Name": "minecraft:stone"
       },
       "default_fluid": {
-        "Name": "minecraft:air"
+        "Name": "minecraft:basalt",
+        "Properties": {
+          "axis": "y"
+        }
       },
       "spawn_target": [],
       "noise": {

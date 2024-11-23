@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "farout:block/oxyfion_planks",
+    "top": "farout:block/oxyfion_planks",
+    "side": "farout:block/oxyfion_planks"
+  },
+  "render_type": "solid"
+}

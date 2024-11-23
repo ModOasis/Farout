@@ -1,8 +1,13 @@
 {
   "replace": false,
   "values": [
-    "farout:capsule",
     "farout:lander",
-    "farout:launch_vehicle"
+    "farout:launch_vehicle",
+    "farout:cargo_ssto",
+    "farout:aetherian_conqueror",
+    "farout:astral_dragon",
+    "farout:karvon_warpship",
+    "farout:ancient_drone",
+    "farout:sentinel"
   ]
 }

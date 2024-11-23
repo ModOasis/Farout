@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:burninghighlands",
+  "features": "farout:volcanic_deltas",
+  "step": "surface_structures"
+}

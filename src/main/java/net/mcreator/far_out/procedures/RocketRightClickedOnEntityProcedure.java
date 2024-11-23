@@ -31,12 +31,6 @@ public class RocketRightClickedOnEntityProcedure {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
-			FaroutModVariables.MapVariables.get(world).AccessLocationX = x;
-			FaroutModVariables.MapVariables.get(world).syncData(world);
-			FaroutModVariables.MapVariables.get(world).AccessLocationY = y;
-			FaroutModVariables.MapVariables.get(world).syncData(world);
-			FaroutModVariables.MapVariables.get(world).AccessLocationZ = z;
-			FaroutModVariables.MapVariables.get(world).syncData(world);
 			if ((sourceentity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).InFormalonSystem) {
 				if (sourceentity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);

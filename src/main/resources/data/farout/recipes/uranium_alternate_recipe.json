@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:uranistone"
+    }
+  ],
+  "output": {
+    "item": "farout:uranium_carbide",
+    "count": 1
+  }
+}

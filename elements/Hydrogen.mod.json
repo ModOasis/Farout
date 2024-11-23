@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -10,7 +10,7 @@
     "name": "Hydrogen",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Chemistry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -29,11 +29,17 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

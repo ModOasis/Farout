@@ -1,0 +1,57 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 240,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "rejona.png",
+          "use1Xscale": true,
+          "x": 94,
+          "y": 0
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory3",
+          "image": "settrajectory3.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "RejonaTrajectories"
+          },
+          "x": 217,
+          "y": 147
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settrajectory2",
+          "image": "settrajectory2.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "MeluTrajectories"
+          },
+          "x": 158,
+          "y": 64
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "farout:block/rom_programmer"
+    }
+  }
+}

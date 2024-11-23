@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "farout:spaceship_blueprint"
+    },
+    {
+      "item": "farout:electro_magnet"
+    }
+  ],
+  "result": {
+    "item": "farout:antimatter_collector_blueprint",
+    "count": 1
+  }
+}

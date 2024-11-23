@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "electrolysis",
+    "result": {
+      "value": "CUSTOM:Hydrogen"
+    },
+    "count": 6,
+    "ingredients": [
+      {
+        "value": "Items.WATER_BUCKET"
+      }
+    ]
+  }
+}

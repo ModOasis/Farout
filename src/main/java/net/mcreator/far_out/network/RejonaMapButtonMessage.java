@@ -70,11 +70,11 @@ public class RejonaMapButtonMessage {
 		}
 		if (buttonID == 1) {
 
-			RejonaTrajectoriesProcedure.execute(world, entity);
+			RejonaTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			MeluTrajectoriesProcedure.execute(world, entity);
+			MeluTrajectoriesProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

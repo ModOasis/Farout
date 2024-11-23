@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/subspace_catalyst",
+    "up": "farout:block/subspace_catalyst",
+    "north": "farout:block/subspace_catalyst",
+    "east": "farout:block/subspace_catalyst",
+    "south": "farout:block/subspace_catalyst",
+    "west": "farout:block/subspace_catalyst",
+    "particle": "farout:block/subspace_catalyst"
+  },
+  "render_type": "solid"
+}

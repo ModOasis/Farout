@@ -2,11 +2,14 @@ package net.mcreator.far_out.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.far_out.init.FaroutModItems;
 import net.mcreator.far_out.init.FaroutModEntities;
 
 public class SmallAtmosphericLanderRightclickedOnBlockProcedure {
@@ -21,6 +24,10 @@ public class SmallAtmosphericLanderRightclickedOnBlockProcedure {
 					MobSpawnType.MOB_SUMMONED);
 			if (entityToSpawn != null) {
 			}
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(FaroutModItems.SMALL_ATMOSPHERIC_LANDER.get());
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 	}
 }

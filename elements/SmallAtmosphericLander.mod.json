@@ -1,13 +1,13 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "smallatmosphericlander",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "gas_core_ntr",
+    "customModelName": "lander_-_converted:default",
     "customProperties": {},
     "states": [],
-    "name": "Small Atmospheric Lander",
+    "name": "Lander",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Rocketry"
@@ -29,6 +29,9 @@
     "specialInformation": {
       "fixedValue": []
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -37,6 +40,9 @@
     },
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

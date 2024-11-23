@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "block",
   "definition": {
     "texture": "mediumfrequencyintegratedcircuitfabricatortex",
@@ -120,7 +120,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onBlockAdded": {
-      "name": "IntegratedCircuitFabricatorBlockAdded"
+      "name": "HydrogenFuelCellBlockAdded"
     },
     "onTickUpdate": {
       "name": "IntegratedCircuitFabricatorUpdateTick"

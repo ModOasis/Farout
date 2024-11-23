@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/radioisotopegenerator",
+  "textures": {
+    "all": "farout:block/radioisotopegeneratortex",
+    "particle": "farout:block/radioisotopegeneratortex",
+    "0": "farout:block/radioisotopegeneratortex"
+  },
+  "render_type": "solid"
+}

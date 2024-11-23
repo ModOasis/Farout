@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class ImmatureEtauosianGrainstalkUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (Mth.nextInt(RandomSource.create(), 1, 1000) == 256) {
+		if (Mth.nextInt(RandomSource.create(), 1, 10) == 5) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = FaroutModBlocks.ETAUOSIAN_GRAINSTALK.get().defaultBlockState();

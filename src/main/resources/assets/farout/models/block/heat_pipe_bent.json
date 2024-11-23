@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/heatpipebent",
+  "textures": {
+    "all": "farout:block/heatpipetex",
+    "particle": "farout:block/heatpipetex",
+    "0": "farout:block/heatpipetex"
+  },
+  "render_type": "cutout"
+}

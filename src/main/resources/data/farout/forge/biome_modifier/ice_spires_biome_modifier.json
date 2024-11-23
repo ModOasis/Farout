@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "farout:supercooled_plains",
+  "features": "farout:ice_spires",
+  "step": "surface_structures"
+}

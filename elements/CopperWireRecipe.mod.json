@@ -1,9 +1,9 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 5,
+    "recipeRetstackSize": 12,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -24,7 +24,7 @@
         "value": "Items.COPPER_INGOT"
       },
       {
-        "value": "Blocks.IRON_BARS"
+        "value": "CUSTOM:IronRod"
       },
       {
         "value": "Items.COPPER_INGOT"

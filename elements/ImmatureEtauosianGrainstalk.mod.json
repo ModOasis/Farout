@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "plant",
   "definition": {
     "renderType": 13,
@@ -64,7 +64,7 @@
       "value": "CUSTOM:EtauosianGrainStalkSeeds"
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": true,
     "hasTileEntity": false,
     "isReplaceable": false,

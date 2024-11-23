@@ -1,0 +1,15 @@
+{
+  "type": "farout:gasification",
+  "ingredients": [
+    {
+      "tag": "minecraft:coals"
+    },
+    {
+      "item": "farout:oxygen_bottle"
+    }
+  ],
+  "output": {
+    "item": "farout:hydrogen",
+    "count": 1
+  }
+}

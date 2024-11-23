@@ -1,13 +1,13 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "biome",
   "definition": {
     "name": "Etauian Plains",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:Purplegrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#1"
+      "value": "CUSTOM:ChlorinatedEarth"
     },
     "underwaterBlock": {
       "value": "Blocks.SAND#0"
@@ -111,6 +111,16 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:Hapolite"
+        },
+        "minGroup": 4,
+        "maxGroup": 10,
+        "weight": 20,
+        "spawnType": "misc"
+      }
+    ]
   }
 }

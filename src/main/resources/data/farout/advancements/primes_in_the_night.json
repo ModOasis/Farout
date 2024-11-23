@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:prime_numbers_emblem"
+    },
+    "title": {
+      "translate": "advancements.primes_in_the_night.title"
+    },
+    "description": {
+      "translate": "advancements.primes_in_the_night.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "primes_in_the_night_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:touchdown"
+}

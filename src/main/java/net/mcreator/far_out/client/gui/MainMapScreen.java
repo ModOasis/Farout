@@ -81,14 +81,9 @@ public class MainMapScreen extends AbstractContainerScreen<MainMapMenu> {
 	}
 
 	@Override
-	public void onClose() {
-		super.onClose();
-	}
-
-	@Override
 	public void init() {
 		super.init();
-		imagebutton_sandos_interstellar = new ImageButton(this.leftPos + 18, this.topPos + 67, 50, 50, 0, 0, 50, new ResourceLocation("farout:textures/screens/atlas/imagebutton_sandos_interstellar.png"), 50, 100, e -> {
+		imagebutton_sandos_interstellar = new ImageButton(this.leftPos + 18, this.topPos + 67, 240, 240, 0, 0, 240, new ResourceLocation("farout:textures/screens/atlas/imagebutton_sandos_interstellar.png"), 240, 480, e -> {
 			if (true) {
 				FaroutMod.PACKET_HANDLER.sendToServer(new MainMapButtonMessage(0, x, y, z));
 				MainMapButtonMessage.handleButtonAction(entity, 0, x, y, z);

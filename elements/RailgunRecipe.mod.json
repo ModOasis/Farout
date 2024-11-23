@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      },
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      },
+      {
+        "value": "CUSTOM:ElectroMagnet"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Railgun"
+    },
+    "name": "railgun_recipe",
+    "namespace": "mod"
+  }
+}

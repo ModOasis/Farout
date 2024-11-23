@@ -3,6 +3,7 @@ package net.mcreator.far_out.procedures;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.sounds.SoundSource;
@@ -13,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class LiquidMethaneBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == Level.END)) {
+		if (!((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.END)) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

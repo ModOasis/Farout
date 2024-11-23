@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Economy Size",
+    "description": "Amount of items in the economy initially. Ex: A economy size of 1000 means that there are 1000 iron ingots, stirling engines, processors, etc. floating around in a paritcular economy to start with",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1000
+  }
+}

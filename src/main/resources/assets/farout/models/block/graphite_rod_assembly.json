@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "farout:block/graphite_rods_side",
+    "up": "farout:block/graphite_rods_side",
+    "north": "farout:block/graphiterodside",
+    "east": "farout:block/graphite_rods_top",
+    "south": "farout:block/graphiterodside",
+    "west": "farout:block/graphite_rods_top",
+    "particle": "farout:block/graphite_rods_side"
+  },
+  "render_type": "solid"
+}

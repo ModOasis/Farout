@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "dimension",
   "definition": {
     "biomesInDimension": [
@@ -26,16 +26,16 @@
     },
     "canRespawnHere": false,
     "hasFog": false,
-    "isDark": false,
+    "isDark": true,
     "doesWaterVaporize": false,
     "sleepResult": "DENY",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": false,
+    "imitateOverworldBehaviour": true,
     "portalFrame": {
       "value": ""
     },
     "portalParticles": {
-      "value": "CUSTOM:RocketPlume"
+      "value": "PORTAL"
     },
     "portalLuminance": 0,
     "portalSound": {
@@ -43,6 +43,7 @@
     },
     "enableIgniter": true,
     "igniterName": "Infinatos Portal Igniter",
+    "igniterRarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },

@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -80,7 +80,10 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [
       {
-        "value": "Blocks.GRASS"
+        "value": "CUSTOM:ChlorinatedEarth"
+      },
+      {
+        "value": "CUSTOM:Purplegrass"
       }
     ],
     "isBonemealable": false,
@@ -88,16 +91,10 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:FungiForests"
-      },
-      {
         "value": "CUSTOM:EtauianPlains"
       },
       {
         "value": "CUSTOM:PerchlorateOceans"
-      },
-      {
-        "value": "CUSTOM:LimestoneMoutains"
       }
     ],
     "generationType": "Flower",

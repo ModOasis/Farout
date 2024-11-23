@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "farout:block/keranon_planks",
+    "top": "farout:block/keranon_planks",
+    "side": "farout:block/keranon_planks"
+  },
+  "render_type": "solid"
+}

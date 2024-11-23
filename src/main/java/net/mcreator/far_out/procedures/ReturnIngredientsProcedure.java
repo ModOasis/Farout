@@ -8,67 +8,23 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.init.FaroutModItems;
 import net.mcreator.far_out.init.FaroutModBlocks;
 
-import java.util.function.Supplier;
-import java.util.Map;
-
 public class ReturnIngredientsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+	public static void execute(LevelAccessor world, double x, double y, double z) {
 		String Propulsion = "";
 		String Generator = "";
 		String Controller = "";
 		String Hab = "";
 		double NumUsed = 0;
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("PropID",
-						((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("PropID")));
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("PowID",
-						((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("PowID")));
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("CompID",
-						((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("CompID")));
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("HabID",
-						((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().getDouble("HabID")));
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
+		double NumIngredients = 0;
+		double a = 0;
+		boolean latch = false;
+		ListTag SnipIt;
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -101,7 +57,7 @@ public class ReturnIngredientsProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LIQUID_METHANE_BUCKET.get()).toString()), 64);
+				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.METHANE.get()).toString()), 32);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -110,241 +66,7 @@ public class ReturnIngredientsProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.OXYGEN_BOTTLE.get()).toString()), 200);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.GRAPHITEROD.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.PLUTONIUM_CARBIDE.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.GRAPHITE_INGOT.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.QUARTZ).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ARGON.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_CAPACITY_MEMORY.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.XENON.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ELECTRO_MAGNET.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.HAFNIUM_CARBONITRIDE_INGOT.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BORON_INGOT.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.DEUTERIUM.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.HELIUM_3.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.SOLID_ANTIMATTER_PENNING_TRAP.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.PHOTOVOLTAIC_WAFER.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MOTOR.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModBlocks.STIRLING_ENGINE.get().asItem()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.GALACTIC_CORE_TRACKER.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.INERTIAL_NAVIGATION_SYSTEM.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Blocks.WHITE_WOOL.asItem()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString()), 0);
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("ItemsCompleted", 0);
+				_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.OXYGEN_BOTTLE.get()).toString()), 20);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -409,14 +131,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LIQUID_METHANE_BUCKET.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.METHANE.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LIQUID_METHANE_BUCKET.get()).toString())) + 20));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.METHANE.get()).toString())) + 20));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -536,7 +258,7 @@ public class ReturnIngredientsProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString())) + 256));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString())) + 64));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -649,22 +371,6 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ARGON.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ARGON.get()).toString())) + 4));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
 					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -672,7 +378,7 @@ public class ReturnIngredientsProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString())) + 256));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.HYDROGEN.get()).toString())) + 64));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -913,14 +619,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BORON_INGOT.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.IRON_INGOT).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.BORON_INGOT.get()).toString())) + 3));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.IRON_INGOT).toString())) + 4));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -936,7 +642,7 @@ public class ReturnIngredientsProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.PLUTONIUM_CARBIDE.get()).toString())) + 3));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.PLUTONIUM_CARBIDE.get()).toString())) + 144));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -961,14 +667,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ELECTRO_MAGNET.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString())) + 10));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ELECTRO_MAGNET.get()).toString())) + 16));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1056,7 +762,7 @@ public class ReturnIngredientsProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 64));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 4));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1137,22 +843,6 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.SOLID_ANTIMATTER_PENNING_TRAP.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.SOLID_ANTIMATTER_PENNING_TRAP.get()).toString())) + 1));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
 					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -1185,14 +875,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BLACK_HOLE_COMPUTER.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString())) + 15));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.BLACK_HOLE_COMPUTER.get()).toString())) + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1362,191 +1052,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LITHIUM_INGOT.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.SODIUM_INGOT.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LITHIUM_INGOT.get()).toString())) + 2));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-		}
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "CompID") == 0) {
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString())) + 2));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 6));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_CAPACITY_MEMORY.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_CAPACITY_MEMORY.get()).toString())) + 6));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.COPPER_WIRE.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.COPPER_WIRE.get()).toString())) + 4));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-		} else if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "CompID") == 1) {
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.GALACTIC_CORE_TRACKER.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.GALACTIC_CORE_TRACKER.get()).toString())) + 4));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString())) + 1));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.COPPER_WIRE.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.COPPER_WIRE.get()).toString())) + 4));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 6));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_CAPACITY_MEMORY.get()).toString())) + 6));
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.INERTIAL_NAVIGATION_SYSTEM.get()).toString()), (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.INERTIAL_NAVIGATION_SYSTEM.get()).toString())) + 6));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.SODIUM_INGOT.get()).toString())) + 2));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1652,14 +1165,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.POLYETHYLENE.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString())) + 10));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.POLYETHYLENE.get()).toString())) + 10));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1700,14 +1213,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 1));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1756,14 +1269,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.POLYETHYLENE.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString())) + 20));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.POLYETHYLENE.get()).toString())) + 20));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1804,14 +1317,14 @@ public class ReturnIngredientsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 1));
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -1860,6 +1373,94 @@ public class ReturnIngredientsProcedure {
 							return -1;
 						}
 					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MOTOR.get()).toString())) + 5));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "HabID") == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString()), (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ALUMINIUM_INGOT.get()).toString())) + 10));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString()), (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.WATER_BUCKET).toString())) + 2));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(Blocks.WHITE_WOOL.asItem()).toString()), (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Blocks.WHITE_WOOL.asItem()).toString())) + 2));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.XENON.get()).toString()), (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.XENON.get()).toString())) + 10));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble((ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString()), (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.MEDIUM_FREQUENCY_INTEGRATED_CIRCUIT.get()).toString())) + 5));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

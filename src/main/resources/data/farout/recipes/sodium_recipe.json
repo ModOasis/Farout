@@ -1,0 +1,12 @@
+{
+  "type": "farout:electrolysis",
+  "ingredients": [
+    {
+      "item": "farout:sodium_hydroxide"
+    }
+  ],
+  "output": {
+    "item": "farout:sodium_ingot",
+    "count": 1
+  }
+}

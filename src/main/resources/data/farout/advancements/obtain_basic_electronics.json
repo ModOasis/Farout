@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:capacitor"
+    },
+    "title": {
+      "translate": "advancements.obtain_basic_electronics.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_basic_electronics.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_basic_electronics_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:low_frequency_integrated_circuit_recipe",
+      "farout:low_capacity_memory_recipe"
+    ]
+  },
+  "parent": "farout:the_first_kilowatt"
+}

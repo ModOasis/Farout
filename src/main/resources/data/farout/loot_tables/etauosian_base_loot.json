@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farout:chemicals",
+          "name": "farout:deleted_mod_element",
           "weight": 2,
           "functions": [
             {
@@ -75,7 +75,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "farout:organic_molecules",
+          "name": "farout:deleted_mod_element",
           "weight": 1,
           "functions": [
             {

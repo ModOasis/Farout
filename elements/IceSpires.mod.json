@@ -1,0 +1,13 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SupercooledPlains"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"49\" y=\"87\"><value name=\"feature\"><block type=\"feature_block_column_simple\"><value name=\"height\"><block type=\"int_provider_clamped_normal\"><field name=\"mean\">7</field><field name=\"deviation\">1</field><field name=\"min\">3</field><field name=\"max\">10</field></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.PACKED_ICE</field></block></value></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_rarity\"><field name=\"rarity\">5</field><next><block type=\"placement_in_square\"></block></next></block></next></block></next></block><block type=\"int_provider_constant\" x=\"282\" y=\"184\"><field name=\"value\">5</field></block></xml>"
+  }
+}

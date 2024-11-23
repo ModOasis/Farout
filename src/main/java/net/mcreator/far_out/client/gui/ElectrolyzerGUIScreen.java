@@ -57,8 +57,6 @@ public class ElectrolyzerGUIScreen extends AbstractContainerScreen<ElectrolyzerG
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/waterbucket.png"), this.leftPos + 6, this.topPos + 43, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow0.png"), this.leftPos + 78, this.topPos + 43, 0, 0, 16, 16, 16, 16);
 
 		if (Arrow1Procedure.execute(world, x, y, z)) {
@@ -111,11 +109,6 @@ public class ElectrolyzerGUIScreen extends AbstractContainerScreen<ElectrolyzerG
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.farout.electrolyzer_gui.label_electrolyzer"), 52, 6, -12829636, false);
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

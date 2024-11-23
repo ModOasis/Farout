@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 60,
   "_type": "biome",
   "definition": {
     "name": "Sunny Islands",
@@ -48,34 +48,34 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.053333333333333344,
-      "max": 0.18666666666666665
+      "min": -1.0,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -0.12,
+      "min": 0.0,
       "max": 1.0
     },
     "genContinentalness": {
-      "min": -0.3,
+      "min": -0.05,
       "max": 1.0
     },
     "genErosion": {
-      "min": 0.38,
-      "max": 0.62
+      "min": 0.0,
+      "max": 1.0
     },
     "genWeirdness": {
-      "min": -0.5302804786757628,
-      "max": -0.2902804786757628
+      "min": -1.0,
+      "max": 1.0
     },
-    "treesPerChunk": 2,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 16,
     "treeStem": {
-      "value": "CUSTOM:LumiblossomLog"
+      "value": "CUSTOM:QuzanLog"
     },
     "treeBranch": {
-      "value": "CUSTOM:LumiblossomLeaves"
+      "value": "CUSTOM:QuzanLeaves"
     },
     "treeVines": {
       "value": "Blocks.VINE"

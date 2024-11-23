@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "farout:textures/screens/allstars.png",
+    "icon": {
+      "item": "farout:pulsar_emblem"
+    },
+    "title": {
+      "translate": "advancements.homecoming.title"
+    },
+    "description": {
+      "translate": "advancements.homecoming.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "homecoming_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

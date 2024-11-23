@@ -8,6 +8,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.far_out.network.FaroutModVariables;
@@ -19,6 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TokamakFusionReactorOnUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double craftingTime = 0;
+		double LastReaction = 0;
 		if ((new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -60,6 +63,7 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) <= 1)) {
+			LastReaction = 50;
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -131,6 +135,33 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM_3.get()).copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(FaroutModItems.TRITIUM.get()).copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				}
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
@@ -175,45 +206,6 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-			}
-		} else {
-			if (!(new Object() {
-				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "Latch"))) {
-				if (new Object() {
-					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getBoolean(tag);
-						return false;
-					}
-				}.getValue(world, BlockPos.containing(x, y, z), "ProducedEnergy")) {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putBoolean("Latch", true);
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced - 50;
-					FaroutModVariables.WorldVariables.get(world).syncData(world);
-				}
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
 		if ((new Object() {
@@ -257,6 +249,7 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) <= 1)) {
+			LastReaction = 100;
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -290,6 +283,8 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					return false;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "Latch")) {
+				FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced + 100;
+				FaroutModVariables.WorldVariables.get(world).syncData(world);
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -308,8 +303,6 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced + 100;
-				FaroutModVariables.WorldVariables.get(world).syncData(world);
 			}
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -345,6 +338,18 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 					if (_ent != null) {
+						final int _slotid = 2;
+						final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM.get()).copy();
+						_setstack.setCount(1);
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							if (capability instanceof IItemHandlerModifiable)
+								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+						});
+					}
+				}
+				{
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+					if (_ent != null) {
 						final int _slotid = 1;
 						final int _amount = 1;
 						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
@@ -372,45 +377,6 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-			}
-		} else {
-			if (!(new Object() {
-				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getBoolean(tag);
-					return false;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "Latch"))) {
-				if (new Object() {
-					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getBoolean(tag);
-						return false;
-					}
-				}.getValue(world, BlockPos.containing(x, y, z), "ProducedEnergy")) {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putBoolean("Latch", true);
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced - 100;
-					FaroutModVariables.WorldVariables.get(world).syncData(world);
-				}
-			}
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
 		if ((new Object() {
@@ -454,6 +420,7 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) <= 1)) {
+			LastReaction = 90;
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -487,6 +454,8 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					return false;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "Latch")) {
+				FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced + 90;
+				FaroutModVariables.WorldVariables.get(world).syncData(world);
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -505,8 +474,6 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced + 90;
-				FaroutModVariables.WorldVariables.get(world).syncData(world);
 			}
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -524,6 +491,33 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 						_blockEntity.getPersistentData().putDouble("craftingProgress", 0);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
+				if (Mth.nextInt(RandomSource.create(), 1, 2) == 1) {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(FaroutModItems.HELIUM.get()).copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
+				} else {
+					{
+						BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+						if (_ent != null) {
+							final int _slotid = 2;
+							final ItemStack _setstack = new ItemStack(FaroutModItems.HYDROGEN.get()).copy();
+							_setstack.setCount(1);
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+								if (capability instanceof IItemHandlerModifiable)
+									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+							});
+						}
+					}
 				}
 				{
 					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
@@ -596,7 +590,7 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced - 90;
+					FaroutModVariables.WorldVariables.get(world).WattageProduced = FaroutModVariables.WorldVariables.get(world).WattageProduced - LastReaction;
 					FaroutModVariables.WorldVariables.get(world).syncData(world);
 				}
 			}
@@ -609,6 +603,24 @@ public class TokamakFusionReactorOnUpdateTickProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("WattageUsed", 0);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("WattageProduced", LastReaction);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 	}
 }

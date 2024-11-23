@@ -11,7 +11,6 @@ public class ProxmaiReadoutProcedure {
 	public static String execute(Entity entity) {
 		if (entity == null)
 			return "";
-		boolean InterplanatryCapable = false;
 		double DeltaV = 0;
 		double OrbitalPeriod = 0;
 		double Mass = 0;
@@ -23,34 +22,47 @@ public class ProxmaiReadoutProcedure {
 		double ExhaustVelocity = 0;
 		double Watts = 0;
 		double HabitationTime = 0;
-		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:proxmai")))) {
+		Entity TargetEntity = null;
+		boolean InterplanatryCapable = false;
+		boolean Interplanetry = false;
+		boolean Result = false;
+		if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:proxmai"))) {
+			Interplanetry = false;
 			DeltaV = 0;
 			OrbitalPeriod = 0;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:vulcan")))) {
-			DeltaV = 10;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:vulcan"))) {
+			Interplanetry = false;
+			DeltaV = 10000;
 			OrbitalPeriod = 0.5;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus")))) {
-			DeltaV = 88;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:oceanus"))) {
+			Interplanetry = true;
+			DeltaV = 36000;
 			OrbitalPeriod = 8;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui")))) {
-			DeltaV = 112;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etaui"))) {
+			Interplanetry = true;
+			DeltaV = 38000;
 			OrbitalPeriod = 16;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos")))) {
-			DeltaV = 112;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:etauos"))) {
+			Interplanetry = true;
+			DeltaV = 38000;
 			OrbitalPeriod = 16;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:varas")))) {
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:varas"))) {
+			Interplanetry = true;
+			DeltaV = 36000;
+			OrbitalPeriod = 36;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:glacieo"))) {
+			Interplanetry = true;
 			DeltaV = 128;
 			OrbitalPeriod = 36;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:glacieo")))) {
-			DeltaV = 128;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican"))) {
+			Interplanetry = true;
+			DeltaV = 36000;
 			OrbitalPeriod = 36;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:silican")))) {
-			DeltaV = 128;
-			OrbitalPeriod = 36;
-		} else if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:infinatos")))) {
-			DeltaV = 136;
+		} else if ((entity.level().dimension()) == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("farout:infinatos"))) {
+			Interplanetry = true;
+			DeltaV = 36000;
 			OrbitalPeriod = 56;
 		}
-		return "Required \u0394V:" + DeltaV + "Km/s" + ",," + "Proxmai/, a airless superearth/, is rich in resources/,, and is accompanied by one moon/, Vulcan. ";
+		return "Proxmai: " + "\u0394V: " + DeltaV + " Hab time:" + OrbitalPeriod;
 	}
 }

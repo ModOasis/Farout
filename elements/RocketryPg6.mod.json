@@ -1,0 +1,163 @@
+{
+  "_fv": 60,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 189,
+    "height": 242,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rocketry",
+          "text": {
+            "fixedValue": "Rocketry"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow_left",
+          "image": "arrow_left.png",
+          "hoveredImage": "arrow_left_pressed.png",
+          "x": 132,
+          "y": 215
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_arrow",
+          "image": "arrow.png",
+          "hoveredImage": "arrow_pressed.png",
+          "x": 276,
+          "y": 215
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_here_is_a_top_down_view_of_a",
+          "text": {
+            "fixedValue": "Here is a top down view of a "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 26
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_launchpad_use_the_arrows_to",
+          "text": {
+            "fixedValue": "launchpad. hover over parts to"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_get_their_yoffset",
+          "text": {
+            "fixedValue": "get their y-offset."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "layer2.png",
+          "use1Xscale": true,
+          "x": 141,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_rocket_assembler_y_offset_2",
+          "text": {
+            "fixedValue": "Rocket assembler, y offset: 2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 267,
+          "y": 116
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_rocket_assembler_y_offset_21",
+          "text": {
+            "fixedValue": "Rocket assembler, y offset: 2"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_launchpad_y_offset_1",
+          "text": {
+            "fixedValue": "Launchpad, y offset: 1"
+          },
+          "width": 90,
+          "height": 90,
+          "x": 168,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_rocket_assembly_manager_y_offse",
+          "text": {
+            "fixedValue": "Rocket assembly manager, y offset: 1"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 204,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:airtight_fabric"
+    },
+    "title": {
+      "translate": "advancements.obtain_airtight_plastic.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_airtight_plastic.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_airtight_plastic_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farout:airtight_fabric"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "farout:spacesuit_helmet_recipe",
+      "farout:spacesuit_chestplate_recipe",
+      "farout:spacesuit_legs_recipe"
+    ]
+  },
+  "parent": "farout:get_plastic"
+}

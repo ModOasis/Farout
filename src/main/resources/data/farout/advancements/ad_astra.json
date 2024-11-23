@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "farout:go_interstellaremblem"
+    },
+    "title": {
+      "translate": "advancements.ad_astra.title"
+    },
+    "description": {
+      "translate": "advancements.ad_astra.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ad_astra_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "farout:built_starship"
+}

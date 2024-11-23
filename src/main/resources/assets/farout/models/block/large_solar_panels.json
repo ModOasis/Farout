@@ -1,9 +1,0 @@
-{
-  "parent": "block/slab",
-  "textures": {
-    "bottom": "farout:block/solar_panel_mis",
-    "top": "farout:block/solar_top",
-    "side": "farout:block/solar_panel_mis"
-  },
-  "render_type": "solid"
-}

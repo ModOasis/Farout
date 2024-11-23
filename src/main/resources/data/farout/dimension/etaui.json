@@ -513,10 +513,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "farout:purplegrass"
                             }
                           }
                         },
@@ -541,7 +538,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:coarse_dirt"
+                        "Name": "farout:chlorinated_earth"
                       }
                     }
                   }
@@ -660,10 +657,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "farout:purplegrass"
                             }
                           }
                         },
@@ -688,7 +682,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:dirt"
+                        "Name": "farout:chlorinated_earth"
                       }
                     }
                   }

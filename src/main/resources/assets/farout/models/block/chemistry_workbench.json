@@ -1,0 +1,9 @@
+{
+  "parent": "farout:custom/chemistryworkbench",
+  "textures": {
+    "all": "farout:block/musniusplanks",
+    "particle": "farout:block/musniusplanks",
+    "1": "farout:block/chemistryworkbenchtex"
+  },
+  "render_type": "cutout_mipped"
+}

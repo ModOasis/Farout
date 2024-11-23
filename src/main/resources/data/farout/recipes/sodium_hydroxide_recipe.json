@@ -1,15 +1,11 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "type": "farout:electrolysis",
   "ingredients": [
     {
-      "item": "farout:sodium"
-    },
-    {
-      "item": "minecraft:potion"
+      "item": "farout:borax"
     }
   ],
-  "result": {
+  "output": {
     "item": "farout:sodium_hydroxide",
     "count": 1
   }

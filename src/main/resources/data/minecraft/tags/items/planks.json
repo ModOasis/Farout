@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "farout:musnius_planks"
+    "farout:musnius_planks",
+    "farout:kempat_planks",
+    "farout:lumiblossom_planks",
+    "farout:oxyfion_planks",
+    "farout:keranon_planks"
   ]
 }

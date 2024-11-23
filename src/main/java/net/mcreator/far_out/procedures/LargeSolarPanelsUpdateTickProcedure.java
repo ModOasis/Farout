@@ -32,8 +32,7 @@ public class LargeSolarPanelsUpdateTickProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
-		}
-		if (!(world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl5 && _lvl5.isDay())) {
+		} else {
 			if (!(new Object() {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);

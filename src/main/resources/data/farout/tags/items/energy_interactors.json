@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "farout:stirling_engine",
+    "farout:nuclear_reactor",
+    "farout:tokamakfusionreactor",
+    "farout:solar_panels",
+    "farout:electrolyzer",
+    "farout:hydrogen_fuel_cell",
+    "farout:integrated_circuit_fabricator"
+  ]
+}

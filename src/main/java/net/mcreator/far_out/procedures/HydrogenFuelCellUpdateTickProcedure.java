@@ -20,6 +20,24 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class HydrogenFuelCellUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double craftingTime = 0;
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("WattageUsed", 0);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("WattageProduced", 5);
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -258,7 +276,7 @@ public class HydrogenFuelCellUpdateTickProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
 				if (_ent != null) {
 					final int _slotid = 2;
-					final ItemStack _setstack = new ItemStack(Items.WATER_BUCKET);
+					final ItemStack _setstack = new ItemStack(Items.WATER_BUCKET).copy();
 					_setstack.setCount(1);
 					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						if (capability instanceof IItemHandlerModifiable)

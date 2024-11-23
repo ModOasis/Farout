@@ -43,7 +43,7 @@ public class CheckIfCompleteProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.LIQUID_METHANE_BUCKET.get()).toString())) == 0 && new Object() {
+		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.METHANE.get()).toString())) == 0 && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
@@ -85,14 +85,7 @@ public class CheckIfCompleteProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.QUARTZ).toString())) == 0 && new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.ARGON.get()).toString())) == 0 && new Object() {
+		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(Items.QUARTZ).toString())) == 0 && true && new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
@@ -225,7 +218,7 @@ public class CheckIfCompleteProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.BIO_PLASTIC.get()).toString())) == 0) {
+		}.getValue(world, BlockPos.containing(x, y, z), (ForgeRegistries.ITEMS.getKey(FaroutModItems.POLYETHYLENE.get()).toString())) == 0) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
