@@ -24,7 +24,7 @@
     "recipes": [
       "farout:electrolyzer_recipe",
       "farout:copper_wire_recipe",
-      "farout:coal_gasification_reactor_recipe",
+      "farout:deleted_mod_element",
       "farout:relay_recipe",
       "farout:capacitor_recipe",
       "farout:motorrecipe",

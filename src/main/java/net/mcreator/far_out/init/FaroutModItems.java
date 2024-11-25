@@ -108,6 +108,7 @@ import net.mcreator.far_out.item.GoInterstellaremblemItem;
 import net.mcreator.far_out.item.GalacticCoreTrackerItem;
 import net.mcreator.far_out.item.FusionEmblemItem;
 import net.mcreator.far_out.item.FusionChamberItem;
+import net.mcreator.far_out.item.FissionEmblemItem;
 import net.mcreator.far_out.item.EtauosianGrainStalkSeedsItem;
 import net.mcreator.far_out.item.EmergencyRationsItem;
 import net.mcreator.far_out.item.ElectroMagnetItem;
@@ -284,7 +285,6 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> SOLID_ANTIMATTER_PENNING_TRAP = REGISTRY.register("solid_antimatter_penning_trap", () -> new SolidAntimatterPenningTrapItem());
 	public static final RegistryObject<Item> PENNING_TRAP = REGISTRY.register("penning_trap", () -> new PenningTrapItem());
 	public static final RegistryObject<Item> STRALAKITE = block(FaroutModBlocks.STRALAKITE);
-	public static final RegistryObject<Item> COAL_GASIFICATION_REACTOR = block(FaroutModBlocks.COAL_GASIFICATION_REACTOR);
 	public static final RegistryObject<Item> SOLAR_PANELS = block(FaroutModBlocks.SOLAR_PANELS);
 	public static final RegistryObject<Item> METHANE = REGISTRY.register("methane", () -> new MethaneItem());
 	public static final RegistryObject<Item> CARGO_SSTO_SPAWN_EGG = REGISTRY.register("cargo_ssto_spawn_egg", () -> new ForgeSpawnEggItem(FaroutModEntities.CARGO_SSTO, -1, -1, new Item.Properties()));
@@ -439,6 +439,7 @@ public class FaroutModItems {
 	public static final RegistryObject<Item> STEAM = REGISTRY.register("steam", () -> new SteamItem());
 	public static final RegistryObject<Item> SODIUM_ALUMINATE = REGISTRY.register("sodium_aluminate", () -> new SodiumAluminateItem());
 	public static final RegistryObject<Item> ALUMINIUM_HYDROXIDE = REGISTRY.register("aluminium_hydroxide", () -> new AluminiumHydroxideItem());
+	public static final RegistryObject<Item> FISSION_EMBLEM = REGISTRY.register("fission_emblem", () -> new FissionEmblemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

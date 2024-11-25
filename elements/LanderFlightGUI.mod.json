@@ -15,8 +15,8 @@
             "value": -6710887,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
-          "x": 71,
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 73,
           "y": 214
         }
       },
@@ -31,9 +31,9 @@
             "value": -6710887,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "TOP_CENTER",
           "x": 175,
-          "y": 1
+          "y": 3
         }
       },
       {
@@ -47,8 +47,8 @@
             "value": -6710887,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
-          "x": 259,
+          "anchorPoint": "BOTTOM_CENTER",
+          "x": 262,
           "y": 213
         }
       },
@@ -64,9 +64,9 @@
             "value": -14638336,
             "falpha": 0.0
           },
-          "anchorPoint": "CENTER",
+          "anchorPoint": "BOTTOM_CENTER",
           "x": 73,
-          "y": 227
+          "y": 226
         }
       },
       {

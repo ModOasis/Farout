@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "farout:nuclear_reactor"
+      "item": "farout:fission_emblem"
     },
     "title": {
       "translate": "advancements.the_power_of_an_atom.title"

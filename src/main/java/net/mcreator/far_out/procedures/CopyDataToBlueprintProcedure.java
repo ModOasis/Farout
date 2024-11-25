@@ -2,6 +2,9 @@ package net.mcreator.far_out.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -17,6 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.Tag;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.advancements.AdvancementProgress;
@@ -32,6 +36,7 @@ public class CopyDataToBlueprintProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, HashMap guistate) {
 		if (entity == null || guistate == null)
 			return;
+		Direction direction = Direction.NORTH;
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -1595,5 +1600,28 @@ public class CopyDataToBlueprintProcedure {
 		(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setHoverName(Component.literal((guistate.containsKey("text:Name") ? ((EditBox) guistate.get("text:Name")).getValue() : "")));
 		if (entity instanceof Player _player)
 			_player.closeContainer();
+		direction = new Object() {
+			public Direction getDirection(BlockState _bs) {
+				Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+				if (_prop instanceof DirectionProperty _dp)
+					return _bs.getValue(_dp);
+				_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+				return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+			}
+		}.getDirection((world.getBlockState(BlockPos.containing(x, y, z))));
+		world.setBlock(BlockPos.containing(x, y, z), FaroutModBlocks.DESIGNING_WORKBENCH.get().defaultBlockState(), 3);
+		{
+			Direction _dir = direction;
+			BlockPos _pos = BlockPos.containing(x, y, z);
+			BlockState _bs = world.getBlockState(_pos);
+			Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
+			if (_property instanceof DirectionProperty _dp && _dp.getPossibleValues().contains(_dir)) {
+				world.setBlock(_pos, _bs.setValue(_dp, _dir), 3);
+			} else {
+				_property = _bs.getBlock().getStateDefinition().getProperty("axis");
+				if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
+					world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
+			}
+		}
 	}
 }

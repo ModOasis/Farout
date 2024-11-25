@@ -21,6 +21,7 @@ import net.mcreator.far_out.world.features.StructureFeature;
 import net.mcreator.far_out.init.FaroutModTabs;
 import net.mcreator.far_out.init.FaroutModSounds;
 import net.mcreator.far_out.init.FaroutModParticleTypes;
+import net.mcreator.far_out.init.FaroutModPaintings;
 import net.mcreator.far_out.init.FaroutModMobEffects;
 import net.mcreator.far_out.init.FaroutModMenus;
 import net.mcreator.far_out.init.FaroutModItems;
@@ -61,6 +62,7 @@ public class FaroutMod {
 		StructureFeature.REGISTRY.register(bus);
 		FaroutModMobEffects.REGISTRY.register(bus);
 
+		FaroutModPaintings.REGISTRY.register(bus);
 		FaroutModParticleTypes.REGISTRY.register(bus);
 
 		FaroutModMenus.REGISTRY.register(bus);

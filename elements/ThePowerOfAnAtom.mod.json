@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The Power Of An Atom",
-    "achievementDescription": "Craft and use a nuclear reactor, by putting plutonium in it. You can also put hydrogen in the second slot to make deuterium.",
+    "achievementDescription": "Put any type of generator next to a tank of water, that in turn, is next to at least 1 plutonium fuel rod.",
     "achievementIcon": {
-      "value": "CUSTOM:NuclearReactor"
+      "value": "CUSTOM:FissionEmblem"
     },
     "background": "Default",
     "disableDisplay": false,

@@ -52,12 +52,16 @@ public class DeltaVSolverProcedure {
 			GravParamaterParent = (FaroutModVariables.MapVariables.get(world).GravitationalParameters.get(TargetPlanet)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0;
 			R1 = (FaroutModVariables.MapVariables.get(world).SemiMajorAxis.get(TargetPlanet)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0;
 			R2 = Math.pow(GravParamaterParent / 15.44, 0.333333333);
-			FaroutMod.LOGGER.info("parent-moon");
+			OrbitalPeriodDeparture = 0.625;
+			OrbitalPeriodArrival = ((FaroutModVariables.MapVariables.get(world).OrbitalPeriods.get(TargetPlanet)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0) / 10;
+			FaroutMod.LOGGER.info("moon-parent");
 		} else if ((Depart).equals((FaroutModVariables.MapVariables.get(world).ParentBody.get(TargetPlanet)) instanceof StringTag _stringTag ? _stringTag.getAsString() : "")) {
 			GravParamaterParent = (FaroutModVariables.MapVariables.get(world).GravitationalParameters.get(Depart)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0;
 			R1 = Math.pow(GravParamaterParent / 15.44, 0.333333333);
 			R2 = (FaroutModVariables.MapVariables.get(world).SemiMajorAxis.get(TargetPlanet)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0;
-			FaroutMod.LOGGER.info("moon-parent");
+			OrbitalPeriodDeparture = ((FaroutModVariables.MapVariables.get(world).OrbitalPeriods.get(Depart)) instanceof IntTag _intTag ? _intTag.getAsInt() : 0) / 10;
+			OrbitalPeriodArrival = 0.625;
+			FaroutMod.LOGGER.info("parent-moon");
 		} else {
 			while (!(TargetPlanet).equals(Depart)) {
 				if (((FaroutModVariables.MapVariables.get(world).ParentBody.get(TargetPlanet)) instanceof StringTag _stringTag ? _stringTag.getAsString() : "")
@@ -143,7 +147,7 @@ public class DeltaVSolverProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("TrajectoryOrbitalPeriod", Math.round((OrbitalPeriodDeparture + OrbitalPeriodArrival) / 20));
+				_blockEntity.getPersistentData().putDouble("TrajectoryOrbitalPeriod", Math.round((OrbitalPeriodArrival / 10 + OrbitalPeriodDeparture / 10) / 2));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

@@ -29,7 +29,7 @@ public class GiveVASMIRProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Advancement advancement, Entity entity) {
 		if (advancement == null || entity == null)
 			return;
-		if (world instanceof Level _lvl0 && _lvl0.getServer() != null && _lvl0.getServer().getAdvancements().getAdvancement(new ResourceLocation("farout:the_killing_of_a_god")).equals(advancement)) {
+		if (world instanceof Level _lvl0 && _lvl0.getServer() != null && _lvl0.getServer().getAdvancements().getAdvancement(new ResourceLocation("farout:heavy_hydrogen")).equals(advancement)) {
 			{
 				double _setval = 4;
 				entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

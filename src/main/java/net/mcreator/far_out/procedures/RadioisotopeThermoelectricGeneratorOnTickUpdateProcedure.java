@@ -20,7 +20,7 @@ public class RadioisotopeThermoelectricGeneratorOnTickUpdateProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, BlockPos.containing(x, y, z), "Watts")) / 1.1));
+				}.getValue(world, BlockPos.containing(x, y, z), "Watts")) / 1.001));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

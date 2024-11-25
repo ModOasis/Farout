@@ -36,7 +36,6 @@ import net.mcreator.far_out.block.entity.DesktopComputerBlockEntity;
 import net.mcreator.far_out.block.entity.DesigningWorkbenchBlockEntity;
 import net.mcreator.far_out.block.entity.CrudeSeebeckGeneratorBlockEntity;
 import net.mcreator.far_out.block.entity.CopperCableBlockEntity;
-import net.mcreator.far_out.block.entity.CoalGasificationReactorBlockEntity;
 import net.mcreator.far_out.block.entity.ChemistryWorkbenchBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoavinesBlockEntity;
 import net.mcreator.far_out.block.entity.ChacoaBlockEntity;
@@ -63,7 +62,6 @@ public class FaroutModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> ROCKET_ASSEMBLY_MANAGER = register("rocket_assembly_manager", FaroutModBlocks.ROCKET_ASSEMBLY_MANAGER, RocketAssemblyManagerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<RocketAssemblerTileEntity>> ROCKET_ASSEMBLER = REGISTRY.register("rocket_assembler",
 			() -> BlockEntityType.Builder.of(RocketAssemblerTileEntity::new, FaroutModBlocks.ROCKET_ASSEMBLER.get()).build(null));
-	public static final RegistryObject<BlockEntityType<?>> COAL_GASIFICATION_REACTOR = register("coal_gasification_reactor", FaroutModBlocks.COAL_GASIFICATION_REACTOR, CoalGasificationReactorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SOLAR_PANELS = register("solar_panels", FaroutModBlocks.SOLAR_PANELS, SolarPanelsBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> METHANE_POLYMERIZER = register("methane_polymerizer", FaroutModBlocks.METHANE_POLYMERIZER, MethanePolymerizerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NUCLEAR_REACTOR = register("nuclear_reactor", FaroutModBlocks.NUCLEAR_REACTOR, NuclearReactorBlockEntity::new);

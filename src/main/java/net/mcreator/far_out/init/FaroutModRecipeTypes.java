@@ -15,7 +15,6 @@ import net.mcreator.far_out.jei_recipes.NuclearIrradiationRecipe;
 import net.mcreator.far_out.jei_recipes.NuclearFusionJEIRecipe;
 import net.mcreator.far_out.jei_recipes.NuclearFissionRecipe;
 import net.mcreator.far_out.jei_recipes.GraphiteModerationRecipe;
-import net.mcreator.far_out.jei_recipes.GasificationRecipe;
 import net.mcreator.far_out.jei_recipes.ElectrolysisRecipe;
 import net.mcreator.far_out.jei_recipes.CircuitFabricationRecipe;
 import net.mcreator.far_out.jei_recipes.ChemicalReactionsRecipe;
@@ -32,7 +31,6 @@ public class FaroutModRecipeTypes {
 			SERIALIZERS.register(bus);
 			SERIALIZERS.register("electrolysis", () -> ElectrolysisRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("graphite_moderation", () -> GraphiteModerationRecipe.Serializer.INSTANCE);
-			SERIALIZERS.register("gasification", () -> GasificationRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("polymerization", () -> PolymerizationRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("nuclear_fission", () -> NuclearFissionRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("nuclear_irradiation", () -> NuclearIrradiationRecipe.Serializer.INSTANCE);

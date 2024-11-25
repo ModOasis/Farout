@@ -43,7 +43,7 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		super(FaroutModMenus.TRADING_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(8);
+		this.internal = new ItemStackHandler(5);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,18 +78,7 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 					});
 			}
 		}
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 122, 43) {
-			private final int slot = 6;
-		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 180, 43) {
-			private final int slot = 7;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
-		}));
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 31, 43) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 20, 70) {
 			private final int slot = 0;
 
 			@Override
@@ -97,7 +86,7 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 31, 61) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 53, 70) {
 			private final int slot = 1;
 
 			@Override
@@ -105,7 +94,7 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 31, 79) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 85, 70) {
 			private final int slot = 2;
 
 			@Override
@@ -113,7 +102,7 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 31, 97) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 118, 70) {
 			private final int slot = 3;
 
 			@Override
@@ -121,16 +110,8 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 				return false;
 			}
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 31, 115) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 150, 70) {
 			private final int slot = 4;
-
-			@Override
-			public boolean mayPickup(Player entity) {
-				return false;
-			}
-		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 31, 133) {
-			private final int slot = 5;
 
 			@Override
 			public boolean mayPickup(Player entity) {
@@ -139,9 +120,9 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 78 + 8 + sj * 18, 16 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 9 + 8 + sj * 18, 16 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 78 + 8 + si * 18, 16 + 142));
+			this.addSlot(new Slot(inv, si, 9 + 8 + si * 18, 16 + 142));
 		TradingGUIThisGUIIsOpenedProcedure.execute(entity);
 	}
 
@@ -165,16 +146,16 @@ public class TradingGUIMenu extends AbstractContainerMenu implements Supplier<Ma
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 8) {
-				if (!this.moveItemStackTo(itemstack1, 8, this.slots.size(), true))
+			if (index < 5) {
+				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 8, false)) {
-				if (index < 8 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 8 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
+				if (index < 5 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 8, 8 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

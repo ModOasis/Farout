@@ -93,6 +93,7 @@ public class TrihassianEntity extends PathfinderMob implements GeoEntity {
 		xpReward = 0;
 		setNoAi(false);
 		setMaxUpStep(0.6f);
+		setPersistenceRequired();
 	}
 
 	@Override
@@ -137,6 +138,11 @@ public class TrihassianEntity extends PathfinderMob implements GeoEntity {
 		return MobType.UNDEFINED;
 	}
 
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
+	}
+
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(Items.LEATHER_CHESTPLATE));
@@ -159,7 +165,7 @@ public class TrihassianEntity extends PathfinderMob implements GeoEntity {
 		return retval;
 	}
 
-	private final ItemStackHandler inventory = new ItemStackHandler(6) {
+	private final ItemStackHandler inventory = new ItemStackHandler(5) {
 		@Override
 		public int getSlotLimit(int slot) {
 			return 64;

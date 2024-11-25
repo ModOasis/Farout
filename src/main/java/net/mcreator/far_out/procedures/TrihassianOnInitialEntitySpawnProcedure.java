@@ -27,7 +27,7 @@ public class TrihassianOnInitialEntitySpawnProcedure {
 				_datEntSetS.getEntityData().set(TrihassianEntity.DATA_Profession, "Chemist");
 			if (true) {
 				Rand = Mth.nextInt(RandomSource.create(), 0, 6);
-				for (int index0 = 0; index0 < 3; index0++) {
+				for (int index0 = 0; index0 < 5; index0++) {
 					if (Rand == 0) {
 						ChosenItem = new ItemStack(FaroutModItems.HYDROGEN.get());
 					} else if (Rand == 1) {
@@ -42,6 +42,12 @@ public class TrihassianOnInitialEntitySpawnProcedure {
 						ChosenItem = new ItemStack(FaroutModItems.SODIUM_INGOT.get());
 					} else if (Rand == 6) {
 						ChosenItem = new ItemStack(FaroutModItems.BORIC_ACID.get());
+					} else if (Rand == 7) {
+						ChosenItem = new ItemStack(FaroutModItems.AMMONIA.get());
+					} else if (Rand == 8) {
+						ChosenItem = new ItemStack(FaroutModItems.SODIUM_ALUMINATE.get());
+					} else if (Rand == 9) {
+						ChosenItem = new ItemStack(FaroutModItems.ALUMINIUM_HYDROXIDE.get());
 					}
 					{
 						final int _slotid = (int) i;
@@ -60,7 +66,7 @@ public class TrihassianOnInitialEntitySpawnProcedure {
 				_datEntSetS.getEntityData().set(TrihassianEntity.DATA_Profession, "Electrician");
 			if (true) {
 				Rand = Mth.nextInt(RandomSource.create(), 0, 6);
-				for (int index1 = 0; index1 < 3; index1++) {
+				for (int index1 = 0; index1 < 5; index1++) {
 					if (Rand == 0) {
 						ChosenItem = new ItemStack(FaroutModItems.COPPER_WIRE.get());
 					} else if (Rand == 1) {
@@ -70,7 +76,7 @@ public class TrihassianOnInitialEntitySpawnProcedure {
 					} else if (Rand == 3) {
 						ChosenItem = new ItemStack(FaroutModItems.AMMETER.get());
 					} else if (Rand == 4) {
-						ChosenItem = new ItemStack(FaroutModBlocks.UNACTIVATED_LAMP.get());
+						ChosenItem = new ItemStack(FaroutModItems.LOW_FREQUENCY_INTEGRATED_CIRCUIT.get());
 					} else if (Rand == 5) {
 						ChosenItem = new ItemStack(FaroutModItems.ELECTRO_MAGNET.get());
 					} else if (Rand == 6) {
@@ -93,7 +99,7 @@ public class TrihassianOnInitialEntitySpawnProcedure {
 				_datEntSetS.getEntityData().set(TrihassianEntity.DATA_Profession, "Farmer");
 			if (true) {
 				Rand = Mth.nextInt(RandomSource.create(), 0, 6);
-				for (int index2 = 0; index2 < 3; index2++) {
+				for (int index2 = 0; index2 < 5; index2++) {
 					if (Rand == 0) {
 						ChosenItem = new ItemStack(Blocks.WHEAT);
 					} else if (Rand == 1) {

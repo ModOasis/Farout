@@ -42,7 +42,6 @@ import net.mcreator.far_out.world.inventory.RocketAssemblyManagerGUIMenu;
 import net.mcreator.far_out.world.inventory.RejonaMapMenu;
 import net.mcreator.far_out.world.inventory.RejonaGUIMenu;
 import net.mcreator.far_out.world.inventory.RejonaGUIInterstellarMenu;
-import net.mcreator.far_out.world.inventory.RecipesGUIMenu;
 import net.mcreator.far_out.world.inventory.ReadyForLaunchGUIMenu;
 import net.mcreator.far_out.world.inventory.QuaTuMapMenu;
 import net.mcreator.far_out.world.inventory.OreExtractorGUIMenu;
@@ -81,8 +80,6 @@ import net.mcreator.far_out.world.inventory.ElectrolyzerGUIMenu;
 import net.mcreator.far_out.world.inventory.DesktopComputerGUIMenu;
 import net.mcreator.far_out.world.inventory.DesigningWorkbenchGUIMenu;
 import net.mcreator.far_out.world.inventory.CrystalDriveGUIMenu;
-import net.mcreator.far_out.world.inventory.CoalGasificationReactorRecipesMenu;
-import net.mcreator.far_out.world.inventory.CoalGasificationReactorGUIMenu;
 import net.mcreator.far_out.world.inventory.ChemistryWorkbenchGUIMenu;
 import net.mcreator.far_out.world.inventory.CargoSSTOBlueprintGUIMenu;
 import net.mcreator.far_out.world.inventory.CalculatorGUIMenu;
@@ -116,7 +113,6 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<DesigningWorkbenchGUIMenu>> DESIGNING_WORKBENCH_GUI = REGISTRY.register("designing_workbench_gui", () -> IForgeMenuType.create(DesigningWorkbenchGUIMenu::new));
 	public static final RegistryObject<MenuType<RocketAssemblyManagerGUIMenu>> ROCKET_ASSEMBLY_MANAGER_GUI = REGISTRY.register("rocket_assembly_manager_gui", () -> IForgeMenuType.create(RocketAssemblyManagerGUIMenu::new));
 	public static final RegistryObject<MenuType<ReadyForLaunchGUIMenu>> READY_FOR_LAUNCH_GUI = REGISTRY.register("ready_for_launch_gui", () -> IForgeMenuType.create(ReadyForLaunchGUIMenu::new));
-	public static final RegistryObject<MenuType<CoalGasificationReactorGUIMenu>> COAL_GASIFICATION_REACTOR_GUI = REGISTRY.register("coal_gasification_reactor_gui", () -> IForgeMenuType.create(CoalGasificationReactorGUIMenu::new));
 	public static final RegistryObject<MenuType<SpaceStationBlueprintGUIMenu>> SPACE_STATION_BLUEPRINT_GUI = REGISTRY.register("space_station_blueprint_gui", () -> IForgeMenuType.create(SpaceStationBlueprintGUIMenu::new));
 	public static final RegistryObject<MenuType<CargoSSTOBlueprintGUIMenu>> CARGO_SSTO_BLUEPRINT_GUI = REGISTRY.register("cargo_ssto_blueprint_gui", () -> IForgeMenuType.create(CargoSSTOBlueprintGUIMenu::new));
 	public static final RegistryObject<MenuType<StationReadyForLaunchGUIMenu>> STATION_READY_FOR_LAUNCH_GUI = REGISTRY.register("station_ready_for_launch_gui", () -> IForgeMenuType.create(StationReadyForLaunchGUIMenu::new));
@@ -150,11 +146,9 @@ public class FaroutModMenus {
 	public static final RegistryObject<MenuType<IntgratedCircuitFabricatorRecipesGUIMenu>> INTGRATED_CIRCUIT_FABRICATOR_RECIPES_GUI = REGISTRY.register("intgrated_circuit_fabricator_recipes_gui",
 			() -> IForgeMenuType.create(IntgratedCircuitFabricatorRecipesGUIMenu::new));
 	public static final RegistryObject<MenuType<HydrogenFuelCellRecipesMenu>> HYDROGEN_FUEL_CELL_RECIPES = REGISTRY.register("hydrogen_fuel_cell_recipes", () -> IForgeMenuType.create(HydrogenFuelCellRecipesMenu::new));
-	public static final RegistryObject<MenuType<CoalGasificationReactorRecipesMenu>> COAL_GASIFICATION_REACTOR_RECIPES = REGISTRY.register("coal_gasification_reactor_recipes", () -> IForgeMenuType.create(CoalGasificationReactorRecipesMenu::new));
 	public static final RegistryObject<MenuType<MethanePolymerizerRecipesMenu>> METHANE_POLYMERIZER_RECIPES = REGISTRY.register("methane_polymerizer_recipes", () -> IForgeMenuType.create(MethanePolymerizerRecipesMenu::new));
 	public static final RegistryObject<MenuType<IntegratedCircutFabricatorRecipesMenu>> INTEGRATED_CIRCUT_FABRICATOR_RECIPES = REGISTRY.register("integrated_circut_fabricator_recipes",
 			() -> IForgeMenuType.create(IntegratedCircutFabricatorRecipesMenu::new));
-	public static final RegistryObject<MenuType<RecipesGUIMenu>> RECIPES_GUI = REGISTRY.register("recipes_gui", () -> IForgeMenuType.create(RecipesGUIMenu::new));
 	public static final RegistryObject<MenuType<SandosEtauiMapMenu>> SANDOS_ETAUI_MAP = REGISTRY.register("sandos_etaui_map", () -> IForgeMenuType.create(SandosEtauiMapMenu::new));
 	public static final RegistryObject<MenuType<SandosProxmaiMapMenu>> SANDOS_PROXMAI_MAP = REGISTRY.register("sandos_proxmai_map", () -> IForgeMenuType.create(SandosProxmaiMapMenu::new));
 	public static final RegistryObject<MenuType<SandosMassivoMapMenu>> SANDOS_MASSIVO_MAP = REGISTRY.register("sandos_massivo_map", () -> IForgeMenuType.create(SandosMassivoMapMenu::new));

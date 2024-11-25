@@ -197,16 +197,6 @@ public class OnLoadedEntityTickUpdateProcedure {
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
-		if (entity instanceof ServerPlayer _plr68 && _plr68.level() instanceof ServerLevel && _plr68.getAdvancements().getOrStartProgress(_plr68.server.getAdvancements().getAdvancement(new ResourceLocation("farout:primes_in_the_night"))).isDone()) {
-			if (entity instanceof ServerPlayer _player) {
-				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("farout:homecoming"));
-				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-				if (!_ap.isDone()) {
-					for (String criteria : _ap.getRemainingCriteria())
-						_player.getAdvancements().award(_adv, criteria);
-				}
-			}
-		}
 		if (!(("" + entity.level().dimension()).equals((entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).CompareDimension)
 				&& ((entity.getCapability(FaroutModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new FaroutModVariables.PlayerVariables())).TransitName).equals(""))) {
 			EntityEnteringDimensionTestProcedure.execute(world, entity);

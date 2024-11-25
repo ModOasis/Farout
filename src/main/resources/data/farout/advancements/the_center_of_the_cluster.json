@@ -19,5 +19,5 @@
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "farout:ad_astra"
+  "parent": "farout:deleted_mod_element"
 }

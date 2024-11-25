@@ -48,12 +48,12 @@ public class LanderFlightGUIOverlay {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (LanderFlightGUIDisplayOverlayIngameProcedure.execute(entity)) {
 			event.getGuiGraphics().blit(new ResourceLocation("farout:textures/screens/landerui.png"), 0, 0, 0, 0, w, h, w, h);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_h_speed"), w / 2 + -142, h / 2 + 94, -6710887, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_target_spacecraft"), w / 2 + -38, h / 2 + -119, -6710887, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_target_speed"), w / 2 + 46, h / 2 + 93, -6710887, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_h_speed"), w / 2 + -140, h - 26, -6710887, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_target_spacecraft"), w / 2 + -38, 3, -6710887, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.farout.lander_flight_gui.label_target_speed"), w / 2 + 49, h - 27, -6710887, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					VerticalSpeedProcedure.execute(entity), w / 2 + -140, h / 2 + 107, -14638336, false);
+					VerticalSpeedProcedure.execute(entity), w / 2 + -140, h - 14, -14638336, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
 					ReturnSelectedSpacecraftProcedure.execute(entity), w / 2 + -49, h / 2 + -105, -16142592, false);

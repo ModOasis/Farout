@@ -7,7 +7,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.far_out.world.inventory.TradingGUIMenu;
@@ -23,7 +22,6 @@ public class TradingGUIScreen extends AbstractContainerScreen<TradingGUIMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_trade;
 	ImageButton imagebutton_settrajectory;
 
 	public TradingGUIScreen(TradingGUIMenu container, Inventory inventory, Component text) {
@@ -33,7 +31,7 @@ public class TradingGUIScreen extends AbstractContainerScreen<TradingGUIMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 253;
+		this.imageWidth = 193;
 		this.imageHeight = 183;
 	}
 
@@ -52,11 +50,6 @@ public class TradingGUIScreen extends AbstractContainerScreen<TradingGUIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/item_slots.png"), this.leftPos + 13, this.topPos + 17, 0, 0, 50, 150, 50, 150);
-
-		guiGraphics.blit(new ResourceLocation("farout:textures/screens/arrow0.png"), this.leftPos + 153, this.topPos + 42, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -76,21 +69,17 @@ public class TradingGUIScreen extends AbstractContainerScreen<TradingGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.trading_gui.label_available_items"), 9, 6, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.farout.trading_gui.label_trihassian_salesman"), 114, 6, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.trading_gui.label_available_items"), 52, 51, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.farout.trading_gui.label_trihassian_salesman"), 45, 6, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_trade = Button.builder(Component.translatable("gui.farout.trading_gui.button_trade"), e -> {
-		}).bounds(this.leftPos + 134, this.topPos + 69, 51, 20).build();
-		guistate.put("button:button_trade", button_trade);
-		this.addRenderableWidget(button_trade);
-		imagebutton_settrajectory = new ImageButton(this.leftPos + 30, this.topPos + 42, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_settrajectory.png"), 16, 32, e -> {
+		imagebutton_settrajectory = new ImageButton(this.leftPos + 58, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("farout:textures/screens/atlas/imagebutton_settrajectory.png"), 16, 32, e -> {
 			if (true) {
-				FaroutMod.PACKET_HANDLER.sendToServer(new TradingGUIButtonMessage(1, x, y, z));
-				TradingGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+				FaroutMod.PACKET_HANDLER.sendToServer(new TradingGUIButtonMessage(0, x, y, z));
+				TradingGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
 		guistate.put("button:imagebutton_settrajectory", imagebutton_settrajectory);

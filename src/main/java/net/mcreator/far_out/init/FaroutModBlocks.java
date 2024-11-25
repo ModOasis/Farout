@@ -145,7 +145,6 @@ import net.mcreator.far_out.block.CopperCableBlock;
 import net.mcreator.far_out.block.ConstratiumOreBlock;
 import net.mcreator.far_out.block.ConstratiumBlockBlock;
 import net.mcreator.far_out.block.CoffiniteOreBlock;
-import net.mcreator.far_out.block.CoalGasificationReactorBlock;
 import net.mcreator.far_out.block.ChlorinatedEarthBlock;
 import net.mcreator.far_out.block.ChlorellaCultureBlock;
 import net.mcreator.far_out.block.ChemosyntheticNodulesBlock;
@@ -241,7 +240,6 @@ public class FaroutModBlocks {
 	public static final RegistryObject<Block> ROCKET_ASSEMBLER = REGISTRY.register("rocket_assembler", () -> new RocketAssemblerBlock());
 	public static final RegistryObject<Block> LIQUID_METHANE = REGISTRY.register("liquid_methane", () -> new LiquidMethaneBlock());
 	public static final RegistryObject<Block> STRALAKITE = REGISTRY.register("stralakite", () -> new StralakiteBlock());
-	public static final RegistryObject<Block> COAL_GASIFICATION_REACTOR = REGISTRY.register("coal_gasification_reactor", () -> new CoalGasificationReactorBlock());
 	public static final RegistryObject<Block> SOLAR_PANELS = REGISTRY.register("solar_panels", () -> new SolarPanelsBlock());
 	public static final RegistryObject<Block> KEMPAT_WOOD = REGISTRY.register("kempat_wood", () -> new KempatWoodBlock());
 	public static final RegistryObject<Block> KEMPAT_LOG = REGISTRY.register("kempat_log", () -> new KempatLogBlock());

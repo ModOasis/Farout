@@ -35,38 +35,6 @@ public class BlockBrokenProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if (blockstate.getBlock() == FaroutModBlocks.ELECTROLYZER.get() && new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-				return _retval.get();
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 0) >= 1) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			}
-			FaroutModVariables.WorldVariables.get(world).WattageUsed = FaroutModVariables.WorldVariables.get(world).WattageUsed - 5;
-			FaroutModVariables.WorldVariables.get(world).syncData(world);
-			world.destroyBlock(BlockPos.containing(x, y, z), false);
-		}
-		if (blockstate.getBlock() == FaroutModBlocks.COAL_GASIFICATION_REACTOR.get() && new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				AtomicInteger _retval = new AtomicInteger(0);
-				BlockEntity _ent = world.getBlockEntity(pos);
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
-				return _retval.get();
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 0) >= 1) {
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
-			}
-			FaroutModVariables.WorldVariables.get(world).WattageUsed = FaroutModVariables.WorldVariables.get(world).WattageUsed - 2;
-			FaroutModVariables.WorldVariables.get(world).syncData(world);
-			world.destroyBlock(BlockPos.containing(x, y, z), false);
-		}
 		if (blockstate.getBlock() == FaroutModBlocks.INTEGRATED_CIRCUIT_FABRICATOR.get() && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -108,7 +76,7 @@ public class BlockBrokenProcedure {
 			FaroutModVariables.WorldVariables.get(world).syncData(world);
 			world.destroyBlock(BlockPos.containing(x, y, z), false);
 		}
-		if (blockstate.getBlock() == FaroutModBlocks.SOLAR_PANELS.get() && world instanceof Level _lvl27 && _lvl27.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		if (blockstate.getBlock() == FaroutModBlocks.SOLAR_PANELS.get() && world instanceof Level _lvl19 && _lvl19.isDay() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);
 			}

@@ -15,8 +15,6 @@ import net.mcreator.far_out.jei_recipes.NuclearFissionRecipeCategory;
 import net.mcreator.far_out.jei_recipes.NuclearFissionRecipe;
 import net.mcreator.far_out.jei_recipes.GraphiteModerationRecipeCategory;
 import net.mcreator.far_out.jei_recipes.GraphiteModerationRecipe;
-import net.mcreator.far_out.jei_recipes.GasificationRecipeCategory;
-import net.mcreator.far_out.jei_recipes.GasificationRecipe;
 import net.mcreator.far_out.jei_recipes.ElectrolysisRecipeCategory;
 import net.mcreator.far_out.jei_recipes.ElectrolysisRecipe;
 import net.mcreator.far_out.jei_recipes.CircuitFabricationRecipeCategory;
@@ -37,7 +35,6 @@ import java.util.List;
 public class FaroutModJeiPlugin implements IModPlugin {
 	public static mezz.jei.api.recipe.RecipeType<ElectrolysisRecipe> Electrolysis_Type = new mezz.jei.api.recipe.RecipeType<>(ElectrolysisRecipeCategory.UID, ElectrolysisRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<GraphiteModerationRecipe> GraphiteModeration_Type = new mezz.jei.api.recipe.RecipeType<>(GraphiteModerationRecipeCategory.UID, GraphiteModerationRecipe.class);
-	public static mezz.jei.api.recipe.RecipeType<GasificationRecipe> Gasification_Type = new mezz.jei.api.recipe.RecipeType<>(GasificationRecipeCategory.UID, GasificationRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<PolymerizationRecipe> Polymerization_Type = new mezz.jei.api.recipe.RecipeType<>(PolymerizationRecipeCategory.UID, PolymerizationRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<NuclearFissionRecipe> NuclearFission_Type = new mezz.jei.api.recipe.RecipeType<>(NuclearFissionRecipeCategory.UID, NuclearFissionRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<NuclearIrradiationRecipe> NuclearIrradiation_Type = new mezz.jei.api.recipe.RecipeType<>(NuclearIrradiationRecipeCategory.UID, NuclearIrradiationRecipe.class);
@@ -54,7 +51,6 @@ public class FaroutModJeiPlugin implements IModPlugin {
 	public void registerCategories(IRecipeCategoryRegistration registration) {
 		registration.addRecipeCategories(new ElectrolysisRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new GraphiteModerationRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
-		registration.addRecipeCategories(new GasificationRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new PolymerizationRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new NuclearFissionRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new NuclearIrradiationRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
@@ -70,8 +66,6 @@ public class FaroutModJeiPlugin implements IModPlugin {
 		registration.addRecipes(Electrolysis_Type, ElectrolysisRecipes);
 		List<GraphiteModerationRecipe> GraphiteModerationRecipes = recipeManager.getAllRecipesFor(GraphiteModerationRecipe.Type.INSTANCE);
 		registration.addRecipes(GraphiteModeration_Type, GraphiteModerationRecipes);
-		List<GasificationRecipe> GasificationRecipes = recipeManager.getAllRecipesFor(GasificationRecipe.Type.INSTANCE);
-		registration.addRecipes(Gasification_Type, GasificationRecipes);
 		List<PolymerizationRecipe> PolymerizationRecipes = recipeManager.getAllRecipesFor(PolymerizationRecipe.Type.INSTANCE);
 		registration.addRecipes(Polymerization_Type, PolymerizationRecipes);
 		List<NuclearFissionRecipe> NuclearFissionRecipes = recipeManager.getAllRecipesFor(NuclearFissionRecipe.Type.INSTANCE);

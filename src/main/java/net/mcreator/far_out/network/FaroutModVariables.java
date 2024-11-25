@@ -324,6 +324,9 @@ public class FaroutModVariables {
 		public boolean TuQegTelescope = false;
 		public CompoundTag HeatValues = new CompoundTag();
 		public CompoundTag OrbitalPeriods = new CompoundTag();
+		public CompoundTag StarX = new CompoundTag();
+		public CompoundTag StarY = new CompoundTag();
+		public CompoundTag StarZ = new CompoundTag();
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -382,6 +385,9 @@ public class FaroutModVariables {
 			TuQegTelescope = nbt.getBoolean("TuQegTelescope");
 			this.HeatValues = nbt.get("HeatValues") instanceof CompoundTag HeatValues ? HeatValues : new CompoundTag();
 			this.OrbitalPeriods = nbt.get("OrbitalPeriods") instanceof CompoundTag OrbitalPeriods ? OrbitalPeriods : new CompoundTag();
+			this.StarX = nbt.get("StarX") instanceof CompoundTag StarX ? StarX : new CompoundTag();
+			this.StarY = nbt.get("StarY") instanceof CompoundTag StarY ? StarY : new CompoundTag();
+			this.StarZ = nbt.get("StarZ") instanceof CompoundTag StarZ ? StarZ : new CompoundTag();
 		}
 
 		@Override
@@ -436,6 +442,9 @@ public class FaroutModVariables {
 			nbt.putBoolean("TuQegTelescope", TuQegTelescope);
 			nbt.put("HeatValues", this.HeatValues);
 			nbt.put("OrbitalPeriods", this.OrbitalPeriods);
+			nbt.put("StarX", this.StarX);
+			nbt.put("StarY", this.StarY);
+			nbt.put("StarZ", this.StarZ);
 			return nbt;
 		}
 

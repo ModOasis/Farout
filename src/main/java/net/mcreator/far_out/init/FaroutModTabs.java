@@ -197,7 +197,6 @@ public class FaroutModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(FaroutModBlocks.ELECTROLYZER.get().asItem());
 			tabData.accept(FaroutModItems.THE_FAROUT_GUIDE.get());
-			tabData.accept(FaroutModBlocks.COAL_GASIFICATION_REACTOR.get().asItem());
 			tabData.accept(FaroutModBlocks.MATTER_ANTIMATTER_COMPRESSOR.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
 			tabData.accept(FaroutModBlocks.LUMIBLOSSOM_FENCE_GATE.get().asItem());
